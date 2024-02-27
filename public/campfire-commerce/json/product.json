@@ -1,0 +1,54 @@
+{
+  "image": "images/nomad_000.jpg",
+  "images": [
+    "images/nomad_001.jpg"
+  ],
+  "brand": "Outdoor Odyssey",
+  "name": "Outdoor Odyssey Nomad Backpack 60 liters",
+  "description": "The Outdoor Odyssey Nomad Backpack is a spacious and durable 60-liter backpack designed for multi-day outdoor adventures. It features padded shoulder straps and back panel, adjustable sternum strap and hip belt, multiple compartments and pockets, and compression straps to secure your gear. Made from water-resistant materials, this backpack is perfect for hiking, camping, and backpacking trips. Order yours today and explore the great outdoors with confidence!",
+  "long-description": "Introducing the Outdoor Odyssey Nomad Backpack, the ultimate travel companion for your outdoor adventures. With a spacious 60-liter capacity, this backpack is perfect for multi-day hikes, camping trips, and backpacking excursions.\nCrafted from durable and water-resistant materials, the Nomad Backpack is designed to withstand the rigors of the great outdoors. The padded shoulder straps and back panel provide comfort and support, even when carrying heavy loads, while the adjustable sternum strap and hip belt help distribute weight evenly for a more stable and comfortable carrying experience.\nThe Nomad Backpack features multiple compartments and pockets for easy organization, including a dedicated sleeping bag compartment, a hydration bladder sleeve, and a front zippered pocket for quick access to essential items. The backpack also includes compression straps to help secure your gear and reduce bulk, as well as attachment points for trekking poles or ice axes.\nWhether you're hitting the trails for a weekend getaway or embarking on a longer adventure, the Outdoor Odyssey Nomad Backpack is the perfect choice for outdoor enthusiasts who demand durability, comfort, and functionality in their gear. Order yours today and start exploring the great outdoors in style",
+  "features": [
+    "Large 60-liter capacity for multi-day outdoor adventures",
+    "Padded shoulder straps and back panel for comfort and support",
+    "Multiple compartments and pockets, including a sleeping bag compartment and hydration bladder sleeve, for easy organization",
+    "Durable and water-resistant materials with compression straps and attachment points for trekking poles or ice axes for added functionality and convenience"
+  ],
+  "price": 244.99,
+  "details": {
+    "Brand": "Outdoor Odyssey",
+    "Product Name": "Nomad Backpack",
+    "Capacity": "60 liters",
+    "Material": "Durable and water-resistant materials",
+    "Shoulder Straps": "Padded for comfort and support",
+    "Back Panel": "Padded for comfort and ventilation",
+    "Sternum Strap": "Adjustable for added stability",
+    "Hip Belt": "Padded and adjustable for added comfort and support",
+    "Compartments": "Multiple compartments and pockets, including a sleeping bag compartment, hydration bladder sleeve, and front zippered pocket for quick access to essential items",
+    "Compression Straps": "Included to help secure your gear and reduce bulk",
+    "Attachment Points": "Included for trekking poles or ice axes",
+    "Dimensions": "30 x 18 x 12 inches",
+    "Weight": "3.5 pounds",
+    "Price": "$244.99 USD"
+  },
+  "warranty": "Outdoor Odyssey stands behind the quality and workmanship of the Nomad Backpack with a limited lifetime warranty against defects in materials and workmanship. If you experience any issues with your backpack due to a manufacturing defect, we will repair or replace it free of charge, at our discretion.",
+  "related": [
+    {
+      "name": "Outdoor Odyssey Hiking Poles",
+      "description": "These lightweight and durable hiking poles are designed to provide added stability and support on the trails. They feature adjustable lengths, comfortable grips, and carbide tips for improved traction on various terrains.",
+      "image": "images/poles_000.jpg",
+      "price": 79.99
+    },
+    {
+      "name": "Outdoor Odyssey Sleeping Bag",
+      "description": "This cozy and comfortable sleeping bag is perfect for camping trips and backpacking adventures. It features a durable and water-resistant shell, a soft and warm interior, and a compressible design for easy packing and transport.",
+      "image": "images/sleeping_000.jpg",
+      "price": 129.99
+    },
+    {
+      "name": "Outdoor Odyssey Water Bottle",
+      "description": "This insulated water bottle is designed to keep your drinks hot or cold for hours on end. It features a durable stainless steel construction, a leak-proof lid, and a convenient carrying handle. It's perfect for hiking, camping, or any outdoor activity where you need to stay hydrated.",
+      "image": "images/bottle_000.jpg",
+      "price": 19.99
+    }
+  ]
+}
