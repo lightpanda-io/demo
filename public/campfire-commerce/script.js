@@ -1,35 +1,50 @@
 // Fetch product data from JSON source
-window.addEventListener("load", () => {
+// blocked by https://github.com/lightpanda-io/browsercore/issues/187
+// window.addEventListener("load", () => {
   const detailsXHR = new XMLHttpRequest();
-  detailsXHR.open('GET', 'json/product.json');
+  // blocked by https://github.com/lightpanda-io/browsercore/issues/186
+  // detailsXHR.open('GET', 'json/product.json');
+  detailsXHR.open('GET', 'http://127.0.0.1:1234/campfire-commerce/json/product.json');
   detailsXHR.responseType = 'json';
   detailsXHR.onload = function() {
-    if (this.status === 200) {
-      updateProductInfo(this.response);
+    // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
+    // if (this.status === 200) {
+    //   updateProductInfo(this.response);
+    // }
+    if (detailsXHR.status === 200) {
+      updateProductInfo(detailsXHR.response);
     }
   };
   detailsXHR.send();
 
   const reviewsXHR = new XMLHttpRequest();
-  reviewsXHR.open('GET', 'json/reviews.json');
+  // blocked by https://github.com/lightpanda-io/browsercore/issues/186
+  // reviewsXHR.open('GET', 'json/reviews.json');
+  reviewsXHR.open('GET', 'http://127.0.0.1:1234/campfire-commerce/json/reviews.json');
   reviewsXHR.responseType = 'json';
   reviewsXHR.onload = function() {
-    if (this.status === 200) {
-      updateReviews(this.response);
+    // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
+    // if (this.status === 200) {
+    //   updateReviews(this.response);
+    // }
+    if (reviewsXHR.status === 200) {
+      updateReviews(reviewsXHR.response);
     }
   };
   reviewsXHR.send();
 
-  var MenuItems = document.getElementById('MenuItems');
-  MenuItems.style.maxHeight = '0px';
-
-  function menutoggle() {
-    if (MenuItems.style.maxHeight == '0px') {
-      MenuItems.style.maxHeight = '200px';
-    } else {
-      MenuItems.style.maxHeight = '0px';
-    }
-  }
+  // blocked by https://github.com/lightpanda-io/browsercore/issues/185
+  //
+  // var MenuItems = document.getElementById('MenuItems');
+  // MenuItems.style.maxHeight = '0px';
+  //
+  // function menutoggle() {
+  //   if (MenuItems.style.maxHeight == '0px') {
+  //     MenuItems.style.maxHeight = '200px';
+  //   } else {
+  //     MenuItems.style.maxHeight = '0px';
+  //   }
+  // }
 
   var ProductImg = document.getElementById('product-image');
   document.getElementById('small-product-image-1').onclick = function() {
@@ -38,14 +53,20 @@ window.addEventListener("load", () => {
   document.getElementById('small-product-image-2').onclick = function() {
     ProductImg.src = this.src;
   };
-});
+// });
+
 
 
 // Update product information in HTML elements
 function updateProductInfo(product) {
-  document.getElementById('product-image').src = product.image;
-  document.getElementById('small-product-image-1').src = product.image;
-  document.getElementById('small-product-image-2').src = product.images[0];
+  // blocked by https://github.com/lightpanda-io/browsercore/issues/20
+  // document.getElementById('product-image').src = product.image;
+  // document.getElementById('small-product-image-1').src = product.image;
+  // document.getElementById('small-product-image-2').src = product.images[0];
+  document.getElementById('product-image').setAttribute('src', product.image);
+  document.getElementById('small-product-image-1').setAttribute('src', product.image);
+  document.getElementById('small-product-image-2').setAttribute('src', product.images[0]);
+
   document.getElementById('product-name').textContent = product.name;
   document.getElementById('product-description').textContent = product.description;
   document.getElementById('product-price').textContent = `$${product.price}`;
