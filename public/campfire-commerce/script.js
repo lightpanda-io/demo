@@ -4,7 +4,7 @@
   const detailsXHR = new XMLHttpRequest();
   // blocked by https://github.com/lightpanda-io/browsercore/issues/186
   // detailsXHR.open('GET', 'json/product.json');
-  detailsXHR.open('GET', 'http://127.0.0.1:1234/campfire-commerce/json/product.json');
+detailsXHR.open('GET', document.URL + 'json/product.json');
   detailsXHR.responseType = 'json';
   detailsXHR.onload = function() {
     // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
@@ -20,7 +20,7 @@
   const reviewsXHR = new XMLHttpRequest();
   // blocked by https://github.com/lightpanda-io/browsercore/issues/186
   // reviewsXHR.open('GET', 'json/reviews.json');
-  reviewsXHR.open('GET', 'http://127.0.0.1:1234/campfire-commerce/json/reviews.json');
+  reviewsXHR.open('GET', document.URL + 'json/reviews.json');
   reviewsXHR.responseType = 'json';
   reviewsXHR.onload = function() {
     // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
