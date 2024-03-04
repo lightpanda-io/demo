@@ -7,7 +7,7 @@ That's why it's important to be very transparent about the protocol of the bench
 
 The benchmark uses a [homemade demo web page](https://github.com/lightpanda-io/demo).
 This web page is a fake e-commerce product offer page loading product details
-and reviews with two XHR requests.
+and reviews in JSON with two XHR requests.
 
 We decided to use a homemade page because Lightpanda browser is not yet fully
 compliant and we wanted to be sure it would be able to execute the web page
@@ -62,15 +62,15 @@ func main() {
 }
 ```
 
-## Single request with cold start
+## Single request
 
 This bench is a very basic test to compare the two software.
-We request the fake web page once with full JS execution. The final DOMTree is
+We start the browser and request the fake web page once with full JS execution. The final DOMTree is
 rendered in stdout.
 
 ### Test machine
 
-The tests are run in an AWS m5.large with a fresh Debian install.
+The tests are run in an AWS m5.large (x86_64) with a fresh Debian install.
 
 ![aws.m5 neofetch](./img/aws_m5_neofetch.png)
 
