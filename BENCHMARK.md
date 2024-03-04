@@ -74,7 +74,7 @@ The tests are run in a AWS m5.large with a fresh debian install.
 
 ![aws.m5 neofetch](./img/aws_m5_neofetch.png)
 
-We uses Google chome version 122.0.6261.94.
+We use Google chome version 122.0.6261.94.
 
 ```console
 $ google-chrome --version
