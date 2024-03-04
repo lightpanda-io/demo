@@ -2,18 +2,18 @@
 
 ## Methodology
 
-We all love benchmarks but we know it's difficult to do fair comparaisons.
+We all love benchmarks but we know it's difficult to do fair comparisons.
 That's why it's important to be very transparent about the protocol of the benchmark.
 
-The benchmark uses a [home made demo web page](https://github.com/lightpanda-io/demo).
-This web page is a fake e-commerce product offer page loading product's details
+The benchmark uses a [homemade demo web page](https://github.com/lightpanda-io/demo).
+This web page is a fake e-commerce product offer page loading product details
 and reviews with two XHR requests.
 
-We decided to use an home made page because Lightpanda browser is not yet fully
-compliant and we wanted to be sure it will be able to execute the web page
+We decided to use a homemade page because Lightpanda browser is not yet fully
+compliant and we wanted to be sure it would be able to execute the web page
 correctly to be comparable with Google Chrome.
 
-Moreover, using this web page allows us to run the test with a local webserver,
+Moreover, using this web page allows us to run the test with a local web server,
 reducing network request impacts to the bench.
 
 ### Metrics and tools
@@ -26,11 +26,11 @@ We measure two metrics:
 
 ### Dependencies
 
-To run the becnhmark, you have to install
+To run the benchmark, you have to install
 [Hyperfine](https://github.com/sharkdp/hyperfine) and [GNU
 time](https://www.gnu.org/software/time/) tools.
 
-We also expose the demo web page locally using a simple Go programm, but you
+We also expose the demo web page locally using a simple Go program, but you
 can use another web server if you want to.
 
 On Debian Linux, you can use:
@@ -64,17 +64,17 @@ func main() {
 
 ## Single request with cold start
 
-This bench is a very basic test to compare the two softwares.
+This bench is a very basic test to compare the two software.
 We request the fake web page once with full JS execution. The final DOMTree is
 rendered in stdout.
 
 ### Test machine
 
-The tests are run in a AWS m5.large with a fresh debian install.
+The tests are run in an AWS m5.large with a fresh Debian install.
 
 ![aws.m5 neofetch](./img/aws_m5_neofetch.png)
 
-We use Google chome version 122.0.6261.94.
+We use Google Chrome version 122.0.6261.94.
 
 ```console
 $ google-chrome --version
