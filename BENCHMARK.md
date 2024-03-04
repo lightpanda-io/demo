@@ -71,28 +71,8 @@ rendered in stdout.
 ### Test machine
 
 The tests are run in a AWS m5.large with a fresh debian install.
-```console
-$ neofetch
-       _,met$$$$$gg.          admin@ip-172-31-43-88
-    ,g$$$$$$$$$$$$$$$P.       ---------------------
-  ,g$$P"     """Y$$.".        OS: Debian GNU/Linux 12 (bookworm) x86_64
- ,$$P'              `$$$.     Host: m5.large
-',$$P       ,ggs.     `$$b:   Kernel: 6.1.0-18-cloud-amd64
-`d$$'     ,$P"'   .    $$$    Uptime: 5 mins
- $$P      d$'     ,    $$P    Packages: 453 (dpkg)
- $$:      $$.   -    ,d$$'    Shell: bash 5.2.15
- $$;      Y$b._   _,d$P'      Terminal: /dev/pts/1
- Y$$.    `.`"Y$$$$P"'         CPU: Intel Xeon Platinum 8259CL (2) @ 3.099GHz
- `$$b      "-.__              GPU: 00:03.0 Amazon.com, Inc. Device 1111
-  `Y$$                        Memory: 120MiB / 7745MiB
-   `Y$$.
-     `$$b.
-       `Y$$b.
-          `"Y$b._
-              `"""
 
-
-```
+![aws.m5 neofetch](./img/aws_m5_neofetch.png)
 
 We uses Google chome version 122.0.6261.94.
 
@@ -117,6 +97,8 @@ Summary
   './browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/' ran
    64.48 ± 1.74 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/'
 ```
+
+![aws.m5 hyperfine](./img/aws_m5_hyperfine.png)
 
 ### Memory peak
 
