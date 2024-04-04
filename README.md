@@ -46,20 +46,11 @@ Lightpanda browser, but the code is not publicly available yet.
 Clone the [demo web page](https://github.com/lightpanda-io/demo) and expose the
 `public/` directory locally with a web server.
 
-We use a simple Go program to expose the files.
+We use the simple Go program to expose the files in `ws/` dir.
+By default it exposes the `public` dir using the `1234` port.
 
-```go
-package main
-
-import (
-	"log"
-	"net/http"
-)
-
-func main() {
-	// Simple static webserver:
-	log.Fatal(http.ListenAndServe(":1234", http.FileServer(http.Dir(""))))
-}
+```console
+$ go run ws/main.go
 ```
 
 ## Single request
