@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Lightpanda browser demo",
+  "main": "index.js",
+  "scripts": {
+    "install-chrome": "npx playwright install chrome",
+    "ws": "go run ws/main.go",
+    "bench-chrome": "node playwright/chrome.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightpanda-io/demo.git"
+  },
+  "keywords": [],
+  "author": "Lightpanda",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/lightpanda-io/demo/issues"
+  },
+  "homepage": "https://lightpanda.io",
+  "dependencies": {
+    "playwright": "^1.42.1"
+  }
+}
