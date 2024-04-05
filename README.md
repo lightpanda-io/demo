@@ -53,17 +53,17 @@ By default it exposes the `public` dir using the `1234` port.
 $ go run ws/main.go
 ```
 
-## Single request
-
-This bench is a very basic test to compare the two software.
-We start the browser and request the fake web page once with full JS execution. The final DOMTree is
-rendered in stdout.
-
 ### Test machine
 
 The tests are run in an AWS m5.large (x86_64) with a fresh Debian install.
 
 ![aws.m5 neofetch](./img/aws_m5_neofetch.png)
+
+## Single request
+
+This bench is a very basic test to compare the two software.
+We start the browser and request the fake web page once with full JS execution. The final DOMTree is
+rendered in stdout.
 
 We use Google Chrome version 122.0.6261.94.
 
@@ -162,21 +162,9 @@ dependencies, mainly Playwright.
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
 Lightpanda browser, but the code is not publicly available yet.
 
-### Demo web page
-
-Same as previously, the benchmark assumes the demo page is running on the host.
-If you already have [Go](https://go.dev/dl), you can use direcly the npm script
-with `npm run ws`.
-
-### Test machine
-
-The tests are run in an AWS m5.large (x86_64) with a fresh Debian install.
-
-![aws.m5 neofetch](./img/aws_m5_neofetch.png)
+### Google Chrome benchmark
 
 We use Google Chrome version 123.0.6312.105.
-
-### Chrome benchmark
 
 The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
 * `CHROME_PATH` is the path to your Google Chrome bin,
