@@ -168,6 +168,14 @@ Same as previously, the benchmark assumes the demo page is running on the host.
 If you already have [Go](https://go.dev/dl), you can use direcly the npm script
 with `npm run ws`.
 
+### Test machine
+
+The tests are run in an AWS m5.large (x86_64) with a fresh Debian install.
+
+![aws.m5 neofetch](./img/aws_m5_neofetch.png)
+
+We use Google Chrome version 123.0.6312.105.
+
 ### Chrome benchmark
 
 The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
@@ -178,6 +186,19 @@ The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
 `npm run bench-chrome` starts a playwright process, load a Google Chrome
 instance and load the page to extract data 100 times.
 
-```
+```console
 $ CHROME_PATH=`which google-chrome` npm run bench-chrome
+
+> demo@1.0.0 bench-chrome
+> node playwright/chrome.js
+
+................................................................................
+....................
+total runs 100
+total duration (ms) 18792
+avg run duration (ms) 184
+min run duration (ms) 168
+max run duration (ms) 323
 ```
+
+![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
