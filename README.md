@@ -53,17 +53,17 @@ By default it exposes the `public` dir using the `1234` port.
 $ go run ws/main.go
 ```
 
-## Single request
-
-This bench is a very basic test to compare the two software.
-We start the browser and request the fake web page once with full JS execution. The final DOMTree is
-rendered in stdout.
-
 ### Test machine
 
 The tests are run in an AWS m5.large (x86_64) with a fresh Debian install.
 
 ![aws.m5 neofetch](./img/aws_m5_neofetch.png)
+
+## Single request
+
+This bench is a very basic test to compare the two software.
+We start the browser and request the fake web page once with full JS execution. The final DOMTree is
+rendered in stdout.
 
 We use Google Chrome version 122.0.6261.94.
 
@@ -147,7 +147,46 @@ $ /usr/bin/time -v ./browsercore-get --dump http://127.0.0.1:1234/campfire-comme
         Exit status: 0
 ```
 
-## Multiple requests
+## Multiple requests using Playwright
 
-We plan to create a benchmark to compare the memory used during multiple
-successive requests sent to a CDP server.
+We compare now multiple page loads and js evaluations using
+[Playwright](https://playwright.dev).
+
+### Dependencies
+
+To run the benchmark, you need ti install [nodejs](https://nodejs.org/en/download).
+
+Once `nodejs` is installed, please run a `npm install` to install nodejs
+dependencies, mainly Playwright.
+
+You have also to install [Google Chrome](https://www.google.com/chrome/) and
+Lightpanda browser, but the code is not publicly available yet.
+
+### Google Chrome benchmark
+
+We use Google Chrome version 123.0.6312.105.
+
+The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
+* `CHROME_PATH` is the path to your Google Chrome bin,
+* `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`,
+* `RUNS` is the number of pages loaded by the benchmark, default is `100`.
+
+`npm run bench-chrome` starts a playwright process, load a Google Chrome
+instance and load the page to extract data 100 times.
+
+```console
+$ CHROME_PATH=`which google-chrome` npm run bench-chrome
+
+> demo@1.0.0 bench-chrome
+> node playwright/chrome.js
+
+................................................................................
+....................
+total runs 100
+total duration (ms) 18792
+avg run duration (ms) 184
+min run duration (ms) 168
+max run duration (ms) 323
+```
+
+![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
