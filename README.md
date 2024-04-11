@@ -150,7 +150,7 @@ $ /usr/bin/time -v ./browsercore-get --dump http://127.0.0.1:1234/campfire-comme
 ## Multiple requests using Playwright
 
 We compare now multiple page loads and js evaluations using
-[Playwright](https://playwright.dev).
+[Playwright](https://playwright.dev), which connects to the browser using CDP (Chrome Debug Protocol).
 
 ### Dependencies
 
@@ -162,20 +162,28 @@ dependencies, mainly Playwright.
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
 Lightpanda browser, but the code is not publicly available yet.
 
-### Google Chrome benchmark
-
-We use Google Chrome version 123.0.6312.105.
+### Running the benchmark
 
 The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
-* `CHROME_PATH` is the path to your Google Chrome bin,
-* `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`,
+* `BROWSER_PATH` is the path to your browser implementing the CDP protocol. It can be either the path to a local binary or an URL (host:port) of a running browser. Default value is empty, which will launch the Google Chrome installed through Playwright.
+* `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
 `npm run bench-chrome` starts a playwright process, load a Google Chrome
 instance and load the page to extract data 100 times.
 
 ```console
-$ CHROME_PATH=`which google-chrome` npm run bench-chrome
+$ BROWSER_PATH=127.0.0.1:9222 npm run bench-cdp
+```
+
+### Results
+
+**Google Chrome***
+
+We use Google Chrome version 123.0.6312.105.
+
+```console
+$ npm run bench-cdp
 
 > demo@1.0.0 bench-chrome
 > node playwright/chrome.js
@@ -190,3 +198,22 @@ max run duration (ms) 323
 ```
 
 ![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
+
+**Lightpanda***
+
+Current version (commit X).
+
+```console
+$ npm run bench-cdp
+
+> demo@1.0.0 bench-chrome
+> node playwright/chrome.js
+
+................................................................................
+....................
+total runs 100
+total duration (ms) 18792
+avg run duration (ms) 184
+min run duration (ms) 168
+max run duration (ms) 323
+```

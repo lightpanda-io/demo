@@ -7,7 +7,7 @@
   "scripts": {
     "install-chrome": "npx playwright install chrome",
     "ws": "go run ws/main.go",
-    "bench-chrome": "node playwright/chrome.js"
+    "bench-cdp": "node playwright/cdp.js"
   },
   "repository": {
     "type": "git",

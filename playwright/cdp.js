@@ -11,21 +11,39 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+import fs from 'fs';
 
 // Import the Chromium browser into our scraper.
 import { chromium } from 'playwright';
 
-// options passed to the browser.
-let browser_options = {};
+// check if browser path if a local path or an URL
+let browserPath = process.env.BROWSER_PATH;
+let networkPath;
+if (browserPath) {
 
-// chrome browser path
-if (process.env.CHROME_PATH) {
-    browser_options.executablePath = process.env.CHROME_PATH;
+    // not local path
+    if (!fs.existsSync(browserPath)) {
+	if (!browserPath.startsWith("http://")) {
+	    browserPath = "http://" + browserPath
+	}
+	const url = new URL(browserPath);
+	networkPath = url.host;
+    }
 }
 
-// headless
-if (process.env.HEADLESS) {
-    browser_options.headless = process.env.HEADLESS === 'true';
+// options passed to the browser
+let browserOptions = {};
+if (!networkPath) {
+
+    // chrome browser path
+    if (browserPath) {
+	browserOptions.executablePath = browserPath;
+    }
+
+    // headless
+    if (process.env.HEADLESS) {
+	browserOptions.headless = process.env.HEADLESS === 'true';
+    }
 }
 
 // web serveur url
@@ -39,9 +57,32 @@ const gstart = process.hrtime.bigint();
 // store all run durations
 let metrics = [];
 
-// Open a Chromium browser. We use headless: false
-// to be able to watch the browser window.
-const browser = await chromium.launch(browser_options);
+let browser;
+if (networkPath) {
+
+    // Connect to an existing browser
+    console.log("Connection to browser on " + networkPath + "...");
+
+    const resp = await fetch("http://" + networkPath + "/json/version");
+    const version = await resp.json()
+    const wsURL = version.webSocketDebuggerUrl;
+
+    browser = await chromium.connectOverCDP(wsURL);
+
+} else {
+
+    // Launching a new browser
+    if (browserPath) {
+	console.log("Launching browser " + browserPath);
+    } else {
+	console.log("Launching browser");
+    }
+    
+    // We use headless: false
+    // to be able to watch the browser window.
+    browser = await chromium.launch(browserOptions);
+
+}
 
 for (var run = 1; run<=runs; run++) {
 
