@@ -150,7 +150,7 @@ $ /usr/bin/time -v ./browsercore-get --dump http://127.0.0.1:1234/campfire-comme
 ## Multiple requests using Playwright
 
 We compare now multiple page loads and js evaluations using
-[Playwright](https://playwright.dev).
+[Playwright](https://playwright.dev), which connects to the browser using CDP (Chrome Debug Protocol).
 
 ### Dependencies
 
@@ -162,20 +162,34 @@ dependencies, mainly Playwright.
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
 Lightpanda browser, but the code is not publicly available yet.
 
-### Google Chrome benchmark
+### Running the benchmark
 
-We use Google Chrome version 123.0.6312.105.
-
-The `playwright/chrome.js` benchmark accepts multiple env vars to be configured.
-* `CHROME_PATH` is the path to your Google Chrome bin,
-* `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`,
+The `playwright/cdp.js` benchmark accepts multiple env vars to be configured.
+* `BROWSER_ADDRESS` is the address of the running browser listening the CDP protocol, by default `http://127.0.0.1:9222`.
+* `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
-`npm run bench-chrome` starts a playwright process, load a Google Chrome
+`npm run bench-cdp` starts a playwright process
 instance and load the page to extract data 100 times.
 
 ```console
-$ CHROME_PATH=`which google-chrome` npm run bench-chrome
+$ npm run bench-cdp
+```
+
+### Results
+
+**Google Chrome**
+
+We use Google Chrome version 123.0.6312.105.
+
+You have to start the browser first.
+```console
+$ google-chrome --headless=new --disable-gpu --remote-debugging-port=9222
+```
+
+Then you can run the benchmark.
+```console
+$ npm run bench-cdp
 
 > demo@1.0.0 bench-chrome
 > node playwright/chrome.js

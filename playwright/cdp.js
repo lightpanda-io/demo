@@ -15,18 +15,8 @@
 // Import the Chromium browser into our scraper.
 import { chromium } from 'playwright';
 
-// options passed to the browser.
-let browser_options = {};
-
-// chrome browser path
-if (process.env.CHROME_PATH) {
-    browser_options.executablePath = process.env.CHROME_PATH;
-}
-
-// headless
-if (process.env.HEADLESS) {
-    browser_options.headless = process.env.HEADLESS === 'true';
-}
+// browserAddress
+const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'http://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
@@ -39,9 +29,9 @@ const gstart = process.hrtime.bigint();
 // store all run durations
 let metrics = [];
 
-// Open a Chromium browser. We use headless: false
-// to be able to watch the browser window.
-const browser = await chromium.launch(browser_options);
+// Connect to an existing browser
+console.log("Connection to browser on " + browserAddress);
+const browser = await chromium.connectOverCDP(browserAddress);
 
 for (var run = 1; run<=runs; run++) {
 
