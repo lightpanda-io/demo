@@ -11,40 +11,12 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import fs from 'fs';
 
 // Import the Chromium browser into our scraper.
 import { chromium } from 'playwright';
 
-// check if browser path if a local path or an URL
-let browserPath = process.env.BROWSER_PATH;
-let networkPath;
-if (browserPath) {
-
-    // not local path
-    if (!fs.existsSync(browserPath)) {
-	if (!browserPath.startsWith("http://")) {
-	    browserPath = "http://" + browserPath
-	}
-	const url = new URL(browserPath);
-	networkPath = url.host;
-    }
-}
-
-// options passed to the browser
-let browserOptions = {};
-if (!networkPath) {
-
-    // chrome browser path
-    if (browserPath) {
-	browserOptions.executablePath = browserPath;
-    }
-
-    // headless
-    if (process.env.HEADLESS) {
-	browserOptions.headless = process.env.HEADLESS === 'true';
-    }
-}
+// browserAddress
+const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'http://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
@@ -57,32 +29,9 @@ const gstart = process.hrtime.bigint();
 // store all run durations
 let metrics = [];
 
-let browser;
-if (networkPath) {
-
-    // Connect to an existing browser
-    console.log("Connection to browser on " + networkPath + "...");
-
-    const resp = await fetch("http://" + networkPath + "/json/version");
-    const version = await resp.json()
-    const wsURL = version.webSocketDebuggerUrl;
-
-    browser = await chromium.connectOverCDP(wsURL);
-
-} else {
-
-    // Launching a new browser
-    if (browserPath) {
-	console.log("Launching browser " + browserPath);
-    } else {
-	console.log("Launching browser");
-    }
-    
-    // We use headless: false
-    // to be able to watch the browser window.
-    browser = await chromium.launch(browserOptions);
-
-}
+// Connect to an existing browser
+console.log("Connection to browser on " + browserAddress);
+const browser = await chromium.connectOverCDP(browserAddress);
 
 for (var run = 1; run<=runs; run++) {
 

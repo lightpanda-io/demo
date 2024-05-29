@@ -165,7 +165,7 @@ Lightpanda browser, but the code is not publicly available yet.
 ### Running the benchmark
 
 The `playwright/cdp.js` benchmark accepts multiple env vars to be configured.
-* `BROWSER_PATH` is the path to your browser implementing the CDP protocol. It can be either the path to a local binary or an URL (host:port) of a running browser. Default value is empty, which will launch the Google Chrome installed through Playwright.
+* `BROWSER_ADDRESS` is the address of the running browser listening the CDP protocol, by default `http://127.0.0.1:9222`.
 * `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
@@ -173,7 +173,7 @@ The `playwright/cdp.js` benchmark accepts multiple env vars to be configured.
 instance and load the page to extract data 100 times.
 
 ```console
-$ BROWSER_PATH=127.0.0.1:9222 npm run bench-cdp
+$ npm run bench-cdp
 ```
 
 ### Results
@@ -182,6 +182,12 @@ $ BROWSER_PATH=127.0.0.1:9222 npm run bench-cdp
 
 We use Google Chrome version 123.0.6312.105.
 
+You have to start the browser first.
+```console
+$ google-chrome --headless=new --disable-gpu --remote-debugging-port=9222
+```
+
+Then you can run the benchmark.
 ```console
 $ npm run bench-cdp
 
