@@ -178,7 +178,7 @@ $ BROWSER_PATH=127.0.0.1:9222 npm run bench-cdp
 
 ### Results
 
-**Google Chrome***
+**Google Chrome**
 
 We use Google Chrome version 123.0.6312.105.
 
