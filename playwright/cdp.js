@@ -43,7 +43,7 @@ for (var run = 1; run<=runs; run++) {
     });
 
     const page = await context.newPage();
-    await page.goto('/campfire-commerce');
+    await page.goto('/campfire-commerce/');
 
     // ensure the price is loaded.
     await page.waitForFunction(() => {
