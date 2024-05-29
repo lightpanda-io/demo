@@ -24,7 +24,7 @@ const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:
 // runs
 const runs = process.env.RUNS ? parseInt(process.env.RUNS) : 100;
 
-const executablePath = process.env.CHROME_PATH;
+const executablePath = process.env.CHROME_PATH ? process.env.CHROME_PATH : '/usr/bin/google-chrome';
 
 // measure general time.
 const gstart = process.hrtime.bigint();

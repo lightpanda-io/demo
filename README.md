@@ -169,11 +169,11 @@ The `playwright/cdp.js` benchmark accepts multiple env vars to be configured.
 * `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
-`npm run bench-cdp` starts a playwright process
+`npm run bench-playwright-cdp` starts a playwright process
 instance and load the page to extract data 100 times.
 
 ```console
-$ npm run bench-cdp
+$ npm run bench-playwright-cdp
 ```
 
 ### Results
@@ -189,9 +189,9 @@ $ google-chrome --headless=new --disable-gpu --remote-debugging-port=9222
 
 Then you can run the benchmark.
 ```console
-$ npm run bench-cdp
+$ npm run bench-playwright-cdp
 
-> demo@1.0.0 bench-chrome
+> demo@1.0.0 bench-playwright-cdp
 > node playwright/chrome.js
 
 ................................................................................
