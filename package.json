@@ -20,6 +20,7 @@
   },
   "homepage": "https://lightpanda.io",
   "dependencies": {
-    "playwright": "^1.42.1"
+    "playwright": "^1.42.1",
+    "puppeteer-core": "^22.10.0"
   }
 }
