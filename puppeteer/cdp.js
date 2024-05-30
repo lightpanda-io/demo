@@ -24,17 +24,14 @@ const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:
 // runs
 const runs = process.env.RUNS ? parseInt(process.env.RUNS) : 100;
 
-const executablePath = process.env.CHROME_PATH ? process.env.CHROME_PATH : '/usr/bin/google-chrome';
-
 // measure general time.
 const gstart = process.hrtime.bigint();
 // store all run durations
 let metrics = [];
 
 (async () => {
-  // Launch the browser and open a new blank page
-  const browser = await puppeteer.launch({
-    executablePath: executablePath,
+  // Connect to the browser and open a new blank page
+  const browser = await puppeteer.connect({
     browserURL: browserAddress,
   });
 
@@ -101,7 +98,7 @@ let metrics = [];
     metrics[run] = process.hrtime.bigint() - rstart;
   }
 
-  await browser.close();
+  await browser.disconnect();
 
   const gduration = process.hrtime.bigint() - gstart;
 
