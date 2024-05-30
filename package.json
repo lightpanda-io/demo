@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "ws": "go run ws/main.go",
-    "bench-cdp": "node playwright/cdp.js"
+    "bench-playwright-cdp": "node playwright/cdp.js",
+    "bench-puppeteer-cdp": "node puppeteer/cdp.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://lightpanda.io",
   "dependencies": {
-    "playwright": "^1.42.1"
+    "playwright": "^1.42.1",
+    "puppeteer-core": "^22.10.0"
   }
 }
