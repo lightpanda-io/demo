@@ -46,7 +46,7 @@ let metrics = [];
     const page = await context.newPage();
 
     // Navigate the page to a URL
-    await page.goto(baseURL + '/campfire-commerce');
+    await page.goto(baseURL + '/campfire-commerce/');
 
     // ensure the price is loaded.
     await page.waitForFunction(() => {
