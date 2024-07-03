@@ -192,7 +192,7 @@ Then you can run the benchmark.
 $ npm run bench-playwright-cdp
 
 > demo@1.0.0 bench-playwright-cdp
-> node playwright/chrome.js
+> node playwright/cdp.js
 
 ................................................................................
 ....................
