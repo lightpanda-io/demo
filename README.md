@@ -65,11 +65,11 @@ This bench is a very basic test to compare the two software.
 We start the browser and request the fake web page once with full JS execution. The final DOMTree is
 rendered in stdout.
 
-We use Google Chrome version 122.0.6261.94.
+We use Google Chrome version 130.0.6723.58.
 
 ```console
 $ google-chrome --version
-Google Chrome 122.0.6261.94
+Google Chrome 130.0.6723.58
 ```
 
 ### Execution time
@@ -180,11 +180,11 @@ $ npm run bench-playwright-cdp
 
 **Google Chrome**
 
-We use Google Chrome version 123.0.6312.105.
+We use Google Chrome version 130.0.6723.58.
 
 You have to start the browser first.
 ```console
-$ google-chrome --headless=new --disable-gpu --remote-debugging-port=9222
+$ google-chrome --headless=new --remote-debugging-port=9222
 ```
 
 Then you can run the benchmark.
