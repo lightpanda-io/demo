@@ -147,33 +147,34 @@ $ /usr/bin/time -v ./browsercore-get --dump http://127.0.0.1:1234/campfire-comme
         Exit status: 0
 ```
 
-## Multiple requests using Playwright
+## Multiple requests using Puppeteer
 
 We compare now multiple page loads and js evaluations using
-[Playwright](https://playwright.dev), which connects to the browser using CDP (Chrome Debug Protocol).
+[Puppeteer](https://https://pptr.dev/), which connects to the browser using CDP
+(Chrome Debug Protocol).
 
 ### Dependencies
 
 To run the benchmark, you need ti install [nodejs](https://nodejs.org/en/download).
 
 Once `nodejs` is installed, please run a `npm install` to install nodejs
-dependencies, mainly Playwright.
+dependencies, mainly Puppeteer.
 
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
 Lightpanda browser, but the code is not publicly available yet.
 
 ### Running the benchmark
 
-The `playwright/cdp.js` benchmark accepts multiple env vars to be configured.
+The `puppeteer/cdp.js` benchmark accepts multiple env vars to be configured.
 * `BROWSER_ADDRESS` is the address of the running browser listening the CDP protocol, by default `http://127.0.0.1:9222`.
 * `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
-`npm run bench-playwright-cdp` starts a playwright process
+`npm run bench-puppeteer-cdp` starts a Puppeteer process
 instance and load the page to extract data 100 times.
 
 ```console
-$ npm run bench-playwright-cdp
+$ npm run bench-puppeteer-cdp
 ```
 
 ### Results
@@ -189,18 +190,18 @@ $ google-chrome --headless=new --remote-debugging-port=9222
 
 Then you can run the benchmark.
 ```console
-$ npm run bench-playwright-cdp
+npm run bench-puppeteer-cdp
 
-> demo@1.0.0 bench-playwright-cdp
-> node playwright/cdp.js
+> demo@1.0.0 bench-puppeteer-cdp
+> node puppeteer/cdp.js
 
 ................................................................................
 ....................
 total runs 100
-total duration (ms) 18792
-avg run duration (ms) 184
-min run duration (ms) 168
-max run duration (ms) 323
+total duration (ms) 23637
+avg run duration (ms) 233
+min run duration (ms) 207
+max run duration (ms) 298
 ```
 
 ![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
