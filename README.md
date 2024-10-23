@@ -292,3 +292,7 @@ max run duration (ms) 29
         Page size (bytes): 4096
         Exit status:
 ```
+
+---
+
+Console images generated with [Carbon](https://carbon.now.sh).
