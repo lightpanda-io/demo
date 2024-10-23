@@ -207,7 +207,7 @@ min run duration (ms) 207
 max run duration (ms) 298
 ```
 
-![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
+![aws.m5 Puppeteer with Google Chrome](./img/aws_m5_puppeteer_chrome.png)
 
 ```console
         Command being timed: "google-chrome --headless=new --remote-debugging-port=9222"
@@ -264,6 +264,8 @@ avg run duration (ms) 205
 min run duration (ms) 191
 max run duration (ms) 29
 ```
+
+![aws.m5 Puppeteer with Lightpanda browser](./img/aws_m5_puppeteer_lightpanda.png)
 
 ```console
         Command being timed: "./lightpanda"
