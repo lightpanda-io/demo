@@ -208,3 +208,33 @@ max run duration (ms) 298
 ```
 
 ![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
+
+**Lightpanda browser**
+
+We use Lightpanda commit [826f82610e10634aa57a41abc1fba337a5e9c88b](https://github.com/lightpanda-io/browser/commit/826f82610e10634aa57a41abc1fba337a5e9c88b).
+
+You have to start the Lightpanda Gateway.
+```console
+./gateway
+```
+
+And Lightpanda browser itself.
+```console
+./lightpanda
+```
+
+Then you can run the benchmark.
+```console
+npm run bench-puppeteer-cdp
+
+> demo@1.0.0 bench-puppeteer-cdp
+> node puppeteer/cdp.js
+
+................................................................................
+....................
+total runs 100
+total duration (ms) 20907
+avg run duration (ms) 205
+min run duration (ms) 191
+max run duration (ms) 29
+```
