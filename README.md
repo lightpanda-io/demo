@@ -39,7 +39,7 @@ $ apt install time hyperfine
 ```
 
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
-Lightpanda browser, but the code is not publicly available yet.
+[Lightpanda browser](https://github.com/lightpanda-io/browser/releases/tag/nightly).
 
 ### Demo web page
 
@@ -75,18 +75,18 @@ Google Chrome 130.0.6723.58
 ### Execution time
 
 ```console
-$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/" "./browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/"
-Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/
-  Time (mean ± σ):     556.7 ms ±  10.2 ms    [User: 360.8 ms, System: 170.6 ms]
-  Range (min … max):   538.2 ms … 571.6 ms    20 runs
+$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/" "./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/"
+Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/
+  Time (mean ± σ):     620.6 ms ±  15.5 ms    [User: 357.2 ms, System: 168.9 ms]
+  Range (min … max):   598.0 ms … 647.9 ms    20 runs
 
-Benchmark 2: ./browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/
-  Time (mean ± σ):       8.6 ms ±   0.2 ms    [User: 5.0 ms, System: 3.2 ms]
-  Range (min … max):     8.3 ms …   9.0 ms    20 runs
+Benchmark 2: ./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/
+  Time (mean ± σ):      10.3 ms ±   0.2 ms    [User: 5.6 ms, System: 4.3 ms]
+  Range (min … max):    10.0 ms …  10.7 ms    20 runs
 
 Summary
-  './browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/' ran
-   64.48 ± 1.74 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/'
+  './lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/' ran
+   60.14 ± 1.93 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
 ```
 
 ![aws.m5 hyperfine](./img/aws_m5_hyperfine.png)
@@ -96,47 +96,48 @@ Summary
 ```console
 $ /usr/bin/time -v google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/
         Command being timed: "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/"
-        User time (seconds): 0.38
-        System time (seconds): 0.14
-        Percent of CPU this job got: 96%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.55
+        User time (seconds): 0.34
+        System time (seconds): 0.19
+        Percent of CPU this job got: 94%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 169924
+        Maximum resident set size (kbytes): 174096
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 5
-        Minor (reclaiming a frame) page faults: 20535
-        Voluntary context switches: 2664
-        Involuntary context switches: 1655
+        Major (requiring I/O) page faults: 17
+        Minor (reclaiming a frame) page faults: 20609
+        Voluntary context switches: 2563
+        Involuntary context switches: 1618
         Swaps: 0
-        File system inputs: 0
-        File system outputs: 1624
+        File system inputs: 1048
+        File system outputs: 4576
         Socket messages sent: 0
         Socket messages received: 0
         Signals delivered: 0
         Page size (bytes): 4096
         Exit status: 0
+
 ```
 
 ```console
-$ /usr/bin/time -v ./browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/
-        Command being timed: "./browsercore-get --dump http://127.0.0.1:1234/campfire-commerce/"
-        User time (seconds): 0.00
+$ /usr/bin/time -v ./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/
+        Command being timed: "./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/"
+        User time (seconds): 0.01
         System time (seconds): 0.00
-        Percent of CPU this job got: 100%
+        Percent of CPU this job got: 81%
         Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 14348
+        Maximum resident set size (kbytes): 20528
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 751
+        Minor (reclaiming a frame) page faults: 924
         Voluntary context switches: 6
-        Involuntary context switches: 70
+        Involuntary context switches: 1006
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
