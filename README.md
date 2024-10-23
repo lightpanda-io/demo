@@ -72,6 +72,8 @@ $ google-chrome --version
 Google Chrome 130.0.6723.58
 ```
 
+And Lightpanda commit [826f82610e10634aa57a41abc1fba337a5e9c88b](https://github.com/lightpanda-io/browser/commit/826f82610e10634aa57a41abc1fba337a5e9c88b).
+
 ### Execution time
 
 ```console
