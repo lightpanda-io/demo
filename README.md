@@ -188,7 +188,7 @@ We use Google Chrome version 130.0.6723.58.
 
 You have to start the browser first.
 ```console
-$ google-chrome --headless=new --remote-debugging-port=9222
+$ /usr/bin/time -v google-chrome --headless=new --remote-debugging-port=9222
 ```
 
 Then you can run the benchmark.
@@ -209,6 +209,32 @@ max run duration (ms) 298
 
 ![aws.m5 Playwright with Google Chrome](./img/aws_m5_playwright_chrome.png)
 
+```console
+        Command being timed: "google-chrome --headless=new --remote-debugging-port=9222"
+        User time (seconds): 16.26
+        System time (seconds): 6.49
+        Percent of CPU this job got: 74%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.61
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 206500
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 8
+        Minor (reclaiming a frame) page faults: 255088
+        Voluntary context switches: 144548
+        Involuntary context switches: 86315
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 168872
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+```
+
 **Lightpanda browser**
 
 We use Lightpanda commit [826f82610e10634aa57a41abc1fba337a5e9c88b](https://github.com/lightpanda-io/browser/commit/826f82610e10634aa57a41abc1fba337a5e9c88b).
@@ -220,7 +246,7 @@ You have to start the Lightpanda Gateway.
 
 And Lightpanda browser itself.
 ```console
-./lightpanda
+/usr/bin/time -v ./lightpanda
 ```
 
 Then you can run the benchmark.
@@ -237,4 +263,30 @@ total duration (ms) 20907
 avg run duration (ms) 205
 min run duration (ms) 191
 max run duration (ms) 29
+```
+
+```console
+        Command being timed: "./lightpanda"
+        User time (seconds): 25.39
+        System time (seconds): 9.14
+        Percent of CPU this job got: 99%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.67
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 98100
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 29282
+        Voluntary context switches: 293
+        Involuntary context switches: 1153
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status:
 ```
