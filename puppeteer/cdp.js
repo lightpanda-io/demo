@@ -35,7 +35,7 @@ let metrics = [];
     browserURL: browserAddress,
   });
 
-  for (var run = 1; run<=runs; run++) {
+  for (var run = 0; run<runs; run++) {
     // measure run time.
     const rstart = process.hrtime.bigint();
 

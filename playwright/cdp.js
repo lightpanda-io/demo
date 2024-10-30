@@ -33,7 +33,7 @@ let metrics = [];
 console.log("Connection to browser on " + browserAddress);
 const browser = await chromium.connectOverCDP(browserAddress);
 
-for (var run = 1; run<=runs; run++) {
+for (var run = 0; run<runs; run++) {
 
     // measure run time.
     const rstart = process.hrtime.bigint();
