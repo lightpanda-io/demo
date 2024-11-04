@@ -72,23 +72,23 @@ $ google-chrome --version
 Google Chrome 130.0.6723.58
 ```
 
-And Lightpanda commit [826f82610e10634aa57a41abc1fba337a5e9c88b](https://github.com/lightpanda-io/browser/commit/826f82610e10634aa57a41abc1fba337a5e9c88b).
+And Lightpanda commit [1e64513c16acce6c4d58a1b3c32b0e2d3c8201d2](https://github.com/lightpanda-io/browser/commit/1e64513c16acce6c4d58a1b3c32b0e2d3c8201d2).
 
 ### Execution time
 
 ```console
-$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/" "./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/"
+$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/" "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
 Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/
-  Time (mean ± σ):     620.6 ms ±  15.5 ms    [User: 357.2 ms, System: 168.9 ms]
-  Range (min … max):   598.0 ms … 647.9 ms    20 runs
+  Time (mean ± σ):     618.9 ms ±  12.8 ms    [User: 363.0 ms, System: 162.0 ms]
+  Range (min … max):   598.2 ms … 659.2 ms    20 runs
 
-Benchmark 2: ./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/
-  Time (mean ± σ):      10.3 ms ±   0.2 ms    [User: 5.6 ms, System: 4.3 ms]
-  Range (min … max):    10.0 ms …  10.7 ms    20 runs
+Benchmark 2: ./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/
+  Time (mean ± σ):       9.9 ms ±   0.3 ms    [User: 5.8 ms, System: 3.7 ms]
+  Range (min … max):     9.3 ms …  10.4 ms    20 runs
 
 Summary
-  './lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/' ran
-   60.14 ± 1.93 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
+  './lightpanda --dump http://127.0.0.1:1234/campfire-commerce/' ran
+   62.58 ± 2.32 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
 ```
 
 ![aws.m5 hyperfine](./img/aws_m5_hyperfine.png)
@@ -124,22 +124,22 @@ $ /usr/bin/time -v google-chrome --user-data-dir=/tmp/bench_chrome --headless=ne
 ```
 
 ```console
-$ /usr/bin/time -v ./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/
-        Command being timed: "./lightpanda-get --dump http://127.0.0.1:1234/campfire-commerce/"
-        User time (seconds): 0.01
+$ /usr/bin/time -v ./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/
+        Command being timed: "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
+        User time (seconds): 0.00
         System time (seconds): 0.00
-        Percent of CPU this job got: 81%
+        Percent of CPU this job got: 92%
         Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 20528
+        Maximum resident set size (kbytes): 21276
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 924
+        Minor (reclaiming a frame) page faults: 925
         Voluntary context switches: 6
-        Involuntary context switches: 1006
+        Involuntary context switches: 11
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
@@ -193,7 +193,7 @@ $ /usr/bin/time -v google-chrome --headless=new --remote-debugging-port=9222
 
 Then you can run the benchmark.
 ```console
-npm run bench-puppeteer-cdp
+$ npm run bench-puppeteer-cdp
 
 > demo@1.0.0 bench-puppeteer-cdp
 > node puppeteer/cdp.js
@@ -201,33 +201,33 @@ npm run bench-puppeteer-cdp
 ................................................................................
 ....................
 total runs 100
-total duration (ms) 23637
-avg run duration (ms) 233
-min run duration (ms) 207
-max run duration (ms) 298
+total duration (ms) 25218
+avg run duration (ms) 248
+min run duration (ms) 216
+max run duration (ms) 451
 ```
 
 ![aws.m5 Puppeteer with Google Chrome](./img/aws_m5_puppeteer_chrome.png)
 
 ```console
         Command being timed: "google-chrome --headless=new --remote-debugging-port=9222"
-        User time (seconds): 16.26
-        System time (seconds): 6.49
-        Percent of CPU this job got: 74%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:30.61
+        User time (seconds): 16.19
+        System time (seconds): 6.59
+        Percent of CPU this job got: 41%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:54.51
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 206500
+        Maximum resident set size (kbytes): 207828
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 8
-        Minor (reclaiming a frame) page faults: 255088
-        Voluntary context switches: 144548
-        Involuntary context switches: 86315
+        Major (requiring I/O) page faults: 138
+        Minor (reclaiming a frame) page faults: 265165
+        Voluntary context switches: 143625
+        Involuntary context switches: 82912
         Swaps: 0
-        File system inputs: 0
-        File system outputs: 168872
+        File system inputs: 35680
+        File system outputs: 169688
         Socket messages sent: 0
         Socket messages received: 0
         Signals delivered: 0
@@ -237,7 +237,7 @@ max run duration (ms) 298
 
 **Lightpanda browser**
 
-We use Lightpanda commit [826f82610e10634aa57a41abc1fba337a5e9c88b](https://github.com/lightpanda-io/browser/commit/826f82610e10634aa57a41abc1fba337a5e9c88b).
+We use Lightpanda commit [1e64513c16acce6c4d58a1b3c32b0e2d3c8201d2](https://github.com/lightpanda-io/browser/commit/1e64513c16acce6c4d58a1b3c32b0e2d3c8201d2).
 
 You have to start the Lightpanda Gateway.
 ```console
@@ -251,7 +251,7 @@ And Lightpanda browser itself.
 
 Then you can run the benchmark.
 ```console
-npm run bench-puppeteer-cdp
+$ npm run bench-puppeteer-cdp
 
 > demo@1.0.0 bench-puppeteer-cdp
 > node puppeteer/cdp.js
@@ -259,30 +259,30 @@ npm run bench-puppeteer-cdp
 ................................................................................
 ....................
 total runs 100
-total duration (ms) 20907
-avg run duration (ms) 205
-min run duration (ms) 191
-max run duration (ms) 29
+total duration (ms) 3456
+avg run duration (ms) 32
+min run duration (ms) 23
+max run duration (ms) 105
 ```
 
 ![aws.m5 Puppeteer with Lightpanda browser](./img/aws_m5_puppeteer_lightpanda.png)
 
 ```console
         Command being timed: "./lightpanda"
-        User time (seconds): 25.39
-        System time (seconds): 9.14
+        User time (seconds): 41.78
+        System time (seconds): 14.15
         Percent of CPU this job got: 99%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:34.67
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.14
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 98100
+        Maximum resident set size (kbytes): 100940
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 29282
-        Voluntary context switches: 293
-        Involuntary context switches: 1153
+        Minor (reclaiming a frame) page faults: 29326
+        Voluntary context switches: 235
+        Involuntary context switches: 4099
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
@@ -290,7 +290,7 @@ max run duration (ms) 29
         Socket messages received: 0
         Signals delivered: 0
         Page size (bytes): 4096
-        Exit status:
+        Exit status: 0
 ```
 
 ---
