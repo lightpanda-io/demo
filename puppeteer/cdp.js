@@ -16,7 +16,7 @@
 import puppeteer from 'puppeteer-core';
 
 // ws address
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'http://127.0.0.1:9222';
+const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
@@ -31,9 +31,14 @@ let metrics = [];
 
 (async () => {
   // Connect to the browser and open a new blank page
-  const browser = await puppeteer.connect({
-    browserURL: browserAddress,
-  });
+  let opts = {};
+  if (browserAddress.substring(0, 5) == 'ws://') {
+      opts.browserWSEndpoint = browserAddress;
+  } else {
+      opts.browserURL = browserAddress;
+  }
+
+  const browser = await puppeteer.connect(opts);
 
   for (var run = 0; run<runs; run++) {
     // measure run time.

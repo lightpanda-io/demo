@@ -169,7 +169,7 @@ Lightpanda browser, but the code is not publicly available yet.
 ### Running the benchmark
 
 The `puppeteer/cdp.js` benchmark accepts multiple env vars to be configured.
-* `BROWSER_ADDRESS` is the address of the running browser listening the CDP protocol, by default `http://127.0.0.1:9222`.
+* `BROWSER_ADDRESS` is the address of the running browser listening the CDP protocol, by default `ws://127.0.0.1:9222`.
 * `BASE_URL` is the base url of the running web reser to request, by default `http://127.0.0.1:1234`.
 * `RUNS` is the number of pages loaded by the benchmark, default is `100`.
 
@@ -193,7 +193,7 @@ $ /usr/bin/time -v google-chrome --headless=new --remote-debugging-port=9222
 
 Then you can run the benchmark.
 ```console
-$ npm run bench-puppeteer-cdp
+$ BROWSER_ADDRESS=http://127.0.0.1:9222 npm run bench-puppeteer-cdp
 
 > demo@1.0.0 bench-puppeteer-cdp
 > node puppeteer/cdp.js
