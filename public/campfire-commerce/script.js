@@ -7,12 +7,8 @@
 detailsXHR.open('GET', document.URL + 'json/product.json');
   detailsXHR.responseType = 'json';
   detailsXHR.onload = function() {
-    // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
-    // if (this.status === 200) {
-    //   updateProductInfo(this.response);
-    // }
-    if (detailsXHR.status === 200) {
-      updateProductInfo(detailsXHR.response);
+    if (this.status === 200) {
+      updateProductInfo(this.response);
     }
   };
   detailsXHR.send();
@@ -23,12 +19,8 @@ detailsXHR.open('GET', document.URL + 'json/product.json');
   reviewsXHR.open('GET', document.URL + 'json/reviews.json');
   reviewsXHR.responseType = 'json';
   reviewsXHR.onload = function() {
-    // blocked by https://github.com/lightpanda-io/jsruntime-lib/issues/211
-    // if (this.status === 200) {
-    //   updateReviews(this.response);
-    // }
-    if (reviewsXHR.status === 200) {
-      updateReviews(reviewsXHR.response);
+    if (this.status === 200) {
+      updateReviews(this.response);
     }
   };
   reviewsXHR.send();
