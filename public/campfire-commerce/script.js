@@ -1,6 +1,8 @@
 // Fetch product data from JSON source
 // blocked by https://github.com/lightpanda-io/browsercore/issues/187
 // window.addEventListener("load", () => {
+
+  // use XHR to retrieve the product's infos.
   const detailsXHR = new XMLHttpRequest();
   // blocked by https://github.com/lightpanda-io/browsercore/issues/186
   // detailsXHR.open('GET', 'json/product.json');
@@ -13,17 +15,19 @@ detailsXHR.open('GET', document.URL + 'json/product.json');
   };
   detailsXHR.send();
 
-  const reviewsXHR = new XMLHttpRequest();
-  // blocked by https://github.com/lightpanda-io/browsercore/issues/186
-  // reviewsXHR.open('GET', 'json/reviews.json');
-  reviewsXHR.open('GET', document.URL + 'json/reviews.json');
-  reviewsXHR.responseType = 'json';
-  reviewsXHR.onload = function() {
-    if (this.status === 200) {
-      updateReviews(this.response);
+  // use fetch to retrieve reviews.
+  (async function () {
+    try {
+      const url = document.URL + 'json/reviews.json';
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Response status: ${response.status}`);
+      }
+      updateReviews(await response.json());
+    } catch (error) {
+      console.error(error.message);
     }
-  };
-  reviewsXHR.send();
+  }());
 
   // blocked by https://github.com/lightpanda-io/browsercore/issues/185
   //
