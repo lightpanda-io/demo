@@ -237,14 +237,9 @@ max run duration (ms) 451
 
 **Lightpanda browser**
 
-We use Lightpanda commit [8d2d089803ae080fbd9cf4c329470badace99b93](https://github.com/lightpanda-io/browser/commit/8d2d089803ae080fbd9cf4c329470badace99b93).
+We use Lightpanda commit [b846541ff69082f4d283155f0b3651ae0394a240](https://github.com/lightpanda-io/browser/commit/b846541ff69082f4d283155f0b3651ae0394a240).
 
-You have to start the Lightpanda Gateway.
-```console
-./gateway
-```
-
-And Lightpanda browser itself.
+You have to start Lightpanda browser.
 ```console
 /usr/bin/time -v ./lightpanda
 ```
@@ -256,33 +251,34 @@ $ npm run bench-puppeteer-cdp
 > demo@1.0.0 bench-puppeteer-cdp
 > node puppeteer/cdp.js
 
+.
 ................................................................................
-....................
+...................
 total runs 100
-total duration (ms) 3686
-avg run duration (ms) 35
-min run duration (ms) 26
-max run duration (ms) 109
+total duration (ms) 2277
+avg run duration (ms) 22
+min run duration (ms) 18
+max run duration (ms) 40
 ```
 
 ![aws.m5 Puppeteer with Lightpanda browser](./img/aws_m5_puppeteer_lightpanda.png)
 
 ```console
         Command being timed: "./lightpanda"
-        User time (seconds): 6.75
-        System time (seconds): 2.32
-        Percent of CPU this job got: 98%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.20
+        User time (seconds): 1.05
+        System time (seconds): 0.55
+        Percent of CPU this job got: 17%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.25
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 23692
+        Maximum resident set size (kbytes): 23456
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 63559
-        Voluntary context switches: 196
-        Involuntary context switches: 2812
+        Minor (reclaiming a frame) page faults: 62976
+        Voluntary context switches: 8189
+        Involuntary context switches: 2804
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
