@@ -19,6 +19,8 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"strconv"
+	"time"
 )
 
 func main() {
@@ -32,8 +34,32 @@ func main() {
 		dir = "public"
 	}
 
+	handler := http.FileServer(http.Dir(dir))
+	wait := os.Getenv("WS_WAIT")
+	if wait != "" {
+		v, err := strconv.Atoi(wait)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "invalid wait value: %v", err)
+		}
+
+		handler = Slower{
+			next: handler,
+			wait: time.Duration(v) * time.Millisecond,
+		}
+	}
+
 	fmt.Fprintf(os.Stderr, "expose dir: %q\nlisten: %q\n", dir, address)
 
 	// Simple static webserver:
-	log.Fatal(http.ListenAndServe(address, http.FileServer(http.Dir(dir))))
+	log.Fatal(http.ListenAndServe(address, handler))
+}
+
+type Slower struct {
+	next http.Handler
+	wait time.Duration
+}
+
+func (s Slower) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	time.Sleep(s.wait)
+	s.next.ServeHTTP(w, r)
 }
