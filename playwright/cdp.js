@@ -90,7 +90,7 @@ for (var run = 0; run<runs; run++) {
     // console.log(res);
 
     process.stderr.write('.');
-    if(run % 80 == 0) process.stderr.write('\n');
+    if(run > 0 && run % 80 == 0) process.stderr.write('\n');
 
     await page.close();
     await context.close();
