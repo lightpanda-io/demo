@@ -68,7 +68,6 @@ let metrics = [];
     res.name = await page.evaluate(() => { return document.querySelector('#product-name').textContent; });
     res.price = parseFloat(await page.evaluate(() => { return document.querySelector('#product-price').textContent.substring(1); }));
     res.description = await page.evaluate(() => { return document.querySelector('#product-description').textContent; });
-    res.features = await page.evaluate(() => { return document.querySelector('#product-features > li').allTextContents; });
     res.image = await page.evaluate(() => { return document.querySelector('#product-image').getAttribute('src'); });
 
     const related = await page.evaluate(() => {
