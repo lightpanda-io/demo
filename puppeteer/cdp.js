@@ -95,20 +95,24 @@ let metrics = [];
 
     // assertions
     if (res['price'] != 244.99) {
-      throw new Execption("invalid product price");
+      console.log(res);
+      throw new Error("invalid product price");
     }
     if (res['image'] != "images/nomad_000.jpg") {
-      throw new Execption("invalid product image");
+      console.log(res);
+      throw new Error("invalid product image");
     }
     if (res['related'].length != 3) {
-      throw new Execption("invalid products related length");
+      console.log(res);
+      throw new Error("invalid products related length");
     }
     if (res['reviews'].length != 3) {
-      throw new Execption("invalid reviews length");
+      console.log(res);
+      throw new Error("invalid reviews length");
     }
 
     process.stderr.write('.');
-    if(run % 80 == 0) process.stderr.write('\n');
+    if(run > 0 && run % 80 == 0) process.stderr.write('\n');
 
     await page.close();
     await context.close();
