@@ -68,7 +68,6 @@ let metrics = [];
     res.name = await page.evaluate(() => { return document.querySelector('#product-name').textContent; });
     res.price = parseFloat(await page.evaluate(() => { return document.querySelector('#product-price').textContent.substring(1); }));
     res.description = await page.evaluate(() => { return document.querySelector('#product-description').textContent; });
-    res.features = await page.evaluate(() => { return document.querySelector('#product-features > li').allTextContents; });
     res.image = await page.evaluate(() => { return document.querySelector('#product-image').getAttribute('src'); });
 
     const related = await page.evaluate(() => {
@@ -93,6 +92,20 @@ let metrics = [];
     res.reviews = reviews;
 
     //console.log(res);
+
+    // assertions
+    if (res['price'] != 244.99) {
+      throw new Execption("invalid product price");
+    }
+    if (res['image'] != "images/nomad_000.jpg") {
+      throw new Execption("invalid product image");
+    }
+    if (res['related'].length != 3) {
+      throw new Execption("invalid products related length");
+    }
+    if (res['reviews'].length != 3) {
+      throw new Execption("invalid reviews length");
+    }
 
     process.stderr.write('.');
     if(run % 80 == 0) process.stderr.write('\n');
