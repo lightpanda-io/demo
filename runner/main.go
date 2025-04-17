@@ -25,6 +25,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 )
 
 const (
@@ -94,35 +95,56 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	}()
 
 	// Run end to end tests.
-	for _, tc := range [][]string{
-		{"node", "puppeteer/cdp.js"},
-		{"node", "puppeteer/dump.js"},
-		{"node", "puppeteer/links.js"},
-		{"node", "playwright/connect.js"},
+	fails := 0
+	for _, t := range []Test{
+		{Bin: "node", Args: []string{"puppeteer/cdp.js"}, Env: []string{"RUNS=10"}},
+		{Bin: "node", Args: []string{"puppeteer/dump.js"}},
+		{Bin: "node", Args: []string{"puppeteer/links.js"}},
+		{Bin: "node", Args: []string{"playwright/connect.js"}},
+		{Bin: "go", Args: []string{"run", "fetch/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 	} {
-		fmt.Fprintf(stdout, "=== %s\n", strings.Join(tc, " "))
-		if err := runtest(ctx, stdout, stderr, tc[0], tc[1:]...); err != nil {
-			return fmt.Errorf("run test %s: %w", strings.Join(tc, " "), err)
+		if *verbose {
+			t.Stderr = stderr
+			t.Stdout = stdout
+			fmt.Fprintf(stdout, "=== \t%s\n", t)
 		}
+
+		start := time.Now()
+		if err := runtest(ctx, t); err != nil {
+			fmt.Fprintf(stdout, "=== ERR\t%s\n", t)
+			fails++
+			continue
+		}
+
+		fmt.Fprintf(stdout, "=== OK\t%v\t%s\n", time.Since(start), t)
 	}
 
+	if fails > 0 {
+		return fmt.Errorf("%d failures", fails)
+	}
 	return nil
 }
 
-func runtest(ctx context.Context, stdout, stderr io.Writer, bin string, args ...string) error {
-	cmd := exec.CommandContext(ctx, bin, args...)
+type Test struct {
+	Bin    string
+	Args   []string
+	Env    []string // key=value
+	Dir    string
+	Stdout io.Writer
+	Stderr io.Writer
+}
 
-	output, err := cmd.StdoutPipe()
-	if err != nil {
-		return fmt.Errorf("stdoutpipe: %w", err)
-	}
-	go io.Copy(stdout, output)
+func (t Test) String() string {
+	return t.Bin + " " + strings.Join(t.Args, " ")
+}
 
-	erroutput, err := cmd.StderrPipe()
-	if err != nil {
-		return fmt.Errorf("stderrpipe: %w", err)
-	}
-	go io.Copy(stderr, erroutput)
+func runtest(ctx context.Context, t Test) error {
+	cmd := exec.CommandContext(ctx, t.Bin, t.Args...)
+
+	cmd.Env = t.Env
+	cmd.Dir = t.Dir
+	cmd.Stdout = t.Stdout
+	cmd.Stderr = t.Stderr
 
 	if err := cmd.Run(); err != nil {
 		return fmt.Errorf("run: %w", err)
