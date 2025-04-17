@@ -98,8 +98,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	fails := 0
 	for _, t := range []Test{
 		{Bin: "node", Args: []string{"puppeteer/cdp.js"}, Env: []string{"RUNS=10"}},
-		{Bin: "node", Args: []string{"puppeteer/dump.js"}},
-		{Bin: "node", Args: []string{"puppeteer/links.js"}},
+		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
+		{Bin: "node", Args: []string{"puppeteer/links.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "go", Args: []string{"run", "fetch/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 	} {
