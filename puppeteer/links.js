@@ -15,16 +15,19 @@
 
 import puppeteer from 'puppeteer-core';
 
+const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
+const url = process.env.URL ? process.env.URL : 'https://en.wikipedia.org/wiki/Web_browser';
+
 // use browserWSEndpoint to pass the Lightpanda's CDP server address.
 const browser = await puppeteer.connect({
-  browserWSEndpoint: "ws://127.0.0.1:9222",
+  browserWSEndpoint: browserAddress,
 });
 
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://en.wikipedia.org/wiki/Web_browser', {waitUntil: 'load'});
+await page.goto(url, {waitUntil: 'load'});
 
 const links = await page.evaluate(() => {
   return Array.from(document.querySelectorAll('a')).map(row => {
