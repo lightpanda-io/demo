@@ -1,3 +1,3 @@
 module github.com/lightpanda-io/demo/runner
 
-go 1.24.2
+go 1.23
