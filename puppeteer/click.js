@@ -14,6 +14,7 @@
 'use scrict'
 
 import puppeteer from 'puppeteer-core';
+import assert from 'assert';
 
 // ws address
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
@@ -34,6 +35,8 @@ const page = await context.newPage();
 await page.goto('http://127.0.0.1:1234', {waitUntil: 'load'});
 
 await page.click("a[href='campfire-commerce/']");
+
+assert.strictEqual(page.url(), 'http://127.0.0.1:1234/campfire-commerce/', 'The new page URL is not as expected.');
 
 await page.close();
 await context.close();
