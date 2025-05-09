@@ -1,12 +1,8 @@
 // Fetch product data from JSON source
-// blocked by https://github.com/lightpanda-io/browsercore/issues/187
-// window.addEventListener("load", () => {
-
+window.addEventListener("load", () => {
   // use XHR to retrieve the product's infos.
   const detailsXHR = new XMLHttpRequest();
-  // blocked by https://github.com/lightpanda-io/browsercore/issues/186
-  // detailsXHR.open('GET', 'json/product.json');
-detailsXHR.open('GET', document.URL + 'json/product.json');
+  detailsXHR.open('GET', 'json/product.json');
   detailsXHR.responseType = 'json';
   detailsXHR.onload = function() {
     if (this.status === 200) {
@@ -29,18 +25,16 @@ detailsXHR.open('GET', document.URL + 'json/product.json');
     }
   }());
 
-  // blocked by https://github.com/lightpanda-io/browsercore/issues/185
-  //
-  // var MenuItems = document.getElementById('MenuItems');
-  // MenuItems.style.maxHeight = '0px';
-  //
-  // function menutoggle() {
-  //   if (MenuItems.style.maxHeight == '0px') {
-  //     MenuItems.style.maxHeight = '200px';
-  //   } else {
-  //     MenuItems.style.maxHeight = '0px';
-  //   }
-  // }
+  var MenuItems = document.getElementById('MenuItems');
+  MenuItems.style.maxHeight = '0px';
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px';
+    } else {
+      MenuItems.style.maxHeight = '0px';
+    }
+  }
 
   var ProductImg = document.getElementById('product-image');
   document.getElementById('small-product-image-1').onclick = function() {
@@ -49,16 +43,17 @@ detailsXHR.open('GET', document.URL + 'json/product.json');
   document.getElementById('small-product-image-2').onclick = function() {
     ProductImg.src = this.src;
   };
-// });
+});
 
 
 
 // Update product information in HTML elements
 function updateProductInfo(product) {
-  // blocked by https://github.com/lightpanda-io/browsercore/issues/20
-  // document.getElementById('product-image').src = product.image;
-  // document.getElementById('small-product-image-1').src = product.image;
-  // document.getElementById('small-product-image-2').src = product.images[0];
+
+  document.getElementById('product-image').src = product.image;
+  document.getElementById('small-product-image-1').src = product.image;
+  document.getElementById('small-product-image-2').src = product.images[0];
+
   document.getElementById('product-image').setAttribute('src', product.image);
   document.getElementById('small-product-image-1').setAttribute('src', product.image);
   document.getElementById('small-product-image-2').setAttribute('src', product.images[0]);
