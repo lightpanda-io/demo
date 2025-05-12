@@ -41,8 +41,9 @@ const context = await browser.newContext({
 });
 
 const page = await context.newPage();
+await page.goto("/");
 
-await page.locator("a[href='campfire-commerce/']").click();
+await page.getByText('Campfire Commerce').click();
 
 if (page.url() !== 'http://127.0.0.1:1234/campfire-commerce/') {
   throw new Error('The new page URL is not as expected.');
