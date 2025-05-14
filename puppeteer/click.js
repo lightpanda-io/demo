@@ -41,7 +41,7 @@ assert.strictEqual(page.url(), 'http://127.0.0.1:1234/campfire-commerce/', 'The 
 // ensure product's details is loaded
 const price = parseFloat(await page.evaluate(() => { return document.querySelector('#product-price').textContent.substring(1); }));
 if (price != 244.99) {
-  console.log(res);
+  console.log(price);
   throw new Error("invalid product price");
 }
 
@@ -55,7 +55,7 @@ const reviews = await page.evaluate(() => {
   });
 });
 if (reviews.length != 3) {
-  console.log(res);
+  console.log(reviews);
   throw new Error("invalid reviews length");
 }
 

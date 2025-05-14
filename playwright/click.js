@@ -49,6 +49,25 @@ if (page.url() !== 'http://127.0.0.1:1234/campfire-commerce/') {
   throw new Error('The new page URL is not as expected.');
 }
 
+// ensure product's details is loaded
+const price = parseFloat((await page.locator('#product-price').textContent()).substring(1));
+if (price !== 244.99) {
+  console.log(price);
+  throw new Error("invalid product price");
+}
+
+// ensure reviews are loaded
+const reviews = await page.locator('#product-reviews > div').evaluateAll((rows) => {
+  return rows.map(row => ({
+    name: row.querySelector('h4').textContent,
+    text: row.querySelector('p').textContent,
+  }));
+});
+if (reviews.length !== 3) {
+  console.log(reviews);
+  throw new Error("invalid reviews length");
+}
+
 await page.close();
 await context.close();
 
