@@ -63,7 +63,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	exec := args[0]
 	flags.Usage = func() {
 		fmt.Fprintf(stderr, "usage: %s <url>]\n", exec)
-		fmt.Fprintf(stderr, "chromedp fetch url.\n")
+		fmt.Fprintf(stderr, "chromedp fetch url and click on `campfire-commerce`.\n")
 		fmt.Fprintf(stderr, "\nCommand line options:\n")
 		flags.PrintDefaults()
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
@@ -102,23 +102,37 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("new tab: %w", err)
 	}
 
-	err := chromedp.Run(ctx, chromedp.Navigate(url))
-	if err != nil {
-		return fmt.Errorf("navigate %s: %w", url, err)
-	}
-
-	var currentURL string
-	err = chromedp.Run(ctx,
+	// Navigate and click on the link
+	err := chromedp.Run(ctx,
+		chromedp.Navigate(url),
 		chromedp.Click("a[href='campfire-commerce/']", chromedp.ByQuery),
-		// wait or sleep?
-		chromedp.Location(&currentURL),
 	)
 	if err != nil {
 		return fmt.Errorf("click: %w", err)
 	}
 
+	// Validation
+	var currentURL string
+	var priceText string
+	var reviewNames []string
+	var reviewTexts []string
+	err = chromedp.Run(ctx,
+		chromedp.Location(&currentURL),
+		chromedp.Text("#product-price", &priceText, chromedp.NodeVisible, chromedp.ByQuery),
+		chromedp.Evaluate(`Array.from(document.querySelectorAll('#product-reviews > div h4')).map(e => e.textContent)`, &reviewNames),
+		chromedp.Evaluate(`Array.from(document.querySelectorAll('#product-reviews > div p')).map(e => e.textContent)`, &reviewTexts),
+	)
+	if err != nil {
+		return fmt.Errorf("checks failed: %w", err)
+	}
 	if currentURL != "http://127.0.0.1:1234/campfire-commerce/" {
-		log.Fatal("The new page URL is not as expected.")
+		return errors.New("the new page URL is not as expected")
+	}
+	if priceText != "$244.99" {
+		return fmt.Errorf("incorrect product price: %s", priceText)
+	}
+	if len(reviewNames) != 3 || len(reviewTexts) != 3 {
+		return errors.New("incorrect reviews count")
 	}
 
 	return nil
