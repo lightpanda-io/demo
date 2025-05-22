@@ -69,26 +69,31 @@ We use Google Chrome version 130.0.6723.58.
 
 ```console
 $ google-chrome --version
-Google Chrome 130.0.6723.58
+Google Chrome 136.0.7103.113
 ```
 
-And Lightpanda commit [b846541ff69082f4d283155f0b3651ae0394a240](https://github.com/lightpanda-io/browser/commit/b846541ff69082f4d283155f0b3651ae0394a240).
+And Lightpanda commit [eed3d27](https://github.com/lightpanda-io/browser/commit/eed3d27).
+
+```console
+$ ./lightpanda version
+eed3d27
+```
 
 ### Execution time
 
 ```console
 $ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/" "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
 Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/
-  Time (mean ± σ):     598.7 ms ±   8.6 ms    [User: 348.0 ms, System: 165.1 ms]
-  Range (min … max):   586.3 ms … 611.9 ms    20 runs
+  Time (mean ± σ):     589.8 ms ±   7.5 ms    [User: 353.0 ms, System: 161.5 ms]
+  Range (min … max):   575.4 ms … 604.8 ms    20 runs
 
 Benchmark 2: ./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/
-  Time (mean ± σ):      19.6 ms ±   0.1 ms    [User: 6.7 ms, System: 4.1 ms]
-  Range (min … max):    19.4 ms …  19.9 ms    20 runs
+  Time (mean ± σ):      37.1 ms ±   1.2 ms    [User: 31.7 ms, System: 6.8 ms]
+  Range (min … max):    34.9 ms …  40.9 ms    20 runs
 
 Summary
   './lightpanda --dump http://127.0.0.1:1234/campfire-commerce/' ran
-   30.50 ± 0.49 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
+   15.91 ± 0.57 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
 ```
 
 ![aws.m5 hyperfine](./img/aws_m5_hyperfine.png)
@@ -98,48 +103,47 @@ Summary
 ```console
 $ /usr/bin/time -v google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/
         Command being timed: "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/"
-        User time (seconds): 0.34
-        System time (seconds): 0.19
-        Percent of CPU this job got: 94%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.57
+        User time (seconds): 0.36
+        System time (seconds): 0.18
+        Percent of CPU this job got: 91%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.60
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 174096
+        Maximum resident set size (kbytes): 183212
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 17
-        Minor (reclaiming a frame) page faults: 20609
-        Voluntary context switches: 2563
-        Involuntary context switches: 1618
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 21131
+        Voluntary context switches: 3066
+        Involuntary context switches: 1548
         Swaps: 0
-        File system inputs: 1048
-        File system outputs: 4576
+        File system inputs: 0
+        File system outputs: 3488
         Socket messages sent: 0
         Socket messages received: 0
         Signals delivered: 0
         Page size (bytes): 4096
         Exit status: 0
-
 ```
 
 ```console
-$ /usr/bin/time -v ./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/
-        Command being timed: "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
-        User time (seconds): 0.00
-        System time (seconds): 0.00
-        Percent of CPU this job got: 92%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.01
+$ /usr/bin/time -v ./lightpanda fetch --dump http://127.0.0.1:1234/campfire-commerce/
+        Command being timed: "./lightpanda fetch --dump http://127.0.0.1:1234/campfire-commerce/"
+        User time (seconds): 0.03
+        System time (seconds): 0.01
+        Percent of CPU this job got: 100%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.04
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 21276
+        Maximum resident set size (kbytes): 26540
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 925
-        Voluntary context switches: 6
-        Involuntary context switches: 11
+        Minor (reclaiming a frame) page faults: 1229
+        Voluntary context switches: 32
+        Involuntary context switches: 827
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
@@ -201,33 +205,33 @@ $ BROWSER_ADDRESS=http://127.0.0.1:9222 npm run bench-puppeteer-cdp
 ................................................................................
 ....................
 total runs 100
-total duration (ms) 25218
-avg run duration (ms) 248
-min run duration (ms) 216
-max run duration (ms) 451
+total duration (ms) 25275
+avg run duration (ms) 251
+min run duration (ms) 218
+max run duration (ms) 448
 ```
 
 ![aws.m5 Puppeteer with Google Chrome](./img/aws_m5_puppeteer_chrome.png)
 
 ```console
         Command being timed: "google-chrome --headless=new --remote-debugging-port=9222"
-        User time (seconds): 16.19
-        System time (seconds): 6.59
-        Percent of CPU this job got: 41%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:54.51
+        User time (seconds): 16.38
+        System time (seconds): 6.13
+        Percent of CPU this job got: 68%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:32.78
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 207828
+        Maximum resident set size (kbytes): 217020
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 138
-        Minor (reclaiming a frame) page faults: 265165
-        Voluntary context switches: 143625
-        Involuntary context switches: 82912
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 298036
+        Voluntary context switches: 171980
+        Involuntary context switches: 87943
         Swaps: 0
-        File system inputs: 35680
-        File system outputs: 169688
+        File system inputs: 0
+        File system outputs: 34680
         Socket messages sent: 0
         Socket messages received: 0
         Signals delivered: 0
@@ -241,7 +245,7 @@ We use Lightpanda commit [b846541ff69082f4d283155f0b3651ae0394a240](https://gith
 
 You have to start Lightpanda browser.
 ```console
-/usr/bin/time -v ./lightpanda
+/usr/bin/time -v ./lightpanda serve --gc_hints
 ```
 
 Then you can run the benchmark.
@@ -255,30 +259,30 @@ $ npm run bench-puppeteer-cdp
 ................................................................................
 ...................
 total runs 100
-total duration (ms) 2277
-avg run duration (ms) 22
-min run duration (ms) 18
-max run duration (ms) 40
+total duration (ms) 2861
+avg run duration (ms) 28
+min run duration (ms) 24
+max run duration (ms) 56
 ```
 
 ![aws.m5 Puppeteer with Lightpanda browser](./img/aws_m5_puppeteer_lightpanda.png)
 
 ```console
-        Command being timed: "./lightpanda"
-        User time (seconds): 1.05
-        System time (seconds): 0.55
-        Percent of CPU this job got: 17%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:09.25
+        Command being timed: "./lightpanda serve --gc_hints"
+        User time (seconds): 2.80
+        System time (seconds): 0.29
+        Percent of CPU this job got: 50%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.15
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 23456
+        Maximum resident set size (kbytes): 31544
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 62976
-        Voluntary context switches: 8189
-        Involuntary context switches: 2804
+        Minor (reclaiming a frame) page faults: 42935
+        Voluntary context switches: 4588
+        Involuntary context switches: 4494
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
