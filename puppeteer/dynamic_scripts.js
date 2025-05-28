@@ -32,7 +32,7 @@ await page.goto(baseURL + '/dynamic_scripts/index.html');;
 await page.waitForFunction(() => {
     const products = document.querySelector('#product');
     return products.textContent.length > 0;
-});
+}, {timeout: 1000});
 
 const product = await page.evaluate(() => { return document.querySelector('#product').textContent; });
 if (product !== 'Keemun') {
