@@ -11,32 +11,47 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-'use scrict'
 
-import puppeteer from 'puppeteer-core';
+// Import the Chromium browser into our scraper.
+import { chromium } from 'playwright';
 
+// browserAddress
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
-const url = process.env.URL ? process.env.URL : 'https://wikipedia.com';
 
-// use browserWSEndpoint to pass the Lightpanda's CDP server address.
-const browser = await puppeteer.connect({
-  browserWSEndpoint: browserAddress,
+// web serveur url
+const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
+
+// measure general time.
+const gstart = process.hrtime.bigint();
+// store all run durations
+let metrics = [];
+
+// Connect to an existing browser
+console.log("Connection to browser on " + browserAddress);
+const browser = await chromium.connectOverCDP({
+    endpointURL: browserAddress,
+    logger: {
+      isEnabled: (name, severity) => true,
+      log: (name, severity, message, args) => console.log(`${name} ${message}`)
+    }
 });
 
-// The rest of your script remains the same.
-const context = await browser.createBrowserContext();
+
+const context = await browser.newContext({
+    baseURL: baseURL,
+});
+
 const page = await context.newPage();
-
-await page.goto(url);
-
+await page.goto('/campfire-commerce/');
 const html = await page.content();
-console.log(html);
+
 if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
   console.log(html.substring(0, 20));
   throw new Error("html content is not as expected");
 }
 
-
 await page.close();
 await context.close();
-await browser.disconnect();
+
+// Turn off the browser to clean up after ourselves.
+await browser.close();
