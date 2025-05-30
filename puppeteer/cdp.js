@@ -54,14 +54,14 @@ let metrics = [];
     await page.waitForFunction(() => {
         const price = document.querySelector('#product-price');
         return price.textContent.length > 0;
-    });
+    }, {timeout: 100}); // timeout 100ms
 
 
     // ensure the reviews are loaded.
     await page.waitForFunction(() => {
         const reviews = document.querySelectorAll('#product-reviews > div');
         return reviews.length > 0;
-    });
+    }, {timeout: 100}); // timeout 100ms
 
     let res = {};
 
