@@ -28,45 +28,65 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
 await testForm(page, '/form/get.html', {
-	method: 'GET',
-	body: '',
-	query: 'h1=v1&h3=v3&favorite+drink=tea',
+  method: 'GET',
+  body: '',
+  query: 'h1=v1&h3=v3&favorite+drink=tea',
 });
 
 await testForm(page, '/form/post.html', {
-	method: 'POST',
-	body: 'h1=v1&h3=v3&favorite+drink=tea',
-	query: '',
+  method: 'POST',
+  body: 'h1=v1&h3=v3&favorite+drink=tea',
+  query: '',
 });
 
+await testForm(page, '/form/submit_button.html', {
+  method: 'POST',
+  body: 'h1=v1&h3=v3&favorite+drink=tea&s1=go',
+  query: '',
+}, async () => {
+  await page.click("[name=s1]");
+});
+
+await testForm(page, '/form/input_button.html', {
+  method: 'POST',
+  body: 'h1=v1&h3=v3&favorite+drink=tea&b1=b1v',
+  query: '',
+}, async () => {
+  await page.click("[name=b2]"); // disabled, should do nothing
+  await page.click("[name=b3]"); // not submit
+  await page.click("[name=b1]");
+});
 
 await context.close();
 await browser.disconnect();
 
+async function testForm(page, url, expected, onLoad) {
+  await page.goto(baseURL + url);
 
-async function testForm(page, url, expected) {
-	await page.goto(baseURL + url);;
+  if (onLoad) {
+    await onLoad();
+  }
 
-	await page.waitForFunction(() => {
-	    const p = document.querySelector('#method');
-	    return p.textContent != '';
-	}, {timeout: 4000});
+  await page.waitForFunction(() => {
+      const p = document.querySelector('#method');
+      return p.textContent != '';
+  }, {timeout: 4000});
 
-	const method = await page.evaluate(() => { return document.querySelector('#method').textContent; });
-	if (method !== expected.method) {
-	  console.log(method);
-	  throw new Error("invalid method");
-	}
+  const method = await page.evaluate(() => { return document.querySelector('#method').textContent; });
+  if (method !== expected.method) {
+    console.log(method);
+    throw new Error("invalid method");
+  }
 
-	const body = await page.evaluate(() => { return document.querySelector('#body').textContent; });
-	if (body !== expected.body) {
-	  console.log(body);
-	  throw new Error("invalid body");
-	}
+  const body = await page.evaluate(() => { return document.querySelector('#body').textContent; });
+  if (body !== expected.body) {
+    console.log(body);
+    throw new Error("invalid body");
+  }
 
-	const query = await page.evaluate(() => { return document.querySelector('#query').textContent; });
-	if (query !== expected.query) {
-	  console.log(query);
-	  throw new Error("invalid query");
-	}
+  const query = await page.evaluate(() => { return document.querySelector('#query').textContent; });
+  if (query !== expected.query) {
+    console.log(query);
+    throw new Error("invalid query");
+  }
 }
