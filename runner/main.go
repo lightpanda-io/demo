@@ -104,6 +104,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/wait_for_network.js"}},
 		{Bin: "node", Args: []string{"puppeteer/dynamic_scripts.js"}},
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
+		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/click.js"}},
@@ -163,11 +164,11 @@ func runtest(ctx context.Context, t Test) error {
 
 // run the local http server
 func runhttp(ctx context.Context, addr, dir string) error {
-	handler := http.FileServer(http.Dir(dir))
+	fs := http.FileServer(http.Dir(dir))
 
 	srv := &http.Server{
 		Addr:    addr,
-		Handler: handler,
+		Handler: Handler{fs: fs},
 		BaseContext: func(net.Listener) context.Context {
 			return ctx
 		},
@@ -202,4 +203,30 @@ func env(key, dflt string) string {
 	}
 
 	return val
+}
+
+type Handler struct {
+	fs http.Handler
+}
+
+func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	switch req.URL.Path {
+	case "/form/submit":
+		defer req.Body.Close()
+		body, err := io.ReadAll(req.Body)
+		if err != nil {
+			panic(err)
+		}
+
+		res.Header().Add("Content-Type", "text/html")
+		res.Write([]byte("<html><ul><li id=method>"))
+		res.Write([]byte(req.Method))
+		res.Write([]byte("<li id=body>"))
+		res.Write(body)
+		res.Write([]byte("<li id=query>"))
+		res.Write([]byte(req.URL.RawQuery))
+		res.Write([]byte("</ul>"))
+	default:
+		h.fs.ServeHTTP(res, req)
+	}
 }
