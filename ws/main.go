@@ -16,6 +16,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"log"
 	"net/http"
 	"os"
@@ -34,18 +35,17 @@ func main() {
 		dir = "public"
 	}
 
-	handler := http.FileServer(http.Dir(dir))
-	wait := os.Getenv("WS_WAIT")
-	if wait != "" {
+	handler := Handler{
+		next: http.FileServer(http.Dir(dir)),
+		wait: time.Duration(0),
+	}
+
+	if wait := os.Getenv("WS_WAIT"); wait != "" {
 		v, err := strconv.Atoi(wait)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "invalid wait value: %v", err)
 		}
-
-		handler = Slower{
-			next: handler,
-			wait: time.Duration(v) * time.Millisecond,
-		}
+		handler.wait = time.Duration(v) * time.Millisecond
 	}
 
 	fmt.Fprintf(os.Stderr, "expose dir: %q\nlisten: %q\n", dir, address)
@@ -54,12 +54,33 @@ func main() {
 	log.Fatal(http.ListenAndServe(address, handler))
 }
 
-type Slower struct {
+type Handler struct {
 	next http.Handler
 	wait time.Duration
 }
 
-func (s Slower) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	time.Sleep(s.wait)
-	s.next.ServeHTTP(w, r)
+func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	if s.wait > 0 {
+		time.Sleep(s.wait)
+	}
+
+	switch req.URL.Path {
+	case "/form/submit":
+		defer req.Body.Close()
+		body, err := io.ReadAll(req.Body)
+		if err != nil {
+			panic(err)
+		}
+
+		res.Header().Add("Content-Type", "text/html")
+		res.Write([]byte("<html><ul><li id=method>"))
+		res.Write([]byte(req.Method))
+		res.Write([]byte("<li id=body>"))
+		res.Write(body)
+		res.Write([]byte("<li id=query>"))
+		res.Write([]byte(req.URL.RawQuery))
+		res.Write([]byte("</ul>"))
+	default:
+		s.next.ServeHTTP(res, req)
+	}
 }
