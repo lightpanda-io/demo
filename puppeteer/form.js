@@ -30,7 +30,11 @@ const page = await context.newPage();
 await testForm(page, '/form/get.html', {
   method: 'GET',
   body: '',
-  query: 'h1=v1&h3=v3&favorite+drink=tea',
+  query: 'h1=v1&h3=v3hello&favorite+drink=tea&ta=over+9000%21',
+}, async() => {
+  await page.type('#input', 'hello');
+  await page.type('#ta', 'over 9000!');
+  await page.click('#submit');
 });
 
 await testForm(page, '/form/post.html', {
