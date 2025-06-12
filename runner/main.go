@@ -105,6 +105,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/dynamic_scripts.js"}},
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
