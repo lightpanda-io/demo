@@ -77,8 +77,8 @@ And Lightpanda commit [b846541ff69082f4d283155f0b3651ae0394a240](https://github.
 ### Execution time
 
 ```console
-$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/" "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
-Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/
+$ hyperfine --warmup 3 --runs 20 --shell=none "google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/" "./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/"
+Benchmark 1: google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/
   Time (mean ± σ):     598.7 ms ±   8.6 ms    [User: 348.0 ms, System: 165.1 ms]
   Range (min … max):   586.3 ms … 611.9 ms    20 runs
 
@@ -88,7 +88,7 @@ Benchmark 2: ./lightpanda --dump http://127.0.0.1:1234/campfire-commerce/
 
 Summary
   './lightpanda --dump http://127.0.0.1:1234/campfire-commerce/' ran
-   30.50 ± 0.49 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:124/campfire-commerce/'
+   30.50 ± 0.49 times faster than 'google-chrome --user-data-dir=/tmp/bench_chrome --headless=new --dump-dom http://127.0.0.1:1234/campfire-commerce/'
 ```
 
 ![aws.m5 hyperfine](./img/aws_m5_hyperfine.png)
