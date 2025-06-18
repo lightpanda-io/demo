@@ -22,28 +22,28 @@ const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/campfire-
 const browser = await puppeteer.connect({
   browserWSEndpoint: browserAddress,
 });
-
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
 const relevant_cookie = {name: 'left', value: 'right', url: "http://127.0.0.1:1234/"};
 const irrelevant_cookie = {name: 'uo', value: 'down', url: "https://lightpanda.io/"};
-
-await page.setCookie(relevant_cookie, irrelevant_cookie);
+await context.setCookie(relevant_cookie, irrelevant_cookie);
 
 await page.goto(url, {waitUntil: 'load'});
 
-const found_cookies = await page.cookies();
+const found_cookies = await context.cookies();
 for (const cookie of found_cookies) {
   const { name, ...details } = cookie
   console.log(`Cookie: ${name} = ${JSON.stringify(details)}`);
 }
-
-if (found_cookies.length != 1) {
+if (found_cookies.length != 2) {
   throw new Error("Wrong number of cookies found");
 }
-if (found_cookies[0].name !== relevant_cookie.name || found_cookies[0].value !== relevant_cookie.value) {
+
+context.deleteCookie(irrelevant_cookie);
+const found_cookies2 = await context.cookies();
+if (found_cookies2.length != 1 && found_cookies2[0].name !== relevant_cookie.name || found_cookies2[0].value !== relevant_cookie.value) {
   throw new Error("Cookie does not match the expected values");
 }
 
