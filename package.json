@@ -22,6 +22,6 @@
   "homepage": "https://lightpanda.io",
   "dependencies": {
     "playwright": "^1.42.1",
-    "puppeteer-core": "^22.15.0"
+    "puppeteer-core": "^24.10.1"
   }
 }
