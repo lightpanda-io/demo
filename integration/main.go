@@ -98,6 +98,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	fails := 0
 	for _, t := range []Test{
 		{Bin: "node", Args: []string{"integration/duckduckgo.js"}},
+		{Bin: "node", Args: []string{"integration/algolia.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
