@@ -63,7 +63,7 @@ const data = JSON.parse(response);
 
 if (data.url !== 'http://HTTPBIN.io/post') {
   console.log(data.url);
-  throw new Error("Expeted URL to be 'http://HTTPBIN.io/post'");
+  throw new Error("Expected URL to be 'http://HTTPBIN.io/post'");
 }
 
 if (data.headers['Pw-Injected'] != 'great') {
