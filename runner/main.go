@@ -113,8 +113,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/links.js"}, Env: []string{"BASE_URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/click.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception.js"}},
-		{Bin: "go", Args: []string{"run", "fetch/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
-		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "fetch/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 	} {
 		if *verbose {
