@@ -21,11 +21,6 @@ const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
-// measure general time.
-const gstart = process.hrtime.bigint();
-// store all run durations
-let metrics = [];
-
 // Connect to an existing browser
 console.log("Connection to browser on " + browserAddress);
 const browser = await chromium.connectOverCDP({
@@ -35,7 +30,6 @@ const browser = await chromium.connectOverCDP({
       log: (name, severity, message, args) => console.log(`${name} ${message}`)
     }
 });
-
 
 const context = await browser.newContext({
     baseURL: baseURL,

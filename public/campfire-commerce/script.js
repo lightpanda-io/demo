@@ -6,13 +6,16 @@
   const detailsXHR = new XMLHttpRequest();
   // blocked by https://github.com/lightpanda-io/browsercore/issues/186
   // detailsXHR.open('GET', 'json/product.json');
-detailsXHR.open('GET', document.URL + 'json/product.json');
+  detailsXHR.open('GET', document.URL + 'json/product.json');
   detailsXHR.responseType = 'json';
   detailsXHR.onload = function() {
     if (this.status === 200) {
       updateProductInfo(this.response);
     }
   };
+  detailsXHR.onabort = function(err) {
+    document.getElementById('product-description').innerHTML = 'xhr: aborted';
+  }
   detailsXHR.send();
 
   // use fetch to retrieve reviews.
