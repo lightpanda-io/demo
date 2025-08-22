@@ -34,6 +34,12 @@ assert.strictEqual(1, cookies.length, 'Exactly one cookie is set');
 assert.strictEqual('manual', cookies[0].name, 'Cookie name is manual');
 assert.strictEqual('B', cookies[0].value, 'Cookie value is B');
 
+// check the httpbin output from the srv POV.
+const element = await page.$('pre');
+const pre = await page.evaluate(el => el.textContent, element);
+const obj = JSON.parse(pre);
+assert.equal(obj.manual, "B");
+
 await page.close();
 await context.close();
 await browser.disconnect();
