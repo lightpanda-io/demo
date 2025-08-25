@@ -117,6 +117,10 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "ri/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
+
+		// add fetch + tls mostly for proxy
+		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=https://demo-browser.lightpanda.io/campfire-commerce/"}},
+		{Bin: "go", Args: []string{"run", "fetch/main.go", "https://demo-browser.lightpanda.io/campfire-commerce/"}, Dir: "chromedp"},
 	} {
 		if *verbose {
 			t.Stderr = stderr
