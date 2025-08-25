@@ -57,7 +57,10 @@ await page.route('**', async (route, request) => {
 });
 await page.goto('/nope/');
 
-await page.waitForSelector('#response', {timeout: 5000});
+await page.waitForFunction(() => {
+	return document.getElementById('response').textContent.length > 0
+}, {timeout: 5000});
+
 const response = await page.locator('#response').textContent();
 const data = JSON.parse(response);
 
