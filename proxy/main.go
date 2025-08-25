@@ -53,6 +53,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	var (
 		verbose   = flags.Bool("verbose", false, "enable debug log level")
+		username  = flags.String("proxy-username", os.Getenv("PROXY_USERNAME"), "proxy auth username")
+		password  = flags.String("proxy-password", os.Getenv("PROXY_PASSWORD"), "proxy auth password")
 		proxyAddr = flags.String("proxy-addr", env("PROXY_ADDRESS", proxyAddrDefault), "http proxy address")
 	)
 
@@ -65,6 +67,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		flags.PrintDefaults()
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
 		fmt.Fprintf(stderr, "\tPROXY_ADDRESS\tdefault %s\n", proxyAddrDefault)
+		fmt.Fprintf(stderr, "\tPROXY_USERNAME\n")
+		fmt.Fprintf(stderr, "\tPROXY_PASSWORD\n")
 	}
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
@@ -79,12 +83,17 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return errors.New("too much arguments")
 	}
 
-	return runproxy(ctx, *proxyAddr)
+	var auth Auth = nil
+	if *username != "" || *password != "" {
+		auth = BasicAuth{Username: *username, Password: *password}
+	}
+
+	return runproxy(ctx, *proxyAddr, auth)
 }
 
 // run the local http proxy
-func runproxy(ctx context.Context, addr string) error {
-	if err := ListenAndServe(ctx, &DirectTCP{}, addr); err != nil {
+func runproxy(ctx context.Context, addr string, auth Auth) error {
+	if err := ListenAndServe(ctx, auth, &DirectTCP{}, addr); err != nil {
 		return fmt.Errorf("proxy server: %w", err)
 	}
 

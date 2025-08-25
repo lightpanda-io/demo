@@ -57,6 +57,16 @@ func (s *Server) HandleHTTP(ctx context.Context, cli net.Conn) error {
 	log.Debug("handle conn")
 	defer log.Debug("end conn")
 
+	// auth
+	if auth := s.auth; auth != nil {
+		var err error
+		req, err = auth.Authenticate(ctx, req)
+		if err != nil {
+			_ = writeUnauthorized(cli)
+			return fmt.Errorf("dial srv: %w", err)
+		}
+	}
+
 	srv, err := s.bck.DialContext(ctx, req)
 	if err != nil {
 		_ = writeResp(cli, http.StatusBadGateway)
@@ -82,4 +92,13 @@ func (s *Server) HandleHTTP(ctx context.Context, cli net.Conn) error {
 
 	// connect cli with out
 	return Proxy(ctx, cli, srv)
+}
+
+func writeUnauthorized(c net.Conn) error {
+	_, err := fmt.Fprintf(c,
+		"HTTP/1.1 %d %s\r\nProxy-Authenticate: Basic realm=\"Lightpanda\"\r\nProxy-Connection: close\r\n\r\n",
+		http.StatusProxyAuthRequired,
+		http.StatusText(http.StatusProxyAuthRequired),
+	)
+	return err
 }
