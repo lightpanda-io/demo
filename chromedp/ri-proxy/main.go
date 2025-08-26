@@ -115,8 +115,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		case *fetch.EventRequestPaused:
 			go func() {
 				url := ev.Request.URL
-				fmt.Fprintf(os.Stdout, "%s %s\n", ev.RequestID, url)
-
 				// alter the response with a new body
 				if strings.HasSuffix(url, "/reviews.json") {
 					encoded := base64.StdEncoding.EncodeToString([]byte(`["alter review"]`))
@@ -130,7 +128,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 				_ = chromedp.Run(ctx, fetch.ContinueRequest(ev.RequestID))
 			}()
 		case *fetch.EventAuthRequired:
-			slog.Warn("AUTH REQUIRED")
 			if ev.AuthChallenge.Source == fetch.AuthChallengeSourceProxy {
 				go func() {
 					_ = chromedp.Run(ctx,
