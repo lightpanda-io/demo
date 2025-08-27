@@ -7,30 +7,31 @@ import (
 	"log/slog"
 	"net"
 	"net/http"
-	"time"
 )
 
 type Dialer interface {
 	DialContext(ctx context.Context, req *http.Request) (net.Conn, error)
 }
 
-type Usage interface {
-	Usage(ctx context.Context, req *http.Request, started, ended time.Time, in, out int64) error
+type Auth interface {
+	Authenticate(ctx context.Context, req *http.Request) (*http.Request, error)
 }
 
 type Server struct {
-	ln  net.Listener
-	bck Dialer
+	ln   net.Listener
+	bck  Dialer
+	auth Auth
 }
 
-func ListenAndServe(ctx context.Context, bck Dialer, addr string) error {
+func ListenAndServe(ctx context.Context, auth Auth, bck Dialer, addr string) error {
 	l, err := net.Listen("tcp", addr)
 	if err != nil {
 		return err
 	}
 	s := &Server{
-		ln:  l,
-		bck: bck,
+		ln:   l,
+		bck:  bck,
+		auth: auth,
 	}
 	defer s.Close()
 
