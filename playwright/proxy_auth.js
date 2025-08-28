@@ -40,7 +40,7 @@ const browser = await chromium.connectOverCDP({
 const context = await browser.newContext({
     baseURL: baseURL,
     proxy: {
-      server: process.env.PROXY_ADDRESS ? process.env.PROXY_USERNAME : 'http://127.0.0.1:3000',
+      server: process.env.PROXY_ADDRESS ? process.env.PROXY_ADDRESS : 'http://127.0.0.1:3000',
       username: process.env.PROXY_USERNAME,
       password: process.env.PROXY_PASSWORD
     },
