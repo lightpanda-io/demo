@@ -23,6 +23,7 @@ import (
 	"net"
 	"os"
 	"os/exec"
+	"strconv"
 	"sync"
 	"syscall"
 	"time"
@@ -48,6 +49,8 @@ func main() {
 
 	os.Exit(exitOK)
 }
+
+const runs = 50
 
 func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// declare runtime flag parameters.
@@ -86,7 +89,16 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("run chrome: %w", err)
 	}
 
-	metric.Write(stderr)
+	fmt.Fprintln(stdout, "## chrome")
+	metric.Write(stdout)
+
+	metric, err = runLightpanda(ctx, "/home/pierre/wrk/browser/zig-out/bin/lightpanda", urls)
+	if err != nil {
+		return fmt.Errorf("run lightpanda: %w", err)
+	}
+
+	fmt.Fprintln(stdout, "## lightpanda")
+	metric.Write(stdout)
 
 	return nil
 }
@@ -99,6 +111,27 @@ type Metric struct {
 func (m Metric) Write(w io.Writer) {
 	fmt.Fprintf(w, "run duration\t%v\n", m.Duration)
 	fmt.Fprintf(w, "max rss (Mb)\t%v\n", float64(m.MaxRSS)/1024)
+}
+
+func waitready(ctx context.Context, addr string) {
+	dialer := net.Dialer{
+		Timeout: 200 * time.Millisecond,
+	}
+	// try to connect to the browser until it responds
+	for {
+		// ensure context is not done.
+		if err := ctx.Err(); err != nil {
+			return
+		}
+
+		conn, err := dialer.DialContext(ctx, "tcp", addr)
+		if err != nil {
+			// slog.Debug("tcp", slog.Any("err", err), slog.String("addr", addr))
+			continue
+		}
+		conn.Close()
+		break
+	}
 }
 
 func runChrome(ctx context.Context, urls []string) (*Metric, error) {
@@ -130,24 +163,7 @@ func runChrome(ctx context.Context, urls []string) (*Metric, error) {
 
 	// wait addr is active
 	const addr = host + ":" + port
-	dialer := net.Dialer{
-		Timeout: 200 * time.Millisecond,
-	}
-	// try to connect to the browser until it responds
-	for {
-		// ensure context is not done.
-		if err := ctx.Err(); err != nil {
-			return nil, err
-		}
-
-		conn, err := dialer.DialContext(ctx, "tcp", addr)
-		if err != nil {
-			// slog.Debug("tcp", slog.Any("err", err), slog.String("addr", addr))
-			continue
-		}
-		conn.Close()
-		break
-	}
+	waitready(ctx, addr)
 	slog.Debug("browser ready")
 
 	ctx, cancel := chromedp.NewRemoteAllocator(ctx, "http://"+addr)
@@ -157,8 +173,10 @@ func runChrome(ctx context.Context, urls []string) (*Metric, error) {
 		// chromedp.WithDebugf(log.Printf),
 	}
 
+	url := urls[0]
+
 	var ws sync.WaitGroup
-	for _, url := range urls {
+	for range runs {
 		ws.Add(1)
 		func() {
 			defer ws.Done()
@@ -180,6 +198,7 @@ func runChrome(ctx context.Context, urls []string) (*Metric, error) {
 
 			if err != nil {
 				slog.Error("tab nav error", slog.Any("err", err))
+				return
 			}
 		}()
 	}
@@ -195,6 +214,99 @@ func runChrome(ctx context.Context, urls []string) (*Metric, error) {
 	su := cmd.ProcessState.SysUsage()
 	if v, ok := su.(*syscall.Rusage); ok {
 		m.MaxRSS = v.Maxrss
+	}
+
+	return &m, nil
+}
+
+func runLightpanda(ctx context.Context, path string, urls []string) (*Metric, error) {
+	start := time.Now()
+
+	const host = "127.0.0.1"
+
+	// chout := make(chan int64, len(urls))
+	chout := make(chan int64, runs)
+
+	url := urls[0]
+
+	var ws sync.WaitGroup
+	for i := range runs {
+		ws.Add(1)
+		func() {
+			defer ws.Done()
+
+			port := strconv.Itoa(9222 + i)
+			ctx, cmdcancel := context.WithCancel(ctx)
+			defer cmdcancel()
+
+			cmd := exec.CommandContext(ctx, path,
+				"serve",
+				"--host", host,
+				"--port", port,
+				"--log_level", "debug",
+			)
+
+			// cmd.Stderr = os.Stderr
+			// cmd.Stdout = os.Stdout
+
+			if err := cmd.Start(); err != nil {
+				slog.Error("start lightpanda", slog.Any("err", err))
+				cmdcancel()
+				return
+			}
+			defer cmd.Wait()
+
+			// wait addr is active
+			addr := host + ":" + port
+			waitready(ctx, addr)
+			slog.Debug("browser ready")
+
+			ctx, cancel := chromedp.NewRemoteAllocator(ctx,
+				"ws://"+addr, chromedp.NoModifyURL,
+			)
+			defer cancel()
+
+			opts := []chromedp.ContextOption{
+				// chromedp.WithDebugf(log.Printf),
+			}
+
+			slog.Debug("connect to the browser")
+			ctx, cancel = chromedp.NewContext(ctx, opts...)
+
+			err := chromedp.Run(ctx,
+				chromedp.Navigate(url),
+				chromedp.WaitReady("title"),
+			)
+
+			cancel()
+			slog.Debug("end tab", slog.Any("url", url))
+
+			if err != nil {
+				slog.Error("tab nav error", slog.Any("err", err))
+				cmdcancel()
+				return
+			}
+
+			cmdcancel()
+			cmd.Wait()
+
+			slog.Debug("end browser")
+
+			su := cmd.ProcessState.SysUsage()
+			if v, ok := su.(*syscall.Rusage); ok {
+				chout <- v.Maxrss
+			}
+		}()
+	}
+	ws.Wait()
+	close(chout)
+
+	m := Metric{
+		Duration: time.Since(start),
+	}
+
+	for rss := range chout {
+		m.MaxRSS += rss
 	}
 
 	return &m, nil
