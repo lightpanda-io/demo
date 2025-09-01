@@ -14,8 +14,8 @@
 package main
 
 import (
+	"bufio"
 	"context"
-	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -41,7 +41,7 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	err := run(ctx, os.Args, os.Stdout, os.Stderr)
+	err := run(ctx, os.Args, os.Stdout, os.Stderr, os.Stdin)
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err.Error())
 		os.Exit(exitFail)
@@ -50,9 +50,7 @@ func main() {
 	os.Exit(exitOK)
 }
 
-const runs = 50
-
-func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
+func run(ctx context.Context, args []string, stdout, stderr io.Writer, stdin io.Reader) error {
 	// declare runtime flag parameters.
 	flags := flag.NewFlagSet(args[0], flag.ExitOnError)
 	flags.SetOutput(stderr)
@@ -64,8 +62,9 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// usage func declaration.
 	exec := args[0]
 	flags.Usage = func() {
-		fmt.Fprintf(stderr, "usage: %s <urls>]\n", exec)
+		fmt.Fprintf(stderr, "usage: %s [<urls>]\n", exec)
 		fmt.Fprintf(stderr, "chromedp fetch urls with chrome and lightpanda.\n")
+		fmt.Fprintf(stderr, "if no urls are given in argument, the program expects a lsit of URL from stdin.\n")
 		fmt.Fprintf(stderr, "We use multi tabs for Chrome and multiple instances for Lightpanda\n")
 		fmt.Fprintf(stderr, "\nCommand line options:\n")
 		flags.PrintDefaults()
@@ -80,8 +79,20 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	}
 
 	urls := flags.Args()
-	if len(urls) < 1 {
-		return errors.New("urls are required")
+	if len(urls) == 0 {
+		// read URLs from stdin
+		slog.Info("start reading stdin")
+		scanner := bufio.NewScanner(os.Stdin)
+		for scanner.Scan() {
+			line := scanner.Text()
+			if len(line) == 0 {
+				break
+			}
+			urls = append(urls, line)
+		}
+		if err := scanner.Err(); err != nil {
+			return fmt.Errorf("read stdin: %w", err)
+		}
 	}
 
 	metric, err := runChrome(ctx, urls)
@@ -173,10 +184,8 @@ func runChrome(ctx context.Context, urls []string) (*Metric, error) {
 		// chromedp.WithDebugf(log.Printf),
 	}
 
-	url := urls[0]
-
 	var ws sync.WaitGroup
-	for range runs {
+	for _, url := range urls {
 		ws.Add(1)
 		func() {
 			defer ws.Done()
@@ -225,12 +234,10 @@ func runLightpanda(ctx context.Context, path string, urls []string) (*Metric, er
 	const host = "127.0.0.1"
 
 	// chout := make(chan int64, len(urls))
-	chout := make(chan int64, runs)
-
-	url := urls[0]
+	chout := make(chan int64, len(urls))
 
 	var ws sync.WaitGroup
-	for i := range runs {
+	for i, url := range urls {
 		ws.Add(1)
 		func() {
 			defer ws.Done()
