@@ -126,7 +126,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	select {
 	case <-clickComplete:
-	case <-time.After(time.Second):
+	case <-time.After(time.Second * 5):
 		return errors.New("click timeout")
 	}
 
