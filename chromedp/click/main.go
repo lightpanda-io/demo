@@ -117,7 +117,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// need to start emiting Target events, specifically:
 	// https://chromedevtools.github.io/devtools-protocol/tot/Target/#event-targetCreated
 	// https://chromedevtools.github.io/devtools-protocol/tot/Target/#event-targetInfoChanged
-	clickComplete := make(chan struct{}, 1)
+	clickComplete := make(chan struct{})
 	chromedp.ListenTarget(ctx, func(ev any) {
 		if _, ok := ev.(*page.EventDomContentEventFired); ok {
 			clickComplete <- struct{}{}
