@@ -30,7 +30,6 @@ const page = await context.newPage();
 await page.goto(url);
 
 const html = await page.content();
-console.log(html);
 if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
   console.log(html.substring(0, 20));
   throw new Error("html content is not as expected");
