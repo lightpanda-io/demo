@@ -22,7 +22,9 @@ import (
 	"log"
 	"log/slog"
 	"os"
+	"time"
 
+	"github.com/chromedp/cdproto/page"
 	"github.com/chromedp/chromedp"
 )
 
@@ -109,6 +111,23 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	)
 	if err != nil {
 		return fmt.Errorf("click: %w", err)
+	}
+
+	// chromedp.WaitNewTarget is a higher level abstraction for this, but we
+	// need to start emiting Target events, specifically:
+	// https://chromedevtools.github.io/devtools-protocol/tot/Target/#event-targetCreated
+	// https://chromedevtools.github.io/devtools-protocol/tot/Target/#event-targetInfoChanged
+	clickComplete := make(chan struct{})
+	chromedp.ListenTarget(ctx, func(ev any) {
+		if _, ok := ev.(*page.EventDomContentEventFired); ok {
+			clickComplete <- struct{}{}
+		}
+	})
+
+	select {
+	case <-clickComplete:
+	case <-time.After(time.Second):
+		return errors.New("click timeout")
 	}
 
 	// Validation
