@@ -27,7 +27,7 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://hn.algolia.com/?q=lightpanda', {waitUtil: 'networkidle0'});
+await page.goto('https://hn.algolia.com/?q=lightpanda', {waitUntil: 'networkidle0'});
 
 await page.waitForFunction(() => {
 	return document.querySelector('.Story_title') != null;

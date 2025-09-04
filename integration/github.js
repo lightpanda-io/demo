@@ -27,7 +27,7 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://github.com/lightpanda-io/browser', {waitUtil: 'networkidle0'});
+await page.goto('https://github.com/lightpanda-io/browser', {waitUntil: 'networkidle0'});
 
 await page.waitForFunction(() => {
   return document.getElementById('folders-and-files') != null;
