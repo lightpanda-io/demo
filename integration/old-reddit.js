@@ -26,7 +26,7 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://old.reddit.com/r/Zig/comments/1ke7bau/zig_has_great_potential_for_async', {waitUtil: 'networkidle0'});
+await page.goto('https://old.reddit.com/r/Zig/comments/1ke7bau/zig_has_great_potential_for_async', {waitUntil: 'networkidle0'});
 
 let foundPost = false;
 const postBodyText = await page.$eval('.thing.link .usertext-body', el => el.textContent);

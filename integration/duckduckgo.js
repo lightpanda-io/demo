@@ -27,15 +27,13 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://duckduckgo.com', {waitUtil: 'networkidle0'});
+await page.goto('https://duckduckgo.com', {waitUntil: 'networkidle0', timeout: 10000});
 
 await page.type('#searchbox_input','lightpanda'),
 await Promise.all([
-  page.waitForNavigation(),
+  page.waitForNavigation({waitUntil: 'networkidle0'}),
   page.keyboard.press('Enter'),
 ]);
-
-await page.waitForNetworkIdle({timeout: 4000});
 
 const links = await page.evaluate(() => {
   return Array.from(document.querySelectorAll('a[data-testid="result-title-a"]')).map(row => {
@@ -54,7 +52,7 @@ let found = {
 }
 for (const link of links) {
   if (link === 'https://lightpanda.io/') found.homepage = true;
-  else if (link === 'https://github.com/lightpanda-io/browser') found.github = true;
+  else if (link.startsWith('https://github.com/lightpanda-io')) found.github = true;
   else if (link.startsWith('https://lightpanda.io/docs/')) found.docs = true;
 }
 
