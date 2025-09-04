@@ -22,6 +22,7 @@ import (
 	"log"
 	"log/slog"
 	"os"
+	"strings"
 
 	"github.com/chromedp/chromedp"
 )
@@ -102,6 +103,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("new tab: %w", err)
 	}
 
+	is_test := false
+	if url == "test" {
+		url = "http://127.0.0.1:1234/campfire-commerce/"
+		is_test = true
+	}
+
 	err := chromedp.Run(ctx, chromedp.Navigate(url))
 	if err != nil {
 		return fmt.Errorf("navigate %s: %w", url, err)
@@ -113,7 +120,14 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("outerHTML: %w", err)
 	}
 
-	stdout.Write([]byte(content))
+	if is_test {
+		expected := "<html><head>\n\t<title>Outdoor Odyssey Nomad Backpack</title>"
+		if strings.HasPrefix(content, expected) == false {
+			return fmt.Errorf("Invalid HTML: %s", content)
+		}
+	} else {
+		stdout.Write([]byte(content))
+	}
 
 	return nil
 }
