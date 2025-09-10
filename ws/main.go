@@ -77,6 +77,7 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 			fmt.Fprintf(os.Stderr, "encode json: %v", err)
 			res.WriteHeader(500)
 		}
+		res.Header().Set("Content-Type", "application/json")
 	case "/form/submit":
 		defer req.Body.Close()
 		body, err := io.ReadAll(req.Body)
