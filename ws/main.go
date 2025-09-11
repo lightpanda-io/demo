@@ -15,6 +15,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io"
 	"log"
@@ -65,6 +66,18 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	}
 
 	switch req.URL.Path {
+	case "/cookies/set":
+		http.SetCookie(res, &http.Cookie{
+			Name:  "lightpanda",
+			Value: "browser",
+		})
+	case "/cookies/get":
+		enc := json.NewEncoder(res)
+		if err := enc.Encode(req.Cookies()); err != nil {
+			fmt.Fprintf(os.Stderr, "encode json: %v", err)
+			res.WriteHeader(500)
+		}
+		res.Header().Set("Content-Type", "application/json")
 	case "/form/submit":
 		defer req.Body.Close()
 		body, err := io.ReadAll(req.Body)
