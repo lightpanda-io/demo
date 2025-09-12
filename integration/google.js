@@ -1,5 +1,4 @@
 import { connect } from "puppeteer-core";
-import { writeFileSync } from "node:fs";
 
 const browser = await connect({ browserWSEndpoint: "ws://127.0.0.1:9222" });
 
