@@ -50,3 +50,7 @@ if (!foundComment) {
     console.error("Failed to find comment of post");
     throw new Error("invalid results");
 }
+
+await page.close();
+await context.close();
+await browser.close();
