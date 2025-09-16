@@ -36,7 +36,7 @@ await page.goto('http://127.0.0.1:1234', {waitUntil: 'load'});
 
 await Promise.all([
   page.click("a[href='campfire-commerce/']"),
-  page.waitForNavigation({ waitUntil: 'load'})
+  page.waitForNavigation({ waitUntil: 'networkidle0'})
 ]);
 
 assert.strictEqual(page.url(), 'http://127.0.0.1:1234/campfire-commerce/', 'The new page URL is not as expected.');
