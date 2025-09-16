@@ -15,6 +15,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
@@ -106,6 +107,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
@@ -221,6 +223,18 @@ type Handler struct {
 
 func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
+	case "/cookies/set":
+		http.SetCookie(res, &http.Cookie{
+			Name:  "lightpanda",
+			Value: "browser",
+		})
+	case "/cookies/get":
+		enc := json.NewEncoder(res)
+		if err := enc.Encode(req.Cookies()); err != nil {
+			fmt.Fprintf(os.Stderr, "encode json: %v", err)
+			res.WriteHeader(500)
+		}
+		res.Header().Set("Content-Type", "application/json")
 	case "/form/submit":
 		defer req.Body.Close()
 		body, err := io.ReadAll(req.Body)
