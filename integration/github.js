@@ -42,9 +42,8 @@ const files = await page.evaluate(() => {
 await page.close();
 await context.close();
 await browser.disconnect();
-console.log(files);
 
-for (expected of ['.github', 'src', 'build.zig', 'README.md', '.gitignore', 'LICENSING.md']) {
+for (let expected of ['.github', 'src', 'build.zig', 'README.md', '.gitignore', 'LICENSING.md']) {
   if (!files.includes(expected)) {
     console.log(`Failed to find expected ${expected} entry in: `, files);
   }
