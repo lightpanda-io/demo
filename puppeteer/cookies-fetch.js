@@ -29,7 +29,7 @@ const page = await context.newPage();
 await context.setCookie({name: 'hello', value: 'world', url: "http://127.0.0.1:1234/"});
 
 await page.goto('http://127.0.0.1:1234/cookies/set', {waitUntil: 'load'});
-await page.goto('http://127.0.0.1:1234/cookies/xhr.html', {waitUntil: 'load'});
+await page.goto('http://127.0.0.1:1234/cookies/fetch.html', {waitUntil: 'load'});
 
 const found_cookies = await context.cookies();
 for (const cookie of found_cookies) {
