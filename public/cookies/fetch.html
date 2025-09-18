@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+(async function () {
+  const response = await fetch('/cookies/get');
+  const cookies = await response.json();
+  document.getElementById('result').innerHTML = JSON.stringify(cookies);
+}());
+        </script>
+
+        <pre id="result">
+        </pre>
+    </body>
+</html>
+
