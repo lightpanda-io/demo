@@ -120,6 +120,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "ri/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 
+		{Bin: "node", Args: []string{"patchright/connect.js"}},
+		// TODO fix JS errors for these tests
+		// {Bin: "node", Args: []string{"patchright/cdp.js"}, Env: []string{"RUNS=2"}},
+		// {Bin: "node", Args: []string{"patchright/dump.js"}},
+		{Bin: "node", Args: []string{"patchright/links.js"}, Env: []string{"BASE_URL=http://127.0.0.1:1234/campfire-commerce/"}},
+
 		// add fetch + tls mostly for proxy
 		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=https://demo-browser.lightpanda.io/campfire-commerce/"}},
 		{Bin: "go", Args: []string{"run", "fetch/main.go", "https://demo-browser.lightpanda.io/campfire-commerce/"}, Dir: "chromedp"},
