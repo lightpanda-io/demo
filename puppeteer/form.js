@@ -25,38 +25,37 @@ const browser = await puppeteer.connect({
 
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();
-const page = await context.newPage();
 
-await testForm(page, '/form/get.html', {
+await testForm(context, '/form/get.html', {
   method: 'GET',
   body: '',
   query: 'h1=v1&h3=v3hello&favorite+drink=tea&ta=OVER+9000%21',
-}, async() => {
+}, async(page) => {
   await page.type('#input', 'hello');
   await page.type('#ta', 'OVER 9000!');
   await page.focus('#input');
   await page.keyboard.press('Enter');
 });
 
-await testForm(page, '/form/post.html', {
+await testForm(context, '/form/post.html', {
   method: 'POST',
   body: 'h1=v1&h3=v3&favorite+drink=tea',
   query: '',
 });
 
-await testForm(page, '/form/submit_button.html', {
+await testForm(context, '/form/submit_button.html', {
   method: 'POST',
   body: 'h1=v1&h3=v3&favorite+drink=tea&s1=go',
   query: '',
-}, async () => {
+}, async (page) => {
   await page.click("[name=s1]");
 });
 
-await testForm(page, '/form/input_button.html', {
+await testForm(context, '/form/input_button.html', {
   method: 'POST',
   body: 'h1=v1&h3=v3&favorite+drink=tea&b1=b1v',
   query: '',
-}, async () => {
+}, async (page) => {
   await page.click("[name=b2]"); // disabled, should do nothing
   await page.click("[name=b3]"); // not submit
   await page.click("[name=b1]");
@@ -65,11 +64,12 @@ await testForm(page, '/form/input_button.html', {
 await context.close();
 await browser.disconnect();
 
-async function testForm(page, url, expected, onLoad) {
+async function testForm(context, url, expected, onLoad) {
+  const page = await context.newPage();
   await page.goto(baseURL + url);
 
   if (onLoad) {
-    await onLoad();
+    await onLoad(page);
   }
 
   await page.waitForFunction(() => {
@@ -94,4 +94,5 @@ async function testForm(page, url, expected, onLoad) {
     console.log(query);
     throw new Error("invalid query");
   }
+  page.close()
 }
