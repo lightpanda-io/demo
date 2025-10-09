@@ -98,6 +98,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// Run end to end tests.
 	fails := 0
 	for _, t := range []Test{
+		{Bin: "node", Args: []string{"puppeteer/basic.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cdp.js"}, Env: []string{"RUNS=10"}},
 		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/links.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
