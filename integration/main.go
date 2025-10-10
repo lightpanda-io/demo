@@ -101,6 +101,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"integration/algolia.js"}},
 		{Bin: "node", Args: []string{"integration/github.js"}},
 		{Bin: "node", Args: []string{"integration/old-reddit.js"}},
+		{Bin: "node", Args: []string{"integration/mastodon.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
