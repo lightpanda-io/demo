@@ -12,3 +12,23 @@ await Promise.all([
   page.waitForNavigation({ waitUntil: "networkidle0" }),
   page.keyboard.press("Enter"),
 ]);
+
+const hasConsent = await page.evaluate(() => {
+  return document.querySelectorAll('form[action="https://consent.google.com/save"] input[type="submit"]').length;
+});
+if (hasConsent) {
+  console.log("form consent detected");
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: "networkidle0" }),
+    page.click('form[action="https://consent.google.com/save"] input[type="submit"]'),
+  ]);
+}
+
+
+const html = await page.content();
+console.log(html);
+
+await page.close();
+await context.close();
+await browser.disconnect();
+
