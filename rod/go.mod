@@ -2,8 +2,9 @@ module github.com/lightpanda-io/demo/rod
 
 go 1.25.3
 
+require github.com/go-rod/rod v0.116.2
+
 require (
-	github.com/go-rod/rod v0.116.2 // indirect
 	github.com/ysmood/fetchup v0.2.3 // indirect
 	github.com/ysmood/goob v0.4.0 // indirect
 	github.com/ysmood/got v0.40.0 // indirect
