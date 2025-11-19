@@ -160,7 +160,11 @@ type Test struct {
 }
 
 func (t Test) String() string {
-	return t.Bin + " " + strings.Join(t.Args, " ")
+	name := t.Bin
+	if t.Dir != "" {
+		name = "cd " + t.Dir + "; " + name
+	}
+	return name + " " + strings.Join(t.Args, " ")
 }
 
 func runtest(ctx context.Context, t Test) error {
