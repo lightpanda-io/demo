@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Benedict",
+		"name": "Benedict",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029a0001-00ee0502.png",
+		"tail": "00ee0502"
+	},
+	"next": "00830502.html",
+	"prev": "00580502.html",
+	"list": [
+		"00770502",
+		"00de0502",
+		"03620002",
+		"03c60502",
+		"02af0e02",
+		"024a0502",
+		"029f0e02",
+		"04ab1d02",
+		"03ad0502",
+		"02ad0e02"
+	]
+}

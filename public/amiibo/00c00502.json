@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gwen",
+		"name": "Gwen",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04640001-00c00502.png",
+		"tail": "00c00502"
+	},
+	"next": "028c0e02.html",
+	"prev": "03ce0502.html",
+	"list": [
+		"03160502",
+		"04121302",
+		"00bb0502",
+		"00d90502",
+		"01860502",
+		"02820e02",
+		"03c80502",
+		"02670102",
+		"02f70502",
+		"00c50502"
+	]
+}

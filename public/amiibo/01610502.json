@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cube",
+		"name": "Cube",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04610001-01610502.png",
+		"tail": "01610502"
+	},
+	"next": "04241902.html",
+	"prev": "01320502.html",
+	"list": [
+		"035a0902",
+		"01480502",
+		"04dc1d02",
+		"01830502",
+		"04eb1d02",
+		"01b40502",
+		"038f0402",
+		"024e0502",
+		"03b40502",
+		"02590002"
+	]
+}

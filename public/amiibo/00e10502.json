@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Timbra",
+		"name": "Timbra",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cf0001-00e10502.png",
+		"tail": "00e10502"
+	},
+	"next": "00e60502.html",
+	"prev": "035b0902.html",
+	"list": [
+		"04281902",
+		"04f01d02",
+		"041e0002",
+		"04150402",
+		"00940502",
+		"04c41e03",
+		"04a91d02",
+		"00c00502",
+		"00a60502",
+		"038c0002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rex",
+		"name": "Rex",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e80001-02f50502.png",
+		"tail": "02f50502"
+	},
+	"next": "00ea0502.html",
+	"prev": "038d0002.html",
+	"list": [
+		"01b90502",
+		"02ef0502",
+		"02f20502",
+		"009e0502",
+		"03050502",
+		"03611202",
+		"03720102",
+		"00bc0502",
+		"018a0502",
+		"02420502"
+	]
+}

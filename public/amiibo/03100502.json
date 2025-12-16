@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gonzo",
+		"name": "Gonzo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c00001-03100502.png",
+		"tail": "03100502"
+	},
+	"next": "00760502.html",
+	"prev": "00fd0502.html",
+	"list": [
+		"04a40902",
+		"01440502",
+		"02e60f02",
+		"04e41d02",
+		"039fff02",
+		"00640502",
+		"03150502",
+		"042f1a02",
+		"02ad0e02",
+		"025a0002"
+	]
+}

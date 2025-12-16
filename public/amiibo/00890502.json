@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Biff",
+		"name": "Biff",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03940001-00890502.png",
+		"tail": "00890502"
+	},
+	"next": "000f0002.html",
+	"prev": "036a0402.html",
+	"list": [
+		"043a1302",
+		"00310002",
+		"01280502",
+		"007f0502",
+		"002d0002",
+		"04f31d02",
+		"02aa0e02",
+		"03710102",
+		"00ad0502",
+		"04eb1d02"
+	]
+}

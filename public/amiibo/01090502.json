@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Agent S",
+		"name": "Agent S",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e20001-01090502.png",
+		"tail": "01090502"
+	},
+	"next": "00250002.html",
+	"prev": "02940e02.html",
+	"list": [
+		"01a10502",
+		"02a30e02",
+		"01ab0502",
+		"01370502",
+		"00380102",
+		"01360502",
+		"00130002",
+		"00130002",
+		"03140502",
+		"01680502"
+	]
+}

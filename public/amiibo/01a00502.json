@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lucy",
+		"name": "Lucy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047c0001-01a00502.png",
+		"tail": "01a00502"
+	},
+	"next": "02f00502.html",
+	"prev": "037a0002.html",
+	"list": [
+		"04cd1d02",
+		"00bc0502",
+		"02700e02",
+		"01750502",
+		"00950502",
+		"00760502",
+		"043d1b02",
+		"00b40502",
+		"04dd1d02",
+		"01370502"
+	]
+}

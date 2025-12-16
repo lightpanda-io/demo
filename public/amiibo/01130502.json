@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Leif",
+		"name": "Leif",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b40001-01130502.png",
+		"tail": "01130502"
+	},
+	"next": "01850502.html",
+	"prev": "010a0502.html",
+	"list": [
+		"03000502",
+		"04340402",
+		"02c00e02",
+		"00950502",
+		"02440502",
+		"00060002",
+		"04a30902",
+		"00010002",
+		"01a20502",
+		"00cf0502"
+	]
+}

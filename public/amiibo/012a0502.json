@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Elvis",
+		"name": "Elvis",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e70001-012a0502.png",
+		"tail": "012a0502"
+	},
+	"next": "03850002.html",
+	"prev": "02760e02.html",
+	"list": [
+		"00d00502",
+		"02650102",
+		"00130002",
+		"00210002",
+		"01050502",
+		"00440502",
+		"01110502",
+		"00000002",
+		"02aa0e02",
+		"010c0502"
+	]
+}

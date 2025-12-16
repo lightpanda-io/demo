@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Hero",
+		"name": "Hero",
+		"gameSeries": "Dragon Quest",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png",
+		"tail": "03a20002"
+	},
+	"next": "00480502.html",
+	"prev": "03500902.html",
+	"list": [
+		"00eb0502",
+		"01880502",
+		"039bff02",
+		"02790e02",
+		"02850e02",
+		"02f30502",
+		"001f0002",
+		"03190502",
+		"03070502",
+		"01770502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Xenoblade Chronicles 3",
+		"character": "Mio",
+		"name": "Mio",
+		"gameSeries": "Xenoblade",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png",
+		"tail": "043e1b02"
+	},
+	"next": "042e0002.html",
+	"prev": "043d1b02.html",
+	"list": [
+		"03b80502",
+		"04f31d02",
+		"03a10002",
+		"03a90502",
+		"01b50502",
+		"00230002",
+		"04180902",
+		"02b30e02",
+		"01410502",
+		"04df1d02"
+	]
+}

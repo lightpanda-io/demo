@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Phyllis",
+		"name": "Phyllis",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a10001-01100502.png",
+		"tail": "01100502"
+	},
+	"next": "03c10502.html",
+	"prev": "02a60e02.html",
+	"list": [
+		"00a90502",
+		"02b00e02",
+		"001e0002",
+		"02580002",
+		"00c70502",
+		"03791502",
+		"04dd1d02",
+		"01920502",
+		"00270002",
+		"00a00502"
+	]
+}

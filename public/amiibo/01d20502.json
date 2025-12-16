@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Twiggy",
+		"name": "Twiggy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02300001-01d20502.png",
+		"tail": "01d20502"
+	},
+	"next": "00fa0502.html",
+	"prev": "01050502.html",
+	"list": [
+		"03890002",
+		"02af0e02",
+		"00160002",
+		"01460502",
+		"01860502",
+		"024f0902",
+		"02b20e02",
+		"02b10e02",
+		"00610502",
+		"00a80502"
+	]
+}

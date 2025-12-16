@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Juri",
+		"name": "Juri",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04d21d02.png",
+		"tail": "04d21d02"
+	},
+	"next": "04d61d02.html",
+	"prev": "04d91d02.html",
+	"list": [
+		"016f0502",
+		"01670502",
+		"03791502",
+		"040e0f02",
+		"016b0502",
+		"03b70502",
+		"03b00502",
+		"03651302",
+		"01d30502",
+		"03931702"
+	]
+}

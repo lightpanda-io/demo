@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Angus",
+		"name": "Angus",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024a0001-01d10502.png",
+		"tail": "01d10502"
+	},
+	"next": "01630502.html",
+	"prev": "03630002.html",
+	"list": [
+		"04401c02",
+		"03931702",
+		"04ba1d02",
+		"041d0002",
+		"013b0502",
+		"034f0902",
+		"00800502",
+		"00c70502",
+		"00310002",
+		"01500502"
+	]
+}

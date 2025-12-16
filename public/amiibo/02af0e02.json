@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Birdo",
+		"name": "Birdo - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0101-02af0e02.png",
+		"tail": "02af0e02"
+	},
+	"next": "027a0e02.html",
+	"prev": "04241902.html",
+	"list": [
+		"04140902",
+		"00d10502",
+		"00910502",
+		"01820502",
+		"03630002",
+		"00040002",
+		"00170002",
+		"01100502",
+		"03c90502",
+		"017c0502"
+	]
+}

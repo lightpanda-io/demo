@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Carmen",
+		"name": "Carmen",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a40001-00d40502.png",
+		"tail": "00d40502"
+	},
+	"next": "01730502.html",
+	"prev": "000a0002.html",
+	"list": [
+		"03a0ff02",
+		"04cc1d02",
+		"00fa0502",
+		"03a50002",
+		"029e0e02",
+		"00470502",
+		"010f0502",
+		"004f0502",
+		"00800502",
+		"00240002"
+	]
+}

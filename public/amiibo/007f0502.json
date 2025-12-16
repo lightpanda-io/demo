@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Samson",
+		"name": "Samson",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04100001-007f0502.png",
+		"tail": "007f0502"
+	},
+	"next": "00500502.html",
+	"prev": "01520502.html",
+	"list": [
+		"02a40e02",
+		"00c10502",
+		"01d10502",
+		"03601202",
+		"03630002",
+		"010a0502",
+		"01a70502",
+		"02380602",
+		"04150402",
+		"019f0502"
+	]
+}

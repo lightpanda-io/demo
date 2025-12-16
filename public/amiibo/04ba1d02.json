@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Zangief",
+		"name": "Zangief",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png",
+		"tail": "04ba1d02"
+	},
+	"next": "04b41d02.html",
+	"prev": "04b01d02.html",
+	"list": [
+		"03060502",
+		"01d10502",
+		"04121302",
+		"00230002",
+		"01700502",
+		"00c40502",
+		"02810e02",
+		"02ba0e02",
+		"010c0502",
+		"023d0002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Revali",
+		"name": "Revali",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01080000-035b0902.png",
+		"tail": "035b0902"
+	},
+	"next": "00e10502.html",
+	"prev": "02470502.html",
+	"list": [
+		"03070502",
+		"01290502",
+		"00720502",
+		"02530002",
+		"039dff02",
+		"02f50502",
+		"00a40502",
+		"011c0502",
+		"023d0002",
+		"025c0d02"
+	]
+}

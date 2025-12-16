@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Daisy",
+		"name": "Daisy",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png",
+		"tail": "037a0002"
+	},
+	"next": "01a00502.html",
+	"prev": "01ca0502.html",
+	"list": [
+		"01650502",
+		"04c01d02",
+		"004c0502",
+		"02980e02",
+		"040f1802",
+		"00330002",
+		"01820502",
+		"023d0002",
+		"00950502",
+		"03d10502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Roswell",
+		"name": "Roswell",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1f0001-03d60502.png",
+		"tail": "03d60502"
+	},
+	"next": "00140002.html",
+	"prev": "012f0502.html",
+	"list": [
+		"02640102",
+		"018d0502",
+		"019f0502",
+		"01320502",
+		"03040502",
+		"03d50502",
+		"04a50902",
+		"02c10e02",
+		"02960e02",
+		"040d0f02"
+	]
+}

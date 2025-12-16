@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Cammy",
+		"name": "Cammy",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png",
+		"tail": "04bc1d02"
+	},
+	"next": "04a81d02.html",
+	"prev": "04b61d02.html",
+	"list": [
+		"00d30502",
+		"01980502",
+		"04e71d02",
+		"036c0a02",
+		"04f31d02",
+		"01b80502",
+		"039cff02",
+		"00c20502",
+		"013d0502",
+		"00050002"
+	]
+}

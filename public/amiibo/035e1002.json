@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "BoxBoy!",
+		"character": "Qbby",
+		"name": "Qbby",
+		"gameSeries": "BoxBoy!",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f400000-035e1002.png",
+		"tail": "035e1002"
+	},
+	"next": "02870e02.html",
+	"prev": "00c90502.html",
+	"list": [
+		"023f0502",
+		"02e30f02",
+		"01a30502",
+		"006b0502",
+		"004c0502",
+		"025b0002",
+		"00290002",
+		"005f0502",
+		"030f0502",
+		"034b0902"
+	]
+}

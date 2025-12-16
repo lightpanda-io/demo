@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Isabelle",
+		"name": "Isabelle - Summer Outfit",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-024b0502.png",
+		"tail": "024b0502"
+	},
+	"next": "01510502.html",
+	"prev": "00650502.html",
+	"list": [
+		"00140002",
+		"01960502",
+		"02bf0e02",
+		"03be0502",
+		"037f0002",
+		"01220502",
+		"02550c02",
+		"00d60502",
+		"042b1802",
+		"01b80502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Graham",
+		"name": "Graham",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03800001-01870502.png",
+		"tail": "01870502"
+	},
+	"next": "02e50f02.html",
+	"prev": "01110502.html",
+	"list": [
+		"02380602",
+		"01480502",
+		"00150002",
+		"00c40502",
+		"00880502",
+		"00760502",
+		"03c40502",
+		"043d1b02",
+		"014e0502",
+		"02b20e02"
+	]
+}

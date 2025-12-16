@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Alfonso",
+		"name": "Alfonso",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c30001-00dc0502.png",
+		"tail": "00dc0502"
+	},
+	"next": "00d10502.html",
+	"prev": "01d30502.html",
+	"list": [
+		"03ae0502",
+		"04ef1d02",
+		"01410502",
+		"00130002",
+		"02770e02",
+		"006e0502",
+		"04c41e03",
+		"03900402",
+		"03b20502",
+		"02a40e02"
+	]
+}

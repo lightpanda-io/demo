@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "One-Eyed Rathalos",
+		"name": "One-Eyed Rathalos and Rider - Female",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png",
+		"tail": "02e20f02"
+	},
+	"next": "00ac0502.html",
+	"prev": "024a0502.html",
+	"list": [
+		"024b0502",
+		"02b30e02",
+		"02590002",
+		"01c50502",
+		"01a40502",
+		"00180002",
+		"04de1d02",
+		"04281902",
+		"00ed0502",
+		"01900502"
+	]
+}

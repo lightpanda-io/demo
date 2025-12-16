@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lottie",
+		"name": "Lottie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10000-02440502.png",
+		"tail": "02440502"
+	},
+	"next": "037b0002.html",
+	"prev": "00fa0502.html",
+	"list": [
+		"03640002",
+		"015b0502",
+		"00b80502",
+		"04d21d02",
+		"02eb0502",
+		"04190902",
+		"02c10e02",
+		"00990502",
+		"03140502",
+		"039eff02"
+	]
+}

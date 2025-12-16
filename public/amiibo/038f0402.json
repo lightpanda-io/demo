@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Octoling",
+		"name": "Octoling Boy",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png",
+		"tail": "038f0402"
+	},
+	"next": "03550902.html",
+	"prev": "01a20502.html",
+	"list": [
+		"04f01d02",
+		"01620502",
+		"04bc1d02",
+		"01450502",
+		"02e50f02",
+		"01050502",
+		"00c10502",
+		"03170502",
+		"02b60e02",
+		"01240502"
+	]
+}

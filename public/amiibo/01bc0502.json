@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sydney",
+		"name": "Sydney",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bf0001-01bc0502.png",
+		"tail": "01bc0502"
+	},
+	"next": "030a0502.html",
+	"prev": "00d60502.html",
+	"list": [
+		"03560902",
+		"00600502",
+		"005e0502",
+		"031c0502",
+		"028e0e02",
+		"014e0502",
+		"01040502",
+		"02e10f02",
+		"00af0502",
+		"00e80502"
+	]
+}

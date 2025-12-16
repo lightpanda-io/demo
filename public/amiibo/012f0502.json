@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Freckles",
+		"name": "Freckles",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030e0001-012f0502.png",
+		"tail": "012f0502"
+	},
+	"next": "03d60502.html",
+	"prev": "02e50f02.html",
+	"list": [
+		"02570c02",
+		"000d0002",
+		"030f0502",
+		"009a0502",
+		"03be0502",
+		"009c0502",
+		"00030002",
+		"00de0502",
+		"04421c02",
+		"02ec0502"
+	]
+}

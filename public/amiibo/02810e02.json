@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Yoshi",
+		"name": "Yoshi - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png",
+		"tail": "02810e02"
+	},
+	"next": "00cd0502.html",
+	"prev": "03860002.html",
+	"list": [
+		"00450502",
+		"02920e02",
+		"01900502",
+		"00820502",
+		"042a1902",
+		"00c90502",
+		"03a20002",
+		"024f0902",
+		"04131302",
+		"02970e02"
+	]
+}

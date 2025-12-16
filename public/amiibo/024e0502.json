@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kapp'n",
+		"name": "Kapp'n",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960000-024e0502.png",
+		"tail": "024e0502"
+	},
+	"next": "00780502.html",
+	"prev": "03c20502.html",
+	"list": [
+		"00ad0502",
+		"00430302",
+		"04401c02",
+		"03990902",
+		"00db0502",
+		"042f1a02",
+		"01a50502",
+		"013c0502",
+		"01850502",
+		"02ea0502"
+	]
+}

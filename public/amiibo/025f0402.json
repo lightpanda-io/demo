@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Inkling",
+		"name": "Inkling Girl - Lime Green",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png",
+		"tail": "025f0402"
+	},
+	"next": "02bd0e02.html",
+	"prev": "01900502.html",
+	"list": [
+		"02800e02",
+		"00c50502",
+		"02a60e02",
+		"00f10502",
+		"01650502",
+		"02e20f02",
+		"03870002",
+		"01a10502",
+		"02380602",
+		"04150402"
+	]
+}

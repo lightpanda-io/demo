@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chow",
+		"name": "Chow",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02170001-01b30502.png",
+		"tail": "01b30502"
+	},
+	"next": "00c40502.html",
+	"prev": "01890502.html",
+	"list": [
+		"00260002",
+		"03630002",
+		"007c0502",
+		"00fe0502",
+		"00610502",
+		"030d0502",
+		"005d0502",
+		"00db0502",
+		"00440502",
+		"02740e02"
+	]
+}

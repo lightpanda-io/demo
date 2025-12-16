@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gloria",
+		"name": "Gloria",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03160001-01c00502.png",
+		"tail": "01c00502"
+	},
+	"next": "00a80502.html",
+	"prev": "00690502.html",
+	"list": [
+		"01060502",
+		"00110002",
+		"00530502",
+		"02810e02",
+		"01910502",
+		"01430502",
+		"00970502",
+		"00f10502",
+		"04ec1d02",
+		"04cf1d02"
+	]
+}

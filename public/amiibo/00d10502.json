@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Peck",
+		"name": "Peck",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023e0001-00d10502.png",
+		"tail": "00d10502"
+	},
+	"next": "02ab0e02.html",
+	"prev": "00dc0502.html",
+	"list": [
+		"01690502",
+		"04d61d02",
+		"029b0e02",
+		"03b30502",
+		"00430302",
+		"03b10502",
+		"006e0502",
+		"028f0e02",
+		"00780502",
+		"00f90502"
+	]
+}

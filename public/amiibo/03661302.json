@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Metroid",
+		"name": "Metroid",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png",
+		"tail": "03661302"
+	},
+	"next": "01b80502.html",
+	"prev": "00850502.html",
+	"list": [
+		"006b0502",
+		"04cb1d02",
+		"027b0e02",
+		"02460502",
+		"02a10e02",
+		"01590502",
+		"00580502",
+		"01690502",
+		"009a0502",
+		"00430302"
+	]
+}

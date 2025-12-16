@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mewtwo",
+		"name": "Mewtwo",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png",
+		"tail": "023d0002"
+	},
+	"next": "00a00502.html",
+	"prev": "02b50e02.html",
+	"list": [
+		"01390502",
+		"00640502",
+		"01400502",
+		"007f0502",
+		"004a0502",
+		"01a70502",
+		"00190002",
+		"015d0502",
+		"02900e02",
+		"01d50502"
+	]
+}

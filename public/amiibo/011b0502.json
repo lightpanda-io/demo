@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Franklin",
+		"name": "Franklin",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ae0001-011b0502.png",
+		"tail": "011b0502"
+	},
+	"next": "03750d02.html",
+	"prev": "038a0002.html",
+	"list": [
+		"01430502",
+		"03651302",
+		"01c80502",
+		"026b0e02",
+		"02af0e02",
+		"00f60502",
+		"02640102",
+		"01180502",
+		"02be0e02",
+		"04281902"
+	]
+}

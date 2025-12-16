@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Norma",
+		"name": "Norma",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b70001-030f0502.png",
+		"tail": "030f0502"
+	},
+	"next": "00de0502.html",
+	"prev": "01740502.html",
+	"list": [
+		"03920a02",
+		"01920502",
+		"042b1802",
+		"02430502",
+		"01ab0502",
+		"03900402",
+		"01250502",
+		"00e70502",
+		"02770e02",
+		"030f0502"
+	]
+}

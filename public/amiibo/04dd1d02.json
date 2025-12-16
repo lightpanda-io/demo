@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Rashid",
+		"name": "Rashid",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png",
+		"tail": "04dd1d02"
+	},
+	"next": "04de1d02.html",
+	"prev": "04d41d02.html",
+	"list": [
+		"04111802",
+		"03a30002",
+		"01c40502",
+		"01ab0502",
+		"00710502",
+		"00250002",
+		"034f0902",
+		"01ae0502",
+		"03750d02",
+		"03aa0502"
+	]
+}

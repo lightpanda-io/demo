@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Mario",
+		"name": "Mario - Gold Edition",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png",
+		"tail": "003c0102"
+	},
+	"next": "001d0002.html",
+	"prev": "03640002.html",
+	"list": [
+		"00730502",
+		"031b0502",
+		"00e20502",
+		"01b50502",
+		"030f0502",
+		"00310002",
+		"00250002",
+		"00000002",
+		"04c91e03",
+		"02bb0e02"
+	]
+}

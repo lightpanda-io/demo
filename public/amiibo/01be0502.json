@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Nibbles",
+		"name": "Nibbles",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e10001-01be0502.png",
+		"tail": "01be0502"
+	},
+	"next": "025e0402.html",
+	"prev": "00270002.html",
+	"list": [
+		"037f0002",
+		"02a10e02",
+		"00a50502",
+		"04421c02",
+		"00300002",
+		"01010502",
+		"03b10502",
+		"025b0002",
+		"02790e02",
+		"01bf0502"
+	]
+}

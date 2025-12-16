@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hans",
+		"name": "Hans",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03730001-01340502.png",
+		"tail": "01340502"
+	},
+	"next": "00b60502.html",
+	"prev": "03701202.html",
+	"list": [
+		"03190502",
+		"03b30502",
+		"00d70502",
+		"04ac1d02",
+		"025f0402",
+		"01a80502",
+		"00b00502",
+		"03bc0502",
+		"00250002",
+		"024e0502"
+	]
+}

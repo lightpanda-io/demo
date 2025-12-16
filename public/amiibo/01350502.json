@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chevre",
+		"name": "Chevre",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03560001-01350502.png",
+		"tail": "01350502"
+	},
+	"next": "018f0502.html",
+	"prev": "01010502.html",
+	"list": [
+		"04190902",
+		"00470502",
+		"02e70502",
+		"03530902",
+		"00090002",
+		"03500902",
+		"01a60502",
+		"02470502",
+		"03c50502",
+		"026a0e02"
+	]
+}

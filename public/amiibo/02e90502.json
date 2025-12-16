@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "June",
+		"name": "June",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028a0001-02e90502.png",
+		"tail": "02e90502"
+	},
+	"next": "03741402.html",
+	"prev": "02eb0502.html",
+	"list": [
+		"01930502",
+		"03840002",
+		"03070502",
+		"012e0502",
+		"03c30502",
+		"03710102",
+		"02500a02",
+		"02bf0e02",
+		"0431ff02",
+		"03500902"
+	]
+}

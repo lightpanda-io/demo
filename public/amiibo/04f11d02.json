@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Terry",
+		"name": "Terry",
+		"gameSeries": "Fatal Fury",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png",
+		"tail": "04f11d02"
+	},
+	"next": "04f31d02.html",
+	"prev": "04eb1d02.html",
+	"list": [
+		"01970502",
+		"018d0502",
+		"00030002",
+		"00700502",
+		"01450502",
+		"01a20502",
+		"03c10502",
+		"03bc0502",
+		"003f0402",
+		"03bf0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kevin",
+		"name": "Kevin",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04870001-01bf0502.png",
+		"tail": "01bf0502"
+	},
+	"next": "00ce0502.html",
+	"prev": "028c0e02.html",
+	"list": [
+		"00210002",
+		"00c00502",
+		"03c50502",
+		"02790e02",
+		"00ff0502",
+		"00a60502",
+		"01a30502",
+		"02bc0e02",
+		"00a30502",
+		"001d0002"
+	]
+}

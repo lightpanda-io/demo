@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Big Top",
+		"name": "Big Top",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03250001-010a0502.png",
+		"tail": "010a0502"
+	},
+	"next": "01130502.html",
+	"prev": "013f0502.html",
+	"list": [
+		"026c0e02",
+		"00450502",
+		"00da0502",
+		"00b00502",
+		"00c20502",
+		"04111802",
+		"0430ff02",
+		"017d0502",
+		"00680502",
+		"03130502"
+	]
+}

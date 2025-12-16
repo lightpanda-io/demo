@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Quinn",
+		"name": "Quinn",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a180001-03cf0502.png",
+		"tail": "03cf0502"
+	},
+	"next": "004c0502.html",
+	"prev": "028b0e02.html",
+	"list": [
+		"00350102",
+		"016c0502",
+		"00710502",
+		"02f40502",
+		"041b0402",
+		"02ab0e02",
+		"005e0502",
+		"00c30502",
+		"006c0502",
+		"02bb0e02"
+	]
+}

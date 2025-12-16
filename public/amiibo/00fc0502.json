@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chops",
+		"name": "Chops",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04860001-00fc0502.png",
+		"tail": "00fc0502"
+	},
+	"next": "03920a02.html",
+	"prev": "04a30902.html",
+	"list": [
+		"01d20502",
+		"02730e02",
+		"03ac0502",
+		"00d90502",
+		"024e0502",
+		"03890002",
+		"04be1d02",
+		"01ba0502",
+		"03520902",
+		"02e70502"
+	]
+}

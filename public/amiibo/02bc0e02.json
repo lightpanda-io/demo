@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Metal Mario",
+		"name": "Metal Mario - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png",
+		"tail": "02bc0e02"
+	},
+	"next": "02ea0502.html",
+	"prev": "01230502.html",
+	"list": [
+		"02510002",
+		"038e0402",
+		"00470502",
+		"00ca0502",
+		"03800002",
+		"01030502",
+		"013e0502",
+		"00320002",
+		"00b90502",
+		"00050002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Meta Knight",
+		"name": "Meta Knight",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png",
+		"tail": "00270002"
+	},
+	"next": "01be0502.html",
+	"prev": "03880002.html",
+	"list": [
+		"01310502",
+		"003d0102",
+		"00d00502",
+		"00d90502",
+		"02840e02",
+		"02fb0502",
+		"00610502",
+		"00250002",
+		"03d70502",
+		"035b0902"
+	]
+}

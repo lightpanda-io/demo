@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jack",
+		"name": "Jack",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ad0001-00b80502.png",
+		"tail": "00b80502"
+	},
+	"next": "03931702.html",
+	"prev": "03110502.html",
+	"list": [
+		"00fc0502",
+		"030b0502",
+		"023f0502",
+		"03b60502",
+		"035f1102",
+		"04210002",
+		"01260502",
+		"01750502",
+		"025d0402",
+		"00640502"
+	]
+}

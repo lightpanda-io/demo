@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chabwick",
+		"name": "Chabwick",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a190001-03d00502.png",
+		"tail": "03d00502"
+	},
+	"next": "00b10502.html",
+	"prev": "00a20502.html",
+	"list": [
+		"00ef0502",
+		"02500a02",
+		"02f90502",
+		"01b90502",
+		"00320002",
+		"01870502",
+		"031c0502",
+		"02ec0502",
+		"04d91d02",
+		"038f0402"
+	]
+}

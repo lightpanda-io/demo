@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Daisy",
+		"name": "Daisy - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png",
+		"tail": "027b0e02"
+	},
+	"next": "02c00e02.html",
+	"prev": "001b0002.html",
+	"list": [
+		"01500502",
+		"04230002",
+		"038c0002",
+		"03a80502",
+		"00bb0502",
+		"04e01d02",
+		"00d20502",
+		"00a10502",
+		"04cf1d02",
+		"02670102"
+	]
+}

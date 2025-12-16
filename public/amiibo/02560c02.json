@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Kirby",
+		"character": "King Dedede",
+		"name": "King Dedede",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png",
+		"tail": "02560c02"
+	},
+	"next": "040d0f02.html",
+	"prev": "02970e02.html",
+	"list": [
+		"03860002",
+		"02b50e02",
+		"03820002",
+		"00ad0502",
+		"02730e02",
+		"03810002",
+		"025c0d02",
+		"04121302",
+		"041c0402",
+		"01cd0502"
+	]
+}

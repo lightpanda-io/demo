@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Frank",
+		"name": "Frank",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04510001-015e0502.png",
+		"tail": "015e0502"
+	},
+	"next": "02770e02.html",
+	"prev": "00e40502.html",
+	"list": [
+		"00640502",
+		"04b11d02",
+		"00ff0502",
+		"03180502",
+		"00840502",
+		"034d0902",
+		"04cf1d02",
+		"016f0502",
+		"038a0002",
+		"00850502"
+	]
+}

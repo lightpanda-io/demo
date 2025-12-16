@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Kimberly",
+		"name": "Kimberly",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png",
+		"tail": "04ae1d02"
+	},
+	"next": "04af1d02.html",
+	"prev": "04b71d02.html",
+	"list": [
+		"04a81d02",
+		"02680102",
+		"000f0002",
+		"02450502",
+		"04a50902",
+		"030a0502",
+		"01c90502",
+		"01740502",
+		"02790e02",
+		"03b60502"
+	]
+}

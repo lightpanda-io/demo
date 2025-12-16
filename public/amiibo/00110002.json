@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Lucario",
+		"name": "Lucario",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1ac00000-00110002.png",
+		"tail": "00110002"
+	},
+	"next": "01660502.html",
+	"prev": "00f70502.html",
+	"list": [
+		"00540502",
+		"02f60502",
+		"011a0502",
+		"00ce0502",
+		"02a00e02",
+		"04390402",
+		"04251902",
+		"037a0002",
+		"04340402",
+		"010e0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Caroline",
+		"name": "Caroline",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e30001-01650502.png",
+		"tail": "01650502"
+	},
+	"next": "01120502.html",
+	"prev": "00820502.html",
+	"list": [
+		"00700502",
+		"00010002",
+		"042d1802",
+		"026e0e02",
+		"04d81d02",
+		"005f0502",
+		"04d71d02",
+		"00d00502",
+		"02bd0e02",
+		"04ef1d02"
+	]
+}

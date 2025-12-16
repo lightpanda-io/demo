@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "C. Viper",
+		"name": "C. Viper",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png",
+		"tail": "04e51d02"
+	},
+	"next": "04e61d02.html",
+	"prev": "04e41d02.html",
+	"list": [
+		"01bc0502",
+		"00980502",
+		"043f1c02",
+		"03800002",
+		"00b80502",
+		"028b0e02",
+		"02e80502",
+		"002c0002",
+		"02410502",
+		"00980502"
+	]
+}

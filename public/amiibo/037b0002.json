@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "King K. Rool",
+		"name": "King K. Rool",
+		"gameSeries": "Donkey Kong",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png",
+		"tail": "037b0002"
+	},
+	"next": "04291902.html",
+	"prev": "02440502.html",
+	"list": [
+		"007a0502",
+		"02e40f02",
+		"039bff02",
+		"00a70502",
+		"00550502",
+		"015b0502",
+		"013b0502",
+		"00900502",
+		"01790502",
+		"03b20502"
+	]
+}

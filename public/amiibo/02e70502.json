@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Vivian",
+		"name": "Vivian",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05130001-02e70502.png",
+		"tail": "02e70502"
+	},
+	"next": "00f10502.html",
+	"prev": "017a0502.html",
+	"list": [
+		"02ba0e02",
+		"02540c02",
+		"02960e02",
+		"03880002",
+		"01440502",
+		"007c0502",
+		"03850002",
+		"008a0502",
+		"007c0502",
+		"00380102"
+	]
+}

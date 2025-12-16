@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Donkey Kong",
+		"name": "Donkey Kong - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png",
+		"tail": "02900e02"
+	},
+	"next": "01050502.html",
+	"prev": "01850502.html",
+	"list": [
+		"02900e02",
+		"03830002",
+		"00bf0502",
+		"00f60502",
+		"038e0402",
+		"018b0502",
+		"03911602",
+		"01bb0502",
+		"00600502",
+		"04200002"
+	]
+}

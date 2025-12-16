@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Simon",
+		"name": "Simon",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fb0001-01cf0502.png",
+		"tail": "01cf0502"
+	},
+	"next": "04180902.html",
+	"prev": "00a80502.html",
+	"list": [
+		"005a0502",
+		"007a0502",
+		"01cb0502",
+		"01530502",
+		"03a70102",
+		"00d60502",
+		"031b0502",
+		"01b10502",
+		"01210502",
+		"03110502"
+	]
+}

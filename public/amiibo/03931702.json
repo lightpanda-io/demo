@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Power Pros",
+		"character": "Pawapuro",
+		"name": "Pawapuro",
+		"gameSeries": "Power Pros",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38000001-03931702.png",
+		"tail": "03931702"
+	},
+	"next": "03a30002.html",
+	"prev": "00b80502.html",
+	"list": [
+		"00f00502",
+		"04cc1d02",
+		"001a0002",
+		"03d00502",
+		"02f50502",
+		"043a1302",
+		"01bd0502",
+		"01100502",
+		"00d50502",
+		"03ac0502"
+	]
+}

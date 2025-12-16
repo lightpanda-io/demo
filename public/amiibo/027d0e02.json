@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Yoshi",
+		"name": "Yoshi - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png",
+		"tail": "027d0e02"
+	},
+	"next": "00e50502.html",
+	"prev": "02720e02.html",
+	"list": [
+		"036a0402",
+		"04ae1d02",
+		"00d50502",
+		"01b20502",
+		"03040502",
+		"002a0002",
+		"03590902",
+		"03540902",
+		"02e80502",
+		"03520902"
+	]
+}

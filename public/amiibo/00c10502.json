@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Coach",
+		"name": "Coach",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02510001-00c10502.png",
+		"tail": "00c10502"
+	},
+	"next": "01910502.html",
+	"prev": "040e0f02.html",
+	"list": [
+		"02670102",
+		"02510002",
+		"039fff02",
+		"038a0002",
+		"038e0402",
+		"01900502",
+		"01c70502",
+		"000c0002",
+		"02900e02",
+		"00550502"
+	]
+}

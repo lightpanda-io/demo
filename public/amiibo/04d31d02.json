@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Blanka",
+		"name": "Blanka",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04d31d02.png",
+		"tail": "04d31d02"
+	},
+	"next": "04d11d02.html",
+	"prev": "04d51d02.html",
+	"list": [
+		"00de0502",
+		"04b61d02",
+		"01ba0502",
+		"019e0502",
+		"03750d02",
+		"00e90502",
+		"04eb1d02",
+		"018b0502",
+		"02ba0e02",
+		"01600502"
+	]
+}

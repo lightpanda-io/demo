@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gruff",
+		"name": "Gruff",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035a0001-00850502.png",
+		"tail": "00850502"
+	},
+	"next": "03661302.html",
+	"prev": "00310002.html",
+	"list": [
+		"00170002",
+		"00930502",
+		"02880e02",
+		"01590502",
+		"04b01d02",
+		"00340102",
+		"00410302",
+		"03d40502",
+		"00320002",
+		"00d30502"
+	]
+}

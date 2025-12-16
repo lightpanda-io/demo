@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bertha",
+		"name": "Bertha",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03930001-00a00502.png",
+		"tail": "00a00502"
+	},
+	"next": "025c0d02.html",
+	"prev": "023d0002.html",
+	"list": [
+		"01060502",
+		"03981702",
+		"007f0502",
+		"04b51d02",
+		"03c50502",
+		"00270002",
+		"04e31d02",
+		"00e60502",
+		"01d00502",
+		"00d80502"
+	]
+}

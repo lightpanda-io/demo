@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Charizard",
+		"name": "Charizard",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png",
+		"tail": "00240002"
+	},
+	"next": "01a60502.html",
+	"prev": "005f0502.html",
+	"list": [
+		"03c30502",
+		"00e30502",
+		"038f0402",
+		"03a50002",
+		"01af0502",
+		"01490502",
+		"00430302",
+		"001c0002",
+		"03b30502",
+		"04c01d02"
+	]
+}

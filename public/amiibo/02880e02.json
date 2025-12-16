@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Waluigi",
+		"name": "Waluigi - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60201-02880e02.png",
+		"tail": "02880e02"
+	},
+	"next": "010d0502.html",
+	"prev": "017d0502.html",
+	"list": [
+		"03560902",
+		"014d0502",
+		"04360402",
+		"03ba0502",
+		"02400502",
+		"00680502",
+		"01d40502",
+		"04db1d02",
+		"01240502",
+		"01070502"
+	]
+}

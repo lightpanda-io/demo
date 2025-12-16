@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Skylanders",
+		"character": "Bowser",
+		"name": "Hammer Slam Bowser",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png",
+		"tail": "023a0702"
+	},
+	"next": "03050502.html",
+	"prev": "03080502.html",
+	"list": [
+		"019c0502",
+		"02f30502",
+		"01760502",
+		"031b0502",
+		"02a80e02",
+		"03b50502",
+		"012e0502",
+		"03ca0502",
+		"03aa0502",
+		"00f70502"
+	]
+}

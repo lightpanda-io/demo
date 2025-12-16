@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Rider",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03540902.png",
+		"tail": "03540902"
+	},
+	"next": "014a0502.html",
+	"prev": "04131302.html",
+	"list": [
+		"02630102",
+		"02e90502",
+		"02b80e02",
+		"02fa0502",
+		"02940e02",
+		"01d60502",
+		"018f0502",
+		"01840502",
+		"00910502",
+		"01c10502"
+	]
+}

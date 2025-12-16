@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gaston",
+		"name": "Gaston",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04980001-014a0502.png",
+		"tail": "014a0502"
+	},
+	"next": "006c0502.html",
+	"prev": "03540902.html",
+	"list": [
+		"039cff02",
+		"018e0502",
+		"028b0e02",
+		"00430302",
+		"02800e02",
+		"00dd0502",
+		"03b60502",
+		"02810e02",
+		"01b50502",
+		"02f70502"
+	]
+}

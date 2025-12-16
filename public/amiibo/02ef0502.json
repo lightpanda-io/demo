@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Huck",
+		"name": "Huck",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03430001-02ef0502.png",
+		"tail": "02ef0502"
+	},
+	"next": "00cf0502.html",
+	"prev": "037c0002.html",
+	"list": [
+		"00e00502",
+		"00640502",
+		"031c0502",
+		"03aa0502",
+		"01040502",
+		"043e1b02",
+		"02ea0502",
+		"03830002",
+		"01af0502",
+		"02510002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bam",
+		"name": "Bam",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d70001-01300502.png",
+		"tail": "01300502"
+	},
+	"next": "019a0502.html",
+	"prev": "01450502.html",
+	"list": [
+		"02a10e02",
+		"03961702",
+		"043c1302",
+		"006f0502",
+		"00790502",
+		"00b30502",
+		"01810502",
+		"02c10e02",
+		"041e0002",
+		"012e0502"
+	]
+}

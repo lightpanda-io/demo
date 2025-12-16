@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bruce",
+		"name": "Bruce",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d90001-01c80502.png",
+		"tail": "01c80502"
+	},
+	"next": "01500502.html",
+	"prev": "03981702.html",
+	"list": [
+		"008c0502",
+		"01190502",
+		"00f60502",
+		"01d30502",
+		"001b0002",
+		"03040502",
+		"04e11d02",
+		"00bb0502",
+		"04d81d02",
+		"043d1b02"
+	]
+}

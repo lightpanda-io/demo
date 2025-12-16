@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Samus",
+		"name": "Samus",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png",
+		"tail": "043b1302"
+	},
+	"next": "043a1302.html",
+	"prev": "00060002.html",
+	"list": [
+		"02790e02",
+		"01810502",
+		"034e0902",
+		"02fc0502",
+		"00240002",
+		"00b40502",
+		"02580002",
+		"028a0e02",
+		"03ae0502",
+		"04330402"
+	]
+}

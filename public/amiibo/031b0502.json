@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Étoile",
+		"name": "Étoile",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d30101-031b0502.png",
+		"tail": "031b0502"
+	},
+	"next": "009d0502.html",
+	"prev": "030a0502.html",
+	"list": [
+		"009c0502",
+		"00260002",
+		"008d0502",
+		"01550502",
+		"01a00502",
+		"04340402",
+		"00cd0502",
+		"00b80502",
+		"04c41e03",
+		"01ca0502"
+	]
+}

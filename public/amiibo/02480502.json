@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Celeste",
+		"name": "Celeste",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930000-02480502.png",
+		"tail": "02480502"
+	},
+	"next": "00420302.html",
+	"prev": "023f0502.html",
+	"list": [
+		"014f0502",
+		"01650502",
+		"01300502",
+		"00460502",
+		"00c50502",
+		"026e0e02",
+		"02410502",
+		"00270002",
+		"01970502",
+		"041d0002"
+	]
+}

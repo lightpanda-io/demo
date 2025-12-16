@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Admiral",
+		"name": "Admiral",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02330001-03060502.png",
+		"tail": "03060502"
+	},
+	"next": "01cb0502.html",
+	"prev": "00ac0502.html",
+	"list": [
+		"01a50502",
+		"02f60502",
+		"023a0702",
+		"019c0502",
+		"03500902",
+		"037e0002",
+		"04b51d02",
+		"00300002",
+		"02510002",
+		"012b0502"
+	]
+}

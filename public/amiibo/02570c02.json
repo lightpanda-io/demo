@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Kirby",
+		"character": "Waddle Dee",
+		"name": "Waddle Dee",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png",
+		"tail": "02570c02"
+	},
+	"next": "01220502.html",
+	"prev": "029e0e02.html",
+	"list": [
+		"01980502",
+		"041e0002",
+		"03651302",
+		"04bb1d02",
+		"03810002",
+		"00b20502",
+		"01630502",
+		"006c0502",
+		"01130502",
+		"03b30502"
+	]
+}

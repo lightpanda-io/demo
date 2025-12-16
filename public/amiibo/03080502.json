@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Boots",
+		"name": "Boots",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c50001-03080502.png",
+		"tail": "03080502"
+	},
+	"next": "023a0702.html",
+	"prev": "01a10502.html",
+	"list": [
+		"04b81d02",
+		"00b20502",
+		"00e40502",
+		"008f0502",
+		"03500902",
+		"018f0502",
+		"009b0502",
+		"00b50502",
+		"03500902",
+		"001b0002"
+	]
+}

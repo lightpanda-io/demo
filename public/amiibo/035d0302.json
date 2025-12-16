@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yoshi's Woolly World",
+		"character": "Poochy",
+		"name": "Poochy",
+		"gameSeries": "Yoshi's Woolly World",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png",
+		"tail": "035d0302"
+	},
+	"next": "02890e02.html",
+	"prev": "009a0502.html",
+	"list": [
+		"02f10502",
+		"017f0502",
+		"04c01d02",
+		"041f0002",
+		"03c40502",
+		"01c20502",
+		"0431ff02",
+		"03c40502",
+		"04b11d02",
+		"01cf0502"
+	]
+}

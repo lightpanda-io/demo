@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Renée",
+		"name": "Renée",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ba0001-005d0502.png",
+		"tail": "005d0502"
+	},
+	"next": "00ef0502.html",
+	"prev": "01140502.html",
+	"list": [
+		"039cff02",
+		"026b0e02",
+		"013b0502",
+		"03ac0502",
+		"02470502",
+		"02840e02",
+		"00aa0502",
+		"002b0002",
+		"026a0e02",
+		"002e0002"
+	]
+}

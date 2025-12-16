@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rodney",
+		"name": "Rodney",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03810001-00d50502.png",
+		"tail": "00d50502"
+	},
+	"next": "02a50e02.html",
+	"prev": "02710e02.html",
+	"list": [
+		"04e11d02",
+		"03651302",
+		"036e0a02",
+		"025c0d02",
+		"03a50002",
+		"00570502",
+		"02fd0502",
+		"00180002",
+		"034f0902",
+		"036a0402"
+	]
+}

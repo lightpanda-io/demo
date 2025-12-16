@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Manon",
+		"name": "Manon",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04d71d02.png",
+		"tail": "04d71d02"
+	},
+	"next": "04cf1d02.html",
+	"prev": "04ce1d02.html",
+	"list": [
+		"01a30502",
+		"00370102",
+		"03b70502",
+		"02830e02",
+		"00060002",
+		"01c80502",
+		"00090002",
+		"036e0a02",
+		"003f0402",
+		"00a90502"
+	]
+}

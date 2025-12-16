@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mario",
+		"name": "Mario",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png",
+		"tail": "00000002"
+	},
+	"next": "02b40e02.html",
+	"prev": "00cb0502.html",
+	"list": [
+		"01b90502",
+		"03d60502",
+		"010d0502",
+		"03b90502",
+		"00a80502",
+		"00a10502",
+		"02e10f02",
+		"00150002",
+		"019d0502",
+		"00b00502"
+	]
+}

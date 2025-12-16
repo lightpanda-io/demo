@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lopez",
+		"name": "Lopez",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02db0001-005e0502.png",
+		"tail": "005e0502"
+	},
+	"next": "00a40502.html",
+	"prev": "04121302.html",
+	"list": [
+		"037d0002",
+		"03100502",
+		"02790e02",
+		"01260502",
+		"02f60502",
+		"01990502",
+		"01b10502",
+		"01760502",
+		"00a20502",
+		"03b00502"
+	]
+}

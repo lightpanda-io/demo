@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Harvey",
+		"name": "Harvey",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a050001-03b80502.png",
+		"tail": "03b80502"
+	},
+	"next": "03530902.html",
+	"prev": "011e0502.html",
+	"list": [
+		"00d90502",
+		"04cf1d02",
+		"042c1802",
+		"027d0e02",
+		"018d0502",
+		"01630502",
+		"010d0502",
+		"03c40502",
+		"009a0502",
+		"00a10502"
+	]
+}

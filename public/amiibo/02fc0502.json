@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bitty",
+		"name": "Bitty",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03950001-02fc0502.png",
+		"tail": "02fc0502"
+	},
+	"next": "03a70102.html",
+	"prev": "01ab0502.html",
+	"list": [
+		"008b0502",
+		"012b0502",
+		"03d60502",
+		"02a60e02",
+		"02ad0e02",
+		"01250502",
+		"00190002",
+		"02a20e02",
+		"011b0502",
+		"01350502"
+	]
+}

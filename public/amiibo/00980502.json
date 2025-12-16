@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pancetti",
+		"name": "Pancetti",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04880001-00980502.png",
+		"tail": "00980502"
+	},
+	"next": "037f0002.html",
+	"prev": "01370502.html",
+	"list": [
+		"01040502",
+		"024f0902",
+		"02f10502",
+		"00a90502",
+		"04ab1d02",
+		"01750502",
+		"04200002",
+		"00ca0502",
+		"00b00502",
+		"04b21d02"
+	]
+}

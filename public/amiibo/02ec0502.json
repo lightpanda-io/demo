@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hornsby",
+		"name": "Hornsby",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b60001-02ec0502.png",
+		"tail": "02ec0502"
+	},
+	"next": "01790502.html",
+	"prev": "01b10502.html",
+	"list": [
+		"03651302",
+		"03870002",
+		"03651302",
+		"00b50502",
+		"00930502",
+		"04e61d02",
+		"00e30502",
+		"002e0002",
+		"03830002",
+		"01bc0502"
+	]
+}

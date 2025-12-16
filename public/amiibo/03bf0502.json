@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Isabelle",
+		"name": "Isabelle - Sweater",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810501-03bf0502.png",
+		"tail": "03bf0502"
+	},
+	"next": "007a0502.html",
+	"prev": "01950502.html",
+	"list": [
+		"023d0002",
+		"01090502",
+		"04261902",
+		"007c0502",
+		"01270502",
+		"00ab0502",
+		"04b51d02",
+		"02840e02",
+		"02670102",
+		"010d0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Peaches",
+		"name": "Peaches",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png",
+		"tail": "01880502"
+	},
+	"next": "01240502.html",
+	"prev": "010b0502.html",
+	"list": [
+		"001f0002",
+		"025f0402",
+		"041a0902",
+		"02670102",
+		"03110502",
+		"02ff0502",
+		"011f0502",
+		"00150002",
+		"010c0502",
+		"0431ff02"
+	]
+}

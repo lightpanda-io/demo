@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Curlos",
+		"name": "Curlos",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cd0001-01520502.png",
+		"tail": "01520502"
+	},
+	"next": "007f0502.html",
+	"prev": "001f0002.html",
+	"list": [
+		"041e0002",
+		"00240002",
+		"036a0402",
+		"007a0502",
+		"03941702",
+		"04360402",
+		"025f0402",
+		"02590002",
+		"00300002",
+		"01290502"
+	]
+}

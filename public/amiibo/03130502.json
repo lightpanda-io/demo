@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Olive",
+		"name": "Olive",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02860001-03130502.png",
+		"tail": "03130502"
+	},
+	"next": "03810002.html",
+	"prev": "01820502.html",
+	"list": [
+		"02380602",
+		"00380102",
+		"031d0502",
+		"02f20502",
+		"00050002",
+		"04390402",
+		"02950e02",
+		"02420502",
+		"04d71d02",
+		"00ba0502"
+	]
+}

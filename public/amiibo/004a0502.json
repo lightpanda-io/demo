@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Joan",
+		"name": "Joan",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a30001-004a0502.png",
+		"tail": "004a0502"
+	},
+	"next": "029b0e02.html",
+	"prev": "006f0502.html",
+	"list": [
+		"00090002",
+		"01400502",
+		"03070502",
+		"02a20e02",
+		"01c60502",
+		"041c0402",
+		"00170002",
+		"00ac0502",
+		"00cc0502",
+		"00ba0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tiansheng",
+		"name": "Tiansheng",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a130001-03ca0502.png",
+		"tail": "03ca0502"
+	},
+	"next": "01ba0502.html",
+	"prev": "01190502.html",
+	"list": [
+		"01650502",
+		"01070502",
+		"02ea0502",
+		"00b90502",
+		"03820002",
+		"02850e02",
+		"02740e02",
+		"036a0402",
+		"025c0d02",
+		"030f0502"
+	]
+}

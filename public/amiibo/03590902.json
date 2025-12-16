@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Urbosa",
+		"name": "Urbosa",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01060000-03590902.png",
+		"tail": "03590902"
+	},
+	"next": "01c50502.html",
+	"prev": "006e0502.html",
+	"list": [
+		"02580002",
+		"000e0002",
+		"03800002",
+		"00680502",
+		"00dc0502",
+		"01430502",
+		"029a0e02",
+		"030c0502",
+		"04d81d02",
+		"00e50502"
+	]
+}

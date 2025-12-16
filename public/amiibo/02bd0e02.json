@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Metal Mario",
+		"name": "Metal Mario - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png",
+		"tail": "02bd0e02"
+	},
+	"next": "041b0402.html",
+	"prev": "025f0402.html",
+	"list": [
+		"01170502",
+		"01b20502",
+		"038a0002",
+		"01200502",
+		"025b0002",
+		"038b0002",
+		"01150502",
+		"031d0502",
+		"04d31d02",
+		"039eff02"
+	]
+}

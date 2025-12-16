@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Shiver",
+		"name": "Shiver",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png",
+		"tail": "04330402"
+	},
+	"next": "04340402.html",
+	"prev": "04150402.html",
+	"list": [
+		"03800002",
+		"013f0502",
+		"00000002",
+		"03c10502",
+		"04aa1d02",
+		"02f80502",
+		"02460502",
+		"01790502",
+		"00e90502",
+		"02b20e02"
+	]
+}

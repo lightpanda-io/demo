@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Sephiroth",
+		"name": "Sephiroth",
+		"gameSeries": "Final Fantasy",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png",
+		"tail": "04210002"
+	},
+	"next": "01330502.html",
+	"prev": "04291902.html",
+	"list": [
+		"00d80502",
+		"012b0502",
+		"01d50502",
+		"03670102",
+		"03120502",
+		"041b0402",
+		"02390602",
+		"024d0502",
+		"04ed1d02",
+		"00d90502"
+	]
+}

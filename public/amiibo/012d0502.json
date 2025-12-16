@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marina",
+		"name": "Marina",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042a0001-012d0502.png",
+		"tail": "012d0502"
+	},
+	"next": "00d00502.html",
+	"prev": "00920502.html",
+	"list": [
+		"02bc0e02",
+		"026e0e02",
+		"01170502",
+		"026f0e02",
+		"03961702",
+		"02b70e02",
+		"03540902",
+		"005d0502",
+		"04db1d02",
+		"03050502"
+	]
+}

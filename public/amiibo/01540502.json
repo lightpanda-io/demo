@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Moe",
+		"name": "Moe",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02650001-01540502.png",
+		"tail": "01540502"
+	},
+	"next": "02a60e02.html",
+	"prev": "00f00502.html",
+	"list": [
+		"02480502",
+		"04b41d02",
+		"02660102",
+		"006a0502",
+		"02fc0502",
+		"04b61d02",
+		"02480502",
+		"01a60502",
+		"01400502",
+		"00e90502"
+	]
+}

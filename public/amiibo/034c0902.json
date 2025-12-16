@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Majora's Mask",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png",
+		"tail": "034c0902"
+	},
+	"next": "017a0502.html",
+	"prev": "03cb0502.html",
+	"list": [
+		"00490502",
+		"01270502",
+		"03d40502",
+		"00490502",
+		"02fe0502",
+		"029f0e02",
+		"04d61d02",
+		"025a0002",
+		"01160502",
+		"00bc0502"
+	]
+}

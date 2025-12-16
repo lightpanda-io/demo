@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Alex",
+		"name": "Alex",
+		"gameSeries": "Minecraft",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png",
+		"tail": "04230002"
+	},
+	"next": "00530502.html",
+	"prev": "00f10502.html",
+	"list": [
+		"02ec0502",
+		"04b11d02",
+		"00150002",
+		"00fb0502",
+		"02540c02",
+		"013c0502",
+		"03cf0502",
+		"01270502",
+		"02fd0502",
+		"026c0e02"
+	]
+}

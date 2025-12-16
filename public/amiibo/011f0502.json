@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tabby",
+		"name": "Tabby",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02690001-011f0502.png",
+		"tail": "011f0502"
+	},
+	"next": "01200502.html",
+	"prev": "03911602.html",
+	"list": [
+		"04e41d02",
+		"02560c02",
+		"02760e02",
+		"03941702",
+		"00c00502",
+		"00cc0502",
+		"00280002",
+		"04a50902",
+		"01990502",
+		"042e0002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Chrom",
+		"name": "Chrom",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png",
+		"tail": "03880002"
+	},
+	"next": "00270002.html",
+	"prev": "026e0e02.html",
+	"list": [
+		"03750d02",
+		"03b30502",
+		"016b0502",
+		"042a1902",
+		"03cb0502",
+		"008f0502",
+		"03590902",
+		"03c20502",
+		"017f0502",
+		"030f0502"
+	]
+}

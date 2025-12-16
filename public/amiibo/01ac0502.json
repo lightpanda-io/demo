@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Purrl",
+		"name": "Purrl",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02640001-01ac0502.png",
+		"tail": "01ac0502"
+	},
+	"next": "01250502.html",
+	"prev": "02870e02.html",
+	"list": [
+		"00860502",
+		"024d0502",
+		"00570502",
+		"03620002",
+		"01b90502",
+		"03140502",
+		"00a50502",
+		"03d50502",
+		"002f0002",
+		"01030502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pudge",
+		"name": "Pudge",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02800001-00830502.png",
+		"tail": "00830502"
+	},
+	"next": "00f20502.html",
+	"prev": "00ee0502.html",
+	"list": [
+		"02a30e02",
+		"02ef0502",
+		"03d10502",
+		"01a70502",
+		"024f0902",
+		"02f30502",
+		"01720502",
+		"00930502",
+		"04180902",
+		"04330402"
+	]
+}

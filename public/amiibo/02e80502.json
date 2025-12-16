@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hopkins",
+		"name": "Hopkins",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a20001-02e80502.png",
+		"tail": "02e80502"
+	},
+	"next": "00d60502.html",
+	"prev": "00440502.html",
+	"list": [
+		"00170002",
+		"00ba0502",
+		"00b80502",
+		"014d0502",
+		"04da1d02",
+		"00a80502",
+		"02600402",
+		"03d30502",
+		"01200502",
+		"00260002"
+	]
+}

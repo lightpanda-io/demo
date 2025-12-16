@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bea",
+		"name": "Bea",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f40001-03050502.png",
+		"tail": "03050502"
+	},
+	"next": "018b0502.html",
+	"prev": "023a0702.html",
+	"list": [
+		"04d91d02",
+		"00d60502",
+		"01b20502",
+		"02630102",
+		"00d60502",
+		"03c40502",
+		"04db1d02",
+		"00a60502",
+		"04d31d02",
+		"041a0902"
+	]
+}

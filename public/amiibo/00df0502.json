@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gabi",
+		"name": "Gabi",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04990001-00df0502.png",
+		"tail": "00df0502"
+	},
+	"next": "00810502.html",
+	"prev": "02e10f02.html",
+	"list": [
+		"02960e02",
+		"000e0002",
+		"041c0402",
+		"00260002",
+		"01340502",
+		"04f11d02",
+		"018d0502",
+		"01720502",
+		"00b00502",
+		"03cd0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Sagat",
+		"name": "Sagat",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png",
+		"tail": "04ed1d02"
+	},
+	"next": "04ee1d02.html",
+	"prev": "04ec1d02.html",
+	"list": [
+		"04bc1d02",
+		"03540902",
+		"00860502",
+		"02400502",
+		"008c0502",
+		"00530502",
+		"031c0502",
+		"00610502",
+		"007d0502",
+		"016f0502"
+	]
+}

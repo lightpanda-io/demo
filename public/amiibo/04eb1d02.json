@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "M. Bison",
+		"name": "M. Bison",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png",
+		"tail": "04eb1d02"
+	},
+	"next": "04f11d02.html",
+	"prev": "04e01d02.html",
+	"list": [
+		"03760402",
+		"04be1d02",
+		"01860502",
+		"043b1302",
+		"019f0502",
+		"01900502",
+		"00100002",
+		"035c0902",
+		"02730e02",
+		"024f0902"
+	]
+}

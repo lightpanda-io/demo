@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Waluigi",
+		"name": "Waluigi - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png",
+		"tail": "02890e02"
+	},
+	"next": "010f0502.html",
+	"prev": "035d0302.html",
+	"list": [
+		"00c70502",
+		"01a40502",
+		"01460502",
+		"01010502",
+		"03aa0502",
+		"00b50502",
+		"03a20002",
+		"03c30502",
+		"024e0502",
+		"04dc1d02"
+	]
+}

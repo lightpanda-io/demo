@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Dom",
+		"name": "Dom",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0b0001-03c20502.png",
+		"tail": "03c20502"
+	},
+	"next": "024e0502.html",
+	"prev": "031c0502.html",
+	"list": [
+		"00010002",
+		"009d0502",
+		"01960502",
+		"027a0e02",
+		"015c0502",
+		"01040502",
+		"00ee0502",
+		"02b80e02",
+		"01710502",
+		"02e10f02"
+	]
+}

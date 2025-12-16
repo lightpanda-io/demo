@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "E. Honda",
+		"name": "E. Honda",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ca0001-04b51d02.png",
+		"tail": "04b51d02"
+	},
+	"next": "04b31d02.html",
+	"prev": "04a81d02.html",
+	"list": [
+		"038a0002",
+		"04da1d02",
+		"00a40502",
+		"02410502",
+		"00ff0502",
+		"00de0502",
+		"00e80502",
+		"04401c02",
+		"00840502",
+		"04d11d02"
+	]
+}

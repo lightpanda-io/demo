@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Maelle",
+		"name": "Maelle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030a0001-01c70502.png",
+		"tail": "01c70502"
+	},
+	"next": "025d0402.html",
+	"prev": "030b0502.html",
+	"list": [
+		"014b0502",
+		"042c1802",
+		"01c10502",
+		"00290002",
+		"03090502",
+		"002b0002",
+		"02910e02",
+		"014d0502",
+		"02b40e02",
+		"00be0502"
+	]
+}

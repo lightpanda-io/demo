@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Simon",
+		"name": "Simon",
+		"gameSeries": "Castlevania",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png",
+		"tail": "038b0002"
+	},
+	"next": "040f1802.html",
+	"prev": "043c1302.html",
+	"list": [
+		"01b60502",
+		"03c30502",
+		"02940e02",
+		"03050502",
+		"034c0902",
+		"01170502",
+		"00450502",
+		"02b60e02",
+		"01150502",
+		"04bc1d02"
+	]
+}

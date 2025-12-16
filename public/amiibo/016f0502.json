@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chrissy",
+		"name": "Chrissy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a10001-016f0502.png",
+		"tail": "016f0502"
+	},
+	"next": "02bb0e02.html",
+	"prev": "00600502.html",
+	"list": [
+		"00540502",
+		"04bd1d02",
+		"01450502",
+		"03090502",
+		"013b0502",
+		"02a10e02",
+		"02410502",
+		"012f0502",
+		"03500902",
+		"01ca0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Chibi-Robo!",
+		"character": "Chibi-Robo",
+		"name": "Chibi Robo",
+		"gameSeries": "Chibi Robo",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22c00000-003a0202.png",
+		"tail": "003a0202"
+	},
+	"next": "000d0002.html",
+	"prev": "001a0002.html",
+	"list": [
+		"02640102",
+		"01bb0502",
+		"03ca0502",
+		"03d20502",
+		"00430302",
+		"04f01d02",
+		"02900e02",
+		"02490502",
+		"043a1302",
+		"00f00502"
+	]
+}

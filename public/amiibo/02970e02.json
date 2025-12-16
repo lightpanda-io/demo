@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Bowser",
+		"name": "Bowser - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png",
+		"tail": "02970e02"
+	},
+	"next": "02560c02.html",
+	"prev": "01840502.html",
+	"list": [
+		"03a0ff02",
+		"037e0002",
+		"01990502",
+		"01540502",
+		"00c90502",
+		"00040002",
+		"013e0502",
+		"01170502",
+		"042d1802",
+		"04b31d02"
+	]
+}

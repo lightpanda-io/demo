@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cephalobot",
+		"name": "Cephalobot",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a170001-03ce0502.png",
+		"tail": "03ce0502"
+	},
+	"next": "00c00502.html",
+	"prev": "03720102.html",
+	"list": [
+		"002a0002",
+		"002c0002",
+		"00ea0502",
+		"01050502",
+		"008b0502",
+		"02f40502",
+		"00bb0502",
+		"02a50e02",
+		"00310002",
+		"03741402"
+	]
+}

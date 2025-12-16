@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Digby",
+		"name": "Digby",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0000-02430502.png",
+		"tail": "02430502"
+	},
+	"next": "01a20502.html",
+	"prev": "00520502.html",
+	"list": [
+		"03d30502",
+		"006d0502",
+		"005b0502",
+		"03d10502",
+		"02f00502",
+		"01540502",
+		"03c00502",
+		"02a20e02",
+		"04b51d02",
+		"035b0902"
+	]
+}

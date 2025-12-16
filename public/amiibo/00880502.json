@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bella",
+		"name": "Bella",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040e0001-00880502.png",
+		"tail": "00880502"
+	},
+	"next": "01360502.html",
+	"prev": "00f30502.html",
+	"list": [
+		"00c80502",
+		"025e0402",
+		"028d0e02",
+		"01580502",
+		"01510502",
+		"01340502",
+		"025c0d02",
+		"017d0502",
+		"02f30502",
+		"02730e02"
+	]
+}

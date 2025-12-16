@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Dizzy",
+		"name": "Dizzy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03240001-01890502.png",
+		"tail": "01890502"
+	},
+	"next": "01b30502.html",
+	"prev": "01a90502.html",
+	"list": [
+		"00e50502",
+		"03110502",
+		"03c60502",
+		"03af0502",
+		"03170502",
+		"03150502",
+		"023f0502",
+		"00b30502",
+		"03000502",
+		"03530902"
+	]
+}

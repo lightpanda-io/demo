@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Akuma",
+		"name": "Akuma",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png",
+		"tail": "04c01d02"
+	},
+	"next": "04e11d02.html",
+	"prev": "04bf1d02.html",
+	"list": [
+		"03540902",
+		"00580502",
+		"031e0502",
+		"001f0002",
+		"03d50502",
+		"03a40002",
+		"03a20002",
+		"00ce0502",
+		"01710502",
+		"00f40502"
+	]
+}

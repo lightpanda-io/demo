@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Astrid",
+		"name": "Astrid",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d60001-01570502.png",
+		"tail": "01570502"
+	},
+	"next": "023f0502.html",
+	"prev": "027a0e02.html",
+	"list": [
+		"030f0502",
+		"012d0502",
+		"000b0002",
+		"024b0502",
+		"01060502",
+		"01d70502",
+		"04df1d02",
+		"027e0e02",
+		"04a40902",
+		"01370502"
+	]
+}

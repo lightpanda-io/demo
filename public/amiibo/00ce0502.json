@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Blaire",
+		"name": "Blaire",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04de0001-00ce0502.png",
+		"tail": "00ce0502"
+	},
+	"next": "01420502.html",
+	"prev": "01bf0502.html",
+	"list": [
+		"01cd0502",
+		"01c00502",
+		"024a0502",
+		"04d31d02",
+		"027b0e02",
+		"01680502",
+		"00b80502",
+		"01980502",
+		"00b20502",
+		"02bc0e02"
+	]
+}

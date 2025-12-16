@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sable",
+		"name": "Sable",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-00470502.png",
+		"tail": "00470502"
+	},
+	"next": "01710502.html",
+	"prev": "03890002.html",
+	"list": [
+		"04b01d02",
+		"012c0502",
+		"01ab0502",
+		"036d0a02",
+		"01630502",
+		"03b80502",
+		"04340402",
+		"04241902",
+		"01380502",
+		"013e0502"
+	]
+}

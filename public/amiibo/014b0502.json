@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marshal",
+		"name": "Marshal",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ee0001-014b0502.png",
+		"tail": "014b0502"
+	},
+	"next": "03900402.html",
+	"prev": "00de0502.html",
+	"list": [
+		"02800e02",
+		"00910502",
+		"03900402",
+		"01940502",
+		"03550902",
+		"0432ff02",
+		"01d00502",
+		"01c30502",
+		"012f0502",
+		"04390402"
+	]
+}

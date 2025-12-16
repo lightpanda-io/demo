@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Niko",
+		"name": "Niko",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a070001-03bc0502.png",
+		"tail": "03bc0502"
+	},
+	"next": "01cd0502.html",
+	"prev": "00800502.html",
+	"list": [
+		"00320002",
+		"00a30502",
+		"02690e02",
+		"02990e02",
+		"03931702",
+		"013a0502",
+		"027c0e02",
+		"02540c02",
+		"00430302",
+		"001d0002"
+	]
+}

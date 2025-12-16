@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "King Dedede",
+		"name": "King Dedede",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png",
+		"tail": "00280002"
+	},
+	"next": "02520002.html",
+	"prev": "00da0502.html",
+	"list": [
+		"000f0002",
+		"00430302",
+		"035a0902",
+		"02840e02",
+		"01a60502",
+		"02e30f02",
+		"00f70502",
+		"01280502",
+		"04ce1d02",
+		"01730502"
+	]
+}

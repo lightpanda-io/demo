@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Sidon",
+		"name": "Sidon",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
+		"tail": "04a40902"
+	},
+	"next": "04a30902.html",
+	"prev": "04a60902.html",
+	"list": [
+		"04b11d02",
+		"028d0e02",
+		"02fe0502",
+		"03830002",
+		"039bff02",
+		"01a10502",
+		"02b60e02",
+		"00710502",
+		"015e0502",
+		"01b10502"
+	]
+}

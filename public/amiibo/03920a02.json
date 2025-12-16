@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Shovel Knight",
+		"character": "Shovel Knight",
+		"name": "Shovel Knight - Gold Edition",
+		"gameSeries": "Shovel Knight",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-03920a02.png",
+		"tail": "03920a02"
+	},
+	"next": "03730102.html",
+	"prev": "00fc0502.html",
+	"list": [
+		"003c0102",
+		"02b20e02",
+		"02680102",
+		"043d1b02",
+		"00fd0502",
+		"03c30502",
+		"02620102",
+		"02e80502",
+		"02950e02",
+		"007d0502"
+	]
+}

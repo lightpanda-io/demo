@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Min Min",
+		"name": "Min Min",
+		"gameSeries": "ARMS",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png",
+		"tail": "041d0002"
+	},
+	"next": "02730e02.html",
+	"prev": "017e0502.html",
+	"list": [
+		"02fa0502",
+		"01130502",
+		"003f0402",
+		"03160502",
+		"03110502",
+		"01640502",
+		"02fd0502",
+		"008b0502",
+		"03aa0502",
+		"02f70502"
+	]
+}

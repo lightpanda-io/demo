@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Del",
+		"name": "Del",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c70001-01220502.png",
+		"tail": "01220502"
+	},
+	"next": "00cc0502.html",
+	"prev": "02570c02.html",
+	"list": [
+		"03560902",
+		"00fe0502",
+		"03560902",
+		"00e00502",
+		"042a1902",
+		"01460502",
+		"017d0502",
+		"02650102",
+		"04e61d02",
+		"00380102"
+	]
+}

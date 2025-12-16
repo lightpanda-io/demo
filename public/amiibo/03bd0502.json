@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Wardell",
+		"name": "Wardell",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a080001-03bd0502.png",
+		"tail": "03bd0502"
+	},
+	"next": "03cd0502.html",
+	"prev": "018b0502.html",
+	"list": [
+		"019b0502",
+		"01130502",
+		"03741402",
+		"00e10502",
+		"010e0502",
+		"03190502",
+		"03ab0502",
+		"01350502",
+		"02460502",
+		"03d50502"
+	]
+}

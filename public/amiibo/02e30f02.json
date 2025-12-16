@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Nabiru",
+		"name": "Nabiru",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png",
+		"tail": "02e30f02"
+	},
+	"next": "01150502.html",
+	"prev": "00550502.html",
+	"list": [
+		"03540902",
+		"02a30e02",
+		"01800502",
+		"01cd0502",
+		"019c0502",
+		"00310002",
+		"03590902",
+		"03a10002",
+		"01ac0502",
+		"01cb0502"
+	]
+}

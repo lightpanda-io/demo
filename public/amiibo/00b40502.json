@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Isabelle",
+		"name": "Isabelle - Winter",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810101-00b40502.png",
+		"tail": "00b40502"
+	},
+	"next": "00300002.html",
+	"prev": "index.html",
+	"list": [
+		"03d30502",
+		"0431ff02",
+		"03900402",
+		"01740502",
+		"02e80502",
+		"03b50502",
+		"035a0902",
+		"04bd1d02",
+		"03130502",
+		"025b0002"
+	]
+}

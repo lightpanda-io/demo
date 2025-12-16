@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter Rise",
+		"character": "Malzeno",
+		"name": "Malzeno",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png",
+		"tail": "042d1802"
+	},
+	"next": "03710102.html",
+	"prev": "02520002.html",
+	"list": [
+		"02f30502",
+		"03ad0502",
+		"02aa0e02",
+		"01000502",
+		"02400502",
+		"03040502",
+		"03d00502",
+		"039fff02",
+		"03090502",
+		"03911602"
+	]
+}

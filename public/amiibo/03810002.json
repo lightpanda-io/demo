@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ice Climbers",
+		"name": "Ice Climbers",
+		"gameSeries": "Classic Nintendo",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png",
+		"tail": "03810002"
+	},
+	"next": "042a1902.html",
+	"prev": "03130502.html",
+	"list": [
+		"04d21d02",
+		"016c0502",
+		"024b0502",
+		"030d0502",
+		"037b0002",
+		"03860002",
+		"03020502",
+		"004d0502",
+		"00860502",
+		"01080502"
+	]
+}

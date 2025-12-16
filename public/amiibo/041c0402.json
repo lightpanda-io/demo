@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Smallfry",
+		"name": "Smallfry",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png",
+		"tail": "041c0402"
+	},
+	"next": "03820002.html",
+	"prev": "04251902.html",
+	"list": [
+		"02e60f02",
+		"007d0502",
+		"02ac0e02",
+		"01320502",
+		"00650502",
+		"02f80502",
+		"01550502",
+		"03a60102",
+		"014f0502",
+		"00cf0502"
+	]
+}

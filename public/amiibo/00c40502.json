@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tipper",
+		"name": "Tipper",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b20001-00c40502.png",
+		"tail": "00c40502"
+	},
+	"next": "00590502.html",
+	"prev": "01b30502.html",
+	"list": [
+		"007a0502",
+		"02480502",
+		"03750d02",
+		"00840502",
+		"03060502",
+		"01930502",
+		"03010502",
+		"02750e02",
+		"01230502",
+		"01500502"
+	]
+}

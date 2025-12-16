@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Mario",
+		"name": "Mario - Wedding",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png",
+		"tail": "03710102"
+	},
+	"next": "00430302.html",
+	"prev": "042d1802.html",
+	"list": [
+		"00f60502",
+		"04b71d02",
+		"02f70502",
+		"00f20502",
+		"00970502",
+		"01a10502",
+		"03500902",
+		"00b10502",
+		"00a80502",
+		"01b70502"
+	]
+}

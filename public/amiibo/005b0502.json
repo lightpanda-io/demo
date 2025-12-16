@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kyle",
+		"name": "Kyle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05150001-005b0502.png",
+		"tail": "005b0502"
+	},
+	"next": "03630002.html",
+	"prev": "00570502.html",
+	"list": [
+		"00390102",
+		"00930502",
+		"006b0502",
+		"01cd0502",
+		"03080502",
+		"023b0702",
+		"03651302",
+		"009f0502",
+		"00860502",
+		"013a0502"
+	]
+}

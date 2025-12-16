@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Mira",
+		"name": "Mira",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a70001-01a60502.png",
+		"tail": "01a60502"
+	},
+	"next": "03a60102.html",
+	"prev": "00240002.html",
+	"list": [
+		"02f80502",
+		"02f10502",
+		"01b40502",
+		"00730502",
+		"014d0502",
+		"00920502",
+		"03100502",
+		"02ac0e02",
+		"00fc0502",
+		"00a30502"
+	]
+}

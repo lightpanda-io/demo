@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gulliver",
+		"name": "Gulliver",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-017d0502.png",
+		"tail": "017d0502"
+	},
+	"next": "02880e02.html",
+	"prev": "00ba0502.html",
+	"list": [
+		"04f31d02",
+		"04d11d02",
+		"011a0502",
+		"04e61d02",
+		"01c30502",
+		"00a40502",
+		"03550902",
+		"013f0502",
+		"01cf0502",
+		"02b50e02"
+	]
+}

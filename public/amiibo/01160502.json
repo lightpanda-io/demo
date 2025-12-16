@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Grams",
+		"name": "Grams",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01990001-01160502.png",
+		"tail": "01160502"
+	},
+	"next": "025a0002.html",
+	"prev": "01360502.html",
+	"list": [
+		"03911602",
+		"02420502",
+		"02960e02",
+		"02b30e02",
+		"041a0902",
+		"00930502",
+		"03530902",
+		"02bb0e02",
+		"03b50502",
+		"034e0902"
+	]
+}

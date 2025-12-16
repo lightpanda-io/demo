@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "T-Bone",
+		"name": "T-Bone",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024f0001-00810502.png",
+		"tail": "00810502"
+	},
+	"next": "02840e02.html",
+	"prev": "00df0502.html",
+	"list": [
+		"04251902",
+		"04db1d02",
+		"00b20502",
+		"00360102",
+		"02860e02",
+		"019f0502",
+		"019c0502",
+		"00f30502",
+		"01380502",
+		"018e0502"
+	]
+}

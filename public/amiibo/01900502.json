@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lolly",
+		"name": "Lolly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026f0001-01900502.png",
+		"tail": "01900502"
+	},
+	"next": "025f0402.html",
+	"prev": "011c0502.html",
+	"list": [
+		"014e0502",
+		"03140502",
+		"02ea0502",
+		"03971702",
+		"016e0502",
+		"02b20e02",
+		"001f0002",
+		"01370502",
+		"04b91d02",
+		"01770502"
+	]
+}

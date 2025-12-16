@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Celia",
+		"name": "Celia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04540001-01ae0502.png",
+		"tail": "01ae0502"
+	},
+	"next": "01c20502.html",
+	"prev": "01b70502.html",
+	"list": [
+		"04190902",
+		"00f50502",
+		"01bc0502",
+		"003e0402",
+		"03c00502",
+		"043f1c02",
+		"02a00e02",
+		"04360402",
+		"00370102",
+		"00170002"
+	]
+}

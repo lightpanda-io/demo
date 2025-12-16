@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tammi",
+		"name": "Tammi",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fc0001-01470502.png",
+		"tail": "01470502"
+	},
+	"next": "006b0502.html",
+	"prev": "01910502.html",
+	"list": [
+		"016b0502",
+		"02e40f02",
+		"013f0502",
+		"01470502",
+		"016e0502",
+		"01090502",
+		"00770502",
+		"003a0202",
+		"02f30502",
+		"013e0502"
+	]
+}

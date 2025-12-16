@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Skyward Sword",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png",
+		"tail": "034e0902"
+	},
+	"next": "005a0502.html",
+	"prev": "02b40e02.html",
+	"list": [
+		"04150402",
+		"014c0502",
+		"00f30502",
+		"03ba0502",
+		"02830e02",
+		"014a0502",
+		"019d0502",
+		"00a20502",
+		"042c1802",
+		"02820e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Vesta",
+		"name": "Vesta",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c50001-01010502.png",
+		"tail": "01010502"
+	},
+	"next": "01350502.html",
+	"prev": "01b50502.html",
+	"list": [
+		"03810002",
+		"03070502",
+		"00980502",
+		"00830502",
+		"010d0502",
+		"02820e02",
+		"01ce0502",
+		"02430502",
+		"00e00502",
+		"006b0502"
+	]
+}

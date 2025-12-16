@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Cloud Strife",
+		"name": "Cloud - Player 2",
+		"gameSeries": "Final Fantasy",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png",
+		"tail": "03620002"
+	},
+	"next": "019f0502.html",
+	"prev": "002e0002.html",
+	"list": [
+		"02aa0e02",
+		"00e80502",
+		"029a0e02",
+		"01000502",
+		"01d40502",
+		"04411c02",
+		"00940502",
+		"00d50502",
+		"04380402",
+		"02a70e02"
+	]
+}

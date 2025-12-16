@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Orville",
+		"name": "Orville",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a000001-03ab0502.png",
+		"tail": "03ab0502"
+	},
+	"next": "031c0502.html",
+	"prev": "03791502.html",
+	"list": [
+		"02740e02",
+		"02860e02",
+		"00b00502",
+		"010e0502",
+		"01530502",
+		"03920a02",
+		"03110502",
+		"01220502",
+		"008a0502",
+		"01970502"
+	]
+}

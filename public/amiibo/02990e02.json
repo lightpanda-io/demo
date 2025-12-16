@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Bowser",
+		"name": "Bowser - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png",
+		"tail": "02990e02"
+	},
+	"next": "00ad0502.html",
+	"prev": "008f0502.html",
+	"list": [
+		"01a90502",
+		"02650102",
+		"00fe0502",
+		"003e0402",
+		"04190902",
+		"041e0002",
+		"02a40e02",
+		"00540502",
+		"035b0902",
+		"04b81d02"
+	]
+}

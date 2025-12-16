@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Dee Jay",
+		"name": "Dee Jay",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png",
+		"tail": "04d61d02"
+	},
+	"next": "04dc1d02.html",
+	"prev": "04d21d02.html",
+	"list": [
+		"00610502",
+		"02980e02",
+		"034f0902",
+		"03af0502",
+		"02fb0502",
+		"00350102",
+		"04190902",
+		"031d0502",
+		"00790502",
+		"004d0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Nate",
+		"name": "Nate",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02190001-007e0502.png",
+		"tail": "007e0502"
+	},
+	"next": "02b90e02.html",
+	"prev": "01510502.html",
+	"list": [
+		"010e0502",
+		"00020002",
+		"04210002",
+		"00b60502",
+		"03af0502",
+		"03741402",
+		"02560c02",
+		"03b40502",
+		"00b90502",
+		"012c0502"
+	]
+}

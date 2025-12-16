@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tom Nook",
+		"name": "Tom Nook - Jacket",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830101-010e0502.png",
+		"tail": "010e0502"
+	},
+	"next": "00fb0502.html",
+	"prev": "042a1902.html",
+	"list": [
+		"00610502",
+		"03ac0502",
+		"018a0502",
+		"01890502",
+		"03090502",
+		"02b10e02",
+		"00b00502",
+		"000f0002",
+		"000c0002",
+		"029a0e02"
+	]
+}

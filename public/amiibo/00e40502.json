@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Teddy",
+		"name": "Teddy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02140001-00e40502.png",
+		"tail": "00e40502"
+	},
+	"next": "015e0502.html",
+	"prev": "019e0502.html",
+	"list": [
+		"02a40e02",
+		"01940502",
+		"006f0502",
+		"02f30502",
+		"04230002",
+		"00bf0502",
+		"01c50502",
+		"02670102",
+		"00eb0502",
+		"03c00502"
+	]
+}

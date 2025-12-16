@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cole",
+		"name": "Cole",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a60001-00a30502.png",
+		"tail": "00a30502"
+	},
+	"next": "00700502.html",
+	"prev": "01550502.html",
+	"list": [
+		"025b0002",
+		"04c01d02",
+		"01940502",
+		"04dc1d02",
+		"00740502",
+		"029b0e02",
+		"02900e02",
+		"00b80502",
+		"03c30502",
+		"001d0002"
+	]
+}

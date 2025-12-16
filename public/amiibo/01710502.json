@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Brewster",
+		"name": "Brewster",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01900001-01710502.png",
+		"tail": "01710502"
+	},
+	"next": "015c0502.html",
+	"prev": "00470502.html",
+	"list": [
+		"026f0e02",
+		"017c0502",
+		"03ba0502",
+		"02420502",
+		"02660102",
+		"03870002",
+		"02e80502",
+		"03d40502",
+		"009d0502",
+		"005a0502"
+	]
+}

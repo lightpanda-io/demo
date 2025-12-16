@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Peach",
+		"name": "Peach - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png",
+		"tail": "02770e02"
+	},
+	"next": "02f60502.html",
+	"prev": "015e0502.html",
+	"list": [
+		"01000502",
+		"03560902",
+		"025e0402",
+		"02750e02",
+		"04271902",
+		"00340102",
+		"02640102",
+		"023b0702",
+		"040d0f02",
+		"00020002"
+	]
+}

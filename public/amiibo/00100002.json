@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Pit",
+		"name": "Pit",
+		"gameSeries": "Kid Icarus",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07400000-00100002.png",
+		"tail": "00100002"
+	},
+	"next": "01920502.html",
+	"prev": "039bff02.html",
+	"list": [
+		"01710502",
+		"02440502",
+		"03590902",
+		"02a40e02",
+		"043a1302",
+		"011c0502",
+		"02520002",
+		"03000502",
+		"00ac0502",
+		"01a60502"
+	]
+}

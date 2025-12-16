@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "8-bit Mario",
+		"character": "Mario",
+		"name": "8-Bit Mario Classic Color",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png",
+		"tail": "02380602"
+	},
+	"next": "00d20502.html",
+	"prev": "03900402.html",
+	"list": [
+		"04c41e03",
+		"00890502",
+		"01ae0502",
+		"00400402",
+		"03150502",
+		"02a60e02",
+		"02fc0502",
+		"02f80502",
+		"01050502",
+		"02660102"
+	]
+}

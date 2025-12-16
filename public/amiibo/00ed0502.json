@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ruby",
+		"name": "Ruby",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049d0001-00ed0502.png",
+		"tail": "00ed0502"
+	},
+	"next": "00da0502.html",
+	"prev": "00870502.html",
+	"list": [
+		"01330502",
+		"00ac0502",
+		"03601202",
+		"00940502",
+		"034c0902",
+		"01bf0502",
+		"00360102",
+		"04370402",
+		"00d60502",
+		"01860502"
+	]
+}

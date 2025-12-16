@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Mint",
+		"name": "Mint",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e60001-00820502.png",
+		"tail": "00820502"
+	},
+	"next": "01650502.html",
+	"prev": "04140902.html",
+	"list": [
+		"00120002",
+		"023f0502",
+		"04a60902",
+		"01b90502",
+		"02af0e02",
+		"01840502",
+		"00820502",
+		"03110502",
+		"015e0502",
+		"026d0e02"
+	]
+}

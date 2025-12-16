@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chester",
+		"name": "Chester",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028c0001-013e0502.png",
+		"tail": "013e0502"
+	},
+	"next": "02ae0e02.html",
+	"prev": "00620502.html",
+	"list": [
+		"00130002",
+		"03b90502",
+		"04291902",
+		"00f30502",
+		"04340402",
+		"01a20502",
+		"02820e02",
+		"01940502",
+		"037f0002",
+		"005e0502"
+	]
+}

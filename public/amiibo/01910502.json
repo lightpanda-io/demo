@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Erik",
+		"name": "Erik",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02df0001-01910502.png",
+		"tail": "01910502"
+	},
+	"next": "01470502.html",
+	"prev": "00c10502.html",
+	"list": [
+		"00cf0502",
+		"04b41d02",
+		"02fc0502",
+		"01cf0502",
+		"00bd0502",
+		"01220502",
+		"04281902",
+		"00190002",
+		"02e10f02",
+		"00780502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rasher",
+		"name": "Rasher",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047a0001-00600502.png",
+		"tail": "00600502"
+	},
+	"next": "016f0502.html",
+	"prev": "03c70502.html",
+	"list": [
+		"02680102",
+		"04121302",
+		"04f01d02",
+		"00c90502",
+		"01920502",
+		"02540c02",
+		"03911602",
+		"00080002",
+		"02ea0502",
+		"00730502"
+	]
+}

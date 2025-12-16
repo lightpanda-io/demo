@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Daisy Mae",
+		"name": "Daisy Mae",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a040001-03b50502.png",
+		"tail": "03b50502"
+	},
+	"next": "013f0502.html",
+	"prev": "01780502.html",
+	"list": [
+		"003e0402",
+		"027f0e02",
+		"00720502",
+		"03bb0502",
+		"026a0e02",
+		"00070002",
+		"027e0e02",
+		"04ba1d02",
+		"02ba0e02",
+		"02ea0502"
+	]
+}

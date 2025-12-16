@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bud",
+		"name": "Bud",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e60001-00ec0502.png",
+		"tail": "00ec0502"
+	},
+	"next": "03a10002.html",
+	"prev": "02c00e02.html",
+	"list": [
+		"00270002",
+		"008a0502",
+		"04330402",
+		"00470502",
+		"008e0502",
+		"04e51d02",
+		"03ac0502",
+		"04da1d02",
+		"02470502",
+		"02bd0e02"
+	]
+}

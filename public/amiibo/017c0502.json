@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pave",
+		"name": "Pave",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ab0001-017c0502.png",
+		"tail": "017c0502"
+	},
+	"next": "02820e02.html",
+	"prev": "01060502.html",
+	"list": [
+		"03a10002",
+		"04e41d02",
+		"00d50502",
+		"04421c02",
+		"00ae0502",
+		"04dd1d02",
+		"008a0502",
+		"01150502",
+		"043a1302",
+		"00ab0502"
+	]
+}

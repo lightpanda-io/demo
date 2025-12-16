@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Daisy",
+		"name": "Daisy - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png",
+		"tail": "027c0e02"
+	},
+	"next": "038a0002.html",
+	"prev": "03a40002.html",
+	"list": [
+		"02400502",
+		"00e00502",
+		"00560502",
+		"02b10e02",
+		"00d80502",
+		"007b0502",
+		"028b0e02",
+		"01820502",
+		"00980502",
+		"01040502"
+	]
+}

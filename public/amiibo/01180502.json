@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Digby",
+		"name": "Digby - Raincoat",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0101-01180502.png",
+		"tail": "01180502"
+	},
+	"next": "02b80e02.html",
+	"prev": "03160502.html",
+	"list": [
+		"016c0502",
+		"01080502",
+		"04f21d02",
+		"013a0502",
+		"006f0502",
+		"037a0002",
+		"00090002",
+		"00ec0502",
+		"008f0502",
+		"04f11d02"
+	]
+}

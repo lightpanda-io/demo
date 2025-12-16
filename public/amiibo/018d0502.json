@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Croque",
+		"name": "Croque",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03490001-018d0502.png",
+		"tail": "018d0502"
+	},
+	"next": "03580902.html",
+	"prev": "02690e02.html",
+	"list": [
+		"04e61d02",
+		"02e90502",
+		"03040502",
+		"03661302",
+		"03690402",
+		"03720102",
+		"01c50502",
+		"04d61d02",
+		"01ab0502",
+		"014e0502"
+	]
+}

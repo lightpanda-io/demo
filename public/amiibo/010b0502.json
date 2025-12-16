@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rocket",
+		"name": "Rocket",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03720001-010b0502.png",
+		"tail": "010b0502"
+	},
+	"next": "01880502.html",
+	"prev": "041f0002.html",
+	"list": [
+		"000b0002",
+		"03100502",
+		"00a60502",
+		"00590502",
+		"035e1002",
+		"03050502",
+		"00230002",
+		"038c0002",
+		"012e0502",
+		"02790e02"
+	]
+}

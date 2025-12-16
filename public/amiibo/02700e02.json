@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Luigi",
+		"name": "Luigi - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10301-02700e02.png",
+		"tail": "02700e02"
+	},
+	"next": "00540502.html",
+	"prev": "03cc0502.html",
+	"list": [
+		"00760502",
+		"00bb0502",
+		"025b0002",
+		"01810502",
+		"04d71d02",
+		"02750e02",
+		"036a0402",
+		"02610402",
+		"00f40502",
+		"02f30502"
+	]
+}

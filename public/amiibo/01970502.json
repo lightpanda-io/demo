@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tex",
+		"name": "Tex",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046b0001-01970502.png",
+		"tail": "01970502"
+	},
+	"next": "02450502.html",
+	"prev": "014c0502.html",
+	"list": [
+		"043b1302",
+		"00930502",
+		"02770e02",
+		"034b0902",
+		"002c0002",
+		"030b0502",
+		"04d51d02",
+		"008e0502",
+		"03b00502",
+		"02e30f02"
+	]
+}

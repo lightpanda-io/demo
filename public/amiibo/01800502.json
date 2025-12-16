@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Goldie",
+		"name": "Goldie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01800502.png",
+		"tail": "01800502"
+	},
+	"next": "03951702.html",
+	"prev": "02a20e02.html",
+	"list": [
+		"03810002",
+		"01c10502",
+		"00f40502",
+		"00470502",
+		"035c0902",
+		"02430502",
+		"02e10f02",
+		"00840502",
+		"01bd0502",
+		"04d21d02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ellie",
+		"name": "Ellie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032a0001-03070502.png",
+		"tail": "03070502"
+	},
+	"next": "00630502.html",
+	"prev": "03ac0502.html",
+	"list": [
+		"00750502",
+		"029a0e02",
+		"01340502",
+		"02ee0502",
+		"00a50502",
+		"03b00502",
+		"03b60502",
+		"03190502",
+		"02fe0502",
+		"01650502"
+	]
+}

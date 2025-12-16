@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tom",
+		"name": "Tom",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026c0001-00c30502.png",
+		"tail": "00c30502"
+	},
+	"next": "04140902.html",
+	"prev": "02830e02.html",
+	"list": [
+		"00ee0502",
+		"04cb1d02",
+		"016a0502",
+		"00ee0502",
+		"04111802",
+		"01570502",
+		"00b90502",
+		"01cc0502",
+		"01440502",
+		"00ab0502"
+	]
+}

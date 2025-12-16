@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Toon Link - The Wind Waker",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000100-03500902.png",
+		"tail": "03500902"
+	},
+	"next": "03a20002.html",
+	"prev": "03941702.html",
+	"list": [
+		"00240002",
+		"03c90502",
+		"02b40e02",
+		"04401c02",
+		"010c0502",
+		"01b50502",
+		"00840502",
+		"01c70502",
+		"00c50502",
+		"02fa0502"
+	]
+}

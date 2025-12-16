@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Peggy",
+		"name": "Peggy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04830001-01b00502.png",
+		"tail": "01b00502"
+	},
+	"next": "034d0902.html",
+	"prev": "00490502.html",
+	"list": [
+		"03cd0502",
+		"01c50502",
+		"00010002",
+		"00f30502",
+		"00740502",
+		"030e0502",
+		"01460502",
+		"04bc1d02",
+		"010f0502",
+		"006e0502"
+	]
+}

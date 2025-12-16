@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Katt",
+		"name": "Katt",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02720001-01860502.png",
+		"tail": "01860502"
+	},
+	"next": "038d0002.html",
+	"prev": "04271902.html",
+	"list": [
+		"03160502",
+		"008f0502",
+		"024c0502",
+		"04be1d02",
+		"00850502",
+		"012a0502",
+		"04131302",
+		"00d60502",
+		"01d70502",
+		"00720502"
+	]
+}

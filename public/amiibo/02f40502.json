@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ketchup",
+		"name": "Ketchup",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03140001-02f40502.png",
+		"tail": "02f40502"
+	},
+	"next": "024f0902.html",
+	"prev": "004b0502.html",
+	"list": [
+		"00250002",
+		"04111802",
+		"03c20502",
+		"03651302",
+		"00340102",
+		"01d70502",
+		"01130502",
+		"02b80e02",
+		"04241902",
+		"04f11d02"
+	]
+}

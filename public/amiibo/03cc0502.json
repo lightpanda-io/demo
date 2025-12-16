@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marlo",
+		"name": "Marlo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a150001-03cc0502.png",
+		"tail": "03cc0502"
+	},
+	"next": "02700e02.html",
+	"prev": "00320002.html",
+	"list": [
+		"04b91d02",
+		"03951702",
+		"010e0502",
+		"00440502",
+		"00e00502",
+		"04f31d02",
+		"031c0502",
+		"04be1d02",
+		"037d0002",
+		"03920a02"
+	]
+}

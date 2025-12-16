@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Inkling",
+		"name": "Inkling Girl - Neon Pink",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png",
+		"tail": "03690402"
+	},
+	"next": "03670102.html",
+	"prev": "015f0502.html",
+	"list": [
+		"03d10502",
+		"02ef0502",
+		"03b60502",
+		"016c0502",
+		"03911602",
+		"01ad0502",
+		"016c0502",
+		"030b0502",
+		"038e0402",
+		"025e0402"
+	]
+}

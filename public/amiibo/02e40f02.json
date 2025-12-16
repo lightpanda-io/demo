@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Rathian",
+		"name": "Rathian and Cheval",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png",
+		"tail": "02e40f02"
+	},
+	"next": "028b0e02.html",
+	"prev": "03560902.html",
+	"list": [
+		"029f0e02",
+		"04f11d02",
+		"00b20502",
+		"00540502",
+		"03b20502",
+		"03b40502",
+		"03b40502",
+		"001c0002",
+		"005a0502",
+		"00540502"
+	]
+}

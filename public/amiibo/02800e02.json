@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Yoshi",
+		"name": "Yoshi - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png",
+		"tail": "02800e02"
+	},
+	"next": "01990502.html",
+	"prev": "00670502.html",
+	"list": [
+		"02710e02",
+		"043c1302",
+		"028d0e02",
+		"03a60102",
+		"02b00e02",
+		"03931702",
+		"02440502",
+		"00c70502",
+		"024b0502",
+		"017e0502"
+	]
+}

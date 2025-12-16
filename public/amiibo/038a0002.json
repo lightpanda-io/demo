@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Snake",
+		"name": "Snake",
+		"gameSeries": "Metal Gear Solid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png",
+		"tail": "038a0002"
+	},
+	"next": "011b0502.html",
+	"prev": "027c0e02.html",
+	"list": [
+		"03951702",
+		"02f80502",
+		"01280502",
+		"018c0502",
+		"00bb0502",
+		"00540502",
+		"00600502",
+		"03060502",
+		"00220002",
+		"00370102"
+	]
+}

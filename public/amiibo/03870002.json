@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Pokemon Trainer",
+		"name": "Pokemon Trainer",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png",
+		"tail": "03870002"
+	},
+	"next": "01370502.html",
+	"prev": "014d0502.html",
+	"list": [
+		"018c0502",
+		"019f0502",
+		"04411c02",
+		"02950e02",
+		"01600502",
+		"00490502",
+		"00c60502",
+		"008d0502",
+		"03bf0502",
+		"030e0502"
+	]
+}

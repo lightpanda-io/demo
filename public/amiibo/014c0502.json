@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gala",
+		"name": "Gala",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04850001-014c0502.png",
+		"tail": "014c0502"
+	},
+	"next": "01970502.html",
+	"prev": "01390502.html",
+	"list": [
+		"04a81d02",
+		"007e0502",
+		"042b1802",
+		"036b0402",
+		"008d0502",
+		"005b0502",
+		"01990502",
+		"040c0f02",
+		"04a30902",
+		"02e20f02"
+	]
+}

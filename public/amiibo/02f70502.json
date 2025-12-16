@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ursala",
+		"name": "Ursala",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021c0001-02f70502.png",
+		"tail": "02f70502"
+	},
+	"next": "01ca0502.html",
+	"prev": "00ca0502.html",
+	"list": [
+		"00380102",
+		"02390602",
+		"04e01d02",
+		"03bf0502",
+		"00700502",
+		"03ad0502",
+		"00440502",
+		"03b30502",
+		"03c10502",
+		"00060002"
+	]
+}

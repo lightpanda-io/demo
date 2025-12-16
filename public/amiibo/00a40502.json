@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Willow",
+		"name": "Willow",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cc0001-00a40502.png",
+		"tail": "00a40502"
+	},
+	"next": "005f0502.html",
+	"prev": "005e0502.html",
+	"list": [
+		"00040002",
+		"01a30502",
+		"019f0502",
+		"00d80502",
+		"01330502",
+		"00b10502",
+		"030e0502",
+		"03100502",
+		"00830502",
+		"03530902"
+	]
+}

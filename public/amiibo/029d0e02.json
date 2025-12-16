@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Bowser Jr.",
+		"name": "Bowser Jr. - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png",
+		"tail": "029d0e02"
+	},
+	"next": "02600402.html",
+	"prev": "00d00502.html",
+	"list": [
+		"042d1802",
+		"03010502",
+		"035d0302",
+		"01480502",
+		"01ba0502",
+		"042d1802",
+		"031a0502",
+		"01000502",
+		"00f60502",
+		"016c0502"
+	]
+}

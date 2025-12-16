@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Big Man",
+		"name": "Big Man",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png",
+		"tail": "04350402"
+	},
+	"next": "03d40502.html",
+	"prev": "04340402.html",
+	"list": [
+		"01970502",
+		"00b10502",
+		"025b0002",
+		"014d0502",
+		"012d0502",
+		"03b00502",
+		"02e90502",
+		"02ab0e02",
+		"03b80502",
+		"03ab0502"
+	]
+}

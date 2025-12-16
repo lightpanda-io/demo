@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yu-Gi-Oh!",
+		"character": "Gakuto Sōgetsu",
+		"name": "Gakuto Sōgetsu",
+		"gameSeries": "Yu-Gi-Oh!",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38420001-04261902.png",
+		"tail": "04261902"
+	},
+	"next": "03a40002.html",
+	"prev": "00220002.html",
+	"list": [
+		"00be0502",
+		"02770e02",
+		"018d0502",
+		"00260002",
+		"00ac0502",
+		"03830002",
+		"01b70502",
+		"02f80502",
+		"00fc0502",
+		"01490502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mega Man",
+		"character": "Mega Man",
+		"name": "Mega Man",
+		"gameSeries": "Megaman",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-03791502.png",
+		"tail": "03791502"
+	},
+	"next": "03ab0502.html",
+	"prev": "02fd0502.html",
+	"list": [
+		"018f0502",
+		"03a50002",
+		"03cd0502",
+		"04261902",
+		"03040502",
+		"00ef0502",
+		"00750502",
+		"016f0502",
+		"02770e02",
+		"02780e02"
+	]
+}

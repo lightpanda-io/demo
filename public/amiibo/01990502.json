@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bones",
+		"name": "Bones",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ee0001-01990502.png",
+		"tail": "01990502"
+	},
+	"next": "04131302.html",
+	"prev": "02800e02.html",
+	"list": [
+		"001d0002",
+		"04f21d02",
+		"03730102",
+		"00300002",
+		"00390102",
+		"03a30002",
+		"02fd0502",
+		"03ba0502",
+		"01b60502",
+		"03d60502"
+	]
+}

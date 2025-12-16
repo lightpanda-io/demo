@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Wii Fit Trainer",
+		"name": "Wii Fit Trainer",
+		"gameSeries": "Wii Fit",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png",
+		"tail": "00070002"
+	},
+	"next": "001a0002.html",
+	"prev": "02be0e02.html",
+	"list": [
+		"01690502",
+		"03170502",
+		"01770502",
+		"04b61d02",
+		"00590502",
+		"02960e02",
+		"01b10502",
+		"03100502",
+		"02ff0502",
+		"03760402"
+	]
+}

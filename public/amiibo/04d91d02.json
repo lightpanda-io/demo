@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "JP",
+		"name": "JP",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34ce0001-04d91d02.png",
+		"tail": "04d91d02"
+	},
+	"next": "04d21d02.html",
+	"prev": "04db1d02.html",
+	"list": [
+		"01cd0502",
+		"02420502",
+		"002a0002",
+		"00660502",
+		"02390602",
+		"01380502",
+		"03880002",
+		"03af0502",
+		"01a80502",
+		"01930502"
+	]
+}

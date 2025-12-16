@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Power Pros",
+		"character": "Daijobu",
+		"name": "Daijobu",
+		"gameSeries": "Power Pros",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38050001-03981702.png",
+		"tail": "03981702"
+	},
+	"next": "01c80502.html",
+	"prev": "02a50e02.html",
+	"list": [
+		"011a0502",
+		"028b0e02",
+		"04ef1d02",
+		"02720e02",
+		"00700502",
+		"01820502",
+		"01300502",
+		"00700502",
+		"041a0902",
+		"01880502"
+	]
+}

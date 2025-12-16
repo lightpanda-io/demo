@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Banjo",
+		"name": "Banjo \u0026 Kazooie",
+		"gameSeries": "Banjo Kazooie",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3b400000-03a30002.png",
+		"tail": "03a30002"
+	},
+	"next": "01b40502.html",
+	"prev": "03931702.html",
+	"list": [
+		"04eb1d02",
+		"02b70e02",
+		"04e31d02",
+		"034f0902",
+		"01af0502",
+		"01b10502",
+		"014c0502",
+		"008c0502",
+		"00c60502",
+		"04a91d02"
+	]
+}

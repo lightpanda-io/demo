@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Stella",
+		"name": "Stella",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c80001-02ed0502.png",
+		"tail": "02ed0502"
+	},
+	"next": "01070502.html",
+	"prev": "03b60502.html",
+	"list": [
+		"04370402",
+		"00230002",
+		"02be0e02",
+		"03920a02",
+		"039eff02",
+		"0432ff02",
+		"01030502",
+		"02820e02",
+		"00c30502",
+		"000f0002"
+	]
+}

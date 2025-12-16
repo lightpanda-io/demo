@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ed",
+		"name": "Ed",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03aa0001-00e60502.png",
+		"tail": "00e60502"
+	},
+	"next": "03b00502.html",
+	"prev": "00e10502.html",
+	"list": [
+		"019e0502",
+		"04ef1d02",
+		"04411c02",
+		"041a0902",
+		"030d0502",
+		"01100502",
+		"02550c02",
+		"02430502",
+		"003c0102",
+		"01260502"
+	]
+}

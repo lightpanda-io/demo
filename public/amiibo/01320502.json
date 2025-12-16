@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ricky",
+		"name": "Ricky",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e70001-01320502.png",
+		"tail": "01320502"
+	},
+	"next": "01610502.html",
+	"prev": "014f0502.html",
+	"list": [
+		"004e0502",
+		"01010502",
+		"03651302",
+		"00370102",
+		"014e0502",
+		"04e11d02",
+		"00e40502",
+		"00f30502",
+		"01530502",
+		"00f80502"
+	]
+}

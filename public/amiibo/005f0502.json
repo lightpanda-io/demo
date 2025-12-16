@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jambette",
+		"name": "Jambette",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03450001-005f0502.png",
+		"tail": "005f0502"
+	},
+	"next": "00240002.html",
+	"prev": "00a40502.html",
+	"list": [
+		"00ba0502",
+		"01310502",
+		"04aa1d02",
+		"04d81d02",
+		"00a90502",
+		"02fe0502",
+		"02bf0e02",
+		"00c10502",
+		"02bd0e02",
+		"04330402"
+	]
+}

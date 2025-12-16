@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yu-Gi-Oh!",
+		"character": "Roa Kirishima",
+		"name": "Roa Kirishima",
+		"gameSeries": "Yu-Gi-Oh!",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38440001-04281902.png",
+		"tail": "04281902"
+	},
+	"next": "01820502.html",
+	"prev": "03781402.html",
+	"list": [
+		"04e51d02",
+		"012b0502",
+		"003e0402",
+		"02760e02",
+		"02e80502",
+		"04b21d02",
+		"01660502",
+		"00cb0502",
+		"02f40502",
+		"03870002"
+	]
+}

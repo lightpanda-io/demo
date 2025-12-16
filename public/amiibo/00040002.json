@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Link",
+		"name": "Link",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
+		"tail": "00040002"
+	},
+	"next": "02590002.html",
+	"prev": "03741402.html",
+	"list": [
+		"02490502",
+		"01cf0502",
+		"00d20502",
+		"03690402",
+		"023e0302",
+		"00650502",
+		"02b40e02",
+		"016c0502",
+		"00770502",
+		"02420502"
+	]
+}

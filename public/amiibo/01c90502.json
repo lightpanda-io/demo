@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "OHare",
+		"name": "OHare",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a30001-01c90502.png",
+		"tail": "01c90502"
+	},
+	"next": "00200002.html",
+	"prev": "025a0002.html",
+	"list": [
+		"0430ff02",
+		"01bf0502",
+		"01a80502",
+		"02f90502",
+		"03160502",
+		"029f0e02",
+		"02410502",
+		"00620502",
+		"00ac0502",
+		"03130502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Samus",
+		"name": "Samus Aran",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-03651302.png",
+		"tail": "03651302"
+	},
+	"next": "00e20502.html",
+	"prev": "000e0002.html",
+	"list": [
+		"00c30502",
+		"02ec0502",
+		"04390402",
+		"0432ff02",
+		"01d70502",
+		"04a40902",
+		"04b71d02",
+		"00650502",
+		"013f0502",
+		"00480502"
+	]
+}

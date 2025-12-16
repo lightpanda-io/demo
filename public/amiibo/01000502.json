@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Drift",
+		"name": "Drift",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033c0001-01000502.png",
+		"tail": "01000502"
+	},
+	"next": "01c30502.html",
+	"prev": "011a0502.html",
+	"list": [
+		"04261902",
+		"04330402",
+		"00500502",
+		"00550502",
+		"03150502",
+		"04b71d02",
+		"03530902",
+		"034b0902",
+		"016c0502",
+		"02fc0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Dora",
+		"name": "Dora",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040c0001-01590502.png",
+		"tail": "01590502"
+	},
+	"next": "018c0502.html",
+	"prev": "03040502.html",
+	"list": [
+		"010c0502",
+		"041b0402",
+		"02580002",
+		"03030502",
+		"02fc0502",
+		"023f0502",
+		"01c80502",
+		"040d0f02",
+		"00520502",
+		"029b0e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Mario",
+		"name": "Mario - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png",
+		"tail": "02690e02"
+	},
+	"next": "018d0502.html",
+	"prev": "00fb0502.html",
+	"list": [
+		"040f1802",
+		"00580502",
+		"02590002",
+		"04380402",
+		"018f0502",
+		"03840002",
+		"03601202",
+		"042d1802",
+		"00290002",
+		"02c20e02"
+	]
+}

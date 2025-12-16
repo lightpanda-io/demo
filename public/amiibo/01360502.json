@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Drago",
+		"name": "Drago",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02cb0001-01360502.png",
+		"tail": "01360502"
+	},
+	"next": "01160502.html",
+	"prev": "00880502.html",
+	"list": [
+		"00cb0502",
+		"002a0002",
+		"01020502",
+		"04d01d02",
+		"031a0502",
+		"03b30502",
+		"02e70502",
+		"01d50502",
+		"031b0502",
+		"02850e02"
+	]
+}

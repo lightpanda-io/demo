@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rover",
+		"name": "Rover",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018d0001-010c0502.png",
+		"tail": "010c0502"
+	},
+	"next": "01140502.html",
+	"prev": "03820002.html",
+	"list": [
+		"00d50502",
+		"01190502",
+		"01b20502",
+		"04f01d02",
+		"02fb0502",
+		"04cb1d02",
+		"00720502",
+		"00390102",
+		"01990502",
+		"01720502"
+	]
+}

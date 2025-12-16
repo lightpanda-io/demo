@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tutu",
+		"name": "Tutu",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021b0001-00800502.png",
+		"tail": "00800502"
+	},
+	"next": "03bc0502.html",
+	"prev": "02fa0502.html",
+	"list": [
+		"002c0002",
+		"01640502",
+		"01160502",
+		"03000502",
+		"00b80502",
+		"011e0502",
+		"002b0002",
+		"02840e02",
+		"01ac0502",
+		"01c30502"
+	]
+}

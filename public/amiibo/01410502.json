@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Greta",
+		"name": "Greta",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041c0001-01410502.png",
+		"tail": "01410502"
+	},
+	"next": "03611202.html",
+	"prev": "01620502.html",
+	"list": [
+		"02440502",
+		"007b0502",
+		"00b70502",
+		"01a90502",
+		"036b0402",
+		"002c0002",
+		"03a0ff02",
+		"04b51d02",
+		"00640502",
+		"04ee1d02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cally",
+		"name": "Cally",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e80001-01ce0502.png",
+		"tail": "01ce0502"
+	},
+	"next": "02e60f02.html",
+	"prev": "00840502.html",
+	"list": [
+		"00390102",
+		"017f0502",
+		"01be0502",
+		"00c00502",
+		"00480502",
+		"00060002",
+		"019f0502",
+		"02470502",
+		"026a0e02",
+		"017d0502"
+	]
+}

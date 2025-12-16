@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Wolf",
+		"name": "Wolf",
+		"gameSeries": "Star Fox",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png",
+		"tail": "037e0002"
+	},
+	"next": "01aa0502.html",
+	"prev": "01cb0502.html",
+	"list": [
+		"008c0502",
+		"01510502",
+		"009b0502",
+		"025b0002",
+		"00f90502",
+		"02900e02",
+		"00700502",
+		"02b10e02",
+		"02410502",
+		"011e0502"
+	]
+}

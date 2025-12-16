@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Link's Awakening",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03990902.png",
+		"tail": "03990902"
+	},
+	"next": "00e00502.html",
+	"prev": "030c0502.html",
+	"list": [
+		"01c50502",
+		"025b0002",
+		"01220502",
+		"04401c02",
+		"03911602",
+		"014d0502",
+		"00a30502",
+		"043a1302",
+		"01160502",
+		"009f0502"
+	]
+}

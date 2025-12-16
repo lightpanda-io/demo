@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Donkey Kong",
+		"name": "Donkey Kong",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png",
+		"tail": "02640102"
+	},
+	"next": "042f1a02.html",
+	"prev": "00720502.html",
+	"list": [
+		"00e30502",
+		"023b0702",
+		"02eb0502",
+		"00680502",
+		"04b31d02",
+		"01250502",
+		"00060002",
+		"02fa0502",
+		"04e51d02",
+		"00680502"
+	]
+}

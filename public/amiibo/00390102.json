@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Bowser",
+		"name": "Bowser",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00390102.png",
+		"tail": "00390102"
+	},
+	"next": "03d70502.html",
+	"prev": "03c40502.html",
+	"list": [
+		"012c0502",
+		"03be0502",
+		"03060502",
+		"03180502",
+		"01900502",
+		"010f0502",
+		"00410302",
+		"02f50502",
+		"02be0e02",
+		"03a90502"
+	]
+}

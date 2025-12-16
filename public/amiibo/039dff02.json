@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Peach",
+		"name": "Peach - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png",
+		"tail": "039dff02"
+	},
+	"next": "02f80502.html",
+	"prev": "03840002.html",
+	"list": [
+		"04e31d02",
+		"036b0402",
+		"04dc1d02",
+		"02800e02",
+		"00760502",
+		"02e90502",
+		"00b10502",
+		"01af0502",
+		"02720e02",
+		"00930502"
+	]
+}

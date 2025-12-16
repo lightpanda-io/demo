@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tucker",
+		"name": "Tucker",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032c0001-01480502.png",
+		"tail": "01480502"
+	},
+	"next": "034b0902.html",
+	"prev": "00260002.html",
+	"list": [
+		"0431ff02",
+		"02580002",
+		"042c1802",
+		"04ce1d02",
+		"00f60502",
+		"024c0502",
+		"01370502",
+		"042e0002",
+		"00750502",
+		"011f0502"
+	]
+}

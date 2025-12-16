@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Goldie",
+		"name": "Goldie - Amiibo Festival",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01d50502.png",
+		"tail": "01d50502"
+	},
+	"next": "00560502.html",
+	"prev": "03010502.html",
+	"list": [
+		"03180502",
+		"02f30502",
+		"01730502",
+		"038b0002",
+		"016e0502",
+		"00c40502",
+		"00930502",
+		"02910e02",
+		"011e0502",
+		"00d50502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Frye",
+		"name": "Frye",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png",
+		"tail": "04340402"
+	},
+	"next": "04350402.html",
+	"prev": "04330402.html",
+	"list": [
+		"01720502",
+		"00660502",
+		"04de1d02",
+		"011a0502",
+		"03931702",
+		"00ba0502",
+		"00460502",
+		"03c70502",
+		"02490502",
+		"00df0502"
+	]
+}

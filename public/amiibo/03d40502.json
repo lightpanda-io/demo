@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Frett",
+		"name": "Frett",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1d0001-03d40502.png",
+		"tail": "03d40502"
+	},
+	"next": "00c90502.html",
+	"prev": "04350402.html",
+	"list": [
+		"003d0102",
+		"00410302",
+		"02990e02",
+		"029b0e02",
+		"01d10502",
+		"02f90502",
+		"03880002",
+		"00e90502",
+		"03701202",
+		"03c60502"
+	]
+}

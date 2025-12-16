@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pippy",
+		"name": "Pippy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049a0001-014e0502.png",
+		"tail": "014e0502"
+	},
+	"next": "00020002.html",
+	"prev": "02b90e02.html",
+	"list": [
+		"04cb1d02",
+		"03830002",
+		"03100502",
+		"003c0102",
+		"012f0502",
+		"00ff0502",
+		"004e0502",
+		"041a0902",
+		"00aa0502",
+		"02520002"
+	]
+}

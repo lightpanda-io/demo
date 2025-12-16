@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Roald",
+		"name": "Roald",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04600001-00a50502.png",
+		"tail": "00a50502"
+	},
+	"next": "02a40e02.html",
+	"prev": "016e0502.html",
+	"list": [
+		"00f10502",
+		"02b00e02",
+		"04e11d02",
+		"008d0502",
+		"00690502",
+		"00b90502",
+		"00780502",
+		"030a0502",
+		"008d0502",
+		"01410502"
+	]
+}

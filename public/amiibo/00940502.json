@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Eunice",
+		"name": "Eunice",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c70001-00940502.png",
+		"tail": "00940502"
+	},
+	"next": "029a0e02.html",
+	"prev": "02600402.html",
+	"list": [
+		"00c10502",
+		"01ac0502",
+		"03110502",
+		"0431ff02",
+		"04d21d02",
+		"04a50902",
+		"00110002",
+		"029c0e02",
+		"01700502",
+		"01500502"
+	]
+}

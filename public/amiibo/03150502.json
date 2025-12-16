@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Buzz",
+		"name": "Buzz",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044e0001-03150502.png",
+		"tail": "03150502"
+	},
+	"next": "03ad0502.html",
+	"prev": "03a70102.html",
+	"list": [
+		"00bc0502",
+		"03920a02",
+		"01d80502",
+		"00710502",
+		"03b30502",
+		"02810e02",
+		"015f0502",
+		"03a0ff02",
+		"002b0002",
+		"024d0502"
+	]
+}

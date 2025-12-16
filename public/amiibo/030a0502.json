@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Candi",
+		"name": "Candi",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04140001-030a0502.png",
+		"tail": "030a0502"
+	},
+	"next": "031b0502.html",
+	"prev": "01bc0502.html",
+	"list": [
+		"00f50502",
+		"02b40e02",
+		"02f50502",
+		"00430302",
+		"00f00502",
+		"04d61d02",
+		"01820502",
+		"02b00e02",
+		"043d1b02",
+		"03090502"
+	]
+}

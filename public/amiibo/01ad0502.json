@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Static",
+		"name": "Static",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e50001-01ad0502.png",
+		"tail": "01ad0502"
+	},
+	"next": "01ab0502.html",
+	"prev": "00120002.html",
+	"list": [
+		"01890502",
+		"00870502",
+		"02580002",
+		"029c0e02",
+		"01180502",
+		"030c0502",
+		"03d50502",
+		"01800502",
+		"00940502",
+		"023d0002"
+	]
+}

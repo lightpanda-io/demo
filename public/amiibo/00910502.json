@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Roscoe",
+		"name": "Roscoe",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a80001-00910502.png",
+		"tail": "00910502"
+	},
+	"next": "00180002.html",
+	"prev": "02f60502.html",
+	"list": [
+		"00020002",
+		"04d11d02",
+		"00ce0502",
+		"00760502",
+		"002d0002",
+		"004c0502",
+		"00810502",
+		"001d0002",
+		"00f40502",
+		"041a0902"
+	]
+}

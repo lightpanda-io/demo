@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Squirtle",
+		"name": "Squirtle",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png",
+		"tail": "03840002"
+	},
+	"next": "039dff02.html",
+	"prev": "03550902.html",
+	"list": [
+		"01a70502",
+		"01410502",
+		"03611202",
+		"042b1802",
+		"018a0502",
+		"019f0502",
+		"04131302",
+		"039cff02",
+		"02860e02",
+		"01ce0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Boone",
+		"name": "Boone",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036b0001-018b0502.png",
+		"tail": "018b0502"
+	},
+	"next": "03bd0502.html",
+	"prev": "03050502.html",
+	"list": [
+		"009e0502",
+		"01300502",
+		"03a50002",
+		"04aa1d02",
+		"02490502",
+		"00610502",
+		"010e0502",
+		"01130502",
+		"03cc0502",
+		"00400402"
+	]
+}

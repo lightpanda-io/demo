@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Fire Emblem",
+		"character": "Tiki",
+		"name": "Tiki",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png",
+		"tail": "03701202"
+	},
+	"next": "01340502.html",
+	"prev": "01760502.html",
+	"list": [
+		"009a0502",
+		"01120502",
+		"01130502",
+		"03781402",
+		"04c91e03",
+		"028c0e02",
+		"01c50502",
+		"01c60502",
+		"03920a02",
+		"01290502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mii",
+		"name": "Mii Brawler",
+		"gameSeries": "Mii",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png",
+		"tail": "00210002"
+	},
+	"next": "02830e02.html",
+	"prev": "015d0502.html",
+	"list": [
+		"01800502",
+		"03030502",
+		"02880e02",
+		"02e30f02",
+		"00710502",
+		"00740502",
+		"00eb0502",
+		"039fff02",
+		"03500902",
+		"029e0e02"
+	]
+}

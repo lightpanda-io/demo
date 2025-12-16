@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Rosalina",
+		"name": "Rosalina - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png",
+		"tail": "02b50e02"
+	},
+	"next": "023d0002.html",
+	"prev": "035c0902.html",
+	"list": [
+		"03ca0502",
+		"028f0e02",
+		"02500a02",
+		"00e70502",
+		"03a40002",
+		"01000502",
+		"01b40502",
+		"00430302",
+		"000e0002",
+		"00910502"
+	]
+}

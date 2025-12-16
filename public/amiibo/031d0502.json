@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chelsea",
+		"name": "Chelsea",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02e00101-031d0502.png",
+		"tail": "031d0502"
+	},
+	"next": "001b0002.html",
+	"prev": "00660502.html",
+	"list": [
+		"02bd0e02",
+		"02f80502",
+		"00110002",
+		"03931702",
+		"03b40502",
+		"04cf1d02",
+		"03b00502",
+		"01720502",
+		"03b80502",
+		"006f0502"
+	]
+}

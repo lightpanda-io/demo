@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rolf",
+		"name": "Rolf",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fa0001-01680502.png",
+		"tail": "01680502"
+	},
+	"next": "01940502.html",
+	"prev": "00740502.html",
+	"list": [
+		"02500a02",
+		"0430ff02",
+		"02a40e02",
+		"02860e02",
+		"015a0502",
+		"00790502",
+		"03870002",
+		"024e0502",
+		"04d31d02",
+		"03c70502"
+	]
+}

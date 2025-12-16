@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Eugene",
+		"name": "Eugene",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c60001-00930502.png",
+		"tail": "00930502"
+	},
+	"next": "00f70502.html",
+	"prev": "00b20502.html",
+	"list": [
+		"02970e02",
+		"028d0e02",
+		"037f0002",
+		"01bb0502",
+		"02bb0e02",
+		"03050502",
+		"00310002",
+		"01320502",
+		"01430502",
+		"01550502"
+	]
+}

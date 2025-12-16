@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Redd",
+		"name": "Redd - Shirt",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80101-017e0502.png",
+		"tail": "017e0502"
+	},
+	"next": "041d0002.html",
+	"prev": "00d70502.html",
+	"list": [
+		"009d0502",
+		"010b0502",
+		"043b1302",
+		"04d11d02",
+		"04c41e03",
+		"000e0002",
+		"04200002",
+		"004e0502",
+		"040e0f02",
+		"00cf0502"
+	]
+}

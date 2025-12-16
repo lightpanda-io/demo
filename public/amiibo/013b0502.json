@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hazel",
+		"name": "Hazel",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ef0001-013b0502.png",
+		"tail": "013b0502"
+	},
+	"next": "01270502.html",
+	"prev": "00f40502.html",
+	"list": [
+		"01a10502",
+		"026e0e02",
+		"00f60502",
+		"00b20502",
+		"00a20502",
+		"03580902",
+		"019e0502",
+		"00b30502",
+		"026f0e02",
+		"035f1102"
+	]
+}

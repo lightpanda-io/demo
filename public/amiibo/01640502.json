@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Boomer",
+		"name": "Boomer",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04690001-01640502.png",
+		"tail": "01640502"
+	},
+	"next": "02650102.html",
+	"prev": "02980e02.html",
+	"list": [
+		"005a0502",
+		"038c0002",
+		"02790e02",
+		"017d0502",
+		"01090502",
+		"00560502",
+		"04360402",
+		"03040502",
+		"0432ff02",
+		"016d0502"
+	]
+}

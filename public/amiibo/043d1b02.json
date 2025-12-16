@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Xenoblade Chronicles 3",
+		"character": "Noah",
+		"name": "Noah",
+		"gameSeries": "Xenoblade",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png",
+		"tail": "043d1b02"
+	},
+	"next": "043e1b02.html",
+	"prev": "009e0502.html",
+	"list": [
+		"01be0502",
+		"025a0002",
+		"02e40f02",
+		"011a0502",
+		"01750502",
+		"01720502",
+		"01690502",
+		"00880502",
+		"024e0502",
+		"02450502"
+	]
+}

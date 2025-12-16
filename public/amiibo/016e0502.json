@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Francine",
+		"name": "Francine",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a00001-016e0502.png",
+		"tail": "016e0502"
+	},
+	"next": "00a50502.html",
+	"prev": "01460502.html",
+	"list": [
+		"034f0902",
+		"00610502",
+		"02450502",
+		"018c0502",
+		"03ca0502",
+		"037c0002",
+		"016c0502",
+		"026d0e02",
+		"01b20502",
+		"01c60502"
+	]
+}

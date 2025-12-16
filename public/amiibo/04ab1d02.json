@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Luke",
+		"name": "Luke",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png",
+		"tail": "04ab1d02"
+	},
+	"next": "04ac1d02.html",
+	"prev": "04aa1d02.html",
+	"list": [
+		"03180502",
+		"01b20502",
+		"017e0502",
+		"00aa0502",
+		"03620002",
+		"04a30902",
+		"03890002",
+		"031d0502",
+		"04150402",
+		"00cc0502"
+	]
+}

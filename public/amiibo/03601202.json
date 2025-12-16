@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Fire Emblem",
+		"character": "Alm",
+		"name": "Alm",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png",
+		"tail": "03601202"
+	},
+	"next": "038c0002.html",
+	"prev": "041b0402.html",
+	"list": [
+		"02f10502",
+		"00320002",
+		"00a90502",
+		"01800502",
+		"01a10502",
+		"03b30502",
+		"04cf1d02",
+		"03140502",
+		"024c0502",
+		"042c1802"
+	]
+}

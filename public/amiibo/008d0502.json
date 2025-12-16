@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cobb",
+		"name": "Cobb",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04800001-008d0502.png",
+		"tail": "008d0502"
+	},
+	"next": "02910e02.html",
+	"prev": "02390602.html",
+	"list": [
+		"03630002",
+		"02560c02",
+		"04d01d02",
+		"01040502",
+		"02640102",
+		"023e0302",
+		"00790502",
+		"03601202",
+		"023d0002",
+		"04b61d02"
+	]
+}

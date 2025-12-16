@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Waluigi",
+		"name": "Waluigi - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png",
+		"tail": "028a0e02"
+	},
+	"next": "036f1202.html",
+	"prev": "00dd0502.html",
+	"list": [
+		"02eb0502",
+		"043e1b02",
+		"043e1b02",
+		"000e0002",
+		"006d0502",
+		"003f0402",
+		"01960502",
+		"01330502",
+		"03880002",
+		"00190002"
+	]
+}

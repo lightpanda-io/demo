@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ribbot",
+		"name": "Ribbot",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03390001-01b10502.png",
+		"tail": "01b10502"
+	},
+	"next": "02ec0502.html",
+	"prev": "02550c02.html",
+	"list": [
+		"041c0402",
+		"04350402",
+		"00170002",
+		"00b00502",
+		"03170502",
+		"03890002",
+		"04bd1d02",
+		"01a50502",
+		"01980502",
+		"014e0502"
+	]
+}

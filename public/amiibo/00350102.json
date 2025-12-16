@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Luigi",
+		"name": "Luigi",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png",
+		"tail": "00350102"
+	},
+	"next": "00b70502.html",
+	"prev": "003f0402.html",
+	"list": [
+		"00130002",
+		"01c30502",
+		"04a81d02",
+		"00e70502",
+		"008c0502",
+		"00010002",
+		"04b61d02",
+		"035c0902",
+		"01000502",
+		"006f0502"
+	]
+}

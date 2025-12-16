@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Dark Samus",
+		"name": "Dark Samus",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c30000-03800002.png",
+		"tail": "03800002"
+	},
+	"next": "006d0502.html",
+	"prev": "01a40502.html",
+	"list": [
+		"03050502",
+		"01430502",
+		"04e31d02",
+		"02870e02",
+		"011c0502",
+		"01930502",
+		"02520002",
+		"04d71d02",
+		"036e0a02",
+		"00da0502"
+	]
+}

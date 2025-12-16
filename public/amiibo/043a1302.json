@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Samus",
+		"name": "Samus \u0026 Vi-O-La",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png",
+		"tail": "043a1302"
+	},
+	"next": "043c1302.html",
+	"prev": "043b1302.html",
+	"list": [
+		"042f1a02",
+		"01270502",
+		"04d61d02",
+		"042f1a02",
+		"04ba1d02",
+		"00ec0502",
+		"04ed1d02",
+		"01120502",
+		"03620002",
+		"008f0502"
+	]
+}

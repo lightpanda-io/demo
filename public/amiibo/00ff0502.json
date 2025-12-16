@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ankha",
+		"name": "Ankha",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02700001-00ff0502.png",
+		"tail": "00ff0502"
+	},
+	"next": "03b90502.html",
+	"prev": "00560502.html",
+	"list": [
+		"01420502",
+		"03180502",
+		"02930e02",
+		"02c20e02",
+		"001b0002",
+		"025f0402",
+		"01ae0502",
+		"000c0002",
+		"00df0502",
+		"01080502"
+	]
+}

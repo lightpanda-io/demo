@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Deirdre",
+		"name": "Deirdre",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02da0001-01330502.png",
+		"tail": "01330502"
+	},
+	"next": "03b40502.html",
+	"prev": "04210002.html",
+	"list": [
+		"01490502",
+		"03090502",
+		"04d01d02",
+		"00750502",
+		"006b0502",
+		"034e0902",
+		"02e40f02",
+		"00700502",
+		"0431ff02",
+		"03010502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Waluigi",
+		"name": "Waluigi - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60501-028b0e02.png",
+		"tail": "028b0e02"
+	},
+	"next": "03cf0502.html",
+	"prev": "02e40f02.html",
+	"list": [
+		"009a0502",
+		"025e0402",
+		"02490502",
+		"04ec1d02",
+		"00b70502",
+		"01260502",
+		"04cf1d02",
+		"00d20502",
+		"017f0502",
+		"00ea0502"
+	]
+}

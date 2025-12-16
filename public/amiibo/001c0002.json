@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Falco",
+		"name": "Falco",
+		"gameSeries": "Star Fox",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png",
+		"tail": "001c0002"
+	},
+	"next": "00c80502.html",
+	"prev": "04200002.html",
+	"list": [
+		"01430502",
+		"008e0502",
+		"04f11d02",
+		"02970e02",
+		"02a10e02",
+		"03ce0502",
+		"00190002",
+		"026f0e02",
+		"009e0502",
+		"03710102"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Wade",
+		"name": "Wade",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04680001-02f20502.png",
+		"tail": "02f20502"
+	},
+	"next": "01d60502.html",
+	"prev": "02fe0502.html",
+	"list": [
+		"00350102",
+		"01220502",
+		"04220002",
+		"011b0502",
+		"00a50502",
+		"01c70502",
+		"01470502",
+		"024c0502",
+		"01050502",
+		"03be0502"
+	]
+}

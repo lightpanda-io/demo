@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Murphy",
+		"name": "Murphy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02840001-02fe0502.png",
+		"tail": "02fe0502"
+	},
+	"next": "02f20502.html",
+	"prev": "016a0502.html",
+	"list": [
+		"01ae0502",
+		"04bc1d02",
+		"00070002",
+		"040f1802",
+		"04401c02",
+		"01290502",
+		"00450502",
+		"00f40502",
+		"04a60902",
+		"00bf0502"
+	]
+}

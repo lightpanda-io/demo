@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Timmy",
+		"name": "Timmy - Full Apron",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850201-01170502.png",
+		"tail": "01170502"
+	},
+	"next": "04190902.html",
+	"prev": "02580002.html",
+	"list": [
+		"017d0502",
+		"03080502",
+		"012c0502",
+		"00a00502",
+		"01650502",
+		"03cb0502",
+		"01b90502",
+		"012f0502",
+		"02560c02",
+		"00d70502"
+	]
+}

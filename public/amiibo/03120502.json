@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Snooty",
+		"name": "Snooty",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02060001-03120502.png",
+		"tail": "03120502"
+	},
+	"next": "023e0302.html",
+	"prev": "01580502.html",
+	"list": [
+		"035c0902",
+		"00520502",
+		"00a20502",
+		"00550502",
+		"04b61d02",
+		"03d40502",
+		"019c0502",
+		"04140902",
+		"03080502",
+		"041e0002"
+	]
+}

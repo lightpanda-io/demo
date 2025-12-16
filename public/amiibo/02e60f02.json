@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Qurupeco",
+		"name": "Qurupeco and Dan",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png",
+		"tail": "02e60f02"
+	},
+	"next": "00c70502.html",
+	"prev": "01ce0502.html",
+	"list": [
+		"00ed0502",
+		"03840002",
+		"00d60502",
+		"03170502",
+		"04281902",
+		"02e70502",
+		"00590502",
+		"01a00502",
+		"009f0502",
+		"008b0502"
+	]
+}

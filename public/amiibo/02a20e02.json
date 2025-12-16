@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Boo",
+		"name": "Boo - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png",
+		"tail": "02a20e02"
+	},
+	"next": "01800502.html",
+	"prev": "009b0502.html",
+	"list": [
+		"00070002",
+		"00370102",
+		"00990502",
+		"03941702",
+		"04e11d02",
+		"04131302",
+		"00d40502",
+		"03a40002",
+		"00fc0502",
+		"01cc0502"
+	]
+}

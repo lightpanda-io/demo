@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Wart Jr.",
+		"name": "Wart Jr.",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033d0001-013a0502.png",
+		"tail": "013a0502"
+	},
+	"next": "00aa0502.html",
+	"prev": "00f50502.html",
+	"list": [
+		"01cd0502",
+		"01570502",
+		"03520902",
+		"01b90502",
+		"00ca0502",
+		"00dc0502",
+		"03c30502",
+		"014a0502",
+		"02f40502",
+		"02b90e02"
+	]
+}

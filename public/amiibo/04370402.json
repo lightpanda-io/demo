@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Marie",
+		"name": "Marie - Alterna",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-04370402.png",
+		"tail": "04370402"
+	},
+	"next": "031a0502.html",
+	"prev": "025e0402.html",
+	"list": [
+		"01c20502",
+		"04cf1d02",
+		"001e0002",
+		"04d01d02",
+		"00cb0502",
+		"02980e02",
+		"00f10502",
+		"01870502",
+		"00960502",
+		"042a1902"
+	]
+}

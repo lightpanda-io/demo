@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sterling",
+		"name": "Sterling",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04520001-00730502.png",
+		"tail": "00730502"
+	},
+	"next": "01d40502.html",
+	"prev": "023b0702.html",
+	"list": [
+		"03ba0502",
+		"00cb0502",
+		"01cb0502",
+		"02b50e02",
+		"00690502",
+		"02b10e02",
+		"04bc1d02",
+		"02770e02",
+		"03850002",
+		"02730e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Richter",
+		"name": "Richter",
+		"gameSeries": "Castlevania",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png",
+		"tail": "038c0002"
+	},
+	"next": "008f0502.html",
+	"prev": "03601202.html",
+	"list": [
+		"03770402",
+		"02880e02",
+		"008c0502",
+		"002a0002",
+		"02c20e02",
+		"007d0502",
+		"00410302",
+		"026e0e02",
+		"043f1c02",
+		"04d21d02"
+	]
+}

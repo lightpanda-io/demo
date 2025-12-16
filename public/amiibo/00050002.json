@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Fox",
+		"name": "Fox",
+		"gameSeries": "Star Fox",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png",
+		"tail": "00050002"
+	},
+	"next": "02610402.html",
+	"prev": "02840e02.html",
+	"list": [
+		"012c0502",
+		"03640002",
+		"02a50e02",
+		"00380102",
+		"034d0902",
+		"010e0502",
+		"01c10502",
+		"04eb1d02",
+		"01a60502",
+		"00ac0502"
+	]
+}

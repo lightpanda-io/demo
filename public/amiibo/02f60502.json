@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Stu",
+		"name": "Stu",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024d0001-02f60502.png",
+		"tail": "02f60502"
+	},
+	"next": "00910502.html",
+	"prev": "02770e02.html",
+	"list": [
+		"01100502",
+		"00080002",
+		"04e71d02",
+		"036e0a02",
+		"010a0502",
+		"02480502",
+		"04cb1d02",
+		"04a91d02",
+		"04b11d02",
+		"04a30902"
+	]
+}

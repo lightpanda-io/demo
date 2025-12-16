@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tiffany",
+		"name": "Tiffany",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049b0001-00610502.png",
+		"tail": "00610502"
+	},
+	"next": "029e0e02.html",
+	"prev": "03af0502.html",
+	"list": [
+		"03640002",
+		"03cd0502",
+		"03a10002",
+		"00170002",
+		"02b60e02",
+		"03150502",
+		"037b0002",
+		"03d50502",
+		"013d0502",
+		"042c1802"
+	]
+}

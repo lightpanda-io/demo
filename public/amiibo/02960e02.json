@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Bowser",
+		"name": "Bowser - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90101-02960e02.png",
+		"tail": "02960e02"
+	},
+	"next": "01b60502.html",
+	"prev": "02660102.html",
+	"list": [
+		"02b80e02",
+		"04121302",
+		"04281902",
+		"035b0902",
+		"01720502",
+		"016d0502",
+		"03890002",
+		"023d0002",
+		"02870e02",
+		"00f40502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Anabelle",
+		"name": "Anabelle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02030001-019a0502.png",
+		"tail": "019a0502"
+	},
+	"next": "00ab0502.html",
+	"prev": "01300502.html",
+	"list": [
+		"04330402",
+		"03050502",
+		"02bd0e02",
+		"01be0502",
+		"02b60e02",
+		"0431ff02",
+		"018a0502",
+		"02a70e02",
+		"00260002",
+		"04b61d02"
+	]
+}

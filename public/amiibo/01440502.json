@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Klaus",
+		"name": "Klaus",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02220001-01440502.png",
+		"tail": "01440502"
+	},
+	"next": "015f0502.html",
+	"prev": "01ba0502.html",
+	"list": [
+		"026e0e02",
+		"03710102",
+		"03630002",
+		"03aa0502",
+		"006d0502",
+		"041c0402",
+		"04a50902",
+		"031e0502",
+		"02e20f02",
+		"01970502"
+	]
+}

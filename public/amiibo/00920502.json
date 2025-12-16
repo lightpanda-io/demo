@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Truffles",
+		"name": "Truffles",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04790001-00920502.png",
+		"tail": "00920502"
+	},
+	"next": "012d0502.html",
+	"prev": "01430502.html",
+	"list": [
+		"04421c02",
+		"02570c02",
+		"02a30e02",
+		"01850502",
+		"01910502",
+		"01970502",
+		"02900e02",
+		"01540502",
+		"02840e02",
+		"012d0502"
+	]
+}

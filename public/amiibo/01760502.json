@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gracie",
+		"name": "Gracie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a90001-01760502.png",
+		"tail": "01760502"
+	},
+	"next": "03701202.html",
+	"prev": "00a60502.html",
+	"list": [
+		"03a10002",
+		"04e41d02",
+		"0432ff02",
+		"04350402",
+		"00f90502",
+		"00b70502",
+		"03840002",
+		"00d70502",
+		"03a80502",
+		"023f0502"
+	]
+}

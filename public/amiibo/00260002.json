@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Jigglypuff",
+		"name": "Jigglypuff",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19270000-00260002.png",
+		"tail": "00260002"
+	},
+	"next": "01480502.html",
+	"prev": "00be0502.html",
+	"list": [
+		"01ca0502",
+		"008c0502",
+		"003e0402",
+		"03a90502",
+		"02550c02",
+		"00c40502",
+		"02640102",
+		"01a90502",
+		"03140502",
+		"03931702"
+	]
+}

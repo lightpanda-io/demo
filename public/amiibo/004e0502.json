@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Harriet",
+		"name": "Harriet",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01910001-004e0502.png",
+		"tail": "004e0502"
+	},
+	"next": "01450502.html",
+	"prev": "02bb0e02.html",
+	"list": [
+		"04b51d02",
+		"00660502",
+		"036f1202",
+		"02600402",
+		"00d60502",
+		"00300002",
+		"02e20f02",
+		"023d0002",
+		"02e60f02",
+		"03d50502"
+	]
+}

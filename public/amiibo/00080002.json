@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Villager",
+		"name": "Villager",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01800000-00080002.png",
+		"tail": "00080002"
+	},
+	"next": "03af0502.html",
+	"prev": "03190502.html",
+	"list": [
+		"04b11d02",
+		"01290502",
+		"03cd0502",
+		"010f0502",
+		"04bc1d02",
+		"04bf1d02",
+		"01bd0502",
+		"00fc0502",
+		"01730502",
+		"00660502"
+	]
+}

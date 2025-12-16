@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Mallary",
+		"name": "Mallary",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030d0001-01840502.png",
+		"tail": "01840502"
+	},
+	"next": "02970e02.html",
+	"prev": "01c30502.html",
+	"list": [
+		"01290502",
+		"00be0502",
+		"03730102",
+		"017f0502",
+		"026b0e02",
+		"01500502",
+		"01840502",
+		"001f0002",
+		"01630502",
+		"03890002"
+	]
+}

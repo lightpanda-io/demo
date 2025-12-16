@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Leilani",
+		"name": "Leilani",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01970001-01770502.png",
+		"tail": "01770502"
+	},
+	"next": "01530502.html",
+	"prev": "03170502.html",
+	"list": [
+		"01a60502",
+		"002c0002",
+		"03ce0502",
+		"04140902",
+		"00ad0502",
+		"01320502",
+		"00620502",
+		"01940502",
+		"03ac0502",
+		"00fa0502"
+	]
+}

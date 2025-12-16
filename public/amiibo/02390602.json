@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "8-bit Mario",
+		"character": "Mario",
+		"name": "8-Bit Mario Modern Color",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png",
+		"tail": "02390602"
+	},
+	"next": "008d0502.html",
+	"prev": "00e00502.html",
+	"list": [
+		"006a0502",
+		"00380102",
+		"03050502",
+		"02660102",
+		"00860502",
+		"017f0502",
+		"02e70502",
+		"00400402",
+		"02af0e02",
+		"00280002"
+	]
+}

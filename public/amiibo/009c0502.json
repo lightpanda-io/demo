@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Diana",
+		"name": "Diana",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02de0001-009c0502.png",
+		"tail": "009c0502"
+	},
+	"next": "03961702.html",
+	"prev": "01940502.html",
+	"list": [
+		"02810e02",
+		"035a0902",
+		"00700502",
+		"01290502",
+		"00a70502",
+		"00d40502",
+		"030c0502",
+		"01d30502",
+		"003a0202",
+		"02930e02"
+	]
+}

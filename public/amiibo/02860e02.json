@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Wario",
+		"name": "Wario - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png",
+		"tail": "02860e02"
+	},
+	"next": "029c0e02.html",
+	"prev": "02ad0e02.html",
+	"list": [
+		"01170502",
+		"01d50502",
+		"01940502",
+		"02860e02",
+		"02480502",
+		"00830502",
+		"03be0502",
+		"04a81d02",
+		"03a50002",
+		"016f0502"
+	]
+}

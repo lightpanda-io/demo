@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Diddy Kong",
+		"name": "Diddy Kong",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090000-000d0002.png",
+		"tail": "000d0002"
+	},
+	"next": "040c0f02.html",
+	"prev": "003a0202.html",
+	"list": [
+		"023b0702",
+		"02760e02",
+		"02770e02",
+		"01d10502",
+		"029f0e02",
+		"01970502",
+		"03d50502",
+		"00500502",
+		"007a0502",
+		"01480502"
+	]
+}

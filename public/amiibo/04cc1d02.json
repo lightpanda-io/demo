@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Ken",
+		"name": "Ken",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10001-04cc1d02.png",
+		"tail": "04cc1d02"
+	},
+	"next": "04d01d02.html",
+	"prev": "04d11d02.html",
+	"list": [
+		"01290502",
+		"02b60e02",
+		"00620502",
+		"035f1102",
+		"01720502",
+		"01cf0502",
+		"026a0e02",
+		"01a10502",
+		"019c0502",
+		"01d20502"
+	]
+}

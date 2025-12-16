@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "My Mario Wooden Blocks",
+		"character": "Yoshi",
+		"name": "Yoshi - My Mario Wooden Blocks",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png",
+		"tail": "04421c02"
+	},
+	"next": "016d0502.html",
+	"prev": "00370102.html",
+	"list": [
+		"00150002",
+		"00550502",
+		"02f50502",
+		"01c70502",
+		"03620002",
+		"01530502",
+		"007b0502",
+		"04f11d02",
+		"00b50502",
+		"02590002"
+	]
+}

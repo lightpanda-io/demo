@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Apple",
+		"name": "Apple",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037f0001-01aa0502.png",
+		"tail": "01aa0502"
+	},
+	"next": "02490502.html",
+	"prev": "037e0002.html",
+	"list": [
+		"01d40502",
+		"03820002",
+		"00ce0502",
+		"00240002",
+		"02380602",
+		"03750d02",
+		"00cf0502",
+		"01420502",
+		"00f80502",
+		"038d0002"
+	]
+}

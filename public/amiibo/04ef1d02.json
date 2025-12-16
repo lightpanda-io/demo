@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Alex",
+		"name": "Alex",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04ef1d02.png",
+		"tail": "04ef1d02"
+	},
+	"next": "04f01d02.html",
+	"prev": "04ee1d02.html",
+	"list": [
+		"00d40502",
+		"018f0502",
+		"00470502",
+		"01690502",
+		"037a0002",
+		"04101802",
+		"001a0002",
+		"035a0902",
+		"005b0502",
+		"039bff02"
+	]
+}

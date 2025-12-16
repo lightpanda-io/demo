@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ace",
+		"name": "Ace",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1b0001-03d20502.png",
+		"tail": "03d20502"
+	},
+	"next": "00220002.html",
+	"prev": "03cd0502.html",
+	"list": [
+		"008c0502",
+		"01370502",
+		"01280502",
+		"028e0e02",
+		"01b70502",
+		"02840e02",
+		"037c0002",
+		"00b90502",
+		"01530502",
+		"04df1d02"
+	]
+}

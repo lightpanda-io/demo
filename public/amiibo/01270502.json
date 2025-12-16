@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bubbles",
+		"name": "Bubbles",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03920001-01270502.png",
+		"tail": "01270502"
+	},
+	"next": "01a10502.html",
+	"prev": "013b0502.html",
+	"list": [
+		"02670102",
+		"016e0502",
+		"00980502",
+		"04e61d02",
+		"03be0502",
+		"01aa0502",
+		"00e70502",
+		"03af0502",
+		"03cf0502",
+		"043e1b02"
+	]
+}

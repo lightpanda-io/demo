@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Louie",
+		"name": "Louie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036d0001-03040502.png",
+		"tail": "03040502"
+	},
+	"next": "01590502.html",
+	"prev": "028f0e02.html",
+	"list": [
+		"00d70502",
+		"04411c02",
+		"0431ff02",
+		"018b0502",
+		"03611202",
+		"04241902",
+		"015a0502",
+		"025b0002",
+		"024e0502",
+		"00b90502"
+	]
+}

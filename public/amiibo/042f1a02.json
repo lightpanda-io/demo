@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Donkey Kong",
+		"character": "Donkey Kong",
+		"name": "Donkey Kong \u0026 Pauline",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080100-042f1a02.png",
+		"tail": "042f1a02"
+	},
+	"next": "0431ff02.html",
+	"prev": "02640102.html",
+	"list": [
+		"027b0e02",
+		"019e0502",
+		"03100502",
+		"008c0502",
+		"04e81d02",
+		"036c0a02",
+		"02990e02",
+		"03b10502",
+		"00430302",
+		"04b11d02"
+	]
+}

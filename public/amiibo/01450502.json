@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Daisy",
+		"name": "Daisy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f10001-01450502.png",
+		"tail": "01450502"
+	},
+	"next": "01300502.html",
+	"prev": "004e0502.html",
+	"list": [
+		"00ae0502",
+		"01440502",
+		"01540502",
+		"01010502",
+		"010f0502",
+		"00870502",
+		"000d0002",
+		"03000502",
+		"00130002",
+		"018c0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hopper",
+		"name": "Hopper",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04620001-00f60502.png",
+		"tail": "00f60502"
+	},
+	"next": "042c1802.html",
+	"prev": "03750d02.html",
+	"list": [
+		"00f50502",
+		"005e0502",
+		"03601202",
+		"037c0002",
+		"03911602",
+		"03580902",
+		"02a50e02",
+		"02fb0502",
+		"023e0302",
+		"024b0502"
+	]
+}

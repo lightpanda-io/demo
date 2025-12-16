@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Dhalsim",
+		"name": "Dhalsim",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png",
+		"tail": "04b41d02"
+	},
+	"next": "04bd1d02.html",
+	"prev": "04ba1d02.html",
+	"list": [
+		"031a0502",
+		"016a0502",
+		"01ae0502",
+		"02410502",
+		"04390402",
+		"03990902",
+		"03140502",
+		"02b90e02",
+		"00d30502",
+		"017e0502"
+	]
+}

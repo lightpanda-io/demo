@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sasha",
+		"name": "Sasha",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a110001-03c80502.png",
+		"tail": "03c80502"
+	},
+	"next": "002a0002.html",
+	"prev": "01b60502.html",
+	"list": [
+		"00470502",
+		"02e60f02",
+		"00be0502",
+		"036b0402",
+		"00830502",
+		"000b0002",
+		"00fe0502",
+		"01b60502",
+		"02870e02",
+		"01050502"
+	]
+}

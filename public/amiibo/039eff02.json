@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Daisy",
+		"name": "Daisy - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130003-039eff02.png",
+		"tail": "039eff02"
+	},
+	"next": "00310002.html",
+	"prev": "01af0502.html",
+	"list": [
+		"03a90502",
+		"01860502",
+		"00a20502",
+		"00cd0502",
+		"01cc0502",
+		"04a40902",
+		"02f70502",
+		"00f40502",
+		"04ed1d02",
+		"04c91e03"
+	]
+}

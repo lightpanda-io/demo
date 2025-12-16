@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Fauna",
+		"name": "Fauna",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d60001-00560502.png",
+		"tail": "00560502"
+	},
+	"next": "00ff0502.html",
+	"prev": "01d50502.html",
+	"list": [
+		"01740502",
+		"042e0002",
+		"006e0502",
+		"01430502",
+		"03770402",
+		"007c0502",
+		"00340102",
+		"00250002",
+		"04a81d02",
+		"02520002"
+	]
+}
