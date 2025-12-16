@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter Rise",
+		"character": "Magnamalo",
+		"name": "Magnamalo",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png",
+		"tail": "040f1802"
+	},
+	"next": "02b60e02.html",
+	"prev": "038b0002.html",
+	"list": [
+		"01220502",
+		"01bb0502",
+		"00810502",
+		"02ad0e02",
+		"03030502",
+		"02630102",
+		"028f0e02",
+		"03550902",
+		"024c0502",
+		"035e1002"
+	]
+}

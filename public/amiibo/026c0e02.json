@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Mario",
+		"name": "Mario - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00401-026c0e02.png",
+		"tail": "026c0e02"
+	},
+	"next": "02ad0e02.html",
+	"prev": "039fff02.html",
+	"list": [
+		"04291902",
+		"00d00502",
+		"01bf0502",
+		"011a0502",
+		"03be0502",
+		"01d70502",
+		"02b80e02",
+		"00bb0502",
+		"038d0002",
+		"01ae0502"
+	]
+}

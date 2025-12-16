@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Axel",
+		"name": "Axel",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03290001-009d0502.png",
+		"tail": "009d0502"
+	},
+	"next": "01c60502.html",
+	"prev": "031b0502.html",
+	"list": [
+		"04ce1d02",
+		"01420502",
+		"00870502",
+		"01c80502",
+		"02ab0e02",
+		"00960502",
+		"017b0502",
+		"004f0502",
+		"02eb0502",
+		"00480502"
+	]
+}

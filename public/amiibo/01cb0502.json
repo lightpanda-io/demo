@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cranston",
+		"name": "Cranston",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043c0001-01cb0502.png",
+		"tail": "01cb0502"
+	},
+	"next": "037e0002.html",
+	"prev": "03060502.html",
+	"list": [
+		"041c0402",
+		"025c0d02",
+		"04f21d02",
+		"031e0502",
+		"03530902",
+		"036f1202",
+		"00360102",
+		"00a10502",
+		"02a10e02",
+		"00900502"
+	]
+}

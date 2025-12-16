@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sheldon",
+		"name": "Sheldon",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ed0001-00620502.png",
+		"tail": "00620502"
+	},
+	"next": "013e0502.html",
+	"prev": "029b0e02.html",
+	"list": [
+		"035a0902",
+		"025c0d02",
+		"00d00502",
+		"039bff02",
+		"03d70502",
+		"04ec1d02",
+		"01a60502",
+		"00fc0502",
+		"024e0502",
+		"012e0502"
+	]
+}

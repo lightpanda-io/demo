@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Puddles",
+		"name": "Puddles",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033e0001-01a20502.png",
+		"tail": "01a20502"
+	},
+	"next": "038f0402.html",
+	"prev": "02430502.html",
+	"list": [
+		"02f70502",
+		"00630502",
+		"03741402",
+		"019a0502",
+		"00b50502",
+		"001b0002",
+		"02520002",
+		"00f00502",
+		"00650502",
+		"04ad1d02"
+	]
+}

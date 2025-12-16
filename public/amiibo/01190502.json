@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Don Resetti",
+		"name": "Don Resetti - Without Hat",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0101-01190502.png",
+		"tail": "01190502"
+	},
+	"next": "03ca0502.html",
+	"prev": "01280502.html",
+	"list": [
+		"00010002",
+		"03a20002",
+		"01650502",
+		"02ad0e02",
+		"025a0002",
+		"041d0002",
+		"00a70502",
+		"00d40502",
+		"04ce1d02",
+		"02980e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Incineroar",
+		"name": "Incineroar",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1bd70000-03860002.png",
+		"tail": "03860002"
+	},
+	"next": "02810e02.html",
+	"prev": "003d0102.html",
+	"list": [
+		"02ae0e02",
+		"04d31d02",
+		"037c0002",
+		"03961702",
+		"00e90502",
+		"01c40502",
+		"00460502",
+		"00f80502",
+		"01850502",
+		"03661302"
+	]
+}

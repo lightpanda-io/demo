@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Metal Mario",
+		"name": "Metal Mario - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png",
+		"tail": "02b90e02"
+	},
+	"next": "014e0502.html",
+	"prev": "007e0502.html",
+	"list": [
+		"00cd0502",
+		"00670502",
+		"03120502",
+		"01ca0502",
+		"00f90502",
+		"03ad0502",
+		"03060502",
+		"01710502",
+		"02480502",
+		"04e81d02"
+	]
+}

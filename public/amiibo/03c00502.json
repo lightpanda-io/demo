@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sherb",
+		"name": "Sherb",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a090001-03c00502.png",
+		"tail": "03c00502"
+	},
+	"next": "01460502.html",
+	"prev": "02730e02.html",
+	"list": [
+		"01730502",
+		"024c0502",
+		"003c0102",
+		"02820e02",
+		"02980e02",
+		"00680502",
+		"01d20502",
+		"014b0502",
+		"00c60502",
+		"03ad0502"
+	]
+}

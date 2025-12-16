@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Molly",
+		"name": "Molly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03170001-00a60502.png",
+		"tail": "00a60502"
+	},
+	"next": "01760502.html",
+	"prev": "03c90502.html",
+	"list": [
+		"00a70502",
+		"038a0002",
+		"03ce0502",
+		"01b50502",
+		"00a80502",
+		"00a70502",
+		"03770402",
+		"01130502",
+		"00c90502",
+		"03d60502"
+	]
+}

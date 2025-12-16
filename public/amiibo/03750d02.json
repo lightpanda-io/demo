@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Pokemon",
+		"character": "Detective Pikachu",
+		"name": "Detective Pikachu",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png",
+		"tail": "03750d02"
+	},
+	"next": "00f60502.html",
+	"prev": "011b0502.html",
+	"list": [
+		"01c80502",
+		"00c80502",
+		"03c70502",
+		"02e40f02",
+		"02890e02",
+		"02760e02",
+		"03100502",
+		"02ff0502",
+		"039bff02",
+		"00450502"
+	]
+}

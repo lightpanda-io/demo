@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rosie",
+		"name": "Rosie - Amiibo Festival",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01d70502.png",
+		"tail": "01d70502"
+	},
+	"next": "024a0502.html",
+	"prev": "01c60502.html",
+	"list": [
+		"019d0502",
+		"00910502",
+		"01650502",
+		"04d51d02",
+		"007f0502",
+		"03781402",
+		"00320002",
+		"02f10502",
+		"00130002",
+		"01a10502"
+	]
+}

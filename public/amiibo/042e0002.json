@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Sora",
+		"name": "Sora",
+		"gameSeries": "Kingdom Hearts",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png",
+		"tail": "042e0002"
+	},
+	"next": "04c41e03.html",
+	"prev": "043e1b02.html",
+	"list": [
+		"03110502",
+		"038c0002",
+		"026d0e02",
+		"00530502",
+		"016f0502",
+		"04e81d02",
+		"00560502",
+		"01990502",
+		"004f0502",
+		"041c0402"
+	]
+}

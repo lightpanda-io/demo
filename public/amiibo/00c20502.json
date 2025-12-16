@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kitt",
+		"name": "Kitt",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d10001-00c20502.png",
+		"tail": "00c20502"
+	},
+	"next": "00c50502.html",
+	"prev": "02a80e02.html",
+	"list": [
+		"015e0502",
+		"00990502",
+		"01410502",
+		"02810e02",
+		"00140002",
+		"00d10502",
+		"02750e02",
+		"016b0502",
+		"01120502",
+		"00380102"
+	]
+}

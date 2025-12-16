@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Zelda",
+		"name": "Zelda - Tears of the Kingdom",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-04190902.png",
+		"tail": "04190902"
+	},
+	"next": "00ba0502.html",
+	"prev": "01170502.html",
+	"list": [
+		"00cb0502",
+		"005d0502",
+		"00230002",
+		"04af1d02",
+		"01d40502",
+		"02520002",
+		"017f0502",
+		"038f0402",
+		"03090502",
+		"02500a02"
+	]
+}

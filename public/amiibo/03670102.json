@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Goomba",
+		"name": "Goomba",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png",
+		"tail": "03670102"
+	},
+	"next": "03640002.html",
+	"prev": "03690402.html",
+	"list": [
+		"028f0e02",
+		"02ab0e02",
+		"00910502",
+		"001a0002",
+		"03791502",
+		"00640502",
+		"03110502",
+		"00c70502",
+		"04d51d02",
+		"034c0902"
+	]
+}

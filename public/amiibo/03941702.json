@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Power Pros",
+		"character": "Ikari",
+		"name": "Ikari",
+		"gameSeries": "Power Pros",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38010001-03941702.png",
+		"tail": "03941702"
+	},
+	"next": "03500902.html",
+	"prev": "01930502.html",
+	"list": [
+		"01c90502",
+		"04f01d02",
+		"04220002",
+		"01340502",
+		"019f0502",
+		"02590002",
+		"00010002",
+		"02490502",
+		"00560502",
+		"00e90502"
+	]
+}

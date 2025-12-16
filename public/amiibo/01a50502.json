@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Walt",
+		"name": "Walt",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d90001-01a50502.png",
+		"tail": "01a50502"
+	},
+	"next": "03030502.html",
+	"prev": "00500502.html",
+	"list": [
+		"02b40e02",
+		"01990502",
+		"011d0502",
+		"04af1d02",
+		"036b0402",
+		"01320502",
+		"02fc0502",
+		"03cd0502",
+		"01110502",
+		"01a70502"
+	]
+}

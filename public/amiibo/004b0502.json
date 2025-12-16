@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Timmy",
+		"name": "Timmy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850001-004b0502.png",
+		"tail": "004b0502"
+	},
+	"next": "02f40502.html",
+	"prev": "01400502.html",
+	"list": [
+		"008a0502",
+		"01720502",
+		"02720e02",
+		"02410502",
+		"005d0502",
+		"02410502",
+		"03870002",
+		"003f0402",
+		"04bc1d02",
+		"01b70502"
+	]
+}

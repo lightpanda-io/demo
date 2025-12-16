@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yoshi's Woolly World",
+		"character": "Yoshi",
+		"name": "Mega Yarn Yoshi",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-023e0302.png",
+		"tail": "023e0302"
+	},
+	"next": "02ff0502.html",
+	"prev": "03120502.html",
+	"list": [
+		"03661302",
+		"03640002",
+		"02830e02",
+		"02a60e02",
+		"00840502",
+		"027f0e02",
+		"014a0502",
+		"04f11d02",
+		"00390102",
+		"00fd0502"
+	]
+}

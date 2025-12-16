@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Chun-Li",
+		"name": "Chun-Li",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png",
+		"tail": "04d01d02"
+	},
+	"next": "04da1d02.html",
+	"prev": "04cc1d02.html",
+	"list": [
+		"019c0502",
+		"02f40502",
+		"04ab1d02",
+		"01810502",
+		"01570502",
+		"03a70102",
+		"03530902",
+		"04ad1d02",
+		"008f0502",
+		"03670102"
+	]
+}

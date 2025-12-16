@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marty",
+		"name": "Marty",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028f0101-031a0502.png",
+		"tail": "031a0502"
+	},
+	"next": "012e0502.html",
+	"prev": "04370402.html",
+	"list": [
+		"038c0002",
+		"00620502",
+		"04a40902",
+		"00ab0502",
+		"038f0402",
+		"024a0502",
+		"00f40502",
+		"027e0e02",
+		"00140002",
+		"023e0302"
+	]
+}

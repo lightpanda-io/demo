@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Blanche",
+		"name": "Blanche",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043e0001-01490502.png",
+		"tail": "01490502"
+	},
+	"next": "026d0e02.html",
+	"prev": "018c0502.html",
+	"list": [
+		"010d0502",
+		"00ea0502",
+		"023f0502",
+		"009f0502",
+		"009e0502",
+		"04cb1d02",
+		"00100002",
+		"00490502",
+		"00060002",
+		"03bf0502"
+	]
+}

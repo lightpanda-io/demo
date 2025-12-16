@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Inkling",
+		"name": "Inkling Boy - Purple",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-02600402.png",
+		"tail": "02600402"
+	},
+	"next": "00940502.html",
+	"prev": "029d0e02.html",
+	"list": [
+		"03a0ff02",
+		"01570502",
+		"04cf1d02",
+		"04dc1d02",
+		"01b00502",
+		"02850e02",
+		"00d10502",
+		"028c0e02",
+		"02c10e02",
+		"02420502"
+	]
+}

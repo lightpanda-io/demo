@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Maddie",
+		"name": "Maddie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f30001-02f90502.png",
+		"tail": "02f90502"
+	},
+	"next": "00db0502.html",
+	"prev": "00410302.html",
+	"list": [
+		"00140002",
+		"01740502",
+		"03b50502",
+		"043e1b02",
+		"00d50502",
+		"025a0002",
+		"01a00502",
+		"00cd0502",
+		"02870e02",
+		"00ba0502"
+	]
+}

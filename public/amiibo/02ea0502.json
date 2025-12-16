@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Piper",
+		"name": "Piper",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02320001-02ea0502.png",
+		"tail": "02ea0502"
+	},
+	"next": "02550c02.html",
+	"prev": "02bc0e02.html",
+	"list": [
+		"006f0502",
+		"011a0502",
+		"0432ff02",
+		"009f0502",
+		"012e0502",
+		"01530502",
+		"02ec0502",
+		"00910502",
+		"04a91d02",
+		"01250502"
+	]
+}

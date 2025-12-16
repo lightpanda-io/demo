@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Flip",
+		"name": "Flip",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ff0001-00f40502.png",
+		"tail": "00f40502"
+	},
+	"next": "013b0502.html",
+	"prev": "02a30e02.html",
+	"list": [
+		"03b00502",
+		"031b0502",
+		"02970e02",
+		"043a1302",
+		"001d0002",
+		"02b70e02",
+		"00e70502",
+		"03b20502",
+		"00e30502",
+		"03a40002"
+	]
+}

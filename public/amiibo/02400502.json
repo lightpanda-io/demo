@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "K.K. Slider",
+		"name": "K. K. Slider",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820000-02400502.png",
+		"tail": "02400502"
+	},
+	"next": "00510502.html",
+	"prev": "01c40502.html",
+	"list": [
+		"04ef1d02",
+		"00960502",
+		"012d0502",
+		"00090002",
+		"00d30502",
+		"01d20502",
+		"04d11d02",
+		"01c50502",
+		"009e0502",
+		"00a70502"
+	]
+}

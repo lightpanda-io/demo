@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Dobie",
+		"name": "Dobie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050f0001-03140502.png",
+		"tail": "03140502"
+	},
+	"next": "00360102.html",
+	"prev": "00f80502.html",
+	"list": [
+		"02720e02",
+		"036d0a02",
+		"00f70502",
+		"02910e02",
+		"02920e02",
+		"00340102",
+		"019f0502",
+		"00050002",
+		"017a0502",
+		"02500a02"
+	]
+}

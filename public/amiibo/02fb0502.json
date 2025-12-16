@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Boyd",
+		"name": "Boyd",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036e0001-02fb0502.png",
+		"tail": "02fb0502"
+	},
+	"next": "02e10f02.html",
+	"prev": "034d0902.html",
+	"list": [
+		"00370102",
+		"00c10502",
+		"02840e02",
+		"012b0502",
+		"01810502",
+		"03be0502",
+		"03d10502",
+		"01a00502",
+		"00cc0502",
+		"01b80502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Samus",
+		"name": "Samus - Metroid Dread",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png",
+		"tail": "04121302"
+	},
+	"next": "005e0502.html",
+	"prev": "00970502.html",
+	"list": [
+		"016f0502",
+		"02b30e02",
+		"010e0502",
+		"000b0002",
+		"027f0e02",
+		"00360102",
+		"02b20e02",
+		"03661302",
+		"02840e02",
+		"00730502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Diva",
+		"name": "Diva",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034a0001-01430502.png",
+		"tail": "01430502"
+	},
+	"next": "00920502.html",
+	"prev": "030d0502.html",
+	"list": [
+		"00610502",
+		"00ee0502",
+		"02b00e02",
+		"00ec0502",
+		"01470502",
+		"02400502",
+		"013d0502",
+		"03000502",
+		"01290502",
+		"01740502"
+	]
+}

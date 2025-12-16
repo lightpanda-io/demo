@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rosie",
+		"name": "Rosie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01c50502.png",
+		"tail": "01c50502"
+	},
+	"next": "03a50002.html",
+	"prev": "03590902.html",
+	"list": [
+		"03680102",
+		"02b60e02",
+		"041e0002",
+		"02580002",
+		"001d0002",
+		"03d00502",
+		"03750d02",
+		"02f20502",
+		"03750d02",
+		"04e51d02"
+	]
+}

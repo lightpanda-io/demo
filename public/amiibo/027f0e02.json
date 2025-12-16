@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Yoshi",
+		"name": "Yoshi - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40301-027f0e02.png",
+		"tail": "027f0e02"
+	},
+	"next": "00490502.html",
+	"prev": "01420502.html",
+	"list": [
+		"00c70502",
+		"03c00502",
+		"01050502",
+		"009a0502",
+		"03a80502",
+		"04190902",
+		"003c0102",
+		"01930502",
+		"02950e02",
+		"04d71d02"
+	]
+}

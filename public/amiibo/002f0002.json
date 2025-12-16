@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Duck Hunt",
+		"name": "Duck Hunt",
+		"gameSeries": "Classic Nintendo",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png",
+		"tail": "002f0002"
+	},
+	"next": "03160502.html",
+	"prev": "026f0e02.html",
+	"list": [
+		"026e0e02",
+		"024a0502",
+		"00ab0502",
+		"027d0e02",
+		"011d0502",
+		"01350502",
+		"00790502",
+		"019b0502",
+		"00240002",
+		"03b70502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Katrina",
+		"name": "Katrina",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a50001-01720502.png",
+		"tail": "01720502"
+	},
+	"next": "03c30502.html",
+	"prev": "01210502.html",
+	"list": [
+		"04bc1d02",
+		"04b81d02",
+		"01580502",
+		"04af1d02",
+		"03760402",
+		"034f0902",
+		"031c0502",
+		"037b0002",
+		"00a30502",
+		"04a50902"
+	]
+}

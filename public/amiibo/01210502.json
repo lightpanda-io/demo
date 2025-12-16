@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Miranda",
+		"name": "Miranda",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03130001-01210502.png",
+		"tail": "01210502"
+	},
+	"next": "01720502.html",
+	"prev": "008e0502.html",
+	"list": [
+		"00d80502",
+		"01360502",
+		"00180002",
+		"01d30502",
+		"017d0502",
+		"03a30002",
+		"031d0502",
+		"04b71d02",
+		"005d0502",
+		"000c0002"
+	]
+}

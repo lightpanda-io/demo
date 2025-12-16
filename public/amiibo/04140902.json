@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Zelda",
+		"name": "Zelda \u0026 Loftwing",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png",
+		"tail": "04140902"
+	},
+	"next": "00820502.html",
+	"prev": "00c30502.html",
+	"list": [
+		"019c0502",
+		"04a60902",
+		"00990502",
+		"042b1802",
+		"04121302",
+		"03cf0502",
+		"01760502",
+		"04aa1d02",
+		"04a91d02",
+		"01d80502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Lucas",
+		"name": "Lucas",
+		"gameSeries": "Earthbound",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png",
+		"tail": "02510002"
+	},
+	"next": "007c0502.html",
+	"prev": "00c80502.html",
+	"list": [
+		"04e81d02",
+		"027b0e02",
+		"00d30502",
+		"034f0902",
+		"00a20502",
+		"02bd0e02",
+		"02430502",
+		"04db1d02",
+		"00ec0502",
+		"02690e02"
+	]
+}

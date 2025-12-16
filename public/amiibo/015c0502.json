@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lyman",
+		"name": "Lyman",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c50001-015c0502.png",
+		"tail": "015c0502"
+	},
+	"next": "00a10502.html",
+	"prev": "01710502.html",
+	"list": [
+		"00620502",
+		"00f60502",
+		"016b0502",
+		"00690502",
+		"01460502",
+		"004b0502",
+		"00960502",
+		"03b10502",
+		"043c1302",
+		"00ff0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marcie",
+		"name": "Marcie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03db0001-006d0502.png",
+		"tail": "006d0502"
+	},
+	"next": "00570502.html",
+	"prev": "03800002.html",
+	"list": [
+		"00480502",
+		"02ad0e02",
+		"030e0502",
+		"02540c02",
+		"01920502",
+		"01070502",
+		"00ac0502",
+		"026f0e02",
+		"03d00502",
+		"026f0e02"
+	]
+}

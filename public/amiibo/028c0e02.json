@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Donkey Kong",
+		"name": "Donkey Kong - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70101-028c0e02.png",
+		"tail": "028c0e02"
+	},
+	"next": "01bf0502.html",
+	"prev": "00c00502.html",
+	"list": [
+		"00dc0502",
+		"029d0e02",
+		"038c0002",
+		"03890002",
+		"03690402",
+		"02980e02",
+		"01690502",
+		"03870002",
+		"04a30902",
+		"01440502"
+	]
+}

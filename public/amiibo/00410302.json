@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yoshi's Woolly World",
+		"character": "Yoshi",
+		"name": "Green Yarn Yoshi",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png",
+		"tail": "00410302"
+	},
+	"next": "02f90502.html",
+	"prev": "03c10502.html",
+	"list": [
+		"028f0e02",
+		"02430502",
+		"04340402",
+		"01410502",
+		"00ff0502",
+		"03a90502",
+		"04a60902",
+		"01ba0502",
+		"01b20502",
+		"00120002"
+	]
+}

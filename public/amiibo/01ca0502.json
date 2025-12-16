@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Gayle",
+		"name": "Gayle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ca0001-01ca0502.png",
+		"tail": "01ca0502"
+	},
+	"next": "037a0002.html",
+	"prev": "02f70502.html",
+	"list": [
+		"00670502",
+		"00b00502",
+		"04e51d02",
+		"013b0502",
+		"03a60102",
+		"00830502",
+		"04200002",
+		"003d0102",
+		"01870502",
+		"04dd1d02"
+	]
+}

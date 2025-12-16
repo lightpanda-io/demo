@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Captain Falcon",
+		"name": "Captain Falcon",
+		"gameSeries": "F-Zero",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png",
+		"tail": "00120002"
+	},
+	"next": "01ad0502.html",
+	"prev": "002d0002.html",
+	"list": [
+		"00920502",
+		"02900e02",
+		"03ac0502",
+		"024a0502",
+		"00df0502",
+		"02e80502",
+		"00de0502",
+		"04d11d02",
+		"00810502",
+		"03ab0502"
+	]
+}

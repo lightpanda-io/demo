@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Diddy Kong",
+		"name": "Diddy Kong - Horse Racing",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80501-02950e02.png",
+		"tail": "02950e02"
+	},
+	"next": "00640502.html",
+	"prev": "03c30502.html",
+	"list": [
+		"02e50f02",
+		"00d40502",
+		"02620102",
+		"04e31d02",
+		"00d90502",
+		"037a0002",
+		"01720502",
+		"01490502",
+		"01000502",
+		"04d31d02"
+	]
+}

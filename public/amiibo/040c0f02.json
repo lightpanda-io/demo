@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Razewing Ratha",
+		"name": "Razewing Ratha",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png",
+		"tail": "040c0f02"
+	},
+	"next": "017f0502.html",
+	"prev": "000d0002.html",
+	"list": [
+		"01c50502",
+		"02530002",
+		"04360402",
+		"01d30502",
+		"035b0902",
+		"01800502",
+		"04ce1d02",
+		"030b0502",
+		"01370502",
+		"039cff02"
+	]
+}

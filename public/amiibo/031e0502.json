@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Toby",
+		"name": "Toby",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a80101-031e0502.png",
+		"tail": "031e0502"
+	},
+	"next": "00d90502.html",
+	"prev": "04360402.html",
+	"list": [
+		"04131302",
+		"01b50502",
+		"01a60502",
+		"01880502",
+		"01720502",
+		"030c0502",
+		"02470502",
+		"00130002",
+		"01510502",
+		"03651302"
+	]
+}

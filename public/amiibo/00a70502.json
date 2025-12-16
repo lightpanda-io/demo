@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Walker",
+		"name": "Walker",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f00001-00a70502.png",
+		"tail": "00a70502"
+	},
+	"next": "00bb0502.html",
+	"prev": "00530502.html",
+	"list": [
+		"00ce0502",
+		"04b21d02",
+		"007a0502",
+		"02770e02",
+		"03cd0502",
+		"00040002",
+		"00330002",
+		"003c0102",
+		"041a0902",
+		"017c0502"
+	]
+}

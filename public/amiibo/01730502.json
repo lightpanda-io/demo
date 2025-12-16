@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Phineas",
+		"name": "Phineas",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019c0001-01730502.png",
+		"tail": "01730502"
+	},
+	"next": "011d0502.html",
+	"prev": "00d40502.html",
+	"list": [
+		"02950e02",
+		"01be0502",
+		"04380402",
+		"01310502",
+		"006f0502",
+		"019a0502",
+		"01620502",
+		"02730e02",
+		"03520902",
+		"040d0f02"
+	]
+}

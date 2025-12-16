@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Scoot",
+		"name": "Scoot",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03110001-00d60502.png",
+		"tail": "00d60502"
+	},
+	"next": "01bc0502.html",
+	"prev": "02e80502.html",
+	"list": [
+		"00180002",
+		"00730502",
+		"03880002",
+		"01860502",
+		"01640502",
+		"04ec1d02",
+		"02a80e02",
+		"02780e02",
+		"039eff02",
+		"01a20502"
+	]
+}

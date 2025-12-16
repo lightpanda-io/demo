@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Inkling",
+		"name": "Inkling - Yellow",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png",
+		"tail": "04150402"
+	},
+	"next": "04330402.html",
+	"prev": "01120502.html",
+	"list": [
+		"008b0502",
+		"01980502",
+		"00420302",
+		"02660102",
+		"02fb0502",
+		"031c0502",
+		"03a10002",
+		"01880502",
+		"013d0502",
+		"04c01d02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Genji",
+		"name": "Genji",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049c0001-01400502.png",
+		"tail": "01400502"
+	},
+	"next": "004b0502.html",
+	"prev": "02ff0502.html",
+	"list": [
+		"00c80502",
+		"01b20502",
+		"00020002",
+		"00730502",
+		"02500a02",
+		"00370102",
+		"03d30502",
+		"039dff02",
+		"02380602",
+		"00820502"
+	]
+}

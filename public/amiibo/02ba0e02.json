@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Metal Mario",
+		"name": "Metal Mario - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png",
+		"tail": "02ba0e02"
+	},
+	"next": "04101802.html",
+	"prev": "03b30502.html",
+	"list": [
+		"040e0f02",
+		"03070502",
+		"00680502",
+		"023a0702",
+		"02650102",
+		"04f11d02",
+		"012e0502",
+		"02b20e02",
+		"00a30502",
+		"01290502"
+	]
+}

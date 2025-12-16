@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Muffy",
+		"name": "Muffy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d10001-009e0502.png",
+		"tail": "009e0502"
+	},
+	"next": "043d1b02.html",
+	"prev": "01600502.html",
+	"list": [
+		"03750d02",
+		"01710502",
+		"03590902",
+		"01140502",
+		"029c0e02",
+		"02930e02",
+		"008e0502",
+		"01890502",
+		"00610502",
+		"04d21d02"
+	]
+}

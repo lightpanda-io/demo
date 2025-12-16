@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tortimer",
+		"name": "Tortimer",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b00001-00520502.png",
+		"tail": "00520502"
+	},
+	"next": "02430502.html",
+	"prev": "03020502.html",
+	"list": [
+		"04210002",
+		"005e0502",
+		"040d0f02",
+		"00560502",
+		"00600502",
+		"01bf0502",
+		"00870502",
+		"04eb1d02",
+		"04dd1d02",
+		"00910502"
+	]
+}

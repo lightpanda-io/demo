@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script>
+(async function () {
+try {
+  const url = '01970502.json';
+  const response = await fetch(url);
+  if (!response.ok) {
+	throw new Error("Response status: ${response.status}");
+  }
+  update(await response.json());
+} catch (error) {
+  console.error(error.message);
+}
+}());
+
+function update(data) {
+  document.getElementById('title').textContent = data.amiibo.name;
+  document.getElementById('name').textContent = data.amiibo.name;
+  document.getElementById('game').textContent = data.amiibo.amiiboSeries;
+  document.getElementById('serie').textContent = data.amiibo.gameSeries;
+  document.getElementById('image').setAttribute('src', data.amiibo.image);
+
+  const nav = document.getElementById('nav');
+
+  const prev = document.createElement("a");
+  prev.setAttribute('href', data.prev);
+  prev.textContent = "Previous";
+  nav.appendChild(prev);
+
+  nav.appendChild(document.createTextNode(" | "));
+
+  const next = document.createElement("a");
+  next.setAttribute('href', data.next);
+  next.textContent = "Next";
+  nav.appendChild(next);
+
+  const alt = document.getElementById('alt');
+  data.list.forEach(str => {
+  	const a = document.createElement("a");
+	a.setAttribute('href', str + '.html');
+	a.textContent = str;
+  	const li = document.createElement("li");
+	li.append(a);
+	alt.append(li);
+  });
+}
+		</script>
+		<title id="title">Amiibo Character</title>
+	</head>
+	<body>
+		<h1 id="name">Amiibo Character</h1>
+		<p>
+			<img alt="Amiibo Character Image" id="image" src="" />
+			<br>
+			Game <span id="game">Amiibo Game</span>
+			<br>
+			Serie <span id="serie">Amiibo Serie</span>
+		</p>
+		<h2>See also</h2>
+		<ul id="alt"></ul>
+		<p id="nav"></p>
+	</body>
+</html>

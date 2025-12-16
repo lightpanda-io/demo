@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Peach",
+		"name": "Peach",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-00360102.png",
+		"tail": "00360102"
+	},
+	"next": "028d0e02.html",
+	"prev": "03140502.html",
+	"list": [
+		"02860e02",
+		"00760502",
+		"02490502",
+		"01890502",
+		"00890502",
+		"004e0502",
+		"03b40502",
+		"03520902",
+		"03741402",
+		"04d41d02"
+	]
+}

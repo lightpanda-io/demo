@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sandy",
+		"name": "Sandy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png",
+		"tail": "03000502"
+	},
+	"next": "00b40502.html",
+	"prev": "04c91e03.html",
+	"list": [
+		"03b20502",
+		"00370102",
+		"019f0502",
+		"02e30f02",
+		"038a0002",
+		"03a70102",
+		"04b01d02",
+		"04b11d02",
+		"00ac0502",
+		"04291902"
+	]
+}

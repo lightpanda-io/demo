@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Power Pros",
+		"character": "Yabe",
+		"name": "Yabe",
+		"gameSeries": "Power Pros",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38020001-03951702.png",
+		"tail": "03951702"
+	},
+	"next": "002c0002.html",
+	"prev": "01800502.html",
+	"list": [
+		"04ab1d02",
+		"01170502",
+		"00df0502",
+		"0430ff02",
+		"010a0502",
+		"04150402",
+		"00a50502",
+		"03b30502",
+		"00f10502",
+		"007c0502"
+	]
+}

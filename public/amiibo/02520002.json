@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Roy",
+		"name": "Roy",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png",
+		"tail": "02520002"
+	},
+	"next": "042d1802.html",
+	"prev": "00280002.html",
+	"list": [
+		"00440502",
+		"02560c02",
+		"00840502",
+		"03ce0502",
+		"03020502",
+		"01a60502",
+		"042d1802",
+		"00e20502",
+		"02940e02",
+		"01780502"
+	]
+}

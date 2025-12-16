@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kody",
+		"name": "Kody",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02810001-01200502.png",
+		"tail": "01200502"
+	},
+	"next": "029f0e02.html",
+	"prev": "011f0502.html",
+	"list": [
+		"02420502",
+		"01420502",
+		"04cb1d02",
+		"01260502",
+		"00220002",
+		"01380502",
+		"02fb0502",
+		"04d41d02",
+		"04111802",
+		"014e0502"
+	]
+}

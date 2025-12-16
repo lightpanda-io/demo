@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Ocarina of Time",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png",
+		"tail": "034b0902"
+	},
+	"next": "02a10e02.html",
+	"prev": "01480502.html",
+	"list": [
+		"03ce0502",
+		"03741402",
+		"02740e02",
+		"04a91d02",
+		"007a0502",
+		"01020502",
+		"02440502",
+		"04c01d02",
+		"040c0f02",
+		"008f0502"
+	]
+}

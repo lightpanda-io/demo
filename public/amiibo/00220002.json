@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mii",
+		"name": "Mii Swordfighter",
+		"gameSeries": "Mii",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00100-00220002.png",
+		"tail": "00220002"
+	},
+	"next": "04261902.html",
+	"prev": "03d20502.html",
+	"list": [
+		"01900502",
+		"03b00502",
+		"00da0502",
+		"03c60502",
+		"04150402",
+		"03d10502",
+		"00310002",
+		"035c0902",
+		"029b0e02",
+		"02660102"
+	]
+}

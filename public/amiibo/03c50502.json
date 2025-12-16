@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Judy",
+		"name": "Judy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png",
+		"tail": "03c50502"
+	},
+	"next": "019d0502.html",
+	"prev": "01070502.html",
+	"list": [
+		"04a60902",
+		"013f0502",
+		"04e01d02",
+		"004f0502",
+		"011e0502",
+		"02a60e02",
+		"02f10502",
+		"00230002",
+		"00630502",
+		"00760502"
+	]
+}

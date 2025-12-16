@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Mario",
+		"name": "Mario - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png",
+		"tail": "026a0e02"
+	},
+	"next": "03b60502.html",
+	"prev": "04101802.html",
+	"list": [
+		"04be1d02",
+		"01940502",
+		"04a91d02",
+		"00be0502",
+		"00d20502",
+		"01620502",
+		"01370502",
+		"023a0702",
+		"04180902",
+		"03b90502"
+	]
+}

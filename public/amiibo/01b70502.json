@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Doc",
+		"name": "Doc",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049e0001-01b70502.png",
+		"tail": "01b70502"
+	},
+	"next": "01ae0502.html",
+	"prev": "00510502.html",
+	"list": [
+		"03030502",
+		"01780502",
+		"018b0502",
+		"00fc0502",
+		"028e0e02",
+		"02610402",
+		"02690e02",
+		"043b1302",
+		"01770502",
+		"02a60e02"
+	]
+}

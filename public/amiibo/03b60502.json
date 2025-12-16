@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kicks",
+		"name": "Kicks",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-03b60502.png",
+		"tail": "03b60502"
+	},
+	"next": "02ed0502.html",
+	"prev": "026a0e02.html",
+	"list": [
+		"02c20e02",
+		"01630502",
+		"00820502",
+		"01c10502",
+		"04200002",
+		"03ca0502",
+		"01420502",
+		"013e0502",
+		"01540502",
+		"04b11d02"
+	]
+}

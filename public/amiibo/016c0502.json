@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Apollo",
+		"name": "Apollo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044b0001-016c0502.png",
+		"tail": "016c0502"
+	},
+	"next": "03a90502.html",
+	"prev": "029f0e02.html",
+	"list": [
+		"02f50502",
+		"03ad0502",
+		"01760502",
+		"01250502",
+		"03bc0502",
+		"00720502",
+		"018b0502",
+		"02f40502",
+		"00290002",
+		"00210002"
+	]
+}

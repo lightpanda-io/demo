@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Broffina",
+		"name": "Broffina",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a50001-018c0502.png",
+		"tail": "018c0502"
+	},
+	"next": "01490502.html",
+	"prev": "01590502.html",
+	"list": [
+		"01d70502",
+		"00200002",
+		"019a0502",
+		"01ce0502",
+		"01700502",
+		"04b51d02",
+		"02f10502",
+		"02390602",
+		"00a50502",
+		"04b31d02"
+	]
+}

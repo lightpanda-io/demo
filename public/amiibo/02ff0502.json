@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Plucky",
+		"name": "Plucky",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a30001-02ff0502.png",
+		"tail": "02ff0502"
+	},
+	"next": "01400502.html",
+	"prev": "023e0302.html",
+	"list": [
+		"02980e02",
+		"004b0502",
+		"002d0002",
+		"00120002",
+		"036f1202",
+		"01070502",
+		"01960502",
+		"02830e02",
+		"00c00502",
+		"03720102"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Yuka",
+		"name": "Yuka",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bc0001-008a0502.png",
+		"tail": "008a0502"
+	},
+	"next": "02420502.html",
+	"prev": "00bc0502.html",
+	"list": [
+		"02740e02",
+		"01200502",
+		"010b0502",
+		"00c20502",
+		"02a90e02",
+		"02e30f02",
+		"001b0002",
+		"01580502",
+		"039eff02",
+		"03530902"
+	]
+}

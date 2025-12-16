@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kidd",
+		"name": "Kidd",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035d0001-00c90502.png",
+		"tail": "00c90502"
+	},
+	"next": "035e1002.html",
+	"prev": "03d40502.html",
+	"list": [
+		"02f10502",
+		"02ee0502",
+		"01a60502",
+		"02590002",
+		"034e0902",
+		"02420502",
+		"01050502",
+		"012f0502",
+		"009c0502",
+		"00ef0502"
+	]
+}

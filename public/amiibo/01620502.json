@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Claudia",
+		"name": "Claudia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ff0001-01620502.png",
+		"tail": "01620502"
+	},
+	"next": "01410502.html",
+	"prev": "00b70502.html",
+	"list": [
+		"04111802",
+		"00b00502",
+		"007d0502",
+		"00b10502",
+		"025c0d02",
+		"04ad1d02",
+		"01970502",
+		"02610402",
+		"02f20502",
+		"00540502"
+	]
+}

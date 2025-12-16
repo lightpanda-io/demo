@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Yoshi",
+		"name": "Yoshi - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png",
+		"tail": "039fff02"
+	},
+	"next": "026c0e02.html",
+	"prev": "01630502.html",
+	"list": [
+		"02c00e02",
+		"04291902",
+		"01d20502",
+		"04b81d02",
+		"02ec0502",
+		"03c20502",
+		"04230002",
+		"01730502",
+		"04b71d02",
+		"01440502"
+	]
+}

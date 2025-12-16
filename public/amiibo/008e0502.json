@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Amelia",
+		"name": "Amelia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044c0001-008e0502.png",
+		"tail": "008e0502"
+	},
+	"next": "01210502.html",
+	"prev": "0430ff02.html",
+	"list": [
+		"03560902",
+		"02e10f02",
+		"01010502",
+		"04101802",
+		"027b0e02",
+		"00230002",
+		"03c70502",
+		"04ac1d02",
+		"01ce0502",
+		"04340402"
+	]
+}

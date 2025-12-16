@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Diablo",
+		"character": "Loot Goblin",
+		"name": "Loot Goblin",
+		"gameSeries": "Diablo",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38c00000-03911602.png",
+		"tail": "03911602"
+	},
+	"next": "011f0502.html",
+	"prev": "02500a02.html",
+	"list": [
+		"01b00502",
+		"028b0e02",
+		"00bd0502",
+		"00800502",
+		"000d0002",
+		"031c0502",
+		"043f1c02",
+		"01500502",
+		"004e0502",
+		"00080002"
+	]
+}

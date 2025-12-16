@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Others",
+		"character": "Mario Cereal",
+		"name": "Super Mario Cereal",
+		"gameSeries": "Kellogs",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png",
+		"tail": "03741402"
+	},
+	"next": "00040002.html",
+	"prev": "02e90502.html",
+	"list": [
+		"030b0502",
+		"015c0502",
+		"03500902",
+		"02820e02",
+		"03c50502",
+		"017a0502",
+		"013d0502",
+		"01b70502",
+		"04f21d02",
+		"03ca0502"
+	]
+}

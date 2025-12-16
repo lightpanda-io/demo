@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sparro",
+		"name": "Sparro",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023f0001-01660502.png",
+		"tail": "01660502"
+	},
+	"next": "03520902.html",
+	"prev": "00110002.html",
+	"list": [
+		"01700502",
+		"04d81d02",
+		"037e0002",
+		"018c0502",
+		"007f0502",
+		"01a60502",
+		"00010002",
+		"01bf0502",
+		"00020002",
+		"00160002"
+	]
+}

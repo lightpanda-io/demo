@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Megan",
+		"name": "Megan",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0a0001-03c10502.png",
+		"tail": "03c10502"
+	},
+	"next": "00410302.html",
+	"prev": "01100502.html",
+	"list": [
+		"04cf1d02",
+		"02fe0502",
+		"008f0502",
+		"00eb0502",
+		"02460502",
+		"00430302",
+		"023e0302",
+		"02f90502",
+		"00580502",
+		"003e0402"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Terry",
+		"name": "Terry",
+		"gameSeries": "Fatal Fury",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800000-03a40002.png",
+		"tail": "03a40002"
+	},
+	"next": "027c0e02.html",
+	"prev": "04261902.html",
+	"list": [
+		"02fb0502",
+		"02b30e02",
+		"00bb0502",
+		"007f0502",
+		"01840502",
+		"016a0502",
+		"011e0502",
+		"03520902",
+		"036e0a02",
+		"016d0502"
+	]
+}

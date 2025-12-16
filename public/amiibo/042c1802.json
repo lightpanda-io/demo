@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter Rise",
+		"character": "Palamute",
+		"name": "Palamute",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png",
+		"tail": "042c1802"
+	},
+	"next": "012c0502.html",
+	"prev": "00f60502.html",
+	"list": [
+		"00aa0502",
+		"00530502",
+		"038a0002",
+		"02be0e02",
+		"01000502",
+		"02390602",
+		"00a50502",
+		"02fe0502",
+		"011a0502",
+		"01af0502"
+	]
+}

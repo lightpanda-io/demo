@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Olaf",
+		"name": "Olaf",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02090001-019f0502.png",
+		"tail": "019f0502"
+	},
+	"next": "00dd0502.html",
+	"prev": "03620002.html",
+	"list": [
+		"00c10502",
+		"015b0502",
+		"03010502",
+		"043b1302",
+		"02380602",
+		"03180502",
+		"03741402",
+		"041d0002",
+		"00870502",
+		"03100502"
+	]
+}

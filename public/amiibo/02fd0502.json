@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Maggie",
+		"name": "Maggie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04820001-02fd0502.png",
+		"tail": "02fd0502"
+	},
+	"next": "03791502.html",
+	"prev": "034f0902.html",
+	"list": [
+		"04ed1d02",
+		"03c60502",
+		"013a0502",
+		"04ee1d02",
+		"03af0502",
+		"03d10502",
+		"03781402",
+		"04eb1d02",
+		"00f70502",
+		"016e0502"
+	]
+}

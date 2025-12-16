@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Poppy",
+		"name": "Poppy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ec0001-00770502.png",
+		"tail": "00770502"
+	},
+	"next": "01b90502.html",
+	"prev": "02aa0e02.html",
+	"list": [
+		"04b91d02",
+		"01120502",
+		"00280002",
+		"00fb0502",
+		"00780502",
+		"002c0002",
+		"00c50502",
+		"03180502",
+		"038a0002",
+		"03d70502"
+	]
+}

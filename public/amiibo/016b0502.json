@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Soleil",
+		"name": "Soleil",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03820001-016b0502.png",
+		"tail": "016b0502"
+	},
+	"next": "01bd0502.html",
+	"prev": "024c0502.html",
+	"list": [
+		"04330402",
+		"011d0502",
+		"01160502",
+		"02b70e02",
+		"024b0502",
+		"00ee0502",
+		"01b70502",
+		"00c70502",
+		"00f20502",
+		"01930502"
+	]
+}

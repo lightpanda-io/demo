@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Ed",
+		"name": "Ed",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04df1d02.png",
+		"tail": "04df1d02"
+	},
+	"next": "04e01d02.html",
+	"prev": "04de1d02.html",
+	"list": [
+		"03150502",
+		"00e50502",
+		"04ba1d02",
+		"019d0502",
+		"00300002",
+		"01620502",
+		"01170502",
+		"01050502",
+		"04b81d02",
+		"005e0502"
+	]
+}

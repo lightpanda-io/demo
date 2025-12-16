@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rizzo",
+		"name": "Rizzo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04150001-01bb0502.png",
+		"tail": "01bb0502"
+	},
+	"next": "02940e02.html",
+	"prev": "00e90502.html",
+	"list": [
+		"04e41d02",
+		"008d0502",
+		"00b60502",
+		"01d60502",
+		"01830502",
+		"026e0e02",
+		"012c0502",
+		"038c0002",
+		"01600502",
+		"03a40002"
+	]
+}

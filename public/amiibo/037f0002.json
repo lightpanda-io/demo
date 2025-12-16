@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ridley",
+		"name": "Ridley",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png",
+		"tail": "037f0002"
+	},
+	"next": "028f0e02.html",
+	"prev": "00980502.html",
+	"list": [
+		"04101802",
+		"04281902",
+		"00de0502",
+		"01260502",
+		"01d40502",
+		"00990502",
+		"02570c02",
+		"01d10502",
+		"00fa0502",
+		"01ce0502"
+	]
+}

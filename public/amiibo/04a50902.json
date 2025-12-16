@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Tulin",
+		"name": "Tulin",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010b0000-04a50902.png",
+		"tail": "04a50902"
+	},
+	"next": "04a60902.html",
+	"prev": "03580902.html",
+	"list": [
+		"037c0002",
+		"01c90502",
+		"02500a02",
+		"03b20502",
+		"00b60502",
+		"037b0002",
+		"018e0502",
+		"04a81d02",
+		"012b0502",
+		"01cc0502"
+	]
+}

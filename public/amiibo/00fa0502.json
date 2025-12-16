@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Camofrog",
+		"name": "Camofrog",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033b0001-00fa0502.png",
+		"tail": "00fa0502"
+	},
+	"next": "02440502.html",
+	"prev": "01d20502.html",
+	"list": [
+		"01cd0502",
+		"03aa0502",
+		"04eb1d02",
+		"04261902",
+		"00f70502",
+		"04b31d02",
+		"00410302",
+		"00690502",
+		"00560502",
+		"02f20502"
+	]
+}

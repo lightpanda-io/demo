@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Marcel",
+		"name": "Marcel",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f90001-01020502.png",
+		"tail": "01020502"
+	},
+	"next": "00a90502.html",
+	"prev": "03bb0502.html",
+	"list": [
+		"013d0502",
+		"00730502",
+		"01c90502",
+		"04dc1d02",
+		"0430ff02",
+		"00550502",
+		"00f90502",
+		"04a81d02",
+		"003f0402",
+		"01240502"
+	]
+}

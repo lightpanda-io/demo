@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Bayonetta",
+		"name": "Bayonetta - Player 2",
+		"gameSeries": "Bayonetta",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png",
+		"tail": "03640002"
+	},
+	"next": "003c0102.html",
+	"prev": "03670102.html",
+	"list": [
+		"01280502",
+		"04c41e03",
+		"01960502",
+		"02f70502",
+		"01020502",
+		"003d0102",
+		"00d20502",
+		"017e0502",
+		"025e0402",
+		"04b91d02"
+	]
+}

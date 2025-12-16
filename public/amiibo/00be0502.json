@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Fuchsia",
+		"name": "Fuchsia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dc0001-00be0502.png",
+		"tail": "00be0502"
+	},
+	"next": "00260002.html",
+	"prev": "03ba0502.html",
+	"list": [
+		"008e0502",
+		"000c0002",
+		"02fb0502",
+		"03a20002",
+		"01630502",
+		"03750d02",
+		"00440502",
+		"04ef1d02",
+		"043c1302",
+		"04ae1d02"
+	]
+}

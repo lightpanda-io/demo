@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pashmina",
+		"name": "Pashmina",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035e0001-018e0502.png",
+		"tail": "018e0502"
+	},
+	"next": "02eb0502.html",
+	"prev": "02680102.html",
+	"list": [
+		"005d0502",
+		"02530002",
+		"00870502",
+		"00960502",
+		"01760502",
+		"00330002",
+		"027e0e02",
+		"030d0502",
+		"00f70502",
+		"02f90502"
+	]
+}

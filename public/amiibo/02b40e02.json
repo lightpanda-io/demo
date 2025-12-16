@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Rosalina",
+		"name": "Rosalina - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png",
+		"tail": "02b40e02"
+	},
+	"next": "034e0902.html",
+	"prev": "00000002.html",
+	"list": [
+		"03a60102",
+		"00bd0502",
+		"016d0502",
+		"04b61d02",
+		"01120502",
+		"01310502",
+		"01b10502",
+		"01af0502",
+		"001c0002",
+		"02b10e02"
+	]
+}

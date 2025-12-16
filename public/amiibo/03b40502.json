@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Flick",
+		"name": "Flick",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a030001-03b40502.png",
+		"tail": "03b40502"
+	},
+	"next": "00290002.html",
+	"prev": "01330502.html",
+	"list": [
+		"018e0502",
+		"04ad1d02",
+		"015b0502",
+		"006f0502",
+		"004b0502",
+		"037b0002",
+		"001d0002",
+		"026f0e02",
+		"02480502",
+		"02690e02"
+	]
+}

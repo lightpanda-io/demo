@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Zipper",
+		"name": "Zipper",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ac0001-017f0502.png",
+		"tail": "017f0502"
+	},
+	"next": "01930502.html",
+	"prev": "040c0f02.html",
+	"list": [
+		"01b00502",
+		"04ad1d02",
+		"005b0502",
+		"02ae0e02",
+		"03090502",
+		"03a60102",
+		"04f31d02",
+		"027e0e02",
+		"039dff02",
+		"02f10502"
+	]
+}

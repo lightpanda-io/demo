@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Limberg",
+		"name": "Limberg",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040d0001-00780502.png",
+		"tail": "00780502"
+	},
+	"next": "03090502.html",
+	"prev": "024e0502.html",
+	"list": [
+		"01b40502",
+		"02f20502",
+		"04af1d02",
+		"03c70502",
+		"02f80502",
+		"042c1802",
+		"035e1002",
+		"01b80502",
+		"03741402",
+		"00b90502"
+	]
+}

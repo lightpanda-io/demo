@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Whitney",
+		"name": "Whitney",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050e0001-00d70502.png",
+		"tail": "00d70502"
+	},
+	"next": "017e0502.html",
+	"prev": "01b40502.html",
+	"list": [
+		"00390102",
+		"00600502",
+		"02430502",
+		"02590002",
+		"03cb0502",
+		"037c0002",
+		"01b20502",
+		"00c30502",
+		"004e0502",
+		"02680102"
+	]
+}

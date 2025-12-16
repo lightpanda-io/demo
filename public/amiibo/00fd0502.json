@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Charlise",
+		"name": "Charlise",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02200001-00fd0502.png",
+		"tail": "00fd0502"
+	},
+	"next": "03100502.html",
+	"prev": "01560502.html",
+	"list": [
+		"04e31d02",
+		"041f0002",
+		"03971702",
+		"00550502",
+		"00920502",
+		"03cc0502",
+		"00090002",
+		"04e41d02",
+		"016f0502",
+		"01b30502"
+	]
+}

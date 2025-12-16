@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Antonio",
+		"name": "Antonio",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02010001-016a0502.png",
+		"tail": "016a0502"
+	},
+	"next": "02fe0502.html",
+	"prev": "02f10502.html",
+	"list": [
+		"03750d02",
+		"03140502",
+		"04271902",
+		"00e40502",
+		"03730102",
+		"00b00502",
+		"01600502",
+		"01a90502",
+		"016f0502",
+		"040f1802"
+	]
+}

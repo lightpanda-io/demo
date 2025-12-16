@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Dotty",
+		"name": "Dotty",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04950001-01920502.png",
+		"tail": "01920502"
+	},
+	"next": "00ae0502.html",
+	"prev": "00100002.html",
+	"list": [
+		"00170002",
+		"03b30502",
+		"04d31d02",
+		"01250502",
+		"03680102",
+		"04cf1d02",
+		"01c90502",
+		"031b0502",
+		"00c90502",
+		"01aa0502"
+	]
+}

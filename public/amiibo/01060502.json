@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hamphrey",
+		"name": "Hamphrey",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03850001-01060502.png",
+		"tail": "01060502"
+	},
+	"next": "017c0502.html",
+	"prev": "02410502.html",
+	"list": [
+		"03911602",
+		"01970502",
+		"02560c02",
+		"03c80502",
+		"00a00502",
+		"00320002",
+		"000d0002",
+		"01540502",
+		"01910502",
+		"00110002"
+	]
+}

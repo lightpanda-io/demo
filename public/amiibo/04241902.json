@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yu-Gi-Oh!",
+		"character": "Yuga Ohdo",
+		"name": "Yuga Ohdo",
+		"gameSeries": "Yu-Gi-Oh!",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38400001-04241902.png",
+		"tail": "04241902"
+	},
+	"next": "02af0e02.html",
+	"prev": "01610502.html",
+	"list": [
+		"040e0f02",
+		"01060502",
+		"02af0e02",
+		"00b10502",
+		"01c10502",
+		"00eb0502",
+		"03b60502",
+		"00040002",
+		"04c01d02",
+		"030e0502"
+	]
+}

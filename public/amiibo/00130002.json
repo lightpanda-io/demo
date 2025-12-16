@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Rosalina",
+		"name": "Rosalina \u0026 Luma",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png",
+		"tail": "00130002"
+	},
+	"next": "004f0502.html",
+	"prev": "00200002.html",
+	"list": [
+		"028e0e02",
+		"04150402",
+		"01180502",
+		"01ce0502",
+		"03720102",
+		"018e0502",
+		"04b41d02",
+		"00980502",
+		"01950502",
+		"02fa0502"
+	]
+}

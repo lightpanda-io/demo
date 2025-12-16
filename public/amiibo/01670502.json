@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Baabara",
+		"name": "Baabara",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c60001-01670502.png",
+		"tail": "01670502"
+	},
+	"next": "002d0002.html",
+	"prev": "00430302.html",
+	"list": [
+		"04d11d02",
+		"039fff02",
+		"02f50502",
+		"00e50502",
+		"04bb1d02",
+		"03961702",
+		"015a0502",
+		"036a0402",
+		"03b80502",
+		"04a40902"
+	]
+}

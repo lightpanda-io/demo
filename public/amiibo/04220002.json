@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Steve",
+		"name": "Steve",
+		"gameSeries": "Minecraft",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc00000-04220002.png",
+		"tail": "04220002"
+	},
+	"next": "024d0502.html",
+	"prev": "03b10502.html",
+	"list": [
+		"024d0502",
+		"02e30f02",
+		"01bb0502",
+		"034d0902",
+		"01360502",
+		"006e0502",
+		"019a0502",
+		"03b40502",
+		"00bd0502",
+		"026b0e02"
+	]
+}

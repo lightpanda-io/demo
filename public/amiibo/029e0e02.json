@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Bowser Jr.",
+		"name": "Bowser Jr. - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png",
+		"tail": "029e0e02"
+	},
+	"next": "02570c02.html",
+	"prev": "00610502.html",
+	"list": [
+		"03781402",
+		"001e0002",
+		"00260002",
+		"042e0002",
+		"03cd0502",
+		"02bd0e02",
+		"014c0502",
+		"00270002",
+		"03781402",
+		"00710502"
+	]
+}

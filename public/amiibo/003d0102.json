@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Mario",
+		"name": "Mario - Silver Edition",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png",
+		"tail": "003d0102"
+	},
+	"next": "03860002.html",
+	"prev": "01b20502.html",
+	"list": [
+		"02b90e02",
+		"02f10502",
+		"00d60502",
+		"03050502",
+		"04ee1d02",
+		"04b61d02",
+		"02b30e02",
+		"00af0502",
+		"02a30e02",
+		"041f0002"
+	]
+}

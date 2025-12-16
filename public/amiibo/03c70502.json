@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Reneigh",
+		"name": "Reneigh",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a100001-03c70502.png",
+		"tail": "03c70502"
+	},
+	"next": "00600502.html",
+	"prev": "01250502.html",
+	"list": [
+		"01a70502",
+		"000c0002",
+		"00150002",
+		"02e50f02",
+		"018c0502",
+		"011f0502",
+		"04ec1d02",
+		"03ae0502",
+		"00700502",
+		"03580902"
+	]
+}

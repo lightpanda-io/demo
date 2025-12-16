@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Samus",
+		"name": "Zero Suit Samus",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png",
+		"tail": "001d0002"
+	},
+	"next": "039bff02.html",
+	"prev": "003c0102.html",
+	"list": [
+		"017d0502",
+		"03c80502",
+		"02860e02",
+		"02980e02",
+		"02a10e02",
+		"00110002",
+		"03770402",
+		"03a40002",
+		"00160002",
+		"016c0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Groucho",
+		"name": "Groucho",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021a0001-00da0502.png",
+		"tail": "00da0502"
+	},
+	"next": "00280002.html",
+	"prev": "00ed0502.html",
+	"list": [
+		"04121302",
+		"037a0002",
+		"040f1802",
+		"041f0002",
+		"000e0002",
+		"01aa0502",
+		"00870502",
+		"012b0502",
+		"005c0502",
+		"007e0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Monique",
+		"name": "Monique",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02680001-007d0502.png",
+		"tail": "007d0502"
+	},
+	"next": "02ee0502.html",
+	"prev": "02a40e02.html",
+	"list": [
+		"02470502",
+		"018c0502",
+		"03b10502",
+		"01d30502",
+		"01210502",
+		"01b40502",
+		"03990902",
+		"00000002",
+		"00960502",
+		"03c90502"
+	]
+}

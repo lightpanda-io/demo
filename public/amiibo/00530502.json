@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lyle",
+		"name": "Lyle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01aa0001-00530502.png",
+		"tail": "00530502"
+	},
+	"next": "00a70502.html",
+	"prev": "04230002.html",
+	"list": [
+		"00eb0502",
+		"01090502",
+		"03d50502",
+		"04ab1d02",
+		"02620102",
+		"00b90502",
+		"01bb0502",
+		"00fa0502",
+		"001a0002",
+		"00840502"
+	]
+}

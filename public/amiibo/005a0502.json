@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cheri",
+		"name": "Cheri",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02870001-005a0502.png",
+		"tail": "005a0502"
+	},
+	"next": "03a80502.html",
+	"prev": "034e0902.html",
+	"list": [
+		"01570502",
+		"01240502",
+		"01ac0502",
+		"03030502",
+		"02710e02",
+		"02c20e02",
+		"00400402",
+		"008f0502",
+		"03d30502",
+		"01a50502"
+	]
+}

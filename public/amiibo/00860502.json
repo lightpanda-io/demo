@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Flurry",
+		"name": "Flurry",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03840001-00860502.png",
+		"tail": "00860502"
+	},
+	"next": "019e0502.html",
+	"prev": "019b0502.html",
+	"list": [
+		"03050502",
+		"03040502",
+		"03130502",
+		"008e0502",
+		"00eb0502",
+		"036d0a02",
+		"02fc0502",
+		"04df1d02",
+		"00940502",
+		"01670502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Merengue",
+		"name": "Merengue",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b90001-01600502.png",
+		"tail": "01600502"
+	},
+	"next": "009e0502.html",
+	"prev": "00b30502.html",
+	"list": [
+		"038b0002",
+		"00d30502",
+		"03d50502",
+		"03070502",
+		"04e61d02",
+		"043f1c02",
+		"00810502",
+		"00720502",
+		"034f0902",
+		"00370102"
+	]
+}

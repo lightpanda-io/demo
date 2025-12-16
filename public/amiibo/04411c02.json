@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "My Mario Wooden Blocks",
+		"character": "Peach",
+		"name": "Peach - My Mario Wooden Blocks",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020004-04411c02.png",
+		"tail": "04411c02"
+	},
+	"next": "02670102.html",
+	"prev": "00010002.html",
+	"list": [
+		"024f0902",
+		"01bb0502",
+		"01250502",
+		"00640502",
+		"04ba1d02",
+		"04200002",
+		"04df1d02",
+		"01ae0502",
+		"01c80502",
+		"01280502"
+	]
+}

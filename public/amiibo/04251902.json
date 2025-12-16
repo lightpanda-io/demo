@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Yu-Gi-Oh!",
+		"character": "Tatsuhisa “Luke” Kamijō",
+		"name": "Tatsuhisa “Luke” Kamijō",
+		"gameSeries": "Yu-Gi-Oh!",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38410001-04251902.png",
+		"tail": "04251902"
+	},
+	"next": "041c0402.html",
+	"prev": "00ab0502.html",
+	"list": [
+		"01b10502",
+		"01760502",
+		"02810e02",
+		"030b0502",
+		"038b0002",
+		"02b80e02",
+		"00700502",
+		"02a60e02",
+		"02bb0e02",
+		"02660102"
+	]
+}

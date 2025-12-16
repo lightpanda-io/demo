@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Yoshi",
+		"name": "Yoshi",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png",
+		"tail": "00020002"
+	},
+	"next": "02b10e02.html",
+	"prev": "014e0502.html",
+	"list": [
+		"02fa0502",
+		"02fb0502",
+		"02570c02",
+		"039eff02",
+		"003d0102",
+		"011b0502",
+		"01430502",
+		"01d80502",
+		"01910502",
+		"00cd0502"
+	]
+}

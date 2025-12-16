@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Keaton",
+		"name": "Keaton",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04530001-01040502.png",
+		"tail": "01040502"
+	},
+	"next": "00f50502.html",
+	"prev": "03b00502.html",
+	"list": [
+		"01d60502",
+		"03ae0502",
+		"03c20502",
+		"03590902",
+		"00a70502",
+		"02aa0e02",
+		"004f0502",
+		"00d90502",
+		"017e0502",
+		"03b40502"
+	]
+}

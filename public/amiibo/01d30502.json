@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Robin",
+		"name": "Robin",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022e0001-01d30502.png",
+		"tail": "01d30502"
+	},
+	"next": "00dc0502.html",
+	"prev": "03180502.html",
+	"list": [
+		"02860e02",
+		"00b30502",
+		"00bf0502",
+		"03c10502",
+		"04251902",
+		"009e0502",
+		"027d0e02",
+		"03770402",
+		"01360502",
+		"01080502"
+	]
+}

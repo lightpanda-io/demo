@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Flo",
+		"name": "Flo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046c0001-008c0502.png",
+		"tail": "008c0502"
+	},
+	"next": "00720502.html",
+	"prev": "00760502.html",
+	"list": [
+		"035d0302",
+		"02ae0e02",
+		"02760e02",
+		"02400502",
+		"01270502",
+		"03160502",
+		"01240502",
+		"02f80502",
+		"03d40502",
+		"00e40502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Inkling",
+		"name": "Inkling Squid - Orange",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png",
+		"tail": "02610402"
+	},
+	"next": "041a0902.html",
+	"prev": "00050002.html",
+	"list": [
+		"005b0502",
+		"04c01d02",
+		"00600502",
+		"00500502",
+		"01af0502",
+		"02ba0e02",
+		"006e0502",
+		"01500502",
+		"02a70e02",
+		"00d30502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pate",
+		"name": "Pate",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03090001-00c60502.png",
+		"tail": "00c60502"
+	},
+	"next": "000a0002.html",
+	"prev": "02420502.html",
+	"list": [
+		"04261902",
+		"00560502",
+		"011d0502",
+		"016b0502",
+		"031d0502",
+		"00bd0502",
+		"026a0e02",
+		"0432ff02",
+		"026d0e02",
+		"028f0e02"
+	]
+}

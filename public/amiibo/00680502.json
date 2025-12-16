@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kabuki",
+		"name": "Kabuki",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02660001-00680502.png",
+		"tail": "00680502"
+	},
+	"next": "01390502.html",
+	"prev": "01700502.html",
+	"list": [
+		"02e80502",
+		"04ac1d02",
+		"01560502",
+		"03981702",
+		"02bd0e02",
+		"02480502",
+		"00940502",
+		"02730e02",
+		"00080002",
+		"005d0502"
+	]
+}

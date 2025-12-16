@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bunnie",
+		"name": "Bunnie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04940001-009a0502.png",
+		"tail": "009a0502"
+	},
+	"next": "035d0302.html",
+	"prev": "03090502.html",
+	"list": [
+		"03ba0502",
+		"01950502",
+		"02400502",
+		"00830502",
+		"00ed0502",
+		"00ea0502",
+		"03b90502",
+		"006d0502",
+		"04140902",
+		"00370102"
+	]
+}

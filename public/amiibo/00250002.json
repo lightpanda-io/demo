@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Greninja",
+		"name": "Greninja",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png",
+		"tail": "00250002"
+	},
+	"next": "02740e02.html",
+	"prev": "01090502.html",
+	"list": [
+		"002b0002",
+		"00930502",
+		"027b0e02",
+		"04e41d02",
+		"03ab0502",
+		"00950502",
+		"006d0502",
+		"00840502",
+		"035d0302",
+		"042d1802"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Peach",
+		"name": "Peach - Soccer",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png",
+		"tail": "02730e02"
+	},
+	"next": "03c00502.html",
+	"prev": "041d0002.html",
+	"list": [
+		"024a0502",
+		"026f0e02",
+		"00a90502",
+		"02f20502",
+		"02520002",
+		"03ca0502",
+		"00e60502",
+		"04dc1d02",
+		"04b51d02",
+		"037c0002"
+	]
+}

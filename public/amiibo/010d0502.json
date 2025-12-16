@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Blathers",
+		"name": "Blathers",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-010d0502.png",
+		"tail": "010d0502"
+	},
+	"next": "02540c02.html",
+	"prev": "02880e02.html",
+	"list": [
+		"03760402",
+		"013a0502",
+		"027d0e02",
+		"04251902",
+		"009c0502",
+		"00d00502",
+		"024b0502",
+		"025c0d02",
+		"00b40502",
+		"00c10502"
+	]
+}

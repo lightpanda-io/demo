@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Jamie",
+		"name": "Jamie",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png",
+		"tail": "04ac1d02"
+	},
+	"next": "04ad1d02.html",
+	"prev": "04ab1d02.html",
+	"list": [
+		"04a30902",
+		"026a0e02",
+		"01500502",
+		"03540902",
+		"02e20f02",
+		"02700e02",
+		"01b30502",
+		"04111802",
+		"00b30502",
+		"02b20e02"
+	]
+}

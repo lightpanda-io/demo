@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Elmer",
+		"name": "Elmer",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a70001-01a10502.png",
+		"tail": "01a10502"
+	},
+	"next": "03080502.html",
+	"prev": "01270502.html",
+	"list": [
+		"03cc0502",
+		"04140902",
+		"00c70502",
+		"001b0002",
+		"024f0902",
+		"042e0002",
+		"00130002",
+		"00310002",
+		"01230502",
+		"00bf0502"
+	]
+}

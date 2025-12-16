@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ness",
+		"name": "Ness",
+		"gameSeries": "Earthbound",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22800000-002c0002.png",
+		"tail": "002c0002"
+	},
+	"next": "036c0a02.html",
+	"prev": "03951702.html",
+	"list": [
+		"03890002",
+		"00c00502",
+		"01090502",
+		"02520002",
+		"00990502",
+		"00f80502",
+		"02a10e02",
+		"00330002",
+		"01be0502",
+		"04d41d02"
+	]
+}

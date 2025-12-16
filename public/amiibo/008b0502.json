@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lionel",
+		"name": "Lionel",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ee0001-008b0502.png",
+		"tail": "008b0502"
+	},
+	"next": "01b50502.html",
+	"prev": "026d0e02.html",
+	"list": [
+		"04a40902",
+		"02a40e02",
+		"03661302",
+		"011a0502",
+		"03af0502",
+		"038b0002",
+		"01770502",
+		"019d0502",
+		"017d0502",
+		"04291902"
+	]
+}

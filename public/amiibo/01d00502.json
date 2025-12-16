@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Iggly",
+		"name": "Iggly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046a0001-01d00502.png",
+		"tail": "01d00502"
+	},
+	"next": "00fe0502.html",
+	"prev": "01a80502.html",
+	"list": [
+		"001d0002",
+		"017d0502",
+		"025a0002",
+		"00de0502",
+		"028e0e02",
+		"03661302",
+		"02820e02",
+		"01660502",
+		"025b0002",
+		"02f00502"
+	]
+}

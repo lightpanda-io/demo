@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Yunobo",
+		"name": "Yunobo",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
+		"tail": "04a60902"
+	},
+	"next": "04a40902.html",
+	"prev": "04a50902.html",
+	"list": [
+		"03bd0502",
+		"030b0502",
+		"04cc1d02",
+		"03530902",
+		"01d30502",
+		"01a80502",
+		"00d20502",
+		"04e11d02",
+		"02f40502",
+		"006d0502"
+	]
+}

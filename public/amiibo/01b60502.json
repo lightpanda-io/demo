@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sally",
+		"name": "Sally",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e40001-01b60502.png",
+		"tail": "01b60502"
+	},
+	"next": "03c80502.html",
+	"prev": "02960e02.html",
+	"list": [
+		"00d10502",
+		"01090502",
+		"00db0502",
+		"03781402",
+		"04b91d02",
+		"029f0e02",
+		"01330502",
+		"01660502",
+		"04380402",
+		"02c00e02"
+	]
+}

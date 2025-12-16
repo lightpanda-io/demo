@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Reese",
+		"name": "Reese",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0001-00a90502.png",
+		"tail": "00a90502"
+	},
+	"next": "035f1102.html",
+	"prev": "01020502.html",
+	"list": [
+		"042e0002",
+		"00820502",
+		"009f0502",
+		"03aa0502",
+		"03140502",
+		"01480502",
+		"00020002",
+		"002a0002",
+		"03ab0502",
+		"04330402"
+	]
+}

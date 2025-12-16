@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Curly",
+		"name": "Curly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04780001-01630502.png",
+		"tail": "01630502"
+	},
+	"next": "039fff02.html",
+	"prev": "01d10502.html",
+	"list": [
+		"02be0e02",
+		"00e00502",
+		"03aa0502",
+		"03000502",
+		"011d0502",
+		"00aa0502",
+		"002e0002",
+		"01c20502",
+		"02fa0502",
+		"019f0502"
+	]
+}

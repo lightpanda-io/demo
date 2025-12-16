@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Stitches",
+		"name": "Stitches",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01810502.png",
+		"tail": "01810502"
+	},
+	"next": "01a80502.html",
+	"prev": "007b0502.html",
+	"list": [
+		"03560902",
+		"02a00e02",
+		"042a1902",
+		"01910502",
+		"03c20502",
+		"042f1a02",
+		"01750502",
+		"03000502",
+		"03a0ff02",
+		"01540502"
+	]
+}

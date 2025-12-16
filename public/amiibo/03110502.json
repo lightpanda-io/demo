@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sprocket",
+		"name": "Sprocket",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04390001-03110502.png",
+		"tail": "03110502"
+	},
+	"next": "00b80502.html",
+	"prev": "00d90502.html",
+	"list": [
+		"00f60502",
+		"00760502",
+		"00400402",
+		"03050502",
+		"00120002",
+		"009e0502",
+		"00a80502",
+		"01bc0502",
+		"03d00502",
+		"02ed0502"
+	]
+}

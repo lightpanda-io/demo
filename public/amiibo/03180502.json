@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tasha",
+		"name": "Tasha",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ea0001-03180502.png",
+		"tail": "03180502"
+	},
+	"next": "01d30502.html",
+	"prev": "02b30e02.html",
+	"list": [
+		"01740502",
+		"001c0002",
+		"01590502",
+		"01320502",
+		"04291902",
+		"02830e02",
+		"01310502",
+		"01300502",
+		"03840002",
+		"01a40502"
+	]
+}

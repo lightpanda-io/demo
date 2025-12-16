@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Vic",
+		"name": "Vic",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02520001-00fe0502.png",
+		"tail": "00fe0502"
+	},
+	"next": "042b1802.html",
+	"prev": "01d00502.html",
+	"list": [
+		"02af0e02",
+		"02680102",
+		"000a0002",
+		"036e0a02",
+		"006f0502",
+		"005f0502",
+		"007f0502",
+		"01a00502",
+		"03ab0502",
+		"00470502"
+	]
+}

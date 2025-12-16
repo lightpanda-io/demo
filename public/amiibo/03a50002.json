@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Byleth",
+		"name": "Byleth",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_210b0000-03a50002.png",
+		"tail": "03a50002"
+	},
+	"next": "030c0502.html",
+	"prev": "01c50502.html",
+	"list": [
+		"038b0002",
+		"03d40502",
+		"019d0502",
+		"00600502",
+		"00150002",
+		"03ab0502",
+		"04dc1d02",
+		"04ac1d02",
+		"04a30902",
+		"00f70502"
+	]
+}

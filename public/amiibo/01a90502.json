@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Papi",
+		"name": "Papi",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b00001-01a90502.png",
+		"tail": "01a90502"
+	},
+	"next": "01890502.html",
+	"prev": "04180902.html",
+	"list": [
+		"03850002",
+		"010d0502",
+		"01c70502",
+		"001c0002",
+		"02a00e02",
+		"02b60e02",
+		"00e30502",
+		"02500a02",
+		"00c90502",
+		"024f0902"
+	]
+}

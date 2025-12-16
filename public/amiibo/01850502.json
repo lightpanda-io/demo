@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rocco",
+		"name": "Rocco",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03900001-01850502.png",
+		"tail": "01850502"
+	},
+	"next": "02900e02.html",
+	"prev": "01130502.html",
+	"list": [
+		"00480502",
+		"04ef1d02",
+		"01350502",
+		"04e81d02",
+		"04a40902",
+		"04e11d02",
+		"02e80502",
+		"00ef0502",
+		"029b0e02",
+		"02ac0e02"
+	]
+}

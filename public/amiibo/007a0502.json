@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Snake",
+		"name": "Snake",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04970001-007a0502.png",
+		"tail": "007a0502"
+	},
+	"next": "03d30502.html",
+	"prev": "03bf0502.html",
+	"list": [
+		"008c0502",
+		"01040502",
+		"02440502",
+		"01210502",
+		"006b0502",
+		"03100502",
+		"010e0502",
+		"03550902",
+		"00ba0502",
+		"01c40502"
+	]
+}

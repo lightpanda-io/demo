@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pascal",
+		"name": "Pascal",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a40001-004d0502.png",
+		"tail": "004d0502"
+	},
+	"next": "03ba0502.html",
+	"prev": "01d60502.html",
+	"list": [
+		"03580902",
+		"041d0002",
+		"017d0502",
+		"01bd0502",
+		"013c0502",
+		"01080502",
+		"0431ff02",
+		"01280502",
+		"03100502",
+		"02870e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Donkey Kong",
+		"name": "Donkey Kong - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png",
+		"tail": "0431ff02"
+	},
+	"next": "00900502.html",
+	"prev": "042f1a02.html",
+	"list": [
+		"00040002",
+		"03bc0502",
+		"04cf1d02",
+		"00ab0502",
+		"02f10502",
+		"03a20002",
+		"010c0502",
+		"00820502",
+		"00070002",
+		"00980502"
+	]
+}

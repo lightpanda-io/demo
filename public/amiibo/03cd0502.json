@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Petri",
+		"name": "Petri",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a160001-03cd0502.png",
+		"tail": "03cd0502"
+	},
+	"next": "03d20502.html",
+	"prev": "03bd0502.html",
+	"list": [
+		"005e0502",
+		"00920502",
+		"00560502",
+		"00150002",
+		"010b0502",
+		"02f70502",
+		"03b10502",
+		"03070502",
+		"01d50502",
+		"025b0002"
+	]
+}

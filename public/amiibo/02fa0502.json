@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Billy",
+		"name": "Billy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03580001-02fa0502.png",
+		"tail": "02fa0502"
+	},
+	"next": "00800502.html",
+	"prev": "02f00502.html",
+	"list": [
+		"004a0502",
+		"02f20502",
+		"02fd0502",
+		"010c0502",
+		"00bf0502",
+		"019b0502",
+		"03981702",
+		"03601202",
+		"02e40f02",
+		"012a0502"
+	]
+}

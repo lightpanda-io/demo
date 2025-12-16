@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Shulk",
+		"name": "Shulk",
+		"gameSeries": "Xenoblade",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png",
+		"tail": "002b0002"
+	},
+	"next": "02660102.html",
+	"prev": "00150002.html",
+	"list": [
+		"03160502",
+		"01340502",
+		"02a10e02",
+		"030f0502",
+		"000e0002",
+		"02920e02",
+		"02b50e02",
+		"02820e02",
+		"02480502",
+		"00680502"
+	]
+}

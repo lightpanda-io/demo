@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Wisp",
+		"name": "Wisp",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a060001-03ba0502.png",
+		"tail": "03ba0502"
+	},
+	"next": "00be0502.html",
+	"prev": "004d0502.html",
+	"list": [
+		"00090002",
+		"012b0502",
+		"02630102",
+		"00ac0502",
+		"03611202",
+		"00ac0502",
+		"038c0002",
+		"00250002",
+		"029e0e02",
+		"01170502"
+	]
+}

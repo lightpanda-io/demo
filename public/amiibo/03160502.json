@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cleo",
+		"name": "Cleo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ab0001-03160502.png",
+		"tail": "03160502"
+	},
+	"next": "01180502.html",
+	"prev": "002f0002.html",
+	"list": [
+		"02950e02",
+		"023b0702",
+		"04bb1d02",
+		"034f0902",
+		"00b10502",
+		"02b10e02",
+		"00b40502",
+		"02e50f02",
+		"00a70502",
+		"00c60502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tank",
+		"name": "Tank",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b20001-01b90502.png",
+		"tail": "01b90502"
+	},
+	"next": "03bb0502.html",
+	"prev": "00770502.html",
+	"list": [
+		"01bb0502",
+		"011f0502",
+		"00700502",
+		"04d01d02",
+		"035d0302",
+		"00190002",
+		"01770502",
+		"04370402",
+		"00dd0502",
+		"04e01d02"
+	]
+}

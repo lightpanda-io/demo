@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Julia",
+		"name": "Julia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043b0001-03030502.png",
+		"tail": "03030502"
+	},
+	"next": "01560502.html",
+	"prev": "01a50502.html",
+	"list": [
+		"00b90502",
+		"04ec1d02",
+		"04e61d02",
+		"02490502",
+		"01830502",
+		"01c20502",
+		"03990902",
+		"02870e02",
+		"013a0502",
+		"01730502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Leopold",
+		"name": "Leopold",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ea0001-030b0502.png",
+		"tail": "030b0502"
+	},
+	"next": "01c70502.html",
+	"prev": "00c70502.html",
+	"list": [
+		"04bd1d02",
+		"02760e02",
+		"00d00502",
+		"038e0402",
+		"023b0702",
+		"03820002",
+		"04380402",
+		"00210002",
+		"03a20002",
+		"04df1d02"
+	]
+}

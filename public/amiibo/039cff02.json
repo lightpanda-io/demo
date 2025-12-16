@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Luigi",
+		"name": "Luigi - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png",
+		"tail": "039cff02"
+	},
+	"next": "003e0402.html",
+	"prev": "00480502.html",
+	"list": [
+		"03b60502",
+		"01460502",
+		"00090002",
+		"00520502",
+		"04d21d02",
+		"00dc0502",
+		"00b80502",
+		"00120002",
+		"038f0402",
+		"03d50502"
+	]
+}

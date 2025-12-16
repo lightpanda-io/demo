@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Faith",
+		"name": "Faith",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a200001-03d70502.png",
+		"tail": "03d70502"
+	},
+	"next": "01b20502.html",
+	"prev": "00390102.html",
+	"list": [
+		"00820502",
+		"02a60e02",
+		"03a90502",
+		"00a50502",
+		"02800e02",
+		"00d80502",
+		"03bc0502",
+		"019b0502",
+		"029d0e02",
+		"04ae1d02"
+	]
+}

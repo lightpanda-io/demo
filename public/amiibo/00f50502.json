@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hugh",
+		"name": "Hugh",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047b0001-00f50502.png",
+		"tail": "00f50502"
+	},
+	"next": "013a0502.html",
+	"prev": "01040502.html",
+	"list": [
+		"00620502",
+		"030c0502",
+		"01d20502",
+		"040c0f02",
+		"04b41d02",
+		"04a60902",
+		"00a80502",
+		"031d0502",
+		"01750502",
+		"02ea0502"
+	]
+}

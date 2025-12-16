@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "Sylux",
+		"name": "Sylux",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png",
+		"tail": "043c1302"
+	},
+	"next": "038b0002.html",
+	"prev": "043a1302.html",
+	"list": [
+		"02690e02",
+		"01490502",
+		"01a60502",
+		"01b30502",
+		"00680502",
+		"00340102",
+		"04cb1d02",
+		"00190002",
+		"00330002",
+		"04180902"
+	]
+}

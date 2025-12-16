@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Saharah",
+		"name": "Saharah",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-03b70502.png",
+		"tail": "03b70502"
+	},
+	"next": "006a0502.html",
+	"prev": "00460502.html",
+	"list": [
+		"00ec0502",
+		"04be1d02",
+		"01210502",
+		"01570502",
+		"01520502",
+		"003a0202",
+		"00d40502",
+		"02440502",
+		"04d41d02",
+		"01400502"
+	]
+}

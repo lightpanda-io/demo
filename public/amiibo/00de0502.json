@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Butch",
+		"name": "Butch",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02eb0001-00de0502.png",
+		"tail": "00de0502"
+	},
+	"next": "014b0502.html",
+	"prev": "030f0502.html",
+	"list": [
+		"01b80502",
+		"00980502",
+		"01d60502",
+		"026c0e02",
+		"03791502",
+		"00a30502",
+		"008f0502",
+		"016c0502",
+		"03971702",
+		"01a90502"
+	]
+}

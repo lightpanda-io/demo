@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "K.K. Slider",
+		"name": "DJ KK",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820101-00460502.png",
+		"tail": "00460502"
+	},
+	"next": "03b70502.html",
+	"prev": "03730102.html",
+	"list": [
+		"01620502",
+		"003f0402",
+		"01300502",
+		"04de1d02",
+		"04101802",
+		"04f31d02",
+		"04da1d02",
+		"01490502",
+		"01a30502",
+		"03590902"
+	]
+}

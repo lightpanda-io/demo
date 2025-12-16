@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Nan",
+		"name": "Nan",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03570001-00eb0502.png",
+		"tail": "00eb0502"
+	},
+	"next": "027e0e02.html",
+	"prev": "00450502.html",
+	"list": [
+		"004e0502",
+		"00b30502",
+		"00480502",
+		"00b30502",
+		"00e10502",
+		"00290002",
+		"01840502",
+		"027d0e02",
+		"03180502",
+		"00a50502"
+	]
+}

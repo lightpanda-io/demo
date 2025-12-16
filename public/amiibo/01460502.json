@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Stinky",
+		"name": "Stinky",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026a0001-01460502.png",
+		"tail": "01460502"
+	},
+	"next": "016e0502.html",
+	"prev": "03c00502.html",
+	"list": [
+		"007e0502",
+		"042d1802",
+		"031c0502",
+		"00f90502",
+		"011f0502",
+		"011f0502",
+		"00bf0502",
+		"02840e02",
+		"00320002",
+		"04aa1d02"
+	]
+}

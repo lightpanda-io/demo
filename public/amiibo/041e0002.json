@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Pyra",
+		"name": "Pyra",
+		"gameSeries": "Xenoblade",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png",
+		"tail": "041e0002"
+	},
+	"next": "03190502.html",
+	"prev": "00b10502.html",
+	"list": [
+		"01700502",
+		"00f70502",
+		"016b0502",
+		"041e0002",
+		"01670502",
+		"00710502",
+		"01470502",
+		"01c10502",
+		"01510502",
+		"02ba0e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Merry",
+		"name": "Merry",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026d0001-013f0502.png",
+		"tail": "013f0502"
+	},
+	"next": "010a0502.html",
+	"prev": "03b50502.html",
+	"list": [
+		"04b81d02",
+		"00310002",
+		"02720e02",
+		"00700502",
+		"04bf1d02",
+		"00fb0502",
+		"02790e02",
+		"04b71d02",
+		"00ee0502",
+		"04af1d02"
+	]
+}

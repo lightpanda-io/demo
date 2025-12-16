@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Spike",
+		"name": "Spike",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b40001-030c0502.png",
+		"tail": "030c0502"
+	},
+	"next": "03990902.html",
+	"prev": "03a50002.html",
+	"list": [
+		"02550c02",
+		"00540502",
+		"01580502",
+		"028e0e02",
+		"01890502",
+		"00150002",
+		"00d50502",
+		"015d0502",
+		"002a0002",
+		"040d0f02"
+	]
+}

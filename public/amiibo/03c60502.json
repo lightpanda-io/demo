@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Raymond",
+		"name": "Raymond",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png",
+		"tail": "03c60502"
+	},
+	"next": "03c90502.html",
+	"prev": "017b0502.html",
+	"list": [
+		"01380502",
+		"03781402",
+		"01ac0502",
+		"00ff0502",
+		"03d10502",
+		"01680502",
+		"04e61d02",
+		"01820502",
+		"01170502",
+		"03b00502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Al",
+		"name": "Al",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03710001-005c0502.png",
+		"tail": "005c0502"
+	},
+	"next": "01a40502.html",
+	"prev": "03a10002.html",
+	"list": [
+		"00ac0502",
+		"02860e02",
+		"03a60102",
+		"02f80502",
+		"04be1d02",
+		"02400502",
+		"01950502",
+		"01a40502",
+		"04cc1d02",
+		"02590002"
+	]
+}

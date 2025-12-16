@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Others",
+		"character": "Solaire of Astora",
+		"name": "Solaire of Astora",
+		"gameSeries": "Dark Souls",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33800000-03781402.png",
+		"tail": "03781402"
+	},
+	"next": "04281902.html",
+	"prev": "00d30502.html",
+	"list": [
+		"01110502",
+		"011b0502",
+		"00e80502",
+		"02870e02",
+		"03530902",
+		"01a90502",
+		"02e40f02",
+		"041b0402",
+		"035f1102",
+		"01540502"
+	]
+}

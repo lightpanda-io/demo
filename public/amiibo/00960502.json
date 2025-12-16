@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Annalisa",
+		"name": "Annalisa",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02080001-00960502.png",
+		"tail": "00960502"
+	},
+	"next": "00bc0502.html",
+	"prev": "02ac0e02.html",
+	"list": [
+		"01540502",
+		"00dd0502",
+		"03810002",
+		"02f40502",
+		"002e0002",
+		"026a0e02",
+		"03cf0502",
+		"00ea0502",
+		"04c41e03",
+		"02f70502"
+	]
+}

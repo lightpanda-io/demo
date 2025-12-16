@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Spork/Crackle",
+		"name": "Spork/Crackle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047d0001-012e0502.png",
+		"tail": "012e0502"
+	},
+	"next": "02a00e02.html",
+	"prev": "031a0502.html",
+	"list": [
+		"004f0502",
+		"03601202",
+		"03080502",
+		"016d0502",
+		"02f90502",
+		"002b0002",
+		"01cd0502",
+		"02770e02",
+		"04b51d02",
+		"00e80502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Anchovy",
+		"name": "Anchovy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022f0001-011e0502.png",
+		"tail": "011e0502"
+	},
+	"next": "03b80502.html",
+	"prev": "00640502.html",
+	"list": [
+		"00160002",
+		"00740502",
+		"04b81d02",
+		"001e0002",
+		"03d70502",
+		"00f40502",
+		"031b0502",
+		"03ca0502",
+		"02900e02",
+		"02be0e02"
+	]
+}

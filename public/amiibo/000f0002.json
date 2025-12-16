@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Little Mac",
+		"name": "Little Mac",
+		"gameSeries": "Punch Out",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png",
+		"tail": "000f0002"
+	},
+	"next": "00f00502.html",
+	"prev": "00890502.html",
+	"list": [
+		"01400502",
+		"03080502",
+		"04d81d02",
+		"03730102",
+		"04ee1d02",
+		"03720102",
+		"02f40502",
+		"04a60902",
+		"03b70502",
+		"02990e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Lily",
+		"name": "Lily",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png",
+		"tail": "04db1d02"
+	},
+	"next": "04d91d02.html",
+	"prev": "04d81d02.html",
+	"list": [
+		"01620502",
+		"026e0e02",
+		"0432ff02",
+		"03560902",
+		"01c10502",
+		"03bd0502",
+		"00c10502",
+		"02a90e02",
+		"0431ff02",
+		"00e10502"
+	]
+}

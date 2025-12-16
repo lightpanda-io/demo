@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Punchy",
+		"name": "Punchy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02630001-00750502.png",
+		"tail": "00750502"
+	},
+	"next": "015d0502.html",
+	"prev": "00bd0502.html",
+	"list": [
+		"03b80502",
+		"016c0502",
+		"007d0502",
+		"01d00502",
+		"037b0002",
+		"02be0e02",
+		"01450502",
+		"00f10502",
+		"01510502",
+		"035c0902"
+	]
+}

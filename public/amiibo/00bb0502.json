@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ozzie",
+		"name": "Ozzie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c10001-00bb0502.png",
+		"tail": "00bb0502"
+	},
+	"next": "023b0702.html",
+	"prev": "00a70502.html",
+	"list": [
+		"01480502",
+		"02e20f02",
+		"03140502",
+		"00270002",
+		"01260502",
+		"014b0502",
+		"042c1802",
+		"04d41d02",
+		"01510502",
+		"034f0902"
+	]
+}

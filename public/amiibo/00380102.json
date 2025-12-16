@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Toad",
+		"name": "Toad",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0000-00380102.png",
+		"tail": "00380102"
+	},
+	"next": "006f0502.html",
+	"prev": "02b00e02.html",
+	"list": [
+		"02b80e02",
+		"008c0502",
+		"011f0502",
+		"02550c02",
+		"028e0e02",
+		"00390102",
+		"02880e02",
+		"02470502",
+		"04180902",
+		"03920a02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rooney",
+		"name": "Rooney",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03da0001-01510502.png",
+		"tail": "01510502"
+	},
+	"next": "007e0502.html",
+	"prev": "024b0502.html",
+	"list": [
+		"003d0102",
+		"01410502",
+		"01a30502",
+		"012b0502",
+		"00a40502",
+		"030e0502",
+		"00f50502",
+		"01d60502",
+		"01ad0502",
+		"041f0002"
+	]
+}

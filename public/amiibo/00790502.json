@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Deena",
+		"name": "Deena",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030b0001-00790502.png",
+		"tail": "00790502"
+	},
+	"next": "03830002.html",
+	"prev": "03611202.html",
+	"list": [
+		"00b80502",
+		"00bb0502",
+		"029f0e02",
+		"027e0e02",
+		"03060502",
+		"01c40502",
+		"01ae0502",
+		"008d0502",
+		"02bf0e02",
+		"017f0502"
+	]
+}

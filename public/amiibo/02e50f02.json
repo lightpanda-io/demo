@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Barioth",
+		"name": "Barioth and Ayuria",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png",
+		"tail": "02e50f02"
+	},
+	"next": "012f0502.html",
+	"prev": "01870502.html",
+	"list": [
+		"02570c02",
+		"03d40502",
+		"00620502",
+		"028c0e02",
+		"00360102",
+		"03a30002",
+		"030b0502",
+		"03d50502",
+		"02800e02",
+		"01c20502"
+	]
+}

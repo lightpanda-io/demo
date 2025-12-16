@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Blanca",
+		"name": "Blanca",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b30001-00b50502.png",
+		"tail": "00b50502"
+	},
+	"next": "01380502.html",
+	"prev": "013d0502.html",
+	"list": [
+		"01a20502",
+		"013c0502",
+		"03b40502",
+		"040d0f02",
+		"036d0a02",
+		"02bd0e02",
+		"03060502",
+		"01990502",
+		"00b90502",
+		"017c0502"
+	]
+}

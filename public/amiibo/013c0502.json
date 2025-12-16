@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Beardo",
+		"name": "Beardo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02210001-013c0502.png",
+		"tail": "013c0502"
+	},
+	"next": "03d50502.html",
+	"prev": "01290502.html",
+	"list": [
+		"00990502",
+		"01320502",
+		"001d0002",
+		"017d0502",
+		"00850502",
+		"030d0502",
+		"03d60502",
+		"02e70502",
+		"028b0e02",
+		"041d0002"
+	]
+}

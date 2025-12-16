@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Diddy Kong",
+		"name": "Diddy Kong - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png",
+		"tail": "02920e02"
+	},
+	"next": "00f80502.html",
+	"prev": "02a70e02.html",
+	"list": [
+		"010a0502",
+		"02910e02",
+		"034e0902",
+		"03701202",
+		"01710502",
+		"04d21d02",
+		"00ae0502",
+		"025a0002",
+		"04340402",
+		"00b00502"
+	]
+}

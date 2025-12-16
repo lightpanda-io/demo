@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Claude",
+		"name": "Claude",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049f0001-03010502.png",
+		"tail": "03010502"
+	},
+	"next": "01d50502.html",
+	"prev": "01d40502.html",
+	"list": [
+		"016d0502",
+		"02e60f02",
+		"03c70502",
+		"03b70502",
+		"04291902",
+		"019a0502",
+		"01750502",
+		"038d0002",
+		"00560502",
+		"01c10502"
+	]
+}

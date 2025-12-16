@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chip",
+		"name": "Chip",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019a0001-00b70502.png",
+		"tail": "00b70502"
+	},
+	"next": "01620502.html",
+	"prev": "00350102.html",
+	"list": [
+		"01730502",
+		"024f0902",
+		"01450502",
+		"025e0402",
+		"01270502",
+		"03981702",
+		"03800002",
+		"03090502",
+		"04200002",
+		"00d40502"
+	]
+}

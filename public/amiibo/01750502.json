@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tommy",
+		"name": "Tommy - Suit",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860301-01750502.png",
+		"tail": "01750502"
+	},
+	"next": "02580002.html",
+	"prev": "00b60502.html",
+	"list": [
+		"00c10502",
+		"04cb1d02",
+		"04c41e03",
+		"03870002",
+		"01d00502",
+		"029a0e02",
+		"00260002",
+		"00210002",
+		"00b10502",
+		"01670502"
+	]
+}

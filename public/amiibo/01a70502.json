@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pietro",
+		"name": "Pietro",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d20001-01a70502.png",
+		"tail": "01a70502"
+	},
+	"next": "02a70e02.html",
+	"prev": "036b0402.html",
+	"list": [
+		"011c0502",
+		"02780e02",
+		"00cc0502",
+		"00a90502",
+		"01cc0502",
+		"00400402",
+		"016d0502",
+		"034b0902",
+		"01c90502",
+		"029a0e02"
+	]
+}

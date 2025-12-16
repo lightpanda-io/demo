@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Nintendo World",
+		"character": "Diddy Kong",
+		"name": "Diddy Kong - Power Up Band",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00090003-0432ff02.png",
+		"tail": "0432ff02"
+	},
+	"next": "012b0502.html",
+	"prev": "02650102.html",
+	"list": [
+		"019b0502",
+		"02f80502",
+		"04a60902",
+		"015b0502",
+		"030c0502",
+		"00b60502",
+		"01610502",
+		"02930e02",
+		"040e0f02",
+		"002f0002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Label",
+		"name": "Labelle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890001-00ab0502.png",
+		"tail": "00ab0502"
+	},
+	"next": "04251902.html",
+	"prev": "019a0502.html",
+	"list": [
+		"04b21d02",
+		"01a20502",
+		"014c0502",
+		"03920a02",
+		"016c0502",
+		"00580502",
+		"009a0502",
+		"00660502",
+		"000f0002",
+		"00840502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Shovel Knight",
+		"character": "King Knight",
+		"name": "King Knight",
+		"gameSeries": "Shovel Knight",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c30000-036e0a02.png",
+		"tail": "036e0a02"
+	},
+	"next": "00400402.html",
+	"prev": "02a00e02.html",
+	"list": [
+		"03a10002",
+		"02bd0e02",
+		"015c0502",
+		"01d10502",
+		"02e40f02",
+		"00ec0502",
+		"03951702",
+		"040c0f02",
+		"00fb0502",
+		"01a80502"
+	]
+}

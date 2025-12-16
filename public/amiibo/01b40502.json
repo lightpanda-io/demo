@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sylvia",
+		"name": "Sylvia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d70001-01b40502.png",
+		"tail": "01b40502"
+	},
+	"next": "00d70502.html",
+	"prev": "03a30002.html",
+	"list": [
+		"02830e02",
+		"02ea0502",
+		"02bc0e02",
+		"016b0502",
+		"00c20502",
+		"011d0502",
+		"02530002",
+		"02870e02",
+		"01560502",
+		"02710e02"
+	]
+}

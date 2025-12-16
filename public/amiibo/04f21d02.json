@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Mai",
+		"name": "Mai",
+		"gameSeries": "Fatal Fury",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f21d02.png",
+		"tail": "04f21d02"
+	},
+	"next": "04e31d02.html",
+	"prev": "04e81d02.html",
+	"list": [
+		"017d0502",
+		"04a40902",
+		"03590902",
+		"007d0502",
+		"03540902",
+		"04e01d02",
+		"016c0502",
+		"00a30502",
+		"02900e02",
+		"02ba0e02"
+	]
+}

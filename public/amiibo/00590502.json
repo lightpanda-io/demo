@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Leonardo",
+		"name": "Leonardo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fe0001-00590502.png",
+		"tail": "00590502"
+	},
+	"next": "00160002.html",
+	"prev": "00c40502.html",
+	"list": [
+		"03c60502",
+		"01c90502",
+		"03cf0502",
+		"01cf0502",
+		"01a40502",
+		"008e0502",
+		"02af0e02",
+		"01780502",
+		"01430502",
+		"01890502"
+	]
+}

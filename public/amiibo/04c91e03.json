@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Kirby Air Riders",
+		"character": "Waddle Dee",
+		"name": "Bandana Waddle Dee",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png",
+		"tail": "04c91e03"
+	},
+	"next": "index.html",
+	"prev": "04c41e03.html",
+	"list": [
+		"01010502",
+		"02ea0502",
+		"00490502",
+		"023b0702",
+		"01010502",
+		"00e80502",
+		"035e1002",
+		"03050502",
+		"01bc0502",
+		"01c00502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Zelda",
+		"name": "Sheik",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010100-00170002.png",
+		"tail": "00170002"
+	},
+	"next": "02c20e02.html",
+	"prev": "00ae0502.html",
+	"list": [
+		"010a0502",
+		"031c0502",
+		"00e40502",
+		"04dc1d02",
+		"04b01d02",
+		"01490502",
+		"01230502",
+		"023e0302",
+		"04ef1d02",
+		"006b0502"
+	]
+}

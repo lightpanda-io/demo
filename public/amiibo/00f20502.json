@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jay",
+		"name": "Jay",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022d0001-00f20502.png",
+		"tail": "00f20502"
+	},
+	"next": "02500a02.html",
+	"prev": "00830502.html",
+	"list": [
+		"035e1002",
+		"00910502",
+		"004c0502",
+		"018b0502",
+		"02fc0502",
+		"02fb0502",
+		"01b10502",
+		"035a0902",
+		"00670502",
+		"005c0502"
+	]
+}

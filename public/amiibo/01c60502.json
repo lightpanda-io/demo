@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rowan",
+		"name": "Rowan",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fb0001-01c60502.png",
+		"tail": "01c60502"
+	},
+	"next": "01d70502.html",
+	"prev": "009d0502.html",
+	"list": [
+		"00370102",
+		"02b00e02",
+		"02740e02",
+		"04bf1d02",
+		"041d0002",
+		"00990502",
+		"03ae0502",
+		"023e0302",
+		"01860502",
+		"00550502"
+	]
+}

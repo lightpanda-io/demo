@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Queenie",
+		"name": "Queenie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04360001-01940502.png",
+		"tail": "01940502"
+	},
+	"next": "009c0502.html",
+	"prev": "01680502.html",
+	"list": [
+		"008b0502",
+		"029f0e02",
+		"00b00502",
+		"01420502",
+		"004e0502",
+		"017b0502",
+		"00350102",
+		"00c10502",
+		"031c0502",
+		"027e0e02"
+	]
+}

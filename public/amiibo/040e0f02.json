@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Tsukino",
+		"name": "Tsukino",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png",
+		"tail": "040e0f02"
+	},
+	"next": "00c10502.html",
+	"prev": "035a0902.html",
+	"list": [
+		"031e0502",
+		"03b40502",
+		"01250502",
+		"000d0002",
+		"016e0502",
+		"00760502",
+		"01990502",
+		"04291902",
+		"01090502",
+		"04c01d02"
+	]
+}

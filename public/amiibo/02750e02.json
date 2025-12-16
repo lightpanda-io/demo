@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Peach",
+		"name": "Peach - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png",
+		"tail": "02750e02"
+	},
+	"next": "00b90502.html",
+	"prev": "00540502.html",
+	"list": [
+		"00d40502",
+		"03130502",
+		"02720e02",
+		"03b10502",
+		"00710502",
+		"00290002",
+		"01b20502",
+		"025b0002",
+		"028b0e02",
+		"03d10502"
+	]
+}

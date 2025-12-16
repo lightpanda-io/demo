@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Guardian",
+		"name": "Guardian",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01400000-03550902.png",
+		"tail": "03550902"
+	},
+	"next": "03840002.html",
+	"prev": "038f0402.html",
+	"list": [
+		"027d0e02",
+		"00450502",
+		"01d30502",
+		"00950502",
+		"00b90502",
+		"008d0502",
+		"00e30502",
+		"03860002",
+		"01480502",
+		"01a40502"
+	]
+}

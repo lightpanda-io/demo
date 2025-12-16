@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Peanut",
+		"name": "Peanut",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04dd0001-00a20502.png",
+		"tail": "00a20502"
+	},
+	"next": "03d00502.html",
+	"prev": "00db0502.html",
+	"list": [
+		"02620102",
+		"01a10502",
+		"00310002",
+		"04bf1d02",
+		"04200002",
+		"00830502",
+		"034b0902",
+		"00570502",
+		"0431ff02",
+		"00ff0502"
+	]
+}

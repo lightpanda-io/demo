@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Felicity",
+		"name": "Felicity",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026e0001-00ba0502.png",
+		"tail": "00ba0502"
+	},
+	"next": "017d0502.html",
+	"prev": "04190902.html",
+	"list": [
+		"03030502",
+		"016a0502",
+		"03d00502",
+		"00440502",
+		"040c0f02",
+		"02a60e02",
+		"00130002",
+		"004c0502",
+		"01100502",
+		"00320002"
+	]
+}

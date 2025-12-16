@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rory",
+		"name": "Rory",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ed0001-01a30502.png",
+		"tail": "01a30502"
+	},
+	"next": "00cb0502.html",
+	"prev": "03a0ff02.html",
+	"list": [
+		"03981702",
+		"01350502",
+		"00080002",
+		"01a20502",
+		"030b0502",
+		"04150402",
+		"026b0e02",
+		"03aa0502",
+		"03820002",
+		"01500502"
+	]
+}

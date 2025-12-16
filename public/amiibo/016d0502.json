@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Derwin",
+		"name": "Derwin",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030f0001-016d0502.png",
+		"tail": "016d0502"
+	},
+	"next": "002e0002.html",
+	"prev": "04421c02.html",
+	"list": [
+		"00890502",
+		"04411c02",
+		"00880502",
+		"00810502",
+		"04d71d02",
+		"00e30502",
+		"03010502",
+		"00cf0502",
+		"03110502",
+		"03a70102"
+	]
+}

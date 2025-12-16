@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mythra",
+		"name": "Mythra",
+		"gameSeries": "Xenoblade",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png",
+		"tail": "041f0002"
+	},
+	"next": "010b0502.html",
+	"prev": "02b10e02.html",
+	"list": [
+		"01230502",
+		"04d61d02",
+		"010d0502",
+		"024d0502",
+		"02f20502",
+		"025d0402",
+		"00090002",
+		"025a0002",
+		"03b70502",
+		"01090502"
+	]
+}

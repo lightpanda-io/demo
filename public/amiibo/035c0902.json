@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Bokoblin",
+		"name": "Bokoblin",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01410000-035c0902.png",
+		"tail": "035c0902"
+	},
+	"next": "02b50e02.html",
+	"prev": "00ea0502.html",
+	"list": [
+		"02eb0502",
+		"02620102",
+		"02ff0502",
+		"01120502",
+		"03741402",
+		"019b0502",
+		"026c0e02",
+		"03b90502",
+		"04a91d02",
+		"01920502"
+	]
+}

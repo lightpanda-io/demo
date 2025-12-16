@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Alli",
+		"name": "Alli",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c40001-00670502.png",
+		"tail": "00670502"
+	},
+	"next": "02800e02.html",
+	"prev": "02820e02.html",
+	"list": [
+		"01b80502",
+		"015c0502",
+		"034e0902",
+		"02470502",
+		"01070502",
+		"04db1d02",
+		"034b0902",
+		"00b80502",
+		"01560502",
+		"026b0e02"
+	]
+}

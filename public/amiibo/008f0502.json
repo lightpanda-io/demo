@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jeremiah",
+		"name": "Jeremiah",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033f0001-008f0502.png",
+		"tail": "008f0502"
+	},
+	"next": "02990e02.html",
+	"prev": "038c0002.html",
+	"list": [
+		"038b0002",
+		"01b50502",
+		"00fa0502",
+		"000b0002",
+		"04f31d02",
+		"00fc0502",
+		"004c0502",
+		"04d71d02",
+		"013a0502",
+		"02990e02"
+	]
+}

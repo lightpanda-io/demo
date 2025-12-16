@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Riju",
+		"name": "Riju",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01090000-04a30902.png",
+		"tail": "04a30902"
+	},
+	"next": "00fc0502.html",
+	"prev": "04a40902.html",
+	"list": [
+		"00a30502",
+		"014b0502",
+		"01a20502",
+		"03c00502",
+		"015b0502",
+		"03670102",
+		"00540502",
+		"00290002",
+		"04b71d02",
+		"03cd0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Flora",
+		"name": "Flora",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043f0001-01550502.png",
+		"tail": "01550502"
+	},
+	"next": "00a30502.html",
+	"prev": "02740e02.html",
+	"list": [
+		"02ee0502",
+		"005e0502",
+		"04c91e03",
+		"00850502",
+		"037f0002",
+		"03c00502",
+		"001a0002",
+		"03951702",
+		"00030002",
+		"00d60502"
+	]
+}

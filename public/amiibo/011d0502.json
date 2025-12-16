@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lily",
+		"name": "Lily",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03380001-011d0502.png",
+		"tail": "011d0502"
+	},
+	"next": "00550502.html",
+	"prev": "01730502.html",
+	"list": [
+		"027f0e02",
+		"011f0502",
+		"01590502",
+		"03c50502",
+		"02b20e02",
+		"01390502",
+		"029c0e02",
+		"035f1102",
+		"04271902",
+		"029f0e02"
+	]
+}

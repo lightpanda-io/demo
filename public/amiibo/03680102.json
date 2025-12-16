@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Koopa Troopa",
+		"name": "Koopa Troopa",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png",
+		"tail": "03680102"
+	},
+	"next": "01310502.html",
+	"prev": "00700502.html",
+	"list": [
+		"02fc0502",
+		"01850502",
+		"00ae0502",
+		"04da1d02",
+		"00a00502",
+		"03b30502",
+		"01ce0502",
+		"02fa0502",
+		"02e10f02",
+		"01600502"
+	]
+}

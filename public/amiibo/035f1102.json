@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Pikmin",
+		"character": "Pikmin",
+		"name": "Pikmin",
+		"gameSeries": "Pikmin",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06420000-035f1102.png",
+		"tail": "035f1102"
+	},
+	"next": "014f0502.html",
+	"prev": "00a90502.html",
+	"list": [
+		"00da0502",
+		"00800502",
+		"03b00502",
+		"00a10502",
+		"00a40502",
+		"015a0502",
+		"00770502",
+		"025c0d02",
+		"037c0002",
+		"03a70102"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Birdo",
+		"name": "Birdo - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png",
+		"tail": "02b10e02"
+	},
+	"next": "041f0002.html",
+	"prev": "00020002.html",
+	"list": [
+		"03750d02",
+		"02ba0e02",
+		"00140002",
+		"00e80502",
+		"00690502",
+		"040f1802",
+		"005e0502",
+		"005b0502",
+		"01b50502",
+		"04db1d02"
+	]
+}

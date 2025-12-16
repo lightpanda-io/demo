@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cyrus",
+		"name": "Cyrus",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0001-01150502.png",
+		"tail": "01150502"
+	},
+	"next": "04111802.html",
+	"prev": "02e30f02.html",
+	"list": [
+		"03690402",
+		"03961702",
+		"03651302",
+		"02ae0e02",
+		"00940502",
+		"043a1302",
+		"037a0002",
+		"01790502",
+		"01500502",
+		"00120002"
+	]
+}

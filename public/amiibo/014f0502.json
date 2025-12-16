@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Buck",
+		"name": "Buck",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a40001-014f0502.png",
+		"tail": "014f0502"
+	},
+	"next": "01320502.html",
+	"prev": "035f1102.html",
+	"list": [
+		"00520502",
+		"017e0502",
+		"02ac0e02",
+		"04210002",
+		"041b0402",
+		"029c0e02",
+		"03640002",
+		"00a00502",
+		"02840e02",
+		"02a80e02"
+	]
+}

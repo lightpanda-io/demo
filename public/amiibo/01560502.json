@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Hamlet",
+		"name": "Hamlet",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037e0001-01560502.png",
+		"tail": "01560502"
+	},
+	"next": "00fd0502.html",
+	"prev": "03030502.html",
+	"list": [
+		"000a0002",
+		"03150502",
+		"00e40502",
+		"03d70502",
+		"03680102",
+		"01b80502",
+		"03cf0502",
+		"00930502",
+		"01370502",
+		"034d0902"
+	]
+}

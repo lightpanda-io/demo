@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Canberra",
+		"name": "Canberra",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c40001-012b0502.png",
+		"tail": "012b0502"
+	},
+	"next": "02c10e02.html",
+	"prev": "0432ff02.html",
+	"list": [
+		"027c0e02",
+		"012b0502",
+		"03990902",
+		"00240002",
+		"03880002",
+		"00b90502",
+		"004c0502",
+		"01270502",
+		"01080502",
+		"01b30502"
+	]
+}

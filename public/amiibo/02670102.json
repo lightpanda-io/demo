@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Waluigi",
+		"name": "Waluigi",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00140000-02670102.png",
+		"tail": "02670102"
+	},
+	"next": "03b20502.html",
+	"prev": "04411c02.html",
+	"list": [
+		"01390502",
+		"04d81d02",
+		"04101802",
+		"027c0e02",
+		"03830002",
+		"031c0502",
+		"02b70e02",
+		"01b90502",
+		"034d0902",
+		"00140002"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Lucha",
+		"name": "Lucha",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023c0001-00bd0502.png",
+		"tail": "00bd0502"
+	},
+	"next": "00750502.html",
+	"prev": "01380502.html",
+	"list": [
+		"02420502",
+		"00950502",
+		"00130002",
+		"01290502",
+		"008f0502",
+		"03b90502",
+		"03ba0502",
+		"03050502",
+		"03651302",
+		"02bc0e02"
+	]
+}

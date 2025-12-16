@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mega Man",
+		"name": "Mega Man - Gold Edition",
+		"gameSeries": "Megaman",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-02580002.png",
+		"tail": "02580002"
+	},
+	"next": "01170502.html",
+	"prev": "01750502.html",
+	"list": [
+		"02be0e02",
+		"027a0e02",
+		"014e0502",
+		"04d41d02",
+		"017e0502",
+		"04360402",
+		"00ce0502",
+		"02390602",
+		"027f0e02",
+		"04ee1d02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Filbert",
+		"name": "Filbert",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04df0001-00e80502.png",
+		"tail": "00e80502"
+	},
+	"next": "01290502.html",
+	"prev": "03830002.html",
+	"list": [
+		"04cb1d02",
+		"043c1302",
+		"015a0502",
+		"00b80502",
+		"01360502",
+		"04cb1d02",
+		"04f31d02",
+		"02f50502",
+		"01600502",
+		"01680502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Broccolo",
+		"name": "Broccolo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04180001-00d80502.png",
+		"tail": "00d80502"
+	},
+	"next": "00710502.html",
+	"prev": "00a10502.html",
+	"list": [
+		"030d0502",
+		"00f30502",
+		"01920502",
+		"03730102",
+		"04d41d02",
+		"012f0502",
+		"04261902",
+		"00cc0502",
+		"04d61d02",
+		"03070502"
+	]
+}

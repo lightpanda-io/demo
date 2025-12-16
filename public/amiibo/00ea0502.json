@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Beau",
+		"name": "Beau",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dd0001-00ea0502.png",
+		"tail": "00ea0502"
+	},
+	"next": "035c0902.html",
+	"prev": "02f50502.html",
+	"list": [
+		"02f30502",
+		"023b0702",
+		"03720102",
+		"03c00502",
+		"00af0502",
+		"037e0002",
+		"019b0502",
+		"02e10f02",
+		"03a20002",
+		"030f0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Wario",
+		"name": "Wario",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00070000-02630102.png",
+		"tail": "02630102"
+	},
+	"next": "01230502.html",
+	"prev": "00f90502.html",
+	"list": [
+		"01030502",
+		"01770502",
+		"016f0502",
+		"04af1d02",
+		"01230502",
+		"01b90502",
+		"00de0502",
+		"02460502",
+		"02a50e02",
+		"00ec0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Frita",
+		"name": "Frita",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d00001-01960502.png",
+		"tail": "01960502"
+	},
+	"next": "00f30502.html",
+	"prev": "02460502.html",
+	"list": [
+		"01c10502",
+		"01540502",
+		"00c60502",
+		"011d0502",
+		"03a50002",
+		"037f0002",
+		"03170502",
+		"00a40502",
+		"01020502",
+		"04ad1d02"
+	]
+}

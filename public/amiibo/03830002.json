@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ivysaur",
+		"name": "Ivysaur",
+		"gameSeries": "Pokemon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19020000-03830002.png",
+		"tail": "03830002"
+	},
+	"next": "00e80502.html",
+	"prev": "00790502.html",
+	"list": [
+		"03a80502",
+		"018c0502",
+		"04241902",
+		"02850e02",
+		"01050502",
+		"00290002",
+		"03ac0502",
+		"04aa1d02",
+		"004b0502",
+		"019f0502"
+	]
+}

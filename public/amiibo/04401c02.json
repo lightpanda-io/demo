@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "My Mario Wooden Blocks",
+		"character": "Luigi",
+		"name": "Luigi - My Mario Wooden Blocks",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png",
+		"tail": "04401c02"
+	},
+	"next": "03b10502.html",
+	"prev": "000c0002.html",
+	"list": [
+		"00710502",
+		"00b10502",
+		"02700e02",
+		"04b91d02",
+		"031b0502",
+		"03b10502",
+		"01670502",
+		"01b80502",
+		"03730102",
+		"02fc0502"
+	]
+}

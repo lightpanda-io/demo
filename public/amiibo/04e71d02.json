@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Ingrid",
+		"name": "Ingrid",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04e71d02.png",
+		"tail": "04e71d02"
+	},
+	"next": "04cd1d02.html",
+	"prev": "04e61d02.html",
+	"list": [
+		"01a70502",
+		"01280502",
+		"00040002",
+		"00700502",
+		"00a40502",
+		"00810502",
+		"006a0502",
+		"02890e02",
+		"01a80502",
+		"00c50502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Sonic",
+		"name": "Sonic",
+		"gameSeries": "Sonic",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png",
+		"tail": "00300002"
+	},
+	"next": "013d0502.html",
+	"prev": "00b40502.html",
+	"list": [
+		"01c90502",
+		"04e11d02",
+		"03b30502",
+		"00ce0502",
+		"03941702",
+		"01b00502",
+		"007c0502",
+		"003f0402",
+		"01470502",
+		"036b0402"
+	]
+}

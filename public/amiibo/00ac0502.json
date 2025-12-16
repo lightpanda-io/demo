@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Copper",
+		"name": "Copper",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019d0001-00ac0502.png",
+		"tail": "00ac0502"
+	},
+	"next": "03060502.html",
+	"prev": "02e20f02.html",
+	"list": [
+		"006c0502",
+		"04e41d02",
+		"03d00502",
+		"026e0e02",
+		"042e0002",
+		"00e90502",
+		"003f0402",
+		"04ba1d02",
+		"03820002",
+		"04380402"
+	]
+}

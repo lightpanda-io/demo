@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Quillson",
+		"name": "Quillson",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03180001-006c0502.png",
+		"tail": "006c0502"
+	},
+	"next": "02be0e02.html",
+	"prev": "014a0502.html",
+	"list": [
+		"03630002",
+		"009e0502",
+		"01b30502",
+		"00840502",
+		"01c40502",
+		"03070502",
+		"01bc0502",
+		"012a0502",
+		"017b0502",
+		"008d0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Portia",
+		"name": "Portia",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ef0001-00580502.png",
+		"tail": "00580502"
+	},
+	"next": "00ee0502.html",
+	"prev": "02910e02.html",
+	"list": [
+		"01770502",
+		"01040502",
+		"01300502",
+		"039bff02",
+		"04a30902",
+		"00e50502",
+		"04350402",
+		"04c91e03",
+		"041f0002",
+		"03890002"
+	]
+}

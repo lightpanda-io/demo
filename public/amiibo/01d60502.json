@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Stitches",
+		"name": "Stitches - Amiibo Festival",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01d60502.png",
+		"tail": "01d60502"
+	},
+	"next": "004d0502.html",
+	"prev": "02f20502.html",
+	"list": [
+		"00260002",
+		"02ef0502",
+		"010c0502",
+		"04e01d02",
+		"002a0002",
+		"01130502",
+		"00ee0502",
+		"036f1202",
+		"00c60502",
+		"04b81d02"
+	]
+}

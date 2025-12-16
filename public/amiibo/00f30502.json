@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sprinkle",
+		"name": "Sprinkle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046d0001-00f30502.png",
+		"tail": "00f30502"
+	},
+	"next": "00880502.html",
+	"prev": "01960502.html",
+	"list": [
+		"00c90502",
+		"00590502",
+		"03020502",
+		"041e0002",
+		"02780e02",
+		"00070002",
+		"00690502",
+		"00ce0502",
+		"035c0902",
+		"01d70502"
+	]
+}

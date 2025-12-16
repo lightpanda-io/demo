@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Annalise",
+		"name": "Annalise",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ad0001-01b20502.png",
+		"tail": "01b20502"
+	},
+	"next": "003d0102.html",
+	"prev": "03d70502.html",
+	"list": [
+		"042e0002",
+		"03900402",
+		"01990502",
+		"03d20502",
+		"02f40502",
+		"00f40502",
+		"029b0e02",
+		"026e0e02",
+		"038f0402",
+		"000d0002"
+	]
+}

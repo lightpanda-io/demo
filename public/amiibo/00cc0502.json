@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cookie",
+		"name": "Cookie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f20001-00cc0502.png",
+		"tail": "00cc0502"
+	},
+	"next": "028e0e02.html",
+	"prev": "01220502.html",
+	"list": [
+		"0430ff02",
+		"02f20502",
+		"04b01d02",
+		"02390602",
+		"00ad0502",
+		"036b0402",
+		"00c40502",
+		"00750502",
+		"04d61d02",
+		"00400402"
+	]
+}

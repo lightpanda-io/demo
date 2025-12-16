@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Callie",
+		"name": "Callie",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png",
+		"tail": "025d0402"
+	},
+	"next": "04360402.html",
+	"prev": "01c70502.html",
+	"list": [
+		"00fa0502",
+		"04220002",
+		"00db0502",
+		"00f50502",
+		"00130002",
+		"04380402",
+		"00530502",
+		"00d90502",
+		"02810e02",
+		"00e60502"
+	]
+}

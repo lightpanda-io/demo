@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Henry",
+		"name": "Henry",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034b0001-009f0502.png",
+		"tail": "009f0502"
+	},
+	"next": "02470502.html",
+	"prev": "00400402.html",
+	"list": [
+		"04d21d02",
+		"01460502",
+		"005c0502",
+		"041e0002",
+		"01440502",
+		"041f0002",
+		"003e0402",
+		"039eff02",
+		"00f80502",
+		"000a0002"
+	]
+}

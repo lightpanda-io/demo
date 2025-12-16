@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Ena",
+		"name": "Ena",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png",
+		"tail": "040d0f02"
+	},
+	"next": "026f0e02.html",
+	"prev": "02560c02.html",
+	"list": [
+		"001e0002",
+		"00220002",
+		"02b00e02",
+		"04c01d02",
+		"00bb0502",
+		"00d10502",
+		"02560c02",
+		"02e10f02",
+		"009e0502",
+		"02650102"
+	]
+}

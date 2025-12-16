@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Metroid",
+		"character": "E.M.M.I.",
+		"name": "E.M.M.I.",
+		"gameSeries": "Metroid",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png",
+		"tail": "04131302"
+	},
+	"next": "03540902.html",
+	"prev": "01990502.html",
+	"list": [
+		"01d10502",
+		"03850002",
+		"041e0002",
+		"019c0502",
+		"03080502",
+		"02bc0e02",
+		"03670102",
+		"00f90502",
+		"016d0502",
+		"004d0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pelly",
+		"name": "Pelly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a00001-010f0502.png",
+		"tail": "010f0502"
+	},
+	"next": "01cc0502.html",
+	"prev": "02890e02.html",
+	"list": [
+		"02ab0e02",
+		"02ae0e02",
+		"01b20502",
+		"03c70502",
+		"00120002",
+		"03961702",
+		"00220002",
+		"00650502",
+		"009b0502",
+		"005f0502"
+	]
+}

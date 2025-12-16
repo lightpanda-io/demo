@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Weber",
+		"name": "Weber",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03120001-03090502.png",
+		"tail": "03090502"
+	},
+	"next": "009a0502.html",
+	"prev": "00780502.html",
+	"list": [
+		"02e40f02",
+		"04ef1d02",
+		"002b0002",
+		"00ac0502",
+		"00d70502",
+		"01550502",
+		"04ec1d02",
+		"034e0902",
+		"03050502",
+		"010a0502"
+	]
+}

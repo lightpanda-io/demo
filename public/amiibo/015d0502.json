@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Violet",
+		"name": "Violet",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03700001-015d0502.png",
+		"tail": "015d0502"
+	},
+	"next": "00210002.html",
+	"prev": "00750502.html",
+	"list": [
+		"01cb0502",
+		"01010502",
+		"03c10502",
+		"00c80502",
+		"03cf0502",
+		"02f50502",
+		"02950e02",
+		"00450502",
+		"01bf0502",
+		"019f0502"
+	]
+}

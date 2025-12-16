@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Vladimir",
+		"name": "Vladimir",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02830001-00c70502.png",
+		"tail": "00c70502"
+	},
+	"next": "030b0502.html",
+	"prev": "02e60f02.html",
+	"list": [
+		"00bf0502",
+		"00270002",
+		"011e0502",
+		"034d0902",
+		"03d50502",
+		"01310502",
+		"02710e02",
+		"027a0e02",
+		"02970e02",
+		"00940502"
+	]
+}

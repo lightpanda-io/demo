@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chief",
+		"name": "Chief",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050b0001-00990502.png",
+		"tail": "00990502"
+	},
+	"next": "036a0402.html",
+	"prev": "02c10e02.html",
+	"list": [
+		"02f70502",
+		"02890e02",
+		"01560502",
+		"02920e02",
+		"03180502",
+		"04370402",
+		"02b40e02",
+		"04d71d02",
+		"01680502",
+		"03a70102"
+	]
+}

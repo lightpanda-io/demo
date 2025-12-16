@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "R.O.B.",
+		"name": "R.O.B. - NES",
+		"gameSeries": "Classic Nintendo",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png",
+		"tail": "00330002"
+	},
+	"next": "02bf0e02.html",
+	"prev": "01030502.html",
+	"list": [
+		"03a80502",
+		"03d10502",
+		"02fd0502",
+		"00430302",
+		"03190502",
+		"01100502",
+		"02630102",
+		"04360402",
+		"04b21d02",
+		"00910502"
+	]
+}

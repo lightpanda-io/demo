@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Redd",
+		"name": "Redd",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80001-004f0502.png",
+		"tail": "004f0502"
+	},
+	"next": "02410502.html",
+	"prev": "00130002.html",
+	"list": [
+		"04360402",
+		"035d0302",
+		"030e0502",
+		"034d0902",
+		"019d0502",
+		"004e0502",
+		"01ae0502",
+		"03630002",
+		"00b30502",
+		"02730e02"
+	]
+}

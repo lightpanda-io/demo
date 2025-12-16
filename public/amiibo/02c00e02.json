@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Pink Gold Peach",
+		"name": "Pink Gold Peach - Tennis",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png",
+		"tail": "02c00e02"
+	},
+	"next": "00ec0502.html",
+	"prev": "027b0e02.html",
+	"list": [
+		"01710502",
+		"010a0502",
+		"027e0e02",
+		"000b0002",
+		"03b50502",
+		"01010502",
+		"00b20502",
+		"02460502",
+		"00910502",
+		"03bb0502"
+	]
+}

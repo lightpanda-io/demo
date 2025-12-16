@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cousteau",
+		"name": "Cousteau",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03420001-01280502.png",
+		"tail": "01280502"
+	},
+	"next": "01190502.html",
+	"prev": "01310502.html",
+	"list": [
+		"04d91d02",
+		"03820002",
+		"030f0502",
+		"01ae0502",
+		"002a0002",
+		"01850502",
+		"00790502",
+		"002f0002",
+		"00030002",
+		"04b91d02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Kirby Air Riders",
+		"character": "Kirby",
+		"name": "Kirby",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
+		"tail": "04c41e03"
+	},
+	"next": "04c91e03.html",
+	"prev": "042e0002.html",
+	"list": [
+		"025e0402",
+		"025c0d02",
+		"01750502",
+		"02840e02",
+		"001f0002",
+		"011a0502",
+		"011b0502",
+		"04db1d02",
+		"00000002",
+		"02e20f02"
+	]
+}

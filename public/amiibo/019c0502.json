@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Naomi",
+		"name": "Naomi",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b80001-019c0502.png",
+		"tail": "019c0502"
+	},
+	"next": "03020502.html",
+	"prev": "00290002.html",
+	"list": [
+		"04e61d02",
+		"03601202",
+		"04e81d02",
+		"005a0502",
+		"01870502",
+		"01280502",
+		"000f0002",
+		"01940502",
+		"016a0502",
+		"04e31d02"
+	]
+}

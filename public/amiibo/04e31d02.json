@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Elena",
+		"name": "Elena",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04e31d02.png",
+		"tail": "04e31d02"
+	},
+	"next": "04e41d02.html",
+	"prev": "04f21d02.html",
+	"list": [
+		"01870502",
+		"00e00502",
+		"03ae0502",
+		"00580502",
+		"01af0502",
+		"01af0502",
+		"01b80502",
+		"01210502",
+		"03160502",
+		"040e0f02"
+	]
+}

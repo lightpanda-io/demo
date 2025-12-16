@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Mii",
+		"name": "Mii Gunner",
+		"gameSeries": "Mii",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png",
+		"tail": "00230002"
+	},
+	"next": "03720102.html",
+	"prev": "043f1c02.html",
+	"list": [
+		"01b80502",
+		"002e0002",
+		"043e1b02",
+		"028c0e02",
+		"00a70502",
+		"03981702",
+		"00110002",
+		"03cc0502",
+		"008a0502",
+		"00c00502"
+	]
+}

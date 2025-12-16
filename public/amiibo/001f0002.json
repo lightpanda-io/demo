@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Palutena",
+		"name": "Palutena",
+		"gameSeries": "Kid Icarus",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07420000-001f0002.png",
+		"tail": "001f0002"
+	},
+	"next": "01520502.html",
+	"prev": "02b70e02.html",
+	"list": [
+		"00760502",
+		"02930e02",
+		"00490502",
+		"00200002",
+		"04bb1d02",
+		"01640502",
+		"02f10502",
+		"04e61d02",
+		"00620502",
+		"03661302"
+	]
+}

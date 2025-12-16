@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Birdo",
+		"name": "Birdo - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png",
+		"tail": "02b20e02"
+	},
+	"next": "02850e02.html",
+	"prev": "036f1202.html",
+	"list": [
+		"008e0502",
+		"00f50502",
+		"01920502",
+		"025e0402",
+		"009f0502",
+		"01b40502",
+		"03770402",
+		"00860502",
+		"035b0902",
+		"013a0502"
+	]
+}

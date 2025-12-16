@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Azalea",
+		"name": "Azalea",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1e0001-03d50502.png",
+		"tail": "03d50502"
+	},
+	"next": "00060002.html",
+	"prev": "013c0502.html",
+	"list": [
+		"01bb0502",
+		"01270502",
+		"028e0e02",
+		"01bf0502",
+		"019b0502",
+		"02820e02",
+		"03d60502",
+		"031d0502",
+		"00330002",
+		"03820002"
+	]
+}

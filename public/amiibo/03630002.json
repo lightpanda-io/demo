@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Corrin",
+		"name": "Corrin - Player 2",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21050100-03630002.png",
+		"tail": "03630002"
+	},
+	"next": "01d10502.html",
+	"prev": "005b0502.html",
+	"list": [
+		"04e01d02",
+		"03180502",
+		"00930502",
+		"004e0502",
+		"00f80502",
+		"04bc1d02",
+		"00820502",
+		"03b30502",
+		"02a10e02",
+		"01910502"
+	]
+}

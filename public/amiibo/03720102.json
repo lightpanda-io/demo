@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Peach",
+		"name": "Peach - Wedding",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png",
+		"tail": "03720102"
+	},
+	"next": "03ce0502.html",
+	"prev": "00230002.html",
+	"list": [
+		"00ae0502",
+		"019c0502",
+		"007a0502",
+		"02ea0502",
+		"02ee0502",
+		"00890502",
+		"042d1802",
+		"04e41d02",
+		"01870502",
+		"028d0e02"
+	]
+}

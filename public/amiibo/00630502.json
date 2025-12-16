@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bluebear",
+		"name": "Bluebear",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027d0001-00630502.png",
+		"tail": "00630502"
+	},
+	"next": "00150002.html",
+	"prev": "03070502.html",
+	"list": [
+		"03741402",
+		"03c40502",
+		"04f31d02",
+		"031e0502",
+		"04340402",
+		"01b90502",
+		"02900e02",
+		"018e0502",
+		"00a60502",
+		"00920502"
+	]
+}

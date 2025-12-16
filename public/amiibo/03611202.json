@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Fire Emblem",
+		"character": "Celica",
+		"name": "Celica",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21070000-03611202.png",
+		"tail": "03611202"
+	},
+	"next": "00790502.html",
+	"prev": "01410502.html",
+	"list": [
+		"023b0702",
+		"018d0502",
+		"00e10502",
+		"000e0002",
+		"01530502",
+		"02fd0502",
+		"03920a02",
+		"01080502",
+		"04dc1d02",
+		"030e0502"
+	]
+}

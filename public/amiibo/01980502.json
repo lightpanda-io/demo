@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Melba",
+		"name": "Melba",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03be0001-01980502.png",
+		"tail": "01980502"
+	},
+	"next": "026e0e02.html",
+	"prev": "02ee0502.html",
+	"list": [
+		"01600502",
+		"04ee1d02",
+		"006a0502",
+		"04af1d02",
+		"03be0502",
+		"03a20002",
+		"029a0e02",
+		"02fb0502",
+		"04b61d02",
+		"030d0502"
+	]
+}

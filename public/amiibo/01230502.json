@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Paula",
+		"name": "Paula",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021e0001-01230502.png",
+		"tail": "01230502"
+	},
+	"next": "02bc0e02.html",
+	"prev": "02630102.html",
+	"list": [
+		"03ca0502",
+		"02a50e02",
+		"038b0002",
+		"00db0502",
+		"00bb0502",
+		"00530502",
+		"02b90e02",
+		"00780502",
+		"04ad1d02",
+		"003c0102"
+	]
+}

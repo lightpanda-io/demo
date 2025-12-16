@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Midge",
+		"name": "Midge",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02350001-00840502.png",
+		"tail": "00840502"
+	},
+	"next": "01ce0502.html",
+	"prev": "00710502.html",
+	"list": [
+		"02600402",
+		"02e30f02",
+		"00030002",
+		"01410502",
+		"04220002",
+		"04da1d02",
+		"02af0e02",
+		"02720e02",
+		"000d0002",
+		"00d50502"
+	]
+}

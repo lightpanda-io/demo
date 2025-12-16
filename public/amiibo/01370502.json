@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tangy",
+		"name": "Tangy",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02620001-01370502.png",
+		"tail": "01370502"
+	},
+	"next": "00980502.html",
+	"prev": "03870002.html",
+	"list": [
+		"00080002",
+		"001a0002",
+		"00800502",
+		"00130002",
+		"03b50502",
+		"000d0002",
+		"039eff02",
+		"00bc0502",
+		"0432ff02",
+		"00480502"
+	]
+}

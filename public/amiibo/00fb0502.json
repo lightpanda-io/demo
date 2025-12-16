@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Anicotti",
+		"name": "Anicotti",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04160001-00fb0502.png",
+		"tail": "00fb0502"
+	},
+	"next": "02690e02.html",
+	"prev": "010e0502.html",
+	"list": [
+		"03ba0502",
+		"027c0e02",
+		"037f0002",
+		"03d60502",
+		"037a0002",
+		"00590502",
+		"00d50502",
+		"01850502",
+		"04350402",
+		"01990502"
+	]
+}

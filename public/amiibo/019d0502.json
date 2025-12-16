@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Peewee",
+		"name": "Peewee",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036a0001-019d0502.png",
+		"tail": "019d0502"
+	},
+	"next": "03be0502.html",
+	"prev": "03c50502.html",
+	"list": [
+		"015f0502",
+		"03b30502",
+		"04e51d02",
+		"041a0902",
+		"00b50502",
+		"00600502",
+		"00680502",
+		"01120502",
+		"009c0502",
+		"01230502"
+	]
+}

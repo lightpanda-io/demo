@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Velma",
+		"name": "Velma",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035c0001-01290502.png",
+		"tail": "01290502"
+	},
+	"next": "013c0502.html",
+	"prev": "00e80502.html",
+	"list": [
+		"002b0002",
+		"030c0502",
+		"04f31d02",
+		"006b0502",
+		"01120502",
+		"01370502",
+		"017f0502",
+		"01c90502",
+		"0430ff02",
+		"01100502"
+	]
+}

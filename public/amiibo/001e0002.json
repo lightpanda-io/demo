@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Olimar",
+		"name": "Olimar",
+		"gameSeries": "Pikmin",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png",
+		"tail": "001e0002"
+	},
+	"next": "00870502.html",
+	"prev": "01d80502.html",
+	"list": [
+		"034f0902",
+		"001e0002",
+		"00ee0502",
+		"01470502",
+		"01750502",
+		"03880002",
+		"03060502",
+		"01030502",
+		"01250502",
+		"03830002"
+	]
+}

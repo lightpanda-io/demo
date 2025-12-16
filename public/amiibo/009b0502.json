@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Clay",
+		"name": "Clay",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03830001-009b0502.png",
+		"tail": "009b0502"
+	},
+	"next": "02a20e02.html",
+	"prev": "00e20502.html",
+	"list": [
+		"013c0502",
+		"00890502",
+		"00260002",
+		"01080502",
+		"001a0002",
+		"00390102",
+		"036b0402",
+		"036e0a02",
+		"035f1102",
+		"01230502"
+	]
+}

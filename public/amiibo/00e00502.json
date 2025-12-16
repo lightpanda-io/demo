@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Moose",
+		"name": "Moose",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041a0001-00e00502.png",
+		"tail": "00e00502"
+	},
+	"next": "02390602.html",
+	"prev": "03990902.html",
+	"list": [
+		"03810002",
+		"01070502",
+		"014d0502",
+		"013a0502",
+		"04340402",
+		"00dc0502",
+		"003a0202",
+		"01250502",
+		"036c0a02",
+		"02f50502"
+	]
+}

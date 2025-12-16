@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Luigi",
+		"name": "Luigi - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png",
+		"tail": "026f0e02"
+	},
+	"next": "002f0002.html",
+	"prev": "040d0f02.html",
+	"list": [
+		"03900402",
+		"00f40502",
+		"04cf1d02",
+		"025d0402",
+		"00bc0502",
+		"024b0502",
+		"01480502",
+		"00320002",
+		"009c0502",
+		"017f0502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Kid Cat",
+		"name": "Kid Cat",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02670001-01080502.png",
+		"tail": "01080502"
+	},
+	"next": "04271902.html",
+	"prev": "03b90502.html",
+	"list": [
+		"00800502",
+		"02ae0e02",
+		"01060502",
+		"03070502",
+		"005e0502",
+		"00320002",
+		"001b0002",
+		"01ba0502",
+		"00650502",
+		"01190502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Victoria",
+		"name": "Victoria",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a50001-015b0502.png",
+		"tail": "015b0502"
+	},
+	"next": "00e90502.html",
+	"prev": "03b20502.html",
+	"list": [
+		"005a0502",
+		"012c0502",
+		"005d0502",
+		"02a80e02",
+		"00db0502",
+		"02ae0e02",
+		"03bc0502",
+		"03951702",
+		"02960e02",
+		"00820502"
+	]
+}

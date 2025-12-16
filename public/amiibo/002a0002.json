@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Robin",
+		"name": "Robin",
+		"gameSeries": "Fire Emblem",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png",
+		"tail": "002a0002"
+	},
+	"next": "00690502.html",
+	"prev": "03c80502.html",
+	"list": [
+		"01ba0502",
+		"00d10502",
+		"019c0502",
+		"029b0e02",
+		"02e20f02",
+		"001e0002",
+		"02620102",
+		"01090502",
+		"00b50502",
+		"04d31d02"
+	]
+}

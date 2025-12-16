@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Shovel Knight",
+		"character": "Shovel Knight",
+		"name": "Shovel Knight",
+		"gameSeries": "Shovel Knight",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-02500a02.png",
+		"tail": "02500a02"
+	},
+	"next": "03911602.html",
+	"prev": "00f20502.html",
+	"list": [
+		"02520002",
+		"00140002",
+		"01180502",
+		"02520002",
+		"041b0402",
+		"00cf0502",
+		"02ab0e02",
+		"03b90502",
+		"026d0e02",
+		"01420502"
+	]
+}

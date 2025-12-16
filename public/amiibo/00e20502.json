@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Zell",
+		"name": "Zell",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d80001-00e20502.png",
+		"tail": "00e20502"
+	},
+	"next": "009b0502.html",
+	"prev": "03651302.html",
+	"list": [
+		"03a30002",
+		"00f60502",
+		"03190502",
+		"034c0902",
+		"04271902",
+		"00a20502",
+		"01060502",
+		"038f0402",
+		"015a0502",
+		"00680502"
+	]
+}

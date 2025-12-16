@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ganon",
+		"name": "Ganondorf",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png",
+		"tail": "001b0002"
+	},
+	"next": "027b0e02.html",
+	"prev": "031d0502.html",
+	"list": [
+		"02950e02",
+		"04d31d02",
+		"010d0502",
+		"001b0002",
+		"00b30502",
+		"02570c02",
+		"03781402",
+		"01a30502",
+		"00820502",
+		"041b0402"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Splatoon",
+		"character": "Pearl",
+		"name": "Pearl",
+		"gameSeries": "Splatoon",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08030000-03760402.png",
+		"tail": "03760402"
+	},
+	"next": "04380402.html",
+	"prev": "03850002.html",
+	"list": [
+		"01210502",
+		"000f0002",
+		"0430ff02",
+		"02980e02",
+		"02890e02",
+		"00570502",
+		"02600402",
+		"003d0102",
+		"029c0e02",
+		"027c0e02"
+	]
+}

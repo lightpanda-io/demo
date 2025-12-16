@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cashmere",
+		"name": "Cashmere",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c90001-030d0502.png",
+		"tail": "030d0502"
+	},
+	"next": "01430502.html",
+	"prev": "03ae0502.html",
+	"list": [
+		"03741402",
+		"042b1802",
+		"03690402",
+		"02f20502",
+		"03a10002",
+		"000d0002",
+		"04131302",
+		"01b90502",
+		"04411c02",
+		"02bd0e02"
+	]
+}

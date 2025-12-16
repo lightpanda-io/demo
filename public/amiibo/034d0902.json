@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Link",
+		"name": "Link - Twilight Princess",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034d0902.png",
+		"tail": "034d0902"
+	},
+	"next": "02fb0502.html",
+	"prev": "01b00502.html",
+	"list": [
+		"00b30502",
+		"034b0902",
+		"01150502",
+		"010a0502",
+		"03b50502",
+		"03030502",
+		"00c00502",
+		"00c80502",
+		"025a0002",
+		"025b0002"
+	]
+}

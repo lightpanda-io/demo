@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Porter",
+		"name": "Porter",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01950001-00b00502.png",
+		"tail": "00b00502"
+	},
+	"next": "00370102.html",
+	"prev": "000b0002.html",
+	"list": [
+		"04d91d02",
+		"00dc0502",
+		"007c0502",
+		"04a50902",
+		"00400402",
+		"014c0502",
+		"00540502",
+		"012d0502",
+		"03bd0502",
+		"01c50502"
+	]
+}

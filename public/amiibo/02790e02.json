@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Daisy",
+		"name": "Daisy - Baseball",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30201-02790e02.png",
+		"tail": "02790e02"
+	},
+	"next": "02980e02.html",
+	"prev": "03971702.html",
+	"list": [
+		"01b80502",
+		"043c1302",
+		"02470502",
+		"01be0502",
+		"03040502",
+		"02b50e02",
+		"04d61d02",
+		"004d0502",
+		"014e0502",
+		"016f0502"
+	]
+}

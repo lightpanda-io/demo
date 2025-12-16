@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Puck",
+		"name": "Puck",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04650001-006e0502.png",
+		"tail": "006e0502"
+	},
+	"next": "03590902.html",
+	"prev": "025c0d02.html",
+	"list": [
+		"014f0502",
+		"04251902",
+		"04241902",
+		"009d0502",
+		"04b01d02",
+		"025c0d02",
+		"028d0e02",
+		"00e60502",
+		"01ad0502",
+		"04cb1d02"
+	]
+}

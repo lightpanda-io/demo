@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Mario Sports Superstars",
+		"character": "Baby Luigi",
+		"name": "Baby Luigi - Golf",
+		"gameSeries": "Mario Sports Superstars",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cd0401-02ad0e02.png",
+		"tail": "02ad0e02"
+	},
+	"next": "02860e02.html",
+	"prev": "026c0e02.html",
+	"list": [
+		"04b71d02",
+		"03500902",
+		"03ce0502",
+		"03c60502",
+		"03ac0502",
+		"043f1c02",
+		"01290502",
+		"02b50e02",
+		"03180502",
+		"04e11d02"
+	]
+}

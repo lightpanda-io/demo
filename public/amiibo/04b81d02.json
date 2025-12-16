@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Street Fighter 6",
+		"character": "Marisa",
+		"name": "Marisa",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cd0001-04b81d02.png",
+		"tail": "04b81d02"
+	},
+	"next": "04bb1d02.html",
+	"prev": "04af1d02.html",
+	"list": [
+		"016f0502",
+		"03590902",
+		"01b50502",
+		"03900402",
+		"01930502",
+		"025a0002",
+		"03b80502",
+		"02540c02",
+		"011f0502",
+		"00bc0502"
+	]
+}

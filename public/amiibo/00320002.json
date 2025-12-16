@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "PAC-MAN",
+		"name": "Pac-Man",
+		"gameSeries": "Pac-man",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33400000-00320002.png",
+		"tail": "00320002"
+	},
+	"next": "03cc0502.html",
+	"prev": "02bf0e02.html",
+	"list": [
+		"01060502",
+		"02520002",
+		"024c0502",
+		"02a90e02",
+		"009c0502",
+		"037c0002",
+		"03110502",
+		"00660502",
+		"013f0502",
+		"042c1802"
+	]
+}

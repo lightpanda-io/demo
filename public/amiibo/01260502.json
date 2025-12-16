@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rodeo",
+		"name": "Rodeo",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024b0001-01260502.png",
+		"tail": "01260502"
+	},
+	"next": "02a80e02.html",
+	"prev": "02540c02.html",
+	"list": [
+		"01c90502",
+		"02f10502",
+		"04180902",
+		"03900402",
+		"015a0502",
+		"014a0502",
+		"01440502",
+		"04150402",
+		"00e10502",
+		"03150502"
+	]
+}

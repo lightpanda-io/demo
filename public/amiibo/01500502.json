@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bree",
+		"name": "Bree",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040f0001-01500502.png",
+		"tail": "01500502"
+	},
+	"next": "007b0502.html",
+	"prev": "01c80502.html",
+	"list": [
+		"02e70502",
+		"036c0a02",
+		"00040002",
+		"000c0002",
+		"04150402",
+		"0430ff02",
+		"00bb0502",
+		"03a10002",
+		"030a0502",
+		"03070502"
+	]
+}

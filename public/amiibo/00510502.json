@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Luna",
+		"name": "Luna",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b50001-00510502.png",
+		"tail": "00510502"
+	},
+	"next": "01b70502.html",
+	"prev": "02400502.html",
+	"list": [
+		"01670502",
+		"00c30502",
+		"00e70502",
+		"00f90502",
+		"02760e02",
+		"038d0002",
+		"01960502",
+		"00860502",
+		"03c40502",
+		"00340102"
+	]
+}

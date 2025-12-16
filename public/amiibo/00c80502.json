@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Savannah",
+		"name": "Savannah",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a60001-00c80502.png",
+		"tail": "00c80502"
+	},
+	"next": "02510002.html",
+	"prev": "001c0002.html",
+	"list": [
+		"042a1902",
+		"02580002",
+		"00ba0502",
+		"01930502",
+		"00690502",
+		"02860e02",
+		"00b50502",
+		"00840502",
+		"03520902",
+		"01b50502"
+	]
+}

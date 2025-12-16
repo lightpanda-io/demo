@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Piranha Plant",
+		"name": "Piranha Plant",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png",
+		"tail": "038d0002"
+	},
+	"next": "02f50502.html",
+	"prev": "01860502.html",
+	"list": [
+		"02830e02",
+		"03b50502",
+		"03b60502",
+		"03c30502",
+		"037f0002",
+		"02400502",
+		"04411c02",
+		"01900502",
+		"010d0502",
+		"00220002"
+	]
+}

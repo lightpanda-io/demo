@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Winnie",
+		"name": "Winnie",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a90001-00710502.png",
+		"tail": "00710502"
+	},
+	"next": "00840502.html",
+	"prev": "00d80502.html",
+	"list": [
+		"03820002",
+		"00310002",
+		"035c0902",
+		"004a0502",
+		"00870502",
+		"008f0502",
+		"03cf0502",
+		"025c0d02",
+		"00640502",
+		"017c0502"
+	]
+}

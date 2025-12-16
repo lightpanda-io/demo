@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Mabel",
+		"name": "Mabel",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-03af0502.png",
+		"tail": "03af0502"
+	},
+	"next": "00610502.html",
+	"prev": "00080002.html",
+	"list": [
+		"00f00502",
+		"00830502",
+		"00d30502",
+		"03900402",
+		"02760e02",
+		"029c0e02",
+		"03b00502",
+		"009c0502",
+		"01c30502",
+		"04390402"
+	]
+}

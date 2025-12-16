@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Maple",
+		"name": "Maple",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027e0001-01690502.png",
+		"tail": "01690502"
+	},
+	"next": "00190002.html",
+	"prev": "03a90502.html",
+	"list": [
+		"03d60502",
+		"01c60502",
+		"03800002",
+		"038b0002",
+		"00830502",
+		"030b0502",
+		"004a0502",
+		"02500a02",
+		"03720102",
+		"04e61d02"
+	]
+}

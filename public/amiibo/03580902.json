@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Legend Of Zelda",
+		"character": "Daruk",
+		"name": "Daruk",
+		"gameSeries": "The Legend of Zelda",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01050000-03580902.png",
+		"tail": "03580902"
+	},
+	"next": "04a50902.html",
+	"prev": "018d0502.html",
+	"list": [
+		"00f60502",
+		"014e0502",
+		"00610502",
+		"00e20502",
+		"01680502",
+		"04e01d02",
+		"02680102",
+		"00500502",
+		"04cd1d02",
+		"014d0502"
+	]
+}

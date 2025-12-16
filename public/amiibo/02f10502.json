@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Boris",
+		"name": "Boris",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04810001-02f10502.png",
+		"tail": "02f10502"
+	},
+	"next": "016a0502.html",
+	"prev": "041a0902.html",
+	"list": [
+		"01d00502",
+		"00760502",
+		"037f0002",
+		"043e1b02",
+		"00f40502",
+		"04350402",
+		"038f0402",
+		"01250502",
+		"01af0502",
+		"02620102"
+	]
+}

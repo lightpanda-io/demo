@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jingle",
+		"name": "Jingle",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01af0001-011c0502.png",
+		"tail": "011c0502"
+	},
+	"next": "01900502.html",
+	"prev": "02c20e02.html",
+	"list": [
+		"00880502",
+		"04de1d02",
+		"017f0502",
+		"015c0502",
+		"038b0002",
+		"04be1d02",
+		"00aa0502",
+		"02e30f02",
+		"01950502",
+		"038c0002"
+	]
+}

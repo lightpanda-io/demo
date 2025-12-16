@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Tad",
+		"name": "Tad",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03410001-030e0502.png",
+		"tail": "030e0502"
+	},
+	"next": "018a0502.html",
+	"prev": "036c0a02.html",
+	"list": [
+		"01460502",
+		"00150002",
+		"028c0e02",
+		"02bf0e02",
+		"02b60e02",
+		"03010502",
+		"03760402",
+		"00f60502",
+		"03710102",
+		"040e0f02"
+	]
+}

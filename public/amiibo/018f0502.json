@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Shep",
+		"name": "Shep",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fc0001-018f0502.png",
+		"tail": "018f0502"
+	},
+	"next": "036d0a02.html",
+	"prev": "01350502.html",
+	"list": [
+		"01590502",
+		"00510502",
+		"00f60502",
+		"03900402",
+		"01910502",
+		"03aa0502",
+		"00210002",
+		"01760502",
+		"02e40f02",
+		"014b0502"
+	]
+}

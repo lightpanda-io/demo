@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Chadder",
+		"name": "Chadder",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041e0001-015f0502.png",
+		"tail": "015f0502"
+	},
+	"next": "03690402.html",
+	"prev": "01440502.html",
+	"list": [
+		"00000002",
+		"0432ff02",
+		"03690402",
+		"04e61d02",
+		"00f90502",
+		"00b00502",
+		"01590502",
+		"03c40502",
+		"015e0502",
+		"03bf0502"
+	]
+}

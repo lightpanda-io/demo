@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Bettina",
+		"name": "Bettina",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041b0001-00f10502.png",
+		"tail": "00f10502"
+	},
+	"next": "04230002.html",
+	"prev": "02e70502.html",
+	"list": [
+		"017b0502",
+		"00bc0502",
+		"016c0502",
+		"00610502",
+		"016f0502",
+		"03b30502",
+		"01b00502",
+		"02f20502",
+		"04d91d02",
+		"03560902"
+	]
+}

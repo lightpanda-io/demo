@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Rio",
+		"name": "Rio",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1c0001-03d30502.png",
+		"tail": "03d30502"
+	},
+	"next": "00e30502.html",
+	"prev": "007a0502.html",
+	"list": [
+		"00a60502",
+		"04f01d02",
+		"02530002",
+		"00a60502",
+		"03c60502",
+		"01710502",
+		"03140502",
+		"001c0002",
+		"02480502",
+		"01340502"
+	]
+}

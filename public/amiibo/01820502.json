@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Pinky",
+		"name": "Pinky",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02150001-01820502.png",
+		"tail": "01820502"
+	},
+	"next": "03130502.html",
+	"prev": "04281902.html",
+	"list": [
+		"03b60502",
+		"009e0502",
+		"04b71d02",
+		"00fa0502",
+		"037d0002",
+		"01d30502",
+		"01980502",
+		"03000502",
+		"02640102",
+		"01970502"
+	]
+}

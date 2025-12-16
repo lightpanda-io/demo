@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Ione",
+		"name": "Ione",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a120001-03c90502.png",
+		"tail": "03c90502"
+	},
+	"next": "00a60502.html",
+	"prev": "03c60502.html",
+	"list": [
+		"030f0502",
+		"01380502",
+		"00400402",
+		"019a0502",
+		"01b30502",
+		"02e70502",
+		"041f0002",
+		"03b00502",
+		"00a40502",
+		"04d71d02"
+	]
+}

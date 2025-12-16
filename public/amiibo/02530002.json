@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Ryu",
+		"name": "Ryu",
+		"gameSeries": "Street Fighter",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png",
+		"tail": "02530002"
+	},
+	"next": "04aa1d02.html",
+	"prev": "037d0002.html",
+	"list": [
+		"00660502",
+		"03030502",
+		"01150502",
+		"00a70502",
+		"036d0a02",
+		"015d0502",
+		"00b90502",
+		"00320002",
+		"02380602",
+		"02970e02"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Prince",
+		"name": "Prince",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03440001-00c50502.png",
+		"tail": "00c50502"
+	},
+	"next": "01d80502.html",
+	"prev": "00c20502.html",
+	"list": [
+		"02fa0502",
+		"01920502",
+		"03c80502",
+		"00270002",
+		"043f1c02",
+		"030c0502",
+		"02b00e02",
+		"024d0502",
+		"02810e02",
+		"00c90502"
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Mac",
+		"name": "Mac",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f80001-01380502.png",
+		"tail": "01380502"
+	},
+	"next": "00bd0502.html",
+	"prev": "00b50502.html",
+	"list": [
+		"00a00502",
+		"00c20502",
+		"02a60e02",
+		"005f0502",
+		"04291902",
+		"04ef1d02",
+		"00df0502",
+		"006e0502",
+		"04c01d02",
+		"04b41d02"
+	]
+}

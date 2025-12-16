@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Smash Bros.",
+		"character": "Dark Pit",
+		"name": "Dark Pit",
+		"gameSeries": "Kid Icarus",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png",
+		"tail": "00200002"
+	},
+	"next": "00130002.html",
+	"prev": "01c90502.html",
+	"list": [
+		"01aa0502",
+		"02440502",
+		"030f0502",
+		"010b0502",
+		"00340102",
+		"025c0d02",
+		"01620502",
+		"041f0002",
+		"031b0502",
+		"03c20502"
+	]
+}

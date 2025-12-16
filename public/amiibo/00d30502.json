@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Cesar",
+		"name": "Cesar",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03690001-00d30502.png",
+		"tail": "00d30502"
+	},
+	"next": "03781402.html",
+	"prev": "02850e02.html",
+	"list": [
+		"03140502",
+		"004c0502",
+		"02f80502",
+		"02430502",
+		"026a0e02",
+		"03770402",
+		"03b50502",
+		"02900e02",
+		"01300502",
+		"01a00502"
+	]
+}

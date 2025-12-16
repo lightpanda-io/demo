@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Phil",
+		"name": "Phil",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043d0001-007c0502.png",
+		"tail": "007c0502"
+	},
+	"next": "01110502.html",
+	"prev": "02510002.html",
+	"list": [
+		"02b10e02",
+		"04350402",
+		"02f90502",
+		"03070502",
+		"02840e02",
+		"01300502",
+		"00fb0502",
+		"00af0502",
+		"03720102",
+		"03a90502"
+	]
+}

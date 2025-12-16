@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Jitters",
+		"name": "Jitters",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02310001-006a0502.png",
+		"tail": "006a0502"
+	},
+	"next": "035a0902.html",
+	"prev": "03b70502.html",
+	"list": [
+		"038e0402",
+		"01ae0502",
+		"01bc0502",
+		"035b0902",
+		"04db1d02",
+		"04f21d02",
+		"00480502",
+		"02970e02",
+		"03020502",
+		"01310502"
+	]
+}

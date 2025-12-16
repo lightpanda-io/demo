@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Grizzly",
+		"name": "Grizzly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021d0001-01cd0502.png",
+		"tail": "01cd0502"
+	},
+	"next": "00440502.html",
+	"prev": "03bc0502.html",
+	"list": [
+		"00a60502",
+		"04d61d02",
+		"01610502",
+		"04cf1d02",
+		"04360402",
+		"04dc1d02",
+		"01150502",
+		"02680102",
+		"042a1902",
+		"02830e02"
+	]
+}

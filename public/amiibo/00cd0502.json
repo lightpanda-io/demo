@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Animal Crossing",
+		"character": "Sly",
+		"name": "Sly",
+		"gameSeries": "Animal Crossing",
+		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c90001-00cd0502.png",
+		"tail": "00cd0502"
+	},
+	"next": "00950502.html",
+	"prev": "02810e02.html",
+	"list": [
+		"02aa0e02",
+		"002f0002",
+		"0431ff02",
+		"01b70502",
+		"02eb0502",
+		"01670502",
+		"01320502",
+		"01bd0502",
+		"00e50502",
+		"01970502"
+	]
+}
