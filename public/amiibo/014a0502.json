@@ -9,16 +9,16 @@
 	},
 	"next": "006c0502.html",
 	"prev": "03540902.html",
-	"list": [
-		"039cff02",
-		"018e0502",
-		"028b0e02",
-		"00430302",
-		"02800e02",
-		"00dd0502",
-		"03b60502",
-		"02810e02",
-		"01b50502",
-		"02f70502"
-	]
+	"list": {
+		"00430302": "Light Blue Yarn Yoshi",
+		"00790502": "Deena",
+		"00a90502": "Reese",
+		"015c0502": "Lyman",
+		"01a10502": "Elmer",
+		"02740e02": "Peach - Baseball",
+		"02b00e02": "Birdo - Baseball",
+		"03010502": "Claude",
+		"038c0002": "Richter",
+		"04ae1d02": "Kimberly"
+	}
 }

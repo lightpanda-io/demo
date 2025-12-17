@@ -9,16 +9,16 @@
 	},
 	"next": "02840e02.html",
 	"prev": "00df0502.html",
-	"list": [
-		"04251902",
-		"04db1d02",
-		"00b20502",
-		"00360102",
-		"02860e02",
-		"019f0502",
-		"019c0502",
-		"00f30502",
-		"01380502",
-		"018e0502"
-	]
+	"list": {
+		"00560502": "Fauna",
+		"00e40502": "Teddy",
+		"01770502": "Leilani",
+		"026a0e02": "Mario - Baseball",
+		"026e0e02": "Luigi - Soccer",
+		"02850e02": "Wario - Golf",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02e50f02": "Barioth and Ayuria",
+		"03b60502": "Kicks",
+		"03c40502": "Cyd"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "04ab1d02.html",
 	"prev": "02530002.html",
-	"list": [
-		"00da0502",
-		"00fe0502",
-		"00670502",
-		"02470502",
-		"011c0502",
-		"004a0502",
-		"01ce0502",
-		"00d70502",
-		"00880502",
-		"030e0502"
-	]
+	"list": {
+		"00740502": "Bonbon",
+		"00850502": "Gruff",
+		"00fa0502": "Camofrog",
+		"02830e02": "Wario - Baseball",
+		"029e0e02": "Bowser Jr. - Golf",
+		"02b90e02": "Metal Mario - Soccer",
+		"03be0502": "Tom Nook - Coat",
+		"03c80502": "Sasha",
+		"03c90502": "Ione",
+		"04210002": "Sephiroth"
+	}
 }

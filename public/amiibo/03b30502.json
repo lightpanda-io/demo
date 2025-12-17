@@ -9,16 +9,16 @@
 	},
 	"next": "02ba0e02.html",
 	"prev": "01530502.html",
-	"list": [
-		"02ae0e02",
-		"03971702",
-		"01880502",
-		"02940e02",
-		"04da1d02",
-		"01a20502",
-		"035d0302",
-		"00130002",
-		"03a80502",
-		"003a0202"
-	]
+	"list": {
+		"00a10502": "Cyrano",
+		"01040502": "Keaton",
+		"01180502": "Digby - Raincoat",
+		"01580502": "Monty",
+		"016b0502": "Soleil",
+		"02380602": "8-Bit Mario Classic Color",
+		"03860002": "Incineroar",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"04b11d02": "Guile",
+		"04dc1d02": "Cammy"
+	}
 }

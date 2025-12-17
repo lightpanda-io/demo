@@ -9,16 +9,15 @@
 	},
 	"next": "00ff0502.html",
 	"prev": "01d50502.html",
-	"list": [
-		"01740502",
-		"042e0002",
-		"006e0502",
-		"01430502",
-		"03770402",
-		"007c0502",
-		"00340102",
-		"00250002",
-		"04a81d02",
-		"02520002"
-	]
+	"list": {
+		"00490502": "Resetti",
+		"00560502": "Fauna",
+		"00f80502": "Drake",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"02f60502": "Stu",
+		"02fc0502": "Bitty",
+		"039bff02": "Mario - Power Up Band",
+		"042f1a02": "Donkey Kong \u0026 Pauline"
+	}
 }

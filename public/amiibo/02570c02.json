@@ -9,16 +9,16 @@
 	},
 	"next": "01220502.html",
 	"prev": "029e0e02.html",
-	"list": [
-		"01980502",
-		"041e0002",
-		"03651302",
-		"04bb1d02",
-		"03810002",
-		"00b20502",
-		"01630502",
-		"006c0502",
-		"01130502",
-		"03b30502"
-	]
+	"list": {
+		"00830502": "Pudge",
+		"008b0502": "Lionel",
+		"00990502": "Chief",
+		"00e30502": "Pekoe",
+		"01330502": "Deirdre",
+		"016e0502": "Francine",
+		"017b0502": "Shrunk - Loud Jacket",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"03941702": "Ikari",
+		"04421c02": "Yoshi - My Mario Wooden Blocks"
+	}
 }

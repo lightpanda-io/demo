@@ -9,16 +9,16 @@
 	},
 	"next": "00520502.html",
 	"prev": "019c0502.html",
-	"list": [
-		"03701202",
-		"04d91d02",
-		"001a0002",
-		"02b70e02",
-		"00bb0502",
-		"009b0502",
-		"02880e02",
-		"04eb1d02",
-		"01b30502",
-		"00de0502"
-	]
+	"list": {
+		"00b50502": "Blanca",
+		"00f50502": "Hugh",
+		"026b0e02": "Mario - Tennis",
+		"02790e02": "Daisy - Baseball",
+		"02a40e02": "Boo - Horse Racing",
+		"03800002": "Dark Samus",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03b70502": "Saharah",
+		"04d61d02": "Dee Jay",
+		"04ed1d02": "Sagat"
+	}
 }

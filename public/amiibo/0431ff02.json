@@ -9,16 +9,16 @@
 	},
 	"next": "00900502.html",
 	"prev": "042f1a02.html",
-	"list": [
-		"00040002",
-		"03bc0502",
-		"04cf1d02",
-		"00ab0502",
-		"02f10502",
-		"03a20002",
-		"010c0502",
-		"00820502",
-		"00070002",
-		"00980502"
-	]
+	"list": {
+		"00480502": "Kapp'n",
+		"006e0502": "Puck",
+		"00810502": "T-Bone",
+		"00930502": "Eugene",
+		"00bd0502": "Lucha",
+		"01b10502": "Ribbot",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02560c02": "King Dedede",
+		"03900402": "Octoling Octopus",
+		"0431ff02": "Donkey Kong - Power Up Band"
+	}
 }

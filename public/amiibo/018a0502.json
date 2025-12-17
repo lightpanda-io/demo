@@ -9,16 +9,16 @@
 	},
 	"next": "02b70e02.html",
 	"prev": "030e0502.html",
-	"list": [
-		"00580502",
-		"028a0e02",
-		"00620502",
-		"04d31d02",
-		"017a0502",
-		"00080002",
-		"00870502",
-		"02b20e02",
-		"014a0502",
-		"00350102"
-	]
+	"list": {
+		"006e0502": "Puck",
+		"00960502": "Annalisa",
+		"015b0502": "Victoria",
+		"01ba0502": "Becky",
+		"01c40502": "Lucky",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02920e02": "Diddy Kong - Baseball",
+		"038e0402": "Octoling Girl",
+		"03ac0502": "Wilbur",
+		"04b91d02": "JP"
+	}
 }

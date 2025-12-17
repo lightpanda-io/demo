@@ -9,16 +9,15 @@
 	},
 	"next": "04d41d02.html",
 	"prev": "04d01d02.html",
-	"list": [
-		"02a90e02",
-		"04bf1d02",
-		"00580502",
-		"005f0502",
-		"00470502",
-		"00760502",
-		"01330502",
-		"03150502",
-		"01360502",
-		"00c80502"
-	]
+	"list": {
+		"00030002": "Donkey Kong",
+		"02460502": "Cyrus",
+		"02850e02": "Wario - Golf",
+		"02b10e02": "Birdo - Tennis",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"02f80502": "Jacob",
+		"030a0502": "Candi",
+		"034c0902": "Link - Majora's Mask",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
+	}
 }

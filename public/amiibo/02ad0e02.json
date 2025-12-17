@@ -9,16 +9,16 @@
 	},
 	"next": "02860e02.html",
 	"prev": "026c0e02.html",
-	"list": [
-		"04b71d02",
-		"03500902",
-		"03ce0502",
-		"03c60502",
-		"03ac0502",
-		"043f1c02",
-		"01290502",
-		"02b50e02",
-		"03180502",
-		"04e11d02"
-	]
+	"list": {
+		"00820502": "Mint",
+		"015f0502": "Chadder",
+		"01bc0502": "Sydney",
+		"027b0e02": "Daisy - Golf",
+		"02b50e02": "Rosalina - Baseball",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"04131302": "E.M.M.I.",
+		"04b71d02": "Manon",
+		"04b81d02": "Marisa",
+		"04d01d02": "Chun-Li"
+	}
 }

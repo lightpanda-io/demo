@@ -152,14 +152,14 @@ function update(data) {
   nav.appendChild(next);
 
   const alt = document.getElementById('alt');
-  data.list.forEach(str => {
+  for (const key in data.list) {
   	const a = document.createElement("a");
-	a.setAttribute('href', str + '.html');
-	a.textContent = str;
+	a.setAttribute('href', key + '.html');
+	a.textContent = data.list[key];
   	const li = document.createElement("li");
 	li.append(a);
 	alt.append(li);
-  });
+  }
 }
 		</script>
 		<title id="title">Amiibo Character</title>
@@ -206,20 +206,21 @@ func generate(_ context.Context, list []Amiibo, outdir string) error {
 		}
 
 		// generate a random list of 5 items
-		randlist := make([]string, 10)
-		for i := range randlist {
+		randlist := make(map[string]string)
+		for range 10 {
 			r := rand.Intn(ln)
 			if r == 0 {
-				randlist[i] = "index"
+				randlist["index"] = list[r].Name
+				continue
 			}
-			randlist[i] = list[r].Id
+			randlist[list[r].Id] = list[r].Name
 		}
 
 		data := struct {
-			Amiibo Amiibo   `json:"amiibo"`
-			Next   string   `json:"next"`
-			Prev   string   `json:"prev"`
-			List   []string `json:"list"`
+			Amiibo Amiibo            `json:"amiibo"`
+			Next   string            `json:"next"`
+			Prev   string            `json:"prev"`
+			List   map[string]string `json:"list"`
 		}{
 			Amiibo: v,
 			Next:   next,

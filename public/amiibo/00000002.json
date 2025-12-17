@@ -9,16 +9,16 @@
 	},
 	"next": "02b40e02.html",
 	"prev": "00cb0502.html",
-	"list": [
-		"01b90502",
-		"03d60502",
-		"010d0502",
-		"03b90502",
-		"00a80502",
-		"00a10502",
-		"02e10f02",
-		"00150002",
-		"019d0502",
-		"00b00502"
-	]
+	"list": {
+		"005a0502": "Cheri",
+		"00bc0502": "Tia",
+		"00dc0502": "Alfonso",
+		"015f0502": "Chadder",
+		"023d0002": "Mewtwo",
+		"02ba0e02": "Metal Mario - Baseball",
+		"02fa0502": "Billy",
+		"036d0a02": "Specter Knight",
+		"03c30502": "Audie",
+		"04cf1d02": "Kimberly"
+	}
 }

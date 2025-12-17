@@ -9,16 +9,16 @@
 	},
 	"next": "03961702.html",
 	"prev": "01940502.html",
-	"list": [
-		"02810e02",
-		"035a0902",
-		"00700502",
-		"01290502",
-		"00a70502",
-		"00d40502",
-		"030c0502",
-		"01d30502",
-		"003a0202",
-		"02930e02"
-	]
+	"list": {
+		"012f0502": "Freckles",
+		"015e0502": "Frank",
+		"01d60502": "Stitches - Amiibo Festival",
+		"024b0502": "Isabelle - Summer Outfit",
+		"02590002": "Cloud",
+		"026b0e02": "Mario - Tennis",
+		"02730e02": "Peach - Soccer",
+		"03080502": "Boots",
+		"03160502": "Cleo",
+		"04ba1d02": "Zangief"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "00030002.html",
 	"prev": "00940502.html",
-	"list": [
-		"00aa0502",
-		"026f0e02",
-		"04b51d02",
-		"01790502",
-		"01530502",
-		"010b0502",
-		"01580502",
-		"01ba0502",
-		"02870e02",
-		"01420502"
-	]
+	"list": {
+		"00970502": "Benjamin",
+		"013c0502": "Beardo",
+		"01460502": "Stinky",
+		"02480502": "Celeste",
+		"026a0e02": "Mario - Baseball",
+		"02980e02": "Bowser - Tennis",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"04261902": "Gakuto Sōgetsu",
+		"04d31d02": "Blanka",
+		"04ed1d02": "Sagat"
+	}
 }

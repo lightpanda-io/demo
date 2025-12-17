@@ -9,16 +9,16 @@
 	},
 	"next": "01820502.html",
 	"prev": "03781402.html",
-	"list": [
-		"04e51d02",
-		"012b0502",
-		"003e0402",
-		"02760e02",
-		"02e80502",
-		"04b21d02",
-		"01660502",
-		"00cb0502",
-		"02f40502",
-		"03870002"
-	]
+	"list": {
+		"01180502": "Digby - Raincoat",
+		"01c10502": "Lobo",
+		"01d50502": "Goldie - Amiibo Festival",
+		"01d60502": "Stitches - Amiibo Festival",
+		"026e0e02": "Luigi - Soccer",
+		"028f0e02": "Donkey Kong - Golf",
+		"02a40e02": "Boo - Horse Racing",
+		"03710102": "Mario - Wedding",
+		"03c00502": "Sherb",
+		"04d11d02": "Guile"
+	}
 }

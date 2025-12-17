@@ -9,16 +9,16 @@
 	},
 	"next": "01d60502.html",
 	"prev": "02fe0502.html",
-	"list": [
-		"00350102",
-		"01220502",
-		"04220002",
-		"011b0502",
-		"00a50502",
-		"01c70502",
-		"01470502",
-		"024c0502",
-		"01050502",
-		"03be0502"
-	]
+	"list": {
+		"00ad0502": "Booker",
+		"00da0502": "Groucho",
+		"00ee0502": "Benedict",
+		"00f30502": "Sprinkle",
+		"01190502": "Don Resetti - Without Hat",
+		"01800502": "Goldie",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02e90502": "June",
+		"030f0502": "Norma",
+		"03bb0502": "Lottie - Island"
+	}
 }

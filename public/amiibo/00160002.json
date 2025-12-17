@@ -9,16 +9,15 @@
 	},
 	"next": "01030502.html",
 	"prev": "00590502.html",
-	"list": [
-		"02510002",
-		"035e1002",
-		"01cd0502",
-		"01400502",
-		"02540c02",
-		"03a60102",
-		"017b0502",
-		"04b41d02",
-		"018b0502",
-		"02ad0e02"
-	]
+	"list": {
+		"00340102": "Mario",
+		"00f80502": "Drake",
+		"01260502": "Rodeo",
+		"015f0502": "Chadder",
+		"026a0e02": "Mario - Baseball",
+		"02750e02": "Peach - Tennis",
+		"02960e02": "Bowser - Soccer",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"03750d02": "Detective Pikachu"
+	}
 }

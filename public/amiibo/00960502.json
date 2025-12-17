@@ -9,16 +9,16 @@
 	},
 	"next": "00bc0502.html",
 	"prev": "02ac0e02.html",
-	"list": [
-		"01540502",
-		"00dd0502",
-		"03810002",
-		"02f40502",
-		"002e0002",
-		"026a0e02",
-		"03cf0502",
-		"00ea0502",
-		"04c41e03",
-		"02f70502"
-	]
+	"list": {
+		"009f0502": "Henry",
+		"01170502": "Timmy - Full Apron",
+		"01190502": "Don Resetti - Without Hat",
+		"015c0502": "Lyman",
+		"01a60502": "Mira",
+		"02870e02": "Waluigi - Soccer",
+		"02fb0502": "Boyd",
+		"03540902": "Link - Rider",
+		"04271902": "Romin Kirishima",
+		"04d71d02": "Manon"
+	}
 }

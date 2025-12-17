@@ -9,16 +9,16 @@
 	},
 	"next": "02a00e02.html",
 	"prev": "031a0502.html",
-	"list": [
-		"004f0502",
-		"03601202",
-		"03080502",
-		"016d0502",
-		"02f90502",
-		"002b0002",
-		"01cd0502",
-		"02770e02",
-		"04b51d02",
-		"00e80502"
-	]
+	"list": {
+		"001e0002": "Olimar",
+		"007f0502": "Samson",
+		"015a0502": "Biskit",
+		"01880502": "Peaches",
+		"02650102": "Diddy Kong",
+		"02780e02": "Daisy - Soccer",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03580902": "Daruk",
+		"03911602": "Loot Goblin",
+		"04f01d02": "Ingrid"
+	}
 }

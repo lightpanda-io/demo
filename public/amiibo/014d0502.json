@@ -9,16 +9,16 @@
 	},
 	"next": "03870002.html",
 	"prev": "025b0002.html",
-	"list": [
-		"00b20502",
-		"03b30502",
-		"03040502",
-		"00e20502",
-		"04111802",
-		"003c0102",
-		"016a0502",
-		"04be1d02",
-		"019e0502",
-		"01c30502"
-	]
+	"list": {
+		"00b70502": "Chip",
+		"00f00502": "Julian",
+		"01ac0502": "Purrl",
+		"028d0e02": "Donkey Kong - Baseball",
+		"02e70502": "Vivian",
+		"03640002": "Bayonetta - Player 2",
+		"03701202": "Tiki",
+		"038d0002": "Piranha Plant",
+		"04131302": "E.M.M.I.",
+		"04180902": "Link - Tears of the Kingdom"
+	}
 }

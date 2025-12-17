@@ -9,16 +9,16 @@
 	},
 	"next": "00e30502.html",
 	"prev": "007a0502.html",
-	"list": [
-		"00a60502",
-		"04f01d02",
-		"02530002",
-		"00a60502",
-		"03c60502",
-		"01710502",
-		"03140502",
-		"001c0002",
-		"02480502",
-		"01340502"
-	]
+	"list": {
+		"00590502": "Leonardo",
+		"00840502": "Midge",
+		"01190502": "Don Resetti - Without Hat",
+		"01bc0502": "Sydney",
+		"025d0402": "Callie",
+		"026d0e02": "Mario - Horse Racing",
+		"02960e02": "Bowser - Soccer",
+		"02b50e02": "Rosalina - Baseball",
+		"04ec1d02": "Elena",
+		"04f21d02": "Mai"
+	}
 }

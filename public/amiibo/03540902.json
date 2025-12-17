@@ -9,16 +9,16 @@
 	},
 	"next": "014a0502.html",
 	"prev": "04131302.html",
-	"list": [
-		"02630102",
-		"02e90502",
-		"02b80e02",
-		"02fa0502",
-		"02940e02",
-		"01d60502",
-		"018f0502",
-		"01840502",
-		"00910502",
-		"01c10502"
-	]
+	"list": {
+		"00d00502": "Nana",
+		"01aa0502": "Apple",
+		"026c0e02": "Mario - Golf",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02bc0e02": "Metal Mario - Golf",
+		"02e60f02": "Qurupeco and Dan",
+		"03601202": "Alm",
+		"03c70502": "Reneigh",
+		"040d0f02": "Ena",
+		"04ec1d02": "Elena"
+	}
 }

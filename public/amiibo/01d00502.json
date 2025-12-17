@@ -9,16 +9,16 @@
 	},
 	"next": "00fe0502.html",
 	"prev": "01a80502.html",
-	"list": [
-		"001d0002",
-		"017d0502",
-		"025a0002",
-		"00de0502",
-		"028e0e02",
-		"03661302",
-		"02820e02",
-		"01660502",
-		"025b0002",
-		"02f00502"
-	]
+	"list": {
+		"002c0002": "Ness",
+		"00690502": "Patty",
+		"00960502": "Annalisa",
+		"00c30502": "Tom",
+		"02840e02": "Wario - Tennis",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02b20e02": "Birdo - Golf",
+		"04390402": "Marina - Side Order",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04bc1d02": "Cammy"
+	}
 }

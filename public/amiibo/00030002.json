@@ -9,16 +9,16 @@
 	},
 	"next": "03a0ff02.html",
 	"prev": "029a0e02.html",
-	"list": [
-		"03ce0502",
-		"02690e02",
-		"04a81d02",
-		"00a50502",
-		"037d0002",
-		"01a30502",
-		"01730502",
-		"01200502",
-		"023b0702",
-		"04c41e03"
-	]
+	"list": {
+		"00030002": "Donkey Kong",
+		"00b40502": "Isabelle - Winter",
+		"00c70502": "Vladimir",
+		"00d20502": "Olivia",
+		"025c0d02": "Shadow Mewtwo",
+		"026d0e02": "Mario - Horse Racing",
+		"02ea0502": "Piper",
+		"04340402": "Frye",
+		"04cb1d02": "Ryu",
+		"04db1d02": "Lily"
+	}
 }

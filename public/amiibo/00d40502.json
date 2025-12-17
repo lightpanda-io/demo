@@ -9,16 +9,16 @@
 	},
 	"next": "01730502.html",
 	"prev": "000a0002.html",
-	"list": [
-		"03a0ff02",
-		"04cc1d02",
-		"00fa0502",
-		"03a50002",
-		"029e0e02",
-		"00470502",
-		"010f0502",
-		"004f0502",
-		"00800502",
-		"00240002"
-	]
+	"list": {
+		"005d0502": "Renée",
+		"00e30502": "Pekoe",
+		"00f40502": "Flip",
+		"02460502": "Cyrus",
+		"02860e02": "Wario - Horse Racing",
+		"02880e02": "Waluigi - Baseball",
+		"02b30e02": "Birdo - Horse Racing",
+		"03710102": "Mario - Wedding",
+		"037f0002": "Ridley",
+		"03b60502": "Kicks"
+	}
 }

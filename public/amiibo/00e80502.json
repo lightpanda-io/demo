@@ -9,16 +9,16 @@
 	},
 	"next": "01290502.html",
 	"prev": "03830002.html",
-	"list": [
-		"04cb1d02",
-		"043c1302",
-		"015a0502",
-		"00b80502",
-		"01360502",
-		"04cb1d02",
-		"04f31d02",
-		"02f50502",
-		"01600502",
-		"01680502"
-	]
+	"list": {
+		"004c0502": "Digby",
+		"00770502": "Poppy",
+		"00960502": "Annalisa",
+		"00d50502": "Rodney",
+		"011c0502": "Jingle",
+		"02910e02": "Diddy Kong - Soccer",
+		"034d0902": "Link - Twilight Princess",
+		"036d0a02": "Specter Knight",
+		"04d71d02": "Manon",
+		"04f11d02": "Terry"
+	}
 }

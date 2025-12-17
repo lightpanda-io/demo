@@ -9,16 +9,16 @@
 	},
 	"next": "04421c02.html",
 	"prev": "00b00502.html",
-	"list": [
-		"042d1802",
-		"03710102",
-		"02600402",
-		"02be0e02",
-		"017e0502",
-		"02bb0e02",
-		"04f21d02",
-		"02bc0e02",
-		"02f60502",
-		"01a10502"
-	]
+	"list": {
+		"00960502": "Annalisa",
+		"00c60502": "Pate",
+		"010a0502": "Big Top",
+		"01110502": "Pete",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"031a0502": "Marty",
+		"03810002": "Ice Climbers",
+		"038a0002": "Snake",
+		"03cc0502": "Marlo",
+		"04271902": "Romin Kirishima"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "01370502.html",
 	"prev": "014d0502.html",
-	"list": [
-		"018c0502",
-		"019f0502",
-		"04411c02",
-		"02950e02",
-		"01600502",
-		"00490502",
-		"00c60502",
-		"008d0502",
-		"03bf0502",
-		"030e0502"
-	]
+	"list": {
+		"00e60502": "Ed",
+		"01410502": "Greta",
+		"018f0502": "Shep",
+		"02390602": "8-Bit Mario Modern Color",
+		"028d0e02": "Donkey Kong - Baseball",
+		"02980e02": "Bowser - Tennis",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"034e0902": "Link - Skyward Sword",
+		"03941702": "Ikari",
+		"041f0002": "Mythra"
+	}
 }

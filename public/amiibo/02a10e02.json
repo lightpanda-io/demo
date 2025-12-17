@@ -9,16 +9,16 @@
 	},
 	"next": "02760e02.html",
 	"prev": "034b0902.html",
-	"list": [
-		"00dc0502",
-		"03be0502",
-		"00490502",
-		"039bff02",
-		"03190502",
-		"01520502",
-		"01630502",
-		"027b0e02",
-		"007b0502",
-		"00b80502"
-	]
+	"list": {
+		"00180002": "Ike",
+		"004a0502": "Joan",
+		"005b0502": "Kyle",
+		"00700502": "Octavian",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02990e02": "Bowser - Golf",
+		"031d0502": "Chelsea",
+		"03680102": "Koopa Troopa",
+		"03ca0502": "Tiansheng"
+	}
 }

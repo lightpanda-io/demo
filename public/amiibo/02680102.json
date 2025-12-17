@@ -9,16 +9,16 @@
 	},
 	"next": "018e0502.html",
 	"prev": "02f80502.html",
-	"list": [
-		"000a0002",
-		"04200002",
-		"03a30002",
-		"03120502",
-		"04350402",
-		"036a0402",
-		"03cf0502",
-		"00600502",
-		"04d31d02",
-		"03ad0502"
-	]
+	"list": {
+		"000f0002": "Little Mac",
+		"007b0502": "Bangle",
+		"00b70502": "Chip",
+		"00fd0502": "Charlise",
+		"01540502": "Moe",
+		"01600502": "Merengue",
+		"01d70502": "Rosie - Amiibo Festival",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"040c0f02": "Razewing Ratha",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
+	}
 }

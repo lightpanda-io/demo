@@ -9,16 +9,16 @@
 	},
 	"next": "01420502.html",
 	"prev": "01bf0502.html",
-	"list": [
-		"01cd0502",
-		"01c00502",
-		"024a0502",
-		"04d31d02",
-		"027b0e02",
-		"01680502",
-		"00b80502",
-		"01980502",
-		"00b20502",
-		"02bc0e02"
-	]
+	"list": {
+		"00150002": "Bowser Jr.",
+		"009f0502": "Henry",
+		"01240502": "Ken",
+		"01420502": "Wolfgang",
+		"018d0502": "Croque",
+		"019d0502": "Peewee",
+		"034d0902": "Link - Twilight Princess",
+		"036a0402": "Inkling Boy - Neon Green",
+		"03781402": "Solaire of Astora",
+		"03d00502": "Chabwick"
+	}
 }

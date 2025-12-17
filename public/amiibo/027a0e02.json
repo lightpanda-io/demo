@@ -9,16 +9,16 @@
 	},
 	"next": "01570502.html",
 	"prev": "02af0e02.html",
-	"list": [
-		"025e0402",
-		"03800002",
-		"02fd0502",
-		"02e40f02",
-		"03ab0502",
-		"03b30502",
-		"00940502",
-		"043e1b02",
-		"04a30902",
-		"00fe0502"
-	]
+	"list": {
+		"00360102": "Peach",
+		"00af0502": "Tommy - Uniform",
+		"014f0502": "Buck",
+		"01530502": "Skye",
+		"01cf0502": "Simon",
+		"01d70502": "Rosie - Amiibo Festival",
+		"023f0502": "Isabelle - Winter Outfit",
+		"03040502": "Louie",
+		"03890002": "Ken",
+		"041b0402": "Octoling - Blue"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "01bd0502.html",
 	"prev": "024c0502.html",
-	"list": [
-		"04330402",
-		"011d0502",
-		"01160502",
-		"02b70e02",
-		"024b0502",
-		"00ee0502",
-		"01b70502",
-		"00c70502",
-		"00f20502",
-		"01930502"
-	]
+	"list": {
+		"00020002": "Yoshi",
+		"00530502": "Lyle",
+		"009d0502": "Axel",
+		"00d80502": "Broccolo",
+		"00e20502": "Zell",
+		"00e60502": "Ed",
+		"02750e02": "Peach - Tennis",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"037c0002": "Young Link",
+		"0431ff02": "Donkey Kong - Power Up Band"
+	}
 }

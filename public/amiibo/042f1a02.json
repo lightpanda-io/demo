@@ -9,16 +9,16 @@
 	},
 	"next": "0431ff02.html",
 	"prev": "02640102.html",
-	"list": [
-		"027b0e02",
-		"019e0502",
-		"03100502",
-		"008c0502",
-		"04e81d02",
-		"036c0a02",
-		"02990e02",
-		"03b10502",
-		"00430302",
-		"04b11d02"
-	]
+	"list": {
+		"00790502": "Deena",
+		"007d0502": "Monique",
+		"01a90502": "Papi",
+		"02470502": "Blathers",
+		"02830e02": "Wario - Baseball",
+		"029a0e02": "Bowser - Horse Racing",
+		"02ed0502": "Stella",
+		"03710102": "Mario - Wedding",
+		"03b90502": "Gulliver",
+		"04d81d02": "Marisa"
+	}
 }

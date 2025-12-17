@@ -9,16 +9,16 @@
 	},
 	"next": "00870502.html",
 	"prev": "01d80502.html",
-	"list": [
-		"034f0902",
-		"001e0002",
-		"00ee0502",
-		"01470502",
-		"01750502",
-		"03880002",
-		"03060502",
-		"01030502",
-		"01250502",
-		"03830002"
-	]
+	"list": {
+		"00ee0502": "Benedict",
+		"01140502": "Wendell",
+		"025b0002": "Bayonetta",
+		"034b0902": "Link - Ocarina of Time",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03620002": "Cloud - Player 2",
+		"03cb0502": "Shino",
+		"040e0f02": "Tsukino",
+		"04b21d02": "Juri",
+		"04ec1d02": "Elena"
+	}
 }

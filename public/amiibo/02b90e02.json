@@ -9,16 +9,16 @@
 	},
 	"next": "014e0502.html",
 	"prev": "007e0502.html",
-	"list": [
-		"00cd0502",
-		"00670502",
-		"03120502",
-		"01ca0502",
-		"00f90502",
-		"03ad0502",
-		"03060502",
-		"01710502",
-		"02480502",
-		"04e81d02"
-	]
+	"list": {
+		"000f0002": "Little Mac",
+		"00150002": "Bowser Jr.",
+		"001d0002": "Zero Suit Samus",
+		"007f0502": "Samson",
+		"015a0502": "Biskit",
+		"02430502": "Digby",
+		"030b0502": "Leopold",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03c20502": "Dom",
+		"04251902": "Tatsuhisa “Luke” Kamijō"
+	}
 }

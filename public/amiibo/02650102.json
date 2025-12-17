@@ -9,16 +9,16 @@
 	},
 	"next": "0432ff02.html",
 	"prev": "01640502.html",
-	"list": [
-		"01a00502",
-		"00dd0502",
-		"03830002",
-		"03b50502",
-		"00a60502",
-		"03020502",
-		"013c0502",
-		"02850e02",
-		"011a0502",
-		"01a90502"
-	]
+	"list": {
+		"00090002": "Pikachu",
+		"00420302": "Pink Yarn Yoshi",
+		"00690502": "Patty",
+		"00950502": "Goose",
+		"02850e02": "Wario - Golf",
+		"02a20e02": "Boo - Tennis",
+		"034d0902": "Link - Twilight Princess",
+		"036a0402": "Inkling Boy - Neon Green",
+		"040c0f02": "Razewing Ratha",
+		"042a1902": "Asana Mutsuba"
+	}
 }

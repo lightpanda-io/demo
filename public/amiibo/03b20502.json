@@ -9,16 +9,16 @@
 	},
 	"next": "015b0502.html",
 	"prev": "02670102.html",
-	"list": [
-		"02e10f02",
-		"01420502",
-		"02f70502",
-		"00ad0502",
-		"04ae1d02",
-		"02450502",
-		"01550502",
-		"02480502",
-		"04b11d02",
-		"03ab0502"
-	]
+	"list": {
+		"000a0002": "Kirby",
+		"002e0002": "R.O.B. - Famicom",
+		"00870502": "Clyde",
+		"00fd0502": "Charlise",
+		"012f0502": "Freckles",
+		"01420502": "Wolfgang",
+		"01ba0502": "Becky",
+		"02b90e02": "Metal Mario - Soccer",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"02fc0502": "Bitty"
+	}
 }

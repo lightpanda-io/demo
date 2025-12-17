@@ -9,16 +9,16 @@
 	},
 	"next": "00290002.html",
 	"prev": "01330502.html",
-	"list": [
-		"018e0502",
-		"04ad1d02",
-		"015b0502",
-		"006f0502",
-		"004b0502",
-		"037b0002",
-		"001d0002",
-		"026f0e02",
-		"02480502",
-		"02690e02"
-	]
+	"list": {
+		"001d0002": "Zero Suit Samus",
+		"00490502": "Resetti",
+		"00950502": "Goose",
+		"01110502": "Pete",
+		"01d40502": "Isabelle - Character Parfait",
+		"02480502": "Celeste",
+		"02b80e02": "Rosalina - Horse Racing",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03630002": "Corrin - Player 2",
+		"03bb0502": "Lottie - Island"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "000b0002.html",
 	"prev": "04220002.html",
-	"list": [
-		"04cf1d02",
-		"00390102",
-		"00410302",
-		"01990502",
-		"030c0502",
-		"002e0002",
-		"04e51d02",
-		"041f0002",
-		"02ae0e02",
-		"04bc1d02"
-	]
+	"list": {
+		"00c60502": "Pate",
+		"01070502": "Freya",
+		"010a0502": "Big Top",
+		"011b0502": "Franklin",
+		"01680502": "Rolf",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"02f30502": "Carrie",
+		"03bd0502": "Wardell",
+		"04111802": "Palamute",
+		"0432ff02": "Diddy Kong - Power Up Band"
+	}
 }

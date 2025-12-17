@@ -9,16 +9,16 @@
 	},
 	"next": "01600502.html",
 	"prev": "02930e02.html",
-	"list": [
-		"04d21d02",
-		"01500502",
-		"03ba0502",
-		"03a0ff02",
-		"00e10502",
-		"02a80e02",
-		"00c90502",
-		"01cd0502",
-		"0432ff02",
-		"00740502"
-	]
+	"list": {
+		"00260002": "Jigglypuff",
+		"01050502": "Gladys",
+		"01130502": "Leif",
+		"015e0502": "Frank",
+		"015f0502": "Chadder",
+		"01d70502": "Rosie - Amiibo Festival",
+		"02480502": "Celeste",
+		"02e50f02": "Barioth and Ayuria",
+		"03670102": "Goomba",
+		"040f1802": "Magnamalo"
+	}
 }

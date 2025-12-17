@@ -9,16 +9,16 @@
 	},
 	"next": "006e0502.html",
 	"prev": "00a00502.html",
-	"list": [
-		"00ef0502",
-		"02be0e02",
-		"00800502",
-		"00710502",
-		"03a0ff02",
-		"01b10502",
-		"00170002",
-		"00f90502",
-		"00a40502",
-		"02fc0502"
-	]
+	"list": {
+		"00540502": "Lottie",
+		"01190502": "Don Resetti - Without Hat",
+		"014c0502": "Gala",
+		"015f0502": "Chadder",
+		"01980502": "Melba",
+		"01cd0502": "Grizzly",
+		"02980e02": "Bowser - Tennis",
+		"02b10e02": "Birdo - Tennis",
+		"02e80502": "Hopkins",
+		"04ec1d02": "Elena"
+	}
 }

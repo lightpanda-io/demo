@@ -9,16 +9,16 @@
 	},
 	"next": "04d11d02.html",
 	"prev": "04d51d02.html",
-	"list": [
-		"00de0502",
-		"04b61d02",
-		"01ba0502",
-		"019e0502",
-		"03750d02",
-		"00e90502",
-		"04eb1d02",
-		"018b0502",
-		"02ba0e02",
-		"01600502"
-	]
+	"list": {
+		"00090002": "Pikachu",
+		"001f0002": "Palutena",
+		"008b0502": "Lionel",
+		"01b40502": "Sylvia",
+		"01ca0502": "Gayle",
+		"030d0502": "Cashmere",
+		"03100502": "Gonzo",
+		"03640002": "Bayonetta - Player 2",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"04e71d02": "Ingrid"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "04d91d02.html",
 	"prev": "04d81d02.html",
-	"list": [
-		"01620502",
-		"026e0e02",
-		"0432ff02",
-		"03560902",
-		"01c10502",
-		"03bd0502",
-		"00c10502",
-		"02a90e02",
-		"0431ff02",
-		"00e10502"
-	]
+	"list": {
+		"00210002": "Mii Brawler",
+		"00920502": "Truffles",
+		"00b30502": "Don Resetti",
+		"00e80502": "Filbert",
+		"01370502": "Tangy",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02650102": "Diddy Kong",
+		"03170502": "Ike",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04e31d02": "Elena"
+	}
 }

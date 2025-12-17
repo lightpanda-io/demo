@@ -9,16 +9,16 @@
 	},
 	"next": "00610502.html",
 	"prev": "00080002.html",
-	"list": [
-		"00f00502",
-		"00830502",
-		"00d30502",
-		"03900402",
-		"02760e02",
-		"029c0e02",
-		"03b00502",
-		"009c0502",
-		"01c30502",
-		"04390402"
-	]
+	"list": {
+		"00430302": "Light Blue Yarn Yoshi",
+		"00480502": "Kapp'n",
+		"00870502": "Clyde",
+		"00dc0502": "Alfonso",
+		"02390602": "8-Bit Mario Modern Color",
+		"02500a02": "Shovel Knight",
+		"026b0e02": "Mario - Tennis",
+		"03550902": "Guardian",
+		"03a80502": "Tom Nook",
+		"043a1302": "Samus \u0026 Vi-O-La"
+	}
 }

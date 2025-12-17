@@ -9,16 +9,16 @@
 	},
 	"next": "00bd0502.html",
 	"prev": "00b50502.html",
-	"list": [
-		"00a00502",
-		"00c20502",
-		"02a60e02",
-		"005f0502",
-		"04291902",
-		"04ef1d02",
-		"00df0502",
-		"006e0502",
-		"04c01d02",
-		"04b41d02"
-	]
+	"list": {
+		"00370102": "Yoshi",
+		"00a00502": "Bertha",
+		"00ce0502": "Blaire",
+		"013f0502": "Merry",
+		"016f0502": "Chrissy",
+		"018b0502": "Boone",
+		"037f0002": "Ridley",
+		"039fff02": "Yoshi - Power Up Band",
+		"04180902": "Link - Tears of the Kingdom",
+		"04a81d02": "Ryu"
+	}
 }

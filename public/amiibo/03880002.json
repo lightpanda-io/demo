@@ -9,16 +9,16 @@
 	},
 	"next": "00270002.html",
 	"prev": "026e0e02.html",
-	"list": [
-		"03750d02",
-		"03b30502",
-		"016b0502",
-		"042a1902",
-		"03cb0502",
-		"008f0502",
-		"03590902",
-		"03c20502",
-		"017f0502",
-		"030f0502"
-	]
+	"list": {
+		"00a00502": "Bertha",
+		"01340502": "Hans",
+		"013e0502": "Chester",
+		"019b0502": "Rudy",
+		"01c80502": "Bruce",
+		"035e1002": "Qbby",
+		"036a0402": "Inkling Boy - Neon Green",
+		"03b10502": "Label",
+		"03ce0502": "Cephalobot",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
+	}
 }

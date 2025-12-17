@@ -9,16 +9,16 @@
 	},
 	"next": "01160502.html",
 	"prev": "00880502.html",
-	"list": [
-		"00cb0502",
-		"002a0002",
-		"01020502",
-		"04d01d02",
-		"031a0502",
-		"03b30502",
-		"02e70502",
-		"01d50502",
-		"031b0502",
-		"02850e02"
-	]
+	"list": {
+		"002f0002": "Duck Hunt",
+		"00760502": "Opal",
+		"00d90502": "Coco",
+		"01020502": "Marcel",
+		"017f0502": "Zipper",
+		"01930502": "Pierce",
+		"02b80e02": "Rosalina - Horse Racing",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"02e80502": "Hopkins",
+		"04121302": "Samus - Metroid Dread"
+	}
 }

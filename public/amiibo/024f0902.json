@@ -9,16 +9,16 @@
 	},
 	"next": "000c0002.html",
 	"prev": "02f40502.html",
-	"list": [
-		"028f0e02",
-		"037b0002",
-		"02ae0e02",
-		"029f0e02",
-		"040f1802",
-		"031d0502",
-		"001b0002",
-		"03630002",
-		"01920502",
-		"00a00502"
-	]
+	"list": {
+		"001b0002": "Ganondorf",
+		"00af0502": "Tommy - Uniform",
+		"013d0502": "Ava",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"03120502": "Snooty",
+		"036c0a02": "Plague Knight",
+		"03810002": "Ice Climbers",
+		"0430ff02": "Golden - Power Up Band",
+		"04a50902": "Tulin",
+		"04db1d02": "Lily"
+	}
 }

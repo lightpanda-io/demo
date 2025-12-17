@@ -9,16 +9,16 @@
 	},
 	"next": "027c0e02.html",
 	"prev": "04261902.html",
-	"list": [
-		"02fb0502",
-		"02b30e02",
-		"00bb0502",
-		"007f0502",
-		"01840502",
-		"016a0502",
-		"011e0502",
-		"03520902",
-		"036e0a02",
-		"016d0502"
-	]
+	"list": {
+		"00220002": "Mii Swordfighter",
+		"002d0002": "Mr. Game \u0026 Watch",
+		"01200502": "Kody",
+		"01670502": "Baabara",
+		"01780502": "Resetti - Without Hat",
+		"02b20e02": "Birdo - Golf",
+		"03d30502": "Rio",
+		"0430ff02": "Golden - Power Up Band",
+		"04db1d02": "Lily",
+		"04e61d02": "Alex"
+	}
 }

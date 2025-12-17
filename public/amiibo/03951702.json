@@ -9,16 +9,16 @@
 	},
 	"next": "002c0002.html",
 	"prev": "01800502.html",
-	"list": [
-		"04ab1d02",
-		"01170502",
-		"00df0502",
-		"0430ff02",
-		"010a0502",
-		"04150402",
-		"00a50502",
-		"03b30502",
-		"00f10502",
-		"007c0502"
-	]
+	"list": {
+		"008b0502": "Lionel",
+		"00b20502": "Shrunk",
+		"011c0502": "Jingle",
+		"011f0502": "Tabby",
+		"013c0502": "Beardo",
+		"019a0502": "Anabelle",
+		"019e0502": "Tammy",
+		"039fff02": "Yoshi - Power Up Band",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04da1d02": "Zangief"
+	}
 }

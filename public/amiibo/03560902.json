@@ -9,16 +9,16 @@
 	},
 	"next": "02e40f02.html",
 	"prev": "01c10502.html",
-	"list": [
-		"03a80502",
-		"01b40502",
-		"02f90502",
-		"01b30502",
-		"00930502",
-		"02f90502",
-		"00730502",
-		"02450502",
-		"00d00502",
-		"00750502"
-	]
+	"list": {
+		"00420302": "Pink Yarn Yoshi",
+		"00680502": "Kabuki",
+		"00d70502": "Whitney",
+		"01470502": "Tammi",
+		"01c70502": "Maelle",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"03661302": "Metroid",
+		"03701202": "Tiki",
+		"043c1302": "Sylux",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
+	}
 }

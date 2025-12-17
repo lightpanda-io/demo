@@ -9,16 +9,16 @@
 	},
 	"next": "00ac0502.html",
 	"prev": "024a0502.html",
-	"list": [
-		"024b0502",
-		"02b30e02",
-		"02590002",
-		"01c50502",
-		"01a40502",
-		"00180002",
-		"04de1d02",
-		"04281902",
-		"00ed0502",
-		"01900502"
-	]
+	"list": {
+		"00b80502": "Jack",
+		"00b90502": "Poncho",
+		"016e0502": "Francine",
+		"03130502": "Olive",
+		"03a20002": "Hero",
+		"03af0502": "Mabel",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04b71d02": "Manon",
+		"04e81d02": "Terry"
+	}
 }

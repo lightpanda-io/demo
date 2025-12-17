@@ -9,16 +9,16 @@
 	},
 	"next": "02c20e02.html",
 	"prev": "00ae0502.html",
-	"list": [
-		"010a0502",
-		"031c0502",
-		"00e40502",
-		"04dc1d02",
-		"04b01d02",
-		"01490502",
-		"01230502",
-		"023e0302",
-		"04ef1d02",
-		"006b0502"
-	]
+	"list": {
+		"00530502": "Lyle",
+		"01480502": "Tucker",
+		"01b80502": "Pompom",
+		"01c50502": "Rosie",
+		"028d0e02": "Donkey Kong - Baseball",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02bf0e02": "Pink Gold Peach - Baseball",
+		"03560902": "Zelda",
+		"04131302": "E.M.M.I.",
+		"04291902": "Nail Saionji"
+	}
 }

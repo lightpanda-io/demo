@@ -9,16 +9,16 @@
 	},
 	"next": "00630502.html",
 	"prev": "03ac0502.html",
-	"list": [
-		"00750502",
-		"029a0e02",
-		"01340502",
-		"02ee0502",
-		"00a50502",
-		"03b00502",
-		"03b60502",
-		"03190502",
-		"02fe0502",
-		"01650502"
-	]
+	"list": {
+		"000c0002": "Luigi",
+		"00c70502": "Vladimir",
+		"019d0502": "Peewee",
+		"024c0502": "Rover",
+		"02590002": "Cloud",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"02fb0502": "Boyd",
+		"04140902": "Zelda \u0026 Loftwing",
+		"042d1802": "Malzeno",
+		"04bd1d02": "Rashid"
+	}
 }

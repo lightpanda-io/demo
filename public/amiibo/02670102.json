@@ -9,16 +9,16 @@
 	},
 	"next": "03b20502.html",
 	"prev": "04411c02.html",
-	"list": [
-		"01390502",
-		"04d81d02",
-		"04101802",
-		"027c0e02",
-		"03830002",
-		"031c0502",
-		"02b70e02",
-		"01b90502",
-		"034d0902",
-		"00140002"
-	]
+	"list": {
+		"00410302": "Green Yarn Yoshi",
+		"005c0502": "Al",
+		"006b0502": "Gigi",
+		"00850502": "Gruff",
+		"01550502": "Flora",
+		"02820e02": "Wario - Soccer",
+		"028a0e02": "Waluigi - Golf",
+		"029a0e02": "Bowser - Horse Racing",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"036c0a02": "Plague Knight"
+	}
 }

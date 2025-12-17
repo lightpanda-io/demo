@@ -9,16 +9,16 @@
 	},
 	"next": "042c1802.html",
 	"prev": "03750d02.html",
-	"list": [
-		"00f50502",
-		"005e0502",
-		"03601202",
-		"037c0002",
-		"03911602",
-		"03580902",
-		"02a50e02",
-		"02fb0502",
-		"023e0302",
-		"024b0502"
-	]
+	"list": {
+		"00e30502": "Pekoe",
+		"00f40502": "Flip",
+		"012d0502": "Marina",
+		"02710e02": "Luigi - Golf",
+		"02940e02": "Diddy Kong - Golf",
+		"03620002": "Cloud - Player 2",
+		"037d0002": "Isabelle",
+		"043c1302": "Sylux",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04ba1d02": "Zangief"
+	}
 }

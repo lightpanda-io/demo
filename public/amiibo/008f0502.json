@@ -9,16 +9,16 @@
 	},
 	"next": "02990e02.html",
 	"prev": "038c0002.html",
-	"list": [
-		"038b0002",
-		"01b50502",
-		"00fa0502",
-		"000b0002",
-		"04f31d02",
-		"00fc0502",
-		"004c0502",
-		"04d71d02",
-		"013a0502",
-		"02990e02"
-	]
+	"list": {
+		"002a0002": "Robin",
+		"003c0102": "Mario - Gold Edition",
+		"01000502": "Drift",
+		"012c0502": "Colton",
+		"01840502": "Mallary",
+		"02440502": "Lottie",
+		"03bf0502": "Isabelle - Sweater",
+		"04af1d02": "Kimberly",
+		"04d11d02": "Guile",
+		"04ef1d02": "Alex"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "04350402.html",
 	"prev": "04330402.html",
-	"list": [
-		"01720502",
-		"00660502",
-		"04de1d02",
-		"011a0502",
-		"03931702",
-		"00ba0502",
-		"00460502",
-		"03c70502",
-		"02490502",
-		"00df0502"
-	]
+	"list": {
+		"00140002": "Bowser",
+		"00ab0502": "Labelle",
+		"01b00502": "Peggy",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02720e02": "Luigi - Horse Racing",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"02e30f02": "Nabiru",
+		"02e40f02": "Rathian and Cheval",
+		"04c01d02": "Akuma",
+		"04e01d02": "Akuma"
+	}
 }

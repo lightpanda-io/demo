@@ -9,16 +9,16 @@
 	},
 	"next": "02a50e02.html",
 	"prev": "02710e02.html",
-	"list": [
-		"04e11d02",
-		"03651302",
-		"036e0a02",
-		"025c0d02",
-		"03a50002",
-		"00570502",
-		"02fd0502",
-		"00180002",
-		"034f0902",
-		"036a0402"
-	]
+	"list": {
+		"000a0002": "Kirby",
+		"00d30502": "Cesar",
+		"00e40502": "Teddy",
+		"01750502": "Tommy - Suit",
+		"01ae0502": "Celia",
+		"02670102": "Waluigi",
+		"02ba0e02": "Metal Mario - Baseball",
+		"02ff0502": "Plucky",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"043c1302": "Sylux"
+	}
 }

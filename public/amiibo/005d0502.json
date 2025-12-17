@@ -9,16 +9,16 @@
 	},
 	"next": "00ef0502.html",
 	"prev": "01140502.html",
-	"list": [
-		"039cff02",
-		"026b0e02",
-		"013b0502",
-		"03ac0502",
-		"02470502",
-		"02840e02",
-		"00aa0502",
-		"002b0002",
-		"026a0e02",
-		"002e0002"
-	]
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"00170002": "Sheik",
+		"006d0502": "Marcie",
+		"00be0502": "Fuchsia",
+		"012e0502": "Spork/Crackle",
+		"01760502": "Gracie",
+		"023d0002": "Mewtwo",
+		"02e80502": "Hopkins",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04251902": "Tatsuhisa “Luke” Kamijō"
+	}
 }

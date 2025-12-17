@@ -9,16 +9,16 @@
 	},
 	"next": "009f0502.html",
 	"prev": "036e0a02.html",
-	"list": [
-		"04e81d02",
-		"03810002",
-		"00960502",
-		"01010502",
-		"03a50002",
-		"024e0502",
-		"008c0502",
-		"01540502",
-		"00170002",
-		"00ed0502"
-	]
+	"list": {
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01880502": "Peaches",
+		"028c0e02": "Donkey Kong - Soccer",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02e70502": "Vivian",
+		"03080502": "Boots",
+		"03931702": "Pawapuro",
+		"03b00502": "Sable",
+		"043b1302": "Samus",
+		"04ba1d02": "Zangief"
+	}
 }

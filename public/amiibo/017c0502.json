@@ -9,16 +9,16 @@
 	},
 	"next": "02820e02.html",
 	"prev": "01060502.html",
-	"list": [
-		"03a10002",
-		"04e41d02",
-		"00d50502",
-		"04421c02",
-		"00ae0502",
-		"04dd1d02",
-		"008a0502",
-		"01150502",
-		"043a1302",
-		"00ab0502"
-	]
+	"list": {
+		"00b90502": "Poncho",
+		"00e10502": "Timbra",
+		"014b0502": "Marshal",
+		"02520002": "Roy",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"03be0502": "Tom Nook - Coat",
+		"03ca0502": "Tiansheng",
+		"04281902": "Roa Kirishima",
+		"042f1a02": "Donkey Kong \u0026 Pauline",
+		"04d51d02": "E. Honda"
+	}
 }

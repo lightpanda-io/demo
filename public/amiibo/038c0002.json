@@ -9,16 +9,16 @@
 	},
 	"next": "008f0502.html",
 	"prev": "03601202.html",
-	"list": [
-		"03770402",
-		"02880e02",
-		"008c0502",
-		"002a0002",
-		"02c20e02",
-		"007d0502",
-		"00410302",
-		"026e0e02",
-		"043f1c02",
-		"04d21d02"
-	]
+	"list": {
+		"003e0402": "Inkling Girl",
+		"00dc0502": "Alfonso",
+		"01190502": "Don Resetti - Without Hat",
+		"013a0502": "Wart Jr.",
+		"01610502": "Cube",
+		"024a0502": "Kicks",
+		"02790e02": "Daisy - Baseball",
+		"027c0e02": "Daisy - Horse Racing",
+		"03c20502": "Dom",
+		"03cd0502": "Petri"
+	}
 }

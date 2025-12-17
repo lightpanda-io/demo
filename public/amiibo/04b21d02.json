@@ -9,16 +9,16 @@
 	},
 	"next": "04b61d02.html",
 	"prev": "04b91d02.html",
-	"list": [
-		"00cd0502",
-		"02800e02",
-		"01910502",
-		"01620502",
-		"006e0502",
-		"001e0002",
-		"03760402",
-		"01150502",
-		"00fc0502",
-		"038e0402"
-	]
+	"list": {
+		"00650502": "Kiki",
+		"00e10502": "Timbra",
+		"01840502": "Mallary",
+		"02640102": "Donkey Kong",
+		"02720e02": "Luigi - Horse Racing",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03130502": "Olive",
+		"03c90502": "Ione",
+		"04101802": "Palico",
+		"04b51d02": "E. Honda"
+	}
 }

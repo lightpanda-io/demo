@@ -9,16 +9,15 @@
 	},
 	"next": "00d00502.html",
 	"prev": "00920502.html",
-	"list": [
-		"02bc0e02",
-		"026e0e02",
-		"01170502",
-		"026f0e02",
-		"03961702",
-		"02b70e02",
-		"03540902",
-		"005d0502",
-		"04db1d02",
-		"03050502"
-	]
+	"list": {
+		"00010002": "Peach",
+		"00430302": "Light Blue Yarn Yoshi",
+		"00850502": "Gruff",
+		"00930502": "Eugene",
+		"014f0502": "Buck",
+		"01d50502": "Goldie - Amiibo Festival",
+		"023a0702": "Hammer Slam Bowser",
+		"037c0002": "Young Link",
+		"043c1302": "Sylux"
+	}
 }

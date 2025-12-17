@@ -9,16 +9,16 @@
 	},
 	"next": "03b50502.html",
 	"prev": "00ef0502.html",
-	"list": [
-		"03a20002",
-		"03560902",
-		"01150502",
-		"026b0e02",
-		"00890502",
-		"01a90502",
-		"014b0502",
-		"007f0502",
-		"02bd0e02",
-		"02f00502"
-	]
+	"list": {
+		"00110002": "Lucario",
+		"007e0502": "Nate",
+		"015a0502": "Biskit",
+		"01600502": "Merengue",
+		"019d0502": "Peewee",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"02a60e02": "Baby Mario - Baseball",
+		"02b20e02": "Birdo - Golf",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"040d0f02": "Ena"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "019b0502.html",
 	"prev": "00040002.html",
-	"list": [
-		"02b00e02",
-		"028d0e02",
-		"02ef0502",
-		"023a0702",
-		"041a0902",
-		"01140502",
-		"01290502",
-		"04d61d02",
-		"01410502",
-		"015f0502"
-	]
+	"list": {
+		"00030002": "Donkey Kong",
+		"01060502": "Hamphrey",
+		"019d0502": "Peewee",
+		"01a30502": "Rory",
+		"025a0002": "Corrin",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"03530902": "Link - Archer",
+		"04291902": "Nail Saionji",
+		"04af1d02": "Kimberly",
+		"04e71d02": "Ingrid"
+	}
 }

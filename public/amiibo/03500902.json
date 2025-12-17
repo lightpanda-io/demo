@@ -9,16 +9,16 @@
 	},
 	"next": "03a20002.html",
 	"prev": "03941702.html",
-	"list": [
-		"00240002",
-		"03c90502",
-		"02b40e02",
-		"04401c02",
-		"010c0502",
-		"01b50502",
-		"00840502",
-		"01c70502",
-		"00c50502",
-		"02fa0502"
-	]
+	"list": {
+		"00350102": "Luigi",
+		"00500502": "Saharah",
+		"005a0502": "Cheri",
+		"00a50502": "Roald",
+		"01780502": "Resetti - Without Hat",
+		"018e0502": "Pashmina",
+		"027c0e02": "Daisy - Horse Racing",
+		"0431ff02": "Donkey Kong - Power Up Band",
+		"043b1302": "Samus",
+		"04a60902": "Yunobo"
+	}
 }

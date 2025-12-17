@@ -9,16 +9,16 @@
 	},
 	"next": "00050002.html",
 	"prev": "00810502.html",
-	"list": [
-		"04e81d02",
-		"01700502",
-		"03690402",
-		"00b30502",
-		"041b0402",
-		"00240002",
-		"01220502",
-		"02f50502",
-		"02630102",
-		"01c40502"
-	]
+	"list": {
+		"00e40502": "Teddy",
+		"010b0502": "Rocket",
+		"01620502": "Claudia",
+		"023a0702": "Hammer Slam Bowser",
+		"025d0402": "Callie",
+		"027b0e02": "Daisy - Golf",
+		"02af0e02": "Birdo - Soccer",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03040502": "Louie",
+		"03d40502": "Frett"
+	}
 }

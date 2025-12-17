@@ -9,16 +9,16 @@
 	},
 	"next": "036e0a02.html",
 	"prev": "012e0502.html",
-	"list": [
-		"00d60502",
-		"04e61d02",
-		"01380502",
-		"03741402",
-		"03911602",
-		"00190002",
-		"041c0402",
-		"00d10502",
-		"01b90502",
-		"00340102"
-	]
+	"list": {
+		"00420302": "Pink Yarn Yoshi",
+		"00700502": "Octavian",
+		"00760502": "Opal",
+		"00b40502": "Isabelle - Winter",
+		"011e0502": "Anchovy",
+		"01bb0502": "Rizzo",
+		"02a50e02": "Baby Mario - Soccer",
+		"03670102": "Goomba",
+		"03741402": "Super Mario Cereal",
+		"04b41d02": "Dhalsim"
+	}
 }

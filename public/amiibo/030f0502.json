@@ -9,16 +9,16 @@
 	},
 	"next": "00de0502.html",
 	"prev": "01740502.html",
-	"list": [
-		"03920a02",
-		"01920502",
-		"042b1802",
-		"02430502",
-		"01ab0502",
-		"03900402",
-		"01250502",
-		"00e70502",
-		"02770e02",
-		"030f0502"
-	]
+	"list": {
+		"00560502": "Fauna",
+		"00760502": "Opal",
+		"00bb0502": "Ozzie",
+		"019c0502": "Naomi",
+		"02390602": "8-Bit Mario Modern Color",
+		"028a0e02": "Waluigi - Golf",
+		"02b00e02": "Birdo - Baseball",
+		"03100502": "Gonzo",
+		"034b0902": "Link - Ocarina of Time",
+		"03750d02": "Detective Pikachu"
+	}
 }

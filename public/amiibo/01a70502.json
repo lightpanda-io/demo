@@ -9,16 +9,16 @@
 	},
 	"next": "02a70e02.html",
 	"prev": "036b0402.html",
-	"list": [
-		"011c0502",
-		"02780e02",
-		"00cc0502",
-		"00a90502",
-		"01cc0502",
-		"00400402",
-		"016d0502",
-		"034b0902",
-		"01c90502",
-		"029a0e02"
-	]
+	"list": {
+		"00270002": "Meta Knight",
+		"00530502": "Lyle",
+		"00a80502": "K.K. Slider",
+		"00c90502": "Kidd",
+		"01d20502": "Twiggy",
+		"027c0e02": "Daisy - Horse Racing",
+		"02990e02": "Bowser - Golf",
+		"02e40f02": "Rathian and Cheval",
+		"038a0002": "Snake",
+		"03b10502": "Label"
+	}
 }

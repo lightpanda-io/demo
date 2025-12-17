@@ -9,16 +9,16 @@
 	},
 	"next": "02390602.html",
 	"prev": "03990902.html",
-	"list": [
-		"03810002",
-		"01070502",
-		"014d0502",
-		"013a0502",
-		"04340402",
-		"00dc0502",
-		"003a0202",
-		"01250502",
-		"036c0a02",
-		"02f50502"
-	]
+	"list": {
+		"00450502": "Tom Nook",
+		"00d20502": "Olivia",
+		"00fc0502": "Chops",
+		"01640502": "Boomer",
+		"01650502": "Caroline",
+		"028f0e02": "Donkey Kong - Golf",
+		"02a30e02": "Boo - Golf",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02e50f02": "Barioth and Ayuria",
+		"04d21d02": "Juri"
+	}
 }

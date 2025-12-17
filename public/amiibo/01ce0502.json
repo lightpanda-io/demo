@@ -9,16 +9,16 @@
 	},
 	"next": "02e60f02.html",
 	"prev": "00840502.html",
-	"list": [
-		"00390102",
-		"017f0502",
-		"01be0502",
-		"00c00502",
-		"00480502",
-		"00060002",
-		"019f0502",
-		"02470502",
-		"026a0e02",
-		"017d0502"
-	]
+	"list": {
+		"01180502": "Digby - Raincoat",
+		"016c0502": "Apollo",
+		"019b0502": "Rudy",
+		"01c60502": "Rowan",
+		"02490502": "Resetti",
+		"02800e02": "Yoshi - Golf",
+		"029a0e02": "Bowser - Horse Racing",
+		"03090502": "Weber",
+		"039bff02": "Mario - Power Up Band",
+		"04291902": "Nail Saionji"
+	}
 }
