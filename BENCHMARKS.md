@@ -41,7 +41,7 @@ echo "$MEM\t$CPU"
 
 The tests are run in an AWS m5.xlarge (x86_64) with a fresh Ubuntu install.
 
-[!AWS m5.xlarge (x86_64) neofetch](img/aws_neofetch.png)
+![AWS m5.xlarge (x86_64) neofetch](img/aws_neofetch.png)
 
 ### Browsers
 
@@ -270,7 +270,7 @@ $ go run ws/main.go
 
 The tests are run in an AWS m5.xlarge (x86_64) with a fresh Ubuntu install.
 
-[!AWS m5.xlarge (x86_64) neofetch](img/aws_neofetch.png)
+![AWS m5.xlarge (x86_64) neofetch](img/aws_neofetch.png)
 
 #### Running the benchmark
 
