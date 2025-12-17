@@ -3,9 +3,9 @@
 We all love benchmarks but we know it's difficult to do fair comparisons.
 That's why it's important to be very transparent about the protocol of the benchmark.
 
-## Crawler Benchmark
+# Crawler Benchmark
 
-### Methodology
+## Methodology
 
 The benchmark uses [Amiibo](https://demo-browser.lightpanda.io/amiibo/) demo website.
 The program will crawl the first page and then all the subpages to retrieve 933
@@ -31,15 +31,15 @@ CPU=`ps aux | grep $PROGRAM | grep -v grep | awk '{sum+=$3} END {print "Total CP
 echo "$MEM\t$CPU"
 ```
 
-### Preparation
+## Preparation
 
-#### Test machine
+### Test machine
 
 The tests are run in an AWS m5.xlarge (x86_64) with a fresh Ubuntu install.
 
 [!AWS m5.xlarge (x86_64) neofetch](img/aws_neofetch.png)
 
-#### Browsers
+### Browsers
 
 We use Google Chrome version 143.0.7499.109
 
@@ -49,7 +49,7 @@ Google Chrome 143.0.7499.109
 ```
 And Lightpanda commit [68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564](https://github.com/lightpanda-io/browser/commit/68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564).
 
-#### Crawler
+### Crawler
 
 Clone the [demo repository](https://github.com/lightpanda-io/demo).
 
@@ -61,7 +61,7 @@ $ go build -o crawler-tabs crawler-tabs/main.go
 $ ./crawler-tabs/main https://demo-browser.lightpanda.io/amiibo/
 ```
 
-### Summary
+## Summary
 
 | Bench | duration | memory peak | % CPU | Pages |
 |--|--|--|--|--|
@@ -73,11 +73,11 @@ $ ./crawler-tabs/main https://demo-browser.lightpanda.io/amiibo/
 | Chrome 25 tabs | 0:38.85 | 2.1G | 193% | 933 |
 | Chrome 100 tabs | 0:57.90 | 4.4G | 209.3% | 933 |
 
-### Single tab/process
+## Single tab/process
 
 Run the crawler with one tab for Chrome and one process for Lightpanda.
 
-#### Chrome
+### Chrome
 
 Start Chrome on port 9222.
 It displays the websocket connection URL to use.
@@ -117,7 +117,7 @@ $ /usr/bin/time -v ./crawler-tabs/main --pool 1 --cdp ws://127.0.0.1:9222/devtoo
 
 ![btop CPU usage for chrome with 1 tab](img/btop-cpu-chrome-1.png)
 
-#### Lightpanda
+### Lightpanda
 
 ```
 $ ./zig-out/bin/lightpanda serve
@@ -153,9 +153,9 @@ $ /usr/bin/time -v ./crawler-tabs/main --pool 1 https://demo-browser.lightpanda.
 
 ![btop CPU usage for Lightpanda with 1 process](img/btop-cpu-lightpanda-1.png)
 
-### Multi tabs/processes
+## Multi tabs/processes
 
-#### Chrome
+### Chrome
 
 Start Chrome on port 9222.
 It displays the websocket connection URL to use.
@@ -199,13 +199,13 @@ $ /usr/bin/time -v ./crawler-tabs/main --pool 100 \
 ![btop CPU usage for Chrome with 100 tabs](img/btop-cpu-chrome-100.png)
 
 
-#### Lightpanda
+### Lightpanda
 
 // TODO
 
-## Campfire e-commerce Benchmark
+# Campfire e-commerce Benchmark
 
-### Methodology
+## Methodology
 
 The benchmark uses a [homemade demo web page](https://demo-browser.lightpanda.io/campfire-commerce/).
 This web page is a fake e-commerce product offer page loading product details
@@ -218,7 +218,7 @@ correctly to be comparable with Google Chrome.
 Moreover, using this web page allows us to run the test with a local web server,
 reducing network request impacts to the bench.
 
-#### Metrics and tools
+### Metrics and tools
 
 We compare now multiple page loads and js evaluations using
 [Puppeteer](https://https://pptr.dev/), which connects to the browser using CDP
@@ -238,9 +238,9 @@ CPU=`ps aux | grep $PROGRAM | grep -v grep | awk '{sum+=$3} END {print "Total CP
 echo "$MEM\t$CPU"
 ```
 
-### Preparation
+## Preparation
 
-#### Dependencies
+### Dependencies
 
 To run the benchmark, you need to install [nodejs](https://nodejs.org/en/download).
 
@@ -250,7 +250,7 @@ dependencies, mainly Puppeteer.
 You have also to install [Google Chrome](https://www.google.com/chrome/) and
 [Lightpanda browser](https://github.com/lightpanda-io/browser/releases/tag/nightly).
 
-#### Demo web page
+### Demo web page
 
 Clone the [demo web page](https://github.com/lightpanda-io/demo) and expose the
 `public/` directory locally with a web server.
@@ -262,7 +262,7 @@ By default it exposes the `public` dir using the `1234` port.
 $ go run ws/main.go
 ```
 
-#### Test machine
+### Test machine
 
 The tests are run in an AWS m5.xlarge (x86_64) with a fresh Ubuntu install.
 
@@ -282,7 +282,7 @@ instance and load the page to extract data 100 times.
 $ npm run bench-puppeteer-cdp
 ```
 
-#### Results
+### Results
 
 **Google Chrome**
 
@@ -345,7 +345,3 @@ $ watch -n0.1 "./stat.sh lightpanda |tee -a lightpanda"
 # peak is
 27.7M        Total CPU: 6.7%
 ```
-
----
-
-Console images generated with [Carbon](https://carbon.now.sh).
