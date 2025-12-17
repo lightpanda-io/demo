@@ -9,16 +9,16 @@
 	},
 	"next": "02f90502.html",
 	"prev": "03c10502.html",
-	"list": [
-		"028f0e02",
-		"02430502",
-		"04340402",
-		"01410502",
-		"00ff0502",
-		"03a90502",
-		"04a60902",
-		"01ba0502",
-		"01b20502",
-		"00120002"
-	]
+	"list": {
+		"00720502": "Knox",
+		"007c0502": "Phil",
+		"007e0502": "Nate",
+		"01980502": "Melba",
+		"024b0502": "Isabelle - Summer Outfit",
+		"02770e02": "Peach - Horse Racing",
+		"02f40502": "Ketchup",
+		"034e0902": "Link - Skyward Sword",
+		"03a90502": "Timmy \u0026 Tommy",
+		"03b90502": "Gulliver"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "01bb0502.html",
 	"prev": "015b0502.html",
-	"list": [
-		"006e0502",
-		"01930502",
-		"00ec0502",
-		"00fb0502",
-		"01640502",
-		"02b80e02",
-		"02990e02",
-		"04b61d02",
-		"023a0702",
-		"02920e02"
-	]
+	"list": {
+		"00320002": "Pac-Man",
+		"00da0502": "Groucho",
+		"00de0502": "Butch",
+		"01620502": "Claudia",
+		"01cb0502": "Cranston",
+		"02430502": "Digby",
+		"025a0002": "Corrin",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"02f90502": "Maddie",
+		"03911602": "Loot Goblin"
+	}
 }

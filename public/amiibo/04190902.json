@@ -9,16 +9,16 @@
 	},
 	"next": "00ba0502.html",
 	"prev": "01170502.html",
-	"list": [
-		"00cb0502",
-		"005d0502",
-		"00230002",
-		"04af1d02",
-		"01d40502",
-		"02520002",
-		"017f0502",
-		"038f0402",
-		"03090502",
-		"02500a02"
-	]
+	"list": {
+		"00100002": "Pit",
+		"00ab0502": "Labelle",
+		"01830502": "Mott",
+		"01d50502": "Goldie - Amiibo Festival",
+		"03020502": "Raddle",
+		"031b0502": "Étoile",
+		"03840002": "Squirtle",
+		"039eff02": "Daisy - Power Up Band",
+		"04180902": "Link - Tears of the Kingdom",
+		"04df1d02": "Ed"
+	}
 }

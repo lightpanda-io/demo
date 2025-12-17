@@ -9,16 +9,16 @@
 	},
 	"next": "01830502.html",
 	"prev": "02750e02.html",
-	"list": [
-		"03941702",
-		"03cf0502",
-		"019b0502",
-		"02af0e02",
-		"01120502",
-		"00f70502",
-		"005c0502",
-		"037f0002",
-		"009f0502",
-		"04e41d02"
-	]
+	"list": {
+		"003c0102": "Mario - Gold Edition",
+		"00980502": "Pancetti",
+		"00e10502": "Timbra",
+		"010a0502": "Big Top",
+		"02790e02": "Daisy - Baseball",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"038c0002": "Richter",
+		"03961702": "Hayakawa",
+		"040f1802": "Magnamalo",
+		"04f11d02": "Terry"
+	}
 }

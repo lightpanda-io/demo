@@ -9,16 +9,16 @@
 	},
 	"next": "00f10502.html",
 	"prev": "017a0502.html",
-	"list": [
-		"02ba0e02",
-		"02540c02",
-		"02960e02",
-		"03880002",
-		"01440502",
-		"007c0502",
-		"03850002",
-		"008a0502",
-		"007c0502",
-		"00380102"
-	]
+	"list": {
+		"00c50502": "Prince",
+		"010a0502": "Big Top",
+		"01a90502": "Papi",
+		"01d40502": "Isabelle - Character Parfait",
+		"01d70502": "Rosie - Amiibo Festival",
+		"02790e02": "Daisy - Baseball",
+		"03190502": "Rilla",
+		"04261902": "Gakuto Sōgetsu",
+		"04bc1d02": "Cammy",
+		"04e51d02": "C. Viper"
+	}
 }

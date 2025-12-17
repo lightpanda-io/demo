@@ -9,16 +9,16 @@
 	},
 	"next": "035f1102.html",
 	"prev": "01020502.html",
-	"list": [
-		"042e0002",
-		"00820502",
-		"009f0502",
-		"03aa0502",
-		"03140502",
-		"01480502",
-		"00020002",
-		"002a0002",
-		"03ab0502",
-		"04330402"
-	]
+	"list": {
+		"008b0502": "Lionel",
+		"00a60502": "Molly",
+		"01020502": "Marcel",
+		"02630102": "Wario",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03500902": "Toon Link - The Wind Waker",
+		"039bff02": "Mario - Power Up Band",
+		"0430ff02": "Golden - Power Up Band",
+		"04df1d02": "Ed",
+		"04f21d02": "Mai"
+	}
 }

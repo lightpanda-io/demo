@@ -9,16 +9,16 @@
 	},
 	"next": "01d10502.html",
 	"prev": "005b0502.html",
-	"list": [
-		"04e01d02",
-		"03180502",
-		"00930502",
-		"004e0502",
-		"00f80502",
-		"04bc1d02",
-		"00820502",
-		"03b30502",
-		"02a10e02",
-		"01910502"
-	]
+	"list": {
+		"00260002": "Jigglypuff",
+		"009b0502": "Clay",
+		"00de0502": "Butch",
+		"00e30502": "Pekoe",
+		"01190502": "Don Resetti - Without Hat",
+		"01280502": "Cousteau",
+		"01290502": "Velma",
+		"01990502": "Bones",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"04380402": "Pearl - Side Order"
+	}
 }

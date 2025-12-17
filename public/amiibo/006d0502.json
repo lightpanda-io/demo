@@ -9,16 +9,16 @@
 	},
 	"next": "00570502.html",
 	"prev": "03800002.html",
-	"list": [
-		"00480502",
-		"02ad0e02",
-		"030e0502",
-		"02540c02",
-		"01920502",
-		"01070502",
-		"00ac0502",
-		"026f0e02",
-		"03d00502",
-		"026f0e02"
-	]
+	"list": {
+		"00330002": "R.O.B. - NES",
+		"00dc0502": "Alfonso",
+		"02420502": "Tom Nook",
+		"024d0502": "Timmy \u0026 Tommy",
+		"02b90e02": "Metal Mario - Soccer",
+		"036d0a02": "Specter Knight",
+		"03961702": "Hayakawa",
+		"03d40502": "Frett",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"04e11d02": "M. Bison"
+	}
 }

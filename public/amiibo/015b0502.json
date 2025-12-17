@@ -9,16 +9,16 @@
 	},
 	"next": "00e90502.html",
 	"prev": "03b20502.html",
-	"list": [
-		"005a0502",
-		"012c0502",
-		"005d0502",
-		"02a80e02",
-		"00db0502",
-		"02ae0e02",
-		"03bc0502",
-		"03951702",
-		"02960e02",
-		"00820502"
-	]
+	"list": {
+		"00990502": "Chief",
+		"01080502": "Kid Cat",
+		"012b0502": "Canberra",
+		"01890502": "Dizzy",
+		"01970502": "Tex",
+		"028f0e02": "Donkey Kong - Golf",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"031a0502": "Marty",
+		"03750d02": "Detective Pikachu",
+		"03971702": "Ganda"
+	}
 }

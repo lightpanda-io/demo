@@ -9,16 +9,16 @@
 	},
 	"next": "03070502.html",
 	"prev": "01790502.html",
-	"list": [
-		"00d70502",
-		"03090502",
-		"00060002",
-		"01500502",
-		"031c0502",
-		"00bb0502",
-		"03971702",
-		"01be0502",
-		"03d30502",
-		"01220502"
-	]
+	"list": {
+		"01430502": "Diva",
+		"029e0e02": "Bowser Jr. - Golf",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02b10e02": "Birdo - Tennis",
+		"02b90e02": "Metal Mario - Soccer",
+		"037c0002": "Young Link",
+		"03d20502": "Ace",
+		"040c0f02": "Razewing Ratha",
+		"04d01d02": "Chun-Li",
+		"04f01d02": "Ingrid"
+	}
 }

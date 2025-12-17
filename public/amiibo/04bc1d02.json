@@ -9,16 +9,16 @@
 	},
 	"next": "04a81d02.html",
 	"prev": "04b61d02.html",
-	"list": [
-		"00d30502",
-		"01980502",
-		"04e71d02",
-		"036c0a02",
-		"04f31d02",
-		"01b80502",
-		"039cff02",
-		"00c20502",
-		"013d0502",
-		"00050002"
-	]
+	"list": {
+		"00640502": "Bill",
+		"00be0502": "Fuchsia",
+		"01040502": "Keaton",
+		"010e0502": "Tom Nook - Jacket",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02450502": "Reese",
+		"02770e02": "Peach - Horse Racing",
+		"02b30e02": "Birdo - Horse Racing",
+		"03951702": "Yabe",
+		"04e81d02": "Terry"
+	}
 }

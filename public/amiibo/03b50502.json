@@ -9,16 +9,16 @@
 	},
 	"next": "013f0502.html",
 	"prev": "01780502.html",
-	"list": [
-		"003e0402",
-		"027f0e02",
-		"00720502",
-		"03bb0502",
-		"026a0e02",
-		"00070002",
-		"027e0e02",
-		"04ba1d02",
-		"02ba0e02",
-		"02ea0502"
-	]
+	"list": {
+		"009f0502": "Henry",
+		"00a40502": "Willow",
+		"00fe0502": "Vic",
+		"015e0502": "Frank",
+		"01700502": "Isabelle - Dress",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"02780e02": "Daisy - Soccer",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"03130502": "Olive",
+		"04b11d02": "Guile"
+	}
 }

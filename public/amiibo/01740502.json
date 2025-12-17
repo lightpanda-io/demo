@@ -9,16 +9,16 @@
 	},
 	"next": "030f0502.html",
 	"prev": "00e30502.html",
-	"list": [
-		"04af1d02",
-		"036c0a02",
-		"041c0402",
-		"01300502",
-		"02a40e02",
-		"01830502",
-		"00c10502",
-		"00900502",
-		"015f0502",
-		"02ee0502"
-	]
+	"list": {
+		"001d0002": "Zero Suit Samus",
+		"00bc0502": "Tia",
+		"01360502": "Drago",
+		"01710502": "Brewster",
+		"02600402": "Inkling Boy - Purple",
+		"02e80502": "Hopkins",
+		"03800002": "Dark Samus",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03b50502": "Daisy Mae",
+		"04360402": "Callie - Alterna"
+	}
 }

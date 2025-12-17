@@ -9,16 +9,16 @@
 	},
 	"next": "043c1302.html",
 	"prev": "043b1302.html",
-	"list": [
-		"042f1a02",
-		"01270502",
-		"04d61d02",
-		"042f1a02",
-		"04ba1d02",
-		"00ec0502",
-		"04ed1d02",
-		"01120502",
-		"03620002",
-		"008f0502"
-	]
+	"list": {
+		"00ab0502": "Labelle",
+		"00eb0502": "Nan",
+		"02440502": "Lottie",
+		"02830e02": "Wario - Baseball",
+		"02870e02": "Waluigi - Soccer",
+		"03110502": "Sprocket",
+		"03130502": "Olive",
+		"03140502": "Dobie",
+		"038d0002": "Piranha Plant",
+		"04150402": "Inkling - Yellow"
+	}
 }

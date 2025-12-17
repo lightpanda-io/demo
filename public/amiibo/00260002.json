@@ -9,16 +9,16 @@
 	},
 	"next": "01480502.html",
 	"prev": "00be0502.html",
-	"list": [
-		"01ca0502",
-		"008c0502",
-		"003e0402",
-		"03a90502",
-		"02550c02",
-		"00c40502",
-		"02640102",
-		"01a90502",
-		"03140502",
-		"03931702"
-	]
+	"list": {
+		"003d0102": "Mario - Silver Edition",
+		"00a20502": "Peanut",
+		"00a70502": "Walker",
+		"00d00502": "Nana",
+		"01930502": "Pierce",
+		"026b0e02": "Mario - Tennis",
+		"02ba0e02": "Metal Mario - Baseball",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04df1d02": "Ed"
+	}
 }

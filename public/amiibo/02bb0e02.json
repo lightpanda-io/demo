@@ -9,16 +9,16 @@
 	},
 	"next": "004e0502.html",
 	"prev": "016f0502.html",
-	"list": [
-		"04e61d02",
-		"00f90502",
-		"03ca0502",
-		"02700e02",
-		"03b80502",
-		"02670102",
-		"001a0002",
-		"02720e02",
-		"01540502",
-		"024f0902"
-	]
+	"list": {
+		"00430302": "Light Blue Yarn Yoshi",
+		"00830502": "Pudge",
+		"00b20502": "Shrunk",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02bf0e02": "Pink Gold Peach - Baseball",
+		"03560902": "Zelda",
+		"03a50002": "Byleth",
+		"03b50502": "Daisy Mae",
+		"03b90502": "Gulliver",
+		"04ab1d02": "Luke"
+	}
 }

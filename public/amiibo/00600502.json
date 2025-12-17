@@ -9,16 +9,16 @@
 	},
 	"next": "016f0502.html",
 	"prev": "03c70502.html",
-	"list": [
-		"02680102",
-		"04121302",
-		"04f01d02",
-		"00c90502",
-		"01920502",
-		"02540c02",
-		"03911602",
-		"00080002",
-		"02ea0502",
-		"00730502"
-	]
+	"list": {
+		"009e0502": "Muffy",
+		"00b40502": "Isabelle - Winter",
+		"01340502": "Hans",
+		"01370502": "Tangy",
+		"02930e02": "Diddy Kong - Tennis",
+		"02a20e02": "Boo - Tennis",
+		"02b80e02": "Rosalina - Horse Racing",
+		"02b90e02": "Metal Mario - Soccer",
+		"03150502": "Buzz",
+		"0430ff02": "Golden - Power Up Band"
+	}
 }

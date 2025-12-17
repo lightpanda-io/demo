@@ -9,16 +9,16 @@
 	},
 	"next": "030c0502.html",
 	"prev": "01c50502.html",
-	"list": [
-		"038b0002",
-		"03d40502",
-		"019d0502",
-		"00600502",
-		"00150002",
-		"03ab0502",
-		"04dc1d02",
-		"04ac1d02",
-		"04a30902",
-		"00f70502"
-	]
+	"list": {
+		"00030002": "Donkey Kong",
+		"01450502": "Daisy",
+		"01a40502": "Elise",
+		"02790e02": "Daisy - Baseball",
+		"02a00e02": "Boo - Soccer",
+		"034d0902": "Link - Twilight Princess",
+		"03b60502": "Kicks",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"041f0002": "Mythra",
+		"04a60902": "Yunobo"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "040f1802.html",
 	"prev": "043c1302.html",
-	"list": [
-		"01b60502",
-		"03c30502",
-		"02940e02",
-		"03050502",
-		"034c0902",
-		"01170502",
-		"00450502",
-		"02b60e02",
-		"01150502",
-		"04bc1d02"
-	]
+	"list": {
+		"00160002": "Toon Link",
+		"01390502": "Eloise",
+		"01690502": "Maple",
+		"017d0502": "Gulliver",
+		"01bf0502": "Kevin",
+		"027e0e02": "Yoshi - Baseball",
+		"02a60e02": "Baby Mario - Baseball",
+		"02a80e02": "Baby Mario - Golf",
+		"03bc0502": "Niko",
+		"042a1902": "Asana Mutsuba"
+	}
 }

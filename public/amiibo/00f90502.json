@@ -9,16 +9,16 @@
 	},
 	"next": "02630102.html",
 	"prev": "03961702.html",
-	"list": [
-		"02fa0502",
-		"01970502",
-		"00f70502",
-		"00760502",
-		"01660502",
-		"030b0502",
-		"01590502",
-		"02b40e02",
-		"036f1202",
-		"00e60502"
-	]
+	"list": {
+		"003e0402": "Inkling Girl",
+		"008c0502": "Flo",
+		"00a20502": "Peanut",
+		"00c10502": "Coach",
+		"02e50f02": "Barioth and Ayuria",
+		"03160502": "Cleo",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03ba0502": "Wisp",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04d71d02": "Manon"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "04c41e03.html",
 	"prev": "043e1b02.html",
-	"list": [
-		"03110502",
-		"038c0002",
-		"026d0e02",
-		"00530502",
-		"016f0502",
-		"04e81d02",
-		"00560502",
-		"01990502",
-		"004f0502",
-		"041c0402"
-	]
+	"list": {
+		"00890502": "Biff",
+		"01650502": "Caroline",
+		"016a0502": "Antonio",
+		"02840e02": "Wario - Tennis",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02e30f02": "Nabiru",
+		"030d0502": "Cashmere",
+		"03690402": "Inkling Girl - Neon Pink",
+		"037d0002": "Isabelle",
+		"04d21d02": "Juri"
+	}
 }

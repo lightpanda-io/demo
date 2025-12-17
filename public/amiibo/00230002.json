@@ -9,16 +9,15 @@
 	},
 	"next": "03720102.html",
 	"prev": "043f1c02.html",
-	"list": [
-		"01b80502",
-		"002e0002",
-		"043e1b02",
-		"028c0e02",
-		"00a70502",
-		"03981702",
-		"00110002",
-		"03cc0502",
-		"008a0502",
-		"00c00502"
-	]
+	"list": {
+		"00fe0502": "Vic",
+		"014b0502": "Marshal",
+		"017b0502": "Shrunk - Loud Jacket",
+		"018e0502": "Pashmina",
+		"01d50502": "Goldie - Amiibo Festival",
+		"026f0e02": "Luigi - Baseball",
+		"03c10502": "Megan",
+		"03c40502": "Cyd",
+		"04d81d02": "Marisa"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "00e00502.html",
 	"prev": "030c0502.html",
-	"list": [
-		"01c50502",
-		"025b0002",
-		"01220502",
-		"04401c02",
-		"03911602",
-		"014d0502",
-		"00a30502",
-		"043a1302",
-		"01160502",
-		"009f0502"
-	]
+	"list": {
+		"00d60502": "Scoot",
+		"011f0502": "Tabby",
+		"014b0502": "Marshal",
+		"02770e02": "Peach - Horse Racing",
+		"028e0e02": "Donkey Kong - Tennis",
+		"029a0e02": "Bowser - Horse Racing",
+		"02f50502": "Rex",
+		"02ff0502": "Plucky",
+		"031a0502": "Marty",
+		"04b41d02": "Dhalsim"
+	}
 }

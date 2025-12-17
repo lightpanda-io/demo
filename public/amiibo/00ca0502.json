@@ -9,16 +9,16 @@
 	},
 	"next": "02f70502.html",
 	"prev": "012c0502.html",
-	"list": [
-		"00290002",
-		"00040002",
-		"01c10502",
-		"00ae0502",
-		"01cc0502",
-		"00310002",
-		"01a80502",
-		"036a0402",
-		"027e0e02",
-		"011b0502"
-	]
+	"list": {
+		"001f0002": "Palutena",
+		"003d0102": "Mario - Silver Edition",
+		"01130502": "Leif",
+		"014c0502": "Gala",
+		"02570c02": "Waddle Dee",
+		"02890e02": "Waluigi - Tennis",
+		"028d0e02": "Donkey Kong - Baseball",
+		"03830002": "Ivysaur",
+		"03d50502": "Azalea",
+		"04aa1d02": "Luke"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "039dff02.html",
 	"prev": "03550902.html",
-	"list": [
-		"01a70502",
-		"01410502",
-		"03611202",
-		"042b1802",
-		"018a0502",
-		"019f0502",
-		"04131302",
-		"039cff02",
-		"02860e02",
-		"01ce0502"
-	]
+	"list": {
+		"00480502": "Kapp'n",
+		"00490502": "Resetti",
+		"00670502": "Alli",
+		"00f30502": "Sprinkle",
+		"023a0702": "Hammer Slam Bowser",
+		"029a0e02": "Bowser - Horse Racing",
+		"02a30e02": "Boo - Golf",
+		"039cff02": "Luigi - Power Up Band",
+		"03af0502": "Mabel",
+		"04c91e03": "Bandana Waddle Dee"
+	}
 }

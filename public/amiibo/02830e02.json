@@ -9,16 +9,16 @@
 	},
 	"next": "00c30502.html",
 	"prev": "00210002.html",
-	"list": [
-		"00e00502",
-		"00bc0502",
-		"016d0502",
-		"034f0902",
-		"04eb1d02",
-		"03900402",
-		"00a70502",
-		"03af0502",
-		"043b1302",
-		"00a10502"
-	]
+	"list": {
+		"002f0002": "Duck Hunt",
+		"006e0502": "Puck",
+		"011a0502": "Isabelle - Kimono",
+		"01410502": "Greta",
+		"01940502": "Queenie",
+		"01ba0502": "Becky",
+		"02680102": "Boo",
+		"03100502": "Gonzo",
+		"039bff02": "Mario - Power Up Band",
+		"04190902": "Zelda - Tears of the Kingdom"
+	}
 }

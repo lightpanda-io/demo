@@ -9,16 +9,16 @@
 	},
 	"next": "003d0102.html",
 	"prev": "03d70502.html",
-	"list": [
-		"042e0002",
-		"03900402",
-		"01990502",
-		"03d20502",
-		"02f40502",
-		"00f40502",
-		"029b0e02",
-		"026e0e02",
-		"038f0402",
-		"000d0002"
-	]
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"00be0502": "Fuchsia",
+		"00ca0502": "Phoebe",
+		"011a0502": "Isabelle - Kimono",
+		"01540502": "Moe",
+		"02550c02": "Meta Knight",
+		"02940e02": "Diddy Kong - Golf",
+		"02fd0502": "Maggie",
+		"03900402": "Octoling Octopus",
+		"03cb0502": "Shino"
+	}
 }

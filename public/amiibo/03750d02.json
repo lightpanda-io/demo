@@ -9,16 +9,16 @@
 	},
 	"next": "00f60502.html",
 	"prev": "011b0502.html",
-	"list": [
-		"01c80502",
-		"00c80502",
-		"03c70502",
-		"02e40f02",
-		"02890e02",
-		"02760e02",
-		"03100502",
-		"02ff0502",
-		"039bff02",
-		"00450502"
-	]
+	"list": {
+		"00730502": "Sterling",
+		"009c0502": "Diana",
+		"00d30502": "Cesar",
+		"01850502": "Rocco",
+		"01990502": "Bones",
+		"025b0002": "Bayonetta",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"03590902": "Urbosa",
+		"03870002": "Pokemon Trainer",
+		"03bf0502": "Isabelle - Sweater"
+	}
 }

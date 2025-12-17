@@ -9,16 +9,15 @@
 	},
 	"next": "01650502.html",
 	"prev": "04140902.html",
-	"list": [
-		"00120002",
-		"023f0502",
-		"04a60902",
-		"01b90502",
-		"02af0e02",
-		"01840502",
-		"00820502",
-		"03110502",
-		"015e0502",
-		"026d0e02"
-	]
+	"list": {
+		"001a0002": "Wario",
+		"00420302": "Pink Yarn Yoshi",
+		"01610502": "Cube",
+		"01650502": "Caroline",
+		"017d0502": "Gulliver",
+		"02880e02": "Waluigi - Baseball",
+		"02b00e02": "Birdo - Baseball",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"036c0a02": "Plague Knight"
+	}
 }

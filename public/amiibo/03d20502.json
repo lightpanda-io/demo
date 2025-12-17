@@ -9,16 +9,16 @@
 	},
 	"next": "00220002.html",
 	"prev": "03cd0502.html",
-	"list": [
-		"008c0502",
-		"01370502",
-		"01280502",
-		"028e0e02",
-		"01b70502",
-		"02840e02",
-		"037c0002",
-		"00b90502",
-		"01530502",
-		"04df1d02"
-	]
+	"list": {
+		"00140002": "Bowser",
+		"00300002": "Sonic",
+		"00a10502": "Cyrano",
+		"02620102": "Rosalina",
+		"02a70e02": "Baby Mario - Tennis",
+		"02b10e02": "Birdo - Tennis",
+		"03900402": "Octoling Octopus",
+		"03b20502": "K.K. Slider",
+		"03b50502": "Daisy Mae",
+		"03ca0502": "Tiansheng"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "010b0502.html",
 	"prev": "02b10e02.html",
-	"list": [
-		"01230502",
-		"04d61d02",
-		"010d0502",
-		"024d0502",
-		"02f20502",
-		"025d0402",
-		"00090002",
-		"025a0002",
-		"03b70502",
-		"01090502"
-	]
+	"list": {
+		"00030002": "Donkey Kong",
+		"00310002": "Mega Man",
+		"005c0502": "Al",
+		"006a0502": "Jitters",
+		"006d0502": "Marcie",
+		"01b10502": "Ribbot",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02930e02": "Diddy Kong - Tennis",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"04b31d02": "Blanka"
+	}
 }

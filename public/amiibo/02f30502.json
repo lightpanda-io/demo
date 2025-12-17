@@ -9,16 +9,16 @@
 	},
 	"next": "00650502.html",
 	"prev": "00cf0502.html",
-	"list": [
-		"00750502",
-		"029f0e02",
-		"04b81d02",
-		"015a0502",
-		"04180902",
-		"03530902",
-		"00800502",
-		"02940e02",
-		"02a70e02",
-		"01ba0502"
-	]
+	"list": {
+		"00330002": "R.O.B. - NES",
+		"00390102": "Bowser",
+		"01570502": "Astrid",
+		"01790502": "Timmy - Suit",
+		"01c40502": "Lucky",
+		"01d60502": "Stitches - Amiibo Festival",
+		"028c0e02": "Donkey Kong - Soccer",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"02ff0502": "Plucky",
+		"04f31d02": "Mai"
+	}
 }

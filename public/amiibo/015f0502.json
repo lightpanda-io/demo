@@ -9,16 +9,16 @@
 	},
 	"next": "03690402.html",
 	"prev": "01440502.html",
-	"list": [
-		"00000002",
-		"0432ff02",
-		"03690402",
-		"04e61d02",
-		"00f90502",
-		"00b00502",
-		"01590502",
-		"03c40502",
-		"015e0502",
-		"03bf0502"
-	]
+	"list": {
+		"00b70502": "Chip",
+		"00cf0502": "Avery",
+		"00eb0502": "Nan",
+		"01a70502": "Pietro",
+		"01b20502": "Annalise",
+		"01cb0502": "Cranston",
+		"028c0e02": "Donkey Kong - Soccer",
+		"029a0e02": "Bowser - Horse Racing",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"04e01d02": "Akuma"
+	}
 }

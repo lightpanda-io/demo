@@ -9,16 +9,16 @@
 	},
 	"next": "00450502.html",
 	"prev": "028d0e02.html",
-	"list": [
-		"024d0502",
-		"00250002",
-		"02470502",
-		"04e51d02",
-		"01070502",
-		"02960e02",
-		"03cc0502",
-		"02820e02",
-		"02e50f02",
-		"01200502"
-	]
+	"list": {
+		"00230002": "Mii Gunner",
+		"00b40502": "Isabelle - Winter",
+		"00ba0502": "Felicity",
+		"013a0502": "Wart Jr.",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"02ad0e02": "Baby Luigi - Golf",
+		"02ff0502": "Plucky",
+		"03850002": "Pichu",
+		"03ab0502": "Orville",
+		"042b1802": "Palico"
+	}
 }

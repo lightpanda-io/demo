@@ -9,16 +9,16 @@
 	},
 	"next": "017d0502.html",
 	"prev": "04190902.html",
-	"list": [
-		"03030502",
-		"016a0502",
-		"03d00502",
-		"00440502",
-		"040c0f02",
-		"02a60e02",
-		"00130002",
-		"004c0502",
-		"01100502",
-		"00320002"
-	]
+	"list": {
+		"00060002": "Samus",
+		"00c10502": "Coach",
+		"00cf0502": "Avery",
+		"01160502": "Grams",
+		"024b0502": "Isabelle - Summer Outfit",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02f20502": "Wade",
+		"03680102": "Koopa Troopa",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04d41d02": "Dhalsim"
+	}
 }

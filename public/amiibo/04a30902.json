@@ -9,16 +9,16 @@
 	},
 	"next": "00fc0502.html",
 	"prev": "04a40902.html",
-	"list": [
-		"00a30502",
-		"014b0502",
-		"01a20502",
-		"03c00502",
-		"015b0502",
-		"03670102",
-		"00540502",
-		"00290002",
-		"04b71d02",
-		"03cd0502"
-	]
+	"list": {
+		"00560502": "Fauna",
+		"005a0502": "Cheri",
+		"00ba0502": "Felicity",
+		"00ec0502": "Bud",
+		"01a90502": "Papi",
+		"029a0e02": "Bowser - Horse Racing",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"02e50f02": "Barioth and Ayuria",
+		"03670102": "Goomba",
+		"03aa0502": "Isabelle"
+	}
 }

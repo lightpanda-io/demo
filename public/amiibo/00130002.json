@@ -9,16 +9,16 @@
 	},
 	"next": "004f0502.html",
 	"prev": "00200002.html",
-	"list": [
-		"028e0e02",
-		"04150402",
-		"01180502",
-		"01ce0502",
-		"03720102",
-		"018e0502",
-		"04b41d02",
-		"00980502",
-		"01950502",
-		"02fa0502"
-	]
+	"list": {
+		"00a30502": "Cole",
+		"017d0502": "Gulliver",
+		"01990502": "Bones",
+		"02990e02": "Bowser - Golf",
+		"02b90e02": "Metal Mario - Soccer",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"037e0002": "Wolf",
+		"039cff02": "Luigi - Power Up Band",
+		"04220002": "Steve",
+		"042f1a02": "Donkey Kong \u0026 Pauline"
+	}
 }

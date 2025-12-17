@@ -9,16 +9,16 @@
 	},
 	"next": "00400402.html",
 	"prev": "02a00e02.html",
-	"list": [
-		"03a10002",
-		"02bd0e02",
-		"015c0502",
-		"01d10502",
-		"02e40f02",
-		"00ec0502",
-		"03951702",
-		"040c0f02",
-		"00fb0502",
-		"01a80502"
-	]
+	"list": {
+		"00430302": "Light Blue Yarn Yoshi",
+		"00500502": "Saharah",
+		"00560502": "Fauna",
+		"00690502": "Patty",
+		"00b80502": "Jack",
+		"00d00502": "Nana",
+		"011b0502": "Franklin",
+		"01310502": "Friga",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"042f1a02": "Donkey Kong \u0026 Pauline"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "04271902.html",
 	"prev": "03b90502.html",
-	"list": [
-		"00800502",
-		"02ae0e02",
-		"01060502",
-		"03070502",
-		"005e0502",
-		"00320002",
-		"001b0002",
-		"01ba0502",
-		"00650502",
-		"01190502"
-	]
+	"list": {
+		"001a0002": "Wario",
+		"00cc0502": "Cookie",
+		"01c00502": "Gloria",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02b30e02": "Birdo - Horse Racing",
+		"02bb0e02": "Metal Mario - Tennis",
+		"03180502": "Tasha",
+		"037d0002": "Isabelle",
+		"03c60502": "Raymond",
+		"04390402": "Marina - Side Order"
+	}
 }

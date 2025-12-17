@@ -9,16 +9,16 @@
 	},
 	"next": "01500502.html",
 	"prev": "03981702.html",
-	"list": [
-		"008c0502",
-		"01190502",
-		"00f60502",
-		"01d30502",
-		"001b0002",
-		"03040502",
-		"04e11d02",
-		"00bb0502",
-		"04d81d02",
-		"043d1b02"
-	]
+	"list": {
+		"002d0002": "Mr. Game \u0026 Watch",
+		"004c0502": "Digby",
+		"00ee0502": "Benedict",
+		"02750e02": "Peach - Tennis",
+		"02870e02": "Waluigi - Soccer",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03060502": "Admiral",
+		"03730102": "Bowser - Wedding",
+		"03c60502": "Raymond",
+		"04b51d02": "E. Honda"
+	}
 }

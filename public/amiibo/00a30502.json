@@ -9,16 +9,16 @@
 	},
 	"next": "00700502.html",
 	"prev": "01550502.html",
-	"list": [
-		"025b0002",
-		"04c01d02",
-		"01940502",
-		"04dc1d02",
-		"00740502",
-		"029b0e02",
-		"02900e02",
-		"00b80502",
-		"03c30502",
-		"001d0002"
-	]
+	"list": {
+		"003c0102": "Mario - Gold Edition",
+		"00550502": "Bob",
+		"01520502": "Curlos",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01850502": "Rocco",
+		"019f0502": "Olaf",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02560c02": "King Dedede",
+		"03010502": "Claude",
+		"039dff02": "Peach - Power Up Band"
+	}
 }

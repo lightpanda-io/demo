@@ -9,16 +9,16 @@
 	},
 	"next": "026e0e02.html",
 	"prev": "02ee0502.html",
-	"list": [
-		"01600502",
-		"04ee1d02",
-		"006a0502",
-		"04af1d02",
-		"03be0502",
-		"03a20002",
-		"029a0e02",
-		"02fb0502",
-		"04b61d02",
-		"030d0502"
-	]
+	"list": {
+		"000e0002": "Zelda",
+		"00b50502": "Blanca",
+		"00ba0502": "Felicity",
+		"01270502": "Bubbles",
+		"023a0702": "Hammer Slam Bowser",
+		"026b0e02": "Mario - Tennis",
+		"029a0e02": "Bowser - Horse Racing",
+		"03601202": "Alm",
+		"03b20502": "K.K. Slider",
+		"04d01d02": "Chun-Li"
+	}
 }

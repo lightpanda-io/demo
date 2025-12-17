@@ -9,16 +9,16 @@
 	},
 	"next": "02640102.html",
 	"prev": "008c0502.html",
-	"list": [
-		"00970502",
-		"00960502",
-		"00e50502",
-		"00640502",
-		"01190502",
-		"042b1802",
-		"00f60502",
-		"04111802",
-		"040e0f02",
-		"02650102"
-	]
+	"list": {
+		"005e0502": "Lopez",
+		"00ac0502": "Copper",
+		"01140502": "Wendell",
+		"013a0502": "Wart Jr.",
+		"01690502": "Maple",
+		"02800e02": "Yoshi - Golf",
+		"02a40e02": "Boo - Horse Racing",
+		"02b40e02": "Rosalina - Soccer",
+		"040c0f02": "Razewing Ratha",
+		"04190902": "Zelda - Tears of the Kingdom"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "000a0002.html",
 	"prev": "02420502.html",
-	"list": [
-		"04261902",
-		"00560502",
-		"011d0502",
-		"016b0502",
-		"031d0502",
-		"00bd0502",
-		"026a0e02",
-		"0432ff02",
-		"026d0e02",
-		"028f0e02"
-	]
+	"list": {
+		"00d90502": "Coco",
+		"010c0502": "Rover",
+		"01570502": "Astrid",
+		"01cd0502": "Grizzly",
+		"01cf0502": "Simon",
+		"02470502": "Blathers",
+		"026d0e02": "Mario - Horse Racing",
+		"03670102": "Goomba",
+		"03820002": "Inkling",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "03180502.html",
 	"prev": "01cc0502.html",
-	"list": [
-		"00f00502",
-		"02b70e02",
-		"00b50502",
-		"003d0102",
-		"006c0502",
-		"00430302",
-		"024f0902",
-		"00aa0502",
-		"03911602",
-		"005e0502"
-	]
+	"list": {
+		"00170002": "Sheik",
+		"001b0002": "Ganondorf",
+		"00350102": "Luigi",
+		"00a80502": "K.K. Slider",
+		"01190502": "Don Resetti - Without Hat",
+		"014a0502": "Gaston",
+		"02b40e02": "Rosalina - Soccer",
+		"02e60f02": "Qurupeco and Dan",
+		"03d70502": "Faith",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
+	}
 }

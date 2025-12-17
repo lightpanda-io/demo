@@ -9,16 +9,16 @@
 	},
 	"next": "023d0002.html",
 	"prev": "035c0902.html",
-	"list": [
-		"03ca0502",
-		"028f0e02",
-		"02500a02",
-		"00e70502",
-		"03a40002",
-		"01000502",
-		"01b40502",
-		"00430302",
-		"000e0002",
-		"00910502"
-	]
+	"list": {
+		"00460502": "DJ KK",
+		"00710502": "Winnie",
+		"00e20502": "Zell",
+		"00ef0502": "Agnes",
+		"01ad0502": "Static",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"02e40f02": "Rathian and Cheval",
+		"03640002": "Bayonetta - Player 2",
+		"03990902": "Link - Link's Awakening",
+		"04dc1d02": "Cammy"
+	}
 }

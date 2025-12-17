@@ -9,16 +9,16 @@
 	},
 	"next": "01260502.html",
 	"prev": "010d0502.html",
-	"list": [
-		"002b0002",
-		"04a60902",
-		"03a40002",
-		"03090502",
-		"04251902",
-		"005b0502",
-		"04bd1d02",
-		"00dd0502",
-		"005e0502",
-		"01d60502"
-	]
+	"list": {
+		"00410302": "Green Yarn Yoshi",
+		"00dd0502": "Rhonda",
+		"011b0502": "Franklin",
+		"01260502": "Rodeo",
+		"012e0502": "Spork/Crackle",
+		"01630502": "Curly",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04b51d02": "E. Honda",
+		"04d11d02": "Guile",
+		"04d51d02": "E. Honda"
+	}
 }

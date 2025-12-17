@@ -9,16 +9,16 @@
 	},
 	"next": "01aa0502.html",
 	"prev": "01cb0502.html",
-	"list": [
-		"008c0502",
-		"01510502",
-		"009b0502",
-		"025b0002",
-		"00f90502",
-		"02900e02",
-		"00700502",
-		"02b10e02",
-		"02410502",
-		"011e0502"
-	]
+	"list": {
+		"00950502": "Goose",
+		"00cd0502": "Sly",
+		"00f20502": "Jay",
+		"011b0502": "Franklin",
+		"018c0502": "Broffina",
+		"028e0e02": "Donkey Kong - Tennis",
+		"030f0502": "Norma",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03760402": "Pearl",
+		"039fff02": "Yoshi - Power Up Band"
+	}
 }

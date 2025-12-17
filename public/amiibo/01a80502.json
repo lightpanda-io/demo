@@ -9,16 +9,16 @@
 	},
 	"next": "01d00502.html",
 	"prev": "01810502.html",
-	"list": [
-		"03860002",
-		"03a20002",
-		"010d0502",
-		"01280502",
-		"01740502",
-		"00d10502",
-		"03ab0502",
-		"00f20502",
-		"02a90e02",
-		"008f0502"
-	]
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"001d0002": "Zero Suit Samus",
+		"00240002": "Charizard",
+		"00c10502": "Coach",
+		"00f80502": "Drake",
+		"01240502": "Ken",
+		"027c0e02": "Daisy - Horse Racing",
+		"02b80e02": "Rosalina - Horse Racing",
+		"031e0502": "Toby",
+		"03aa0502": "Isabelle"
+	}
 }

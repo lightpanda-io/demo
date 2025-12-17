@@ -9,16 +9,16 @@
 	},
 	"next": "037e0002.html",
 	"prev": "03060502.html",
-	"list": [
-		"041c0402",
-		"025c0d02",
-		"04f21d02",
-		"031e0502",
-		"03530902",
-		"036f1202",
-		"00360102",
-		"00a10502",
-		"02a10e02",
-		"00900502"
-	]
+	"list": {
+		"001e0002": "Olimar",
+		"00a60502": "Molly",
+		"00e70502": "Bianca",
+		"02600402": "Inkling Boy - Purple",
+		"02830e02": "Wario - Baseball",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02e70502": "Vivian",
+		"035c0902": "Bokoblin",
+		"037b0002": "King K. Rool",
+		"04cf1d02": "Kimberly"
+	}
 }

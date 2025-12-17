@@ -9,16 +9,16 @@
 	},
 	"next": "00b80502.html",
 	"prev": "00d90502.html",
-	"list": [
-		"00f60502",
-		"00760502",
-		"00400402",
-		"03050502",
-		"00120002",
-		"009e0502",
-		"00a80502",
-		"01bc0502",
-		"03d00502",
-		"02ed0502"
-	]
+	"list": {
+		"00b10502": "Leila",
+		"012c0502": "Colton",
+		"01770502": "Leilani",
+		"01860502": "Katt",
+		"018c0502": "Broffina",
+		"01970502": "Tex",
+		"02450502": "Reese",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"0431ff02": "Donkey Kong - Power Up Band",
+		"04411c02": "Peach - My Mario Wooden Blocks"
+	}
 }

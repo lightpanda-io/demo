@@ -9,16 +9,16 @@
 	},
 	"next": "006a0502.html",
 	"prev": "00460502.html",
-	"list": [
-		"00ec0502",
-		"04be1d02",
-		"01210502",
-		"01570502",
-		"01520502",
-		"003a0202",
-		"00d40502",
-		"02440502",
-		"04d41d02",
-		"01400502"
-	]
+	"list": {
+		"00280002": "King Dedede",
+		"013e0502": "Chester",
+		"01690502": "Maple",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"03110502": "Sprocket",
+		"03a10002": "Joker",
+		"03bc0502": "Niko",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04ac1d02": "Jamie"
+	}
 }

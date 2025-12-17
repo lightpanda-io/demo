@@ -9,16 +9,16 @@
 	},
 	"next": "02f80502.html",
 	"prev": "03840002.html",
-	"list": [
-		"04e31d02",
-		"036b0402",
-		"04dc1d02",
-		"02800e02",
-		"00760502",
-		"02e90502",
-		"00b10502",
-		"01af0502",
-		"02720e02",
-		"00930502"
-	]
+	"list": {
+		"00450502": "Tom Nook",
+		"00630502": "Bluebear",
+		"00b40502": "Isabelle - Winter",
+		"016d0502": "Derwin",
+		"01b50502": "Jacques",
+		"026c0e02": "Mario - Golf",
+		"03040502": "Louie",
+		"034d0902": "Link - Twilight Princess",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04bd1d02": "Rashid"
+	}
 }

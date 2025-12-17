@@ -9,16 +9,16 @@
 	},
 	"next": "00b60502.html",
 	"prev": "03701202.html",
-	"list": [
-		"03190502",
-		"03b30502",
-		"00d70502",
-		"04ac1d02",
-		"025f0402",
-		"01a80502",
-		"00b00502",
-		"03bc0502",
-		"00250002",
-		"024e0502"
-	]
+	"list": {
+		"00240002": "Charizard",
+		"005a0502": "Cheri",
+		"028a0e02": "Waluigi - Golf",
+		"02970e02": "Bowser - Baseball",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"02e50f02": "Barioth and Ayuria",
+		"03760402": "Pearl",
+		"04a50902": "Tulin",
+		"04d31d02": "Blanka",
+		"04e71d02": "Ingrid"
+	}
 }

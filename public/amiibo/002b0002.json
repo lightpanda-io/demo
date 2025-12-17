@@ -9,16 +9,16 @@
 	},
 	"next": "02660102.html",
 	"prev": "00150002.html",
-	"list": [
-		"03160502",
-		"01340502",
-		"02a10e02",
-		"030f0502",
-		"000e0002",
-		"02920e02",
-		"02b50e02",
-		"02820e02",
-		"02480502",
-		"00680502"
-	]
+	"list": {
+		"01410502": "Greta",
+		"017b0502": "Shrunk - Loud Jacket",
+		"02580002": "Mega Man - Gold Edition",
+		"025e0402": "Marie",
+		"034f0902": "8-Bit Link",
+		"03900402": "Octoling Octopus",
+		"03911602": "Loot Goblin",
+		"03a40002": "Terry",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04bd1d02": "Rashid"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "02e10f02.html",
 	"prev": "034d0902.html",
-	"list": [
-		"00370102",
-		"00c10502",
-		"02840e02",
-		"012b0502",
-		"01810502",
-		"03be0502",
-		"03d10502",
-		"01a00502",
-		"00cc0502",
-		"01b80502"
-	]
+	"list": {
+		"00410302": "Green Yarn Yoshi",
+		"00a70502": "Walker",
+		"01730502": "Phineas",
+		"01890502": "Dizzy",
+		"01ae0502": "Celia",
+		"02b20e02": "Birdo - Golf",
+		"034f0902": "8-Bit Link",
+		"039eff02": "Daisy - Power Up Band",
+		"03bf0502": "Isabelle - Sweater",
+		"04291902": "Nail Saionji"
+	}
 }

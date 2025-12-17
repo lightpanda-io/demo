@@ -9,16 +9,16 @@
 	},
 	"next": "02ab0e02.html",
 	"prev": "00dc0502.html",
-	"list": [
-		"01690502",
-		"04d61d02",
-		"029b0e02",
-		"03b30502",
-		"00430302",
-		"03b10502",
-		"006e0502",
-		"028f0e02",
-		"00780502",
-		"00f90502"
-	]
+	"list": {
+		"002c0002": "Ness",
+		"00540502": "Lottie",
+		"00a90502": "Reese",
+		"014a0502": "Gaston",
+		"01980502": "Melba",
+		"01a30502": "Rory",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"03a0ff02": "Toad - Power Up Band",
+		"04e11d02": "M. Bison"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "016a0502.html",
 	"prev": "041a0902.html",
-	"list": [
-		"01d00502",
-		"00760502",
-		"037f0002",
-		"043e1b02",
-		"00f40502",
-		"04350402",
-		"038f0402",
-		"01250502",
-		"01af0502",
-		"02620102"
-	]
+	"list": {
+		"00f60502": "Hopper",
+		"010e0502": "Tom Nook - Jacket",
+		"019d0502": "Peewee",
+		"02660102": "Daisy",
+		"02670102": "Waluigi",
+		"02760e02": "Peach - Golf",
+		"02820e02": "Wario - Soccer",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"03661302": "Metroid"
+	}
 }

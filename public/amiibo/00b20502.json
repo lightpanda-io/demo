@@ -9,16 +9,16 @@
 	},
 	"next": "00930502.html",
 	"prev": "00aa0502.html",
-	"list": [
-		"03bf0502",
-		"03601202",
-		"03b00502",
-		"00fb0502",
-		"03d10502",
-		"018a0502",
-		"02960e02",
-		"03d40502",
-		"029a0e02",
-		"02e40f02"
-	]
+	"list": {
+		"003a0202": "Chibi Robo",
+		"00700502": "Octavian",
+		"011b0502": "Franklin",
+		"01a30502": "Rory",
+		"01cd0502": "Grizzly",
+		"024d0502": "Timmy \u0026 Tommy",
+		"02af0e02": "Birdo - Soccer",
+		"04111802": "Palamute",
+		"04380402": "Pearl - Side Order",
+		"04af1d02": "Kimberly"
+	}
 }

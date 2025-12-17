@@ -9,16 +9,16 @@
 	},
 	"next": "005d0502.html",
 	"prev": "010c0502.html",
-	"list": [
-		"03110502",
-		"02e50f02",
-		"00270002",
-		"02960e02",
-		"00500502",
-		"01280502",
-		"02c10e02",
-		"034d0902",
-		"00710502",
-		"01b00502"
-	]
+	"list": {
+		"01180502": "Digby - Raincoat",
+		"01610502": "Cube",
+		"01750502": "Tommy - Suit",
+		"02510002": "Lucas",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03120502": "Snooty",
+		"034e0902": "Link - Skyward Sword",
+		"039eff02": "Daisy - Power Up Band",
+		"03bc0502": "Niko",
+		"040f1802": "Magnamalo"
+	}
 }

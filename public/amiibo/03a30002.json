@@ -9,16 +9,16 @@
 	},
 	"next": "01b40502.html",
 	"prev": "03931702.html",
-	"list": [
-		"04eb1d02",
-		"02b70e02",
-		"04e31d02",
-		"034f0902",
-		"01af0502",
-		"01b10502",
-		"014c0502",
-		"008c0502",
-		"00c60502",
-		"04a91d02"
-	]
+	"list": {
+		"00590502": "Leonardo",
+		"008f0502": "Jeremiah",
+		"009a0502": "Bunnie",
+		"011c0502": "Jingle",
+		"02680102": "Boo",
+		"02970e02": "Bowser - Baseball",
+		"03180502": "Tasha",
+		"036c0a02": "Plague Knight",
+		"03730102": "Bowser - Wedding",
+		"04da1d02": "Zangief"
+	}
 }

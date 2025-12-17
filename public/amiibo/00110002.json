@@ -9,16 +9,16 @@
 	},
 	"next": "01660502.html",
 	"prev": "00f70502.html",
-	"list": [
-		"00540502",
-		"02f60502",
-		"011a0502",
-		"00ce0502",
-		"02a00e02",
-		"04390402",
-		"04251902",
-		"037a0002",
-		"04340402",
-		"010e0502"
-	]
+	"list": {
+		"00910502": "Roscoe",
+		"016b0502": "Soleil",
+		"01780502": "Resetti - Without Hat",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02680102": "Boo",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"034f0902": "8-Bit Link",
+		"03ad0502": "Blathers",
+		"04271902": "Romin Kirishima",
+		"04b41d02": "Dhalsim"
+	}
 }

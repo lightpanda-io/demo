@@ -9,16 +9,16 @@
 	},
 	"next": "04db1d02.html",
 	"prev": "04cf1d02.html",
-	"list": [
-		"04b71d02",
-		"00b10502",
-		"00690502",
-		"00ea0502",
-		"01970502",
-		"0430ff02",
-		"03781402",
-		"025f0402",
-		"02f40502",
-		"001a0002"
-	]
+	"list": {
+		"003e0402": "Inkling Girl",
+		"012d0502": "Marina",
+		"01460502": "Stinky",
+		"01a00502": "Lucy",
+		"029a0e02": "Bowser - Horse Racing",
+		"04261902": "Gakuto Sōgetsu",
+		"043b1302": "Samus",
+		"043d1b02": "Noah",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04d11d02": "Guile"
+	}
 }

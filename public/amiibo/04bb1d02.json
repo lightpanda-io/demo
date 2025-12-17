@@ -9,16 +9,16 @@
 	},
 	"next": "04b91d02.html",
 	"prev": "04b81d02.html",
-	"list": [
-		"01ac0502",
-		"00d20502",
-		"00520502",
-		"04a60902",
-		"01470502",
-		"02b10e02",
-		"023b0702",
-		"001e0002",
-		"00000002",
-		"01170502"
-	]
+	"list": {
+		"003c0102": "Mario - Gold Edition",
+		"008c0502": "Flo",
+		"009c0502": "Diana",
+		"00a20502": "Peanut",
+		"023d0002": "Mewtwo",
+		"02ba0e02": "Metal Mario - Baseball",
+		"034f0902": "8-Bit Link",
+		"03b60502": "Kicks",
+		"04150402": "Inkling - Yellow",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
+	}
 }

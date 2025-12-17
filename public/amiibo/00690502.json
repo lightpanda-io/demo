@@ -9,16 +9,16 @@
 	},
 	"next": "01c00502.html",
 	"prev": "002a0002.html",
-	"list": [
-		"04d91d02",
-		"01cf0502",
-		"01bc0502",
-		"01300502",
-		"04d71d02",
-		"01020502",
-		"01840502",
-		"034c0902",
-		"02e20f02",
-		"01a10502"
-	]
+	"list": {
+		"00010002": "Peach",
+		"005a0502": "Cheri",
+		"00ec0502": "Bud",
+		"018e0502": "Pashmina",
+		"01ca0502": "Gayle",
+		"02500a02": "Shovel Knight",
+		"027b0e02": "Daisy - Golf",
+		"027e0e02": "Yoshi - Baseball",
+		"03be0502": "Tom Nook - Coat",
+		"04ec1d02": "Elena"
+	}
 }

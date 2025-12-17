@@ -9,16 +9,16 @@
 	},
 	"next": "04d71d02.html",
 	"prev": "04cd1d02.html",
-	"list": [
-		"04df1d02",
-		"01110502",
-		"00d30502",
-		"00da0502",
-		"036c0a02",
-		"01410502",
-		"04bf1d02",
-		"04150402",
-		"02f60502",
-		"00c80502"
-	]
+	"list": {
+		"00210002": "Mii Brawler",
+		"00f00502": "Julian",
+		"01520502": "Curlos",
+		"01780502": "Resetti - Without Hat",
+		"019f0502": "Olaf",
+		"02570c02": "Waddle Dee",
+		"03140502": "Dobie",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03840002": "Squirtle",
+		"041c0402": "Smallfry"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "00020002.html",
 	"prev": "02b90e02.html",
-	"list": [
-		"04cb1d02",
-		"03830002",
-		"03100502",
-		"003c0102",
-		"012f0502",
-		"00ff0502",
-		"004e0502",
-		"041a0902",
-		"00aa0502",
-		"02520002"
-	]
+	"list": {
+		"00c10502": "Coach",
+		"00d50502": "Rodney",
+		"01a10502": "Elmer",
+		"02550c02": "Meta Knight",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03be0502": "Tom Nook - Coat",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"0432ff02": "Diddy Kong - Power Up Band",
+		"04aa1d02": "Luke",
+		"04c01d02": "Akuma"
+	}
 }

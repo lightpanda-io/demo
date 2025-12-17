@@ -9,16 +9,16 @@
 	},
 	"next": "02780e02.html",
 	"prev": "01aa0502.html",
-	"list": [
-		"024d0502",
-		"015e0502",
-		"02ea0502",
-		"00880502",
-		"00430302",
-		"02f10502",
-		"03110502",
-		"02900e02",
-		"00460502",
-		"010e0502"
-	]
+	"list": {
+		"00250002": "Greninja",
+		"00960502": "Annalisa",
+		"01300502": "Bam",
+		"01c90502": "OHare",
+		"02ad0e02": "Baby Luigi - Golf",
+		"02e50f02": "Barioth and Ayuria",
+		"03120502": "Snooty",
+		"035b0902": "Revali",
+		"035d0302": "Poochy",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
+	}
 }

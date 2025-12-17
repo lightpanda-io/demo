@@ -9,16 +9,16 @@
 	},
 	"next": "03100502.html",
 	"prev": "01560502.html",
-	"list": [
-		"04e31d02",
-		"041f0002",
-		"03971702",
-		"00550502",
-		"00920502",
-		"03cc0502",
-		"00090002",
-		"04e41d02",
-		"016f0502",
-		"01b30502"
-	]
+	"list": {
+		"000c0002": "Luigi",
+		"00310002": "Mega Man",
+		"017f0502": "Zipper",
+		"025a0002": "Corrin",
+		"027a0e02": "Daisy - Tennis",
+		"02f10502": "Boris",
+		"030d0502": "Cashmere",
+		"03ab0502": "Orville",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04c91e03": "Bandana Waddle Dee"
+	}
 }

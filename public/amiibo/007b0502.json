@@ -9,16 +9,16 @@
 	},
 	"next": "01810502.html",
 	"prev": "01500502.html",
-	"list": [
-		"011a0502",
-		"00ea0502",
-		"02ec0502",
-		"01430502",
-		"038e0402",
-		"03ce0502",
-		"03a60102",
-		"03540902",
-		"03bb0502",
-		"03ba0502"
-	]
+	"list": {
+		"00f80502": "Drake",
+		"00fe0502": "Vic",
+		"01b40502": "Sylvia",
+		"02580002": "Mega Man - Gold Edition",
+		"02860e02": "Wario - Horse Racing",
+		"03850002": "Pichu",
+		"039cff02": "Luigi - Power Up Band",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04d01d02": "Chun-Li"
+	}
 }

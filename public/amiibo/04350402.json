@@ -9,16 +9,16 @@
 	},
 	"next": "03d40502.html",
 	"prev": "04340402.html",
-	"list": [
-		"01970502",
-		"00b10502",
-		"025b0002",
-		"014d0502",
-		"012d0502",
-		"03b00502",
-		"02e90502",
-		"02ab0e02",
-		"03b80502",
-		"03ab0502"
-	]
+	"list": {
+		"00610502": "Tiffany",
+		"009c0502": "Diana",
+		"01a70502": "Pietro",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02430502": "Digby",
+		"02b60e02": "Rosalina - Tennis",
+		"03860002": "Incineroar",
+		"039dff02": "Peach - Power Up Band",
+		"03aa0502": "Isabelle",
+		"03ce0502": "Cephalobot"
+	}
 }

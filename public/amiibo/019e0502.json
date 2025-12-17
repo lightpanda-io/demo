@@ -9,16 +9,16 @@
 	},
 	"next": "00e40502.html",
 	"prev": "00860502.html",
-	"list": [
-		"02a90e02",
-		"040e0f02",
-		"007e0502",
-		"03730102",
-		"00630502",
-		"01070502",
-		"01d20502",
-		"03aa0502",
-		"01a00502",
-		"03661302"
-	]
+	"list": {
+		"00530502": "Lyle",
+		"007a0502": "Snake",
+		"00fd0502": "Charlise",
+		"010a0502": "Big Top",
+		"018e0502": "Pashmina",
+		"02a40e02": "Boo - Horse Racing",
+		"02b10e02": "Birdo - Tennis",
+		"02ec0502": "Hornsby",
+		"03500902": "Toon Link - The Wind Waker",
+		"04e61d02": "Alex"
+	}
 }

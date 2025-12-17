@@ -9,16 +9,16 @@
 	},
 	"next": "03941702.html",
 	"prev": "017f0502.html",
-	"list": [
-		"00db0502",
-		"02e60f02",
-		"00270002",
-		"02b80e02",
-		"00770502",
-		"02ad0e02",
-		"04121302",
-		"000a0002",
-		"04ac1d02",
-		"00500502"
-	]
+	"list": {
+		"00d70502": "Whitney",
+		"01000502": "Drift",
+		"01170502": "Timmy - Full Apron",
+		"01520502": "Curlos",
+		"01560502": "Hamlet",
+		"02630102": "Wario",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02b60e02": "Rosalina - Tennis",
+		"03651302": "Samus Aran",
+		"03741402": "Super Mario Cereal"
+	}
 }

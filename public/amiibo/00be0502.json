@@ -9,16 +9,16 @@
 	},
 	"next": "00260002.html",
 	"prev": "03ba0502.html",
-	"list": [
-		"008e0502",
-		"000c0002",
-		"02fb0502",
-		"03a20002",
-		"01630502",
-		"03750d02",
-		"00440502",
-		"04ef1d02",
-		"043c1302",
-		"04ae1d02"
-	]
+	"list": {
+		"00130002": "Rosalina \u0026 Luma",
+		"00400402": "Inkling Squid",
+		"01190502": "Don Resetti - Without Hat",
+		"01330502": "Deirdre",
+		"01400502": "Genji",
+		"01be0502": "Nibbles",
+		"02e30f02": "Nabiru",
+		"042f1a02": "Donkey Kong \u0026 Pauline",
+		"04d71d02": "Manon",
+		"04d81d02": "Marisa"
+	}
 }

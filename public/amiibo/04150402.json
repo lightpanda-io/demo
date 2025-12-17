@@ -9,16 +9,16 @@
 	},
 	"next": "04330402.html",
 	"prev": "01120502.html",
-	"list": [
-		"008b0502",
-		"01980502",
-		"00420302",
-		"02660102",
-		"02fb0502",
-		"031c0502",
-		"03a10002",
-		"01880502",
-		"013d0502",
-		"04c01d02"
-	]
+	"list": {
+		"01220502": "Del",
+		"01b60502": "Sally",
+		"02790e02": "Daisy - Baseball",
+		"02870e02": "Waluigi - Soccer",
+		"02a50e02": "Baby Mario - Soccer",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"03670102": "Goomba",
+		"036c0a02": "Plague Knight",
+		"040c0f02": "Razewing Ratha",
+		"04c91e03": "Bandana Waddle Dee"
+	}
 }

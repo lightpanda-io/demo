@@ -9,16 +9,16 @@
 	},
 	"next": "001e0002.html",
 	"prev": "00c50502.html",
-	"list": [
-		"04ed1d02",
-		"02c20e02",
-		"025b0002",
-		"04350402",
-		"01d60502",
-		"01d70502",
-		"040e0f02",
-		"02900e02",
-		"01810502",
-		"015b0502"
-	]
+	"list": {
+		"009f0502": "Henry",
+		"00a90502": "Reese",
+		"00b20502": "Shrunk",
+		"01210502": "Miranda",
+		"01690502": "Maple",
+		"016e0502": "Francine",
+		"01ac0502": "Purrl",
+		"02730e02": "Peach - Soccer",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"04bd1d02": "Rashid"
+	}
 }

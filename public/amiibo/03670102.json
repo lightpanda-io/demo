@@ -9,16 +9,16 @@
 	},
 	"next": "03640002.html",
 	"prev": "03690402.html",
-	"list": [
-		"028f0e02",
-		"02ab0e02",
-		"00910502",
-		"001a0002",
-		"03791502",
-		"00640502",
-		"03110502",
-		"00c70502",
-		"04d51d02",
-		"034c0902"
-	]
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"00540502": "Lottie",
+		"00a00502": "Bertha",
+		"01af0502": "Zucker",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02b70e02": "Rosalina - Golf",
+		"02bc0e02": "Metal Mario - Golf",
+		"036d0a02": "Specter Knight",
+		"03be0502": "Tom Nook - Coat",
+		"04230002": "Alex"
+	}
 }

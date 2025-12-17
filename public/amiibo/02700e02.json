@@ -9,16 +9,16 @@
 	},
 	"next": "00540502.html",
 	"prev": "03cc0502.html",
-	"list": [
-		"00760502",
-		"00bb0502",
-		"025b0002",
-		"01810502",
-		"04d71d02",
-		"02750e02",
-		"036a0402",
-		"02610402",
-		"00f40502",
-		"02f30502"
-	]
+	"list": {
+		"00300002": "Sonic",
+		"00410302": "Green Yarn Yoshi",
+		"01310502": "Friga",
+		"023a0702": "Hammer Slam Bowser",
+		"02650102": "Diddy Kong",
+		"02ad0e02": "Baby Luigi - Golf",
+		"036c0a02": "Plague Knight",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"039dff02": "Peach - Power Up Band",
+		"04e31d02": "Elena"
+	}
 }

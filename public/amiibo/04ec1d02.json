@@ -9,16 +9,16 @@
 	},
 	"next": "04ed1d02.html",
 	"prev": "04f31d02.html",
-	"list": [
-		"01880502",
-		"04b31d02",
-		"01900502",
-		"00600502",
-		"00f40502",
-		"02bc0e02",
-		"0430ff02",
-		"01ab0502",
-		"031d0502",
-		"01450502"
-	]
+	"list": {
+		"00f70502": "Pecan",
+		"01520502": "Curlos",
+		"015d0502": "Violet",
+		"01670502": "Baabara",
+		"02390602": "8-Bit Mario Modern Color",
+		"02b90e02": "Metal Mario - Soccer",
+		"03ca0502": "Tiansheng",
+		"03d70502": "Faith",
+		"042e0002": "Sora",
+		"043a1302": "Samus \u0026 Vi-O-La"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "00660502.html",
 	"prev": "04f01d02.html",
-	"list": [
-		"03cd0502",
-		"04bf1d02",
-		"04210002",
-		"0430ff02",
-		"03cf0502",
-		"00690502",
-		"02f50502",
-		"01070502",
-		"002b0002",
-		"02470502"
-	]
+	"list": {
+		"001b0002": "Ganondorf",
+		"00540502": "Lottie",
+		"01150502": "Cyrus",
+		"01500502": "Bree",
+		"01780502": "Resetti - Without Hat",
+		"02b90e02": "Metal Mario - Soccer",
+		"035d0302": "Poochy",
+		"041b0402": "Octoling - Blue",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04c01d02": "Akuma"
+	}
 }

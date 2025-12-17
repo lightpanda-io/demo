@@ -9,16 +9,16 @@
 	},
 	"next": "02440502.html",
 	"prev": "01d20502.html",
-	"list": [
-		"01cd0502",
-		"03aa0502",
-		"04eb1d02",
-		"04261902",
-		"00f70502",
-		"04b31d02",
-		"00410302",
-		"00690502",
-		"00560502",
-		"02f20502"
-	]
+	"list": {
+		"00220002": "Mii Swordfighter",
+		"003f0402": "Inkling Boy",
+		"009e0502": "Muffy",
+		"00aa0502": "Kicks",
+		"01100502": "Phyllis",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"02560c02": "King Dedede",
+		"037b0002": "King K. Rool",
+		"03d60502": "Roswell",
+		"042d1802": "Malzeno"
+	}
 }

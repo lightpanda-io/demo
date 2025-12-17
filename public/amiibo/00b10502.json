@@ -9,16 +9,16 @@
 	},
 	"next": "041e0002.html",
 	"prev": "03d00502.html",
-	"list": [
-		"00720502",
-		"02e50f02",
-		"013f0502",
-		"04aa1d02",
-		"03100502",
-		"018a0502",
-		"03760402",
-		"03720102",
-		"00bf0502",
-		"01260502"
-	]
+	"list": {
+		"001e0002": "Olimar",
+		"009f0502": "Henry",
+		"011c0502": "Jingle",
+		"02550c02": "Meta Knight",
+		"02580002": "Mega Man - Gold Edition",
+		"02a10e02": "Boo - Baseball",
+		"03070502": "Ellie",
+		"034c0902": "Link - Majora's Mask",
+		"038f0402": "Octoling Boy",
+		"040e0f02": "Tsukino"
+	}
 }

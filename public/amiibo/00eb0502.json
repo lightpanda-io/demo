@@ -9,16 +9,16 @@
 	},
 	"next": "027e0e02.html",
 	"prev": "00450502.html",
-	"list": [
-		"004e0502",
-		"00b30502",
-		"00480502",
-		"00b30502",
-		"00e10502",
-		"00290002",
-		"01840502",
-		"027d0e02",
-		"03180502",
-		"00a50502"
-	]
+	"list": {
+		"00620502": "Sheldon",
+		"00650502": "Kiki",
+		"00790502": "Deena",
+		"009b0502": "Clay",
+		"00bf0502": "Harry",
+		"02620102": "Rosalina",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"03d40502": "Frett",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"042f1a02": "Donkey Kong \u0026 Pauline"
+	}
 }

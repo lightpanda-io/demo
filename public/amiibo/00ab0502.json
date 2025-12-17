@@ -9,16 +9,16 @@
 	},
 	"next": "04251902.html",
 	"prev": "019a0502.html",
-	"list": [
-		"04b21d02",
-		"01a20502",
-		"014c0502",
-		"03920a02",
-		"016c0502",
-		"00580502",
-		"009a0502",
-		"00660502",
-		"000f0002",
-		"00840502"
-	]
+	"list": {
+		"00360102": "Peach",
+		"00b10502": "Leila",
+		"016f0502": "Chrissy",
+		"019b0502": "Rudy",
+		"01d60502": "Stitches - Amiibo Festival",
+		"025c0d02": "Shadow Mewtwo",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03890002": "Ken",
+		"03911602": "Loot Goblin",
+		"04f21d02": "Mai"
+	}
 }

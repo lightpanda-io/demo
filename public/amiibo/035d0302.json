@@ -9,16 +9,16 @@
 	},
 	"next": "02890e02.html",
 	"prev": "009a0502.html",
-	"list": [
-		"02f10502",
-		"017f0502",
-		"04c01d02",
-		"041f0002",
-		"03c40502",
-		"01c20502",
-		"0431ff02",
-		"03c40502",
-		"04b11d02",
-		"01cf0502"
-	]
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"00670502": "Alli",
+		"01160502": "Grams",
+		"014f0502": "Buck",
+		"02580002": "Mega Man - Gold Edition",
+		"029a0e02": "Bowser - Horse Racing",
+		"03500902": "Toon Link - The Wind Waker",
+		"038b0002": "Simon",
+		"03bf0502": "Isabelle - Sweater",
+		"03c70502": "Reneigh"
+	}
 }

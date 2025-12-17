@@ -9,16 +9,16 @@
 	},
 	"next": "01040502.html",
 	"prev": "00e60502.html",
-	"list": [
-		"01880502",
-		"03060502",
-		"03cd0502",
-		"026e0e02",
-		"005c0502",
-		"01d60502",
-		"00370102",
-		"04b51d02",
-		"01c90502",
-		"00460502"
-	]
+	"list": {
+		"002c0002": "Ness",
+		"01b70502": "Doc",
+		"01c40502": "Lucky",
+		"01cb0502": "Cranston",
+		"027c0e02": "Daisy - Horse Racing",
+		"02840e02": "Wario - Tennis",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"03be0502": "Tom Nook - Coat",
+		"03d60502": "Roswell"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "00850502.html",
 	"prev": "039eff02.html",
-	"list": [
-		"00f20502",
-		"03830002",
-		"01c60502",
-		"010a0502",
-		"019d0502",
-		"01540502",
-		"02950e02",
-		"00f80502",
-		"037f0002",
-		"00f80502"
-	]
+	"list": {
+		"00db0502": "Wendy",
+		"01000502": "Drift",
+		"01700502": "Isabelle - Dress",
+		"02730e02": "Peach - Soccer",
+		"02e30f02": "Nabiru",
+		"03bb0502": "Lottie - Island",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04ba1d02": "Zangief",
+		"04e41d02": "Sagat"
+	}
 }

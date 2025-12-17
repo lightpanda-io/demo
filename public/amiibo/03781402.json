@@ -9,16 +9,16 @@
 	},
 	"next": "04281902.html",
 	"prev": "00d30502.html",
-	"list": [
-		"01110502",
-		"011b0502",
-		"00e80502",
-		"02870e02",
-		"03530902",
-		"01a90502",
-		"02e40f02",
-		"041b0402",
-		"035f1102",
-		"01540502"
-	]
+	"list": {
+		"00340102": "Mario",
+		"005a0502": "Cheri",
+		"00770502": "Poppy",
+		"00af0502": "Tommy - Uniform",
+		"01220502": "Del",
+		"03590902": "Urbosa",
+		"039eff02": "Daisy - Power Up Band",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"04360402": "Callie - Alterna",
+		"04eb1d02": "M. Bison"
+	}
 }

@@ -9,16 +9,16 @@
 	},
 	"next": "008c0502.html",
 	"prev": "03100502.html",
-	"list": [
-		"01d80502",
-		"04d41d02",
-		"016b0502",
-		"01a80502",
-		"03961702",
-		"042d1802",
-		"00d60502",
-		"03cf0502",
-		"00850502",
-		"00a70502"
-	]
+	"list": {
+		"004e0502": "Harriet",
+		"005f0502": "Jambette",
+		"00770502": "Poppy",
+		"00a20502": "Peanut",
+		"00e80502": "Filbert",
+		"01d60502": "Stitches - Amiibo Festival",
+		"03190502": "Rilla",
+		"031e0502": "Toby",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04ba1d02": "Zangief"
+	}
 }

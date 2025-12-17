@@ -9,16 +9,16 @@
 	},
 	"next": "03af0502.html",
 	"prev": "03190502.html",
-	"list": [
-		"04b11d02",
-		"01290502",
-		"03cd0502",
-		"010f0502",
-		"04bc1d02",
-		"04bf1d02",
-		"01bd0502",
-		"00fc0502",
-		"01730502",
-		"00660502"
-	]
+	"list": {
+		"00590502": "Leonardo",
+		"00de0502": "Butch",
+		"01b80502": "Pompom",
+		"01d50502": "Goldie - Amiibo Festival",
+		"026b0e02": "Mario - Tennis",
+		"02920e02": "Diddy Kong - Baseball",
+		"02a00e02": "Boo - Soccer",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"03580902": "Daruk",
+		"03931702": "Pawapuro"
+	}
 }

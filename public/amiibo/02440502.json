@@ -9,16 +9,16 @@
 	},
 	"next": "037b0002.html",
 	"prev": "00fa0502.html",
-	"list": [
-		"03640002",
-		"015b0502",
-		"00b80502",
-		"04d21d02",
-		"02eb0502",
-		"04190902",
-		"02c10e02",
-		"00990502",
-		"03140502",
-		"039eff02"
-	]
+	"list": {
+		"00540502": "Lottie",
+		"00d40502": "Carmen",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02f50502": "Rex",
+		"02fb0502": "Boyd",
+		"03030502": "Julia",
+		"038f0402": "Octoling Boy",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"04e61d02": "Alex",
+		"04e81d02": "Terry"
+	}
 }

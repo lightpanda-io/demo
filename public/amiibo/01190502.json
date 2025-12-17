@@ -9,16 +9,16 @@
 	},
 	"next": "03ca0502.html",
 	"prev": "01280502.html",
-	"list": [
-		"00010002",
-		"03a20002",
-		"01650502",
-		"02ad0e02",
-		"025a0002",
-		"041d0002",
-		"00a70502",
-		"00d40502",
-		"04ce1d02",
-		"02980e02"
-	]
+	"list": {
+		"000c0002": "Luigi",
+		"00ac0502": "Copper",
+		"00d10502": "Peck",
+		"00e80502": "Filbert",
+		"01d30502": "Robin",
+		"02440502": "Lottie",
+		"02980e02": "Bowser - Tennis",
+		"03791502": "Mega Man",
+		"039eff02": "Daisy - Power Up Band",
+		"0432ff02": "Diddy Kong - Power Up Band"
+	}
 }

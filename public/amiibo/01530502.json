@@ -9,16 +9,16 @@
 	},
 	"next": "03b30502.html",
 	"prev": "01770502.html",
-	"list": [
-		"005c0502",
-		"031a0502",
-		"02670102",
-		"00dc0502",
-		"008e0502",
-		"04c91e03",
-		"00940502",
-		"02510002",
-		"01960502",
-		"041d0002"
-	]
+	"list": {
+		"007e0502": "Nate",
+		"01240502": "Ken",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02920e02": "Diddy Kong - Baseball",
+		"02a40e02": "Boo - Horse Racing",
+		"02e60f02": "Qurupeco and Dan",
+		"036c0a02": "Plague Knight",
+		"041d0002": "Min Min",
+		"04220002": "Steve"
+	}
 }

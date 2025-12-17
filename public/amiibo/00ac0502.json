@@ -9,16 +9,16 @@
 	},
 	"next": "03060502.html",
 	"prev": "02e20f02.html",
-	"list": [
-		"006c0502",
-		"04e41d02",
-		"03d00502",
-		"026e0e02",
-		"042e0002",
-		"00e90502",
-		"003f0402",
-		"04ba1d02",
-		"03820002",
-		"04380402"
-	]
+	"list": {
+		"00040002": "Link",
+		"004f0502": "Redd",
+		"00ab0502": "Labelle",
+		"00e50502": "Mathilda",
+		"02620102": "Rosalina",
+		"030b0502": "Leopold",
+		"03781402": "Solaire of Astora",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"03bc0502": "Niko",
+		"04ec1d02": "Elena"
+	}
 }
