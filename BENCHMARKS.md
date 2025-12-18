@@ -13,7 +13,7 @@ URLs in total.
 
 The crawler program is written in Go, is uses
 [chromedp](https://github.com/chromedp/chromedp) lib to control the browsers.
-The source code is available in [chromedp/crawler-tabs/](./chromedp/crawler-tabs).
+The source code is available in [chromedp/crawler/](./chromedp/crawler).
 
 This benchmark will get the pages through internet connexion.
 
@@ -61,8 +61,8 @@ We use a Go program to crawl the website.
 
 ```console
 $ cd chromedp
-$ go build -o crawler-tabs crawler-tabs/main.go
-$ ./crawler-tabs/main https://demo-browser.lightpanda.io/amiibo/
+$ go build -o crawler crawler/main.go
+$ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 ```
 
 ## Summary
@@ -92,9 +92,9 @@ $ rm -fr /tmp/bench_chrome; \
 ```
 
 ```
-$ /usr/bin/time -v ./crawler-tabs/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/
+$ /usr/bin/time -v ./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/
 
-        Command being timed: "./crawler-tabs/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/"
+        Command being timed: "./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/"
         User time (seconds): 4.68
         System time (seconds): 2.93
         Percent of CPU this job got: 10%
@@ -128,9 +128,9 @@ $ ./zig-out/bin/lightpanda serve
 ```
 
 ```
-$ /usr/bin/time -v ./crawler-tabs/main --pool 1 https://demo-browser.lightpanda.io/amiibo/
+$ /usr/bin/time -v ./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/
 
-        Command being timed: "./crawler-tabs/main --pool 1 https://demo-browser.lightpanda.io/amiibo/"
+        Command being timed: "./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/"
         User time (securls=933onds): 2.17
         System time (seconds): 1.21
         Percent of CPU this job got: 6%
@@ -171,11 +171,11 @@ $ rm -fr /tmp/bench_chrome; \
 ```
 
 ```
-$ /usr/bin/time -v ./crawler-tabs/main --pool 100 \
+$ /usr/bin/time -v ./crawler/main --pool 100 \
         --cdp ws://127.0.0.1:9222/devtools/browser/4443644c-c476-4597-bd59-cf7ad38ec226 \
         https://demo-browser.lightpanda.io/amiibo/
 
-        Command being timed: "./crawler-tabs/main --pool 100 --cdp ws://127.0.0.1:9222/devtools/browser/4443644c-c476-4597-bd59-cf7ad38ec226 https://demo-browser.lightpanda.io/amiibo/"
+        Command being timed: "./crawler/main --pool 100 --cdp ws://127.0.0.1:9222/devtools/browser/4443644c-c476-4597-bd59-cf7ad38ec226 https://demo-browser.lightpanda.io/amiibo/"
         User time (seconds): 8.10
         System time (seconds): 4.40
         Percent of CPU this job got: 21%
