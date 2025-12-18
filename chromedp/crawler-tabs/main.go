@@ -22,7 +22,9 @@ import (
 	"log/slog"
 	"net/url"
 	"os"
+	"os/exec"
 	"os/signal"
+	"strconv"
 	"syscall"
 
 	"golang.org/x/sync/errgroup"
@@ -61,7 +63,9 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 
 	var (
 		verbose  = flags.Bool("verbose", false, "enable debug log level")
-		cdpws    = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect")
+		cdp      = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ fork")
+		fork     = flags.Bool("fork", false, "Use fork to run lightpanda")
+		lpd_path = flags.String("lpd-path", "", "path to lightpanda process, used with --fork only")
 		poolsize = flags.Uint("pool", 10, "pool size")
 	)
 
@@ -83,6 +87,23 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		slog.SetLogLoggerLevel(slog.LevelDebug)
 	}
 
+	if *fork && *cdp != CdpWSDefault {
+		return errors.New("fork option is not compatible with cdp")
+	}
+
+	if *fork && *lpd_path == "" {
+		return errors.New("fork option requires --lpd-path")
+	}
+
+	var opts *BrowserOpt
+	if *fork {
+		opts = &BrowserOpt{
+			port:    9222,
+			path:    *lpd_path,
+			verbose: *verbose,
+		}
+	}
+
 	args = flags.Args()
 	if len(args) != 1 {
 		return errors.New("url is required")
@@ -91,11 +112,6 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	if err != nil {
 		return fmt.Errorf("invalid url: %w", err)
 	}
-
-	ctx, cancel := chromedp.NewRemoteAllocator(ctx,
-		*cdpws, chromedp.NoModifyURL,
-	)
-	defer cancel()
 
 	queue := make(chan *url.URL)
 	result := make(chan *Page, *poolsize)
@@ -113,7 +129,7 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	}()
 
 	fetch := Fetcher{queue: queue, result: result}
-	if err := fetch.Run(ctx, *poolsize); err != nil {
+	if err := fetch.Run(ctx, *poolsize, *cdp, opts); err != nil {
 		slog.Error("fetcher", slog.Any("err", err))
 	}
 	close(result)
@@ -128,12 +144,48 @@ type Fetcher struct {
 	result chan<- *Page
 }
 
-func (f Fetcher) Run(ctx context.Context, size uint) error {
-	g, ctx := errgroup.WithContext(ctx)
+func (f Fetcher) Run(ctx context.Context, size uint, cdp string, opts *BrowserOpt) error {
+	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
+
+	// No BrowserOpt, use one connection to existing browser.
+	if opts == nil {
+		ctx, cancel = chromedp.NewRemoteAllocator(ctx,
+			cdp, chromedp.NoModifyURL,
+		)
+		defer cancel()
+	}
+
+	gfetch, ctx := errgroup.WithContext(ctx)
+	gfork, ctx := errgroup.WithContext(ctx)
+
 	// start the pool
 	for i := range size {
-		g.Go(func() error {
-			ctx, cancel := chromedp.NewContext(ctx)
+		var lopts BrowserOpt
+		fork := opts != nil
+
+		// With BrowserOpt, start a new browser
+		if fork {
+			lopts = *opts
+			lopts.port += int(i)
+			gfork.Go(func() error {
+				return BrowserRun(ctx, lopts)
+			})
+		}
+
+		gfetch.Go(func() error {
+			ctx := ctx
+			cancel := cancel
+
+			// With BrowserOpt, connect to the new browser.
+			if !fork {
+				ctx, cancel = chromedp.NewRemoteAllocator(ctx,
+					lopts.ws(), chromedp.NoModifyURL,
+				)
+				defer cancel()
+			}
+
+			ctx, cancel = chromedp.NewContext(ctx)
 			defer cancel()
 
 			for {
@@ -153,7 +205,12 @@ func (f Fetcher) Run(ctx context.Context, size uint) error {
 			}
 		})
 	}
-	if err := g.Wait(); err != nil {
+	if err := gfetch.Wait(); err != nil {
+		return err
+	}
+	cancel()
+
+	if err := gfork.Wait(); err != nil {
 		return err
 	}
 
@@ -307,4 +364,39 @@ func env(key, dflt string) string {
 	}
 
 	return val
+}
+
+type BrowserOpt struct {
+	verbose bool
+	port    int
+	path    string
+}
+
+func (b BrowserOpt) ws() string {
+	return fmt.Sprintf("ws://127.0.0.1:%d", b.port)
+}
+
+func BrowserRun(ctx context.Context, opts BrowserOpt) error {
+	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
+
+	cmd := exec.CommandContext(ctx, opts.path,
+		"serve",
+		"--port", strconv.Itoa(opts.port),
+	)
+
+	if opts.verbose {
+		cmd.Stderr = os.Stderr
+		cmd.Stdout = os.Stdout
+	}
+
+	slog.Debug("starting browser", slog.String("cmd", cmd.String()))
+	if err := cmd.Start(); err != nil {
+		return fmt.Errorf("start command: %w", err)
+	}
+
+	// block until the end
+	cmd.Wait()
+
+	return nil
 }
