@@ -26,6 +26,7 @@ import (
 	"os/signal"
 	"strconv"
 	"syscall"
+	"time"
 
 	"golang.org/x/sync/errgroup"
 
@@ -178,7 +179,9 @@ func (f Fetcher) Run(ctx context.Context, size uint, cdp string, opts *BrowserOp
 			cancel := cancel
 
 			// With BrowserOpt, connect to the new browser.
-			if !fork {
+			if fork {
+				// wait readyness
+				time.Sleep(50 * time.Millisecond)
 				ctx, cancel = chromedp.NewRemoteAllocator(ctx,
 					lopts.ws(), chromedp.NoModifyURL,
 				)
