@@ -100,6 +100,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	defer cancel()
 
 	page := b.MustConnect().MustPage()
+	defer page.Close()
 
 	page.Navigate(url)
 	page.MustWaitLoad()
