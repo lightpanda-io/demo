@@ -10,15 +10,15 @@
 	"next": "00b90502.html",
 	"prev": "00540502.html",
 	"list": {
-		"00080002": "Villager",
-		"000a0002": "Kirby",
-		"00c80502": "Savannah",
+		"00170002": "Sheik",
+		"001b0002": "Ganondorf",
+		"007d0502": "Monique",
+		"00a00502": "Bertha",
+		"01410502": "Greta",
 		"01580502": "Monty",
-		"01590502": "Dora",
-		"019d0502": "Peewee",
-		"023e0302": "Mega Yarn Yoshi",
-		"02f00502": "Sylvana",
-		"03661302": "Metroid",
-		"04390402": "Marina - Side Order"
+		"01a30502": "Rory",
+		"01a50502": "Walt",
+		"02470502": "Blathers",
+		"043b1302": "Samus"
 	}
 }
