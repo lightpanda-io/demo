@@ -10,14 +10,15 @@
 	"next": "00230002.html",
 	"prev": "00340102.html",
 	"list": {
-		"00080002": "Villager",
-		"00100002": "Pit",
-		"009f0502": "Henry",
-		"01a80502": "Aurora",
-		"02550c02": "Meta Knight",
-		"02660102": "Daisy",
-		"02850e02": "Wario - Golf",
-		"028f0e02": "Donkey Kong - Golf",
-		"04da1d02": "Zangief"
+		"001a0002": "Wario",
+		"005d0502": "Renée",
+		"006b0502": "Gigi",
+		"007f0502": "Samson",
+		"00970502": "Benjamin",
+		"00db0502": "Wendy",
+		"019d0502": "Peewee",
+		"02bf0e02": "Pink Gold Peach - Baseball",
+		"038b0002": "Simon",
+		"043b1302": "Samus"
 	}
 }

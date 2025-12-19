@@ -10,14 +10,15 @@
 	"next": "03720102.html",
 	"prev": "043f1c02.html",
 	"list": {
-		"00fe0502": "Vic",
-		"014b0502": "Marshal",
-		"017b0502": "Shrunk - Loud Jacket",
-		"018e0502": "Pashmina",
-		"01d50502": "Goldie - Amiibo Festival",
-		"026f0e02": "Luigi - Baseball",
-		"03c10502": "Megan",
-		"03c40502": "Cyd",
-		"04d81d02": "Marisa"
+		"00000002": "Mario",
+		"00160002": "Toon Link",
+		"00300002": "Sonic",
+		"00be0502": "Fuchsia",
+		"013a0502": "Wart Jr.",
+		"018a0502": "Penelope",
+		"025c0d02": "Shadow Mewtwo",
+		"02790e02": "Daisy - Baseball",
+		"02a10e02": "Boo - Baseball",
+		"03ce0502": "Cephalobot"
 	}
 }

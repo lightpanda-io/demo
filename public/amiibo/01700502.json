@@ -10,15 +10,15 @@
 	"next": "00680502.html",
 	"prev": "03520902.html",
 	"list": {
-		"00060002": "Samus",
-		"001c0002": "Falco",
-		"01650502": "Caroline",
-		"017e0502": "Redd - Shirt",
-		"023d0002": "Mewtwo",
-		"02b70e02": "Rosalina - Golf",
-		"02fa0502": "Billy",
-		"036f1202": "Chrom",
-		"037d0002": "Isabelle",
-		"03c10502": "Megan"
+		"00010002": "Peach",
+		"002c0002": "Ness",
+		"00370102": "Yoshi",
+		"01160502": "Grams",
+		"01b50502": "Jacques",
+		"029a0e02": "Bowser - Horse Racing",
+		"03661302": "Metroid",
+		"038f0402": "Octoling Boy",
+		"039fff02": "Yoshi - Power Up Band",
+		"040d0f02": "Ena"
 	}
 }

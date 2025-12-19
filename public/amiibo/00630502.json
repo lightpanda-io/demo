@@ -10,14 +10,15 @@
 	"next": "00150002.html",
 	"prev": "03070502.html",
 	"list": {
-		"00300002": "Sonic",
-		"00bc0502": "Tia",
-		"01b20502": "Annalise",
-		"01d30502": "Robin",
-		"02b10e02": "Birdo - Tennis",
-		"02f70502": "Ursala",
-		"03af0502": "Mabel",
-		"03bf0502": "Isabelle - Sweater",
-		"04f01d02": "Ingrid"
+		"00250002": "Greninja",
+		"002c0002": "Ness",
+		"00a90502": "Reese",
+		"00c10502": "Coach",
+		"01a70502": "Pietro",
+		"023d0002": "Mewtwo",
+		"02740e02": "Peach - Baseball",
+		"02ed0502": "Stella",
+		"04ba1d02": "Zangief",
+		"04d01d02": "Chun-Li"
 	}
 }

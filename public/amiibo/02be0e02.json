@@ -10,15 +10,15 @@
 	"next": "00070002.html",
 	"prev": "006c0502.html",
 	"list": {
-		"00080002": "Villager",
-		"00820502": "Mint",
-		"018f0502": "Shep",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"02740e02": "Peach - Baseball",
-		"02840e02": "Wario - Tennis",
-		"02ea0502": "Piper",
-		"035d0302": "Poochy",
-		"03a80502": "Tom Nook",
-		"04200002": "Kazuya"
+		"000c0002": "Luigi",
+		"00420302": "Pink Yarn Yoshi",
+		"00600502": "Rasher",
+		"02940e02": "Diddy Kong - Golf",
+		"030b0502": "Leopold",
+		"03bf0502": "Isabelle - Sweater",
+		"03d60502": "Roswell",
+		"04111802": "Palamute",
+		"04210002": "Sephiroth",
+		"042c1802": "Palamute"
 	}
 }

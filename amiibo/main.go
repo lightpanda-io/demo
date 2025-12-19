@@ -124,24 +124,18 @@ func fetch(ctx context.Context) ([]Amiibo, error) {
 	return res.List, nil
 }
 
-const tpl = `
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<script>
-(async function () {
-try {
-  const url = '{{ .JSON }}';
-  const response = await fetch(url);
-  if (!response.ok) {
-	throw new Error("Response status: ${response.status}");
+const jsload = `
+async function loadAmiibo(url) {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error("Response status: ${response.status}");
+    }
+    update(await response.json());
+  } catch (error) {
+    console.error(error.message);
   }
-  update(await response.json());
-} catch (error) {
-  console.error(error.message);
 }
-}());
 
 function update(data) {
   document.getElementById('title').textContent = data.amiibo.name;
@@ -174,7 +168,15 @@ function update(data) {
 	alt.append(li);
   }
 }
-		</script>
+`
+
+const tpl = `
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="load.js"></script>
+		<script>loadAmiibo('{{ .JSON }}');</script>
 		<title id="title">Amiibo Character</title>
 	</head>
 	<body>
@@ -193,6 +195,11 @@ function update(data) {
 </html>`
 
 func generate(_ context.Context, list []Amiibo, outdir string) error {
+	// create the js load
+	if err := os.WriteFile(filepath.Join(outdir, "load.json"), []byte(jsload), 0666); err != nil {
+		return fmt.Errorf("write load.js: %w", err)
+	}
+
 	t, err := template.New("amiibo").Parse(tpl)
 	if err != nil {
 		return fmt.Errorf("parse template: %w", err)
