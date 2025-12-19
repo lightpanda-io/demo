@@ -244,6 +244,8 @@ $ /usr/bin/time -v ./crawler/main --pool 100 -fork \
         Exit status: 0
 ```
 
+![btop CPU usage for Lightpanda with 100 processes](img/btop-cpu-lightpanda-100.png)
+
 # Campfire e-commerce Benchmark
 
 ## Methodology
