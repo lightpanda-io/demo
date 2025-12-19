@@ -181,7 +181,7 @@ func (f Fetcher) Run(ctx context.Context, size uint, cdp string, opts *BrowserOp
 			// With BrowserOpt, connect to the new browser.
 			if fork {
 				// wait readyness
-				time.Sleep(50 * time.Millisecond)
+				time.Sleep(100 * time.Millisecond)
 				ctx, cancel = chromedp.NewRemoteAllocator(ctx,
 					lopts.ws(), chromedp.NoModifyURL,
 				)
