@@ -70,6 +70,11 @@ $ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 | Bench | duration | memory peak | % CPU | Pages |
 |--|--|--|--|--|
 | Lightpanda 1 process | 0:49.17 | 126.2M | 3.4% | 933 |
+| Lightpanda 2 process | 0:22.86 | 145.7M | 15.2% | 933 |
+| Lightpanda 5 process | 0:10.29 | 165.7M | 34.8% | 933 |
+| Lightpanda 10 process | 0:05.32 | 203.9M | 72.3% | 933 |
+| Lightpanda 25 process | 0:02.72 | 305.5M | 170.8% | 933 |
+| Lightpanda 100 process | 0:03.66 | 740.9M | 239.4% | 933 |
 | Chrome 1 tab | 1:15.46 | 1.2G | 125.5% | 933 |
 | Chrome 2 tabs | 0:42.79 | 1.3G | 194.9% | 933 |
 | Chrome 5 tabs | 0:35.58 | 1.4G | 203.2% | 933 |
@@ -205,7 +210,39 @@ $ /usr/bin/time -v ./crawler/main --pool 100 \
 
 ### Lightpanda
 
-// TODO
+Lightpanda can't create multi-tabs. So instead we start 100 browser process,
+each on it's own port. The crawler program has `-fork` and `-lpd-path` options
+to enable this mode.
+
+```
+$ /usr/bin/time -v ./crawler/main --pool 100 -fork \
+        --lpd-path ../../browser/zig-out/bin/lightpanda \
+        https://demo-browser.lightpanda.io/amiibo/
+
+        Command being timed: "./crawler/main --pool 100 --fork --lpd-path ../../browser/zig-out/bin/lightpanda https://demo-browser.lightpanda.io/amiibo/"
+        User time (seconds): 9.12
+        System time (seconds): 2.30
+        Percent of CPU this job got: 311%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.66
+        Average shared text size (kbytes): 0
+        Average unshared data size (kbytes): 0
+        Average stack size (kbytes): 0
+        Average total size (kbytes): 0
+        Maximum resident set size (kbytes): 47308
+        Average resident set size (kbytes): 0
+        Major (requiring I/O) page faults: 0
+        Minor (reclaiming a frame) page faults: 255945
+        Voluntary context switches: 23807
+        Involuntary context switches: 12692
+        Swaps: 0
+        File system inputs: 0
+        File system outputs: 0
+        Socket messages sent: 0
+        Socket messages received: 0
+        Signals delivered: 0
+        Page size (bytes): 4096
+        Exit status: 0
+```
 
 # Campfire e-commerce Benchmark
 
