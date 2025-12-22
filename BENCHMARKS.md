@@ -45,13 +45,13 @@ The tests are run in an AWS m5.xlarge (x86_64) with a fresh Ubuntu install.
 
 ### Browsers
 
-We use Google Chrome version 143.0.7499.109
+We use Google Chrome version 143.0.7499.169
 
 ```console
 $ google-chrome-stable --version
-Google Chrome 143.0.7499.109
+Google Chrome 143.0.7499.169
 ```
-And Lightpanda commit [68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564](https://github.com/lightpanda-io/browser/commit/68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564).
+And Lightpanda commit [0efab26c7bedfb55d68891c5fe1b96aeb280c1c6](https://github.com/lightpanda-io/browser/commit/0efab26c7bedfb55d68891c5fe1b96aeb280c1c6).
 
 ### Crawler
 
@@ -69,18 +69,18 @@ $ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 
 | Bench | duration | memory peak | % CPU | Pages |
 |--|--|--|--|--|
-| Lightpanda 1 process | 0:49.17 | 126.2M | 3.4% | 933 |
-| Lightpanda 2 process | 0:22.86 | 145.7M | 15.2% | 933 |
-| Lightpanda 5 process | 0:10.29 | 165.7M | 34.8% | 933 |
-| Lightpanda 10 process | 0:05.32 | 203.9M | 72.3% | 933 |
-| Lightpanda 25 process | 0:02.72 | 305.5M | 170.8% | 933 |
-| Lightpanda 100 process | 0:03.66 | 740.9M | 239.4% | 933 |
-| Chrome 1 tab | 1:15.46 | 1.2G | 125.5% | 933 |
-| Chrome 2 tabs | 0:42.79 | 1.3G | 194.9% | 933 |
-| Chrome 5 tabs | 0:35.58 | 1.4G | 203.2% | 933 |
-| Chrome 10 tabs | 0:37.86 | 1.7G | 233.3% | 933 |
-| Chrome 25 tabs | 0:38.85 | 2.1G | 193% | 933 |
-| Chrome 100 tabs | 0:57.90 | 4.4G | 209.3% | 933 |
+| Lightpanda 1 process | 0:56.81 | 34.8M | 5.6% | 933 |
+| Lightpanda 2 process | 0:29.96 | 41.4M | 11.5% | 933 |
+| Lightpanda 5 process | 0:11.46 | 63.7M | 34.6% | 933 |
+| Lightpanda 10 process | 0:06.15 | 101.8M | 70.6% | 933 |
+| Lightpanda 25 process | 0:03.23 | 215.2M | 185.2% | 933 |
+| Lightpanda 100 process | 0:04.45 | 695.9M | 254.3% | 933 |
+| Chrome 1 tab | 1:22.83 | 1.3G | 124.9% | 933 |
+| Chrome 2 tabs | 0:53.11 | 1.3G | 202.3% | 933 |
+| Chrome 5 tabs | 0:45.66 | 1.6G | 237% | 933 |
+| Chrome 10 tabs | 0:45.62 | 1.7G | 241.6% | 933 |
+| Chrome 25 tabs | 0:46.70 | 2.0G | 254% | 933 |
+| Chrome 100 tabs | 1:09:37 | 4.2G | 229% | 933 |
 
 ## Single tab/process
 
@@ -100,20 +100,20 @@ $ rm -fr /tmp/bench_chrome; \
 $ /usr/bin/time -v ./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/
 
         Command being timed: "./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/browser/46425034-faf3-40e4-8b00-55224d96ecc2  https://demo-browser.lightpanda.io/amiibo/"
-        User time (seconds): 4.68
-        System time (seconds): 2.93
-        Percent of CPU this job got: 10%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 1:15.46
+        User time (seconds): 5.89
+        System time (seconds): 3.64
+        Percent of CPU this job got: 11%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 1:22.83
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 16116
+        Maximum resident set size (kbytes): 15852
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 6007
-        Voluntary context switches: 259587
-        Involuntary context switches: 33023
+        Minor (reclaiming a frame) page faults: 5973
+        Voluntary context switches: 293725
+        Involuntary context switches: 39304
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
@@ -136,20 +136,20 @@ $ ./zig-out/bin/lightpanda serve
 $ /usr/bin/time -v ./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/
 
         Command being timed: "./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/"
-        User time (securls=933onds): 2.17
-        System time (seconds): 1.21
+        User time (seconds): 2.56
+        System time (seconds): 1.33
         Percent of CPU this job got: 6%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:49.17
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.81
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 16256
+        Maximum resident set size (kbytes): 15784
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 4989
-        Voluntary context switches: 117774
-        Involuntary context switches: 1436
+        Minor (reclaiming a frame) page faults: 4483
+        Voluntary context switches: 127756
+        Involuntary context switches: 1662
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
@@ -181,20 +181,20 @@ $ /usr/bin/time -v ./crawler/main --pool 100 \
         https://demo-browser.lightpanda.io/amiibo/
 
         Command being timed: "./crawler/main --pool 100 --cdp ws://127.0.0.1:9222/devtools/browser/4443644c-c476-4597-bd59-cf7ad38ec226 https://demo-browser.lightpanda.io/amiibo/"
-        User time (seconds): 8.10
-        System time (seconds): 4.40
-        Percent of CPU this job got: 21%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:57.90
+        User time (seconds): 9.13
+        System time (seconds): 5.07
+        Percent of CPU this job got: 20%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 1:09.37
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 45916
+        Maximum resident set size (kbytes): 44884
         Average resident set size (kbytes): 0
         Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 14227
-        Voluntary context switches: 392700
-        Involuntary context switches: 84661
+        Minor (reclaiming a frame) page faults: 12816
+        Voluntary context switches: 390124
+        Involuntary context switches: 91106
         Swaps: 0
         File system inputs: 0
         File system outputs: 0
