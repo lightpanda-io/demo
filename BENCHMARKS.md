@@ -82,9 +82,15 @@ $ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 | Chrome 25 tabs | 0:46.70 | 2.0G | 254% | 933 |
 | Chrome 100 tabs | 1:09:37 | 4.2G | 229% | 933 |
 
+![memory usage comparison](./img/memory_comparison.png)
+![cpu usage comparison](./img/cpu_comparison.png)
+
 ## Single tab/process
 
 Run the crawler with one tab for Chrome and one process for Lightpanda.
+
+![1 process memory usage comparison](./img/1p_mem_comparison.png)
+![1 process cpu usage comparison](./img/1p_cpu_comparison.png)
 
 ### Chrome
 
@@ -124,8 +130,6 @@ $ /usr/bin/time -v ./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/br
         Exit status: 0
 ```
 
-![btop CPU usage for chrome with 1 tab](img/btop-cpu-chrome-1.png)
-
 ### Lightpanda
 
 ```
@@ -160,9 +164,19 @@ $ /usr/bin/time -v ./crawler/main --pool 1 https://demo-browser.lightpanda.io/am
         Exit status: 0
 ```
 
-![btop CPU usage for Lightpanda with 1 process](img/btop-cpu-lightpanda-1.png)
-
 ## Multi tabs/processes
+
+Run the crawler with multiple tabs for Chrome and multiple processes for Lightpanda.
+
+Chrome with 25 tabs and Lightpanda with 25 processes
+
+![25 process memory usage comparison](./img/25p_mem_comparison.png)
+![25 process cpu usage comparison](./img/25p_cpu_comparison.png)
+
+Chrome with 100 tabs and Lightpanda with 100 processes
+
+![100 process memory usage comparison](./img/100p_mem_comparison.png)
+![100 processes cpu usage comparison](./img/100p_cpu_comparison.png)
 
 ### Chrome
 
@@ -205,9 +219,6 @@ $ /usr/bin/time -v ./crawler/main --pool 100 \
         Exit status: 0
 ```
 
-![btop CPU usage for Chrome with 100 tabs](img/btop-cpu-chrome-100.png)
-
-
 ### Lightpanda
 
 Lightpanda can't create multi-tabs. So instead we start 100 browser process,
@@ -243,8 +254,6 @@ $ /usr/bin/time -v ./crawler/main --pool 100 -fork \
         Page size (bytes): 4096
         Exit status: 0
 ```
-
-![btop CPU usage for Lightpanda with 100 processes](img/btop-cpu-lightpanda-100.png)
 
 # Campfire e-commerce Benchmark
 
