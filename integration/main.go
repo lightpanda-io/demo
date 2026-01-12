@@ -100,13 +100,13 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"integration/duckduckgo.js"}},
 		{Bin: "node", Args: []string{"integration/algolia.js"}},
 		{Bin: "node", Args: []string{"integration/github.js"}},
-		{Bin: "node", Args: []string{"integration/old-reddit.js"}},
-		{Bin: "node", Args: []string{"integration/reddit.js"}},
-		{Bin: "node", Args: []string{"integration/mastodon.js"}},
 		{Bin: "node", Args: []string{"integration/xange.js"}},
 		{Bin: "node", Args: []string{"integration/readme_wikipedia.js"}},
 		{Bin: "node", Args: []string{"integration/quickstart_wikipedia.js"}},
 		{Bin: "node", Args: []string{"integration/quickstart_hn.js"}},
+		{Bin: "node", Args: []string{"integration/mastodon.js"}},
+		{Bin: "node", Args: []string{"integration/old-reddit.js"}},
+		{Bin: "node", Args: []string{"integration/reddit.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
