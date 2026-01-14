@@ -21,8 +21,11 @@ import (
 	"io"
 	"log"
 	"log/slog"
+	"math/rand/v2"
 	"os"
+	"strconv"
 	"strings"
+	"time"
 
 	"github.com/chromedp/chromedp"
 	"golang.org/x/sync/errgroup"
@@ -60,7 +63,7 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		verbose     = flags.Bool("verbose", false, "enable debug log level")
 		cdpws       = flags.String("cdp", env("CDPCLI_WS", CdpWSDefault), "cdp ws to connect")
 		concurrency = flags.Uint("concurrency", 10, "concurrency conns")
-		navs        = flags.Uint("navs", 2, "navs per conn (we multiply the concurrency idx with navs)")
+		navs        = flags.Uint("navs", 10, "max navs per conn (rand from 1 to max)")
 	)
 
 	// usage func declaration.
@@ -102,10 +105,12 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 
 	for i := range *concurrency {
 		g.Go(func() error {
-			if err := runConn(ctx, opts, url, (*navs)*uint(i+1)); err != nil {
+			id := strconv.Itoa(int(i))
+			navs := rand.UintN((*navs)) + 1
+			if err := runConn(ctx, opts, url, id, navs); err != nil {
 				return err
 			}
-			slog.Info("done", slog.Int("process", int(i)))
+			slog.Info("done", slog.Any("navs", navs), slog.String("id", id))
 
 			return nil
 		})
@@ -114,11 +119,21 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	return g.Wait()
 }
 
-func runConn(ctx context.Context, opts []chromedp.ContextOption, url string, i uint) error {
+// Force a sleep a time between 0 and 100ms.
+// Display the sleep duration in logs
+func sleep(id string) {
+	duration := time.Duration(rand.IntN(10)) * 10 * time.Millisecond
+	slog.Debug("usleep", slog.Any("duration", duration), slog.String("id", id))
+	time.Sleep(duration)
+}
+
+func runConn(ctx context.Context, opts []chromedp.ContextOption, url, id string, i uint) error {
 	is_test := strings.HasSuffix(url, "campfire-commerce/")
 
 	ctx, cancel := chromedp.NewContext(ctx, opts...)
 	defer cancel()
+
+	sleep(id)
 
 	// ensure the first tab is created
 	if err := chromedp.Run(ctx); err != nil {
@@ -126,6 +141,7 @@ func runConn(ctx context.Context, opts []chromedp.ContextOption, url string, i u
 	}
 
 	for range i {
+		sleep(id)
 		err := chromedp.Run(ctx, chromedp.Navigate(url))
 		if err != nil {
 			return fmt.Errorf("navigate %s: %w", url, err)
