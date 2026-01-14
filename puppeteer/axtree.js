@@ -30,10 +30,9 @@ const client = page._client();
 
 await page.goto(url);
 
-const axtree = await client.send('Accessibility.getFullAXTree');
+const axtree = await client.send('Accessibility.getFullAXTree', {});
 console.log(JSON.stringify(axtree));
 
-await client.detach();
 await page.close();
 await context.close();
 await browser.disconnect();
