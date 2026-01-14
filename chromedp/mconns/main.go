@@ -117,12 +117,13 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	return g.Wait()
 }
 
-// Force a sleep a time between 0 and 100ms.
+// Force a sleep a time between 0 and 200ms.
 // Display the sleep duration in logs
-func sleep(id string) {
-	duration := time.Duration(rand.IntN(10)) * 10 * time.Millisecond
+func sleep(id string) time.Duration {
+	duration := time.Duration(rand.IntN(20)) * 10 * time.Millisecond
 	slog.Debug("usleep", slog.Any("duration", duration), slog.String("id", id))
 	time.Sleep(duration)
+	return duration
 }
 
 func runConn(ctx context.Context, ws string, opts []chromedp.ContextOption, url, id string, i uint) error {
