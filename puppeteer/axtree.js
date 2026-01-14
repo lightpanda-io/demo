@@ -26,15 +26,14 @@ const browser = await puppeteer.connect({
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
+const client = page._client();
 
 await page.goto(url);
 
-const client = await page.target().createCDPSession();
 const axtree = await client.send('Accessibility.getFullAXTree');
-
 console.log(JSON.stringify(axtree));
 
-
+await client.detach();
 await page.close();
 await context.close();
 await browser.disconnect();
