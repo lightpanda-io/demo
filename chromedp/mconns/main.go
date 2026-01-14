@@ -90,11 +90,6 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	}
 	url := args[0]
 
-	ctx, cancel := chromedp.NewRemoteAllocator(ctx,
-		*cdpws, chromedp.NoModifyURL,
-	)
-	defer cancel()
-
 	// build context options
 	var opts []chromedp.ContextOption
 	if *verbose {
@@ -107,8 +102,11 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		g.Go(func() error {
 			id := strconv.Itoa(int(i))
 			navs := rand.UintN((*navs)) + 1
-			if err := runConn(ctx, opts, url, id, navs); err != nil {
-				return err
+			if err := runConn(ctx, *cdpws, opts, url, id, navs); err != nil {
+				if !errors.Is(err, context.Canceled) {
+					slog.Error("error", slog.Any("err", err), slog.Any("navs", navs), slog.String("id", id))
+				}
+				return fmt.Errorf("id %s: %w", id, err)
 			}
 			slog.Info("done", slog.Any("navs", navs), slog.String("id", id))
 
@@ -127,13 +125,16 @@ func sleep(id string) {
 	time.Sleep(duration)
 }
 
-func runConn(ctx context.Context, opts []chromedp.ContextOption, url, id string, i uint) error {
+func runConn(ctx context.Context, ws string, opts []chromedp.ContextOption, url, id string, i uint) error {
 	is_test := strings.HasSuffix(url, "campfire-commerce/")
 
-	ctx, cancel := chromedp.NewContext(ctx, opts...)
+	sleep(id)
+
+	ctx, cancel := chromedp.NewRemoteAllocator(ctx, ws, chromedp.NoModifyURL)
 	defer cancel()
 
-	sleep(id)
+	ctx, cancel = chromedp.NewContext(ctx, opts...)
+	defer cancel()
 
 	// ensure the first tab is created
 	if err := chromedp.Run(ctx); err != nil {
