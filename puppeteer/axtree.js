@@ -28,12 +28,11 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 const client = page._client();
 
-await page.goto(url);
+await page.goto(url, { waitUntil: 'networkidle0'});
 
-const axtree = await client.send('Accessibility.getFullAXTree');
+const axtree = await client.send('Accessibility.getFullAXTree', {});
 console.log(JSON.stringify(axtree));
 
-await client.detach();
 await page.close();
 await context.close();
 await browser.disconnect();
