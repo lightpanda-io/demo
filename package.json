@@ -21,6 +21,7 @@
   },
   "homepage": "https://lightpanda.io",
   "dependencies": {
+    "@browserbasehq/stagehand": "^3.0.7",
     "playwright": "^1.42.1",
     "puppeteer-core": "^24.10.1"
   }
