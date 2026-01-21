@@ -51,7 +51,8 @@ We use Google Chrome version 143.0.7499.169
 $ google-chrome-stable --version
 Google Chrome 143.0.7499.169
 ```
-And Lightpanda commit [0efab26c7bedfb55d68891c5fe1b96aeb280c1c6](https://github.com/lightpanda-io/browser/commit/0efab26c7bedfb55d68891c5fe1b96aeb280c1c6).
+
+And Lightpanda commit [7b1f157cf8ccbdded7db6ab47e94577495ee87e4](https://github.com/lightpanda-io/browser/commit/7b1f157cf8ccbdded7db6ab47e94577495ee87e4).
 
 ### Crawler
 
@@ -69,12 +70,12 @@ $ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 
 | Bench | duration | memory peak | % CPU | Pages |
 |--|--|--|--|--|
-| Lightpanda 1 process | 0:56.81 | 34.8M | 5.6% | 933 |
-| Lightpanda 2 process | 0:29.96 | 41.4M | 11.5% | 933 |
-| Lightpanda 5 process | 0:11.46 | 63.7M | 34.6% | 933 |
-| Lightpanda 10 process | 0:06.15 | 101.8M | 70.6% | 933 |
-| Lightpanda 25 process | 0:03.23 | 215.2M | 185.2% | 933 |
-| Lightpanda 100 process | 0:04.45 | 695.9M | 254.3% | 933 |
+| Lightpanda 1 process | 0:51.68 | 27.2M | 11.1% | 933 |
+| Lightpanda 2 process | 0:29.79 | 31.7M | 26.6% | 933 |
+| Lightpanda 5 process | 0:11.70 | 43.9M | 71.6% | 933 |
+| Lightpanda 10 process | 0:06.76 | 63.7M | 135.3% | 933 |
+| Lightpanda 25 process | 0:04.81 | 123.0M | 204.7% | 933 |
+| Lightpanda 100 process | 0:05.23 | 410.2M | 202.8% | 933 |
 | Chrome 1 tab | 1:22.83 | 1.3G | 124.9% | 933 |
 | Chrome 2 tabs | 0:53.11 | 1.3G | 202.3% | 933 |
 | Chrome 5 tabs | 0:45.66 | 1.6G | 237% | 933 |
@@ -133,29 +134,29 @@ $ /usr/bin/time -v ./crawler/main --pool 1 --cdp ws://127.0.0.1:9222/devtools/br
 ### Lightpanda
 
 ```
-$ ./zig-out/bin/lightpanda serve
+$ ./lightpanda serve
 ```
 
 ```
 $ /usr/bin/time -v ./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/
 
         Command being timed: "./crawler/main --pool 1 https://demo-browser.lightpanda.io/amiibo/"
-        User time (seconds): 2.56
-        System time (seconds): 1.33
+        User time (seconds): 2.12
+        System time (seconds): 1.12
         Percent of CPU this job got: 6%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:56.81
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:51.68
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 15784
+        Maximum resident set size (kbytes): 15388
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 4483
-        Voluntary context switches: 127756
-        Involuntary context switches: 1662
+        Major (requiring I/O) page faults: 67
+        Minor (reclaiming a frame) page faults: 4133
+        Voluntary context switches: 108859
+        Involuntary context switches: 1166
         Swaps: 0
-        File system inputs: 0
+        File system inputs: 15152
         File system outputs: 0
         Socket messages sent: 0
         Socket messages received: 0
@@ -226,27 +227,27 @@ each on it's own port. The crawler program has `-fork` and `-lpd-path` options
 to enable this mode.
 
 ```
-$ /usr/bin/time -v ./crawler/main --pool 100 -fork \
-        --lpd-path ../../browser/zig-out/bin/lightpanda \
+$ /usr/bin/time -v ./crawler/main --pool 100 --fork \
+        --lpd-path ../../lightpanda \
         https://demo-browser.lightpanda.io/amiibo/
 
-        Command being timed: "./crawler/main --pool 100 --fork --lpd-path ../../browser/zig-out/bin/lightpanda https://demo-browser.lightpanda.io/amiibo/"
-        User time (seconds): 9.12
-        System time (seconds): 2.30
-        Percent of CPU this job got: 311%
-        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.66
+        Command being timed: "./crawler/main --pool 100 --fork --lpd-path ../../lightpanda https://demo-browser.lightpanda.io/amiibo/"
+        User time (seconds): 11.80
+        System time (seconds): 2.17
+        Percent of CPU this job got: 266%
+        Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.23
         Average shared text size (kbytes): 0
         Average unshared data size (kbytes): 0
         Average stack size (kbytes): 0
         Average total size (kbytes): 0
-        Maximum resident set size (kbytes): 47308
+        Maximum resident set size (kbytes): 51400
         Average resident set size (kbytes): 0
-        Major (requiring I/O) page faults: 0
-        Minor (reclaiming a frame) page faults: 255945
-        Voluntary context switches: 23807
-        Involuntary context switches: 12692
+        Major (requiring I/O) page faults: 2
+        Minor (reclaiming a frame) page faults: 253270
+        Voluntary context switches: 31865
+        Involuntary context switches: 16069
         Swaps: 0
-        File system inputs: 0
+        File system inputs: 48
         File system outputs: 0
         Socket messages sent: 0
         Socket messages received: 0
@@ -369,11 +370,11 @@ $ watch -n0.1 "./stat.sh chrome |tee -a chrome"
 
 **Lightpanda browser**
 
-And Lightpanda commit [68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564](https://github.com/lightpanda-io/browser/commit/68e9d3b9ea560d1c01e4c4aa0008f3ff01a0b564).
+We use Lightpanda commit [7b1f157cf8ccbdded7db6ab47e94577495ee87e4](https://github.com/lightpanda-io/browser/commit/7b1f157cf8ccbdded7db6ab47e94577495ee87e4).
 
 You have to start Lightpanda browser.
 ```console
-/usr/bin/time -v ./lightpanda
+$ ./lightpanda serve
 ```
 
 Then you can run the benchmark.
@@ -383,17 +384,17 @@ $ npm run bench-puppeteer-cdp
 > demo@1.0.0 bench-puppeteer-cdp
 > node puppeteer/cdp.js
 
-.
-................................................................................
+.................................................................................
 ...................
-total duration (ms) 2418
-avg run duration (ms) 23
-min run duration (ms) 19
-max run duration (ms) 39
+total runs 100
+total duration (ms) 1698
+avg run duration (ms) 16
+min run duration (ms) 12
+max run duration (ms) 47
 ```
 
 ```
-$ watch -n0.1 "./stat.sh lightpanda |tee -a lightpanda"
+$ watch -n0.1 "./stats.sh lightpanda |tee -a lightpanda.stat"
 # peak is
-27.7M        Total CPU: 6.7%
+21.2M        Total CPU: 4.6%
 ```
