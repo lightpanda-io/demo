@@ -84,7 +84,6 @@ $ ./crawler/main https://demo-browser.lightpanda.io/amiibo/
 | Chrome 100 tabs | 1:09:37 | 4.2G | 229% | 933 |
 
 ![memory usage comparison](./img/memory_comparison.png)
-![cpu usage comparison](./img/cpu_comparison.png)
 
 ## Single tab/process
 
