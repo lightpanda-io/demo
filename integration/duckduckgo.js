@@ -29,7 +29,7 @@ const page = await context.newPage();
 
 await page.goto('https://duckduckgo.com', {waitUntil: 'networkidle0', timeout: 10000});
 
-await page.type('#searchbox_input','lightpanda'),
+await page.type('input[name=q]','lightpanda'),
 await Promise.all([
   page.waitForNavigation({waitUntil: 'networkidle0'}),
   page.keyboard.press('Enter'),
