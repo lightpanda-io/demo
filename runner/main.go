@@ -121,6 +121,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "ri/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "fromnode/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "crawler/main.go", "--limit=100", "--pool=1", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "dump/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 		{Bin: "go", Args: []string{"run", "title/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 
