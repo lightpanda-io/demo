@@ -115,6 +115,11 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		return fmt.Errorf("invalid url: %w", err)
 	}
 
+	is_test := false
+	if args[0] == "http://127.0.0.1:1234/" && *limit > 0 {
+		is_test = true
+	}
+
 	queue := make(chan *url.URL)
 	result := make(chan *Page, *poolsize)
 
@@ -138,6 +143,10 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	close(result)
 
 	slog.Info("Crawler results", slog.Any("urls", len(crawler.known)))
+
+	if is_test && int(*limit) != len(crawler.known) {
+		return fmt.Errorf("Unexpected URL crawled: expected %d but %d", *limit, len(crawler.known))
+	}
 
 	return nil
 }
