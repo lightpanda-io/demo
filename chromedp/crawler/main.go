@@ -68,6 +68,7 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		fork     = flags.Bool("fork", false, "Use fork to run lightpanda")
 		lpd_path = flags.String("lpd-path", "", "path to lightpanda process, used with --fork only")
 		poolsize = flags.Uint("pool", 10, "pool size")
+		limit    = flags.Uint("limit", 0, "limit of url to crawl, 0 for no limit.")
 	)
 
 	// usage func declaration.
@@ -121,6 +122,7 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 		queue:  queue,
 		result: result,
 		known:  make(Known),
+		limit:  int(*limit),
 	}
 	go func() {
 		if err := crawler.Run(ctx, u); err != nil {
@@ -280,6 +282,7 @@ type Crawler struct {
 	queue  chan<- *url.URL
 	result <-chan *Page
 	known  Known
+	limit  int
 }
 
 func (c *Crawler) append(u *url.URL, s State) {
@@ -324,6 +327,11 @@ func (c *Crawler) Run(ctx context.Context, seed *url.URL) error {
 
 			count := 0
 			for _, u := range p.Links {
+				// check the url to crawl limit.
+				if c.limit > 0 && len(c.known) >= c.limit {
+					break
+				}
+
 				count = 0
 				// use only links with the same domain than seed.
 				if seed.Host != u.Host {
