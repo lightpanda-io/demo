@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<body>
+<form method=post action=submit onsubmit="onSubmit" enctype="application/x-www-form-urlencoded">
+  <input type=hidden name=field id=field value=original>
+  <input type=submit id=submit>
+</form>
+
+<script>
+  function onSubmit() {
+      document.getElementById('field').value = 'updated';
+  }
+</script>
+
