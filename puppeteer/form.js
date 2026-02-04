@@ -62,6 +62,14 @@ await testForm(page, '/form/input_button.html', {
   await page.click("[name=b1]");
 });
 
+await testForm(page, '/form/onsubmit.html', {
+  method: 'POST',
+  body: 'field=updated',
+  query: '',
+}, async () => {
+  await page.click("#submit");
+});
+
 await context.close();
 await browser.disconnect();
 
