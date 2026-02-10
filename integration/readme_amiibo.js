@@ -28,7 +28,7 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
 // Dump all the links from the page.
-await page.goto('https://wikipedia.com/');
+await page.goto('https://demo-browser.lightpanda.io/amiibo/', {waitUntil: "networkidle0"});
 
 const links = await page.evaluate(() => {
   return Array.from(document.querySelectorAll('a')).map(row => {
@@ -40,15 +40,7 @@ await page.close();
 await context.close();
 await browser.disconnect();
 
-let found = false;
-for (const link of links) {
-  if (link === '//en.wikipedia.org/') {
-    found = true;
-    break;
-  }
-}
-
-if (!found) {
+if (links.length != 12) {
   console.log("Failed to find expected links");
   throw new Error("invalid results");
 }
