@@ -27,7 +27,7 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto(url, {waitUntil: 'load'});
+await page.goto(url, {waitUntil: "networkidle0"});
 
 const links = await page.evaluate(() => {
   return Array.from(document.querySelectorAll('a')).map(row => {
