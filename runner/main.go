@@ -108,6 +108,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
+		{Bin: "node", Args: []string{"puppeteer/multi.js"}},
 		//{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}}, // FIXME this test doesn't work on ci
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
@@ -121,7 +122,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "ri/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "fromnode/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
-		{Bin: "go", Args: []string{"run", "crawler/main.go", "--limit=100", "--pool=1", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "crawler/main.go", "--limit=100", "--pool=10", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "mconns/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "dump/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 		{Bin: "go", Args: []string{"run", "title/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 
