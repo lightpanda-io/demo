@@ -1,0 +1,15 @@
+[package]
+name = "cdp"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "cdp"
+path = "src/main.rs"
+
+[dependencies]
+chromiumoxide = "0.8"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
