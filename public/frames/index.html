@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<iframe onload="frameLoad()" src="frame1.html"></iframe>
+<script>
+function frameLoad() {
+  window.frame1_content = window[0].document.body.innerHTML;
+}
+</script>
