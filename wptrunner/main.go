@@ -68,8 +68,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		cdp         = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ fork")
 		concurrency = flags.Uint("concurrency", 10, "concurrency")
 		filter      = flags.String("filter", os.Getenv("FILTER"), "filter tests to run")
-		json        = flags.Bool("json", false, "format output in JSON")
-		summary     = flags.Bool("summary", false, "Display a summary")
+		outjson     = flags.Bool("json", false, "format output in JSON")
+		outsummary  = flags.Bool("summary", false, "Display a summary")
 	)
 
 	// usage func declaration.
@@ -149,11 +149,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						if !ok {
 							return nil
 						}
-						res, err := runtest(ctx, *cdp, *wptAddr, t)
-						if err != nil {
-							return fmt.Errorf("runtest %s: %w", t, err)
-						}
-						testresults <- res
+						testresults <- runtest(ctx, *cdp, *wptAddr, t)
 					}
 				}
 			})
@@ -163,29 +159,55 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	// start the reporter reading testresults.
 	wg.Go(func() error {
+		var encoder *json.Encoder
+		if *outjson {
+			fmt.Fprint(stdout, "[")
+			defer fmt.Fprint(stdout, "]")
+			encoder = json.NewEncoder(stdout)
+		}
+
+		total := len(tests)
+		var run, success int
 		for res := range testresults {
-			if *json {
+			run++
+			if res.Pass {
+				success++
+			}
+
+			if *outjson {
+				if run > 1 {
+					fmt.Fprint(stdout, ",")
+				}
+				encoder.Encode(res)
 				continue
 			}
 
-			// text output
-			fmt.Fprintf(stdout, "%s %d/%d\t%s\n",
-				FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name,
-			)
+			fmt.Fprintf(stderr, "\r=== status %d/%d (%d Pass) ", run, total, success)
 
-			if *summary {
+			// text output
+			if *outsummary || res.Message == "" {
+				fmt.Fprintf(stdout, "%s %d/%d\t%s\n",
+					FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name,
+				)
+			} else {
+				fmt.Fprintf(stdout, "%s %d/%d\t%s\n\t%s\n",
+					FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name, res.Message,
+				)
+			}
+
+			if *outsummary {
 				continue
 			}
 
 			// Details
 			for _, c := range res.Cases {
-				if c.Message != "" {
-					fmt.Fprintf(stdout, "\t%s\t%s\n\t\t%s\n",
-						FormatSuccess(c.Pass), c.Name, c.Message,
-					)
-				} else {
+				if c.Message == "" {
 					fmt.Fprintf(stdout, "\t%s\t%s\n",
 						FormatSuccess(c.Pass), c.Name,
+					)
+				} else {
+					fmt.Fprintf(stdout, "\t%s\t%s\n\t\t%s\n",
+						FormatSuccess(c.Pass), c.Name, c.Message,
 					)
 				}
 			}
@@ -201,15 +223,18 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	return nil
 }
 
+type TestCase struct {
+	Pass    bool   `json:"pass"`
+	Name    string `json:"name"`
+	Message string `json:"message,omitempty"`
+}
+
 type TestResult struct {
-	Pass  bool
-	Crash bool
-	Name  string
-	Cases []struct {
-		Pass    bool
-		Name    string
-		Message string
-	}
+	Pass    bool       `json:"pass"`
+	Crash   bool       `json:"crash"`
+	Name    string     `json:"name"`
+	Message string     `json:"message,omitempty"`
+	Cases   []TestCase `json:"cases,omitempty"`
 }
 
 func FormatSuccess(pass bool) string {
@@ -237,11 +262,16 @@ func (r *TestResult) CountOK() int {
 
 // runtest connect to the browser, navigates to the test url and get the test
 // results.
-func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
+func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 	u := addr + test
 	slog.Debug("run test", slog.Any("url", u))
 
-	ctx, cancel := chromedp.NewRemoteAllocator(ctx,
+	res := &TestResult{Name: test}
+
+	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
+	defer cancel()
+
+	ctx, cancel = chromedp.NewRemoteAllocator(ctx,
 		cdp, chromedp.NoModifyURL,
 	)
 	defer cancel()
@@ -251,7 +281,8 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 
 	err := chromedp.Run(ctx, chromedp.Navigate(u))
 	if err != nil {
-		return nil, fmt.Errorf("navigate %v: %w", u, err)
+		res.Message = strings.TrimSpace(err.Error())
+		return res
 	}
 
 	var status, report string
@@ -261,24 +292,21 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	)
 	// invalid test result.
 	if err != nil {
-		return &TestResult{
-			Name: test,
-		}, nil
+		res.Message = strings.TrimSpace(err.Error())
+		return res
 	}
 
 	// parse the log
-	res := &TestResult{Name: test, Pass: true}
+	res.Pass = true
 	lines := strings.Split(strings.TrimSpace(report), "\n")
 	for _, l := range lines {
 		name, tail, ok := strings.Cut(l, "|")
 		if !ok {
 			// invalid format
-			res.Cases = append(res.Cases, struct {
-				Pass    bool
-				Name    string
-				Message string
-			}{
-				Name: "Invalid report format", Message: l, Pass: false,
+			res.Cases = append(res.Cases, TestCase{
+				Pass:    false,
+				Name:    "Invalid report format",
+				Message: l,
 			})
 			continue
 		}
@@ -289,16 +317,14 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 			res.Pass = false
 		}
 
-		res.Cases = append(res.Cases, struct {
-			Pass    bool
-			Name    string
-			Message string
-		}{
-			Name: strings.TrimSpace(name), Message: strings.TrimSpace(msg), Pass: pass,
+		res.Cases = append(res.Cases, TestCase{
+			Pass:    pass,
+			Name:    strings.TrimSpace(name),
+			Message: strings.TrimSpace(msg),
 		})
 	}
 
-	return res, nil
+	return res
 }
 
 // env returns the env value corresponding to the key or the default string.
