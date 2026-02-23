@@ -1,0 +1,413 @@
+// Copyright 2023-2026 Lightpanda (Selecy SAS)
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//	http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+package main
+
+import (
+	"context"
+	"encoding/json"
+	"errors"
+	"flag"
+	"fmt"
+	"io"
+	"log/slog"
+	"net/http"
+	"net/url"
+	"os"
+	"os/signal"
+	"strings"
+	"syscall"
+	"time"
+
+	"github.com/chromedp/chromedp"
+	"golang.org/x/sync/errgroup"
+)
+
+const (
+	exitOK   = 0
+	exitFail = 1
+)
+
+// main starts interruptable context and runs the program.
+func main() {
+	ctx, cancel := signal.NotifyContext(context.Background(), syscall.SIGTERM, syscall.SIGINT)
+	defer cancel()
+
+	err := run(ctx, os.Args, os.Stdout, os.Stderr)
+	if err != nil {
+		fmt.Fprintln(os.Stderr, err.Error())
+		os.Exit(exitFail)
+	}
+
+	os.Exit(exitOK)
+}
+
+const (
+	CdpWSDefault   = "ws://127.0.0.1:9222"
+	WPTAddrDefault = "http://web-platform.test:8000"
+)
+
+func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
+	// declare runtime flag parameters.
+	flags := flag.NewFlagSet(args[0], flag.ExitOnError)
+	flags.SetOutput(stderr)
+
+	var (
+		verbose     = flags.Bool("verbose", false, "enable debug log level")
+		wptAddr     = flags.String("wpt-addr", env("WPT_ADDR", WPTAddrDefault), "WPT server address")
+		cdp         = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ fork")
+		concurrency = flags.Uint("concurrency", 10, "concurrency")
+		filter      = flags.String("filter", os.Getenv("FILTER"), "filter tests to run")
+		json        = flags.Bool("json", false, "format output in JSON")
+		summary     = flags.Bool("summary", false, "Display a summary")
+	)
+
+	// usage func declaration.
+	bin := args[0]
+	flags.Usage = func() {
+		fmt.Fprintf(stderr, "usage: %s\n", bin)
+		fmt.Fprintf(stderr, "Run WPT test via a CDP connection\n")
+		fmt.Fprintf(stderr, "\nCommand line options:\n")
+		flags.PrintDefaults()
+		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
+		fmt.Fprintf(stderr, "\tWPT_ADDR\tdefault %s\n", WPTAddrDefault)
+		fmt.Fprintf(stderr, "\tCDP_WS\tdefault %s\n", CdpWSDefault)
+		fmt.Fprintf(stderr, "\tFILTER\n")
+	}
+	if err := flags.Parse(args[1:]); err != nil {
+		return err
+	}
+
+	if *verbose {
+		slog.SetLogLoggerLevel(slog.LevelDebug)
+	}
+
+	args = flags.Args()
+
+	if len(args) != 0 {
+		return errors.New("too much arguments")
+	}
+
+	// fetch the manifest
+	tests, err := fetchManifest(ctx, *wptAddr)
+	if err != nil {
+		return fmt.Errorf("manifest: %w", err)
+	}
+	slog.Info("test suite", slog.Any("length", len(tests)))
+
+	// queue channel is used to dispatch the tests from the producer to runners.
+	queue := make(chan string)
+	// testresults channel pipes test results from the runners to the reporter.
+	testresults := make(chan *TestResult)
+
+	wg, ctx := errgroup.WithContext(ctx)
+
+	// start the producer which append tests urls into queue.
+	wg.Go(func() error {
+		defer close(queue)
+
+		for _, t := range tests {
+
+			// apply filter
+			if *filter != "" && !strings.Contains(t, *filter) {
+				continue
+			}
+
+			select {
+			case <-ctx.Done():
+				return nil
+			case queue <- t:
+				// nothing here
+			}
+		}
+		return nil
+	})
+
+	// start the pool of runners which take a test url from the queue, run the
+	// test and publish result into testresults.
+	wg.Go(func() error {
+		defer close(testresults)
+		pool, ctx := errgroup.WithContext(ctx)
+
+		for range *concurrency {
+			pool.Go(func() error {
+				for {
+					select {
+					case <-ctx.Done():
+						return nil
+					case t, ok := <-queue:
+						if !ok {
+							return nil
+						}
+						res, err := runtest(ctx, *cdp, *wptAddr, t)
+						if err != nil {
+							return fmt.Errorf("runtest %s: %w", t, err)
+						}
+						testresults <- res
+					}
+				}
+			})
+		}
+		return pool.Wait()
+	})
+
+	// start the reporter reading testresults.
+	wg.Go(func() error {
+		for res := range testresults {
+			if *json {
+				continue
+			}
+
+			// text output
+			fmt.Fprintf(stdout, "%s %d/%d\t%s\n",
+				FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name,
+			)
+
+			if *summary {
+				continue
+			}
+
+			// Details
+			for _, c := range res.Cases {
+				if c.Message != "" {
+					fmt.Fprintf(stdout, "\t%s\t%s\n\t\t%s\n",
+						FormatSuccess(c.Pass), c.Name, c.Message,
+					)
+				} else {
+					fmt.Fprintf(stdout, "\t%s\t%s\n",
+						FormatSuccess(c.Pass), c.Name,
+					)
+				}
+			}
+		}
+
+		return nil
+	})
+
+	if err := wg.Wait(); err != nil {
+		return fmt.Errorf("wg: %w", err)
+	}
+
+	return nil
+}
+
+type TestResult struct {
+	Pass  bool
+	Crash bool
+	Name  string
+	Cases []struct {
+		Pass    bool
+		Name    string
+		Message string
+	}
+}
+
+func FormatSuccess(pass bool) string {
+	if pass {
+		return "Pass"
+	}
+
+	return "Fail"
+}
+
+func (r *TestResult) Total() int {
+	return len(r.Cases)
+}
+
+func (r *TestResult) CountOK() int {
+	cpt := 0
+	for _, c := range r.Cases {
+		if c.Pass {
+			cpt++
+		}
+	}
+
+	return cpt
+}
+
+// runtest connect to the browser, navigates to the test url and get the test
+// results.
+func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
+	u := addr + test
+	slog.Debug("run test", slog.Any("url", u))
+
+	ctx, cancel := chromedp.NewRemoteAllocator(ctx,
+		cdp, chromedp.NoModifyURL,
+	)
+	defer cancel()
+
+	ctx, cancel = chromedp.NewContext(ctx)
+	defer cancel()
+
+	err := chromedp.Run(ctx, chromedp.Navigate(u))
+	if err != nil {
+		return nil, fmt.Errorf("navigate %v: %w", u, err)
+	}
+
+	var status, report string
+	err = chromedp.Run(ctx,
+		chromedp.Evaluate(`report.status;`, &status),
+		chromedp.Evaluate(`report.log;`, &report),
+	)
+	// invalid test result.
+	if err != nil {
+		return &TestResult{
+			Name: test,
+		}, nil
+	}
+
+	// parse the log
+	res := &TestResult{Name: test, Pass: true}
+	lines := strings.Split(strings.TrimSpace(report), "\n")
+	for _, l := range lines {
+		name, tail, ok := strings.Cut(l, "|")
+		if !ok {
+			// invalid format
+			res.Cases = append(res.Cases, struct {
+				Pass    bool
+				Name    string
+				Message string
+			}{
+				Name: "Invalid report format", Message: l, Pass: false,
+			})
+			continue
+		}
+
+		status, msg, _ := strings.Cut(tail, "|")
+		pass := status == "Pass"
+		if !pass {
+			res.Pass = false
+		}
+
+		res.Cases = append(res.Cases, struct {
+			Pass    bool
+			Name    string
+			Message string
+		}{
+			Name: strings.TrimSpace(name), Message: strings.TrimSpace(msg), Pass: pass,
+		})
+	}
+
+	return res, nil
+}
+
+// env returns the env value corresponding to the key or the default string.
+func env(key, dflt string) string {
+	val, ok := os.LookupEnv(key)
+	if !ok {
+		return dflt
+	}
+
+	return val
+}
+
+// fetchManifest request /MANIFEST.json file and extract test harness test urls.
+func fetchManifest(ctx context.Context, addr string) ([]string, error) {
+	u, err := url.JoinPath(addr, "MANIFEST.json")
+	if err != nil {
+		return nil, fmt.Errorf("create url: %w", err)
+	}
+
+	req, err := http.NewRequestWithContext(ctx, "GET", u, nil)
+	if err != nil {
+		return nil, fmt.Errorf("new req: %w", err)
+	}
+
+	cli := http.Client{
+		Timeout: 30 * time.Second,
+	}
+	resp, err := cli.Do(req)
+	if err != nil {
+		return nil, fmt.Errorf("do req: %w", err)
+	}
+	defer resp.Body.Close()
+
+	var manifest struct {
+		Items struct {
+			Testharness map[string]json.RawMessage `json:"testharness"`
+		} `json:"items"`
+		URLBase string `json:"url_base"`
+		Version int    `json:"version"`
+	}
+
+	dec := json.NewDecoder(resp.Body)
+	if err := dec.Decode(&manifest); err != nil {
+		return nil, fmt.Errorf("json decode: %w", err)
+	}
+
+	base := manifest.URLBase
+	if base == "" {
+		base = "/"
+	}
+
+	urls := make([]string, 0, 4000)
+	if err := walkManifest(manifest.Items.Testharness, "", base, &urls); err != nil {
+		return nil, err
+	}
+
+	return urls, nil
+}
+
+// walkManifest recursively walks the testharness directory tree.
+// Leaves are entries whose value is a JSON array (not an object).
+func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls *[]string) error {
+	for key, raw := range node {
+		// Determine whether this value is an object (subdirectory) or array (file entry).
+		trimmed := json.RawMessage(raw)
+		if len(trimmed) == 0 {
+			continue
+		}
+
+		switch trimmed[0] {
+		case '{':
+			// Subdirectory — recurse.
+			var sub map[string]json.RawMessage
+			if err := json.Unmarshal(trimmed, &sub); err != nil {
+				return fmt.Errorf("unmarshal subdir %q: %w", key, err)
+			}
+			if err := walkManifest(sub, pathPrefix+"/"+key, base, urls); err != nil {
+				return err
+			}
+
+		case '[':
+			// File entry: ["<hash>", [<url_or_null>, <opts>], ...]
+			// The array may contain multiple test variants.
+			var entry []json.RawMessage
+			if err := json.Unmarshal(trimmed, &entry); err != nil {
+				return fmt.Errorf("unmarshal entry %q: %w", key, err)
+			}
+			// entry[0] is the hash string; entry[1..] are variants.
+			filePath := pathPrefix + "/" + key
+			for _, variantRaw := range entry[1:] {
+				// Each variant is [<url_or_null>, <options_object>]
+				var variant [2]json.RawMessage
+				if err := json.Unmarshal(variantRaw, &variant); err != nil {
+					return fmt.Errorf("unmarshal variant for %q: %w", key, err)
+				}
+				var u string
+				if string(variant[0]) == "null" {
+					// Construct URL from tree path.
+					u = base + filePath[1:] // strip leading "/"
+				} else {
+					// Explicit URL provided (strip surrounding quotes).
+					if err := json.Unmarshal(variant[0], &u); err != nil {
+						return fmt.Errorf("unmarshal url for %q: %w", key, err)
+					}
+					u = base + u
+				}
+				*urls = append(*urls, u)
+			}
+		}
+	}
+	return nil
+}
