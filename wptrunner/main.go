@@ -16,7 +16,6 @@ package main
 import (
 	"context"
 	"encoding/json"
-	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -25,6 +24,7 @@ import (
 	"net/url"
 	"os"
 	"os/signal"
+	"sort"
 	"strings"
 	"syscall"
 	"time"
@@ -67,7 +67,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		wptAddr     = flags.String("wpt-addr", env("WPT_ADDR", WPTAddrDefault), "WPT server address")
 		cdp         = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ fork")
 		concurrency = flags.Uint("concurrency", 10, "concurrency")
-		filter      = flags.String("filter", os.Getenv("FILTER"), "filter tests to run")
 		outjson     = flags.Bool("json", false, "format output in JSON")
 		outsummary  = flags.Bool("summary", false, "Display a summary")
 	)
@@ -82,7 +81,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
 		fmt.Fprintf(stderr, "\tWPT_ADDR\tdefault %s\n", WPTAddrDefault)
 		fmt.Fprintf(stderr, "\tCDP_WS\tdefault %s\n", CdpWSDefault)
-		fmt.Fprintf(stderr, "\tFILTER\n")
 	}
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
@@ -92,11 +90,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		slog.SetLogLoggerLevel(slog.LevelDebug)
 	}
 
-	args = flags.Args()
-
-	if len(args) != 0 {
-		return errors.New("too much arguments")
-	}
+	filters := flags.Args()
 
 	// fetch the manifest
 	tests, err := fetchManifest(ctx, *wptAddr)
@@ -116,10 +110,19 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	wg.Go(func() error {
 		defer close(queue)
 
+		hasFilters := len(filters) > 0
+
 		for _, t := range tests {
 
-			// apply filter
-			if *filter != "" && !strings.Contains(t, *filter) {
+			// apply filters
+			matchFilter := false
+			for _, filter := range filters {
+				if strings.Contains(t, filter) {
+					matchFilter = true
+					break
+				}
+			}
+			if hasFilters && !matchFilter {
 				continue
 			}
 
@@ -166,14 +169,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			encoder = json.NewEncoder(stdout)
 		}
 
-		total := len(tests)
-		var run, success int
+		var run int
 		for res := range testresults {
-			run++
-			if res.Pass {
-				success++
-			}
-
 			if *outjson {
 				if run > 1 {
 					fmt.Fprint(stdout, ",")
@@ -181,8 +178,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 				encoder.Encode(res)
 				continue
 			}
-
-			fmt.Fprintf(stderr, "\r=== status %d/%d (%d Pass) ", run, total, success)
 
 			// text output
 			if *outsummary || res.Message == "" {
@@ -264,7 +259,7 @@ func (r *TestResult) CountOK() int {
 // results.
 func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 	u := addr + test
-	slog.Debug("run test", slog.Any("url", u))
+	slog.Debug("run test", slog.String("test", test), slog.String("url", u))
 
 	res := &TestResult{Name: test}
 
@@ -380,6 +375,9 @@ func fetchManifest(ctx context.Context, addr string) ([]string, error) {
 	if err := walkManifest(manifest.Items.Testharness, "", base, &urls); err != nil {
 		return nil, err
 	}
+
+	// Keep results in same order.
+	sort.Strings(urls)
 
 	return urls, nil
 }
