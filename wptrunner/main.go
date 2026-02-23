@@ -36,6 +36,8 @@ import (
 const (
 	exitOK   = 0
 	exitFail = 1
+
+	CDPTimeout = 10 * time.Second
 )
 
 // main starts interruptable context and runs the program.
@@ -263,7 +265,7 @@ func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 
 	res := &TestResult{Name: test}
 
-	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
+	ctx, cancel := context.WithTimeout(ctx, 10*time.Second)
 	defer cancel()
 
 	ctx, cancel = chromedp.NewRemoteAllocator(ctx,
@@ -345,7 +347,7 @@ func fetchManifest(ctx context.Context, addr string) ([]string, error) {
 	}
 
 	cli := http.Client{
-		Timeout: 30 * time.Second,
+		Timeout: CDPTimeout,
 	}
 	resp, err := cli.Do(req)
 	if err != nil {
