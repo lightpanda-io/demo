@@ -16,6 +16,7 @@ package main
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -106,6 +107,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// testresults channel pipes test results from the runners to the reporter.
 	testresults := make(chan *TestResult)
 
+	ctx, cancel := context.WithCancel(ctx)
 	wg, ctx := errgroup.WithContext(ctx)
 
 	// start the producer which append tests urls into queue.
@@ -154,7 +156,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						if !ok {
 							return nil
 						}
-						testresults <- runtest(ctx, *cdp, *wptAddr, t)
+						res, err := runtest(ctx, *cdp, *wptAddr, t)
+						if err != nil {
+							cancel()
+							return fmt.Errorf("run test: %w", err)
+						}
+						testresults <- res
 					}
 				}
 			})
@@ -259,7 +266,7 @@ func (r *TestResult) CountOK() int {
 
 // runtest connect to the browser, navigates to the test url and get the test
 // results.
-func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
+func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	u := addr + test
 	slog.Debug("run test", slog.String("test", test), slog.String("url", u))
 
@@ -278,8 +285,15 @@ func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 
 	err := chromedp.Run(ctx, chromedp.Navigate(u))
 	if err != nil {
+		switch {
+		case errors.Is(err, syscall.ECONNREFUSED),
+			errors.Is(err, syscall.ECONNABORTED),
+			errors.Is(err, syscall.ECONNRESET):
+			slog.Error("navigate error", slog.String("test", test), slog.Any("err", err))
+			return nil, fmt.Errorf("%s: navigate: %w", test, err)
+		}
 		res.Message = strings.TrimSpace(err.Error())
-		return res
+		return res, nil
 	}
 
 	var status, report string
@@ -289,8 +303,16 @@ func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 	)
 	// invalid test result.
 	if err != nil {
+		switch {
+		case errors.Is(err, syscall.ECONNREFUSED),
+			errors.Is(err, syscall.ECONNABORTED),
+			errors.Is(err, syscall.ECONNRESET):
+			slog.Error("eval error", slog.String("test", test), slog.Any("err", err))
+			return nil, fmt.Errorf("%s: eval: %w", test, err)
+		}
+
 		res.Message = strings.TrimSpace(err.Error())
-		return res
+		return res, nil
 	}
 
 	// parse the log
@@ -321,7 +343,7 @@ func runtest(ctx context.Context, cdp, addr, test string) *TestResult {
 		})
 	}
 
-	return res
+	return res, nil
 }
 
 // env returns the env value corresponding to the key or the default string.
