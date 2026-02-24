@@ -206,11 +206,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			// Details
 			for _, c := range res.Cases {
 				if c.Message == "" {
-					fmt.Fprintf(stdout, "\t%s\t%s\n",
+					fmt.Fprintf(stdout, "\t%s\t%q\n",
 						FormatSuccess(c.Pass), c.Name,
 					)
 				} else {
-					fmt.Fprintf(stdout, "\t%s\t%s\n\t\t%s\n",
+					fmt.Fprintf(stdout, "\t%s\t%q\n\t\t%s\n",
 						FormatSuccess(c.Pass), c.Name, c.Message,
 					)
 				}
