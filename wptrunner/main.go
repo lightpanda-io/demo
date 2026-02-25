@@ -75,6 +75,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		outjson     = flags.Bool("json", false, "format output in JSON")
 		outsummary  = flags.Bool("summary", false, "Display a summary")
 		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables autorestart lightpanda process.")
+		list        = flags.Bool("list", false, "Only list test cases")
 	)
 
 	// usage func declaration.
@@ -105,6 +106,14 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("manifest: %w", err)
 	}
 	slog.Info("test suite", slog.Any("length", len(tests)))
+
+	// Only list all tests.
+	if *list {
+		for _, t := range tests {
+			fmt.Fprintf(stdout, "%s\n", t)
+		}
+		return nil
+	}
 
 	// queue channel is used to dispatch the tests from the producer to runners.
 	queue := make(chan string)
