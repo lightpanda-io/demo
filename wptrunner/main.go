@@ -218,10 +218,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			encoder = json.NewEncoder(stdout)
 		}
 
-		var run int
+		first := true
 		for res := range testresults {
 			if *outjson {
-				if run > 1 {
+				if first {
+					first = false
+				} else {
 					fmt.Fprint(stdout, ",")
 				}
 				encoder.Encode(res)
