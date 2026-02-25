@@ -565,6 +565,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 	cmd := exec.CommandContext(ctx, b.Path,
 		"serve",
+		"--timeout", "600", // 10 min
 		"--log_level", "error",
 		"--insecure_disable_tls_host_verification",
 	)
