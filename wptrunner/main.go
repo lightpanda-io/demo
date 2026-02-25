@@ -192,6 +192,13 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 							res = &TestResult{
 								Name:    t,
 								Message: err.Error(),
+
+								// This is not always the test which really
+								// crash. Because of the concurrency, we don't
+								// detect the crash test exactly. But the test
+								// fails b/c the browser was missing, mostly
+								// due to a previous crash...
+								Crash: true,
 							}
 						}
 						testresults <- res
@@ -224,11 +231,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			// text output
 			if *outsummary || res.Message == "" {
 				fmt.Fprintf(stdout, "%s %d/%d\t%s\n",
-					FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name,
+					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name,
 				)
 			} else {
 				fmt.Fprintf(stdout, "%s %d/%d\t%s\n\t%s\n",
-					FormatSuccess(res.Pass), res.CountOK(), res.Total(), res.Name, res.Message,
+					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name, res.Message,
 				)
 			}
 
@@ -240,11 +247,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			for _, c := range res.Cases {
 				if c.Message == "" {
 					fmt.Fprintf(stdout, "\t%s\t%q\n",
-						FormatSuccess(c.Pass), c.Name,
+						FormatSuccess(c.Pass, false), c.Name,
 					)
 				} else {
 					fmt.Fprintf(stdout, "\t%s\t%q\n\t\t%s\n",
-						FormatSuccess(c.Pass), c.Name, c.Message,
+						FormatSuccess(c.Pass, false), c.Name, c.Message,
 					)
 				}
 			}
@@ -276,7 +283,11 @@ type TestResult struct {
 	Cases   []TestCase `json:"cases,omitempty"`
 }
 
-func FormatSuccess(pass bool) string {
+func FormatSuccess(pass bool, crash bool) string {
+	if crash {
+		return "Crash"
+	}
+
 	if pass {
 		return "Pass"
 	}
