@@ -594,7 +594,10 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		b.Unlock()
 
 		// autorestart
-		b.Start(ctx)
+		if err := b.Start(ctx); err != nil {
+			slog.Error("browser restart", slog.Any("err", err))
+			return
+		}
 	}()
 
 	return nil
