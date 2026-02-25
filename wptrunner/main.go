@@ -24,9 +24,11 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"os/exec"
 	"os/signal"
 	"sort"
 	"strings"
+	"sync"
 	"syscall"
 	"time"
 
@@ -72,6 +74,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		concurrency = flags.Uint("concurrency", 10, "concurrency")
 		outjson     = flags.Bool("json", false, "format output in JSON")
 		outsummary  = flags.Bool("summary", false, "Display a summary")
+		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables managed lightpanda process.")
 	)
 
 	// usage func declaration.
@@ -84,6 +87,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
 		fmt.Fprintf(stderr, "\tWPT_ADDR\tdefault %s\n", WPTAddrDefault)
 		fmt.Fprintf(stderr, "\tCDP_WS\tdefault %s\n", CdpWSDefault)
+		fmt.Fprintf(stderr, "\tLPD_PATH\n")
 	}
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
@@ -108,7 +112,22 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	testresults := make(chan *TestResult)
 
 	ctx, cancel := context.WithCancel(ctx)
+	defer cancel()
+
 	wg, ctx := errgroup.WithContext(ctx)
+
+	var browser Browser = NoopBrowser{}
+	if *lpdpath != "" {
+		browser = &ProcessBrowser{
+			Path: *lpdpath,
+		}
+	}
+
+	// start the browser
+	if err := browser.Start(ctx); err != nil {
+		return fmt.Errorf("start browser: %w", err)
+	}
+	defer browser.Stop()
 
 	// start the producer which append tests urls into queue.
 	wg.Go(func() error {
@@ -117,7 +136,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		hasFilters := len(filters) > 0
 
 		for _, t := range tests {
-
 			// apply filters
 			matchFilter := false
 			for _, filter := range filters {
@@ -156,10 +174,25 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						if !ok {
 							return nil
 						}
+
+						slog.Debug("wait for browser readyness", slog.String("test", t))
+						select {
+						case <-ctx.Done():
+							return nil
+						case <-browser.Ready():
+							// continue
+						}
+
 						res, err := runtest(ctx, *cdp, *wptAddr, t)
 						if err != nil {
-							cancel()
-							return fmt.Errorf("run test: %w", err)
+							// We use debug here to avoid useless output.
+							slog.Debug("run test error", slog.String("test", t), slog.Any("err", err))
+
+							// we start the browser again and continue to next tests
+							res = &TestResult{
+								Name:    t,
+								Message: err.Error(),
+							}
 						}
 						testresults <- res
 					}
@@ -223,6 +256,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	if err := wg.Wait(); err != nil {
 		return fmt.Errorf("wg: %w", err)
 	}
+
+	browser.Stop()
 
 	return nil
 }
@@ -289,7 +324,6 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 		case errors.Is(err, syscall.ECONNREFUSED),
 			errors.Is(err, syscall.ECONNABORTED),
 			errors.Is(err, syscall.ECONNRESET):
-			slog.Error("navigate error", slog.String("test", test), slog.Any("err", err))
 			return nil, fmt.Errorf("%s: navigate: %w", test, err)
 		}
 		res.Message = strings.TrimSpace(err.Error())
@@ -307,7 +341,6 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 		case errors.Is(err, syscall.ECONNREFUSED),
 			errors.Is(err, syscall.ECONNABORTED),
 			errors.Is(err, syscall.ECONNRESET):
-			slog.Error("eval error", slog.String("test", test), slog.Any("err", err))
 			return nil, fmt.Errorf("%s: eval: %w", test, err)
 		}
 
@@ -458,4 +491,106 @@ func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls
 		}
 	}
 	return nil
+}
+
+type Browser interface {
+	Start(context.Context) error
+	Stop()
+	Ready() <-chan struct{}
+}
+
+type NoopBrowser struct{}
+
+func (b NoopBrowser) Start(_ context.Context) error {
+	return nil
+}
+func (b NoopBrowser) Stop() {}
+func (b NoopBrowser) Ready() <-chan struct{} {
+	ch := make(chan struct{})
+	defer close(ch)
+	return ch
+}
+
+type ProcessBrowser struct {
+	sync.Mutex
+
+	Path string
+
+	ready   chan struct{}
+	running bool
+	done    chan struct{}
+	cancel  context.CancelFunc
+}
+
+func (b *ProcessBrowser) Stop() {
+	b.Lock()
+	defer b.Unlock()
+
+	b.cancel()
+	<-b.done
+}
+
+var ErrBrowserIsRunning = errors.New("browser is running")
+
+// non blocking
+func (b *ProcessBrowser) Start(ctx context.Context) error {
+	b.Lock()
+	defer b.Unlock()
+
+	if b.running {
+		return ErrBrowserIsRunning
+	}
+
+	cmd := exec.CommandContext(ctx, b.Path,
+		"serve",
+		"--log_level", "error",
+		"--insecure_disable_tls_host_verification",
+	)
+
+	ctx, b.cancel = context.WithCancel(ctx)
+
+	slog.Info("starting browser", slog.String("cmd", cmd.String()))
+	if err := cmd.Start(); err != nil {
+		return fmt.Errorf("start command: %w", err)
+	}
+
+	b.ready = make(chan struct{})
+	b.done = make(chan struct{})
+
+	go func() {
+		defer close(b.done)
+
+		// Wait for readyness
+		time.Sleep(time.Second * 1)
+		close(b.ready)
+
+		// block until the end
+		if err := cmd.Wait(); err != nil {
+			slog.Error("browser stop", slog.Any("err", err))
+		}
+
+		if ctx.Err() != nil {
+			return
+
+		}
+
+		// reset state
+		b.Lock()
+		b.ready = make(chan struct{})
+		b.running = false
+		b.Unlock()
+
+		// autorestart
+		b.Start(ctx)
+	}()
+
+	return nil
+}
+
+// blocks until done
+func (b *ProcessBrowser) Ready() <-chan struct{} {
+	b.Lock()
+	defer b.Unlock()
+
+	return b.ready
 }
