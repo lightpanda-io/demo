@@ -74,7 +74,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		concurrency = flags.Uint("concurrency", 10, "concurrency")
 		outjson     = flags.Bool("json", false, "format output in JSON")
 		outsummary  = flags.Bool("summary", false, "Display a summary")
-		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables managed lightpanda process.")
+		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables autorestart lightpanda process.")
 	)
 
 	// usage func declaration.
