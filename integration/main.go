@@ -109,6 +109,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"integration/reddit.js"}},
 		{Bin: "node", Args: []string{"integration/google_news.js"}},
 		{Bin: "node", Args: []string{"integration/google_news_redirection.js"}},
+		{Bin: "node", Args: []string{"integration/bing.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
