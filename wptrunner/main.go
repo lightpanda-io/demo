@@ -373,29 +373,36 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	// parse the log
 	res.Pass = true
 	lines := strings.Split(strings.TrimSpace(report), "\n")
+NEXT:
 	for _, l := range lines {
-		name, tail, ok := strings.Cut(l, "|")
-		if !ok {
-			// invalid format
-			res.Cases = append(res.Cases, TestCase{
-				Pass:    false,
-				Name:    "Invalid report format",
-				Message: l,
-			})
-			continue
-		}
 
-		status, msg, _ := strings.Cut(tail, "|")
-		pass := status == "Pass"
-		if !pass {
-			res.Pass = false
+		for i, status := range []string{"|Pass", "|Fail", "|Timeout", "|Not Run", "|Optional Feature Unsupported"} {
+			separatorIndex := strings.Index(l, status)
+			if separatorIndex == -1 {
+				continue
+			}
+
+			name := l[0:separatorIndex]
+			msg := l[separatorIndex+len(status):]
+			pass := i == 0
+			if !pass {
+				res.Pass = false
+			}
+
+			res.Cases = append(res.Cases, TestCase{
+				Pass:    pass,
+				Name:    strings.TrimSpace(name),
+				Message: strings.TrimSpace(msg),
+			})
+			continue NEXT
 		}
 
 		res.Cases = append(res.Cases, TestCase{
-			Pass:    pass,
-			Name:    strings.TrimSpace(name),
-			Message: strings.TrimSpace(msg),
+			Pass:    false,
+			Name:    "Invalid report format",
+			Message: l,
 		})
+
 	}
 
 	return res, nil
