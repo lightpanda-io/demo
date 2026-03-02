@@ -18,7 +18,7 @@ const browser = await connect({ browserWSEndpoint: "ws://127.0.0.1:9222" });
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto("https://news.google.com/read/CBMigAJBVV95cUxNbjhUU3l2LTM0RDc0QXFjeVRvc0p2dkZyaWpxaWp5VXZLWDRCRWQwTUM5ZkxlS2ZGcFEtR1d2RlRDRElPZEx3RWYwR1VuY1RrbGp5dkthUjhITzE1VDN3SURkaHpTVUxsM3RrdzVTTHJCa3JndDZwRDdJbi1ZeWJ5NFBXeHpPd0FZY3o3ZmdCNUFJWUFQd21pdTZkV190VG53bGRMTTIzNDNWcEh4QVNXTHhxZ1J4TVhBbjV6WUp4SVlDVlRPVnRhYUhqcUhId3BkY0ZCenpQQnpycWcyaXJuLVRBbVozUXpkTVBQRXVHRWp4aFg5Vl9DUkxFb19tTTZz?hl=fr&gl=FR&ceid=FR%3Afr", { waitUntil: "networkidle0" });
+await page.goto("https://news.google.com/read/CBMiS0FVX3lxTE4wd2VZYnVxU1B6OTVJR01CRHhpQWdvNEQzRzYxdWNfM0JvemdTLWo2emNNWUFDTmxhd3YweElzSFNDQWdhdWoxWFp2Yw?hl=en-US&gl=US&ceid=US%3Aen", { waitUntil: "networkidle0" });
 
 const hasConsent = await page.evaluate(() => {
   return document.querySelectorAll('form[action="https://consent.google.com/save"] input[type="submit"]').length;
@@ -32,11 +32,11 @@ if (hasConsent) {
 }
 
 
-const title = await page.evaluate(() => {
-  return document.title;
+const docurl = await page.evaluate(() => {
+  return document.URL;
 });
-if (!title.includes("Loi Duplomb")) {
-    console.error("Failed to check title", title);
+if (!docurl.includes("https://blog.cloudflare.com")) {
+    console.error("Failed to check docurul", docurul);
     throw new Error("invalid results");
 }
 
