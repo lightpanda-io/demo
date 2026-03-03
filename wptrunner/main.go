@@ -291,7 +291,7 @@ type TestResult struct {
 	Crash   bool       `json:"crash"`
 	Name    string     `json:"name"`
 	Message string     `json:"message,omitempty"`
-	Cases   []TestCase `json:"cases,omitempty"`
+	Cases   []TestCase `json:"cases"`
 }
 
 func FormatSuccess(pass bool, crash bool) string {
