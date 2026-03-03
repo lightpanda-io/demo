@@ -40,7 +40,7 @@ const page = await context.newPage();
 await page.goto('/campfire-commerce/');
 
 const client = await page.context().newCDPSession(page);
-const axtree = await client.send('Accessibility.getFullAXTree');
+const axtree = await client.send('Accessibility.getFullAXTree', {});
 console.log(JSON.stringify(axtree, null, 2));
 
 await page.close();
