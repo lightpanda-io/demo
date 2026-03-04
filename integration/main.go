@@ -20,8 +20,6 @@ import (
 	"fmt"
 	"io"
 	"log/slog"
-	"net"
-	"net/http"
 	"os"
 	"os/exec"
 	"strings"
@@ -47,20 +45,13 @@ func main() {
 	os.Exit(exitOK)
 }
 
-const (
-	httpAddrDefault = "127.0.0.1:1234"
-	httpDirDefault  = "public"
-)
-
 func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// declare runtime flag parameters.
 	flags := flag.NewFlagSet(args[0], flag.ExitOnError)
 	flags.SetOutput(stderr)
 
 	var (
-		verbose  = flags.Bool("verbose", false, "enable debug log level")
-		httpAddr = flags.String("http-addr", env("RUNNER_HTTP_ADDRESS", httpAddrDefault), "http server address")
-		httpDir  = flags.String("http-dir", env("RUNNER_HTTP_DIR", httpDirDefault), "http dir to expose")
+		verbose = flags.Bool("verbose", false, "enable debug log level")
 	)
 
 	// usage func declaration.
@@ -70,9 +61,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		fmt.Fprintf(stderr, "end to end tests\n")
 		fmt.Fprintf(stderr, "\nCommand line options:\n")
 		flags.PrintDefaults()
-		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
-		fmt.Fprintf(stderr, "\tRUNNER_HTTP_ADDRESS\tdefault %s\n", httpAddrDefault)
-		fmt.Fprintf(stderr, "\tRUNNER_HTTP_DIR\tdefault %s\n", httpDirDefault)
 	}
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
@@ -86,13 +74,6 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	if len(args) != 0 {
 		return errors.New("too many arguments")
 	}
-
-	// Start the http server in its own goroutine.
-	go func() {
-		if err := runhttp(ctx, *httpAddr, *httpDir); err != nil {
-			slog.Error("http server", slog.String("err", err.Error()))
-		}
-	}()
 
 	// Run end to end tests.
 	fails := 0
@@ -159,73 +140,4 @@ func runtest(ctx context.Context, t Test) error {
 	}
 
 	return nil
-}
-
-// run the local http server
-func runhttp(ctx context.Context, addr, dir string) error {
-	fs := http.FileServer(http.Dir(dir))
-
-	srv := &http.Server{
-		Addr:    addr,
-		Handler: Handler{fs: fs},
-		BaseContext: func(net.Listener) context.Context {
-			return ctx
-		},
-	}
-
-	// shutdown api server on context cancelation
-	go func(ctx context.Context, srv *http.Server) {
-		<-ctx.Done()
-		slog.Debug("http server shutting down")
-		// we use context.Background() here b/c ctx is already canceled.
-		if err := srv.Shutdown(context.Background()); err != nil {
-			// context cancellation error is ignored.
-			if !errors.Is(err, context.Canceled) {
-				slog.Error("http server shutdown", slog.String("err", err.Error()))
-			}
-		}
-	}(ctx, srv)
-
-	// ListenAndServe always returns a non-nil error.
-	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
-		return fmt.Errorf("http server: %w", err)
-	}
-
-	return nil
-}
-
-// env returns the env value corresponding to the key or the default string.
-func env(key, dflt string) string {
-	val, ok := os.LookupEnv(key)
-	if !ok {
-		return dflt
-	}
-
-	return val
-}
-
-type Handler struct {
-	fs http.Handler
-}
-
-func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-	switch req.URL.Path {
-	case "/form/submit":
-		defer req.Body.Close()
-		body, err := io.ReadAll(req.Body)
-		if err != nil {
-			panic(err)
-		}
-
-		res.Header().Add("Content-Type", "text/html")
-		res.Write([]byte("<html><ul><li id=method>"))
-		res.Write([]byte(req.Method))
-		res.Write([]byte("<li id=body>"))
-		res.Write(body)
-		res.Write([]byte("<li id=query>"))
-		res.Write([]byte(req.URL.RawQuery))
-		res.Write([]byte("</ul>"))
-	default:
-		h.fs.ServeHTTP(res, req)
-	}
 }
