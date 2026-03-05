@@ -241,11 +241,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 			// text output
 			if *outsummary || res.Message == "" {
-				fmt.Fprintf(stdout, "%s %d/%d\t%s\n",
+				fmt.Fprintf(stdout, "%s %d/%d\t%q\n",
 					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name,
 				)
 			} else {
-				fmt.Fprintf(stdout, "%s %d/%d\t%s\n\t%s\n",
+				fmt.Fprintf(stdout, "%s %d/%d\t%q\n\t%s\n",
 					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name, res.Message,
 				)
 			}
