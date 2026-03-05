@@ -354,9 +354,11 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 
 	var status, report string
 	err = chromedp.Run(ctx,
+		chromedp.WaitVisible(`#summary`),
 		chromedp.Evaluate(`report.status;`, &status),
 		chromedp.Evaluate(`report.log;`, &report),
 	)
+
 	// invalid test result.
 	if err != nil {
 		switch {
