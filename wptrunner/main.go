@@ -353,6 +353,13 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	}
 
 	var status, report string
+	_ = chromedp.Run(ctx,
+		chromedp.Poll(`report.complete === true`, nil,
+			chromedp.WithPollingInterval(500*time.Millisecond),
+			chromedp.WithPollingTimeout(5*time.Second),
+		),
+	) // ignore errors here, we try to always get the result.
+
 	err = chromedp.Run(ctx,
 		chromedp.Evaluate(`report.status;`, &status),
 		chromedp.Evaluate(`report.log;`, &report),
