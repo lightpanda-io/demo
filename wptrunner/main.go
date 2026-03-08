@@ -21,12 +21,14 @@ import (
 	"fmt"
 	"io"
 	"log/slog"
+	"math/rand"
 	"net/http"
 	"net/url"
 	"os"
 	"os/exec"
 	"os/signal"
 	"sort"
+	"strconv"
 	"strings"
 	"sync"
 	"syscall"
@@ -70,11 +72,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	var (
 		verbose     = flags.Bool("verbose", false, "enable debug log level")
 		wptAddr     = flags.String("wpt-addr", env("WPT_ADDR", WPTAddrDefault), "WPT server address")
-		cdp         = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ fork")
-		concurrency = flags.Uint("concurrency", 10, "concurrency")
+		cdp         = flags.String("cdp", env("CDP_WS", CdpWSDefault), "cdp ws to connect, incompatible w/ lpdpath")
+		concurrency = flags.Uint("concurrency", 10, "concurrency tests runner")
 		outjson     = flags.Bool("json", false, "format output in JSON")
 		outsummary  = flags.Bool("summary", false, "Display a summary")
 		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables autorestart lightpanda process.")
+		pool        = flags.Uint("pool", 1, "browser pool, lpd-path is required, concurrency must be greater or equal to pool")
 		list        = flags.Bool("list", false, "Only list test cases")
 	)
 
@@ -125,10 +128,15 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	wg, ctx := errgroup.WithContext(ctx)
 
-	var browser Browser = NoopBrowser{}
+	var browser Browser = NoopBrowser{CDP: *cdp}
 	if *lpdpath != "" {
-		browser = &ProcessBrowser{
-			Path: *lpdpath,
+		if *pool > 1 {
+			browser = NewPoolBrowser(*lpdpath, *pool)
+		} else {
+			browser = &ProcessBrowser{
+				Port: 9222,
+				Path: *lpdpath,
+			}
 		}
 	}
 
@@ -176,6 +184,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		for range *concurrency {
 			pool.Go(func() error {
 				for {
+					var cdp string
 					select {
 					case <-ctx.Done():
 						return nil
@@ -188,11 +197,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						select {
 						case <-ctx.Done():
 							return nil
-						case <-browser.Ready():
+						case cdp, _ = <-browser.Ready():
 							// continue
 						}
 
-						res, err := runtest(ctx, *cdp, *wptAddr, t)
+						res, err := runtest(ctx, cdp, *wptAddr, t)
 						if err != nil {
 							// We use debug here to avoid useless output.
 							slog.Debug("run test error", slog.String("test", t), slog.Any("err", err))
@@ -325,7 +334,7 @@ func (r *TestResult) CountOK() int {
 // results.
 func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	u := addr + test
-	slog.Debug("run test", slog.String("test", test), slog.String("url", u))
+	slog.Debug("run test", slog.String("test", test), slog.String("cdp", cdp), slog.String("url", u))
 
 	res := &TestResult{Name: test}
 
@@ -532,18 +541,20 @@ func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls
 type Browser interface {
 	Start(context.Context) error
 	Stop()
-	Ready() <-chan struct{}
+	Ready() <-chan string
 }
 
-type NoopBrowser struct{}
+type NoopBrowser struct {
+	CDP string
+}
 
 func (b NoopBrowser) Start(_ context.Context) error {
 	return nil
 }
 func (b NoopBrowser) Stop() {}
-func (b NoopBrowser) Ready() <-chan struct{} {
-	ch := make(chan struct{})
-	defer close(ch)
+func (b NoopBrowser) Ready() <-chan string {
+	ch := make(chan string, 1)
+	ch <- b.CDP
 	return ch
 }
 
@@ -551,6 +562,7 @@ type ProcessBrowser struct {
 	sync.Mutex
 
 	Path string
+	Port int
 
 	ready   chan struct{}
 	running bool
@@ -568,6 +580,10 @@ func (b *ProcessBrowser) Stop() {
 
 var ErrBrowserIsRunning = errors.New("browser is running")
 
+func (b *ProcessBrowser) CDP() string {
+	return fmt.Sprintf("ws://127.0.0.1:%d", b.Port)
+}
+
 // non blocking
 func (b *ProcessBrowser) Start(ctx context.Context) error {
 	b.Lock()
@@ -580,6 +596,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 	cmd := exec.CommandContext(ctx, b.Path,
 		"serve",
 		"--log_level", "error",
+		"--port", strconv.Itoa(b.Port),
 		"--insecure_disable_tls_host_verification",
 	)
 
@@ -627,9 +644,62 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 }
 
 // blocks until done
-func (b *ProcessBrowser) Ready() <-chan struct{} {
+func (b *ProcessBrowser) Ready() <-chan string {
 	b.Lock()
 	defer b.Unlock()
 
-	return b.ready
+	r := make(chan string)
+	go func() {
+		<-b.ready
+		r <- b.CDP()
+		close(r)
+	}()
+
+	return r
+}
+
+type PoolBrowser struct {
+	procs  []*ProcessBrowser
+	cancel context.CancelFunc
+}
+
+func NewPoolBrowser(path string, n uint) *PoolBrowser {
+	procs := make([]*ProcessBrowser, n)
+	port := 9222
+	for i := range n {
+		procs[i] = &ProcessBrowser{
+			Port: port + int(i),
+			Path: path,
+		}
+	}
+
+	return &PoolBrowser{
+		procs: procs,
+	}
+}
+
+func (b *PoolBrowser) Stop() {
+	b.cancel()
+	for _, p := range b.procs {
+		p.Stop()
+	}
+}
+
+// non blocking
+func (b *PoolBrowser) Start(ctx context.Context) error {
+	ctx, b.cancel = context.WithCancel(ctx)
+	for i, p := range b.procs {
+		if err := p.Start(ctx); err != nil {
+			b.cancel()
+			return fmt.Errorf("start %d: %w", i, err)
+		}
+	}
+
+	return nil
+}
+
+func (b *PoolBrowser) Ready() <-chan string {
+	i := rand.Intn(len(b.procs))
+	bb := b.procs[i]
+	return bb.Ready()
 }
