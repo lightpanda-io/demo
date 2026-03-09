@@ -112,6 +112,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
 		//{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}}, // FIXME this test doesn't work on ci
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
+		// {Bin: "node", Args: []string{"puppeteer/authenticate.js"}}, // FIXME the browser must keep auth in cache
+		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -236,6 +238,17 @@ type Handler struct {
 
 func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
+	case "/auth":
+		user, pass, ok := req.BasicAuth()
+		if !ok || user != "lpd" || pass != "lpd" {
+			res.Header().Set("WWW-Authenticate", `Basic realm="Lightpanda"`)
+			http.Error(res, "Unauthorized", http.StatusUnauthorized)
+			return
+		}
+
+		res.Header().Add("Content-Type", "text/html")
+		res.Write([]byte("<html><body>Hello</body></html>"))
+
 	case "/cookies/set":
 		http.SetCookie(res, &http.Cookie{
 			Name:  "lightpanda",
