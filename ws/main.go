@@ -66,6 +66,16 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	}
 
 	switch req.URL.Path {
+	case "/auth":
+		user, pass, ok := req.BasicAuth()
+		if !ok || user != "lpd" || pass != "lpd" {
+			res.Header().Set("WWW-Authenticate", `Basic realm="Lightpanda"`)
+			http.Error(res, "Unauthorized", http.StatusUnauthorized)
+			return
+		}
+
+		res.Header().Add("Content-Type", "text/html")
+		res.Write([]byte("<html><body>Hello</body></html>"))
 	case "/cookies/set":
 		http.SetCookie(res, &http.Cookie{
 			Name:  "lightpanda",
