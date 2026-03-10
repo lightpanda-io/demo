@@ -112,7 +112,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
 		//{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}}, // FIXME this test doesn't work on ci
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
-		// {Bin: "node", Args: []string{"puppeteer/authenticate.js"}}, // FIXME the browser must keep auth in cache
+		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
