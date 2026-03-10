@@ -254,7 +254,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name,
 				)
 			} else {
-				fmt.Fprintf(stdout, "%s %d/%d\t%q\n\t%s\n",
+				fmt.Fprintf(stdout, "%s %d/%d\t%q\n\t%q\n",
 					FormatSuccess(res.Pass, res.Crash), res.CountOK(), res.Total(), res.Name, res.Message,
 				)
 			}
@@ -296,11 +296,12 @@ type TestCase struct {
 }
 
 type TestResult struct {
-	Pass    bool       `json:"pass"`
-	Crash   bool       `json:"crash"`
-	Name    string     `json:"name"`
-	Message string     `json:"message,omitempty"`
-	Cases   []TestCase `json:"cases"`
+	Pass    bool          `json:"pass"`
+	Crash   bool          `json:"crash"`
+	Name    string        `json:"name"`
+	Message string        `json:"message,omitempty"`
+	Cases   []TestCase    `json:"cases"`
+	Elapsed time.Duration `json:"elapsed"`
 }
 
 func FormatSuccess(pass bool, crash bool) string {
@@ -349,6 +350,7 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 	ctx, cancel = chromedp.NewContext(ctx)
 	defer cancel()
 
+	start := time.Now()
 	err := chromedp.Run(ctx, chromedp.Navigate(u))
 	if err != nil {
 		switch {
@@ -357,6 +359,7 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 			errors.Is(err, syscall.ECONNRESET):
 			return nil, fmt.Errorf("%s: navigate: %w", test, err)
 		}
+		res.Elapsed = time.Since(start)
 		res.Message = strings.TrimSpace(err.Error())
 		return res, nil
 	}
@@ -373,6 +376,8 @@ func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
 		chromedp.Evaluate(`report.status;`, &status),
 		chromedp.Evaluate(`report.log;`, &report),
 	)
+	res.Elapsed = time.Since(start)
+
 	// invalid test result.
 	if err != nil {
 		switch {
