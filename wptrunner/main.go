@@ -38,6 +38,52 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
+// stringSliceFlag is a flag type that allows multiple values
+type stringSliceFlag []string
+
+func (s *stringSliceFlag) String() string {
+	return strings.Join(*s, ", ")
+}
+
+func (s *stringSliceFlag) Set(value string) error {
+	*s = append(*s, value)
+	return nil
+}
+
+// matchPattern checks if s matches the pattern with optional wildcards.
+// Patterns:
+//   - "foo"   -> exact match
+//   - "*foo"  -> s ends with "foo"
+//   - "foo*"  -> s starts with "foo"
+//   - "*foo*" -> s contains "foo"
+func matchPattern(s, pattern string) bool {
+	if pattern == "" {
+		return false
+	}
+
+	startsWithWild := strings.HasPrefix(pattern, "*")
+	endsWithWild := strings.HasSuffix(pattern, "*")
+
+	// Trim wildcards to get the core pattern
+	core := strings.TrimPrefix(pattern, "*")
+	core = strings.TrimSuffix(core, "*")
+
+	if core == "" {
+		return true // "*" or "**" matches everything
+	}
+
+	switch {
+	case startsWithWild && endsWithWild:
+		return strings.Contains(s, core)
+	case startsWithWild:
+		return strings.HasSuffix(s, core)
+	case endsWithWild:
+		return strings.HasPrefix(s, core)
+	default:
+		return s == core
+	}
+}
+
 const (
 	exitOK   = 0
 	exitFail = 1
@@ -79,7 +125,9 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables autorestart lightpanda process.")
 		pool        = flags.Uint("pool", 1, "browser pool, lpd-path is required, concurrency must be greater or equal to pool")
 		list        = flags.Bool("list", false, "Only list test cases")
+		exclude     stringSliceFlag
 	)
+	flags.Var(&exclude, "exclude", "exclude pattern (can be specified multiple times, supports *wildcards*)")
 
 	// usage func declaration.
 	bin := args[0]
@@ -152,8 +200,9 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 		hasFilters := len(filters) > 0
 
+	NEXT:
 		for _, t := range tests {
-			// apply filters
+			// apply filters (include patterns)
 			matchFilter := false
 			for _, filter := range filters {
 				if strings.Contains(t, filter) {
@@ -163,6 +212,13 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			}
 			if hasFilters && !matchFilter {
 				continue
+			}
+
+			// apply ignore patterns (exclude patterns)
+			for _, pattern := range exclude {
+				if matchPattern(t, pattern) {
+					continue NEXT
+				}
 			}
 
 			select {
@@ -270,7 +326,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						FormatSuccess(c.Pass, false), c.Name,
 					)
 				} else {
-					fmt.Fprintf(stdout, "\t%s\t%q\n\t\t%s\n",
+					fmt.Fprintf(stdout, "\t%s\t%q\n\t\t%q\n",
 						FormatSuccess(c.Pass, false), c.Name, c.Message,
 					)
 				}
