@@ -64,13 +64,21 @@ async function fetchJwks(agentUrl) {
   });
 }
 
-function findKey(jwks, kid) {
-  const key = (jwks.keys ?? []).find((k) => k.kid === kid);
-  if (!key) throw new Error(`Key '${kid}' not found in JWKS (have: ${(jwks.keys ?? []).map((k) => k.kid).join(", ")})`);
-  if (key.kty !== "OKP" || key.crv !== "Ed25519")
-    throw new Error(`Key ${kid} is not Ed25519 (kty=${key.kty}, crv=${key.crv})`);
-  if (!key.x) throw new Error(`Key ${kid} missing 'x' field`);
-  return crypto.createPublicKey({ key: { kty: key.kty, crv: key.crv, x: key.x }, format: "jwk" });
+function jwkThumbprint(key) {
+  const canonical = JSON.stringify({ crv: key.crv, kty: key.kty, x: key.x });
+  return crypto.createHash("sha256").update(canonical).digest("base64url");
+}
+
+function findKey(jwks, keyid) {
+  for (const key of jwks.keys ?? []) {
+    if (key.kty !== "OKP" || key.crv !== "Ed25519" || !key.x) continue;
+    const thumbprint = jwkThumbprint(key);
+    console.log(`[jwks] key thumbprint: ${thumbprint}`);
+    if (thumbprint === keyid) {
+      return crypto.createPublicKey({ key: { kty: key.kty, crv: key.crv, x: key.x }, format: "jwk" });
+    }
+  }
+  throw new Error(`No key with thumbprint '${keyid}' found in JWKS`);
 }
 
 function buildSignatureBase(components, params, headers, method, path, authority) {
