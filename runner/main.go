@@ -111,6 +111,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/multi.js"}},
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
 		//{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}}, // FIXME this test doesn't work on ci
+		{Bin: "node", Args: []string{"puppeteer/cookies-redirect-local.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
@@ -254,6 +255,12 @@ func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 			Name:  "lightpanda",
 			Value: "browser",
 		})
+	case "/cookies/redirect":
+		http.SetCookie(res, &http.Cookie{
+			Name:  "redirect",
+			Value: "cookie",
+		})
+		http.Redirect(res, req, "/cookies/get", http.StatusFound)
 	case "/cookies/get":
 		enc := json.NewEncoder(res)
 		if err := enc.Encode(req.Cookies()); err != nil {
