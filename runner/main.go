@@ -110,7 +110,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
 		{Bin: "node", Args: []string{"puppeteer/multi.js"}},
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
-		//{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}}, // FIXME this test doesn't work on ci
+		{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-redirect-local.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
