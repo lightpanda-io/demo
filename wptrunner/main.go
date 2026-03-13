@@ -27,6 +27,7 @@ import (
 	"os"
 	"os/exec"
 	"os/signal"
+	"runtime"
 	"sort"
 	"strconv"
 	"strings"
@@ -124,6 +125,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		outsummary  = flags.Bool("summary", false, "Display a summary")
 		lpdpath     = flags.String("lpd-path", os.Getenv("LPD_PATH"), "Lightpanda path. If set, it enables autorestart lightpanda process.")
 		pool        = flags.Uint("pool", 1, "browser pool, lpd-path is required, concurrency must be greater or equal to pool")
+		ml          = flags.Uint("mem-limit", 0, "memory limit for a browser, in MB, only for linux")
 		list        = flags.Bool("list", false, "Only list test cases")
 		exclude     stringSliceFlag
 	)
@@ -147,6 +149,18 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	if *verbose {
 		slog.SetLogLoggerLevel(slog.LevelDebug)
+	}
+
+	if *pool > 1 && *lpdpath == "" {
+		return fmt.Errorf("--lp-path is required for --pool option")
+	}
+
+	if *ml > 0 && *lpdpath == "" {
+		return fmt.Errorf("--lp-path is required for --mem-limit option")
+	}
+
+	if *ml > 0 && runtime.GOOS != "linux" {
+		return fmt.Errorf("--mem-limit option is availble only on linux os")
 	}
 
 	filters := flags.Args()
@@ -179,11 +193,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	var browser Browser = NoopBrowser{CDP: *cdp}
 	if *lpdpath != "" {
 		if *pool > 1 {
-			browser = NewPoolBrowser(*lpdpath, *pool)
+			browser = NewPoolBrowser(*lpdpath, *pool, (*ml)*1024*1024)
 		} else {
 			browser = &ProcessBrowser{
-				Port: 9222,
-				Path: *lpdpath,
+				Port:     9222,
+				Path:     *lpdpath,
+				Memlimit: (*ml) * 1024 * 1024,
 			}
 		}
 	}
@@ -599,6 +614,35 @@ func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls
 	return nil
 }
 
+// memUsage returns the resident memory usage in bytes of the process
+// behind a running exec.Cmd by reading /proc/<pid>/statm.
+func memUsage(cmd *exec.Cmd) (uint64, error) {
+	if cmd.Process == nil {
+		return 0, fmt.Errorf("process not started")
+	}
+
+	pid := cmd.Process.Pid
+
+	data, err := os.ReadFile(fmt.Sprintf("/proc/%d/statm", pid))
+	if err != nil {
+		return 0, fmt.Errorf("read statm: %w", err)
+	}
+
+	// statm fields: size resident shared text lib data dt (all in pages)
+	fields := strings.Fields(strings.TrimSpace(string(data)))
+	if len(fields) < 2 {
+		return 0, fmt.Errorf("unexpected statm format")
+	}
+
+	rssPages, err := strconv.ParseUint(fields[1], 10, 64)
+	if err != nil {
+		return 0, fmt.Errorf("parse rss: %w", err)
+	}
+
+	pageSize := uint64(os.Getpagesize())
+	return rssPages * pageSize, nil
+}
+
 type Browser interface {
 	Start(context.Context) error
 	Stop()
@@ -622,8 +666,9 @@ func (b NoopBrowser) Ready() <-chan string {
 type ProcessBrowser struct {
 	sync.Mutex
 
-	Path string
-	Port int
+	Path     string
+	Port     int
+	Memlimit uint
 
 	ready   chan struct{}
 	running bool
@@ -671,8 +716,38 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 	b.ready = make(chan struct{})
 	b.done = make(chan struct{})
 
+	if b.Memlimit > 0 {
+		go func() {
+			for {
+				select {
+				case <-ctx.Done():
+					return
+				case <-time.After(time.Millisecond * 500):
+					rss, err := memUsage(cmd)
+					if err != nil {
+						slog.Error("mem check error", slog.Any("err", err))
+						continue
+					}
+					if rss > uint64(b.Memlimit) {
+						slog.Info("memory limit exceeded, stopping browser",
+							slog.Uint64("rss", rss),
+							slog.Uint64("limit", uint64(b.Memlimit)),
+						)
+						// kill the process.
+						// It will be auto-restarted
+						if err := cmd.Process.Kill(); err != nil {
+							slog.Error("kill process on mem limit", slog.Any("err", err))
+						}
+						return
+					}
+				}
+			}
+		}()
+	}
+
 	go func() {
 		defer close(b.done)
+		defer b.cancel()
 
 		// Wait for readyness
 		time.Sleep(time.Second * 1)
@@ -680,7 +755,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 		// block until the end
 		if err := cmd.Wait(); err != nil {
-			slog.Error("browser stop", slog.Any("err", err))
+			slog.Debug("browser stop", slog.Any("err", err))
 		}
 
 		if ctx.Err() != nil {
@@ -724,13 +799,14 @@ type PoolBrowser struct {
 	cancel context.CancelFunc
 }
 
-func NewPoolBrowser(path string, n uint) *PoolBrowser {
+func NewPoolBrowser(path string, n, ml uint) *PoolBrowser {
 	procs := make([]*ProcessBrowser, n)
 	port := 9222
 	for i := range n {
 		procs[i] = &ProcessBrowser{
-			Port: port + int(i),
-			Path: path,
+			Memlimit: ml,
+			Port:     port + int(i),
+			Path:     path,
 		}
 	}
 
