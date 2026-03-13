@@ -81,6 +81,12 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 			Name:  "lightpanda",
 			Value: "browser",
 		})
+	case "/cookies/redirect":
+		http.SetCookie(res, &http.Cookie{
+			Name:  "redirect",
+			Value: "cookie",
+		})
+		http.Redirect(res, req, "/cookies/get", http.StatusFound)
 	case "/cookies/get":
 		enc := json.NewEncoder(res)
 		if err := enc.Encode(req.Cookies()); err != nil {
