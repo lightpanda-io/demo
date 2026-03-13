@@ -35,7 +35,5 @@ await new Promise((resolve) => setTimeout(resolve, 5_000));
 
 console.assert(urlBefore != page.url());
 
-await page.waitForNavigation();
-
 await page.close();
 await browser.disconnect();
