@@ -749,7 +749,9 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 		// Wait for readyness
 		time.Sleep(time.Second * 1)
+		b.Lock()
 		close(b.ready)
+		b.Unlock()
 
 		// block until the end
 		if err := cmd.Wait(); err != nil {
@@ -782,9 +784,11 @@ func (b *ProcessBrowser) Ready() <-chan string {
 	b.Lock()
 	defer b.Unlock()
 
+	ready := b.ready
+
 	r := make(chan string)
 	go func() {
-		<-b.ready
+		<-ready
 		r <- b.CDP()
 		close(r)
 	}()
