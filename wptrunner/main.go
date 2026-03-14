@@ -469,13 +469,11 @@ NEXT:
 	for _, l := range lines {
 
 		for i, status := range []string{"|Pass", "|Fail", "|Timeout", "|Not Run", "|Optional Feature Unsupported"} {
-			separatorIndex := strings.Index(l, status)
-			if separatorIndex == -1 {
+			name, msg, ok := strings.Cut(l, status)
+			if !ok {
 				continue
 			}
 
-			name := l[0:separatorIndex]
-			msg := l[separatorIndex+len(status):]
 			pass := i == 0
 			if !pass {
 				res.Pass = false
