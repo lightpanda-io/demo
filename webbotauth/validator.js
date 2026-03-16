@@ -177,7 +177,7 @@ const server = http.createServer(async (req, res) => {
   const body = Buffer.from(JSON.stringify(result, null, 2));
   res.writeHead(status, { "Content-Type": "application/json", "Content-Length": body.length });
   res.end(body);
-  console.log(`[${req.method}] ${req.url} → ${status}`);
+  console.log(`[${req.method}] ${req.url} → ${status} (${body})`);
 
   server.close(() => process.exit(status === 200 ? 0 : 1));
 });
