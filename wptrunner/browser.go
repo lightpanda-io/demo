@@ -75,17 +75,24 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"--insecure_disable_tls_host_verification",
 	)
 
-	ctx, b.cancel = context.WithCancel(ctx)
+	// We keep a reference to the original context to restart the browser with
+	// it.
+	restartctx := ctx
+	ctx, cancel := context.WithCancel(ctx)
+	b.cancel = cancel
 
 	slog.Info("starting browser", slog.String("cmd", cmd.String()))
 	if err := cmd.Start(); err != nil {
 		return fmt.Errorf("start command: %w", err)
 	}
 
-	b.ready = make(chan struct{})
-	b.done = make(chan struct{})
+	ready := make(chan struct{})
+	done := make(chan struct{})
 
-	if b.Memlimit > 0 {
+	b.ready = ready
+	b.done = done
+
+	if limit := b.Memlimit; limit > 0 {
 		go func() {
 			for {
 				select {
@@ -97,10 +104,10 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 						slog.Error("mem check error", slog.Any("err", err))
 						continue
 					}
-					if rss > uint64(b.Memlimit) {
+					if rss > uint64(limit) {
 						slog.Info("memory limit exceeded, stopping browser",
 							slog.Uint64("rss", rss),
-							slog.Uint64("limit", uint64(b.Memlimit)),
+							slog.Uint64("limit", uint64(limit)),
 						)
 						// kill the process.
 						// It will be auto-restarted
@@ -115,14 +122,12 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 	}
 
 	go func() {
-		defer close(b.done)
-		defer b.cancel()
+		defer close(done)
+		defer cancel()
 
 		// Wait for readyness
 		time.Sleep(time.Second * 1)
-		b.Lock()
-		close(b.ready)
-		b.Unlock()
+		close(ready)
 
 		// block until the end
 		if err := cmd.Wait(); err != nil {
@@ -131,7 +136,6 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 		if ctx.Err() != nil {
 			return
-
 		}
 
 		// reset state
@@ -141,7 +145,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		b.Unlock()
 
 		// autorestart
-		if err := b.Start(ctx); err != nil {
+		if err := b.Start(restartctx); err != nil {
 			slog.Error("browser restart", slog.Any("err", err))
 			return
 		}
