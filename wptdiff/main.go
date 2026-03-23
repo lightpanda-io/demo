@@ -47,6 +47,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		n       = flags.Int("n", 10, "number of runs to list, 0 for all")
 
 		progress = flags.Bool("with-progress", false, "display regression and progression")
+		explain  = flags.String("explain", "", "Explain the difference in details for a given test")
 	)
 
 	// usage func declaration.
@@ -144,12 +145,50 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	)
 	fmt.Fprintf(stdout, "\n")
 
+	diff := ListDiff(lasttcs, prevtcs)
+
+	// If we want the details for a given test.
+	if *explain != "" {
+		for _, d := range diff {
+			if d.Name == *explain {
+				fmt.Fprintf(stdout, "%s\n", d.Name)
+
+				{
+					tc := d.Prev
+					fmt.Fprintf(stdout, "%s %10s\t%-60s\t%d\n",
+						tcf(tc), sub(tc), tc.Message, tc.Elapsed,
+					)
+				}
+
+				if d.Last != nil {
+
+					tc := d.Last
+					fmt.Fprintf(stdout, "%s %10s\t%-60s\t%d\n",
+						tcf(tc), sub(tc), tc.Message, tc.Elapsed,
+					)
+
+					fmt.Fprintf(stdout, "=== Last sub cases\n")
+					for _, s := range d.Last.SubCases {
+						fmt.Fprintf(stdout, "%s\t%s\t%20s\n",
+							tcf(s), s.Name, s.Message,
+						)
+					}
+				} else {
+					fmt.Fprintf(stdout, "%s\t%s\n", tcf(d.Last), d.Name)
+				}
+
+				return nil
+			}
+		}
+
+		return fmt.Errorf("test %s not found in diff", *explain)
+	}
+
 	// Columns headers
 	fmt.Fprintf(stdout, "  %12v\t%12v\n", "Prev", "Last")
 	fmt.Fprintf(stdout, "  %12v\t%12v\n", prev.Commit, last.Commit)
 
 	// Comparison
-	diff := ListDiff(lasttcs, prevtcs)
 	for _, d := range diff {
 		regression := " "
 		if d.Regression {
