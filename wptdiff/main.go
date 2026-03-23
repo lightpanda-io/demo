@@ -52,7 +52,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// usage func declaration.
 	bin := args[0]
 	flags.Usage = func() {
-		fmt.Fprintf(stderr, "usage: %s [<commit> [<commit>]]\n", bin)
+		fmt.Fprintf(stderr, "usage: %s [<prev commit> [<last commit>]]\n", bin)
 		fmt.Fprintf(stderr, "Compare WPT test results\n")
 		fmt.Fprintf(stderr, "\nCommand line options:\n")
 		flags.PrintDefaults()
@@ -66,7 +66,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	}
 
 	args = flags.Args()
-	if len(args) != 0 {
+	if len(args) > 2 {
+		flags.Usage()
 		return fmt.Errorf("bad arguments")
 	}
 
@@ -91,7 +92,38 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return nil
 	}
 
-	last, prev := runs[nruns-1], runs[nruns-2]
+	// Select the runs to compare.
+	// Use user's arguments or default to the 2 last ones.
+	var last, prev Run
+	switch len(args) {
+	case 0:
+		last, prev = runs[nruns-1], runs[nruns-2]
+	case 1:
+		last = runs[nruns-1]
+		for _, run := range runs[nruns-*n:] {
+			if strings.HasPrefix(string(run.Commit), args[0]) {
+				prev = run
+				break
+			}
+		}
+	case 2:
+		for _, run := range runs[nruns-*n:] {
+			if strings.HasPrefix(string(run.Commit), args[0]) {
+				prev = run
+			}
+			if strings.HasPrefix(string(run.Commit), args[1]) {
+				last = run
+			}
+
+			if last.Commit != "" && prev.Commit != "" {
+				break
+			}
+		}
+	}
+
+	if last.Commit == "" || prev.Commit == "" {
+		return fmt.Errorf("invalid commits")
+	}
 
 	// compare the last 2 by default
 	lasttcs, err := cli.Fetch(ctx, last.Date, last.Commit)
