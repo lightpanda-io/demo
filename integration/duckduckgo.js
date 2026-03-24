@@ -11,33 +11,40 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-'use strict'
+"use strict";
 
-import puppeteer from 'puppeteer-core';
+import puppeteer from "puppeteer-core";
 
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
-const baseURL = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234'
+const browserAddress = process.env.BROWSER_ADDRESS
+  ? process.env.BROWSER_ADDRESS
+  : "ws://127.0.0.1:9222";
+const baseURL = process.env.URL ? process.env.URL : "http://127.0.0.1:1234";
 
 // use browserWSEndpoint to pass the Lightpanda's CDP server address.
 const browser = await puppeteer.connect({
-    browserWSEndpoint: browserAddress,
+  browserWSEndpoint: browserAddress,
 });
 
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://duckduckgo.com', {waitUntil: 'networkidle0', timeout: 10000});
+await page.goto("https://duckduckgo.com", {
+  waitUntil: "networkidle0",
+  timeout: 10000,
+});
 
-await page.type('input[name=q]','lightpanda'),
+await page.type("input[name=q]", "lightpanda");
 await Promise.all([
-  page.waitForNavigation({waitUntil: 'networkidle0'}),
-  page.keyboard.press('Enter'),
+  page.waitForNavigation({ waitUntil: "networkidle0" }),
+  page.keyboard.press("Enter"),
 ]);
 
 const links = await page.evaluate(() => {
-  return Array.from(document.querySelectorAll('a[data-testid="result-title-a"]')).map(row => {
-    return row.getAttribute('href');
+  return Array.from(
+    document.querySelectorAll('a[data-testid="result-title-a"]'),
+  ).map((row) => {
+    return row.getAttribute("href");
   });
 });
 
@@ -48,16 +55,21 @@ await browser.disconnect();
 let found = {
   homepage: false,
   github: false,
-  docs: false,
-}
+  sourceforge: false,
+};
 for (const link of links) {
-  if (link === 'https://lightpanda.io/') found.homepage = true;
-  else if (link.startsWith('https://github.com/lightpanda-io')) found.github = true;
-  else if (link.startsWith('https://lightpanda.io/docs/')) found.docs = true;
+  if (link === "https://lightpanda.io/") found.homepage = true;
+  else if (link.startsWith("https://github.com/lightpanda-io"))
+    found.github = true;
+  else if (
+    link.startsWith(
+      "https://sourceforge.net/projects/lightpanda-browser.mirror/",
+    )
+  )
+    found.docs = true;
 }
 
 if (!found.homepage || !found.github || !found.docs) {
   console.log("Failed to find expected links", found);
   throw new Error("invalid results");
 }
-
