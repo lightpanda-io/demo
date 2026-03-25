@@ -23,11 +23,11 @@
 
 set -uo pipefail
 
-LP="/Users/nitya/Desktop/Work/Lightpanda testing Vercel/lightpanda"
+LP=`which lightpanda`
 DEMO_URL="https://demo-browser.lightpanda.io/campfire-commerce/"
 SIMPLE_URL="https://example.com"
-RESULTS_FILE="/Users/nitya/Desktop/Work/Lightpanda testing Vercel/testing/final-live-results.txt"
-SHOT_DIR="/Users/nitya/Desktop/Work/Lightpanda testing Vercel/testing"
+RESULTS_FILE="final-live-results.txt"
+SHOT_DIR="./"
 PASS=0
 FAIL=0
 SKIP=0
