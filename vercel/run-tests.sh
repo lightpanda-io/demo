@@ -52,13 +52,6 @@ echo "============================================================"
 ########################################################################
 # SETUP — clean slate
 ########################################################################
-echo ""
-log "=== SETUP: killing existing processes, cleaning sockets ==="
-pkill -f "lightpanda" 2>/dev/null || true
-pkill -f "agent-browser" 2>/dev/null || true
-rm -f ~/.agent-browser/default.pid ~/.agent-browser/default.sock 2>/dev/null
-sleep 2
-
 if [[ -x "$LP" ]]; then
   pass "Setup: Lightpanda binary executable ($("$LP" version 2>/dev/null))"
 else
