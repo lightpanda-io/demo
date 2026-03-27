@@ -4,21 +4,21 @@
 		"character": "Jambette",
 		"name": "Jambette",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03450001-005f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03450001-005f0502.png",
 		"tail": "005f0502"
 	},
 	"next": "00240002.html",
 	"prev": "00a40502.html",
 	"list": {
-		"006c0502": "Quillson",
-		"009f0502": "Henry",
-		"00bb0502": "Ozzie",
-		"01300502": "Bam",
-		"01670502": "Baabara",
-		"019c0502": "Naomi",
-		"02720e02": "Luigi - Horse Racing",
-		"02a70e02": "Baby Mario - Tennis",
-		"03a40002": "Terry",
-		"04b31d02": "Blanka"
+		"00530502": "Lyle",
+		"009a0502": "Bunnie",
+		"00d80502": "Broccolo",
+		"01280502": "Cousteau",
+		"014a0502": "Gaston",
+		"01bc0502": "Sydney",
+		"026f0e02": "Luigi - Baseball",
+		"02bb0e02": "Metal Mario - Tennis",
+		"04c30102": "Poplin \u0026 Prince Florian",
+		"04cb1d02": "Ryu"
 	}
 }

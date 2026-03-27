@@ -4,21 +4,21 @@
 		"character": "Mabel",
 		"name": "Mabel",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880000-02410502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01880000-02410502.png",
 		"tail": "02410502"
 	},
 	"next": "01060502.html",
 	"prev": "004f0502.html",
 	"list": {
-		"006f0502": "Shari",
-		"009f0502": "Henry",
-		"01350502": "Chevre",
-		"016d0502": "Derwin",
-		"025c0d02": "Shadow Mewtwo",
-		"03620002": "Cloud - Player 2",
-		"03670102": "Goomba",
-		"03c40502": "Cyd",
-		"04ba1d02": "Zangief",
-		"04eb1d02": "M. Bison"
+		"002f0002": "Duck Hunt",
+		"003d0102": "Mario - Silver Edition",
+		"00860502": "Flurry",
+		"00ae0502": "Katie",
+		"013f0502": "Merry",
+		"01aa0502": "Apple",
+		"027c0e02": "Daisy - Horse Racing",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03b30502": "C.J.",
+		"04180902": "Link - Tears of the Kingdom"
 	}
 }

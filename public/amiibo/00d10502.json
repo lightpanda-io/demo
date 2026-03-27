@@ -4,21 +4,21 @@
 		"character": "Peck",
 		"name": "Peck",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023e0001-00d10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_023e0001-00d10502.png",
 		"tail": "00d10502"
 	},
 	"next": "02ab0e02.html",
 	"prev": "00dc0502.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00420302": "Pink Yarn Yoshi",
-		"004b0502": "Timmy",
-		"00be0502": "Fuchsia",
-		"01210502": "Miranda",
-		"01590502": "Dora",
-		"01bf0502": "Kevin",
-		"02470502": "Blathers",
-		"02a10e02": "Boo - Baseball",
-		"03cd0502": "Petri"
+		"007a0502": "Snake",
+		"00d50502": "Rodney",
+		"00f70502": "Pecan",
+		"01390502": "Eloise",
+		"01840502": "Mallary",
+		"01870502": "Graham",
+		"01d10502": "Angus",
+		"02540c02": "Kirby",
+		"02fa0502": "Billy",
+		"03710102": "Mario - Wedding"
 	}
 }

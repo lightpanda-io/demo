@@ -4,21 +4,21 @@
 		"character": "Bruce",
 		"name": "Bruce",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d90001-01c80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02d90001-01c80502.png",
 		"tail": "01c80502"
 	},
 	"next": "01500502.html",
 	"prev": "03981702.html",
 	"list": {
-		"00620502": "Sheldon",
-		"00880502": "Bella",
-		"01230502": "Paula",
-		"012d0502": "Marina",
-		"01500502": "Bree",
-		"016b0502": "Soleil",
-		"01a10502": "Elmer",
-		"03080502": "Boots",
-		"030c0502": "Spike",
-		"035d0302": "Poochy"
+		"00020002": "Yoshi",
+		"00560502": "Fauna",
+		"019a0502": "Anabelle",
+		"01b80502": "Pompom",
+		"02940e02": "Diddy Kong - Golf",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02ef0502": "Huck",
+		"03b70502": "Saharah",
+		"03bf0502": "Isabelle - Sweater",
+		"04390402": "Marina - Side Order"
 	}
 }

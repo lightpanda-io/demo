@@ -4,21 +4,21 @@
 		"character": "Pete",
 		"name": "Pete",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019f0001-01110502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_019f0001-01110502.png",
 		"tail": "01110502"
 	},
 	"next": "01870502.html",
 	"prev": "007c0502.html",
 	"list": {
-		"00880502": "Bella",
-		"00e00502": "Moose",
-		"01260502": "Rodeo",
-		"01320502": "Ricky",
-		"016a0502": "Antonio",
-		"01a00502": "Lucy",
-		"01ac0502": "Purrl",
-		"023e0302": "Mega Yarn Yoshi",
-		"02460502": "Cyrus",
-		"03b90502": "Gulliver"
+		"001a0002": "Wario",
+		"00290002": "Lucina",
+		"00a50502": "Roald",
+		"017b0502": "Shrunk - Loud Jacket",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"042c1802": "Palamute",
+		"042d1802": "Malzeno",
+		"042e0002": "Sora",
+		"04ef1d02": "Alex"
 	}
 }

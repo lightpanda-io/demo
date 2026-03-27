@@ -4,21 +4,21 @@
 		"character": "Margie",
 		"name": "Margie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03270001-01c30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03270001-01c30502.png",
 		"tail": "01c30502"
 	},
 	"next": "01840502.html",
 	"prev": "01000502.html",
 	"list": {
-		"00470502": "Sable",
-		"00610502": "Tiffany",
-		"00b50502": "Blanca",
-		"017c0502": "Pave",
-		"018f0502": "Shep",
-		"01c60502": "Rowan",
-		"023a0702": "Hammer Slam Bowser",
-		"02810e02": "Yoshi - Horse Racing",
-		"038d0002": "Piranha Plant",
-		"041b0402": "Octoling - Blue"
+		"00490502": "Resetti",
+		"00e40502": "Teddy",
+		"01100502": "Phyllis",
+		"01860502": "Katt",
+		"01ae0502": "Celia",
+		"02a10e02": "Boo - Baseball",
+		"02f00502": "Sylvana",
+		"031e0502": "Toby",
+		"03611202": "Celica",
+		"040e0f02": "Tsukino"
 	}
 }

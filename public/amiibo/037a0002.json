@@ -4,21 +4,21 @@
 		"character": "Daisy",
 		"name": "Daisy",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00130000-037a0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00130000-037a0002.png",
 		"tail": "037a0002"
 	},
 	"next": "01a00502.html",
 	"prev": "01ca0502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00570502": "Curt",
-		"00b00502": "Porter",
-		"00c40502": "Tipper",
-		"014d0502": "Joey",
-		"01770502": "Leilani",
-		"01780502": "Resetti - Without Hat",
-		"02500a02": "Shovel Knight",
-		"02530002": "Ryu",
-		"04121302": "Samus - Metroid Dread"
+		"001f0002": "Palutena",
+		"005e0502": "Lopez",
+		"00b90502": "Poncho",
+		"012e0502": "Spork/Crackle",
+		"01460502": "Stinky",
+		"01500502": "Bree",
+		"02630102": "Wario",
+		"02780e02": "Daisy - Soccer",
+		"03741402": "Super Mario Cereal",
+		"041e0002": "Pyra"
 	}
 }

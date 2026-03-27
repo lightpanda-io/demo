@@ -4,21 +4,21 @@
 		"character": "Rudy",
 		"name": "Rudy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02710001-019b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02710001-019b0502.png",
 		"tail": "019b0502"
 	},
 	"next": "00860502.html",
 	"prev": "02590002.html",
 	"list": {
-		"00b40502": "Isabelle - Winter",
-		"00cb0502": "Egbert",
-		"02650102": "Diddy Kong",
-		"02b00e02": "Birdo - Baseball",
-		"02ee0502": "Tybalt",
-		"03160502": "Cleo",
-		"03520902": "Toon Zelda - The Wind Waker",
-		"04bf1d02": "Ed",
-		"04dd1d02": "Rashid",
-		"04e41d02": "Sagat"
+		"00220002": "Mii Swordfighter",
+		"00ff0502": "Ankha",
+		"014b0502": "Marshal",
+		"01af0502": "Zucker",
+		"01c80502": "Bruce",
+		"025c0d02": "Shadow Mewtwo",
+		"02fa0502": "Billy",
+		"034b0902": "Link - Ocarina of Time",
+		"035a0902": "Mipha",
+		"03810002": "Ice Climbers"
 	}
 }

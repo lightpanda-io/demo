@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Donkey Kong",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-00030002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00080000-00030002.png",
 		"tail": "00030002"
 	},
-	"next": "03a0ff02.html",
+	"next": "04c10102.html",
 	"prev": "029a0e02.html",
 	"list": {
-		"005e0502": "Lopez",
-		"00830502": "Pudge",
-		"00e20502": "Zell",
-		"01850502": "Rocco",
-		"02750e02": "Peach - Tennis",
-		"036c0a02": "Plague Knight",
-		"03830002": "Ivysaur",
-		"03ab0502": "Orville",
-		"03b90502": "Gulliver",
-		"04d51d02": "E. Honda"
+		"00300002": "Sonic",
+		"00860502": "Flurry",
+		"010b0502": "Rocket",
+		"012e0502": "Spork/Crackle",
+		"01590502": "Dora",
+		"01890502": "Dizzy",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02520002": "Roy",
+		"03060502": "Admiral",
+		"04e01d02": "Akuma"
 	}
 }

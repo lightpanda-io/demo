@@ -4,21 +4,21 @@
 		"character": "Queenie",
 		"name": "Queenie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04360001-01940502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04360001-01940502.png",
 		"tail": "01940502"
 	},
 	"next": "009c0502.html",
 	"prev": "01680502.html",
 	"list": {
-		"000f0002": "Little Mac",
-		"00cd0502": "Sly",
-		"00dc0502": "Alfonso",
-		"00f50502": "Hugh",
-		"01740502": "Celeste",
-		"017d0502": "Gulliver",
-		"01820502": "Pinky",
-		"01b40502": "Sylvia",
-		"031d0502": "Chelsea",
-		"04350402": "Big Man"
+		"00480502": "Kapp'n",
+		"011e0502": "Anchovy",
+		"018d0502": "Croque",
+		"02990e02": "Bowser - Golf",
+		"03070502": "Ellie",
+		"038d0002": "Piranha Plant",
+		"03ad0502": "Blathers",
+		"03bc0502": "Niko",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04cc1d02": "Ken"
 	}
 }

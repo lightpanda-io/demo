@@ -4,21 +4,21 @@
 		"character": "Franklin",
 		"name": "Franklin",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ae0001-011b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01ae0001-011b0502.png",
 		"tail": "011b0502"
 	},
 	"next": "03750d02.html",
 	"prev": "038a0002.html",
 	"list": {
-		"00240002": "Charizard",
-		"00b20502": "Shrunk",
-		"00c20502": "Kitt",
-		"00ec0502": "Bud",
-		"010f0502": "Pelly",
-		"01af0502": "Zucker",
-		"01b70502": "Doc",
-		"027d0e02": "Yoshi - Soccer",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"03770402": "Marina"
+		"00220002": "Mii Swordfighter",
+		"00980502": "Pancetti",
+		"00a70502": "Walker",
+		"00af0502": "Tommy - Uniform",
+		"00d40502": "Carmen",
+		"026b0e02": "Mario - Tennis",
+		"02730e02": "Peach - Soccer",
+		"03170502": "Ike",
+		"039bff02": "Mario - Power Up Band",
+		"03bf0502": "Isabelle - Sweater"
 	}
 }

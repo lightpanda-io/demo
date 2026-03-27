@@ -4,21 +4,21 @@
 		"character": "Savannah",
 		"name": "Savannah",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a60001-00c80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03a60001-00c80502.png",
 		"tail": "00c80502"
 	},
 	"next": "02510002.html",
 	"prev": "001c0002.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00be0502": "Fuchsia",
-		"00eb0502": "Nan",
-		"01390502": "Eloise",
-		"01540502": "Moe",
-		"01740502": "Celeste",
-		"01830502": "Mott",
-		"01900502": "Lolly",
-		"035b0902": "Revali",
-		"03af0502": "Mabel"
+		"00060002": "Samus",
+		"00290002": "Lucina",
+		"00710502": "Winnie",
+		"018d0502": "Croque",
+		"018e0502": "Pashmina",
+		"026a0e02": "Mario - Baseball",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02e40f02": "Rathian and Cheval",
+		"03bc0502": "Niko",
+		"04281902": "Roa Kirishima"
 	}
 }

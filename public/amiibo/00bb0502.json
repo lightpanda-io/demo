@@ -4,21 +4,21 @@
 		"character": "Ozzie",
 		"name": "Ozzie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c10001-00bb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03c10001-00bb0502.png",
 		"tail": "00bb0502"
 	},
 	"next": "023b0702.html",
 	"prev": "00a70502.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"01020502": "Marcel",
-		"018d0502": "Croque",
-		"01d60502": "Stitches - Amiibo Festival",
-		"024c0502": "Rover",
-		"02a00e02": "Boo - Soccer",
-		"02a50e02": "Baby Mario - Soccer",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03cd0502": "Petri",
-		"04401c02": "Luigi - My Mario Wooden Blocks"
+		"00090002": "Pikachu",
+		"009a0502": "Bunnie",
+		"00b70502": "Chip",
+		"00fc0502": "Chops",
+		"01240502": "Ken",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02f80502": "Jacob",
+		"03aa0502": "Isabelle",
+		"03b60502": "Kicks",
+		"04251902": "Tatsuhisa “Luke” Kamijō"
 	}
 }

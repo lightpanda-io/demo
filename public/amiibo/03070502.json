@@ -4,21 +4,21 @@
 		"character": "Ellie",
 		"name": "Ellie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032a0001-03070502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_032a0001-03070502.png",
 		"tail": "03070502"
 	},
 	"next": "00630502.html",
 	"prev": "03ac0502.html",
 	"list": {
-		"003d0102": "Mario - Silver Edition",
-		"010c0502": "Rover",
-		"010f0502": "Pelly",
-		"01160502": "Grams",
-		"01760502": "Gracie",
-		"02390602": "8-Bit Mario Modern Color",
-		"02420502": "Tom Nook",
-		"02740e02": "Peach - Baseball",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04b71d02": "Manon"
+		"01740502": "Celeste",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02930e02": "Diddy Kong - Tennis",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"03a0ff02": "Toad - Power Up Band",
+		"03a50002": "Byleth",
+		"03d10502": "Zoe",
+		"04200002": "Kazuya",
+		"04340402": "Frye",
+		"04db1d02": "Lily"
 	}
 }

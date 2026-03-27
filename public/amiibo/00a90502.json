@@ -4,21 +4,21 @@
 		"character": "Reese",
 		"name": "Reese",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0001-00a90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018a0001-00a90502.png",
 		"tail": "00a90502"
 	},
 	"next": "035f1102.html",
 	"prev": "01020502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00330002": "R.O.B. - NES",
-		"004b0502": "Timmy",
-		"01460502": "Stinky",
-		"01720502": "Katrina",
-		"01b30502": "Chow",
-		"02990e02": "Bowser - Golf",
-		"02b00e02": "Birdo - Baseball",
-		"03651302": "Samus Aran",
-		"039dff02": "Peach - Power Up Band"
+		"004a0502": "Joan",
+		"00d50502": "Rodney",
+		"018d0502": "Croque",
+		"019c0502": "Naomi",
+		"01a90502": "Papi",
+		"01be0502": "Nibbles",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"02f30502": "Carrie",
+		"031e0502": "Toby",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

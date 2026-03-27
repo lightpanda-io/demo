@@ -4,21 +4,21 @@
 		"character": "Camofrog",
 		"name": "Camofrog",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033b0001-00fa0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033b0001-00fa0502.png",
 		"tail": "00fa0502"
 	},
 	"next": "02440502.html",
 	"prev": "01d20502.html",
 	"list": {
-		"00960502": "Annalisa",
-		"00a80502": "K.K. Slider",
-		"01050502": "Gladys",
-		"02390602": "8-Bit Mario Modern Color",
-		"027e0e02": "Yoshi - Baseball",
-		"028b0e02": "Waluigi - Horse Racing",
-		"034e0902": "Link - Skyward Sword",
-		"03cd0502": "Petri",
-		"04150402": "Inkling - Yellow",
-		"04eb1d02": "M. Bison"
+		"00300002": "Sonic",
+		"01060502": "Hamphrey",
+		"010d0502": "Blathers",
+		"016e0502": "Francine",
+		"025c0d02": "Shadow Mewtwo",
+		"02910e02": "Diddy Kong - Soccer",
+		"02970e02": "Bowser - Baseball",
+		"040c0f02": "Razewing Ratha",
+		"041b0402": "Octoling - Blue",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

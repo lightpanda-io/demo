@@ -4,21 +4,21 @@
 		"character": "Daisy",
 		"name": "Daisy - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30501-027c0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c30501-027c0e02.png",
 		"tail": "027c0e02"
 	},
 	"next": "038a0002.html",
 	"prev": "03a40002.html",
 	"list": {
-		"00860502": "Flurry",
-		"008a0502": "Yuka",
-		"00dd0502": "Rhonda",
-		"016f0502": "Chrissy",
-		"01b50502": "Jacques",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"03500902": "Toon Link - The Wind Waker",
-		"036c0a02": "Plague Knight",
-		"03a10002": "Joker",
-		"04dc1d02": "Cammy"
+		"00160002": "Toon Link",
+		"010b0502": "Rocket",
+		"011d0502": "Lily",
+		"01510502": "Rooney",
+		"01630502": "Curly",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03010502": "Claude",
+		"038f0402": "Octoling Boy",
+		"03941702": "Ikari",
+		"03cf0502": "Quinn"
 	}
 }

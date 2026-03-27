@@ -4,20 +4,21 @@
 		"character": "Yoshi",
 		"name": "Green Yarn Yoshi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00410302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030102-00410302.png",
 		"tail": "00410302"
 	},
 	"next": "02f90502.html",
 	"prev": "03c10502.html",
 	"list": {
+		"00330002": "R.O.B. - NES",
 		"00400402": "Inkling Squid",
-		"00760502": "Opal",
-		"01a30502": "Rory",
-		"036e0a02": "King Knight",
-		"03760402": "Pearl",
-		"03a70102": "Peach - Cat",
-		"03d10502": "Zoe",
-		"04cb1d02": "Ryu",
-		"04f01d02": "Ingrid"
+		"00980502": "Pancetti",
+		"00e40502": "Teddy",
+		"015d0502": "Violet",
+		"02520002": "Roy",
+		"028f0e02": "Donkey Kong - Golf",
+		"02ea0502": "Piper",
+		"03ba0502": "Wisp",
+		"04330402": "Shiver"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Tommy",
 		"name": "Tommy - Uniform",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01860101-00af0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01860101-00af0502.png",
 		"tail": "00af0502"
 	},
 	"next": "038e0402.html",
 	"prev": "03530902.html",
 	"list": {
-		"00120002": "Captain Falcon",
-		"00490502": "Resetti",
-		"006d0502": "Marcie",
-		"011c0502": "Jingle",
-		"016b0502": "Soleil",
-		"02580002": "Mega Man - Gold Edition",
-		"03040502": "Louie",
-		"035b0902": "Revali",
-		"03b50502": "Daisy Mae",
-		"03c00502": "Sherb"
+		"00090002": "Pikachu",
+		"00940502": "Eunice",
+		"011f0502": "Tabby",
+		"012c0502": "Colton",
+		"01360502": "Drago",
+		"01420502": "Wolfgang",
+		"02b40e02": "Rosalina - Soccer",
+		"036f1202": "Chrom",
+		"039fff02": "Yoshi - Power Up Band",
+		"03c10502": "Megan"
 	}
 }

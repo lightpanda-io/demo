@@ -4,21 +4,21 @@
 		"character": "Koopa Troopa",
 		"name": "Koopa Troopa",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00230000-03680102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00230000-03680102.png",
 		"tail": "03680102"
 	},
 	"next": "01310502.html",
 	"prev": "00700502.html",
 	"list": {
-		"00670502": "Alli",
-		"00c30502": "Tom",
-		"01510502": "Rooney",
-		"02a40e02": "Boo - Horse Racing",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03760402": "Pearl",
-		"03800002": "Dark Samus",
-		"03900402": "Octoling Octopus",
-		"0430ff02": "Golden - Power Up Band",
-		"04b11d02": "Guile"
+		"001e0002": "Olimar",
+		"009d0502": "Axel",
+		"00c50502": "Prince",
+		"01460502": "Stinky",
+		"02530002": "Ryu",
+		"02a70e02": "Baby Mario - Tennis",
+		"02fe0502": "Murphy",
+		"03030502": "Julia",
+		"03b40502": "Flick",
+		"03cd0502": "Petri"
 	}
 }

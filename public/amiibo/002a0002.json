@@ -4,21 +4,21 @@
 		"character": "Robin",
 		"name": "Robin",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21030000-002a0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21030000-002a0002.png",
 		"tail": "002a0002"
 	},
 	"next": "00690502.html",
 	"prev": "03c80502.html",
 	"list": {
-		"001a0002": "Wario",
-		"00370102": "Yoshi",
-		"003a0202": "Chibi Robo",
-		"006f0502": "Shari",
-		"00800502": "Tutu",
-		"00820502": "Mint",
-		"03b40502": "Flick",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04210002": "Sephiroth",
-		"04e81d02": "Terry"
+		"003f0402": "Inkling Boy",
+		"00530502": "Lyle",
+		"00730502": "Sterling",
+		"00790502": "Deena",
+		"01aa0502": "Apple",
+		"02860e02": "Wario - Horse Racing",
+		"02a40e02": "Boo - Horse Racing",
+		"02b60e02": "Rosalina - Tennis",
+		"031a0502": "Marty",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

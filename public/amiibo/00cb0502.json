@@ -4,21 +4,21 @@
 		"character": "Egbert",
 		"name": "Egbert",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029b0001-00cb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_029b0001-00cb0502.png",
 		"tail": "00cb0502"
 	},
 	"next": "00000002.html",
 	"prev": "01a30502.html",
 	"list": {
-		"00fa0502": "Camofrog",
-		"012d0502": "Marina",
-		"01470502": "Tammi",
-		"01560502": "Hamlet",
-		"019a0502": "Anabelle",
-		"01a00502": "Lucy",
-		"03750d02": "Detective Pikachu",
-		"03ad0502": "Blathers",
-		"03ca0502": "Tiansheng",
-		"04ce1d02": "Jamie"
+		"00600502": "Rasher",
+		"00780502": "Limberg",
+		"019d0502": "Peewee",
+		"02830e02": "Wario - Baseball",
+		"02b30e02": "Birdo - Horse Racing",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"02f50502": "Rex",
+		"03971702": "Ganda",
+		"03cd0502": "Petri",
+		"042e0002": "Sora"
 	}
 }

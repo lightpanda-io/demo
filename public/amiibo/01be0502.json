@@ -4,21 +4,21 @@
 		"character": "Nibbles",
 		"name": "Nibbles",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e10001-01be0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e10001-01be0502.png",
 		"tail": "01be0502"
 	},
 	"next": "025e0402.html",
-	"prev": "00270002.html",
+	"prev": "04c61e03.html",
 	"list": {
-		"01370502": "Tangy",
-		"018e0502": "Pashmina",
-		"01990502": "Bones",
-		"02960e02": "Bowser - Soccer",
-		"02fc0502": "Bitty",
-		"030b0502": "Leopold",
-		"03560902": "Zelda",
-		"03830002": "Ivysaur",
-		"03d60502": "Roswell",
-		"04df1d02": "Ed"
+		"00490502": "Resetti",
+		"00ba0502": "Felicity",
+		"00d00502": "Nana",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"035c0902": "Bokoblin",
+		"03a90502": "Timmy \u0026 Tommy",
+		"03bd0502": "Wardell",
+		"03cf0502": "Quinn",
+		"04210002": "Sephiroth"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Sagat",
 		"name": "Sagat",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d90001-04ed1d02.png",
 		"tail": "04ed1d02"
 	},
 	"next": "04ee1d02.html",
 	"prev": "04ec1d02.html",
 	"list": {
-		"00360102": "Peach",
-		"00470502": "Sable",
-		"00b20502": "Shrunk",
-		"00f70502": "Pecan",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"03530902": "Link - Archer",
-		"03840002": "Squirtle",
-		"03b20502": "K.K. Slider",
-		"04b61d02": "Dee Jay",
-		"04b91d02": "JP"
+		"00020002": "Yoshi",
+		"00230002": "Mii Gunner",
+		"00280002": "King Dedede",
+		"01440502": "Klaus",
+		"01960502": "Frita",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"030c0502": "Spike",
+		"03900402": "Octoling Octopus",
+		"03d40502": "Frett",
+		"04360402": "Callie - Alterna"
 	}
 }

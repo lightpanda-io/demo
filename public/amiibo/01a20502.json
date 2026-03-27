@@ -4,21 +4,21 @@
 		"character": "Puddles",
 		"name": "Puddles",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033e0001-01a20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033e0001-01a20502.png",
 		"tail": "01a20502"
 	},
 	"next": "038f0402.html",
 	"prev": "02430502.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"005a0502": "Cheri",
-		"005f0502": "Jambette",
-		"00760502": "Opal",
-		"015c0502": "Lyman",
-		"01ce0502": "Cally",
-		"02530002": "Ryu",
-		"03030502": "Julia",
-		"031c0502": "Chai",
-		"03a90502": "Timmy \u0026 Tommy"
+		"00260002": "Jigglypuff",
+		"00d90502": "Coco",
+		"01270502": "Bubbles",
+		"01300502": "Bam",
+		"02a40e02": "Boo - Horse Racing",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"03130502": "Olive",
+		"034e0902": "Link - Skyward Sword",
+		"040e0f02": "Tsukino",
+		"04ef1d02": "Alex"
 	}
 }

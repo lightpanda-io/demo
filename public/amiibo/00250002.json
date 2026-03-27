@@ -4,21 +4,21 @@
 		"character": "Greninja",
 		"name": "Greninja",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1b920000-00250002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1b920000-00250002.png",
 		"tail": "00250002"
 	},
 	"next": "02740e02.html",
 	"prev": "01090502.html",
 	"list": {
-		"007b0502": "Bangle",
-		"01360502": "Drago",
-		"01650502": "Caroline",
-		"01830502": "Mott",
-		"019f0502": "Olaf",
-		"026d0e02": "Mario - Horse Racing",
-		"02bb0e02": "Metal Mario - Tennis",
-		"03170502": "Ike",
-		"039dff02": "Peach - Power Up Band",
-		"04bf1d02": "Ed"
+		"00240002": "Charizard",
+		"00670502": "Alli",
+		"00890502": "Biff",
+		"01350502": "Chevre",
+		"01930502": "Pierce",
+		"025e0402": "Marie",
+		"02f50502": "Rex",
+		"03961702": "Hayakawa",
+		"0431ff02": "Donkey Kong - Power Up Band",
+		"043d1b02": "Noah"
 	}
 }

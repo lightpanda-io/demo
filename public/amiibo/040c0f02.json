@@ -4,21 +4,21 @@
 		"character": "Razewing Ratha",
 		"name": "Razewing Ratha",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35050000-040c0f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35050000-040c0f02.png",
 		"tail": "040c0f02"
 	},
-	"next": "017f0502.html",
-	"prev": "000d0002.html",
+	"next": "040d0f02.html",
+	"prev": "00fe0502.html",
 	"list": {
-		"00610502": "Tiffany",
-		"00650502": "Kiki",
-		"00b30502": "Don Resetti",
-		"00e80502": "Filbert",
-		"01020502": "Marcel",
-		"01200502": "Kody",
-		"017b0502": "Shrunk - Loud Jacket",
-		"01960502": "Frita",
-		"02a30e02": "Boo - Golf",
-		"02ec0502": "Hornsby"
+		"00730502": "Sterling",
+		"00910502": "Roscoe",
+		"00ee0502": "Benedict",
+		"03090502": "Weber",
+		"035a0902": "Mipha",
+		"035c0902": "Bokoblin",
+		"03680102": "Koopa Troopa",
+		"03b80502": "Harvey",
+		"03b90502": "Gulliver",
+		"03d00502": "Chabwick"
 	}
 }

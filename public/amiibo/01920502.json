@@ -4,21 +4,21 @@
 		"character": "Dotty",
 		"name": "Dotty",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04950001-01920502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04950001-01920502.png",
 		"tail": "01920502"
 	},
 	"next": "00ae0502.html",
 	"prev": "00100002.html",
 	"list": {
-		"00040002": "Link",
-		"004d0502": "Pascal",
-		"004f0502": "Redd",
-		"00f00502": "Julian",
-		"01080502": "Kid Cat",
-		"013d0502": "Ava",
-		"03190502": "Rilla",
-		"03a60102": "Mario - Cat",
-		"041d0002": "Min Min",
-		"04cd1d02": "Luke"
+		"00820502": "Mint",
+		"01600502": "Merengue",
+		"01c90502": "OHare",
+		"02580002": "Mega Man - Gold Edition",
+		"026a0e02": "Mario - Baseball",
+		"02fd0502": "Maggie",
+		"03110502": "Sprocket",
+		"03130502": "Olive",
+		"035d0302": "Poochy",
+		"04cf1d02": "Kimberly"
 	}
 }

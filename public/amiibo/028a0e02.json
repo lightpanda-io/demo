@@ -4,21 +4,21 @@
 		"character": "Waluigi",
 		"name": "Waluigi - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60401-028a0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c60401-028a0e02.png",
 		"tail": "028a0e02"
 	},
 	"next": "036f1202.html",
 	"prev": "00dd0502.html",
 	"list": {
-		"003e0402": "Inkling Girl",
-		"007e0502": "Nate",
-		"00ce0502": "Blaire",
-		"00de0502": "Butch",
-		"01100502": "Phyllis",
-		"01a60502": "Mira",
-		"026d0e02": "Mario - Horse Racing",
-		"029c0e02": "Bowser Jr. - Baseball",
-		"030f0502": "Norma",
-		"042b1802": "Palico"
+		"00110002": "Lucario",
+		"003a0202": "Chibi Robo",
+		"00860502": "Flurry",
+		"01170502": "Timmy - Full Apron",
+		"01950502": "Fang",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"02fd0502": "Maggie",
+		"034c0902": "Link - Majora's Mask",
+		"04150402": "Inkling - Yellow",
+		"04a30902": "Riju"
 	}
 }

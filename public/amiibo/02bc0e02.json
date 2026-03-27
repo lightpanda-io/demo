@@ -4,21 +4,19 @@
 		"character": "Metal Mario",
 		"name": "Metal Mario - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d00401-02bc0e02.png",
 		"tail": "02bc0e02"
 	},
 	"next": "02ea0502.html",
 	"prev": "01230502.html",
 	"list": {
-		"002e0002": "R.O.B. - Famicom",
-		"005e0502": "Lopez",
-		"00640502": "Bill",
-		"00be0502": "Fuchsia",
-		"00d00502": "Nana",
-		"01910502": "Erik",
-		"03750d02": "Detective Pikachu",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"04b41d02": "Dhalsim",
-		"04e71d02": "Ingrid"
+		"001c0002": "Falco",
+		"00590502": "Leonardo",
+		"005d0502": "Renée",
+		"00a30502": "Cole",
+		"00b80502": "Jack",
+		"019d0502": "Peewee",
+		"02560c02": "King Dedede",
+		"02f20502": "Wade"
 	}
 }

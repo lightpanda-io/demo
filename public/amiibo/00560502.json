@@ -4,21 +4,21 @@
 		"character": "Fauna",
 		"name": "Fauna",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d60001-00560502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02d60001-00560502.png",
 		"tail": "00560502"
 	},
 	"next": "00ff0502.html",
 	"prev": "01d50502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"009c0502": "Diana",
-		"00b30502": "Don Resetti",
-		"01650502": "Caroline",
-		"016a0502": "Antonio",
-		"01930502": "Pierce",
-		"02830e02": "Wario - Baseball",
-		"02a60e02": "Baby Mario - Baseball",
-		"03b60502": "Kicks",
-		"04140902": "Zelda \u0026 Loftwing"
+		"001b0002": "Ganondorf",
+		"00fe0502": "Vic",
+		"01010502": "Vesta",
+		"01450502": "Daisy",
+		"01ab0502": "Rod",
+		"02630102": "Wario",
+		"02f30502": "Carrie",
+		"03890002": "Ken",
+		"03c80502": "Sasha",
+		"04b31d02": "Blanka"
 	}
 }

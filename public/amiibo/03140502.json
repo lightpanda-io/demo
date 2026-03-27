@@ -4,21 +4,20 @@
 		"character": "Dobie",
 		"name": "Dobie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050f0001-03140502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_050f0001-03140502.png",
 		"tail": "03140502"
 	},
 	"next": "00360102.html",
 	"prev": "00f80502.html",
 	"list": {
-		"009b0502": "Clay",
-		"009d0502": "Axel",
-		"02630102": "Wario",
-		"02760e02": "Peach - Golf",
-		"02810e02": "Yoshi - Horse Racing",
-		"02af0e02": "Birdo - Soccer",
-		"03180502": "Tasha",
-		"035f1102": "Pikmin",
-		"04200002": "Kazuya",
-		"04f01d02": "Ingrid"
+		"00280002": "King Dedede",
+		"00720502": "Knox",
+		"009f0502": "Henry",
+		"01790502": "Timmy - Suit",
+		"01a90502": "Papi",
+		"02bb0e02": "Metal Mario - Tennis",
+		"03870002": "Pokemon Trainer",
+		"038f0402": "Octoling Boy",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

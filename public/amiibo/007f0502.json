@@ -4,21 +4,21 @@
 		"character": "Samson",
 		"name": "Samson",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04100001-007f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04100001-007f0502.png",
 		"tail": "007f0502"
 	},
 	"next": "00500502.html",
 	"prev": "01520502.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00890502": "Biff",
-		"01630502": "Curly",
-		"01700502": "Isabelle - Dress",
-		"018d0502": "Croque",
-		"01980502": "Melba",
-		"02680102": "Boo",
-		"03110502": "Sprocket",
-		"03971702": "Ganda",
-		"04370402": "Marie - Alterna"
+		"000c0002": "Luigi",
+		"00260002": "Jigglypuff",
+		"00330002": "R.O.B. - NES",
+		"005b0502": "Kyle",
+		"00630502": "Bluebear",
+		"00c20502": "Kitt",
+		"013c0502": "Beardo",
+		"01a10502": "Elmer",
+		"01b70502": "Doc",
+		"04dd1d02": "Rashid"
 	}
 }

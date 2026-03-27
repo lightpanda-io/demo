@@ -4,21 +4,21 @@
 		"character": "Ike",
 		"name": "Ike",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021f0001-03170502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_021f0001-03170502.png",
 		"tail": "03170502"
 	},
 	"next": "01770502.html",
 	"prev": "02ae0e02.html",
 	"list": {
-		"00530502": "Lyle",
-		"00a10502": "Cyrano",
-		"00fd0502": "Charlise",
-		"01bd0502": "Barold",
-		"02510002": "Lucas",
-		"029c0e02": "Bowser Jr. - Baseball",
-		"03560902": "Zelda",
-		"03b50502": "Daisy Mae",
-		"04230002": "Alex",
-		"04d41d02": "Dhalsim"
+		"00040002": "Link",
+		"005c0502": "Al",
+		"00860502": "Flurry",
+		"00e30502": "Pekoe",
+		"01110502": "Pete",
+		"031c0502": "Chai",
+		"03781402": "Solaire of Astora",
+		"03bc0502": "Niko",
+		"03d50502": "Azalea",
+		"04f21d02": "Mai"
 	}
 }

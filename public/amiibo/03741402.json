@@ -4,21 +4,21 @@
 		"character": "Mario Cereal",
 		"name": "Super Mario Cereal",
 		"gameSeries": "Kellogs",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37400001-03741402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_37400001-03741402.png",
 		"tail": "03741402"
 	},
 	"next": "00040002.html",
 	"prev": "02e90502.html",
 	"list": {
-		"00c30502": "Tom",
-		"00d90502": "Coco",
-		"00dc0502": "Alfonso",
-		"00e20502": "Zell",
-		"02430502": "Digby",
-		"02f10502": "Boris",
-		"02ff0502": "Plucky",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03b90502": "Gulliver",
-		"04de1d02": "A.K.I"
+		"00b80502": "Jack",
+		"00d20502": "Olivia",
+		"013b0502": "Hazel",
+		"01620502": "Claudia",
+		"02f90502": "Maddie",
+		"039cff02": "Luigi - Power Up Band",
+		"03a90502": "Timmy \u0026 Tommy",
+		"03b40502": "Flick",
+		"043a1302": "Samus \u0026 Vi-O-La",
+		"04d61d02": "Dee Jay"
 	}
 }

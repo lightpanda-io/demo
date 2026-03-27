@@ -4,21 +4,21 @@
 		"character": "Birdo",
 		"name": "Birdo - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ce0201-02b00e02.png",
 		"tail": "02b00e02"
 	},
 	"next": "00380102.html",
 	"prev": "01bd0502.html",
 	"list": {
-		"00ac0502": "Copper",
-		"011c0502": "Jingle",
-		"01940502": "Queenie",
-		"01b30502": "Chow",
-		"02560c02": "King Dedede",
-		"03170502": "Ike",
-		"03810002": "Ice Climbers",
-		"038f0402": "Octoling Boy",
-		"03a10002": "Joker",
-		"03d40502": "Frett"
+		"00450502": "Tom Nook",
+		"005e0502": "Lopez",
+		"00770502": "Poppy",
+		"00870502": "Clyde",
+		"01910502": "Erik",
+		"01cd0502": "Grizzly",
+		"023d0002": "Mewtwo",
+		"036a0402": "Inkling Boy - Neon Green",
+		"03c50502": "Judy",
+		"04f21d02": "Mai"
 	}
 }

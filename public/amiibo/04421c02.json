@@ -4,21 +4,20 @@
 		"character": "Yoshi",
 		"name": "Yoshi - My Mario Wooden Blocks",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030004-04421c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030004-04421c02.png",
 		"tail": "04421c02"
 	},
 	"next": "016d0502.html",
 	"prev": "00370102.html",
 	"list": {
-		"006b0502": "Gigi",
-		"00ee0502": "Benedict",
-		"01400502": "Genji",
-		"014c0502": "Gala",
-		"02b40e02": "Rosalina - Soccer",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"031e0502": "Toby",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"04cc1d02": "Ken"
+		"00360102": "Peach",
+		"00a50502": "Roald",
+		"01100502": "Phyllis",
+		"01550502": "Flora",
+		"019b0502": "Rudy",
+		"034b0902": "Link - Ocarina of Time",
+		"037e0002": "Wolf",
+		"03cf0502": "Quinn",
+		"0431ff02": "Donkey Kong - Power Up Band"
 	}
 }

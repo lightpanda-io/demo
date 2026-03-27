@@ -4,21 +4,21 @@
 		"character": "Deli",
 		"name": "Deli",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04010001-00660502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04010001-00660502.png",
 		"tail": "00660502"
 	},
 	"next": "031d0502.html",
 	"prev": "00bf0502.html",
 	"list": {
-		"009c0502": "Diana",
-		"01860502": "Katt",
-		"01b00502": "Peggy",
-		"01c60502": "Rowan",
-		"028d0e02": "Donkey Kong - Baseball",
-		"029c0e02": "Bowser Jr. - Baseball",
-		"031c0502": "Chai",
+		"004c0502": "Digby",
+		"00790502": "Deena",
+		"00fe0502": "Vic",
+		"01260502": "Rodeo",
+		"016e0502": "Francine",
+		"023f0502": "Isabelle - Winter Outfit",
+		"027b0e02": "Daisy - Golf",
 		"03500902": "Toon Link - The Wind Waker",
-		"03990902": "Link - Link's Awakening",
-		"index": "Sandy"
+		"041c0402": "Smallfry",
+		"043e1b02": "Mio"
 	}
 }

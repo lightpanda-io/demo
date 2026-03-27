@@ -4,21 +4,20 @@
 		"character": "Yoshi",
 		"name": "Yoshi - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40101-027d0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c40101-027d0e02.png",
 		"tail": "027d0e02"
 	},
 	"next": "00e50502.html",
 	"prev": "02720e02.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00620502": "Sheldon",
-		"00ff0502": "Ankha",
-		"010d0502": "Blathers",
-		"01750502": "Tommy - Suit",
-		"01b30502": "Chow",
-		"02670102": "Waluigi",
-		"02870e02": "Waluigi - Soccer",
-		"02a80e02": "Baby Mario - Golf",
-		"04340402": "Frye"
+		"00930502": "Eugene",
+		"00f40502": "Flip",
+		"010b0502": "Rocket",
+		"019f0502": "Olaf",
+		"01a00502": "Lucy",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"02f00502": "Sylvana",
+		"04c01d02": "Akuma"
 	}
 }

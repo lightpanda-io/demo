@@ -4,21 +4,21 @@
 		"character": "Kidd",
 		"name": "Kidd",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035d0001-00c90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_035d0001-00c90502.png",
 		"tail": "00c90502"
 	},
 	"next": "035e1002.html",
 	"prev": "03d40502.html",
 	"list": {
-		"00e10502": "Timbra",
-		"01290502": "Velma",
-		"017c0502": "Pave",
-		"01d10502": "Angus",
-		"02470502": "Blathers",
-		"024d0502": "Timmy \u0026 Tommy",
-		"02910e02": "Diddy Kong - Soccer",
-		"034b0902": "Link - Ocarina of Time",
-		"03d20502": "Ace",
-		"04d21d02": "Juri"
+		"002a0002": "Robin",
+		"004e0502": "Harriet",
+		"005a0502": "Cheri",
+		"009c0502": "Diana",
+		"00ee0502": "Benedict",
+		"01ab0502": "Rod",
+		"02590002": "Cloud",
+		"02a10e02": "Boo - Baseball",
+		"02b40e02": "Rosalina - Soccer",
+		"02b80e02": "Rosalina - Horse Racing"
 	}
 }

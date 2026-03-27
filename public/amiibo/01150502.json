@@ -4,21 +4,21 @@
 		"character": "Cyrus",
 		"name": "Cyrus",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0001-01150502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018b0001-01150502.png",
 		"tail": "01150502"
 	},
 	"next": "04111802.html",
 	"prev": "02e30f02.html",
 	"list": {
-		"000b0002": "Marth",
-		"00cf0502": "Avery",
-		"01000502": "Drift",
-		"01560502": "Hamlet",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"01c30502": "Margie",
-		"02ec0502": "Hornsby",
-		"03720102": "Peach - Wedding",
-		"03be0502": "Tom Nook - Coat",
-		"04150402": "Inkling - Yellow"
+		"00370102": "Yoshi",
+		"00ff0502": "Ankha",
+		"013e0502": "Chester",
+		"024c0502": "Rover",
+		"03080502": "Boots",
+		"03550902": "Guardian",
+		"03c00502": "Sherb",
+		"04210002": "Sephiroth",
+		"04271902": "Romin Kirishima",
+		"04a81d02": "Ryu"
 	}
 }

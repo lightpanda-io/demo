@@ -4,21 +4,21 @@
 		"character": "Walker",
 		"name": "Walker",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f00001-00a70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02f00001-00a70502.png",
 		"tail": "00a70502"
 	},
 	"next": "00bb0502.html",
 	"prev": "00530502.html",
 	"list": {
-		"00720502": "Knox",
-		"01180502": "Digby - Raincoat",
-		"02810e02": "Yoshi - Horse Racing",
-		"03140502": "Dobie",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03b60502": "Kicks",
-		"04220002": "Steve",
-		"04c01d02": "Akuma",
-		"04f31d02": "Mai"
+		"01040502": "Keaton",
+		"013e0502": "Chester",
+		"01770502": "Leilani",
+		"01d70502": "Rosie - Amiibo Festival",
+		"024a0502": "Kicks",
+		"030d0502": "Cashmere",
+		"03c10502": "Megan",
+		"04150402": "Inkling - Yellow",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04b81d02": "Marisa"
 	}
 }

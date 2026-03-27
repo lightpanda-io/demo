@@ -4,21 +4,21 @@
 		"character": "Pink Gold Peach",
 		"name": "Pink Gold Peach - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d10201-02bf0e02.png",
 		"tail": "02bf0e02"
 	},
 	"next": "00320002.html",
 	"prev": "00330002.html",
 	"list": {
-		"00640502": "Bill",
-		"00720502": "Knox",
-		"009f0502": "Henry",
-		"015a0502": "Biskit",
-		"01ac0502": "Purrl",
-		"02580002": "Mega Man - Gold Edition",
-		"02910e02": "Diddy Kong - Soccer",
-		"02ec0502": "Hornsby",
-		"03080502": "Boots",
-		"030c0502": "Spike"
+		"00020002": "Yoshi",
+		"00360102": "Peach",
+		"005f0502": "Jambette",
+		"00b70502": "Chip",
+		"00db0502": "Wendy",
+		"00fb0502": "Anicotti",
+		"01bd0502": "Barold",
+		"01cb0502": "Cranston",
+		"02380602": "8-Bit Mario Classic Color",
+		"03b50502": "Daisy Mae"
 	}
 }

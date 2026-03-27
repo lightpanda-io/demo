@@ -4,21 +4,21 @@
 		"character": "Velma",
 		"name": "Velma",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035c0001-01290502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_035c0001-01290502.png",
 		"tail": "01290502"
 	},
 	"next": "013c0502.html",
 	"prev": "00e80502.html",
 	"list": {
-		"00a50502": "Roald",
-		"00e80502": "Filbert",
-		"00eb0502": "Nan",
-		"01490502": "Blanche",
-		"01590502": "Dora",
-		"01b80502": "Pompom",
-		"026c0e02": "Mario - Golf",
-		"03100502": "Gonzo",
-		"031a0502": "Marty",
-		"03b20502": "K.K. Slider"
+		"00680502": "Kabuki",
+		"00930502": "Eugene",
+		"00ac0502": "Copper",
+		"00ba0502": "Felicity",
+		"017c0502": "Pave",
+		"019a0502": "Anabelle",
+		"02610402": "Inkling Squid - Orange",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04d91d02": "JP"
 	}
 }

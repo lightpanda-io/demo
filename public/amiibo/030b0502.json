@@ -4,21 +4,21 @@
 		"character": "Leopold",
 		"name": "Leopold",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ea0001-030b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ea0001-030b0502.png",
 		"tail": "030b0502"
 	},
 	"next": "01c70502.html",
 	"prev": "00c70502.html",
 	"list": {
-		"00080002": "Villager",
-		"00220002": "Mii Swordfighter",
-		"00a00502": "Bertha",
-		"00d20502": "Olivia",
-		"02ba0e02": "Metal Mario - Baseball",
-		"03911602": "Loot Goblin",
-		"041a0902": "Ganondorf - Tears of the Kingdom",
-		"04b51d02": "E. Honda",
-		"04d11d02": "Guile",
-		"04e71d02": "Ingrid"
+		"003e0402": "Inkling Girl",
+		"01a90502": "Papi",
+		"02720e02": "Luigi - Horse Racing",
+		"037c0002": "Young Link",
+		"03d30502": "Rio",
+		"04220002": "Steve",
+		"04340402": "Frye",
+		"04ac1d02": "Jamie",
+		"04e81d02": "Terry",
+		"04fa0f02": "Ratha"
 	}
 }

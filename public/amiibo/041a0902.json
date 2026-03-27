@@ -4,21 +4,21 @@
 		"character": "Ganon",
 		"name": "Ganondorf - Tears of the Kingdom",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-041a0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01020100-041a0902.png",
 		"tail": "041a0902"
 	},
 	"next": "02f10502.html",
 	"prev": "02610402.html",
 	"list": {
-		"00520502": "Tortimer",
-		"00b50502": "Blanca",
-		"01cf0502": "Simon",
-		"01d70502": "Rosie - Amiibo Festival",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"02b00e02": "Birdo - Baseball",
-		"042a1902": "Asana Mutsuba",
-		"042d1802": "Malzeno",
-		"04af1d02": "Kimberly",
-		"04b81d02": "Marisa"
+		"00360102": "Peach",
+		"01670502": "Baabara",
+		"01820502": "Pinky",
+		"024a0502": "Kicks",
+		"03060502": "Admiral",
+		"03981702": "Daijobu",
+		"03b30502": "C.J.",
+		"03cb0502": "Shino",
+		"040c0f02": "Razewing Ratha",
+		"04d51d02": "E. Honda"
 	}
 }

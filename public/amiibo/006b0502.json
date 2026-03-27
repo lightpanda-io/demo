@@ -4,21 +4,21 @@
 		"character": "Gigi",
 		"name": "Gigi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03480001-006b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03480001-006b0502.png",
 		"tail": "006b0502"
 	},
 	"next": "015a0502.html",
 	"prev": "01470502.html",
 	"list": {
-		"003d0102": "Mario - Silver Edition",
-		"00860502": "Flurry",
-		"00c40502": "Tipper",
-		"01430502": "Diva",
-		"02530002": "Ryu",
-		"030a0502": "Candi",
-		"03ad0502": "Blathers",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04b81d02": "Marisa",
-		"04ed1d02": "Sagat"
+		"002e0002": "R.O.B. - Famicom",
+		"00c10502": "Coach",
+		"00f10502": "Bettina",
+		"01350502": "Chevre",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"02970e02": "Bowser - Baseball",
+		"02a70e02": "Baby Mario - Tennis",
+		"02eb0502": "Paolo",
+		"03911602": "Loot Goblin",
+		"04b91d02": "JP"
 	}
 }

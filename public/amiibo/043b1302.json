@@ -4,21 +4,21 @@
 		"character": "Samus",
 		"name": "Samus",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043b1302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c00000-043b1302.png",
 		"tail": "043b1302"
 	},
 	"next": "043a1302.html",
 	"prev": "00060002.html",
 	"list": {
-		"002a0002": "Robin",
-		"00550502": "Bob",
-		"01310502": "Friga",
-		"01590502": "Dora",
-		"02590002": "Cloud",
-		"037f0002": "Ridley",
-		"03860002": "Incineroar",
-		"03bd0502": "Wardell",
-		"04390402": "Marina - Side Order",
-		"043a1302": "Samus \u0026 Vi-O-La"
+		"00f60502": "Hopper",
+		"01260502": "Rodeo",
+		"014b0502": "Marshal",
+		"01a00502": "Lucy",
+		"02e90502": "June",
+		"03830002": "Ivysaur",
+		"03b80502": "Harvey",
+		"043c1302": "Sylux",
+		"04c30102": "Poplin \u0026 Prince Florian",
+		"04e31d02": "Elena"
 	}
 }

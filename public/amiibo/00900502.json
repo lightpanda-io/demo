@@ -4,21 +4,21 @@
 		"character": "Cherry",
 		"name": "Cherry",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fb0001-00900502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02fb0001-00900502.png",
 		"tail": "00900502"
 	},
 	"next": "024c0502.html",
 	"prev": "0431ff02.html",
 	"list": {
-		"007f0502": "Samson",
-		"00f40502": "Flip",
-		"01170502": "Timmy - Full Apron",
-		"01610502": "Cube",
-		"01a50502": "Walt",
-		"02600402": "Inkling Boy - Purple",
-		"02fc0502": "Bitty",
-		"03a60102": "Mario - Cat",
-		"03c90502": "Ione",
-		"03cb0502": "Shino"
+		"01280502": "Cousteau",
+		"01700502": "Isabelle - Dress",
+		"01a10502": "Elmer",
+		"01b00502": "Peggy",
+		"01cf0502": "Simon",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"03070502": "Ellie",
+		"03d60502": "Roswell",
+		"042a1902": "Asana Mutsuba",
+		"04a30902": "Riju"
 	}
 }

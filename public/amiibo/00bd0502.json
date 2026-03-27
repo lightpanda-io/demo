@@ -4,21 +4,21 @@
 		"character": "Lucha",
 		"name": "Lucha",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023c0001-00bd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_023c0001-00bd0502.png",
 		"tail": "00bd0502"
 	},
 	"next": "00750502.html",
 	"prev": "01380502.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"005c0502": "Al",
-		"00a20502": "Peanut",
-		"00a90502": "Reese",
-		"01a60502": "Mira",
-		"01b60502": "Sally",
-		"02480502": "Celeste",
-		"02500a02": "Shovel Knight",
-		"030a0502": "Candi",
-		"04e81d02": "Terry"
+		"00f60502": "Hopper",
+		"01c50502": "Rosie",
+		"02610402": "Inkling Squid - Orange",
+		"026b0e02": "Mario - Tennis",
+		"02a10e02": "Boo - Baseball",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"031e0502": "Toby",
+		"03b20502": "K.K. Slider",
+		"03d20502": "Ace",
+		"04b41d02": "Dhalsim"
 	}
 }

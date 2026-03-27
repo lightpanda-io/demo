@@ -4,21 +4,21 @@
 		"character": "Kid Cat",
 		"name": "Kid Cat",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02670001-01080502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02670001-01080502.png",
 		"tail": "01080502"
 	},
 	"next": "04271902.html",
 	"prev": "03b90502.html",
 	"list": {
-		"00500502": "Saharah",
-		"01190502": "Don Resetti - Without Hat",
-		"016d0502": "Derwin",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"02600402": "Inkling Boy - Purple",
-		"02760e02": "Peach - Golf",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"03670102": "Goomba",
-		"03690402": "Inkling Girl - Neon Pink",
-		"041f0002": "Mythra"
+		"002c0002": "Ness",
+		"00730502": "Sterling",
+		"00af0502": "Tommy - Uniform",
+		"00b60502": "Nat",
+		"00db0502": "Wendy",
+		"011c0502": "Jingle",
+		"01790502": "Timmy - Suit",
+		"01830502": "Mott",
+		"02a10e02": "Boo - Baseball",
+		"02ba0e02": "Metal Mario - Baseball"
 	}
 }

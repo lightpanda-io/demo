@@ -4,21 +4,21 @@
 		"character": "Sly",
 		"name": "Sly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c90001-00cd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02c90001-00cd0502.png",
 		"tail": "00cd0502"
 	},
 	"next": "00950502.html",
 	"prev": "02810e02.html",
 	"list": {
-		"00340102": "Mario",
-		"00b90502": "Poncho",
-		"01330502": "Deirdre",
-		"01590502": "Dora",
-		"01630502": "Curly",
-		"026b0e02": "Mario - Tennis",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"03010502": "Claude",
-		"031a0502": "Marty",
-		"04dd1d02": "Rashid"
+		"004c0502": "Digby",
+		"00650502": "Kiki",
+		"00ac0502": "Copper",
+		"00be0502": "Fuchsia",
+		"01170502": "Timmy - Full Apron",
+		"01380502": "Mac",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03540902": "Link - Rider",
+		"04b91d02": "JP",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

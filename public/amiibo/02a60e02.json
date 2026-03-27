@@ -4,21 +4,21 @@
 		"character": "Baby Mario",
 		"name": "Baby Mario - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cc0201-02a60e02.png",
 		"tail": "02a60e02"
 	},
 	"next": "01100502.html",
 	"prev": "01540502.html",
 	"list": {
-		"00b80502": "Jack",
-		"010b0502": "Rocket",
-		"019f0502": "Olaf",
-		"024e0502": "Kapp'n",
-		"02670102": "Waluigi",
-		"02940e02": "Diddy Kong - Golf",
-		"03820002": "Inkling",
-		"03d10502": "Zoe",
-		"040e0f02": "Tsukino",
-		"04281902": "Roa Kirishima"
+		"00380102": "Toad",
+		"00590502": "Leonardo",
+		"012b0502": "Canberra",
+		"012c0502": "Colton",
+		"016d0502": "Derwin",
+		"01770502": "Leilani",
+		"01b80502": "Pompom",
+		"01cb0502": "Cranston",
+		"03941702": "Ikari",
+		"03d10502": "Zoe"
 	}
 }

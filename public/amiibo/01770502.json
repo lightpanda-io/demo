@@ -4,21 +4,21 @@
 		"character": "Leilani",
 		"name": "Leilani",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01970001-01770502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01970001-01770502.png",
 		"tail": "01770502"
 	},
 	"next": "01530502.html",
 	"prev": "03170502.html",
 	"list": {
-		"00080002": "Villager",
-		"00410302": "Green Yarn Yoshi",
-		"008d0502": "Cobb",
-		"00ab0502": "Labelle",
-		"00b00502": "Porter",
-		"01990502": "Bones",
-		"02e30f02": "Nabiru",
-		"02e50f02": "Barioth and Ayuria",
-		"02ef0502": "Huck",
-		"035a0902": "Mipha"
+		"001c0002": "Falco",
+		"00790502": "Deena",
+		"00960502": "Annalisa",
+		"00ba0502": "Felicity",
+		"00d20502": "Olivia",
+		"01550502": "Flora",
+		"01a40502": "Elise",
+		"02380602": "8-Bit Mario Classic Color",
+		"03590902": "Urbosa",
+		"04b21d02": "Juri"
 	}
 }

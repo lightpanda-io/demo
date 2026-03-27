@@ -4,21 +4,21 @@
 		"character": "Marcie",
 		"name": "Marcie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03db0001-006d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03db0001-006d0502.png",
 		"tail": "006d0502"
 	},
 	"next": "00570502.html",
 	"prev": "03800002.html",
 	"list": {
-		"00260002": "Jigglypuff",
-		"00530502": "Lyle",
-		"00550502": "Bob",
-		"00d30502": "Cesar",
-		"011f0502": "Tabby",
-		"02470502": "Blathers",
-		"02b40e02": "Rosalina - Soccer",
-		"034c0902": "Link - Majora's Mask",
-		"03be0502": "Tom Nook - Coat",
-		"04e41d02": "Sagat"
+		"00840502": "Midge",
+		"00c00502": "Gwen",
+		"00f50502": "Hugh",
+		"00fd0502": "Charlise",
+		"014f0502": "Buck",
+		"01570502": "Astrid",
+		"02540c02": "Kirby",
+		"02fd0502": "Maggie",
+		"03860002": "Incineroar",
+		"04350402": "Big Man"
 	}
 }

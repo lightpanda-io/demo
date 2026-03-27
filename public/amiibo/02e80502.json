@@ -4,21 +4,21 @@
 		"character": "Hopkins",
 		"name": "Hopkins",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a20001-02e80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a20001-02e80502.png",
 		"tail": "02e80502"
 	},
 	"next": "00d60502.html",
 	"prev": "00440502.html",
 	"list": {
-		"00040002": "Link",
-		"00320002": "Pac-Man",
-		"00d50502": "Rodney",
-		"01b10502": "Ribbot",
-		"01bd0502": "Barold",
-		"02b30e02": "Birdo - Horse Racing",
-		"03a40002": "Terry",
-		"03d20502": "Ace",
-		"041b0402": "Octoling - Blue",
-		"04e41d02": "Sagat"
+		"00b90502": "Poncho",
+		"01100502": "Phyllis",
+		"01800502": "Goldie",
+		"01a00502": "Lucy",
+		"01c10502": "Lobo",
+		"02ee0502": "Tybalt",
+		"042f1a02": "Donkey Kong \u0026 Pauline",
+		"04340402": "Frye",
+		"04e11d02": "M. Bison",
+		"04fa0f02": "Ratha"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Eunice",
 		"name": "Eunice",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c70001-00940502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04c70001-00940502.png",
 		"tail": "00940502"
 	},
 	"next": "029a0e02.html",
 	"prev": "02600402.html",
 	"list": {
-		"00550502": "Bob",
-		"008e0502": "Amelia",
-		"00a40502": "Willow",
-		"012c0502": "Colton",
-		"015a0502": "Biskit",
-		"02420502": "Tom Nook",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"03100502": "Gonzo",
-		"03a40002": "Terry",
-		"04b31d02": "Blanka"
+		"011e0502": "Anchovy",
+		"02940e02": "Diddy Kong - Golf",
+		"02a80e02": "Baby Mario - Golf",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03110502": "Sprocket",
+		"03150502": "Buzz",
+		"03d20502": "Ace",
+		"03d70502": "Faith",
+		"04bd1d02": "Rashid",
+		"04d71d02": "Manon"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Donkey Kong",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080000-02640102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00080000-02640102.png",
 		"tail": "02640102"
 	},
 	"next": "042f1a02.html",
 	"prev": "00720502.html",
 	"list": {
-		"00120002": "Captain Falcon",
-		"006f0502": "Shari",
-		"00770502": "Poppy",
-		"01a00502": "Lucy",
-		"02390602": "8-Bit Mario Modern Color",
-		"03651302": "Samus Aran",
-		"036c0a02": "Plague Knight",
-		"03a60102": "Mario - Cat",
-		"03b00502": "Sable",
-		"03d70502": "Faith"
+		"008c0502": "Flo",
+		"008d0502": "Cobb",
+		"00910502": "Roscoe",
+		"00970502": "Benjamin",
+		"00d30502": "Cesar",
+		"00f50502": "Hugh",
+		"018d0502": "Croque",
+		"01d00502": "Iggly",
+		"02810e02": "Yoshi - Horse Racing",
+		"03b90502": "Gulliver"
 	}
 }

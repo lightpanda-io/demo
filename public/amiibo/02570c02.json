@@ -4,21 +4,20 @@
 		"character": "Waddle Dee",
 		"name": "Waddle Dee",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030000-02570c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f030000-02570c02.png",
 		"tail": "02570c02"
 	},
 	"next": "01220502.html",
 	"prev": "029e0e02.html",
 	"list": {
-		"00450502": "Tom Nook",
-		"00850502": "Gruff",
-		"00c80502": "Savannah",
-		"01810502": "Stitches",
-		"028a0e02": "Waluigi - Golf",
-		"02990e02": "Bowser - Golf",
-		"02b10e02": "Birdo - Tennis",
-		"030d0502": "Cashmere",
-		"03951702": "Yabe",
-		"04d41d02": "Dhalsim"
+		"00ca0502": "Phoebe",
+		"00e20502": "Zell",
+		"00e30502": "Pekoe",
+		"019c0502": "Naomi",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"034c0902": "Link - Majora's Mask",
+		"03b60502": "Kicks",
+		"03b70502": "Saharah",
+		"04e51d02": "C. Viper"
 	}
 }

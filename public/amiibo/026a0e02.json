@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00201-026a0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c00201-026a0e02.png",
 		"tail": "026a0e02"
 	},
 	"next": "03b60502.html",
-	"prev": "04101802.html",
+	"prev": "02ba0e02.html",
 	"list": {
-		"00e80502": "Filbert",
-		"01450502": "Daisy",
-		"01480502": "Tucker",
-		"024a0502": "Kicks",
-		"026f0e02": "Luigi - Baseball",
-		"02900e02": "Donkey Kong - Horse Racing",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"03560902": "Zelda",
-		"03b30502": "C.J.",
-		"042f1a02": "Donkey Kong \u0026 Pauline"
+		"00450502": "Tom Nook",
+		"008c0502": "Flo",
+		"00d70502": "Whitney",
+		"00f10502": "Bettina",
+		"016a0502": "Antonio",
+		"02a40e02": "Boo - Horse Racing",
+		"03a10002": "Joker",
+		"042a1902": "Asana Mutsuba",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04bd1d02": "Rashid"
 	}
 }

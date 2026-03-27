@@ -4,21 +4,21 @@
 		"character": "Chun-Li",
 		"name": "Chun-Li",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c50001-04d01d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c50001-04d01d02.png",
 		"tail": "04d01d02"
 	},
 	"next": "04da1d02.html",
 	"prev": "04cc1d02.html",
 	"list": {
-		"00250002": "Greninja",
-		"00670502": "Alli",
-		"00820502": "Mint",
-		"00ab0502": "Labelle",
-		"00b40502": "Isabelle - Winter",
-		"02a50e02": "Baby Mario - Soccer",
-		"02b30e02": "Birdo - Horse Racing",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"03500902": "Toon Link - The Wind Waker",
-		"03a0ff02": "Toad - Power Up Band"
+		"004c0502": "Digby",
+		"00780502": "Limberg",
+		"01bc0502": "Sydney",
+		"02700e02": "Luigi - Tennis",
+		"03050502": "Bea",
+		"037b0002": "King K. Rool",
+		"03850002": "Pichu",
+		"03d50502": "Azalea",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04da1d02": "Zangief"
 	}
 }

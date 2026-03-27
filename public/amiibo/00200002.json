@@ -4,21 +4,21 @@
 		"character": "Dark Pit",
 		"name": "Dark Pit",
 		"gameSeries": "Kid Icarus",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07410000-00200002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07410000-00200002.png",
 		"tail": "00200002"
 	},
 	"next": "00130002.html",
 	"prev": "01c90502.html",
 	"list": {
-		"00710502": "Winnie",
-		"00e20502": "Zell",
-		"01740502": "Celeste",
-		"01a60502": "Mira",
-		"01c40502": "Lucky",
-		"02480502": "Celeste",
-		"02900e02": "Donkey Kong - Horse Racing",
-		"03890002": "Ken",
-		"03d70502": "Faith",
-		"041d0002": "Min Min"
+		"000e0002": "Zelda",
+		"014a0502": "Gaston",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02710e02": "Luigi - Golf",
+		"02fc0502": "Bitty",
+		"039bff02": "Mario - Power Up Band",
+		"03a90502": "Timmy \u0026 Tommy",
+		"03c70502": "Reneigh",
+		"04d91d02": "JP",
+		"04e31d02": "Elena"
 	}
 }

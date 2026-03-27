@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Bowser - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90501-029a0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c90501-029a0e02.png",
 		"tail": "029a0e02"
 	},
 	"next": "00030002.html",
 	"prev": "00940502.html",
 	"list": {
-		"00410302": "Green Yarn Yoshi",
-		"01080502": "Kid Cat",
-		"01310502": "Friga",
-		"019a0502": "Anabelle",
-		"02640102": "Donkey Kong",
-		"02b00e02": "Birdo - Baseball",
-		"03100502": "Gonzo",
-		"03530902": "Link - Archer",
-		"04c41e03": "Kirby",
-		"04dd1d02": "Rashid"
+		"00060002": "Samus",
+		"00560502": "Fauna",
+		"00dd0502": "Rhonda",
+		"010a0502": "Big Top",
+		"02a80e02": "Baby Mario - Golf",
+		"02ea0502": "Piper",
+		"02fa0502": "Billy",
+		"03090502": "Weber",
+		"037d0002": "Isabelle",
+		"04b51d02": "E. Honda"
 	}
 }

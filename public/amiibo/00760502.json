@@ -4,21 +4,21 @@
 		"character": "Opal",
 		"name": "Opal",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03230001-00760502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03230001-00760502.png",
 		"tail": "00760502"
 	},
 	"next": "008c0502.html",
 	"prev": "03100502.html",
 	"list": {
-		"00360102": "Peach",
-		"008d0502": "Cobb",
-		"00c30502": "Tom",
-		"00ec0502": "Bud",
-		"02430502": "Digby",
-		"024e0502": "Kapp'n",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"02650102": "Diddy Kong",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03830002": "Ivysaur"
+		"00930502": "Eugene",
+		"00b70502": "Chip",
+		"00fc0502": "Chops",
+		"01270502": "Bubbles",
+		"01310502": "Friga",
+		"014f0502": "Buck",
+		"01660502": "Sparro",
+		"016e0502": "Francine",
+		"02390602": "8-Bit Mario Modern Color",
+		"028b0e02": "Waluigi - Horse Racing"
 	}
 }

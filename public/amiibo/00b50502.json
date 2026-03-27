@@ -4,21 +4,20 @@
 		"character": "Blanca",
 		"name": "Blanca",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b30001-00b50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01b30001-00b50502.png",
 		"tail": "00b50502"
 	},
 	"next": "01380502.html",
 	"prev": "013d0502.html",
 	"list": {
-		"003e0402": "Inkling Girl",
-		"00520502": "Tortimer",
-		"00750502": "Punchy",
-		"00b70502": "Chip",
-		"01280502": "Cousteau",
-		"01330502": "Deirdre",
-		"014a0502": "Gaston",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"03a50002": "Byleth",
-		"040f1802": "Magnamalo"
+		"00460502": "DJ KK",
+		"00950502": "Goose",
+		"00ae0502": "Katie",
+		"00bb0502": "Ozzie",
+		"00f10502": "Bettina",
+		"01300502": "Bam",
+		"01710502": "Brewster",
+		"01a20502": "Puddles",
+		"035d0302": "Poochy"
 	}
 }

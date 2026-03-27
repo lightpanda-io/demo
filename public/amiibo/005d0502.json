@@ -4,21 +4,21 @@
 		"character": "Renée",
 		"name": "Renée",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ba0001-005d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ba0001-005d0502.png",
 		"tail": "005d0502"
 	},
 	"next": "00ef0502.html",
 	"prev": "01140502.html",
 	"list": {
-		"00000002": "Mario",
-		"00a70502": "Walker",
-		"01cd0502": "Grizzly",
-		"01d50502": "Goldie - Amiibo Festival",
-		"02730e02": "Peach - Soccer",
-		"02860e02": "Wario - Horse Racing",
-		"03850002": "Pichu",
-		"03d30502": "Rio",
-		"04ab1d02": "Luke",
-		"04d41d02": "Dhalsim"
+		"00240002": "Charizard",
+		"00430302": "Light Blue Yarn Yoshi",
+		"00840502": "Midge",
+		"00d40502": "Carmen",
+		"00de0502": "Butch",
+		"01090502": "Agent S",
+		"01480502": "Tucker",
+		"019e0502": "Tammy",
+		"02510002": "Lucas",
+		"03ac0502": "Wilbur"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Plague Knight",
 		"name": "Plague Knight",
 		"gameSeries": "Shovel Knight",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c10000-036c0a02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35c10000-036c0a02.png",
 		"tail": "036c0a02"
 	},
 	"next": "030e0502.html",
 	"prev": "002c0002.html",
 	"list": {
-		"00340102": "Mario",
-		"00b20502": "Shrunk",
-		"01d60502": "Stitches - Amiibo Festival",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"023f0502": "Isabelle - Winter Outfit",
-		"02660102": "Daisy",
-		"035d0302": "Poochy",
-		"03651302": "Samus Aran",
-		"037d0002": "Isabelle",
-		"043f1c02": "Mario - My Mario Wooden Blocks"
+		"00630502": "Bluebear",
+		"016a0502": "Antonio",
+		"02590002": "Cloud",
+		"02f40502": "Ketchup",
+		"03080502": "Boots",
+		"030f0502": "Norma",
+		"03670102": "Goomba",
+		"03840002": "Squirtle",
+		"03b00502": "Sable",
+		"04b71d02": "Manon"
 	}
 }

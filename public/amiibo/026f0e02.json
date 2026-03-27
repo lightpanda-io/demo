@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10201-026f0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c10201-026f0e02.png",
 		"tail": "026f0e02"
 	},
 	"next": "002f0002.html",
-	"prev": "040d0f02.html",
+	"prev": "02560c02.html",
 	"list": {
-		"001b0002": "Ganondorf",
-		"007b0502": "Bangle",
-		"00f80502": "Drake",
-		"01090502": "Agent S",
-		"010f0502": "Pelly",
-		"01a60502": "Mira",
-		"02650102": "Diddy Kong",
-		"02910e02": "Diddy Kong - Soccer",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"04ed1d02": "Sagat"
+		"00090002": "Pikachu",
+		"00570502": "Curt",
+		"00960502": "Annalisa",
+		"010c0502": "Rover",
+		"015c0502": "Lyman",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02bb0e02": "Metal Mario - Tennis",
+		"03590902": "Urbosa",
+		"04230002": "Alex",
+		"04a60902": "Yunobo"
 	}
 }

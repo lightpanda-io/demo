@@ -4,21 +4,21 @@
 		"character": "Marth",
 		"name": "Marth",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21000000-000b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21000000-000b0002.png",
 		"tail": "000b0002"
 	},
 	"next": "00b00502.html",
 	"prev": "024d0502.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"004f0502": "Redd",
-		"01580502": "Monty",
-		"01ca0502": "Gayle",
-		"02b50e02": "Rosalina - Baseball",
-		"02e60f02": "Qurupeco and Dan",
-		"03bd0502": "Wardell",
-		"04131302": "E.M.M.I.",
-		"04a81d02": "Ryu",
-		"04ed1d02": "Sagat"
+		"001c0002": "Falco",
+		"00550502": "Bob",
+		"005a0502": "Cheri",
+		"00a70502": "Walker",
+		"010f0502": "Pelly",
+		"01a30502": "Rory",
+		"02970e02": "Bowser - Baseball",
+		"02f40502": "Ketchup",
+		"04360402": "Callie - Alterna",
+		"04ac1d02": "Jamie"
 	}
 }

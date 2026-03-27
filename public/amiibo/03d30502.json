@@ -4,21 +4,21 @@
 		"character": "Rio",
 		"name": "Rio",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1c0001-03d30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a1c0001-03d30502.png",
 		"tail": "03d30502"
 	},
 	"next": "00e30502.html",
 	"prev": "007a0502.html",
 	"list": {
-		"00740502": "Bonbon",
-		"00950502": "Goose",
-		"01940502": "Queenie",
-		"027d0e02": "Yoshi - Soccer",
-		"02900e02": "Donkey Kong - Horse Racing",
-		"02fd0502": "Maggie",
-		"03720102": "Peach - Wedding",
-		"03a0ff02": "Toad - Power Up Band",
-		"042c1802": "Palamute",
-		"04a81d02": "Ryu"
+		"000b0002": "Marth",
+		"00dd0502": "Rhonda",
+		"01180502": "Digby - Raincoat",
+		"01280502": "Cousteau",
+		"01b80502": "Pompom",
+		"02400502": "K. K. Slider",
+		"03b70502": "Saharah",
+		"03be0502": "Tom Nook - Coat",
+		"03d20502": "Ace",
+		"04b21d02": "Juri"
 	}
 }

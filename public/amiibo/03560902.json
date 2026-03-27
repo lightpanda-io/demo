@@ -4,21 +4,21 @@
 		"character": "Zelda",
 		"name": "Zelda",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-03560902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010000-03560902.png",
 		"tail": "03560902"
 	},
 	"next": "02e40f02.html",
 	"prev": "01c10502.html",
 	"list": {
-		"003e0402": "Inkling Girl",
-		"00ee0502": "Benedict",
-		"01500502": "Bree",
-		"01560502": "Hamlet",
-		"02410502": "Mabel",
-		"02520002": "Roy",
-		"029a0e02": "Bowser - Horse Racing",
-		"02a60e02": "Baby Mario - Baseball",
-		"03080502": "Boots",
-		"03d20502": "Ace"
+		"000d0002": "Diddy Kong",
+		"004e0502": "Harriet",
+		"00650502": "Kiki",
+		"01340502": "Hans",
+		"02580002": "Mega Man - Gold Edition",
+		"02ff0502": "Plucky",
+		"03620002": "Cloud - Player 2",
+		"03a80502": "Tom Nook",
+		"04261902": "Gakuto Sōgetsu",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

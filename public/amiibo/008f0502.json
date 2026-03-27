@@ -4,21 +4,21 @@
 		"character": "Jeremiah",
 		"name": "Jeremiah",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033f0001-008f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033f0001-008f0502.png",
 		"tail": "008f0502"
 	},
 	"next": "02990e02.html",
 	"prev": "038c0002.html",
 	"list": {
-		"00450502": "Tom Nook",
-		"00540502": "Lottie",
-		"00710502": "Winnie",
-		"009b0502": "Clay",
-		"00c50502": "Prince",
-		"00ee0502": "Benedict",
-		"02800e02": "Yoshi - Golf",
-		"039dff02": "Peach - Power Up Band",
-		"03a60102": "Mario - Cat",
-		"042a1902": "Asana Mutsuba"
+		"00ad0502": "Booker",
+		"00ba0502": "Felicity",
+		"00d80502": "Broccolo",
+		"012d0502": "Marina",
+		"01af0502": "Zucker",
+		"01d40502": "Isabelle - Character Parfait",
+		"02830e02": "Wario - Baseball",
+		"02920e02": "Diddy Kong - Baseball",
+		"036d0a02": "Specter Knight",
+		"04f31d02": "Mai"
 	}
 }

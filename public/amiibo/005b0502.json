@@ -4,21 +4,21 @@
 		"character": "Kyle",
 		"name": "Kyle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05150001-005b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05150001-005b0502.png",
 		"tail": "005b0502"
 	},
 	"next": "03630002.html",
 	"prev": "00570502.html",
 	"list": {
-		"00820502": "Mint",
-		"008d0502": "Cobb",
-		"00ba0502": "Felicity",
-		"00df0502": "Gabi",
-		"01250502": "Mitzi",
-		"014c0502": "Gala",
-		"015d0502": "Violet",
-		"02ae0e02": "Baby Luigi - Horse Racing",
-		"02e60f02": "Qurupeco and Dan",
-		"02f20502": "Wade"
+		"004a0502": "Joan",
+		"00990502": "Chief",
+		"00a70502": "Walker",
+		"00dd0502": "Rhonda",
+		"018d0502": "Croque",
+		"019a0502": "Anabelle",
+		"01aa0502": "Apple",
+		"02930e02": "Diddy Kong - Tennis",
+		"03530902": "Link - Archer",
+		"04421c02": "Yoshi - My Mario Wooden Blocks"
 	}
 }

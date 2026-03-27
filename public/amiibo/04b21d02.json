@@ -4,21 +4,21 @@
 		"character": "Juri",
 		"name": "Juri",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c70001-04b21d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c70001-04b21d02.png",
 		"tail": "04b21d02"
 	},
 	"next": "04b61d02.html",
 	"prev": "04b91d02.html",
 	"list": {
-		"00010002": "Peach",
-		"00290002": "Lucina",
-		"006b0502": "Gigi",
-		"00870502": "Clyde",
-		"00970502": "Benjamin",
-		"01090502": "Agent S",
-		"030e0502": "Tad",
-		"03730102": "Bowser - Wedding",
-		"04180902": "Link - Tears of the Kingdom",
-		"041d0002": "Min Min"
+		"00140002": "Bowser",
+		"00300002": "Sonic",
+		"00450502": "Tom Nook",
+		"00560502": "Fauna",
+		"006f0502": "Shari",
+		"00770502": "Poppy",
+		"00fc0502": "Chops",
+		"01140502": "Wendell",
+		"015e0502": "Frank",
+		"02f00502": "Sylvana"
 	}
 }

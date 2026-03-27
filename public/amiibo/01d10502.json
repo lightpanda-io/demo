@@ -4,20 +4,21 @@
 		"character": "Angus",
 		"name": "Angus",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024a0001-01d10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_024a0001-01d10502.png",
 		"tail": "01d10502"
 	},
 	"next": "01630502.html",
 	"prev": "03630002.html",
 	"list": {
-		"00550502": "Bob",
-		"007e0502": "Nate",
-		"01bd0502": "Barold",
-		"01c00502": "Gloria",
-		"02780e02": "Daisy - Soccer",
-		"030e0502": "Tad",
-		"03b60502": "Kicks",
-		"03cd0502": "Petri",
-		"041b0402": "Octoling - Blue"
+		"00040002": "Link",
+		"00170002": "Sheik",
+		"00830502": "Pudge",
+		"008a0502": "Yuka",
+		"01870502": "Graham",
+		"02450502": "Reese",
+		"03020502": "Raddle",
+		"031d0502": "Chelsea",
+		"042e0002": "Sora",
+		"0431ff02": "Donkey Kong - Power Up Band"
 	}
 }

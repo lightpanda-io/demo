@@ -4,21 +4,20 @@
 		"character": "Squirtle",
 		"name": "Squirtle",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19070000-03840002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_19070000-03840002.png",
 		"tail": "03840002"
 	},
 	"next": "039dff02.html",
 	"prev": "03550902.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00910502": "Roscoe",
-		"00930502": "Eugene",
-		"00fa0502": "Camofrog",
-		"01330502": "Deirdre",
-		"013e0502": "Chester",
-		"024b0502": "Isabelle - Summer Outfit",
-		"03160502": "Cleo",
-		"03941702": "Ikari",
-		"03ae0502": "Celeste"
+		"00310002": "Mega Man",
+		"00560502": "Fauna",
+		"00fb0502": "Anicotti",
+		"01290502": "Velma",
+		"028a0e02": "Waluigi - Golf",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"038c0002": "Richter",
+		"03911602": "Loot Goblin",
+		"03971702": "Ganda"
 	}
 }

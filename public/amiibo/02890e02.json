@@ -4,21 +4,21 @@
 		"character": "Waluigi",
 		"name": "Waluigi - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60301-02890e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c60301-02890e02.png",
 		"tail": "02890e02"
 	},
 	"next": "010f0502.html",
 	"prev": "035d0302.html",
 	"list": {
-		"00250002": "Greninja",
-		"00610502": "Tiffany",
-		"009f0502": "Henry",
-		"00de0502": "Butch",
-		"00e00502": "Moose",
-		"01890502": "Dizzy",
-		"02450502": "Reese",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"03b70502": "Saharah",
-		"04f11d02": "Terry"
+		"00230002": "Mii Gunner",
+		"00660502": "Deli",
+		"00b70502": "Chip",
+		"00eb0502": "Nan",
+		"01a60502": "Mira",
+		"01be0502": "Nibbles",
+		"025a0002": "Corrin",
+		"03b10502": "Label",
+		"04ab1d02": "Luke",
+		"04f01d02": "Ingrid"
 	}
 }

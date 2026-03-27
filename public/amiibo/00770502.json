@@ -4,21 +4,21 @@
 		"character": "Poppy",
 		"name": "Poppy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ec0001-00770502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ec0001-00770502.png",
 		"tail": "00770502"
 	},
 	"next": "01b90502.html",
 	"prev": "02aa0e02.html",
 	"list": {
-		"00440502": "Isabelle",
-		"00660502": "Deli",
-		"00c70502": "Vladimir",
-		"01940502": "Queenie",
-		"01980502": "Melba",
-		"02740e02": "Peach - Baseball",
-		"02840e02": "Wario - Tennis",
-		"03040502": "Louie",
-		"035f1102": "Pikmin",
-		"036c0a02": "Plague Knight"
+		"00830502": "Pudge",
+		"00c20502": "Kitt",
+		"00d30502": "Cesar",
+		"00ed0502": "Ruby",
+		"02810e02": "Yoshi - Horse Racing",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02eb0502": "Paolo",
+		"030e0502": "Tad",
+		"03a10002": "Joker",
+		"04140902": "Zelda \u0026 Loftwing"
 	}
 }

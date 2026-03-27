@@ -4,21 +4,21 @@
 		"character": "Norma",
 		"name": "Norma",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b70001-030f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02b70001-030f0502.png",
 		"tail": "030f0502"
 	},
 	"next": "00de0502.html",
 	"prev": "01740502.html",
 	"list": {
-		"005e0502": "Lopez",
-		"00d50502": "Rodney",
-		"010c0502": "Rover",
-		"01780502": "Resetti - Without Hat",
-		"02770e02": "Peach - Horse Racing",
-		"02880e02": "Waluigi - Baseball",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"02ec0502": "Hornsby",
-		"041e0002": "Pyra"
+		"01430502": "Diva",
+		"01800502": "Goldie",
+		"01950502": "Fang",
+		"01980502": "Melba",
+		"01ab0502": "Rod",
+		"02f30502": "Carrie",
+		"02f90502": "Maddie",
+		"03040502": "Louie",
+		"039dff02": "Peach - Power Up Band",
+		"042b1802": "Palico"
 	}
 }

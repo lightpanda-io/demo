@@ -4,21 +4,21 @@
 		"character": "Blanka",
 		"name": "Blanka",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c80001-04b31d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c80001-04b31d02.png",
 		"tail": "04b31d02"
 	},
 	"next": "04b11d02.html",
 	"prev": "04b51d02.html",
 	"list": {
-		"00040002": "Link",
-		"00140002": "Bowser",
-		"00240002": "Charizard",
+		"004d0502": "Pascal",
+		"005f0502": "Jambette",
+		"00790502": "Deena",
+		"00f40502": "Flip",
 		"01080502": "Kid Cat",
-		"01820502": "Pinky",
-		"02470502": "Blathers",
-		"028d0e02": "Donkey Kong - Baseball",
-		"03b60502": "Kicks",
-		"04b11d02": "Guile",
-		"04ed1d02": "Sagat"
+		"018e0502": "Pashmina",
+		"02380602": "8-Bit Mario Classic Color",
+		"03770402": "Marina",
+		"03810002": "Ice Climbers",
+		"04e61d02": "Alex"
 	}
 }

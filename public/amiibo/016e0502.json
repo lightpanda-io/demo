@@ -4,21 +4,21 @@
 		"character": "Francine",
 		"name": "Francine",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a00001-016e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a00001-016e0502.png",
 		"tail": "016e0502"
 	},
 	"next": "00a50502.html",
 	"prev": "01460502.html",
 	"list": {
-		"00580502": "Portia",
-		"007a0502": "Snake",
-		"00f20502": "Jay",
-		"01240502": "Ken",
-		"01280502": "Cousteau",
-		"02740e02": "Peach - Baseball",
-		"027d0e02": "Yoshi - Soccer",
-		"02870e02": "Waluigi - Soccer",
-		"02b40e02": "Rosalina - Soccer",
-		"04ef1d02": "Alex"
+		"01200502": "Kody",
+		"015f0502": "Chadder",
+		"01730502": "Phineas",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"023d0002": "Mewtwo",
+		"02620102": "Rosalina",
+		"03611202": "Celica",
+		"036d0a02": "Specter Knight",
+		"03cf0502": "Quinn",
+		"04b21d02": "Juri"
 	}
 }

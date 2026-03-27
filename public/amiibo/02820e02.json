@@ -4,21 +4,21 @@
 		"character": "Wario",
 		"name": "Wario - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50101-02820e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c50101-02820e02.png",
 		"tail": "02820e02"
 	},
 	"next": "00670502.html",
 	"prev": "017c0502.html",
 	"list": {
-		"00480502": "Kapp'n",
-		"00570502": "Curt",
-		"00ab0502": "Labelle",
-		"00e80502": "Filbert",
-		"00e90502": "Kitty",
-		"01390502": "Eloise",
-		"016e0502": "Francine",
-		"01bc0502": "Sydney",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"03b00502": "Sable"
+		"00af0502": "Tommy - Uniform",
+		"01140502": "Wendell",
+		"01770502": "Leilani",
+		"02390602": "8-Bit Mario Modern Color",
+		"02590002": "Cloud",
+		"027d0e02": "Yoshi - Soccer",
+		"02a10e02": "Boo - Baseball",
+		"041e0002": "Pyra",
+		"043c1302": "Sylux",
+		"04c01d02": "Akuma"
 	}
 }

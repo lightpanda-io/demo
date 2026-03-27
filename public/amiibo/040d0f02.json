@@ -4,21 +4,21 @@
 		"character": "Ena",
 		"name": "Ena",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35060000-040d0f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35060000-040d0f02.png",
 		"tail": "040d0f02"
 	},
-	"next": "026f0e02.html",
-	"prev": "02560c02.html",
+	"next": "04101802.html",
+	"prev": "040c0f02.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"00cc0502": "Cookie",
-		"00ea0502": "Beau",
-		"010f0502": "Pelly",
-		"02420502": "Tom Nook",
-		"029e0e02": "Bowser Jr. - Golf",
-		"02e20f02": "One-Eyed Rathalos and Rider - Female",
-		"039bff02": "Mario - Power Up Band",
-		"03b80502": "Harvey",
-		"042d1802": "Malzeno"
+		"00700502": "Octavian",
+		"009d0502": "Axel",
+		"00c20502": "Kitt",
+		"01a00502": "Lucy",
+		"02980e02": "Bowser - Tennis",
+		"02a80e02": "Baby Mario - Golf",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03800002": "Dark Samus",
+		"04ef1d02": "Alex",
+		"04fc0f02": "Rudy"
 	}
 }

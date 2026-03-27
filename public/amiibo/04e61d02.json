@@ -4,21 +4,21 @@
 		"character": "Alex",
 		"name": "Alex",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34db0001-04e61d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34db0001-04e61d02.png",
 		"tail": "04e61d02"
 	},
 	"next": "04e71d02.html",
 	"prev": "04e51d02.html",
 	"list": {
-		"00c00502": "Gwen",
-		"018b0502": "Boone",
-		"01a90502": "Papi",
-		"02f00502": "Sylvana",
-		"03701202": "Tiki",
-		"03911602": "Loot Goblin",
-		"03c40502": "Cyd",
-		"042b1802": "Palico",
-		"043d1b02": "Noah",
-		"04ab1d02": "Luke"
+		"00410302": "Green Yarn Yoshi",
+		"011f0502": "Tabby",
+		"01510502": "Rooney",
+		"01960502": "Frita",
+		"02fe0502": "Murphy",
+		"04150402": "Inkling - Yellow",
+		"04bb1d02": "Lily",
+		"04bc1d02": "Cammy",
+		"04bf1d02": "Ed",
+		"04d41d02": "Dhalsim"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Chops",
 		"name": "Chops",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04860001-00fc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04860001-00fc0502.png",
 		"tail": "00fc0502"
 	},
 	"next": "03920a02.html",
 	"prev": "04a30902.html",
 	"list": {
-		"001f0002": "Palutena",
-		"00360102": "Peach",
-		"003e0402": "Inkling Girl",
-		"00420302": "Pink Yarn Yoshi",
-		"00660502": "Deli",
-		"006e0502": "Puck",
-		"00870502": "Clyde",
-		"00d90502": "Coco",
-		"01290502": "Velma",
-		"03a70102": "Peach - Cat"
+		"00540502": "Lottie",
+		"00c00502": "Gwen",
+		"00ef0502": "Agnes",
+		"01aa0502": "Apple",
+		"02760e02": "Peach - Golf",
+		"02870e02": "Waluigi - Soccer",
+		"02a80e02": "Baby Mario - Golf",
+		"02e60f02": "Qurupeco and Dan",
+		"03550902": "Guardian",
+		"04e11d02": "M. Bison"
 	}
 }

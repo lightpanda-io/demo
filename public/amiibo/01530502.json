@@ -4,21 +4,21 @@
 		"character": "Skye",
 		"name": "Skye",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05140001-01530502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05140001-01530502.png",
 		"tail": "01530502"
 	},
 	"next": "03b30502.html",
 	"prev": "01770502.html",
 	"list": {
-		"00470502": "Sable",
-		"005c0502": "Al",
-		"00d80502": "Broccolo",
-		"01260502": "Rodeo",
-		"01350502": "Chevre",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"02a30e02": "Boo - Golf",
-		"02a70e02": "Baby Mario - Tennis",
-		"03a0ff02": "Toad - Power Up Band",
-		"04ba1d02": "Zangief"
+		"00040002": "Link",
+		"002d0002": "Mr. Game \u0026 Watch",
+		"00c30502": "Tom",
+		"00f60502": "Hopper",
+		"01600502": "Merengue",
+		"02710e02": "Luigi - Golf",
+		"02b80e02": "Rosalina - Horse Racing",
+		"03630002": "Corrin - Player 2",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"043c1302": "Sylux"
 	}
 }

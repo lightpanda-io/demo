@@ -4,21 +4,21 @@
 		"character": "Mira",
 		"name": "Mira",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a70001-01a60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a70001-01a60502.png",
 		"tail": "01a60502"
 	},
 	"next": "03a60102.html",
 	"prev": "00240002.html",
 	"list": {
-		"00080002": "Villager",
-		"004d0502": "Pascal",
-		"00550502": "Bob",
-		"00d40502": "Carmen",
-		"00dc0502": "Alfonso",
-		"01d20502": "Twiggy",
-		"02570c02": "Waddle Dee",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03b20502": "K.K. Slider",
-		"04c41e03": "Kirby"
+		"01770502": "Leilani",
+		"01a50502": "Walt",
+		"02610402": "Inkling Squid - Orange",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"03710102": "Mario - Wedding",
+		"03730102": "Bowser - Wedding",
+		"03b90502": "Gulliver",
+		"03d20502": "Ace",
+		"04131302": "E.M.M.I.",
+		"04ce1d02": "Jamie"
 	}
 }

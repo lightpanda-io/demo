@@ -4,21 +4,21 @@
 		"character": "Sylvana",
 		"name": "Sylvana",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04eb0001-02f00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04eb0001-02f00502.png",
 		"tail": "02f00502"
 	},
 	"next": "02fa0502.html",
 	"prev": "01a00502.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"00610502": "Tiffany",
-		"00630502": "Bluebear",
-		"01cf0502": "Simon",
-		"03080502": "Boots",
-		"03190502": "Rilla",
-		"037d0002": "Isabelle",
-		"04350402": "Big Man",
-		"043e1b02": "Mio",
-		"04f31d02": "Mai"
+		"001e0002": "Olimar",
+		"003e0402": "Inkling Girl",
+		"004c0502": "Digby",
+		"008f0502": "Jeremiah",
+		"01240502": "Ken",
+		"028a0e02": "Waluigi - Golf",
+		"02e40f02": "Rathian and Cheval",
+		"03120502": "Snooty",
+		"03701202": "Tiki",
+		"03730102": "Bowser - Wedding"
 	}
 }

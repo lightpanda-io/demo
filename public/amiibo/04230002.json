@@ -4,21 +4,21 @@
 		"character": "Alex",
 		"name": "Alex",
 		"gameSeries": "Minecraft",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3dc10000-04230002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3dc10000-04230002.png",
 		"tail": "04230002"
 	},
 	"next": "00530502.html",
 	"prev": "00f10502.html",
 	"list": {
-		"00050002": "Fox",
-		"000c0002": "Luigi",
-		"001d0002": "Zero Suit Samus",
-		"00310002": "Mega Man",
-		"01900502": "Lolly",
-		"02510002": "Lucas",
-		"02850e02": "Wario - Golf",
-		"02f00502": "Sylvana",
-		"03150502": "Buzz",
-		"03661302": "Metroid"
+		"00040002": "Link",
+		"00440502": "Isabelle",
+		"00570502": "Curt",
+		"00ec0502": "Bud",
+		"01480502": "Tucker",
+		"03160502": "Cleo",
+		"03830002": "Ivysaur",
+		"04d91d02": "JP",
+		"04e11d02": "M. Bison",
+		"04f01d02": "Ingrid"
 	}
 }

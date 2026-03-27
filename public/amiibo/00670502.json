@@ -4,21 +4,21 @@
 		"character": "Alli",
 		"name": "Alli",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c40001-00670502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02c40001-00670502.png",
 		"tail": "00670502"
 	},
 	"next": "02800e02.html",
 	"prev": "02820e02.html",
 	"list": {
-		"00090002": "Pikachu",
-		"004a0502": "Joan",
-		"006e0502": "Puck",
-		"016d0502": "Derwin",
-		"01a50502": "Walt",
-		"03150502": "Buzz",
-		"03840002": "Squirtle",
-		"04401c02": "Luigi - My Mario Wooden Blocks",
-		"04e01d02": "Akuma",
-		"04e31d02": "Elena"
+		"012f0502": "Freckles",
+		"01500502": "Bree",
+		"02400502": "K. K. Slider",
+		"02540c02": "Kirby",
+		"02890e02": "Waluigi - Tennis",
+		"034c0902": "Link - Majora's Mask",
+		"03760402": "Pearl",
+		"03830002": "Ivysaur",
+		"03d20502": "Ace",
+		"04a91d02": "Ken"
 	}
 }

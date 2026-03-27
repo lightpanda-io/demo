@@ -4,21 +4,21 @@
 		"character": "Hopper",
 		"name": "Hopper",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04620001-00f60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04620001-00f60502.png",
 		"tail": "00f60502"
 	},
 	"next": "042c1802.html",
 	"prev": "03750d02.html",
 	"list": {
-		"00d10502": "Peck",
-		"01080502": "Kid Cat",
-		"01ba0502": "Becky",
-		"02740e02": "Peach - Baseball",
-		"02a80e02": "Baby Mario - Golf",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"03020502": "Raddle",
-		"037a0002": "Daisy",
-		"03931702": "Pawapuro",
-		"03aa0502": "Isabelle"
+		"004f0502": "Redd",
+		"00fd0502": "Charlise",
+		"01480502": "Tucker",
+		"01710502": "Brewster",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"035f1102": "Pikmin",
+		"03820002": "Inkling",
+		"038b0002": "Simon",
+		"04b11d02": "Guile",
+		"04bb1d02": "Lily"
 	}
 }

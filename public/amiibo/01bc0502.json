@@ -4,21 +4,20 @@
 		"character": "Sydney",
 		"name": "Sydney",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bf0001-01bc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03bf0001-01bc0502.png",
 		"tail": "01bc0502"
 	},
 	"next": "030a0502.html",
 	"prev": "00d60502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
 		"00900502": "Cherry",
-		"00b70502": "Chip",
-		"012a0502": "Elvis",
-		"01680502": "Rolf",
-		"016e0502": "Francine",
-		"01a10502": "Elmer",
-		"02a30e02": "Boo - Golf",
-		"02ae0e02": "Baby Luigi - Horse Racing",
-		"03601202": "Alm"
+		"01c30502": "Margie",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02a70e02": "Baby Mario - Tennis",
+		"030e0502": "Tad",
+		"035b0902": "Revali",
+		"03b00502": "Sable",
+		"03b80502": "Harvey",
+		"04a30902": "Riju"
 	}
 }

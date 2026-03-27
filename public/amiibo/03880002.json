@@ -4,21 +4,21 @@
 		"character": "Chrom",
 		"name": "Chrom",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-03880002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21080000-03880002.png",
 		"tail": "03880002"
 	},
 	"next": "00270002.html",
 	"prev": "026e0e02.html",
 	"list": {
-		"01440502": "Klaus",
-		"01560502": "Hamlet",
-		"01570502": "Astrid",
-		"02720e02": "Luigi - Horse Racing",
-		"029c0e02": "Bowser Jr. - Baseball",
-		"03080502": "Boots",
-		"036a0402": "Inkling Boy - Neon Green",
-		"04101802": "Palico",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"041a0902": "Ganondorf - Tears of the Kingdom"
+		"00680502": "Kabuki",
+		"00760502": "Opal",
+		"00800502": "Tutu",
+		"008c0502": "Flo",
+		"02560c02": "King Dedede",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03ca0502": "Tiansheng",
+		"04140902": "Zelda \u0026 Loftwing",
+		"042e0002": "Sora",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

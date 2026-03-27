@@ -4,21 +4,21 @@
 		"character": "Quillson",
 		"name": "Quillson",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03180001-006c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03180001-006c0502.png",
 		"tail": "006c0502"
 	},
 	"next": "02be0e02.html",
 	"prev": "014a0502.html",
 	"list": {
-		"00340102": "Mario",
-		"004a0502": "Joan",
-		"00cd0502": "Sly",
-		"01950502": "Fang",
-		"02570c02": "Waddle Dee",
-		"02840e02": "Wario - Tennis",
-		"02940e02": "Diddy Kong - Golf",
-		"02f90502": "Maddie",
-		"03180502": "Tasha",
-		"03850002": "Pichu"
+		"00a30502": "Cole",
+		"00c40502": "Tipper",
+		"02390602": "8-Bit Mario Modern Color",
+		"02690e02": "Mario - Soccer",
+		"027e0e02": "Yoshi - Baseball",
+		"02810e02": "Yoshi - Horse Racing",
+		"02830e02": "Wario - Baseball",
+		"028f0e02": "Donkey Kong - Golf",
+		"02a30e02": "Boo - Golf",
+		"02ae0e02": "Baby Luigi - Horse Racing"
 	}
 }

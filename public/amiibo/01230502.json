@@ -4,21 +4,21 @@
 		"character": "Paula",
 		"name": "Paula",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021e0001-01230502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_021e0001-01230502.png",
 		"tail": "01230502"
 	},
 	"next": "02bc0e02.html",
 	"prev": "02630102.html",
 	"list": {
-		"009c0502": "Diana",
-		"00b30502": "Don Resetti",
-		"01310502": "Friga",
-		"01a00502": "Lucy",
-		"01c00502": "Gloria",
-		"02640102": "Donkey Kong",
-		"03590902": "Urbosa",
-		"038e0402": "Octoling Girl",
-		"03951702": "Yabe",
-		"04eb1d02": "M. Bison"
+		"01450502": "Daisy",
+		"01c60502": "Rowan",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"03741402": "Super Mario Cereal",
+		"03890002": "Ken",
+		"03bf0502": "Isabelle - Sweater",
+		"03d40502": "Frett",
+		"03d70502": "Faith",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"04d51d02": "E. Honda"
 	}
 }

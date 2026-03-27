@@ -4,21 +4,21 @@
 		"character": "Simon",
 		"name": "Simon",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fb0001-01cf0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03fb0001-01cf0502.png",
 		"tail": "01cf0502"
 	},
 	"next": "04180902.html",
 	"prev": "00a80502.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00990502": "Chief",
-		"00f10502": "Bettina",
-		"01540502": "Moe",
-		"01830502": "Mott",
-		"026c0e02": "Mario - Golf",
-		"02b20e02": "Birdo - Golf",
-		"03670102": "Goomba",
-		"03b90502": "Gulliver",
-		"04ba1d02": "Zangief"
+		"00270002": "Meta Knight",
+		"00480502": "Kapp'n",
+		"00b10502": "Leila",
+		"01730502": "Phineas",
+		"01c30502": "Margie",
+		"03c70502": "Reneigh",
+		"041d0002": "Min Min",
+		"04291902": "Nail Saionji",
+		"04d21d02": "Juri",
+		"04d51d02": "E. Honda"
 	}
 }

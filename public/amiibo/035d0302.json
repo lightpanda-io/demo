@@ -4,21 +4,21 @@
 		"character": "Poochy",
 		"name": "Poochy",
 		"gameSeries": "Yoshi's Woolly World",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00800102-035d0302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00800102-035d0302.png",
 		"tail": "035d0302"
 	},
 	"next": "02890e02.html",
 	"prev": "009a0502.html",
 	"list": {
-		"009f0502": "Henry",
-		"00c00502": "Gwen",
-		"00d80502": "Broccolo",
-		"01120502": "Mabel",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"01b90502": "Tank",
-		"02860e02": "Wario - Horse Racing",
-		"02bd0e02": "Metal Mario - Horse Racing",
-		"03730102": "Bowser - Wedding",
-		"03c30502": "Audie"
+		"00580502": "Portia",
+		"00950502": "Goose",
+		"00bc0502": "Tia",
+		"01030502": "Pango",
+		"014d0502": "Joey",
+		"019c0502": "Naomi",
+		"03ce0502": "Cephalobot",
+		"03d60502": "Roswell",
+		"03d70502": "Faith",
+		"04e31d02": "Elena"
 	}
 }

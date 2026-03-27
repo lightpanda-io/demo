@@ -4,21 +4,21 @@
 		"character": "Rory",
 		"name": "Rory",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ed0001-01a30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ed0001-01a30502.png",
 		"tail": "01a30502"
 	},
 	"next": "00cb0502.html",
-	"prev": "03a0ff02.html",
+	"prev": "04c30102.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00450502": "Tom Nook",
-		"00fe0502": "Vic",
-		"01d40502": "Isabelle - Character Parfait",
-		"02f60502": "Stu",
-		"036c0a02": "Plague Knight",
-		"03a70102": "Peach - Cat",
-		"03b80502": "Harvey",
-		"03c40502": "Cyd",
-		"04c41e03": "Kirby"
+		"00130002": "Rosalina \u0026 Luma",
+		"003e0402": "Inkling Girl",
+		"008a0502": "Yuka",
+		"00900502": "Cherry",
+		"00a40502": "Willow",
+		"02690e02": "Mario - Soccer",
+		"02b80e02": "Rosalina - Horse Racing",
+		"04200002": "Kazuya",
+		"04241902": "Yuga Ohdo",
+		"04380402": "Pearl - Side Order"
 	}
 }

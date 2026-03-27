@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Squid",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-00400402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000300-00400402.png",
 		"tail": "00400402"
 	},
 	"next": "009f0502.html",
 	"prev": "036e0a02.html",
 	"list": {
-		"00890502": "Biff",
-		"008b0502": "Lionel",
-		"00ce0502": "Blaire",
-		"01610502": "Cube",
-		"023f0502": "Isabelle - Winter Outfit",
-		"02420502": "Tom Nook",
-		"02640102": "Donkey Kong",
-		"02af0e02": "Birdo - Soccer",
-		"02ec0502": "Hornsby",
-		"index": "Sandy"
+		"00870502": "Clyde",
+		"014a0502": "Gaston",
+		"018c0502": "Broffina",
+		"027f0e02": "Yoshi - Tennis",
+		"02800e02": "Yoshi - Golf",
+		"039cff02": "Luigi - Power Up Band",
+		"03b80502": "Harvey",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"04a30902": "Riju",
+		"04e11d02": "M. Bison"
 	}
 }

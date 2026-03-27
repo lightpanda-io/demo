@@ -4,21 +4,21 @@
 		"character": "Kicks",
 		"name": "Kicks",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940001-03b60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01940001-03b60502.png",
 		"tail": "03b60502"
 	},
 	"next": "02ed0502.html",
 	"prev": "026a0e02.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00720502": "Knox",
-		"011e0502": "Anchovy",
-		"01290502": "Velma",
-		"015b0502": "Victoria",
-		"01710502": "Brewster",
-		"01970502": "Tex",
-		"02850e02": "Wario - Golf",
-		"03c90502": "Ione",
-		"04c01d02": "Akuma"
+		"00f90502": "Alice",
+		"01340502": "Hans",
+		"01370502": "Tangy",
+		"018a0502": "Penelope",
+		"01b40502": "Sylvia",
+		"01d30502": "Robin",
+		"02380602": "8-Bit Mario Classic Color",
+		"040f1802": "Magnamalo",
+		"042b1802": "Palico",
+		"04f11d02": "Terry"
 	}
 }

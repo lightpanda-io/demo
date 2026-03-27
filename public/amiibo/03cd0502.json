@@ -4,21 +4,21 @@
 		"character": "Petri",
 		"name": "Petri",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a160001-03cd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a160001-03cd0502.png",
 		"tail": "03cd0502"
 	},
 	"next": "03d20502.html",
 	"prev": "03bd0502.html",
 	"list": {
-		"00120002": "Captain Falcon",
-		"00f10502": "Bettina",
+		"00350102": "Luigi",
+		"006f0502": "Shari",
+		"00a00502": "Bertha",
+		"00c20502": "Kitt",
 		"01020502": "Marcel",
-		"01060502": "Hamphrey",
-		"01500502": "Bree",
-		"017f0502": "Zipper",
-		"03080502": "Boots",
-		"03860002": "Incineroar",
-		"04200002": "Kazuya",
-		"04af1d02": "Kimberly"
+		"02690e02": "Mario - Soccer",
+		"02ec0502": "Hornsby",
+		"03bb0502": "Lottie - Island",
+		"03cb0502": "Shino",
+		"04b61d02": "Dee Jay"
 	}
 }

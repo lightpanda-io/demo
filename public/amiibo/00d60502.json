@@ -4,21 +4,21 @@
 		"character": "Scoot",
 		"name": "Scoot",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03110001-00d60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03110001-00d60502.png",
 		"tail": "00d60502"
 	},
 	"next": "01bc0502.html",
 	"prev": "02e80502.html",
 	"list": {
-		"00670502": "Alli",
-		"00720502": "Knox",
-		"023f0502": "Isabelle - Winter Outfit",
-		"027d0e02": "Yoshi - Soccer",
-		"02910e02": "Diddy Kong - Soccer",
-		"03080502": "Boots",
-		"038e0402": "Octoling Girl",
-		"03cd0502": "Petri",
-		"04bb1d02": "Lily",
-		"04e41d02": "Sagat"
+		"00360102": "Peach",
+		"00380102": "Toad",
+		"00570502": "Curt",
+		"00fc0502": "Chops",
+		"01af0502": "Zucker",
+		"02ee0502": "Tybalt",
+		"038c0002": "Richter",
+		"03b70502": "Saharah",
+		"03c20502": "Dom",
+		"04be1d02": "A.K.I"
 	}
 }

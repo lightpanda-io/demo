@@ -4,20 +4,21 @@
 		"character": "Mabel",
 		"name": "Mabel",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-03af0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01880001-03af0502.png",
 		"tail": "03af0502"
 	},
 	"next": "00610502.html",
 	"prev": "00080002.html",
 	"list": {
-		"00590502": "Leonardo",
-		"00a70502": "Walker",
-		"00ff0502": "Ankha",
-		"013d0502": "Ava",
-		"019b0502": "Rudy",
-		"02450502": "Reese",
-		"02770e02": "Peach - Horse Racing",
-		"03941702": "Ikari",
-		"04ed1d02": "Sagat"
+		"00550502": "Bob",
+		"00e90502": "Kitty",
+		"011d0502": "Lily",
+		"013c0502": "Beardo",
+		"01680502": "Rolf",
+		"01ba0502": "Becky",
+		"02560c02": "King Dedede",
+		"03020502": "Raddle",
+		"03880002": "Chrom",
+		"03b90502": "Gulliver"
 	}
 }

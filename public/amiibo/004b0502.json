@@ -4,21 +4,21 @@
 		"character": "Timmy",
 		"name": "Timmy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850001-004b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01850001-004b0502.png",
 		"tail": "004b0502"
 	},
 	"next": "02f40502.html",
 	"prev": "01400502.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"008a0502": "Yuka",
-		"01310502": "Friga",
-		"01780502": "Resetti - Without Hat",
-		"018b0502": "Boone",
-		"01a30502": "Rory",
-		"02ff0502": "Plucky",
-		"03180502": "Tasha",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"03b60502": "Kicks"
+		"00460502": "DJ KK",
+		"00780502": "Limberg",
+		"01000502": "Drift",
+		"01040502": "Keaton",
+		"011b0502": "Franklin",
+		"01850502": "Rocco",
+		"02680102": "Boo",
+		"027c0e02": "Daisy - Horse Racing",
+		"038f0402": "Octoling Boy",
+		"0430ff02": "Golden - Power Up Band"
 	}
 }

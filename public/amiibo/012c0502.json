@@ -4,21 +4,21 @@
 		"character": "Colton",
 		"name": "Colton",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03af0001-012c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03af0001-012c0502.png",
 		"tail": "012c0502"
 	},
 	"next": "00ca0502.html",
 	"prev": "042c1802.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"007e0502": "Nate",
-		"007f0502": "Samson",
-		"00f10502": "Bettina",
-		"015b0502": "Victoria",
-		"016f0502": "Chrissy",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"03580902": "Daruk",
-		"035c0902": "Bokoblin",
-		"04d41d02": "Dhalsim"
+		"009e0502": "Muffy",
+		"013b0502": "Hazel",
+		"01570502": "Astrid",
+		"01600502": "Merengue",
+		"01850502": "Rocco",
+		"01b40502": "Sylvia",
+		"02610402": "Inkling Squid - Orange",
+		"02f90502": "Maddie",
+		"04be1d02": "A.K.I",
+		"04e51d02": "C. Viper"
 	}
 }

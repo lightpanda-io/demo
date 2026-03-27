@@ -4,21 +4,21 @@
 		"character": "Genji",
 		"name": "Genji",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049c0001-01400502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_049c0001-01400502.png",
 		"tail": "01400502"
 	},
 	"next": "004b0502.html",
 	"prev": "02ff0502.html",
 	"list": {
-		"00360102": "Peach",
-		"00550502": "Bob",
-		"01720502": "Katrina",
-		"01a80502": "Aurora",
-		"025a0002": "Corrin",
-		"02bd0e02": "Metal Mario - Horse Racing",
-		"030c0502": "Spike",
-		"037a0002": "Daisy",
-		"03830002": "Ivysaur",
-		"03ba0502": "Wisp"
+		"00290002": "Lucina",
+		"00900502": "Cherry",
+		"00ae0502": "Katie",
+		"00ef0502": "Agnes",
+		"01310502": "Friga",
+		"01650502": "Caroline",
+		"01c00502": "Gloria",
+		"031b0502": "Étoile",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04e31d02": "Elena"
 	}
 }

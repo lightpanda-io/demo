@@ -4,21 +4,21 @@
 		"character": "Shiver",
 		"name": "Shiver",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08070000-04330402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08070000-04330402.png",
 		"tail": "04330402"
 	},
 	"next": "04340402.html",
 	"prev": "04150402.html",
 	"list": {
-		"00b30502": "Don Resetti",
-		"01760502": "Gracie",
-		"02380602": "8-Bit Mario Classic Color",
-		"025b0002": "Bayonetta",
-		"02f60502": "Stu",
-		"02ff0502": "Plucky",
-		"03690402": "Inkling Girl - Neon Pink",
-		"03b80502": "Harvey",
-		"040d0f02": "Ena",
-		"04401c02": "Luigi - My Mario Wooden Blocks"
+		"00000002": "Mario",
+		"00430302": "Light Blue Yarn Yoshi",
+		"00580502": "Portia",
+		"00ae0502": "Katie",
+		"019d0502": "Peewee",
+		"023d0002": "Mewtwo",
+		"028f0e02": "Donkey Kong - Golf",
+		"02b70e02": "Rosalina - Golf",
+		"03c10502": "Megan",
+		"04ad1d02": "Jamie"
 	}
 }

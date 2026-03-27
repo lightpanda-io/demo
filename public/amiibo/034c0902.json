@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link - Majora's Mask",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034c0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-034c0902.png",
 		"tail": "034c0902"
 	},
 	"next": "017a0502.html",
 	"prev": "03cb0502.html",
 	"list": {
-		"00750502": "Punchy",
-		"00b90502": "Poncho",
-		"00c30502": "Tom",
-		"010d0502": "Blathers",
-		"01120502": "Mabel",
-		"016c0502": "Apollo",
-		"01790502": "Timmy - Suit",
-		"03030502": "Julia",
-		"04101802": "Palico",
-		"04b81d02": "Marisa"
+		"013b0502": "Hazel",
+		"016a0502": "Antonio",
+		"01bc0502": "Sydney",
+		"02ea0502": "Piper",
+		"03040502": "Louie",
+		"03530902": "Link - Archer",
+		"04370402": "Marie - Alterna",
+		"04bf1d02": "Ed",
+		"04c20102": "Captain Toad \u0026 Talking Flower",
+		"04d91d02": "JP"
 	}
 }

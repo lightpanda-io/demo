@@ -4,21 +4,21 @@
 		"character": "Bangle",
 		"name": "Bangle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fd0001-007b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04fd0001-007b0502.png",
 		"tail": "007b0502"
 	},
 	"next": "01810502.html",
 	"prev": "01500502.html",
 	"list": {
-		"00830502": "Pudge",
-		"008d0502": "Cobb",
-		"00be0502": "Fuchsia",
-		"01450502": "Daisy",
-		"018d0502": "Croque",
-		"02550c02": "Meta Knight",
-		"02750e02": "Peach - Tennis",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"035e1002": "Qbby",
-		"03a0ff02": "Toad - Power Up Band"
+		"00200002": "Dark Pit",
+		"002b0002": "Shulk",
+		"00630502": "Bluebear",
+		"01740502": "Celeste",
+		"01bc0502": "Sydney",
+		"02630102": "Wario",
+		"02880e02": "Waluigi - Baseball",
+		"035b0902": "Revali",
+		"04131302": "E.M.M.I.",
+		"04eb1d02": "M. Bison"
 	}
 }

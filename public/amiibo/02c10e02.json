@@ -4,21 +4,21 @@
 		"character": "Pink Gold Peach",
 		"name": "Pink Gold Peach - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10401-02c10e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d10401-02c10e02.png",
 		"tail": "02c10e02"
 	},
 	"next": "00990502.html",
 	"prev": "012b0502.html",
 	"list": {
-		"007f0502": "Samson",
-		"00ae0502": "Katie",
-		"00ea0502": "Beau",
-		"01480502": "Tucker",
-		"01930502": "Pierce",
-		"019c0502": "Naomi",
-		"01c30502": "Margie",
-		"01cb0502": "Cranston",
-		"03971702": "Ganda",
-		"04b51d02": "E. Honda"
+		"00790502": "Deena",
+		"00bc0502": "Tia",
+		"01170502": "Timmy - Full Apron",
+		"01b20502": "Annalise",
+		"01d40502": "Isabelle - Character Parfait",
+		"02b20e02": "Birdo - Golf",
+		"02ee0502": "Tybalt",
+		"04200002": "Kazuya",
+		"04a30902": "Riju",
+		"04a91d02": "Ken"
 	}
 }

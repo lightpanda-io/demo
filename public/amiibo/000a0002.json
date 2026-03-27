@@ -4,21 +4,21 @@
 		"character": "Kirby",
 		"name": "Kirby",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f000000-000a0002.png",
 		"tail": "000a0002"
 	},
 	"next": "00d40502.html",
 	"prev": "00c60502.html",
 	"list": {
-		"001f0002": "Palutena",
-		"01bc0502": "Sydney",
-		"01d70502": "Rosie - Amiibo Festival",
-		"02610402": "Inkling Squid - Orange",
-		"02a10e02": "Boo - Baseball",
-		"031c0502": "Chai",
-		"040f1802": "Magnamalo",
-		"042b1802": "Palico",
-		"04b61d02": "Dee Jay",
+		"00710502": "Winnie",
+		"00860502": "Flurry",
+		"00a10502": "Cyrano",
+		"00ee0502": "Benedict",
+		"01100502": "Phyllis",
+		"01760502": "Gracie",
+		"01cb0502": "Cranston",
+		"025c0d02": "Shadow Mewtwo",
+		"027c0e02": "Daisy - Horse Racing",
 		"04ec1d02": "Elena"
 	}
 }

@@ -4,21 +4,20 @@
 		"character": "Timmy",
 		"name": "Timmy - Full Apron",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01850201-01170502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01850201-01170502.png",
 		"tail": "01170502"
 	},
 	"next": "04190902.html",
 	"prev": "02580002.html",
 	"list": {
-		"006a0502": "Jitters",
-		"009d0502": "Axel",
-		"02820e02": "Wario - Soccer",
-		"031a0502": "Marty",
-		"036e0a02": "King Knight",
-		"03791502": "Mega Man",
-		"037e0002": "Wolf",
-		"03a60102": "Mario - Cat",
-		"04a81d02": "Ryu",
-		"index": "Sandy"
+		"00560502": "Fauna",
+		"00bd0502": "Lucha",
+		"01a90502": "Papi",
+		"01cf0502": "Simon",
+		"02430502": "Digby",
+		"03190502": "Rilla",
+		"03a0ff02": "Toad - Power Up Band",
+		"04131302": "E.M.M.I.",
+		"04ce1d02": "Jamie"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Elise",
 		"name": "Elise",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fe0001-01a40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03fe0001-01a40502.png",
 		"tail": "01a40502"
 	},
 	"next": "03800002.html",
 	"prev": "005c0502.html",
 	"list": {
-		"00220002": "Mii Swordfighter",
-		"00810502": "T-Bone",
-		"00910502": "Roscoe",
-		"00c20502": "Kitt",
-		"00c60502": "Pate",
-		"02480502": "Celeste",
-		"02760e02": "Peach - Golf",
-		"028c0e02": "Donkey Kong - Soccer",
-		"03b30502": "C.J.",
-		"04230002": "Alex"
+		"00970502": "Benjamin",
+		"00ce0502": "Blaire",
+		"011c0502": "Jingle",
+		"01ae0502": "Celia",
+		"02fc0502": "Bitty",
+		"03150502": "Buzz",
+		"034c0902": "Link - Majora's Mask",
+		"03d10502": "Zoe",
+		"04e71d02": "Ingrid",
+		"04ed1d02": "Sagat"
 	}
 }

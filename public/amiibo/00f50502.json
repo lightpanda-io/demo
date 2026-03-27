@@ -4,21 +4,21 @@
 		"character": "Hugh",
 		"name": "Hugh",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047b0001-00f50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_047b0001-00f50502.png",
 		"tail": "00f50502"
 	},
 	"next": "013a0502.html",
 	"prev": "01040502.html",
 	"list": {
-		"00bd0502": "Lucha",
-		"00d90502": "Coco",
-		"00e70502": "Bianca",
-		"025b0002": "Bayonetta",
-		"02a30e02": "Boo - Golf",
-		"02ee0502": "Tybalt",
-		"02f20502": "Wade",
-		"03750d02": "Detective Pikachu",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04ac1d02": "Jamie"
+		"00270002": "Meta Knight",
+		"006d0502": "Marcie",
+		"00730502": "Sterling",
+		"01940502": "Queenie",
+		"02380602": "8-Bit Mario Classic Color",
+		"02640102": "Donkey Kong",
+		"02920e02": "Diddy Kong - Baseball",
+		"02fa0502": "Billy",
+		"03850002": "Pichu",
+		"04180902": "Link - Tears of the Kingdom"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Mathilda",
 		"name": "Mathilda",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d20001-00e50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d20001-00e50502.png",
 		"tail": "00e50502"
 	},
 	"next": "026b0e02.html",
 	"prev": "027d0e02.html",
 	"list": {
-		"002a0002": "Robin",
-		"00b00502": "Porter",
-		"00b40502": "Isabelle - Winter",
-		"00f00502": "Julian",
-		"013f0502": "Merry",
-		"036f1202": "Chrom",
-		"037e0002": "Wolf",
-		"037f0002": "Ridley",
-		"04291902": "Nail Saionji",
-		"04ae1d02": "Kimberly"
+		"001c0002": "Falco",
+		"00280002": "King Dedede",
+		"00540502": "Lottie",
+		"01940502": "Queenie",
+		"026c0e02": "Mario - Golf",
+		"02810e02": "Yoshi - Horse Racing",
+		"02b70e02": "Rosalina - Golf",
+		"03120502": "Snooty",
+		"03a20002": "Hero",
+		"04ef1d02": "Alex"
 	}
 }

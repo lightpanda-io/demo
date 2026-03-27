@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Donkey Kong - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70301-028e0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c70301-028e0e02.png",
 		"tail": "028e0e02"
 	},
 	"next": "037d0002.html",
 	"prev": "00cc0502.html",
 	"list": {
-		"006d0502": "Marcie",
-		"00a90502": "Reese",
-		"01120502": "Mabel",
-		"01340502": "Hans",
-		"01aa0502": "Apple",
-		"02a70e02": "Baby Mario - Tennis",
-		"030d0502": "Cashmere",
-		"031e0502": "Toby",
-		"03b30502": "C.J.",
-		"04e51d02": "C. Viper"
+		"00910502": "Roscoe",
+		"00a00502": "Bertha",
+		"00c60502": "Pate",
+		"00e30502": "Pekoe",
+		"01be0502": "Nibbles",
+		"02870e02": "Waluigi - Soccer",
+		"030b0502": "Leopold",
+		"04101802": "Palico",
+		"041d0002": "Min Min",
+		"04f11d02": "Terry"
 	}
 }

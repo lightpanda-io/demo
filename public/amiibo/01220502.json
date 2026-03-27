@@ -4,21 +4,21 @@
 		"character": "Del",
 		"name": "Del",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02c70001-01220502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02c70001-01220502.png",
 		"tail": "01220502"
 	},
 	"next": "00cc0502.html",
 	"prev": "02570c02.html",
 	"list": {
-		"00430302": "Light Blue Yarn Yoshi",
-		"00780502": "Limberg",
-		"00880502": "Bella",
-		"02440502": "Lottie",
-		"027b0e02": "Daisy - Golf",
-		"02840e02": "Wario - Tennis",
-		"030a0502": "Candi",
-		"03961702": "Hayakawa",
-		"03a20002": "Hero",
-		"03b70502": "Saharah"
+		"00eb0502": "Nan",
+		"00fc0502": "Chops",
+		"02410502": "Mabel",
+		"02620102": "Rosalina",
+		"027f0e02": "Yoshi - Tennis",
+		"02970e02": "Bowser - Baseball",
+		"03020502": "Raddle",
+		"034f0902": "8-Bit Link",
+		"037a0002": "Daisy",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)"
 	}
 }

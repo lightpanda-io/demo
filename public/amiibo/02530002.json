@@ -4,21 +4,21 @@
 		"character": "Ryu",
 		"name": "Ryu",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00000-02530002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c00000-02530002.png",
 		"tail": "02530002"
 	},
 	"next": "04aa1d02.html",
 	"prev": "037d0002.html",
 	"list": {
-		"00060002": "Samus",
-		"010a0502": "Big Top",
-		"01180502": "Digby - Raincoat",
-		"01670502": "Baabara",
-		"01840502": "Mallary",
-		"018d0502": "Croque",
-		"037d0002": "Isabelle",
-		"04150402": "Inkling - Yellow",
-		"04380402": "Pearl - Side Order",
-		"04d71d02": "Manon"
+		"001e0002": "Olimar",
+		"00b30502": "Don Resetti",
+		"01270502": "Bubbles",
+		"012b0502": "Canberra",
+		"01480502": "Tucker",
+		"01ca0502": "Gayle",
+		"02ea0502": "Piper",
+		"03a90502": "Timmy \u0026 Tommy",
+		"04360402": "Callie - Alterna",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

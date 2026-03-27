@@ -4,21 +4,21 @@
 		"character": "Lily",
 		"name": "Lily",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03380001-011d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03380001-011d0502.png",
 		"tail": "011d0502"
 	},
 	"next": "00550502.html",
 	"prev": "01730502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"00800502": "Tutu",
-		"00b60502": "Nat",
-		"00de0502": "Butch",
-		"02430502": "Digby",
-		"02580002": "Mega Man - Gold Edition",
-		"02a00e02": "Boo - Soccer",
-		"03941702": "Ikari",
-		"03d30502": "Rio",
-		"043e1b02": "Mio"
+		"00a70502": "Walker",
+		"00f40502": "Flip",
+		"01320502": "Ricky",
+		"024a0502": "Kicks",
+		"02510002": "Lucas",
+		"03090502": "Weber",
+		"03180502": "Tasha",
+		"03781402": "Solaire of Astora",
+		"043e1b02": "Mio",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

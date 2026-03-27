@@ -4,21 +4,21 @@
 		"character": "Lucina",
 		"name": "Lucina",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21020000-00290002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21020000-00290002.png",
 		"tail": "00290002"
 	},
 	"next": "019c0502.html",
 	"prev": "03b40502.html",
 	"list": {
-		"00290002": "Lucina",
-		"003f0402": "Inkling Boy",
-		"00e70502": "Bianca",
-		"012d0502": "Marina",
-		"023d0002": "Mewtwo",
-		"02700e02": "Luigi - Tennis",
-		"03630002": "Corrin - Player 2",
-		"03730102": "Bowser - Wedding",
-		"03800002": "Dark Samus",
-		"03d60502": "Roswell"
+		"00350102": "Luigi",
+		"00530502": "Lyle",
+		"00670502": "Alli",
+		"01770502": "Leilani",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02b40e02": "Rosalina - Soccer",
+		"03070502": "Ellie",
+		"03590902": "Urbosa",
+		"04b61d02": "Dee Jay",
+		"04d41d02": "Dhalsim"
 	}
 }

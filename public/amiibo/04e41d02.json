@@ -4,20 +4,21 @@
 		"character": "Sagat",
 		"name": "Sagat",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d90001-04e41d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d90001-04e41d02.png",
 		"tail": "04e41d02"
 	},
 	"next": "04e51d02.html",
 	"prev": "04e31d02.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"00820502": "Mint",
-		"009f0502": "Henry",
-		"00f60502": "Hopper",
-		"02500a02": "Shovel Knight",
-		"02920e02": "Diddy Kong - Baseball",
-		"030d0502": "Cashmere",
-		"03bc0502": "Niko",
-		"04ae1d02": "Kimberly"
+		"010d0502": "Blathers",
+		"010f0502": "Pelly",
+		"01630502": "Curly",
+		"02770e02": "Peach - Horse Racing",
+		"02930e02": "Diddy Kong - Tennis",
+		"03730102": "Bowser - Wedding",
+		"03a50002": "Byleth",
+		"03cb0502": "Shino",
+		"03ce0502": "Cephalobot",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

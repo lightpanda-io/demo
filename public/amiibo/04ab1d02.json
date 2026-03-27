@@ -4,21 +4,21 @@
 		"character": "Luke",
 		"name": "Luke",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c20001-04ab1d02.png",
 		"tail": "04ab1d02"
 	},
 	"next": "04ac1d02.html",
 	"prev": "04aa1d02.html",
 	"list": {
-		"00210002": "Mii Brawler",
-		"00650502": "Kiki",
-		"00910502": "Roscoe",
-		"00bb0502": "Ozzie",
-		"01440502": "Klaus",
-		"019b0502": "Rudy",
-		"023e0302": "Mega Yarn Yoshi",
-		"02b30e02": "Birdo - Horse Racing",
-		"03a60102": "Mario - Cat",
-		"04ec1d02": "Elena"
+		"000f0002": "Little Mac",
+		"002f0002": "Duck Hunt",
+		"005e0502": "Lopez",
+		"008f0502": "Jeremiah",
+		"01890502": "Dizzy",
+		"01a90502": "Papi",
+		"01cd0502": "Grizzly",
+		"02650102": "Diddy Kong",
+		"02f50502": "Rex",
+		"038f0402": "Octoling Boy"
 	}
 }

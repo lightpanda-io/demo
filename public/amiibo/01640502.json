@@ -4,21 +4,21 @@
 		"character": "Boomer",
 		"name": "Boomer",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04690001-01640502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04690001-01640502.png",
 		"tail": "01640502"
 	},
 	"next": "02650102.html",
 	"prev": "02980e02.html",
 	"list": {
-		"00860502": "Flurry",
-		"00a70502": "Walker",
-		"00d70502": "Whitney",
-		"01020502": "Marcel",
-		"02510002": "Lucas",
-		"03651302": "Samus Aran",
-		"03670102": "Goomba",
-		"03800002": "Dark Samus",
-		"03a10002": "Joker",
-		"04d01d02": "Chun-Li"
+		"000e0002": "Zelda",
+		"00fe0502": "Vic",
+		"01120502": "Mabel",
+		"01560502": "Hamlet",
+		"01b60502": "Sally",
+		"01d10502": "Angus",
+		"030b0502": "Leopold",
+		"030e0502": "Tad",
+		"03900402": "Octoling Octopus",
+		"04261902": "Gakuto Sōgetsu"
 	}
 }

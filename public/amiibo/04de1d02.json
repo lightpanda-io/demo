@@ -4,20 +4,21 @@
 		"character": "A.K.I",
 		"name": "A.K.I",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d30001-04de1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d30001-04de1d02.png",
 		"tail": "04de1d02"
 	},
 	"next": "04df1d02.html",
 	"prev": "04dd1d02.html",
 	"list": {
-		"00a10502": "Cyrano",
-		"01150502": "Cyrus",
-		"012c0502": "Colton",
-		"016a0502": "Antonio",
-		"01930502": "Pierce",
-		"01ac0502": "Purrl",
-		"02b40e02": "Rosalina - Soccer",
-		"02b50e02": "Rosalina - Baseball",
-		"04a40902": "Sidon"
+		"00960502": "Annalisa",
+		"00a00502": "Bertha",
+		"00ca0502": "Phoebe",
+		"01340502": "Hans",
+		"016c0502": "Apollo",
+		"027a0e02": "Daisy - Tennis",
+		"03060502": "Admiral",
+		"03550902": "Guardian",
+		"03bd0502": "Wardell",
+		"040f1802": "Magnamalo"
 	}
 }

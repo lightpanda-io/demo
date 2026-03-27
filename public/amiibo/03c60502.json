@@ -4,21 +4,21 @@
 		"character": "Raymond",
 		"name": "Raymond",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png",
 		"tail": "03c60502"
 	},
 	"next": "03c90502.html",
 	"prev": "017b0502.html",
 	"list": {
-		"002b0002": "Shulk",
-		"00990502": "Chief",
-		"017d0502": "Gulliver",
-		"01aa0502": "Apple",
-		"02400502": "K. K. Slider",
-		"02ec0502": "Hornsby",
-		"02f60502": "Stu",
-		"03560902": "Zelda",
-		"03981702": "Daijobu",
-		"04411c02": "Peach - My Mario Wooden Blocks"
+		"00320002": "Pac-Man",
+		"00760502": "Opal",
+		"00d70502": "Whitney",
+		"00f10502": "Bettina",
+		"01390502": "Eloise",
+		"015b0502": "Victoria",
+		"01bd0502": "Barold",
+		"02770e02": "Peach - Horse Racing",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)",
+		"04fc0f02": "Rudy"
 	}
 }

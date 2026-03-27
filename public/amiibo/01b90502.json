@@ -4,21 +4,21 @@
 		"character": "Tank",
 		"name": "Tank",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b20001-01b90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04b20001-01b90502.png",
 		"tail": "01b90502"
 	},
 	"next": "03bb0502.html",
 	"prev": "00770502.html",
 	"list": {
-		"00110002": "Lucario",
-		"004a0502": "Joan",
-		"009d0502": "Axel",
-		"00b00502": "Porter",
-		"00b90502": "Poncho",
-		"00bf0502": "Harry",
-		"01000502": "Drift",
-		"01cf0502": "Simon",
-		"04390402": "Marina - Side Order",
-		"04cf1d02": "Kimberly"
+		"000e0002": "Zelda",
+		"00860502": "Flurry",
+		"01210502": "Miranda",
+		"01430502": "Diva",
+		"024d0502": "Timmy \u0026 Tommy",
+		"026f0e02": "Luigi - Baseball",
+		"02b20e02": "Birdo - Golf",
+		"03090502": "Weber",
+		"042f1a02": "Donkey Kong \u0026 Pauline",
+		"04a81d02": "Ryu"
 	}
 }

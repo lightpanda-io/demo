@@ -4,21 +4,21 @@
 		"character": "Kirby",
 		"name": "Kirby",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-02540c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f000000-02540c02.png",
 		"tail": "02540c02"
 	},
 	"next": "01260502.html",
 	"prev": "010d0502.html",
 	"list": {
-		"00090002": "Pikachu",
-		"00710502": "Winnie",
-		"008f0502": "Jeremiah",
-		"01430502": "Diva",
-		"018c0502": "Broffina",
-		"01a40502": "Elise",
-		"025a0002": "Corrin",
-		"02a60e02": "Baby Mario - Baseball",
-		"039dff02": "Peach - Power Up Band",
-		"039fff02": "Yoshi - Power Up Band"
+		"00930502": "Eugene",
+		"00950502": "Goose",
+		"00c00502": "Gwen",
+		"017d0502": "Gulliver",
+		"02a50e02": "Baby Mario - Soccer",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02ea0502": "Piper",
+		"031b0502": "Étoile",
+		"03670102": "Goomba",
+		"03bb0502": "Lottie - Island"
 	}
 }

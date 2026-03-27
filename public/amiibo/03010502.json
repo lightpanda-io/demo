@@ -4,21 +4,21 @@
 		"character": "Claude",
 		"name": "Claude",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049f0001-03010502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_049f0001-03010502.png",
 		"tail": "03010502"
 	},
 	"next": "01d50502.html",
 	"prev": "01d40502.html",
 	"list": {
-		"00cf0502": "Avery",
-		"01430502": "Diva",
-		"01860502": "Katt",
-		"023d0002": "Mewtwo",
-		"02680102": "Boo",
-		"02e80502": "Hopkins",
-		"03ba0502": "Wisp",
-		"03c60502": "Raymond",
-		"04af1d02": "Kimberly",
-		"04b51d02": "E. Honda"
+		"00a80502": "K.K. Slider",
+		"00cd0502": "Sly",
+		"00e80502": "Filbert",
+		"01070502": "Freya",
+		"013c0502": "Beardo",
+		"015f0502": "Chadder",
+		"01c00502": "Gloria",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03030502": "Julia",
+		"041e0002": "Pyra"
 	}
 }

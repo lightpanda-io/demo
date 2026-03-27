@@ -4,21 +4,21 @@
 		"character": "Sylux",
 		"name": "Sylux",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c50000-043c1302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c50000-043c1302.png",
 		"tail": "043c1302"
 	},
 	"next": "038b0002.html",
 	"prev": "043a1302.html",
 	"list": {
-		"00690502": "Patty",
-		"00a10502": "Cyrano",
-		"010c0502": "Rover",
-		"02560c02": "King Dedede",
-		"02900e02": "Donkey Kong - Horse Racing",
-		"02ad0e02": "Baby Luigi - Golf",
-		"02e40f02": "Rathian and Cheval",
-		"03611202": "Celica",
-		"039dff02": "Peach - Power Up Band",
-		"04251902": "Tatsuhisa “Luke” Kamijō"
+		"001d0002": "Zero Suit Samus",
+		"00880502": "Bella",
+		"00b00502": "Porter",
+		"00f20502": "Jay",
+		"011c0502": "Jingle",
+		"015a0502": "Biskit",
+		"01980502": "Melba",
+		"01c90502": "OHare",
+		"037d0002": "Isabelle",
+		"03961702": "Hayakawa"
 	}
 }

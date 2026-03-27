@@ -4,21 +4,21 @@
 		"character": "Shep",
 		"name": "Shep",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fc0001-018f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02fc0001-018f0502.png",
 		"tail": "018f0502"
 	},
 	"next": "036d0a02.html",
 	"prev": "01350502.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"014c0502": "Gala",
+		"00200002": "Dark Pit",
+		"012a0502": "Elvis",
+		"012f0502": "Freckles",
 		"01650502": "Caroline",
-		"01be0502": "Nibbles",
-		"023a0702": "Hammer Slam Bowser",
-		"02730e02": "Peach - Soccer",
-		"028e0e02": "Donkey Kong - Tennis",
-		"03c90502": "Ione",
-		"04ab1d02": "Luke",
-		"04bc1d02": "Cammy"
+		"01700502": "Isabelle - Dress",
+		"01ae0502": "Celia",
+		"01c80502": "Bruce",
+		"02720e02": "Luigi - Horse Racing",
+		"02f40502": "Ketchup",
+		"038c0002": "Richter"
 	}
 }

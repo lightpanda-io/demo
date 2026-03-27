@@ -4,21 +4,21 @@
 		"character": "Jitters",
 		"name": "Jitters",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02310001-006a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02310001-006a0502.png",
 		"tail": "006a0502"
 	},
 	"next": "035a0902.html",
 	"prev": "03b70502.html",
 	"list": {
-		"004f0502": "Redd",
-		"00850502": "Gruff",
-		"008d0502": "Cobb",
-		"00c50502": "Prince",
-		"01a60502": "Mira",
-		"02590002": "Cloud",
-		"02b90e02": "Metal Mario - Soccer",
-		"031c0502": "Chai",
-		"03a60102": "Mario - Cat",
-		"04b61d02": "Dee Jay"
+		"00050002": "Fox",
+		"00410302": "Green Yarn Yoshi",
+		"00590502": "Leonardo",
+		"00630502": "Bluebear",
+		"00750502": "Punchy",
+		"02700e02": "Luigi - Tennis",
+		"04220002": "Steve",
+		"04a40902": "Sidon",
+		"04ad1d02": "Jamie",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

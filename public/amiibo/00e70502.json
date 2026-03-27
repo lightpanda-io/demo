@@ -4,21 +4,21 @@
 		"character": "Bianca",
 		"name": "Bianca",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05000001-00e70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05000001-00e70502.png",
 		"tail": "00e70502"
 	},
 	"next": "00340102.html",
 	"prev": "02450502.html",
 	"list": {
-		"007d0502": "Monique",
-		"009c0502": "Diana",
-		"00f80502": "Drake",
-		"01720502": "Katrina",
-		"01820502": "Pinky",
-		"02f10502": "Boris",
-		"03100502": "Gonzo",
-		"03701202": "Tiki",
-		"03a0ff02": "Toad - Power Up Band",
+		"00210002": "Mii Brawler",
+		"00230002": "Mii Gunner",
+		"00440502": "Isabelle",
+		"01660502": "Sparro",
+		"01ce0502": "Cally",
+		"026b0e02": "Mario - Tennis",
+		"02a00e02": "Boo - Soccer",
+		"02ea0502": "Piper",
+		"02f40502": "Ketchup",
 		"04b71d02": "Manon"
 	}
 }

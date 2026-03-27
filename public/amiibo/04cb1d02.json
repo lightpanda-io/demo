@@ -4,21 +4,21 @@
 		"character": "Ryu",
 		"name": "Ryu",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c00001-04cb1d02.png",
 		"tail": "04cb1d02"
 	},
 	"next": "04d51d02.html",
 	"prev": "04dc1d02.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"012c0502": "Colton",
-		"02670102": "Waluigi",
-		"02690e02": "Mario - Soccer",
-		"02830e02": "Wario - Baseball",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"03710102": "Mario - Wedding",
-		"037a0002": "Daisy",
-		"04180902": "Link - Tears of the Kingdom",
-		"04251902": "Tatsuhisa “Luke” Kamijō"
+		"00010002": "Peach",
+		"00400402": "Inkling Squid",
+		"00780502": "Limberg",
+		"00860502": "Flurry",
+		"00b70502": "Chip",
+		"01060502": "Hamphrey",
+		"01ce0502": "Cally",
+		"023e0302": "Mega Yarn Yoshi",
+		"02510002": "Lucas",
+		"03651302": "Samus Aran"
 	}
 }

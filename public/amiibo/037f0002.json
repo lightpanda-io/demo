@@ -4,21 +4,21 @@
 		"character": "Ridley",
 		"name": "Ridley",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c20000-037f0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c20000-037f0002.png",
 		"tail": "037f0002"
 	},
 	"next": "028f0e02.html",
 	"prev": "00980502.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00bd0502": "Lucha",
-		"01b40502": "Sylvia",
-		"01be0502": "Nibbles",
-		"02510002": "Lucas",
-		"02bb0e02": "Metal Mario - Tennis",
-		"03b30502": "C.J.",
-		"04a91d02": "Ken",
-		"04b91d02": "JP",
-		"04e11d02": "M. Bison"
+		"00650502": "Kiki",
+		"00e50502": "Mathilda",
+		"010f0502": "Pelly",
+		"03500902": "Toon Link - The Wind Waker",
+		"03540902": "Link - Rider",
+		"035e1002": "Qbby",
+		"03931702": "Pawapuro",
+		"03a20002": "Hero",
+		"03a60102": "Mario - Cat",
+		"03ac0502": "Wilbur"
 	}
 }

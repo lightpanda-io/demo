@@ -4,21 +4,21 @@
 		"character": "Samus",
 		"name": "Samus \u0026 Vi-O-La",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-043a1302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c00000-043a1302.png",
 		"tail": "043a1302"
 	},
 	"next": "043c1302.html",
 	"prev": "043b1302.html",
 	"list": {
-		"000e0002": "Zelda",
-		"008f0502": "Jeremiah",
-		"01280502": "Cousteau",
-		"01440502": "Klaus",
-		"017e0502": "Redd - Shirt",
-		"028b0e02": "Waluigi - Horse Racing",
-		"02f60502": "Stu",
-		"03941702": "Ikari",
-		"03bb0502": "Lottie - Island",
-		"04ab1d02": "Luke"
+		"00680502": "Kabuki",
+		"00740502": "Bonbon",
+		"00e10502": "Timbra",
+		"01880502": "Peaches",
+		"01930502": "Pierce",
+		"01c40502": "Lucky",
+		"02700e02": "Luigi - Tennis",
+		"02e90502": "June",
+		"03bc0502": "Niko",
+		"043a1302": "Samus \u0026 Vi-O-La"
 	}
 }

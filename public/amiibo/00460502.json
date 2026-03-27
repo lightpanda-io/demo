@@ -4,21 +4,21 @@
 		"character": "K.K. Slider",
 		"name": "DJ KK",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820101-00460502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01820101-00460502.png",
 		"tail": "00460502"
 	},
 	"next": "03b70502.html",
 	"prev": "03730102.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00150002": "Bowser Jr.",
-		"002f0002": "Duck Hunt",
-		"00a50502": "Roald",
-		"00b50502": "Blanca",
-		"01540502": "Moe",
-		"019b0502": "Rudy",
-		"01b20502": "Annalise",
-		"02550c02": "Meta Knight",
-		"04bb1d02": "Lily"
+		"00520502": "Tortimer",
+		"00e80502": "Filbert",
+		"02760e02": "Peach - Golf",
+		"02f60502": "Stu",
+		"03981702": "Daijobu",
+		"03b90502": "Gulliver",
+		"03cd0502": "Petri",
+		"03d00502": "Chabwick",
+		"04bb1d02": "Lily",
+		"04e71d02": "Ingrid"
 	}
 }

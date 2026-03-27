@@ -4,21 +4,21 @@
 		"character": "Yabe",
 		"name": "Yabe",
 		"gameSeries": "Power Pros",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38020001-03951702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38020001-03951702.png",
 		"tail": "03951702"
 	},
 	"next": "002c0002.html",
 	"prev": "01800502.html",
 	"list": {
-		"00180002": "Ike",
-		"00200002": "Dark Pit",
-		"007a0502": "Snake",
-		"00b10502": "Leila",
-		"00ee0502": "Benedict",
-		"016f0502": "Chrissy",
-		"02b60e02": "Rosalina - Tennis",
-		"037c0002": "Young Link",
-		"03b00502": "Sable",
-		"04eb1d02": "M. Bison"
+		"001a0002": "Wario",
+		"00410302": "Green Yarn Yoshi",
+		"00660502": "Deli",
+		"014f0502": "Buck",
+		"027d0e02": "Yoshi - Soccer",
+		"02ad0e02": "Baby Luigi - Golf",
+		"03010502": "Claude",
+		"03b10502": "Label",
+		"04be1d02": "A.K.I",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)"
 	}
 }

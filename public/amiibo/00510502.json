@@ -4,21 +4,21 @@
 		"character": "Luna",
 		"name": "Luna",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b50001-00510502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01b50001-00510502.png",
 		"tail": "00510502"
 	},
 	"next": "01b70502.html",
 	"prev": "02400502.html",
 	"list": {
-		"00080002": "Villager",
-		"000c0002": "Luigi",
 		"002a0002": "Robin",
-		"00500502": "Saharah",
-		"02400502": "K. K. Slider",
-		"036d0a02": "Specter Knight",
-		"03830002": "Ivysaur",
-		"03a70102": "Peach - Cat",
-		"03d20502": "Ace",
-		"04f01d02": "Ingrid"
+		"004e0502": "Harriet",
+		"010c0502": "Rover",
+		"01350502": "Chevre",
+		"023a0702": "Hammer Slam Bowser",
+		"025e0402": "Marie",
+		"02860e02": "Wario - Horse Racing",
+		"040d0f02": "Ena",
+		"04ba1d02": "Zangief",
+		"04e11d02": "M. Bison"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling - Yellow",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-04150402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000100-04150402.png",
 		"tail": "04150402"
 	},
 	"next": "04330402.html",
 	"prev": "01120502.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"006e0502": "Puck",
-		"00910502": "Roscoe",
-		"00f70502": "Pecan",
-		"01300502": "Bam",
-		"01570502": "Astrid",
-		"031c0502": "Chai",
-		"034d0902": "Link - Twilight Princess",
-		"03800002": "Dark Samus",
-		"03a0ff02": "Toad - Power Up Band"
+		"002e0002": "R.O.B. - Famicom",
+		"008c0502": "Flo",
+		"00ae0502": "Katie",
+		"01220502": "Del",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01850502": "Rocco",
+		"018b0502": "Boone",
+		"02430502": "Digby",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02790e02": "Daisy - Baseball"
 	}
 }

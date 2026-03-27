@@ -4,21 +4,21 @@
 		"character": "Pawapuro",
 		"name": "Pawapuro",
 		"gameSeries": "Power Pros",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38000001-03931702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38000001-03931702.png",
 		"tail": "03931702"
 	},
 	"next": "03a30002.html",
 	"prev": "00b80502.html",
 	"list": {
-		"00300002": "Sonic",
-		"00fc0502": "Chops",
-		"01630502": "Curly",
-		"01900502": "Lolly",
-		"01b10502": "Ribbot",
-		"02760e02": "Peach - Golf",
-		"02fd0502": "Maggie",
-		"03550902": "Guardian",
-		"04aa1d02": "Luke",
-		"04b61d02": "Dee Jay"
+		"00440502": "Isabelle",
+		"004e0502": "Harriet",
+		"008d0502": "Cobb",
+		"00cc0502": "Cookie",
+		"014a0502": "Gaston",
+		"017b0502": "Shrunk - Loud Jacket",
+		"027c0e02": "Daisy - Horse Racing",
+		"02960e02": "Bowser - Soccer",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04a60902": "Yunobo"
 	}
 }

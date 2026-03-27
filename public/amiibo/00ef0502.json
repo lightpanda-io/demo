@@ -4,21 +4,21 @@
 		"character": "Agnes",
 		"name": "Agnes",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04890001-00ef0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04890001-00ef0502.png",
 		"tail": "00ef0502"
 	},
 	"next": "01780502.html",
 	"prev": "005d0502.html",
 	"list": {
-		"00de0502": "Butch",
+		"004b0502": "Timmy",
 		"00f90502": "Alice",
-		"00fb0502": "Anicotti",
-		"01930502": "Pierce",
-		"027d0e02": "Yoshi - Soccer",
-		"03550902": "Guardian",
-		"036d0a02": "Specter Knight",
-		"03cb0502": "Shino",
-		"041e0002": "Pyra",
-		"0430ff02": "Golden - Power Up Band"
+		"013f0502": "Merry",
+		"01640502": "Boomer",
+		"01710502": "Brewster",
+		"01a60502": "Mira",
+		"01c10502": "Lobo",
+		"02830e02": "Wario - Baseball",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"04210002": "Sephiroth"
 	}
 }

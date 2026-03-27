@@ -4,21 +4,21 @@
 		"character": "Daisy",
 		"name": "Daisy - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30401-027b0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c30401-027b0e02.png",
 		"tail": "027b0e02"
 	},
 	"next": "02c00e02.html",
 	"prev": "001b0002.html",
 	"list": {
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02fd0502": "Maggie",
-		"03030502": "Julia",
-		"03500902": "Toon Link - The Wind Waker",
-		"036d0a02": "Specter Knight",
-		"03981702": "Daijobu",
-		"03b90502": "Gulliver",
-		"041d0002": "Min Min",
-		"042c1802": "Palamute",
-		"04ec1d02": "Elena"
+		"001c0002": "Falco",
+		"00220002": "Mii Swordfighter",
+		"00da0502": "Groucho",
+		"00e00502": "Moose",
+		"00f50502": "Hugh",
+		"024e0502": "Kapp'n",
+		"02710e02": "Luigi - Golf",
+		"038b0002": "Simon",
+		"03a60102": "Mario - Cat",
+		"03c00502": "Sherb"
 	}
 }

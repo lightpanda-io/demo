@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Ratha V",
+		"name": "Ratha V",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350d0000-04fb0f02.png",
+		"tail": "04fb0f02"
+	},
+	"next": "04fc0f02.html",
+	"prev": "04fa0f02.html",
+	"list": {
+		"01060502": "Hamphrey",
+		"01240502": "Ken",
+		"01860502": "Katt",
+		"018a0502": "Penelope",
+		"01a00502": "Lucy",
+		"02730e02": "Peach - Soccer",
+		"035d0302": "Poochy",
+		"03c30502": "Audie",
+		"043e1b02": "Mio",
+		"04e11d02": "M. Bison"
+	}
+}

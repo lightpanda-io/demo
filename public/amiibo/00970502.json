@@ -4,21 +4,21 @@
 		"character": "Benjamin",
 		"name": "Benjamin",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02fa0001-00970502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02fa0001-00970502.png",
 		"tail": "00970502"
 	},
 	"next": "04121302.html",
 	"prev": "00140002.html",
 	"list": {
-		"00ad0502": "Booker",
-		"015a0502": "Biskit",
-		"02570c02": "Waddle Dee",
-		"02610402": "Inkling Squid - Orange",
-		"028a0e02": "Waluigi - Golf",
-		"02f20502": "Wade",
-		"035f1102": "Pikmin",
-		"03900402": "Octoling Octopus",
-		"03d10502": "Zoe",
-		"04a81d02": "Ryu"
+		"001d0002": "Zero Suit Samus",
+		"00210002": "Mii Brawler",
+		"00640502": "Bill",
+		"00f50502": "Hugh",
+		"017c0502": "Pave",
+		"01a50502": "Walt",
+		"01aa0502": "Apple",
+		"02b90e02": "Metal Mario - Soccer",
+		"034e0902": "Link - Skyward Sword",
+		"04bb1d02": "Lily"
 	}
 }

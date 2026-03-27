@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Donkey Kong - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00080003-0431ff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00080003-0431ff02.png",
 		"tail": "0431ff02"
 	},
 	"next": "00900502.html",
 	"prev": "042f1a02.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"00aa0502": "Kicks",
-		"00d30502": "Cesar",
-		"00d90502": "Coco",
-		"010b0502": "Rocket",
-		"025c0d02": "Shadow Mewtwo",
-		"039dff02": "Peach - Power Up Band",
-		"041b0402": "Octoling - Blue",
-		"04261902": "Gakuto Sōgetsu",
-		"04d21d02": "Juri"
+		"00180002": "Ike",
+		"00310002": "Mega Man",
+		"015b0502": "Victoria",
+		"015d0502": "Violet",
+		"01b70502": "Doc",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02ba0e02": "Metal Mario - Baseball",
+		"039fff02": "Yoshi - Power Up Band",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04d81d02": "Marisa"
 	}
 }

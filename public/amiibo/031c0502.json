@@ -4,21 +4,21 @@
 		"character": "Chai",
 		"name": "Chai",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032e0101-031c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_032e0101-031c0502.png",
 		"tail": "031c0502"
 	},
 	"next": "03c20502.html",
 	"prev": "03ab0502.html",
 	"list": {
-		"00ad0502": "Booker",
-		"023a0702": "Hammer Slam Bowser",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"024d0502": "Timmy \u0026 Tommy",
-		"036e0a02": "King Knight",
-		"03820002": "Inkling",
-		"03900402": "Octoling Octopus",
-		"039cff02": "Luigi - Power Up Band",
-		"04210002": "Sephiroth",
-		"04dc1d02": "Cammy"
+		"00370102": "Yoshi",
+		"00590502": "Leonardo",
+		"00a70502": "Walker",
+		"010e0502": "Tom Nook - Jacket",
+		"011a0502": "Isabelle - Kimono",
+		"03090502": "Weber",
+		"03690402": "Inkling Girl - Neon Pink",
+		"037e0002": "Wolf",
+		"04b11d02": "Guile",
+		"04bc1d02": "Cammy"
 	}
 }

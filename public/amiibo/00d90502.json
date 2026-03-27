@@ -4,21 +4,21 @@
 		"character": "Coco",
 		"name": "Coco",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04960001-00d90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04960001-00d90502.png",
 		"tail": "00d90502"
 	},
 	"next": "03110502.html",
 	"prev": "031e0502.html",
 	"list": {
-		"00800502": "Tutu",
-		"013f0502": "Merry",
-		"01690502": "Maple",
-		"01d00502": "Iggly",
-		"024e0502": "Kapp'n",
-		"02840e02": "Wario - Tennis",
-		"02960e02": "Bowser - Soccer",
-		"029a0e02": "Bowser - Horse Racing",
-		"02f20502": "Wade",
-		"035a0902": "Mipha"
+		"00380102": "Toad",
+		"00910502": "Roscoe",
+		"00d80502": "Broccolo",
+		"00ef0502": "Agnes",
+		"027b0e02": "Daisy - Golf",
+		"030f0502": "Norma",
+		"03560902": "Zelda",
+		"04220002": "Steve",
+		"04da1d02": "Zangief",
+		"04ee1d02": "C. Viper"
 	}
 }

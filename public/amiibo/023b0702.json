@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Turbo Charge Donkey Kong",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0008ff00-023b0702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0008ff00-023b0702.png",
 		"tail": "023b0702"
 	},
 	"next": "00730502.html",
 	"prev": "00bb0502.html",
 	"list": {
-		"00630502": "Bluebear",
-		"00a70502": "Walker",
-		"019c0502": "Naomi",
-		"02770e02": "Peach - Horse Racing",
-		"02960e02": "Bowser - Soccer",
-		"02ec0502": "Hornsby",
-		"03690402": "Inkling Girl - Neon Pink",
-		"03d60502": "Roswell",
-		"043a1302": "Samus \u0026 Vi-O-La",
-		"04e51d02": "C. Viper"
+		"001e0002": "Olimar",
+		"003f0402": "Inkling Boy",
+		"00870502": "Clyde",
+		"00ee0502": "Benedict",
+		"01d50502": "Goldie - Amiibo Festival",
+		"02e50f02": "Barioth and Ayuria",
+		"02ed0502": "Stella",
+		"03611202": "Celica",
+		"03b50502": "Daisy Mae",
+		"04be1d02": "A.K.I"
 	}
 }

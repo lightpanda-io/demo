@@ -4,21 +4,21 @@
 		"character": "Tabby",
 		"name": "Tabby",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02690001-011f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02690001-011f0502.png",
 		"tail": "011f0502"
 	},
 	"next": "01200502.html",
 	"prev": "03911602.html",
 	"list": {
-		"00b80502": "Jack",
-		"014b0502": "Marshal",
-		"01550502": "Flora",
-		"01bb0502": "Rizzo",
-		"027f0e02": "Yoshi - Tennis",
-		"02870e02": "Waluigi - Soccer",
-		"02a50e02": "Baby Mario - Soccer",
-		"038c0002": "Richter",
-		"03951702": "Yabe",
-		"04d01d02": "Chun-Li"
+		"00100002": "Pit",
+		"00af0502": "Tommy - Uniform",
+		"00c50502": "Prince",
+		"00ca0502": "Phoebe",
+		"01770502": "Leilani",
+		"01ac0502": "Purrl",
+		"01c50502": "Rosie",
+		"02940e02": "Diddy Kong - Golf",
+		"03ab0502": "Orville",
+		"04e41d02": "Sagat"
 	}
 }

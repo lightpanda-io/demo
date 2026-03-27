@@ -4,21 +4,21 @@
 		"character": "Saharah",
 		"name": "Saharah",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-00500502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a60001-00500502.png",
 		"tail": "00500502"
 	},
 	"next": "01a50502.html",
 	"prev": "007f0502.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"005f0502": "Jambette",
-		"024b0502": "Isabelle - Summer Outfit",
-		"028a0e02": "Waluigi - Golf",
-		"03130502": "Olive",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03ad0502": "Blathers",
-		"03c80502": "Sasha",
-		"03d70502": "Faith"
+		"00140002": "Bowser",
+		"00550502": "Bob",
+		"00af0502": "Tommy - Uniform",
+		"00c90502": "Kidd",
+		"01770502": "Leilani",
+		"01b10502": "Ribbot",
+		"01bf0502": "Kevin",
+		"023d0002": "Mewtwo",
+		"02630102": "Wario",
+		"03620002": "Cloud - Player 2"
 	}
 }

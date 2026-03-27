@@ -4,21 +4,21 @@
 		"character": "Guile",
 		"name": "Guile",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04b11d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c60001-04b11d02.png",
 		"tail": "04b11d02"
 	},
 	"next": "04a91d02.html",
 	"prev": "04b31d02.html",
 	"list": {
-		"007a0502": "Snake",
-		"00ff0502": "Ankha",
-		"02ef0502": "Huck",
-		"02f50502": "Rex",
-		"03b60502": "Kicks",
-		"03b70502": "Saharah",
-		"03cb0502": "Shino",
-		"04a91d02": "Ken",
-		"04c91e03": "Bandana Waddle Dee",
-		"04d01d02": "Chun-Li"
+		"005d0502": "Renée",
+		"00b20502": "Shrunk",
+		"00b30502": "Don Resetti",
+		"00d70502": "Whitney",
+		"00e50502": "Mathilda",
+		"00fa0502": "Camofrog",
+		"011b0502": "Franklin",
+		"01410502": "Greta",
+		"01750502": "Tommy - Suit",
+		"04e51d02": "C. Viper"
 	}
 }

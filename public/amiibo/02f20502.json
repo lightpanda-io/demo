@@ -4,21 +4,21 @@
 		"character": "Wade",
 		"name": "Wade",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04680001-02f20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04680001-02f20502.png",
 		"tail": "02f20502"
 	},
 	"next": "01d60502.html",
 	"prev": "02fe0502.html",
 	"list": {
-		"00480502": "Kapp'n",
-		"00970502": "Benjamin",
-		"01250502": "Mitzi",
-		"01b80502": "Pompom",
-		"01c30502": "Margie",
-		"029f0e02": "Bowser Jr. - Horse Racing",
-		"04261902": "Gakuto Sōgetsu",
-		"04ac1d02": "Jamie",
-		"04de1d02": "A.K.I",
-		"04f11d02": "Terry"
+		"00240002": "Charizard",
+		"007f0502": "Samson",
+		"00860502": "Flurry",
+		"00b90502": "Poncho",
+		"00e90502": "Kitty",
+		"01cf0502": "Simon",
+		"027b0e02": "Daisy - Golf",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02e90502": "June",
+		"030a0502": "Candi"
 	}
 }

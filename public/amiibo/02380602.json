@@ -4,20 +4,21 @@
 		"character": "Mario",
 		"name": "8-Bit Mario Classic Color",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02380602.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-02380602.png",
 		"tail": "02380602"
 	},
 	"next": "00d20502.html",
 	"prev": "03900402.html",
 	"list": {
-		"006c0502": "Quillson",
-		"00800502": "Tutu",
-		"00830502": "Pudge",
-		"00970502": "Benjamin",
-		"00d50502": "Rodney",
-		"01520502": "Curlos",
-		"028b0e02": "Waluigi - Horse Racing",
-		"035f1102": "Pikmin",
-		"04d01d02": "Chun-Li"
+		"001a0002": "Wario",
+		"009a0502": "Bunnie",
+		"00c20502": "Kitt",
+		"00d90502": "Coco",
+		"017c0502": "Pave",
+		"018a0502": "Penelope",
+		"01d10502": "Angus",
+		"02590002": "Cloud",
+		"02ff0502": "Plucky",
+		"04190902": "Zelda - Tears of the Kingdom"
 	}
 }

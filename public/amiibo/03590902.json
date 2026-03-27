@@ -4,20 +4,21 @@
 		"character": "Urbosa",
 		"name": "Urbosa",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01060000-03590902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01060000-03590902.png",
 		"tail": "03590902"
 	},
 	"next": "01c50502.html",
 	"prev": "006e0502.html",
 	"list": {
-		"00380102": "Toad",
-		"00660502": "Deli",
-		"00a30502": "Cole",
-		"00b20502": "Shrunk",
-		"00da0502": "Groucho",
-		"02380602": "8-Bit Mario Classic Color",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"036d0a02": "Specter Knight",
-		"04c41e03": "Kirby"
+		"000e0002": "Zelda",
+		"00f20502": "Jay",
+		"010f0502": "Pelly",
+		"019b0502": "Rudy",
+		"03070502": "Ellie",
+		"03090502": "Weber",
+		"03661302": "Metroid",
+		"037f0002": "Ridley",
+		"04131302": "E.M.M.I.",
+		"04df1d02": "Ed"
 	}
 }

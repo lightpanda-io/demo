@@ -4,21 +4,21 @@
 		"character": "Jingle",
 		"name": "Jingle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01af0001-011c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01af0001-011c0502.png",
 		"tail": "011c0502"
 	},
 	"next": "01900502.html",
 	"prev": "02c20e02.html",
 	"list": {
-		"007c0502": "Phil",
-		"013c0502": "Beardo",
-		"015e0502": "Frank",
-		"01730502": "Phineas",
-		"01960502": "Frita",
-		"01b60502": "Sally",
-		"01d00502": "Iggly",
-		"03100502": "Gonzo",
-		"03ab0502": "Orville",
-		"04360402": "Callie - Alterna"
+		"00590502": "Leonardo",
+		"01d20502": "Twiggy",
+		"02540c02": "Kirby",
+		"02550c02": "Meta Knight",
+		"02920e02": "Diddy Kong - Baseball",
+		"02b70e02": "Rosalina - Golf",
+		"02e70502": "Vivian",
+		"03840002": "Squirtle",
+		"042a1902": "Asana Mutsuba",
+		"index": "Sandy"
 	}
 }

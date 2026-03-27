@@ -4,21 +4,21 @@
 		"character": "Julian",
 		"name": "Julian",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b10001-00f00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03b10001-00f00502.png",
 		"tail": "00f00502"
 	},
 	"next": "01540502.html",
 	"prev": "000f0002.html",
 	"list": {
-		"00360102": "Peach",
-		"005d0502": "Renée",
-		"00980502": "Pancetti",
-		"009b0502": "Clay",
-		"00f00502": "Julian",
-		"00f70502": "Pecan",
-		"02980e02": "Bowser - Tennis",
-		"03020502": "Raddle",
-		"03090502": "Weber",
-		"036e0a02": "King Knight"
+		"00da0502": "Groucho",
+		"01400502": "Genji",
+		"01a90502": "Papi",
+		"01ae0502": "Celia",
+		"01c30502": "Margie",
+		"02850e02": "Wario - Golf",
+		"03701202": "Tiki",
+		"03a50002": "Byleth",
+		"03ce0502": "Cephalobot",
+		"04111802": "Palamute"
 	}
 }

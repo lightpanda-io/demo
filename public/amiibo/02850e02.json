@@ -4,21 +4,21 @@
 		"character": "Wario",
 		"name": "Wario - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50401-02850e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c50401-02850e02.png",
 		"tail": "02850e02"
 	},
 	"next": "00d30502.html",
 	"prev": "02b20e02.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"00bc0502": "Tia",
-		"00d80502": "Broccolo",
-		"00f60502": "Hopper",
-		"01070502": "Freya",
-		"01200502": "Kody",
-		"01790502": "Timmy - Suit",
-		"02630102": "Wario",
-		"028e0e02": "Donkey Kong - Tennis",
-		"03560902": "Zelda"
+		"001d0002": "Zero Suit Samus",
+		"009d0502": "Axel",
+		"00b00502": "Porter",
+		"00f70502": "Pecan",
+		"01970502": "Tex",
+		"01d10502": "Angus",
+		"02440502": "Lottie",
+		"024b0502": "Isabelle - Summer Outfit",
+		"025a0002": "Corrin",
+		"031e0502": "Toby"
 	}
 }

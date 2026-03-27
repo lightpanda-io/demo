@@ -4,21 +4,21 @@
 		"character": "OHare",
 		"name": "OHare",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a30001-01c90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a30001-01c90502.png",
 		"tail": "01c90502"
 	},
 	"next": "00200002.html",
 	"prev": "025a0002.html",
 	"list": {
-		"001a0002": "Wario",
-		"01920502": "Dotty",
-		"026e0e02": "Luigi - Soccer",
-		"02720e02": "Luigi - Horse Racing",
-		"027f0e02": "Yoshi - Tennis",
-		"02ee0502": "Tybalt",
-		"03a50002": "Byleth",
-		"03ca0502": "Tiansheng",
-		"03d40502": "Frett",
-		"04330402": "Shiver"
+		"004e0502": "Harriet",
+		"00eb0502": "Nan",
+		"00f70502": "Pecan",
+		"00fa0502": "Camofrog",
+		"014d0502": "Joey",
+		"025b0002": "Bayonetta",
+		"02a80e02": "Baby Mario - Golf",
+		"036d0a02": "Specter Knight",
+		"03b10502": "Label",
+		"03c90502": "Ione"
 	}
 }

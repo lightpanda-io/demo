@@ -4,21 +4,21 @@
 		"character": "Walt",
 		"name": "Walt",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d90001-01a50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d90001-01a50502.png",
 		"tail": "01a50502"
 	},
 	"next": "03030502.html",
 	"prev": "00500502.html",
 	"list": {
-		"00c00502": "Gwen",
-		"00ec0502": "Bud",
-		"01360502": "Drago",
-		"01740502": "Celeste",
-		"02f30502": "Carrie",
-		"030c0502": "Spike",
-		"03140502": "Dobie",
-		"03bb0502": "Lottie - Island",
-		"041d0002": "Min Min",
-		"04f01d02": "Ingrid"
+		"00140002": "Bowser",
+		"00820502": "Mint",
+		"00d40502": "Carmen",
+		"00f00502": "Julian",
+		"01c00502": "Gloria",
+		"01d20502": "Twiggy",
+		"02970e02": "Bowser - Baseball",
+		"04200002": "Kazuya",
+		"04281902": "Roa Kirishima",
+		"04ab1d02": "Luke"
 	}
 }

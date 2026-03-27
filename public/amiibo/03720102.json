@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Wedding",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020000-03720102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020000-03720102.png",
 		"tail": "03720102"
 	},
 	"next": "03ce0502.html",
 	"prev": "00230002.html",
 	"list": {
-		"01180502": "Digby - Raincoat",
-		"011e0502": "Anchovy",
-		"013d0502": "Ava",
-		"01460502": "Stinky",
-		"01850502": "Rocco",
-		"02550c02": "Meta Knight",
-		"02680102": "Boo",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"02ee0502": "Tybalt",
-		"04a91d02": "Ken"
+		"00510502": "Luna",
+		"00770502": "Poppy",
+		"00ad0502": "Booker",
+		"00d60502": "Scoot",
+		"011c0502": "Jingle",
+		"014e0502": "Pippy",
+		"015f0502": "Chadder",
+		"02670102": "Waluigi",
+		"03661302": "Metroid",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
 	}
 }

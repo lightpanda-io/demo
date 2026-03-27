@@ -4,21 +4,21 @@
 		"character": "Celia",
 		"name": "Celia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04540001-01ae0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04540001-01ae0502.png",
 		"tail": "01ae0502"
 	},
 	"next": "01c20502.html",
 	"prev": "01b70502.html",
 	"list": {
-		"01ca0502": "Gayle",
-		"02890e02": "Waluigi - Tennis",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"03590902": "Urbosa",
-		"03750d02": "Detective Pikachu",
-		"03791502": "Mega Man",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"03a70102": "Peach - Cat",
-		"03aa0502": "Isabelle",
-		"04a81d02": "Ryu"
+		"00190002": "Dr. Mario",
+		"002e0002": "R.O.B. - Famicom",
+		"00680502": "Kabuki",
+		"00990502": "Chief",
+		"01020502": "Marcel",
+		"01230502": "Paula",
+		"01660502": "Sparro",
+		"01790502": "Timmy - Suit",
+		"027c0e02": "Daisy - Horse Racing",
+		"03941702": "Ikari"
 	}
 }

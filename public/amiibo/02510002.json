@@ -4,21 +4,21 @@
 		"character": "Lucas",
 		"name": "Lucas",
 		"gameSeries": "Earthbound",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22810000-02510002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22810000-02510002.png",
 		"tail": "02510002"
 	},
 	"next": "007c0502.html",
 	"prev": "00c80502.html",
 	"list": {
-		"01700502": "Isabelle - Dress",
-		"01750502": "Tommy - Suit",
-		"01a00502": "Lucy",
-		"01c40502": "Lucky",
-		"01cc0502": "Frobert",
-		"02590002": "Cloud",
-		"02970e02": "Bowser - Baseball",
-		"02f10502": "Boris",
-		"037f0002": "Ridley",
-		"04121302": "Samus - Metroid Dread"
+		"00140002": "Bowser",
+		"00440502": "Isabelle",
+		"00480502": "Kapp'n",
+		"004a0502": "Joan",
+		"00f50502": "Hugh",
+		"01330502": "Deirdre",
+		"01660502": "Sparro",
+		"038b0002": "Simon",
+		"04200002": "Kazuya",
+		"04b01d02": "Chun-Li"
 	}
 }

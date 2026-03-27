@@ -4,21 +4,21 @@
 		"character": "Phil",
 		"name": "Phil",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043d0001-007c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_043d0001-007c0502.png",
 		"tail": "007c0502"
 	},
 	"next": "01110502.html",
 	"prev": "02510002.html",
 	"list": {
-		"00270002": "Meta Knight",
-		"00840502": "Midge",
-		"00bd0502": "Lucha",
-		"00cb0502": "Egbert",
-		"03080502": "Boots",
+		"00900502": "Cherry",
+		"01890502": "Dizzy",
+		"019a0502": "Anabelle",
+		"01a80502": "Aurora",
+		"02460502": "Cyrus",
+		"029d0e02": "Bowser Jr. - Tennis",
 		"035b0902": "Revali",
-		"038e0402": "Octoling Girl",
-		"03961702": "Hayakawa",
-		"03cf0502": "Quinn",
-		"04d61d02": "Dee Jay"
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03b20502": "K.K. Slider",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

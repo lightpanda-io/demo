@@ -4,21 +4,21 @@
 		"character": "Pashmina",
 		"name": "Pashmina",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035e0001-018e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_035e0001-018e0502.png",
 		"tail": "018e0502"
 	},
 	"next": "02eb0502.html",
 	"prev": "02680102.html",
 	"list": {
-		"00290002": "Lucina",
-		"007c0502": "Phil",
-		"00b30502": "Don Resetti",
-		"01530502": "Skye",
-		"01540502": "Moe",
-		"01b60502": "Sally",
-		"02a30e02": "Boo - Golf",
-		"03a50002": "Byleth",
-		"04271902": "Romin Kirishima",
-		"04a40902": "Sidon"
+		"00090002": "Pikachu",
+		"01140502": "Wendell",
+		"01590502": "Dora",
+		"031b0502": "Étoile",
+		"03601202": "Alm",
+		"03620002": "Cloud - Player 2",
+		"03b80502": "Harvey",
+		"03c10502": "Megan",
+		"04af1d02": "Kimberly",
+		"04d71d02": "Manon"
 	}
 }

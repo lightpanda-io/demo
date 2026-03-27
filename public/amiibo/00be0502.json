@@ -4,21 +4,21 @@
 		"character": "Fuchsia",
 		"name": "Fuchsia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02dc0001-00be0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02dc0001-00be0502.png",
 		"tail": "00be0502"
 	},
 	"next": "00260002.html",
 	"prev": "03ba0502.html",
 	"list": {
-		"00470502": "Sable",
-		"00590502": "Leonardo",
-		"00780502": "Limberg",
-		"00870502": "Clyde",
-		"00f40502": "Flip",
-		"012f0502": "Freckles",
-		"027e0e02": "Yoshi - Baseball",
-		"027f0e02": "Yoshi - Tennis",
-		"03601202": "Alm",
-		"03d20502": "Ace"
+		"000c0002": "Luigi",
+		"00730502": "Sterling",
+		"007c0502": "Phil",
+		"012b0502": "Canberra",
+		"017d0502": "Gulliver",
+		"01960502": "Frita",
+		"01d50502": "Goldie - Amiibo Festival",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03741402": "Super Mario Cereal",
+		"04a60902": "Yunobo"
 	}
 }

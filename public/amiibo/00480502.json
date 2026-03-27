@@ -4,21 +4,21 @@
 		"character": "Kapp'n",
 		"name": "Kapp'n",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960001-00480502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01960001-00480502.png",
 		"tail": "00480502"
 	},
 	"next": "039cff02.html",
 	"prev": "03a20002.html",
 	"list": {
-		"00080002": "Villager",
-		"00270002": "Meta Knight",
-		"011b0502": "Franklin",
-		"01730502": "Phineas",
-		"02a70e02": "Baby Mario - Tennis",
-		"02f80502": "Jacob",
-		"02f90502": "Maddie",
-		"03030502": "Julia",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04e71d02": "Ingrid"
+		"003f0402": "Inkling Boy",
+		"00740502": "Bonbon",
+		"011f0502": "Tabby",
+		"01b00502": "Peggy",
+		"01cc0502": "Frobert",
+		"02a60e02": "Baby Mario - Baseball",
+		"02fd0502": "Maggie",
+		"03b80502": "Harvey",
+		"04a81d02": "Ryu",
+		"04bc1d02": "Cammy"
 	}
 }

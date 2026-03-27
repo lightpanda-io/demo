@@ -4,20 +4,21 @@
 		"character": "Revali",
 		"name": "Revali",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01080000-035b0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01080000-035b0902.png",
 		"tail": "035b0902"
 	},
 	"next": "00e10502.html",
 	"prev": "02470502.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"00790502": "Deena",
-		"00f40502": "Flip",
-		"01060502": "Hamphrey",
-		"010f0502": "Pelly",
-		"01710502": "Brewster",
-		"02960e02": "Bowser - Soccer",
-		"02a50e02": "Baby Mario - Soccer",
-		"02e30f02": "Nabiru"
+		"00240002": "Charizard",
+		"00950502": "Goose",
+		"00d40502": "Carmen",
+		"00e50502": "Mathilda",
+		"01370502": "Tangy",
+		"01440502": "Klaus",
+		"01a20502": "Puddles",
+		"02430502": "Digby",
+		"02e50f02": "Barioth and Ayuria",
+		"037c0002": "Young Link"
 	}
 }

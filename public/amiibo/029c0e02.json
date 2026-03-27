@@ -4,21 +4,21 @@
 		"character": "Bowser Jr.",
 		"name": "Bowser Jr. - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ca0201-029c0e02.png",
 		"tail": "029c0e02"
 	},
 	"next": "011a0502.html",
 	"prev": "02860e02.html",
 	"list": {
-		"00640502": "Bill",
-		"00750502": "Punchy",
-		"008f0502": "Jeremiah",
-		"00c80502": "Savannah",
-		"01060502": "Hamphrey",
-		"011a0502": "Isabelle - Kimono",
-		"01390502": "Eloise",
-		"01500502": "Bree",
-		"01980502": "Melba",
-		"026b0e02": "Mario - Tennis"
+		"00990502": "Chief",
+		"00b30502": "Don Resetti",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02690e02": "Mario - Soccer",
+		"030d0502": "Cashmere",
+		"03730102": "Bowser - Wedding",
+		"03d20502": "Ace",
+		"042e0002": "Sora",
+		"04d51d02": "E. Honda",
+		"04eb1d02": "M. Bison"
 	}
 }

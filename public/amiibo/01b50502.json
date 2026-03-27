@@ -4,21 +4,21 @@
 		"character": "Jacques",
 		"name": "Jacques",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023d0001-01b50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_023d0001-01b50502.png",
 		"tail": "01b50502"
 	},
 	"next": "01010502.html",
 	"prev": "008b0502.html",
 	"list": {
-		"00380102": "Toad",
-		"00530502": "Lyle",
-		"00ea0502": "Beau",
-		"01450502": "Daisy",
-		"01a50502": "Walt",
-		"03651302": "Samus Aran",
-		"03990902": "Link - Link's Awakening",
-		"03a40002": "Terry",
-		"03c60502": "Raymond",
-		"043e1b02": "Mio"
+		"007f0502": "Samson",
+		"00970502": "Benjamin",
+		"00c20502": "Kitt",
+		"00c50502": "Prince",
+		"011f0502": "Tabby",
+		"01280502": "Cousteau",
+		"01750502": "Tommy - Suit",
+		"02b70e02": "Rosalina - Golf",
+		"02bc0e02": "Metal Mario - Golf",
+		"04140902": "Zelda \u0026 Loftwing"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Detective Pikachu",
 		"name": "Detective Pikachu",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d010000-03750d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1d010000-03750d02.png",
 		"tail": "03750d02"
 	},
 	"next": "00f60502.html",
 	"prev": "011b0502.html",
 	"list": {
-		"00490502": "Resetti",
-		"00d40502": "Carmen",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"034b0902": "Link - Ocarina of Time",
-		"03830002": "Ivysaur",
-		"039cff02": "Luigi - Power Up Band",
-		"039eff02": "Daisy - Power Up Band",
-		"03ac0502": "Wilbur",
-		"04ec1d02": "Elena"
+		"00220002": "Mii Swordfighter",
+		"00dc0502": "Alfonso",
+		"01060502": "Hamphrey",
+		"01110502": "Pete",
+		"01260502": "Rodeo",
+		"01620502": "Claudia",
+		"016f0502": "Chrissy",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03710102": "Mario - Wedding",
+		"03bb0502": "Lottie - Island"
 	}
 }

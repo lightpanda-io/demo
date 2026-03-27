@@ -4,21 +4,21 @@
 		"character": "Aurora",
 		"name": "Aurora",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_045f0001-01a80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_045f0001-01a80502.png",
 		"tail": "01a80502"
 	},
 	"next": "01d00502.html",
 	"prev": "01810502.html",
 	"list": {
-		"01350502": "Chevre",
-		"01520502": "Curlos",
-		"016b0502": "Soleil",
-		"01790502": "Timmy - Suit",
-		"018b0502": "Boone",
-		"01b80502": "Pompom",
-		"038c0002": "Richter",
-		"04390402": "Marina - Side Order",
-		"04e41d02": "Sagat",
-		"04ef1d02": "Alex"
+		"00200002": "Dark Pit",
+		"006f0502": "Shari",
+		"00730502": "Sterling",
+		"00cc0502": "Cookie",
+		"01530502": "Skye",
+		"01980502": "Melba",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02b00e02": "Birdo - Baseball",
+		"02f50502": "Rex",
+		"038a0002": "Snake"
 	}
 }

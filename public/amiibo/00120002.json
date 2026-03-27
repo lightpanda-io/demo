@@ -4,21 +4,21 @@
 		"character": "Captain Falcon",
 		"name": "Captain Falcon",
 		"gameSeries": "F-Zero",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00120002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_06000000-00120002.png",
 		"tail": "00120002"
 	},
 	"next": "01ad0502.html",
 	"prev": "002d0002.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"002e0002": "R.O.B. - Famicom",
-		"00ba0502": "Felicity",
-		"00f00502": "Julian",
-		"01180502": "Digby - Raincoat",
-		"01550502": "Flora",
-		"038b0002": "Simon",
-		"03bc0502": "Niko",
-		"03d60502": "Roswell",
-		"04241902": "Yuga Ohdo"
+		"00680502": "Kabuki",
+		"006a0502": "Jitters",
+		"013c0502": "Beardo",
+		"01740502": "Celeste",
+		"024e0502": "Kapp'n",
+		"02590002": "Cloud",
+		"027f0e02": "Yoshi - Tennis",
+		"035f1102": "Pikmin",
+		"03bf0502": "Isabelle - Sweater",
+		"043c1302": "Sylux"
 	}
 }

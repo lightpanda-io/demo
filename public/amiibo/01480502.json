@@ -4,21 +4,21 @@
 		"character": "Tucker",
 		"name": "Tucker",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_032c0001-01480502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_032c0001-01480502.png",
 		"tail": "01480502"
 	},
 	"next": "034b0902.html",
 	"prev": "00260002.html",
 	"list": {
-		"006b0502": "Gigi",
-		"00770502": "Poppy",
-		"00a10502": "Cyrano",
-		"00fa0502": "Camofrog",
-		"016e0502": "Francine",
-		"01be0502": "Nibbles",
-		"02550c02": "Meta Knight",
-		"03661302": "Metroid",
-		"03bc0502": "Niko",
-		"04ef1d02": "Alex"
+		"00a80502": "K.K. Slider",
+		"00ce0502": "Blaire",
+		"012f0502": "Freckles",
+		"017b0502": "Shrunk - Loud Jacket",
+		"017d0502": "Gulliver",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"041b0402": "Octoling - Blue",
+		"04390402": "Marina - Side Order",
+		"04b71d02": "Manon",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Flora",
 		"name": "Flora",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043f0001-01550502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_043f0001-01550502.png",
 		"tail": "01550502"
 	},
 	"next": "00a30502.html",
 	"prev": "02740e02.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"00490502": "Resetti",
-		"00530502": "Lyle",
-		"013c0502": "Beardo",
-		"01730502": "Phineas",
-		"01920502": "Dotty",
-		"02e30f02": "Nabiru",
-		"036a0402": "Inkling Boy - Neon Green",
-		"03d60502": "Roswell",
-		"04b61d02": "Dee Jay"
+		"00910502": "Roscoe",
+		"00e70502": "Bianca",
+		"012b0502": "Canberra",
+		"015a0502": "Biskit",
+		"01a30502": "Rory",
+		"02510002": "Lucas",
+		"02eb0502": "Paolo",
+		"03770402": "Marina",
+		"03c40502": "Cyd",
+		"03c80502": "Sasha"
 	}
 }

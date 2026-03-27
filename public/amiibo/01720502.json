@@ -4,21 +4,21 @@
 		"character": "Katrina",
 		"name": "Katrina",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a50001-01720502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a50001-01720502.png",
 		"tail": "01720502"
 	},
 	"next": "03c30502.html",
 	"prev": "01210502.html",
 	"list": {
-		"00640502": "Bill",
-		"00790502": "Deena",
-		"00d90502": "Coco",
-		"01a50502": "Walt",
-		"01c90502": "OHare",
-		"024c0502": "Rover",
-		"02860e02": "Wario - Horse Racing",
-		"02ea0502": "Piper",
-		"03120502": "Snooty",
-		"index": "Sandy"
+		"005b0502": "Kyle",
+		"007a0502": "Snake",
+		"01440502": "Klaus",
+		"01500502": "Bree",
+		"01a90502": "Papi",
+		"02560c02": "King Dedede",
+		"02600402": "Inkling Boy - Purple",
+		"02a50e02": "Baby Mario - Soccer",
+		"02b00e02": "Birdo - Baseball",
+		"04df1d02": "Ed"
 	}
 }

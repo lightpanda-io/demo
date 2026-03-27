@@ -4,21 +4,21 @@
 		"character": "Punchy",
 		"name": "Punchy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02630001-00750502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02630001-00750502.png",
 		"tail": "00750502"
 	},
 	"next": "015d0502.html",
 	"prev": "00bd0502.html",
 	"list": {
-		"001b0002": "Ganondorf",
-		"004b0502": "Timmy",
-		"00910502": "Roscoe",
-		"00c90502": "Kidd",
-		"01a60502": "Mira",
-		"02a60e02": "Baby Mario - Baseball",
-		"03830002": "Ivysaur",
-		"038b0002": "Simon",
-		"038c0002": "Richter",
-		"04dc1d02": "Cammy"
+		"00840502": "Midge",
+		"00920502": "Truffles",
+		"01390502": "Eloise",
+		"01650502": "Caroline",
+		"02670102": "Waluigi",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03130502": "Olive",
+		"04291902": "Nail Saionji",
+		"04360402": "Callie - Alterna",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

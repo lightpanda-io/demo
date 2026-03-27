@@ -4,21 +4,21 @@
 		"character": "Octavian",
 		"name": "Octavian",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04290001-00700502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04290001-00700502.png",
 		"tail": "00700502"
 	},
 	"next": "03680102.html",
 	"prev": "00a30502.html",
 	"list": {
-		"000a0002": "Kirby",
-		"003c0102": "Mario - Gold Edition",
-		"01080502": "Kid Cat",
-		"01320502": "Ricky",
-		"01840502": "Mallary",
-		"01cd0502": "Grizzly",
-		"02fa0502": "Billy",
-		"03500902": "Toon Link - The Wind Waker",
-		"043d1b02": "Noah",
-		"04b61d02": "Dee Jay"
+		"00140002": "Bowser",
+		"00210002": "Mii Brawler",
+		"00310002": "Mega Man",
+		"00970502": "Benjamin",
+		"00e70502": "Bianca",
+		"024d0502": "Timmy \u0026 Tommy",
+		"028c0e02": "Donkey Kong - Soccer",
+		"03750d02": "Detective Pikachu",
+		"03cf0502": "Quinn",
+		"04b41d02": "Dhalsim"
 	}
 }

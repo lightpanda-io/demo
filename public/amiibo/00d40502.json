@@ -4,21 +4,21 @@
 		"character": "Carmen",
 		"name": "Carmen",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a40001-00d40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a40001-00d40502.png",
 		"tail": "00d40502"
 	},
 	"next": "01730502.html",
 	"prev": "000a0002.html",
 	"list": {
-		"001c0002": "Falco",
-		"00710502": "Winnie",
-		"01300502": "Bam",
-		"01600502": "Merengue",
-		"02600402": "Inkling Boy - Purple",
-		"02690e02": "Mario - Soccer",
-		"02760e02": "Peach - Golf",
-		"02fe0502": "Murphy",
-		"03c80502": "Sasha",
-		"03cd0502": "Petri"
+		"00250002": "Greninja",
+		"004f0502": "Redd",
+		"00b40502": "Isabelle - Winter",
+		"01150502": "Cyrus",
+		"012c0502": "Colton",
+		"01b40502": "Sylvia",
+		"01bf0502": "Kevin",
+		"01c20502": "Hippeux",
+		"042a1902": "Asana Mutsuba",
+		"04f31d02": "Mai"
 	}
 }

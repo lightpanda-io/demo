@@ -4,21 +4,20 @@
 		"character": "Rosalina",
 		"name": "Rosalina \u0026 Luma",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040100-00130002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00040100-00130002.png",
 		"tail": "00130002"
 	},
 	"next": "004f0502.html",
 	"prev": "00200002.html",
 	"list": {
-		"001e0002": "Olimar",
-		"00810502": "T-Bone",
-		"00960502": "Annalisa",
-		"00bd0502": "Lucha",
-		"00e60502": "Ed",
-		"018e0502": "Pashmina",
-		"019a0502": "Anabelle",
-		"02600402": "Inkling Boy - Purple",
-		"03791502": "Mega Man",
-		"04af1d02": "Kimberly"
+		"012f0502": "Freckles",
+		"01430502": "Diva",
+		"028b0e02": "Waluigi - Horse Racing",
+		"03090502": "Weber",
+		"03560902": "Zelda",
+		"03a20002": "Hero",
+		"04131302": "E.M.M.I.",
+		"042e0002": "Sora",
+		"04ad1d02": "Jamie"
 	}
 }

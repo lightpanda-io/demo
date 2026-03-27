@@ -4,21 +4,21 @@
 		"character": "Lottie",
 		"name": "Lottie - Island",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01c10201-03bb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01c10201-03bb0502.png",
 		"tail": "03bb0502"
 	},
 	"next": "01020502.html",
 	"prev": "01b90502.html",
 	"list": {
-		"00720502": "Knox",
-		"01230502": "Paula",
-		"01630502": "Curly",
-		"01c90502": "OHare",
-		"01cd0502": "Grizzly",
-		"02400502": "K. K. Slider",
-		"02630102": "Wario",
-		"02870e02": "Waluigi - Soccer",
-		"02910e02": "Diddy Kong - Soccer",
-		"02be0e02": "Pink Gold Peach - Soccer"
+		"00b60502": "Nat",
+		"00d40502": "Carmen",
+		"01950502": "Fang",
+		"01b30502": "Chow",
+		"03110502": "Sprocket",
+		"03ba0502": "Wisp",
+		"040d0f02": "Ena",
+		"04390402": "Marina - Side Order",
+		"04ae1d02": "Kimberly",
+		"04d61d02": "Dee Jay"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Mipha",
 		"name": "Mipha",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01070000-035a0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01070000-035a0902.png",
 		"tail": "035a0902"
 	},
 	"next": "040e0f02.html",
 	"prev": "006a0502.html",
 	"list": {
-		"01170502": "Timmy - Full Apron",
-		"018a0502": "Penelope",
-		"028a0e02": "Waluigi - Golf",
-		"02960e02": "Bowser - Soccer",
-		"02a30e02": "Boo - Golf",
-		"03540902": "Link - Rider",
-		"03750d02": "Detective Pikachu",
-		"039eff02": "Daisy - Power Up Band",
-		"043a1302": "Samus \u0026 Vi-O-La",
-		"04db1d02": "Lily"
+		"01360502": "Drago",
+		"019c0502": "Naomi",
+		"02500a02": "Shovel Knight",
+		"02510002": "Lucas",
+		"02550c02": "Meta Knight",
+		"027e0e02": "Yoshi - Baseball",
+		"027f0e02": "Yoshi - Tennis",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"04271902": "Romin Kirishima",
+		"04281902": "Roa Kirishima"
 	}
 }

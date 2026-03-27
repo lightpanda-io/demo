@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20501-02770e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c20501-02770e02.png",
 		"tail": "02770e02"
 	},
 	"next": "02f60502.html",
 	"prev": "015e0502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"00f00502": "Julian",
-		"013e0502": "Chester",
-		"02840e02": "Wario - Tennis",
-		"02bb0e02": "Metal Mario - Tennis",
-		"02f50502": "Rex",
-		"03690402": "Inkling Girl - Neon Pink",
-		"03c50502": "Judy",
-		"04b21d02": "Juri",
-		"04e51d02": "C. Viper"
+		"00230002": "Mii Gunner",
+		"00390102": "Bowser",
+		"00500502": "Saharah",
+		"00890502": "Biff",
+		"017d0502": "Gulliver",
+		"01a90502": "Papi",
+		"01b70502": "Doc",
+		"03941702": "Ikari",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04d51d02": "E. Honda"
 	}
 }

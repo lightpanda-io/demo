@@ -4,20 +4,21 @@
 		"character": "Guile",
 		"name": "Guile",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c60001-04d11d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c60001-04d11d02.png",
 		"tail": "04d11d02"
 	},
 	"next": "04cc1d02.html",
 	"prev": "04d31d02.html",
 	"list": {
-		"000e0002": "Zelda",
-		"00290002": "Lucina",
-		"006f0502": "Shari",
-		"014c0502": "Gala",
-		"027f0e02": "Yoshi - Tennis",
-		"03170502": "Ike",
-		"03a20002": "Hero",
-		"03b90502": "Gulliver",
-		"03d30502": "Rio"
+		"007b0502": "Bangle",
+		"008d0502": "Cobb",
+		"00b20502": "Shrunk",
+		"01130502": "Leif",
+		"01180502": "Digby - Raincoat",
+		"014a0502": "Gaston",
+		"017b0502": "Shrunk - Loud Jacket",
+		"02a70e02": "Baby Mario - Tennis",
+		"03110502": "Sprocket",
+		"03a10002": "Joker"
 	}
 }

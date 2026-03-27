@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Pink Yarn Yoshi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00420302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030102-00420302.png",
 		"tail": "00420302"
 	},
 	"next": "03971702.html",
 	"prev": "02480502.html",
 	"list": {
-		"01340502": "Hans",
-		"01500502": "Bree",
-		"015e0502": "Frank",
-		"01770502": "Leilani",
-		"01ae0502": "Celia",
-		"02f90502": "Maddie",
-		"03a50002": "Byleth",
-		"03b60502": "Kicks",
-		"03d40502": "Frett",
-		"043b1302": "Samus"
+		"00f20502": "Jay",
+		"01270502": "Bubbles",
+		"01360502": "Drago",
+		"02430502": "Digby",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"02b00e02": "Birdo - Baseball",
+		"03020502": "Raddle",
+		"03050502": "Bea",
+		"03a40002": "Terry",
+		"04e41d02": "Sagat"
 	}
 }

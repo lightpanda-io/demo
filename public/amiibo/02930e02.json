@@ -4,21 +4,21 @@
 		"character": "Diddy Kong",
 		"name": "Diddy Kong - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80301-02930e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c80301-02930e02.png",
 		"tail": "02930e02"
 	},
 	"next": "00b30502.html",
 	"prev": "03be0502.html",
 	"list": {
-		"00730502": "Sterling",
+		"00750502": "Punchy",
+		"00b20502": "Shrunk",
 		"00d00502": "Nana",
-		"01270502": "Bubbles",
-		"01510502": "Rooney",
-		"02500a02": "Shovel Knight",
-		"025b0002": "Bayonetta",
-		"02930e02": "Diddy Kong - Tennis",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"04b11d02": "Guile",
-		"04bb1d02": "Lily"
+		"00d20502": "Olivia",
+		"01390502": "Eloise",
+		"02400502": "K. K. Slider",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"030b0502": "Leopold",
+		"04a81d02": "Ryu",
+		"04c41e03": "Kirby (\u0026 Warp Star)"
 	}
 }

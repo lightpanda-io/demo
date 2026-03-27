@@ -4,21 +4,21 @@
 		"character": "Shulk",
 		"name": "Shulk",
 		"gameSeries": "Xenoblade",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22400000-002b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22400000-002b0002.png",
 		"tail": "002b0002"
 	},
 	"next": "02660102.html",
 	"prev": "00150002.html",
 	"list": {
-		"001c0002": "Falco",
-		"00470502": "Sable",
-		"00b50502": "Blanca",
-		"00c50502": "Prince",
-		"01330502": "Deirdre",
-		"016d0502": "Derwin",
-		"025c0d02": "Shadow Mewtwo",
-		"026d0e02": "Mario - Horse Racing",
-		"03a50002": "Byleth",
-		"04131302": "E.M.M.I."
+		"00520502": "Tortimer",
+		"00a80502": "K.K. Slider",
+		"00ab0502": "Labelle",
+		"01950502": "Fang",
+		"01a60502": "Mira",
+		"02a30e02": "Boo - Golf",
+		"03160502": "Cleo",
+		"037d0002": "Isabelle",
+		"03c40502": "Cyd",
+		"04121302": "Samus - Metroid Dread"
 	}
 }

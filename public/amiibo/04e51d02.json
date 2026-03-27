@@ -4,21 +4,21 @@
 		"character": "C. Viper",
 		"name": "C. Viper",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34da0001-04e51d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34da0001-04e51d02.png",
 		"tail": "04e51d02"
 	},
 	"next": "04e61d02.html",
 	"prev": "04e41d02.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"00570502": "Curt",
-		"00680502": "Kabuki",
-		"01150502": "Cyrus",
-		"01bd0502": "Barold",
-		"02e80502": "Hopkins",
-		"02fb0502": "Boyd",
-		"03630002": "Corrin - Player 2",
-		"03911602": "Loot Goblin",
-		"04f01d02": "Ingrid"
+		"00560502": "Fauna",
+		"00910502": "Roscoe",
+		"011f0502": "Tabby",
+		"01c20502": "Hippeux",
+		"01cc0502": "Frobert",
+		"024a0502": "Kicks",
+		"025c0d02": "Shadow Mewtwo",
+		"02810e02": "Yoshi - Horse Racing",
+		"03670102": "Goomba",
+		"043e1b02": "Mio"
 	}
 }

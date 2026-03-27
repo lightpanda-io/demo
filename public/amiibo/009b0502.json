@@ -4,20 +4,21 @@
 		"character": "Clay",
 		"name": "Clay",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03830001-009b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03830001-009b0502.png",
 		"tail": "009b0502"
 	},
 	"next": "02a20e02.html",
 	"prev": "00e20502.html",
 	"list": {
-		"00fd0502": "Charlise",
-		"016b0502": "Soleil",
-		"01b00502": "Peggy",
-		"01c80502": "Bruce",
-		"025c0d02": "Shadow Mewtwo",
-		"02980e02": "Bowser - Tennis",
-		"02eb0502": "Paolo",
-		"040e0f02": "Tsukino",
-		"04f31d02": "Mai"
+		"000f0002": "Little Mac",
+		"00390102": "Bowser",
+		"00db0502": "Wendy",
+		"016f0502": "Chrissy",
+		"028c0e02": "Donkey Kong - Soccer",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"02ad0e02": "Baby Luigi - Golf",
+		"02fc0502": "Bitty",
+		"035a0902": "Mipha",
+		"03cb0502": "Shino"
 	}
 }

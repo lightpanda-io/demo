@@ -4,21 +4,20 @@
 		"character": "Birdo",
 		"name": "Birdo - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ce0301-02b10e02.png",
 		"tail": "02b10e02"
 	},
 	"next": "041f0002.html",
 	"prev": "00020002.html",
 	"list": {
-		"00000002": "Mario",
-		"00710502": "Winnie",
-		"01b30502": "Chow",
-		"01b70502": "Doc",
-		"02430502": "Digby",
-		"02790e02": "Daisy - Baseball",
-		"02e40f02": "Rathian and Cheval",
-		"03661302": "Metroid",
-		"03981702": "Daijobu",
-		"04a91d02": "Ken"
+		"00420302": "Pink Yarn Yoshi",
+		"008d0502": "Cobb",
+		"00a20502": "Peanut",
+		"01670502": "Baabara",
+		"019e0502": "Tammy",
+		"030c0502": "Spike",
+		"035e1002": "Qbby",
+		"03770402": "Marina",
+		"03b00502": "Sable"
 	}
 }

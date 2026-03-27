@@ -4,21 +4,21 @@
 		"character": "Tiki",
 		"name": "Tiki",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21090000-03701202.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21090000-03701202.png",
 		"tail": "03701202"
 	},
 	"next": "01340502.html",
 	"prev": "01760502.html",
 	"list": {
-		"00d50502": "Rodney",
-		"00f00502": "Julian",
-		"01610502": "Cube",
-		"01d20502": "Twiggy",
-		"02550c02": "Meta Knight",
-		"02770e02": "Peach - Horse Racing",
-		"036a0402": "Inkling Boy - Neon Green",
-		"037d0002": "Isabelle",
-		"03850002": "Pichu",
-		"04380402": "Pearl - Side Order"
+		"00580502": "Portia",
+		"006f0502": "Shari",
+		"00840502": "Midge",
+		"009f0502": "Henry",
+		"00f70502": "Pecan",
+		"01420502": "Wolfgang",
+		"01860502": "Katt",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02f50502": "Rex",
+		"043c1302": "Sylux"
 	}
 }

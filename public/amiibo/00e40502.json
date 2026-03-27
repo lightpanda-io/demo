@@ -4,21 +4,21 @@
 		"character": "Teddy",
 		"name": "Teddy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02140001-00e40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02140001-00e40502.png",
 		"tail": "00e40502"
 	},
 	"next": "015e0502.html",
 	"prev": "019e0502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"00730502": "Sterling",
-		"00960502": "Annalisa",
-		"010f0502": "Pelly",
-		"01880502": "Peaches",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"039cff02": "Luigi - Power Up Band",
-		"03d70502": "Faith",
-		"042f1a02": "Donkey Kong \u0026 Pauline"
+		"00020002": "Yoshi",
+		"00a10502": "Cyrano",
+		"019e0502": "Tammy",
+		"02400502": "K. K. Slider",
+		"02780e02": "Daisy - Soccer",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02fb0502": "Boyd",
+		"037c0002": "Young Link",
+		"03aa0502": "Isabelle",
+		"04200002": "Kazuya"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Tiansheng",
 		"name": "Tiansheng",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a130001-03ca0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a130001-03ca0502.png",
 		"tail": "03ca0502"
 	},
 	"next": "01ba0502.html",
 	"prev": "01190502.html",
 	"list": {
-		"00300002": "Sonic",
-		"003e0402": "Inkling Girl",
-		"008f0502": "Jeremiah",
-		"028f0e02": "Donkey Kong - Golf",
+		"000f0002": "Little Mac",
+		"00620502": "Sheldon",
+		"00df0502": "Gabi",
+		"00e50502": "Mathilda",
+		"016b0502": "Soleil",
+		"016d0502": "Derwin",
+		"025f0402": "Inkling Girl - Lime Green",
 		"02b80e02": "Rosalina - Horse Racing",
-		"03120502": "Snooty",
-		"036e0a02": "King Knight",
-		"038d0002": "Piranha Plant",
-		"03cb0502": "Shino",
-		"04e81d02": "Terry"
+		"039dff02": "Peach - Power Up Band",
+		"04261902": "Gakuto Sōgetsu"
 	}
 }

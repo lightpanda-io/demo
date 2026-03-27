@@ -4,21 +4,21 @@
 		"character": "Cloud Strife",
 		"name": "Cloud - Player 2",
 		"gameSeries": "Final Fantasy",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000100-03620002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_36000100-03620002.png",
 		"tail": "03620002"
 	},
 	"next": "019f0502.html",
 	"prev": "002e0002.html",
 	"list": {
-		"005d0502": "Renée",
-		"015c0502": "Lyman",
-		"01770502": "Leilani",
-		"01c30502": "Margie",
-		"02630102": "Wario",
-		"02a80e02": "Baby Mario - Golf",
-		"03680102": "Koopa Troopa",
-		"03880002": "Chrom",
-		"03b60502": "Kicks",
-		"04dd1d02": "Rashid"
+		"007c0502": "Phil",
+		"00820502": "Mint",
+		"00ae0502": "Katie",
+		"024d0502": "Timmy \u0026 Tommy",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02ba0e02": "Metal Mario - Baseball",
+		"02e80502": "Hopkins",
+		"02f20502": "Wade",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

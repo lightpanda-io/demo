@@ -4,21 +4,21 @@
 		"character": "Mii",
 		"name": "Mii Gunner",
 		"gameSeries": "Mii",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00200-00230002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07c00200-00230002.png",
 		"tail": "00230002"
 	},
 	"next": "03720102.html",
 	"prev": "043f1c02.html",
 	"list": {
-		"00000002": "Mario",
-		"00160002": "Toon Link",
-		"00300002": "Sonic",
-		"00be0502": "Fuchsia",
-		"013a0502": "Wart Jr.",
-		"018a0502": "Penelope",
-		"025c0d02": "Shadow Mewtwo",
-		"02790e02": "Daisy - Baseball",
-		"02a10e02": "Boo - Baseball",
-		"03ce0502": "Cephalobot"
+		"001e0002": "Olimar",
+		"002e0002": "R.O.B. - Famicom",
+		"003d0102": "Mario - Silver Edition",
+		"01590502": "Dora",
+		"02b00e02": "Birdo - Baseball",
+		"02f50502": "Rex",
+		"03590902": "Urbosa",
+		"03c60502": "Raymond",
+		"04380402": "Pearl - Side Order",
+		"04bf1d02": "Ed"
 	}
 }

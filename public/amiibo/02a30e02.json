@@ -4,21 +4,21 @@
 		"character": "Boo",
 		"name": "Boo - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cb0401-02a30e02.png",
 		"tail": "02a30e02"
 	},
 	"next": "00f40502.html",
 	"prev": "02b60e02.html",
 	"list": {
-		"00260002": "Jigglypuff",
-		"002c0002": "Ness",
-		"00460502": "DJ KK",
-		"00a60502": "Molly",
-		"00f50502": "Hugh",
-		"02e80502": "Hopkins",
-		"03d30502": "Rio",
-		"04401c02": "Luigi - My Mario Wooden Blocks",
-		"04a91d02": "Ken",
-		"04d31d02": "Blanka"
+		"00170002": "Sheik",
+		"002d0002": "Mr. Game \u0026 Watch",
+		"00490502": "Resetti",
+		"00850502": "Gruff",
+		"00f70502": "Pecan",
+		"012c0502": "Colton",
+		"01af0502": "Zucker",
+		"028e0e02": "Donkey Kong - Tennis",
+		"03680102": "Koopa Troopa",
+		"04180902": "Link - Tears of the Kingdom"
 	}
 }

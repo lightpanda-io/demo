@@ -4,21 +4,21 @@
 		"character": "Static",
 		"name": "Static",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e50001-01ad0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e50001-01ad0502.png",
 		"tail": "01ad0502"
 	},
 	"next": "01ab0502.html",
 	"prev": "00120002.html",
 	"list": {
-		"00390102": "Bowser",
-		"003e0402": "Inkling Girl",
-		"00680502": "Kabuki",
-		"00880502": "Bella",
-		"01360502": "Drago",
-		"01b50502": "Jacques",
-		"024b0502": "Isabelle - Summer Outfit",
-		"03c50502": "Judy",
-		"043c1302": "Sylux",
-		"04a50902": "Tulin"
+		"00050002": "Fox",
+		"007d0502": "Monique",
+		"00d80502": "Broccolo",
+		"00e40502": "Teddy",
+		"01950502": "Fang",
+		"01c30502": "Margie",
+		"03990902": "Link - Link's Awakening",
+		"03b50502": "Daisy Mae",
+		"03bb0502": "Lottie - Island",
+		"04241902": "Yuga Ohdo"
 	}
 }

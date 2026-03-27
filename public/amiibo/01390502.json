@@ -4,21 +4,21 @@
 		"character": "Eloise",
 		"name": "Eloise",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03260001-01390502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03260001-01390502.png",
 		"tail": "01390502"
 	},
 	"next": "014c0502.html",
 	"prev": "00680502.html",
 	"list": {
-		"00140002": "Bowser",
-		"00950502": "Goose",
-		"00b20502": "Shrunk",
-		"01ab0502": "Rod",
-		"01b60502": "Sally",
-		"027f0e02": "Yoshi - Tennis",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"031e0502": "Toby",
-		"03640002": "Bayonetta - Player 2",
-		"04a60902": "Yunobo"
+		"00030002": "Donkey Kong",
+		"00840502": "Midge",
+		"009a0502": "Bunnie",
+		"01880502": "Peaches",
+		"018a0502": "Penelope",
+		"01c40502": "Lucky",
+		"03690402": "Inkling Girl - Neon Pink",
+		"039fff02": "Yoshi - Power Up Band",
+		"04a50902": "Tulin",
+		"04e61d02": "Alex"
 	}
 }

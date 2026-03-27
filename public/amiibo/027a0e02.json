@@ -4,21 +4,21 @@
 		"character": "Daisy",
 		"name": "Daisy - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30301-027a0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c30301-027a0e02.png",
 		"tail": "027a0e02"
 	},
 	"next": "01570502.html",
 	"prev": "02af0e02.html",
 	"list": {
-		"00790502": "Deena",
-		"00dc0502": "Alfonso",
-		"01190502": "Don Resetti - Without Hat",
-		"01750502": "Tommy - Suit",
-		"01a20502": "Puddles",
-		"01a40502": "Elise",
-		"03611202": "Celica",
-		"036c0a02": "Plague Knight",
-		"04150402": "Inkling - Yellow",
-		"04370402": "Marie - Alterna"
+		"00b00502": "Porter",
+		"01140502": "Wendell",
+		"01380502": "Mac",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03791502": "Mega Man",
+		"03830002": "Ivysaur",
+		"03860002": "Incineroar",
+		"03c80502": "Sasha",
+		"03ca0502": "Tiansheng",
+		"03d10502": "Zoe"
 	}
 }

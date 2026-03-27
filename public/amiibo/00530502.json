@@ -4,21 +4,21 @@
 		"character": "Lyle",
 		"name": "Lyle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01aa0001-00530502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01aa0001-00530502.png",
 		"tail": "00530502"
 	},
 	"next": "00a70502.html",
 	"prev": "04230002.html",
 	"list": {
-		"00090002": "Pikachu",
-		"00fd0502": "Charlise",
-		"01660502": "Sparro",
-		"01730502": "Phineas",
-		"01d00502": "Iggly",
-		"024d0502": "Timmy \u0026 Tommy",
-		"03030502": "Julia",
-		"03ba0502": "Wisp",
-		"04d51d02": "E. Honda",
-		"04dc1d02": "Cammy"
+		"001c0002": "Falco",
+		"00240002": "Charizard",
+		"00ea0502": "Beau",
+		"01580502": "Monty",
+		"02810e02": "Yoshi - Horse Racing",
+		"02fb0502": "Boyd",
+		"03931702": "Pawapuro",
+		"04e31d02": "Elena",
+		"04ec1d02": "Elena",
+		"04ed1d02": "Sagat"
 	}
 }

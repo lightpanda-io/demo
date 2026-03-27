@@ -4,21 +4,21 @@
 		"character": "Pichu",
 		"name": "Pichu",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19ac0000-03850002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_19ac0000-03850002.png",
 		"tail": "03850002"
 	},
 	"next": "03760402.html",
 	"prev": "012a0502.html",
 	"list": {
-		"00250002": "Greninja",
-		"002a0002": "Robin",
-		"00570502": "Curt",
-		"007a0502": "Snake",
-		"00940502": "Eunice",
-		"02a10e02": "Boo - Baseball",
-		"03030502": "Julia",
-		"037c0002": "Young Link",
-		"03850002": "Pichu",
-		"038d0002": "Piranha Plant"
+		"004d0502": "Pascal",
+		"00a70502": "Walker",
+		"01490502": "Blanche",
+		"015e0502": "Frank",
+		"02840e02": "Wario - Tennis",
+		"03720102": "Peach - Wedding",
+		"037d0002": "Isabelle",
+		"03860002": "Incineroar",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"04bc1d02": "Cammy"
 	}
 }

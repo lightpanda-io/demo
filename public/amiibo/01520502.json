@@ -4,21 +4,21 @@
 		"character": "Curlos",
 		"name": "Curlos",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cd0001-01520502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04cd0001-01520502.png",
 		"tail": "01520502"
 	},
 	"next": "007f0502.html",
 	"prev": "001f0002.html",
 	"list": {
-		"005a0502": "Cheri",
-		"00b20502": "Shrunk",
-		"00d90502": "Coco",
-		"01140502": "Wendell",
-		"018f0502": "Shep",
-		"01bc0502": "Sydney",
-		"02960e02": "Bowser - Soccer",
-		"03860002": "Incineroar",
-		"03bf0502": "Isabelle - Sweater",
-		"04b51d02": "E. Honda"
+		"00f60502": "Hopper",
+		"01730502": "Phineas",
+		"01990502": "Bones",
+		"02af0e02": "Birdo - Soccer",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"02fd0502": "Maggie",
+		"03661302": "Metroid",
+		"043b1302": "Samus",
+		"04ce1d02": "Jamie",
+		"04da1d02": "Zangief"
 	}
 }

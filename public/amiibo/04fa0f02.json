@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Ratha",
+		"name": "Ratha",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350c0000-04fa0f02.png",
+		"tail": "04fa0f02"
+	},
+	"next": "04fb0f02.html",
+	"prev": "042d1802.html",
+	"list": {
+		"00660502": "Deli",
+		"01110502": "Pete",
+		"016a0502": "Antonio",
+		"01c80502": "Bruce",
+		"01ca0502": "Gayle",
+		"01d10502": "Angus",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02750e02": "Peach - Tennis",
+		"031b0502": "Étoile",
+		"03d40502": "Frett"
+	}
+}

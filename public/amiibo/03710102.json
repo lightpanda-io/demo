@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Wedding",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-03710102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-03710102.png",
 		"tail": "03710102"
 	},
 	"next": "00430302.html",
-	"prev": "042d1802.html",
+	"prev": "02520002.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00480502": "Kapp'n",
-		"008a0502": "Yuka",
-		"01250502": "Mitzi",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"029e0e02": "Bowser Jr. - Golf",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03120502": "Snooty",
-		"035e1002": "Qbby",
-		"04370402": "Marie - Alterna"
+		"00250002": "Greninja",
+		"00ba0502": "Felicity",
+		"012b0502": "Canberra",
+		"015a0502": "Biskit",
+		"01800502": "Goldie",
+		"01ac0502": "Purrl",
+		"035d0302": "Poochy",
+		"03770402": "Marina",
+		"04c20102": "Captain Toad \u0026 Talking Flower",
+		"04ef1d02": "Alex"
 	}
 }

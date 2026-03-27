@@ -4,21 +4,21 @@
 		"character": "Tom Nook",
 		"name": "Tom Nook - Jacket",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830101-010e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01830101-010e0502.png",
 		"tail": "010e0502"
 	},
 	"next": "00fb0502.html",
 	"prev": "042a1902.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"00b80502": "Jack",
-		"00c90502": "Kidd",
-		"00cf0502": "Avery",
-		"01130502": "Leif",
-		"01a50502": "Walt",
-		"02400502": "K. K. Slider",
-		"02910e02": "Diddy Kong - Soccer",
-		"02bd0e02": "Metal Mario - Horse Racing",
-		"03500902": "Toon Link - The Wind Waker"
+		"00490502": "Resetti",
+		"00650502": "Kiki",
+		"00700502": "Octavian",
+		"008d0502": "Cobb",
+		"01b40502": "Sylvia",
+		"02ad0e02": "Baby Luigi - Golf",
+		"02b20e02": "Birdo - Golf",
+		"03d30502": "Rio",
+		"041b0402": "Octoling - Blue",
+		"04281902": "Roa Kirishima"
 	}
 }

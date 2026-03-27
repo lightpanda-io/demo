@@ -4,21 +4,21 @@
 		"character": "Mythra",
 		"name": "Mythra",
 		"gameSeries": "Xenoblade",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22420000-041f0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22420000-041f0002.png",
 		"tail": "041f0002"
 	},
 	"next": "010b0502.html",
 	"prev": "02b10e02.html",
 	"list": {
-		"005e0502": "Lopez",
-		"01350502": "Chevre",
-		"015a0502": "Biskit",
-		"01750502": "Tommy - Suit",
-		"01ad0502": "Static",
-		"01c20502": "Hippeux",
-		"030d0502": "Cashmere",
-		"03830002": "Ivysaur",
-		"038e0402": "Octoling Girl",
-		"04db1d02": "Lily"
+		"000f0002": "Little Mac",
+		"008b0502": "Lionel",
+		"01140502": "Wendell",
+		"01300502": "Bam",
+		"01330502": "Deirdre",
+		"01510502": "Rooney",
+		"01520502": "Curlos",
+		"03651302": "Samus Aran",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04b71d02": "Manon"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Bettina",
 		"name": "Bettina",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041b0001-00f10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_041b0001-00f10502.png",
 		"tail": "00f10502"
 	},
 	"next": "04230002.html",
 	"prev": "02e70502.html",
 	"list": {
-		"009e0502": "Muffy",
-		"009f0502": "Henry",
-		"00a40502": "Willow",
-		"00d40502": "Carmen",
-		"01060502": "Hamphrey",
-		"02380602": "8-Bit Mario Classic Color",
-		"02890e02": "Waluigi - Tennis",
-		"042d1802": "Malzeno",
-		"04411c02": "Peach - My Mario Wooden Blocks",
-		"index": "Sandy"
+		"00b40502": "Isabelle - Winter",
+		"00ba0502": "Felicity",
+		"00de0502": "Butch",
+		"01050502": "Gladys",
+		"01510502": "Rooney",
+		"018d0502": "Croque",
+		"02630102": "Wario",
+		"03090502": "Weber",
+		"030f0502": "Norma",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

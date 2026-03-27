@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link - Rider",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-03540902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-03540902.png",
 		"tail": "03540902"
 	},
 	"next": "014a0502.html",
 	"prev": "04131302.html",
 	"list": {
-		"01070502": "Freya",
-		"01800502": "Goldie",
-		"02440502": "Lottie",
-		"02b50e02": "Rosalina - Baseball",
-		"02f00502": "Sylvana",
-		"038f0402": "Octoling Boy",
-		"03aa0502": "Isabelle",
-		"040c0f02": "Razewing Ratha",
-		"043a1302": "Samus \u0026 Vi-O-La",
-		"04ed1d02": "Sagat"
+		"004c0502": "Digby",
+		"004d0502": "Pascal",
+		"01540502": "Moe",
+		"01680502": "Rolf",
+		"016c0502": "Apollo",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02a00e02": "Boo - Soccer",
+		"03550902": "Guardian",
+		"03bd0502": "Wardell",
+		"04d61d02": "Dee Jay"
 	}
 }

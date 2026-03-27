@@ -4,21 +4,20 @@
 		"character": "Metal Mario",
 		"name": "Metal Mario - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00101-02b90e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d00101-02b90e02.png",
 		"tail": "02b90e02"
 	},
 	"next": "014e0502.html",
 	"prev": "007e0502.html",
 	"list": {
-		"005e0502": "Lopez",
-		"007b0502": "Bangle",
-		"00dc0502": "Alfonso",
-		"013a0502": "Wart Jr.",
-		"01780502": "Resetti - Without Hat",
-		"01cc0502": "Frobert",
-		"02e30f02": "Nabiru",
-		"030d0502": "Cashmere",
-		"034e0902": "Link - Skyward Sword",
-		"04de1d02": "A.K.I"
+		"00380102": "Toad",
+		"006a0502": "Jitters",
+		"013e0502": "Chester",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"03050502": "Bea",
+		"03090502": "Weber",
+		"03961702": "Hayakawa",
+		"03a90502": "Timmy \u0026 Tommy",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)"
 	}
 }

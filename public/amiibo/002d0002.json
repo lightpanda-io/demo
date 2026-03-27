@@ -4,21 +4,21 @@
 		"character": "Mr. G\u0026W",
 		"name": "Mr. Game \u0026 Watch",
 		"gameSeries": "Classic Nintendo",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07800000-002d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07800000-002d0002.png",
 		"tail": "002d0002"
 	},
 	"next": "00120002.html",
 	"prev": "01670502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"00600502": "Rasher",
-		"01220502": "Del",
-		"01770502": "Leilani",
-		"01bb0502": "Rizzo",
-		"02f30502": "Carrie",
-		"03cf0502": "Quinn",
-		"04101802": "Palico",
-		"04af1d02": "Kimberly",
-		"04c91e03": "Bandana Waddle Dee"
+		"000c0002": "Luigi",
+		"00740502": "Bonbon",
+		"00970502": "Benjamin",
+		"015b0502": "Victoria",
+		"01650502": "Caroline",
+		"01710502": "Brewster",
+		"01740502": "Celeste",
+		"023d0002": "Mewtwo",
+		"039cff02": "Luigi - Power Up Band",
+		"04ed1d02": "Sagat"
 	}
 }

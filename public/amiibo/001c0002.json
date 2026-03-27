@@ -4,21 +4,21 @@
 		"character": "Falco",
 		"name": "Falco",
 		"gameSeries": "Star Fox",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05810000-001c0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05810000-001c0002.png",
 		"tail": "001c0002"
 	},
 	"next": "00c80502.html",
 	"prev": "04200002.html",
 	"list": {
-		"00160002": "Toon Link",
-		"004c0502": "Digby",
-		"00b20502": "Shrunk",
-		"011d0502": "Lily",
-		"017f0502": "Zipper",
-		"02800e02": "Yoshi - Golf",
-		"02e40f02": "Rathian and Cheval",
-		"02e90502": "June",
-		"03b30502": "C.J.",
-		"03cf0502": "Quinn"
+		"00480502": "Kapp'n",
+		"00620502": "Sheldon",
+		"008e0502": "Amelia",
+		"00d80502": "Broccolo",
+		"01120502": "Mabel",
+		"01890502": "Dizzy",
+		"02790e02": "Daisy - Baseball",
+		"02e60f02": "Qurupeco and Dan",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"04da1d02": "Zangief"
 	}
 }

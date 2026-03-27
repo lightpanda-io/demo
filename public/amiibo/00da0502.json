@@ -4,21 +4,21 @@
 		"character": "Groucho",
 		"name": "Groucho",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021a0001-00da0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_021a0001-00da0502.png",
 		"tail": "00da0502"
 	},
 	"next": "00280002.html",
 	"prev": "00ed0502.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"00b20502": "Shrunk",
-		"00d90502": "Coco",
-		"01430502": "Diva",
-		"01750502": "Tommy - Suit",
-		"018c0502": "Broffina",
-		"027d0e02": "Yoshi - Soccer",
-		"03050502": "Bea",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04b91d02": "JP"
+		"00230002": "Mii Gunner",
+		"00360102": "Peach",
+		"00650502": "Kiki",
+		"01620502": "Claudia",
+		"01bc0502": "Sydney",
+		"01c50502": "Rosie",
+		"027f0e02": "Yoshi - Tennis",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"031d0502": "Chelsea",
+		"03890002": "Ken"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Joan",
 		"name": "Joan",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a30001-004a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a30001-004a0502.png",
 		"tail": "004a0502"
 	},
 	"next": "029b0e02.html",
 	"prev": "006f0502.html",
 	"list": {
-		"00690502": "Patty",
-		"00e10502": "Timbra",
-		"00e70502": "Bianca",
-		"011d0502": "Lily",
-		"01c90502": "OHare",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"02fd0502": "Maggie",
-		"03680102": "Koopa Troopa",
-		"03b00502": "Sable",
-		"042b1802": "Palico"
+		"00660502": "Deli",
+		"00fc0502": "Chops",
+		"011b0502": "Franklin",
+		"011f0502": "Tabby",
+		"01350502": "Chevre",
+		"01a00502": "Lucy",
+		"01a80502": "Aurora",
+		"02560c02": "King Dedede",
+		"02630102": "Wario",
+		"04d91d02": "JP"
 	}
 }

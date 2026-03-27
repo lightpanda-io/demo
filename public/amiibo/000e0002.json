@@ -4,21 +4,21 @@
 		"character": "Zelda",
 		"name": "Zelda",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-000e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010000-000e0002.png",
 		"tail": "000e0002"
 	},
 	"next": "03651302.html",
 	"prev": "00d20502.html",
 	"list": {
-		"00050002": "Fox",
-		"00260002": "Jigglypuff",
-		"003c0102": "Mario - Gold Edition",
-		"01320502": "Ricky",
-		"016a0502": "Antonio",
-		"01880502": "Peaches",
-		"01910502": "Erik",
-		"039fff02": "Yoshi - Power Up Band",
-		"041c0402": "Smallfry",
-		"04b11d02": "Guile"
+		"007e0502": "Nate",
+		"00b20502": "Shrunk",
+		"01490502": "Blanche",
+		"015a0502": "Biskit",
+		"01d40502": "Isabelle - Character Parfait",
+		"02630102": "Wario",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"030e0502": "Tad",
+		"042b1802": "Palico",
+		"04d11d02": "Guile"
 	}
 }

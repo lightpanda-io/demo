@@ -4,21 +4,21 @@
 		"character": "Nat",
 		"name": "Nat",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019b0001-00b60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_019b0001-00b60502.png",
 		"tail": "00b60502"
 	},
 	"next": "01750502.html",
 	"prev": "01340502.html",
 	"list": {
-		"00cf0502": "Avery",
-		"00d10502": "Peck",
-		"01060502": "Hamphrey",
-		"01520502": "Curlos",
-		"019b0502": "Rudy",
-		"01ab0502": "Rod",
-		"03880002": "Chrom",
-		"04b41d02": "Dhalsim",
-		"04d31d02": "Blanka",
-		"04da1d02": "Zangief"
+		"002f0002": "Duck Hunt",
+		"003e0402": "Inkling Girl",
+		"00c70502": "Vladimir",
+		"00ca0502": "Phoebe",
+		"01130502": "Leif",
+		"02750e02": "Peach - Tennis",
+		"028c0e02": "Donkey Kong - Soccer",
+		"03720102": "Peach - Wedding",
+		"04b71d02": "Manon",
+		"04ee1d02": "C. Viper"
 	}
 }

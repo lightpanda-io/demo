@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Hammer Slam Bowser",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0005ff00-023a0702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0005ff00-023a0702.png",
 		"tail": "023a0702"
 	},
 	"next": "03050502.html",
 	"prev": "03080502.html",
 	"list": {
-		"006a0502": "Jitters",
-		"00e50502": "Mathilda",
-		"00e70502": "Bianca",
-		"02e60f02": "Qurupeco and Dan",
-		"03050502": "Bea",
-		"03080502": "Boots",
-		"03b80502": "Harvey",
-		"041a0902": "Ganondorf - Tears of the Kingdom",
-		"04ad1d02": "Jamie",
-		"04c41e03": "Kirby"
+		"005a0502": "Cheri",
+		"010e0502": "Tom Nook - Jacket",
+		"012e0502": "Spork/Crackle",
+		"016e0502": "Francine",
+		"02870e02": "Waluigi - Soccer",
+		"02a30e02": "Boo - Golf",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02af0e02": "Birdo - Soccer",
+		"03af0502": "Mabel",
+		"04210002": "Sephiroth"
 	}
 }

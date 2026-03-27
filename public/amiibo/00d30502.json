@@ -4,21 +4,21 @@
 		"character": "Cesar",
 		"name": "Cesar",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03690001-00d30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03690001-00d30502.png",
 		"tail": "00d30502"
 	},
 	"next": "03781402.html",
 	"prev": "02850e02.html",
 	"list": {
-		"003c0102": "Mario - Gold Edition",
-		"00d20502": "Olivia",
-		"00d30502": "Cesar",
-		"00d40502": "Carmen",
-		"01a30502": "Rory",
-		"02630102": "Wario",
-		"03010502": "Claude",
-		"03050502": "Bea",
-		"03630002": "Corrin - Player 2",
-		"04230002": "Alex"
+		"01a80502": "Aurora",
+		"01ba0502": "Becky",
+		"024e0502": "Kapp'n",
+		"02ad0e02": "Baby Luigi - Golf",
+		"03100502": "Gonzo",
+		"031b0502": "Étoile",
+		"03550902": "Guardian",
+		"04390402": "Marina - Side Order",
+		"043c1302": "Sylux",
+		"04a30902": "Riju"
 	}
 }

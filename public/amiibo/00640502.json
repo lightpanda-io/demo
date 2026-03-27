@@ -4,21 +4,21 @@
 		"character": "Bill",
 		"name": "Bill",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03070001-00640502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03070001-00640502.png",
 		"tail": "00640502"
 	},
 	"next": "011e0502.html",
 	"prev": "02950e02.html",
 	"list": {
-		"001e0002": "Olimar",
-		"00a00502": "Bertha",
-		"00a30502": "Cole",
-		"015b0502": "Victoria",
-		"01790502": "Timmy - Suit",
-		"02570c02": "Waddle Dee",
-		"02bb0e02": "Metal Mario - Tennis",
-		"03a10002": "Joker",
-		"03bd0502": "Wardell",
-		"041d0002": "Min Min"
+		"00430302": "Light Blue Yarn Yoshi",
+		"00bd0502": "Lucha",
+		"00c00502": "Gwen",
+		"01170502": "Timmy - Full Apron",
+		"01270502": "Bubbles",
+		"01ad0502": "Static",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"030b0502": "Leopold",
+		"04150402": "Inkling - Yellow",
+		"04e41d02": "Sagat"
 	}
 }

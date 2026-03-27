@@ -4,21 +4,21 @@
 		"character": "Tom Nook",
 		"name": "Tom Nook",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830201-03a80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01830201-03a80502.png",
 		"tail": "03a80502"
 	},
 	"next": "02720e02.html",
 	"prev": "005a0502.html",
 	"list": {
-		"005e0502": "Lopez",
-		"00f20502": "Jay",
-		"01210502": "Miranda",
-		"01d40502": "Isabelle - Character Parfait",
-		"029a0e02": "Bowser - Horse Racing",
-		"03730102": "Bowser - Wedding",
-		"03b70502": "Saharah",
-		"03bb0502": "Lottie - Island",
-		"03cd0502": "Petri",
-		"04f31d02": "Mai"
+		"00440502": "Isabelle",
+		"00830502": "Pudge",
+		"00890502": "Biff",
+		"008a0502": "Yuka",
+		"01830502": "Mott",
+		"01860502": "Katt",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"039bff02": "Mario - Power Up Band",
+		"03cb0502": "Shino",
+		"0431ff02": "Donkey Kong - Power Up Band"
 	}
 }

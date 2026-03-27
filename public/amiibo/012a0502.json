@@ -4,21 +4,21 @@
 		"character": "Elvis",
 		"name": "Elvis",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e70001-012a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03e70001-012a0502.png",
 		"tail": "012a0502"
 	},
 	"next": "03850002.html",
 	"prev": "02760e02.html",
 	"list": {
-		"00a00502": "Bertha",
-		"01150502": "Cyrus",
-		"012b0502": "Canberra",
-		"02500a02": "Shovel Knight",
-		"026c0e02": "Mario - Golf",
-		"02960e02": "Bowser - Soccer",
-		"03140502": "Dobie",
-		"036d0a02": "Specter Knight",
-		"037a0002": "Daisy",
-		"03d40502": "Frett"
+		"006b0502": "Gigi",
+		"00800502": "Tutu",
+		"01280502": "Cousteau",
+		"014b0502": "Marshal",
+		"02790e02": "Daisy - Baseball",
+		"02840e02": "Wario - Tennis",
+		"034f0902": "8-Bit Link",
+		"03d60502": "Roswell",
+		"04370402": "Marie - Alterna",
+		"04421c02": "Yoshi - My Mario Wooden Blocks"
 	}
 }

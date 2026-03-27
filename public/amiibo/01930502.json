@@ -4,21 +4,21 @@
 		"character": "Pierce",
 		"name": "Pierce",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044d0001-01930502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_044d0001-01930502.png",
 		"tail": "01930502"
 	},
 	"next": "03941702.html",
 	"prev": "017f0502.html",
 	"list": {
-		"00810502": "T-Bone",
-		"00a00502": "Bertha",
-		"00ae0502": "Katie",
-		"00d60502": "Scoot",
-		"024a0502": "Kicks",
-		"02b40e02": "Rosalina - Soccer",
-		"02ff0502": "Plucky",
-		"036f1202": "Chrom",
-		"03a50002": "Byleth",
-		"03b20502": "K.K. Slider"
+		"00570502": "Curt",
+		"00a30502": "Cole",
+		"00bb0502": "Ozzie",
+		"01030502": "Pango",
+		"01160502": "Grams",
+		"02910e02": "Diddy Kong - Soccer",
+		"034d0902": "Link - Twilight Princess",
+		"03aa0502": "Isabelle",
+		"03b50502": "Daisy Mae",
+		"04a50902": "Tulin"
 	}
 }

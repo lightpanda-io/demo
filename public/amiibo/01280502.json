@@ -4,21 +4,21 @@
 		"character": "Cousteau",
 		"name": "Cousteau",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03420001-01280502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03420001-01280502.png",
 		"tail": "01280502"
 	},
 	"next": "01190502.html",
 	"prev": "01310502.html",
 	"list": {
-		"00950502": "Goose",
-		"01280502": "Cousteau",
-		"012d0502": "Marina",
-		"01350502": "Chevre",
-		"01a90502": "Papi",
-		"01c50502": "Rosie",
-		"025a0002": "Corrin",
-		"02f00502": "Sylvana",
-		"02fa0502": "Billy",
-		"035b0902": "Revali"
+		"00d30502": "Cesar",
+		"00ed0502": "Ruby",
+		"01440502": "Klaus",
+		"015d0502": "Violet",
+		"01860502": "Katt",
+		"01940502": "Queenie",
+		"01af0502": "Zucker",
+		"01b10502": "Ribbot",
+		"02b90e02": "Metal Mario - Soccer",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
 	}
 }

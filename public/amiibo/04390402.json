@@ -4,21 +4,21 @@
 		"character": "Marina",
 		"name": "Marina - Side Order",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-04390402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08040000-04390402.png",
 		"tail": "04390402"
 	},
 	"next": "025b0002.html",
 	"prev": "03770402.html",
 	"list": {
-		"00540502": "Lottie",
-		"005d0502": "Renée",
-		"00850502": "Gruff",
-		"01220502": "Del",
-		"01230502": "Paula",
-		"01730502": "Phineas",
-		"017f0502": "Zipper",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"04281902": "Roa Kirishima",
-		"0432ff02": "Diddy Kong - Power Up Band"
+		"00390102": "Bowser",
+		"01070502": "Freya",
+		"018d0502": "Croque",
+		"01a30502": "Rory",
+		"036c0a02": "Plague Knight",
+		"04150402": "Inkling - Yellow",
+		"0430ff02": "Golden - Power Up Band",
+		"04330402": "Shiver",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04b71d02": "Manon"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Kabuki",
 		"name": "Kabuki",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02660001-00680502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02660001-00680502.png",
 		"tail": "00680502"
 	},
 	"next": "01390502.html",
 	"prev": "01700502.html",
 	"list": {
-		"00e50502": "Mathilda",
-		"00fa0502": "Camofrog",
-		"01ca0502": "Gayle",
-		"02e80502": "Hopkins",
-		"037c0002": "Young Link",
-		"03bd0502": "Wardell",
-		"03d10502": "Zoe",
-		"040c0f02": "Razewing Ratha",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04ad1d02": "Jamie"
+		"001b0002": "Ganondorf",
+		"01140502": "Wendell",
+		"02390602": "8-Bit Mario Modern Color",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"02ef0502": "Huck",
+		"030c0502": "Spike",
+		"034d0902": "Link - Twilight Princess",
+		"03990902": "Link - Link's Awakening",
+		"04a81d02": "Ryu",
+		"04e31d02": "Elena"
 	}
 }

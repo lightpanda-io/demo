@@ -4,21 +4,21 @@
 		"character": "Lucky",
 		"name": "Lucky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ec0001-01c40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02ec0001-01c40502.png",
 		"tail": "01c40502"
 	},
 	"next": "02400502.html",
 	"prev": "00ad0502.html",
 	"list": {
+		"00090002": "Pikachu",
 		"003d0102": "Mario - Silver Edition",
-		"00cd0502": "Sly",
-		"00d20502": "Olivia",
-		"012f0502": "Freckles",
-		"01a20502": "Puddles",
-		"01d40502": "Isabelle - Character Parfait",
-		"025e0402": "Marie",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"03090502": "Weber",
-		"04b21d02": "Juri"
+		"00520502": "Tortimer",
+		"016f0502": "Chrissy",
+		"01b40502": "Sylvia",
+		"02410502": "Mabel",
+		"02530002": "Ryu",
+		"03020502": "Raddle",
+		"03a60102": "Mario - Cat",
+		"04131302": "E.M.M.I."
 	}
 }

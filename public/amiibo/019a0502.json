@@ -4,21 +4,21 @@
 		"character": "Anabelle",
 		"name": "Anabelle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02030001-019a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02030001-019a0502.png",
 		"tail": "019a0502"
 	},
 	"next": "00ab0502.html",
 	"prev": "01300502.html",
 	"list": {
-		"00800502": "Tutu",
-		"01120502": "Mabel",
-		"013e0502": "Chester",
-		"01d00502": "Iggly",
-		"02860e02": "Wario - Horse Racing",
-		"02a30e02": "Boo - Golf",
-		"04101802": "Palico",
-		"04350402": "Big Man",
-		"04cd1d02": "Luke",
-		"04e51d02": "C. Viper"
+		"002b0002": "Shulk",
+		"00380102": "Toad",
+		"004f0502": "Redd",
+		"014b0502": "Marshal",
+		"01720502": "Katrina",
+		"01750502": "Tommy - Suit",
+		"023a0702": "Hammer Slam Bowser",
+		"025c0d02": "Shadow Mewtwo",
+		"035b0902": "Revali",
+		"04190902": "Zelda - Tears of the Kingdom"
 	}
 }

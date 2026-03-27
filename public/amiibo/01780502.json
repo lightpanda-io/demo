@@ -4,21 +4,21 @@
 		"character": "Resetti",
 		"name": "Resetti - Without Hat",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0101-01780502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018e0101-01780502.png",
 		"tail": "01780502"
 	},
 	"next": "03b50502.html",
 	"prev": "00ef0502.html",
 	"list": {
-		"00290002": "Lucina",
-		"004a0502": "Joan",
-		"00790502": "Deena",
-		"00b40502": "Isabelle - Winter",
-		"01460502": "Stinky",
-		"01870502": "Graham",
-		"027f0e02": "Yoshi - Tennis",
-		"02fc0502": "Bitty",
-		"03a60102": "Mario - Cat",
-		"04350402": "Big Man"
+		"00e00502": "Moose",
+		"00ef0502": "Agnes",
+		"01840502": "Mallary",
+		"018e0502": "Pashmina",
+		"01d70502": "Rosie - Amiibo Festival",
+		"02560c02": "King Dedede",
+		"027c0e02": "Daisy - Horse Racing",
+		"030d0502": "Cashmere",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04bb1d02": "Lily"
 	}
 }

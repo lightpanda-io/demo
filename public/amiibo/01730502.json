@@ -4,21 +4,21 @@
 		"character": "Phineas",
 		"name": "Phineas",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019c0001-01730502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_019c0001-01730502.png",
 		"tail": "01730502"
 	},
 	"next": "011d0502.html",
 	"prev": "00d40502.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00460502": "DJ KK",
-		"005c0502": "Al",
-		"006c0502": "Quillson",
-		"01650502": "Caroline",
-		"019a0502": "Anabelle",
+		"00410302": "Green Yarn Yoshi",
+		"00870502": "Clyde",
+		"008b0502": "Lionel",
+		"01980502": "Melba",
+		"019e0502": "Tammy",
+		"025c0d02": "Shadow Mewtwo",
 		"025d0402": "Callie",
-		"035c0902": "Bokoblin",
-		"04261902": "Gakuto Sōgetsu",
-		"04ed1d02": "Sagat"
+		"02a10e02": "Boo - Baseball",
+		"02a60e02": "Baby Mario - Baseball",
+		"039fff02": "Yoshi - Power Up Band"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Shrunk",
 		"name": "Shrunk - Loud Jacket",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10101-017b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01b10101-017b0502.png",
 		"tail": "017b0502"
 	},
 	"next": "03c60502.html",
 	"prev": "03a60102.html",
 	"list": {
-		"00300002": "Sonic",
-		"014d0502": "Joey",
-		"01ba0502": "Becky",
-		"029c0e02": "Bowser Jr. - Baseball",
-		"02fa0502": "Billy",
-		"03040502": "Louie",
-		"034f0902": "8-Bit Link",
-		"03961702": "Hayakawa",
-		"03ca0502": "Tiansheng",
-		"04bb1d02": "Lily"
+		"00280002": "King Dedede",
+		"00ba0502": "Felicity",
+		"01160502": "Grams",
+		"012a0502": "Elvis",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"028b0e02": "Waluigi - Horse Racing",
+		"03941702": "Ikari",
+		"03c50502": "Judy",
+		"04340402": "Frye",
+		"04fb0f02": "Ratha V"
 	}
 }

@@ -4,21 +4,20 @@
 		"character": "Yoshi",
 		"name": "Yoshi - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40401-02800e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c40401-02800e02.png",
 		"tail": "02800e02"
 	},
 	"next": "01990502.html",
 	"prev": "00670502.html",
 	"list": {
-		"00000002": "Mario",
-		"01060502": "Hamphrey",
-		"013d0502": "Ava",
-		"01440502": "Klaus",
-		"016b0502": "Soleil",
-		"019e0502": "Tammy",
-		"01c50502": "Rosie",
-		"024c0502": "Rover",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"04b61d02": "Dee Jay"
+		"01710502": "Brewster",
+		"019f0502": "Olaf",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02680102": "Boo",
+		"02ee0502": "Tybalt",
+		"03140502": "Dobie",
+		"03601202": "Alm",
+		"039fff02": "Yoshi - Power Up Band",
+		"043a1302": "Samus \u0026 Vi-O-La"
 	}
 }

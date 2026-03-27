@@ -4,21 +4,21 @@
 		"character": "Vivian",
 		"name": "Vivian",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05130001-02e70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05130001-02e70502.png",
 		"tail": "02e70502"
 	},
 	"next": "00f10502.html",
 	"prev": "017a0502.html",
 	"list": {
-		"00c50502": "Prince",
-		"00e90502": "Kitty",
-		"01540502": "Moe",
-		"02390602": "8-Bit Mario Modern Color",
-		"02e50f02": "Barioth and Ayuria",
-		"03110502": "Sprocket",
-		"04111802": "Palamute",
-		"04b91d02": "JP",
-		"04d31d02": "Blanka",
-		"04e41d02": "Sagat"
+		"005d0502": "Renée",
+		"00b40502": "Isabelle - Winter",
+		"00d60502": "Scoot",
+		"00e30502": "Pekoe",
+		"01890502": "Dizzy",
+		"03500902": "Toon Link - The Wind Waker",
+		"036c0a02": "Plague Knight",
+		"03ad0502": "Blathers",
+		"03c40502": "Cyd",
+		"04a30902": "Riju"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "King Dedede",
 		"name": "King Dedede",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-02560c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f020000-02560c02.png",
 		"tail": "02560c02"
 	},
-	"next": "040d0f02.html",
+	"next": "026f0e02.html",
 	"prev": "02970e02.html",
 	"list": {
-		"004f0502": "Redd",
-		"00840502": "Midge",
-		"029e0e02": "Bowser Jr. - Golf",
-		"02a30e02": "Boo - Golf",
-		"02e90502": "June",
-		"03150502": "Buzz",
-		"039fff02": "Yoshi - Power Up Band",
-		"03a20002": "Hero",
-		"03bc0502": "Niko",
-		"04d51d02": "E. Honda"
+		"005c0502": "Al",
+		"00a10502": "Cyrano",
+		"00aa0502": "Kicks",
+		"00b40502": "Isabelle - Winter",
+		"011f0502": "Tabby",
+		"01270502": "Bubbles",
+		"01700502": "Isabelle - Dress",
+		"017b0502": "Shrunk - Loud Jacket",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"04bb1d02": "Lily"
 	}
 }

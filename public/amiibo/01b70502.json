@@ -4,21 +4,21 @@
 		"character": "Doc",
 		"name": "Doc",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049e0001-01b70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_049e0001-01b70502.png",
 		"tail": "01b70502"
 	},
 	"next": "01ae0502.html",
 	"prev": "00510502.html",
 	"list": {
-		"000e0002": "Zelda",
-		"00190002": "Dr. Mario",
-		"00690502": "Patty",
-		"010d0502": "Blathers",
-		"017d0502": "Gulliver",
-		"01c10502": "Lobo",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"03c40502": "Cyd",
-		"04230002": "Alex",
-		"04e81d02": "Terry"
+		"00a50502": "Roald",
+		"00c70502": "Vladimir",
+		"01140502": "Wendell",
+		"01560502": "Hamlet",
+		"01850502": "Rocco",
+		"01ce0502": "Cally",
+		"02510002": "Lucas",
+		"02980e02": "Bowser - Tennis",
+		"02b50e02": "Rosalina - Baseball",
+		"03a60102": "Mario - Cat"
 	}
 }

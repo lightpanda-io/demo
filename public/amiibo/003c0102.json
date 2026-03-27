@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Gold Edition",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003c0102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-003c0102.png",
 		"tail": "003c0102"
 	},
 	"next": "001d0002.html",
 	"prev": "03640002.html",
 	"list": {
-		"007d0502": "Monique",
-		"00840502": "Midge",
-		"01560502": "Hamlet",
-		"023d0002": "Mewtwo",
-		"02630102": "Wario",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"03710102": "Mario - Wedding",
-		"03951702": "Yabe",
-		"039dff02": "Peach - Power Up Band",
-		"03ad0502": "Blathers"
+		"00b70502": "Chip",
+		"00b80502": "Jack",
+		"00dc0502": "Alfonso",
+		"01700502": "Isabelle - Dress",
+		"01860502": "Katt",
+		"01d50502": "Goldie - Amiibo Festival",
+		"02570c02": "Waddle Dee",
+		"03ad0502": "Blathers",
+		"03d40502": "Frett",
+		"043c1302": "Sylux"
 	}
 }

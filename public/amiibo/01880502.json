@@ -4,21 +4,21 @@
 		"character": "Peaches",
 		"name": "Peaches",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ac0001-01880502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ac0001-01880502.png",
 		"tail": "01880502"
 	},
 	"next": "01240502.html",
 	"prev": "010b0502.html",
 	"list": {
-		"00690502": "Patty",
-		"00e40502": "Teddy",
-		"01350502": "Chevre",
-		"017c0502": "Pave",
-		"01b60502": "Sally",
-		"024c0502": "Rover",
-		"02620102": "Rosalina",
-		"038f0402": "Octoling Boy",
-		"03a0ff02": "Toad - Power Up Band",
-		"04cb1d02": "Ryu"
+		"000e0002": "Zelda",
+		"00250002": "Greninja",
+		"00350102": "Luigi",
+		"00580502": "Portia",
+		"010e0502": "Tom Nook - Jacket",
+		"01270502": "Bubbles",
+		"01320502": "Ricky",
+		"016d0502": "Derwin",
+		"03120502": "Snooty",
+		"03690402": "Inkling Girl - Neon Pink"
 	}
 }

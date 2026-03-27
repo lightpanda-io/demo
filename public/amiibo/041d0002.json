@@ -4,21 +4,21 @@
 		"character": "Min Min",
 		"name": "Min Min",
 		"gameSeries": "ARMS",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a400000-041d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a400000-041d0002.png",
 		"tail": "041d0002"
 	},
 	"next": "02730e02.html",
 	"prev": "017e0502.html",
 	"list": {
-		"001f0002": "Palutena",
-		"00560502": "Fauna",
-		"00d60502": "Scoot",
-		"01210502": "Miranda",
-		"01760502": "Gracie",
-		"01b30502": "Chow",
-		"03030502": "Julia",
-		"03590902": "Urbosa",
-		"04350402": "Big Man",
-		"04da1d02": "Zangief"
+		"00140002": "Bowser",
+		"00630502": "Bluebear",
+		"00800502": "Tutu",
+		"00a30502": "Cole",
+		"01960502": "Frita",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02850e02": "Wario - Golf",
+		"02f50502": "Rex",
+		"03060502": "Admiral",
+		"03500902": "Toon Link - The Wind Waker"
 	}
 }

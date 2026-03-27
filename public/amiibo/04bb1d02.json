@@ -4,21 +4,21 @@
 		"character": "Lily",
 		"name": "Lily",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d00001-04bb1d02.png",
 		"tail": "04bb1d02"
 	},
 	"next": "04b91d02.html",
 	"prev": "04b81d02.html",
 	"list": {
-		"005b0502": "Kyle",
-		"00d20502": "Olivia",
-		"010f0502": "Pelly",
-		"01190502": "Don Resetti - Without Hat",
-		"013f0502": "Merry",
-		"01540502": "Moe",
-		"02540c02": "Kirby",
-		"03ac0502": "Wilbur",
-		"03cc0502": "Marlo",
-		"03d20502": "Ace"
+		"00980502": "Pancetti",
+		"00aa0502": "Kicks",
+		"00fb0502": "Anicotti",
+		"01200502": "Kody",
+		"023e0302": "Mega Yarn Yoshi",
+		"02670102": "Waluigi",
+		"02890e02": "Waluigi - Tennis",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"03990902": "Link - Link's Awakening",
+		"04131302": "E.M.M.I."
 	}
 }

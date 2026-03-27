@@ -4,21 +4,21 @@
 		"character": "Ingrid",
 		"name": "Ingrid",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34dc0001-04f01d02.png",
 		"tail": "04f01d02"
 	},
 	"next": "00bf0502.html",
 	"prev": "04ef1d02.html",
 	"list": {
-		"00480502": "Kapp'n",
-		"00790502": "Deena",
-		"00910502": "Roscoe",
-		"01800502": "Goldie",
-		"01a30502": "Rory",
-		"01ad0502": "Static",
-		"023d0002": "Mewtwo",
-		"02740e02": "Peach - Baseball",
-		"03630002": "Corrin - Player 2",
-		"036e0a02": "King Knight"
+		"00250002": "Greninja",
+		"01080502": "Kid Cat",
+		"01610502": "Cube",
+		"01920502": "Dotty",
+		"024d0502": "Timmy \u0026 Tommy",
+		"026b0e02": "Mario - Tennis",
+		"02850e02": "Wario - Golf",
+		"034c0902": "Link - Majora's Mask",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"04150402": "Inkling - Yellow"
 	}
 }

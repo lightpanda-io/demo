@@ -4,21 +4,21 @@
 		"character": "Ava",
 		"name": "Ava",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_029e0001-013d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_029e0001-013d0502.png",
 		"tail": "013d0502"
 	},
 	"next": "00b50502.html",
 	"prev": "00300002.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00db0502": "Wendy",
-		"00e40502": "Teddy",
-		"00ec0502": "Bud",
-		"00f30502": "Sprinkle",
-		"01c20502": "Hippeux",
-		"02b00e02": "Birdo - Baseball",
-		"03720102": "Peach - Wedding",
-		"03d30502": "Rio",
-		"04a60902": "Yunobo"
+		"00090002": "Pikachu",
+		"00380102": "Toad",
+		"007b0502": "Bangle",
+		"01130502": "Leif",
+		"011e0502": "Anchovy",
+		"02840e02": "Wario - Tennis",
+		"02880e02": "Waluigi - Baseball",
+		"03870002": "Pokemon Trainer",
+		"039cff02": "Luigi - Power Up Band",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

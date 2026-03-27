@@ -4,21 +4,21 @@
 		"character": "Bree",
 		"name": "Bree",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040f0001-01500502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_040f0001-01500502.png",
 		"tail": "01500502"
 	},
 	"next": "007b0502.html",
 	"prev": "01c80502.html",
 	"list": {
-		"007b0502": "Bangle",
-		"00950502": "Goose",
-		"00b10502": "Leila",
-		"02690e02": "Mario - Soccer",
-		"02a40e02": "Boo - Horse Racing",
-		"02f80502": "Jacob",
-		"03651302": "Samus Aran",
-		"03760402": "Pearl",
-		"03931702": "Pawapuro",
-		"04b01d02": "Chun-Li"
+		"00040002": "Link",
+		"00ab0502": "Labelle",
+		"00f70502": "Pecan",
+		"02fd0502": "Maggie",
+		"034d0902": "Link - Twilight Princess",
+		"03640002": "Bayonetta - Player 2",
+		"03680102": "Koopa Troopa",
+		"04ac1d02": "Jamie",
+		"04b31d02": "Blanka",
+		"04f31d02": "Mai"
 	}
 }

@@ -4,21 +4,20 @@
 		"character": "Mai",
 		"name": "Mai",
 		"gameSeries": "Fatal Fury",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c810001-04f31d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3c810001-04f31d02.png",
 		"tail": "04f31d02"
 	},
 	"next": "04ec1d02.html",
 	"prev": "04f11d02.html",
 	"list": {
-		"004d0502": "Pascal",
-		"009c0502": "Diana",
-		"00b90502": "Poncho",
-		"00d80502": "Broccolo",
-		"00df0502": "Gabi",
-		"00f20502": "Jay",
-		"028b0e02": "Waluigi - Horse Racing",
-		"02fa0502": "Billy",
-		"035a0902": "Mipha",
-		"03d70502": "Faith"
+		"01010502": "Vesta",
+		"01060502": "Hamphrey",
+		"01180502": "Digby - Raincoat",
+		"01390502": "Eloise",
+		"01740502": "Celeste",
+		"019d0502": "Peewee",
+		"02f40502": "Ketchup",
+		"03931702": "Pawapuro",
+		"04ec1d02": "Elena"
 	}
 }

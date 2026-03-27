@@ -4,21 +4,21 @@
 		"character": "Filbert",
 		"name": "Filbert",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04df0001-00e80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04df0001-00e80502.png",
 		"tail": "00e80502"
 	},
 	"next": "01290502.html",
 	"prev": "03830002.html",
 	"list": {
-		"001a0002": "Wario",
-		"002c0002": "Ness",
-		"00500502": "Saharah",
-		"01b10502": "Ribbot",
-		"01cb0502": "Cranston",
-		"01ce0502": "Cally",
-		"023f0502": "Isabelle - Winter Outfit",
-		"02e60f02": "Qurupeco and Dan",
-		"03a80502": "Tom Nook",
-		"03aa0502": "Isabelle"
+		"00a30502": "Cole",
+		"00d20502": "Olivia",
+		"00f80502": "Drake",
+		"01320502": "Ricky",
+		"01b90502": "Tank",
+		"02520002": "Roy",
+		"02810e02": "Yoshi - Horse Racing",
+		"02870e02": "Waluigi - Soccer",
+		"035a0902": "Mipha",
+		"03d60502": "Roswell"
 	}
 }

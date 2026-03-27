@@ -4,21 +4,21 @@
 		"character": "Maggie",
 		"name": "Maggie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04820001-02fd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04820001-02fd0502.png",
 		"tail": "02fd0502"
 	},
 	"next": "03791502.html",
 	"prev": "034f0902.html",
 	"list": {
-		"007c0502": "Phil",
-		"01250502": "Mitzi",
-		"01710502": "Brewster",
-		"01860502": "Katt",
-		"03880002": "Chrom",
-		"03c10502": "Megan",
-		"043f1c02": "Mario - My Mario Wooden Blocks",
-		"04d11d02": "Guile",
-		"04d81d02": "Marisa",
-		"04ee1d02": "C. Viper"
+		"00350102": "Luigi",
+		"00a50502": "Roald",
+		"00d10502": "Peck",
+		"024b0502": "Isabelle - Summer Outfit",
+		"028a0e02": "Waluigi - Golf",
+		"03550902": "Guardian",
+		"03750d02": "Detective Pikachu",
+		"03a60102": "Mario - Cat",
+		"04be1d02": "A.K.I",
+		"04d91d02": "JP"
 	}
 }

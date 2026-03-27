@@ -4,21 +4,21 @@
 		"character": "Cyrano",
 		"name": "Cyrano",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02000001-00a10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02000001-00a10502.png",
 		"tail": "00a10502"
 	},
 	"next": "00d80502.html",
 	"prev": "015c0502.html",
 	"list": {
-		"00b20502": "Shrunk",
-		"00fe0502": "Vic",
-		"016f0502": "Chrissy",
-		"019d0502": "Peewee",
-		"024e0502": "Kapp'n",
-		"02510002": "Lucas",
-		"026a0e02": "Mario - Baseball",
-		"03890002": "Ken",
-		"03ae0502": "Celeste",
-		"03b30502": "C.J."
+		"00120002": "Captain Falcon",
+		"004a0502": "Joan",
+		"00ad0502": "Booker",
+		"012a0502": "Elvis",
+		"015b0502": "Victoria",
+		"02530002": "Ryu",
+		"03030502": "Julia",
+		"03800002": "Dark Samus",
+		"04b41d02": "Dhalsim",
+		"04dc1d02": "Cammy"
 	}
 }

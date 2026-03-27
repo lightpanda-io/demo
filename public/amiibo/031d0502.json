@@ -4,21 +4,21 @@
 		"character": "Chelsea",
 		"name": "Chelsea",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02e00101-031d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02e00101-031d0502.png",
 		"tail": "031d0502"
 	},
 	"next": "001b0002.html",
 	"prev": "00660502.html",
 	"list": {
-		"00ba0502": "Felicity",
-		"00ef0502": "Agnes",
-		"011d0502": "Lily",
-		"01c70502": "Maelle",
-		"02700e02": "Luigi - Tennis",
-		"02e60f02": "Qurupeco and Dan",
-		"03b90502": "Gulliver",
-		"040e0f02": "Tsukino",
-		"04180902": "Link - Tears of the Kingdom",
-		"04a30902": "Riju"
+		"00d80502": "Broccolo",
+		"00eb0502": "Nan",
+		"01240502": "Ken",
+		"01a80502": "Aurora",
+		"01ab0502": "Rod",
+		"02460502": "Cyrus",
+		"02520002": "Roy",
+		"03630002": "Corrin - Player 2",
+		"03981702": "Daijobu",
+		"043d1b02": "Noah"
 	}
 }

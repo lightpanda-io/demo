@@ -4,21 +4,21 @@
 		"character": "Olimar",
 		"name": "Olimar",
 		"gameSeries": "Pikmin",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06400100-001e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_06400100-001e0002.png",
 		"tail": "001e0002"
 	},
 	"next": "00870502.html",
 	"prev": "01d80502.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"005a0502": "Cheri",
-		"00f60502": "Hopper",
-		"013f0502": "Merry",
-		"01b50502": "Jacques",
-		"02680102": "Boo",
-		"03020502": "Raddle",
-		"03810002": "Ice Climbers",
-		"03911602": "Loot Goblin",
-		"03c30502": "Audie"
+		"002e0002": "R.O.B. - Famicom",
+		"00630502": "Bluebear",
+		"01200502": "Kody",
+		"01240502": "Ken",
+		"01440502": "Klaus",
+		"024e0502": "Kapp'n",
+		"02920e02": "Diddy Kong - Baseball",
+		"02b10e02": "Birdo - Tennis",
+		"03cf0502": "Quinn",
+		"04340402": "Frye"
 	}
 }

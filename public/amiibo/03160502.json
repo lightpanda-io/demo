@@ -4,21 +4,21 @@
 		"character": "Cleo",
 		"name": "Cleo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ab0001-03160502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ab0001-03160502.png",
 		"tail": "03160502"
 	},
 	"next": "01180502.html",
 	"prev": "002f0002.html",
 	"list": {
-		"00330002": "R.O.B. - NES",
-		"00840502": "Midge",
-		"00a00502": "Bertha",
-		"01ac0502": "Purrl",
-		"02570c02": "Waddle Dee",
-		"02bb0e02": "Metal Mario - Tennis",
-		"036d0a02": "Specter Knight",
-		"03710102": "Mario - Wedding",
-		"038f0402": "Octoling Boy",
-		"04dc1d02": "Cammy"
+		"002c0002": "Ness",
+		"00350102": "Luigi",
+		"00950502": "Goose",
+		"00a40502": "Willow",
+		"00db0502": "Wendy",
+		"01580502": "Monty",
+		"01a00502": "Lucy",
+		"024e0502": "Kapp'n",
+		"02b00e02": "Birdo - Baseball",
+		"0432ff02": "Diddy Kong - Power Up Band"
 	}
 }

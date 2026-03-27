@@ -4,21 +4,21 @@
 		"character": "Stitches",
 		"name": "Stitches",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01810502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02820001-01810502.png",
 		"tail": "01810502"
 	},
 	"next": "01a80502.html",
 	"prev": "007b0502.html",
 	"list": {
-		"00610502": "Tiffany",
-		"008a0502": "Yuka",
-		"01170502": "Timmy - Full Apron",
-		"02550c02": "Meta Knight",
-		"027f0e02": "Yoshi - Tennis",
-		"02b80e02": "Rosalina - Horse Racing",
-		"02fd0502": "Maggie",
-		"030e0502": "Tad",
-		"037b0002": "King K. Rool",
-		"040c0f02": "Razewing Ratha"
+		"001e0002": "Olimar",
+		"00220002": "Mii Swordfighter",
+		"002c0002": "Ness",
+		"00870502": "Clyde",
+		"00af0502": "Tommy - Uniform",
+		"00e90502": "Kitty",
+		"01760502": "Gracie",
+		"01b40502": "Sylvia",
+		"024b0502": "Isabelle - Summer Outfit",
+		"0432ff02": "Diddy Kong - Power Up Band"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Miranda",
 		"name": "Miranda",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03130001-01210502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03130001-01210502.png",
 		"tail": "01210502"
 	},
 	"next": "01720502.html",
 	"prev": "008e0502.html",
 	"list": {
-		"00020002": "Yoshi",
-		"01960502": "Frita",
-		"02560c02": "King Dedede",
-		"02580002": "Mega Man - Gold Edition",
-		"02590002": "Cloud",
-		"038a0002": "Snake",
-		"03d50502": "Azalea",
-		"04150402": "Inkling - Yellow",
-		"04380402": "Pearl - Side Order",
-		"04d61d02": "Dee Jay"
+		"00950502": "Goose",
+		"00c50502": "Prince",
+		"00d60502": "Scoot",
+		"00d80502": "Broccolo",
+		"00dc0502": "Alfonso",
+		"02570c02": "Waddle Dee",
+		"02630102": "Wario",
+		"02e40f02": "Rathian and Cheval",
+		"03af0502": "Mabel",
+		"041c0402": "Smallfry"
 	}
 }

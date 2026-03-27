@@ -4,21 +4,21 @@
 		"character": "Mott",
 		"name": "Mott",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ec0001-01830502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ec0001-01830502.png",
 		"tail": "01830502"
 	},
 	"next": "01af0502.html",
 	"prev": "00b90502.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"010c0502": "Rover",
-		"01530502": "Skye",
-		"01550502": "Flora",
-		"01ab0502": "Rod",
-		"01ba0502": "Becky",
-		"027c0e02": "Daisy - Horse Racing",
-		"027f0e02": "Yoshi - Tennis",
-		"02b90e02": "Metal Mario - Soccer",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male"
+		"00590502": "Leonardo",
+		"00910502": "Roscoe",
+		"00e50502": "Mathilda",
+		"00e60502": "Ed",
+		"00f20502": "Jay",
+		"01270502": "Bubbles",
+		"01740502": "Celeste",
+		"03630002": "Corrin - Player 2",
+		"037f0002": "Ridley",
+		"038b0002": "Simon"
 	}
 }

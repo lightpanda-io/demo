@@ -4,21 +4,21 @@
 		"character": "Brewster",
 		"name": "Brewster",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01900001-01710502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01900001-01710502.png",
 		"tail": "01710502"
 	},
 	"next": "015c0502.html",
 	"prev": "00470502.html",
 	"list": {
-		"00750502": "Punchy",
-		"01ad0502": "Static",
-		"01ba0502": "Becky",
-		"024e0502": "Kapp'n",
-		"02a30e02": "Boo - Golf",
-		"02a60e02": "Baby Mario - Baseball",
-		"02fc0502": "Bitty",
-		"03840002": "Squirtle",
-		"04ac1d02": "Jamie",
-		"04f11d02": "Terry"
+		"00a80502": "K.K. Slider",
+		"00d20502": "Olivia",
+		"00d50502": "Rodney",
+		"01720502": "Katrina",
+		"025d0402": "Callie",
+		"02680102": "Boo",
+		"03a70102": "Peach - Cat",
+		"04220002": "Steve",
+		"042b1802": "Palico",
+		"04e61d02": "Alex"
 	}
 }

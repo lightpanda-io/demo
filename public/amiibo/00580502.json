@@ -4,20 +4,21 @@
 		"character": "Portia",
 		"name": "Portia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ef0001-00580502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02ef0001-00580502.png",
 		"tail": "00580502"
 	},
 	"next": "00ee0502.html",
 	"prev": "02910e02.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00290002": "Lucina",
-		"00900502": "Cherry",
-		"00ae0502": "Katie",
-		"00d20502": "Olivia",
-		"013d0502": "Ava",
-		"018f0502": "Shep",
-		"026e0e02": "Luigi - Soccer",
-		"03b50502": "Daisy Mae"
+		"00100002": "Pit",
+		"00120002": "Captain Falcon",
+		"00840502": "Midge",
+		"011d0502": "Lily",
+		"01440502": "Klaus",
+		"01880502": "Peaches",
+		"01a20502": "Puddles",
+		"01d70502": "Rosie - Amiibo Festival",
+		"03540902": "Link - Rider",
+		"04be1d02": "A.K.I"
 	}
 }

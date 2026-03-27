@@ -4,21 +4,21 @@
 		"character": "Barold",
 		"name": "Barold",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028d0001-01bd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_028d0001-01bd0502.png",
 		"tail": "01bd0502"
 	},
 	"next": "02b00e02.html",
 	"prev": "016b0502.html",
 	"list": {
-		"01080502": "Kid Cat",
-		"01480502": "Tucker",
-		"01a20502": "Puddles",
-		"01ac0502": "Purrl",
-		"02940e02": "Diddy Kong - Golf",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"03530902": "Link - Archer",
-		"038c0002": "Richter",
-		"03b20502": "K.K. Slider",
-		"03d00502": "Chabwick"
+		"00220002": "Mii Swordfighter",
+		"005d0502": "Renée",
+		"00660502": "Deli",
+		"01040502": "Keaton",
+		"01060502": "Hamphrey",
+		"01660502": "Sparro",
+		"018d0502": "Croque",
+		"03620002": "Cloud - Player 2",
+		"03b00502": "Sable",
+		"04261902": "Gakuto Sōgetsu"
 	}
 }

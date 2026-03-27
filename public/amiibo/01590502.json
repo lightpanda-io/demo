@@ -4,21 +4,21 @@
 		"character": "Dora",
 		"name": "Dora",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040c0001-01590502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_040c0001-01590502.png",
 		"tail": "01590502"
 	},
 	"next": "018c0502.html",
 	"prev": "03040502.html",
 	"list": {
-		"00910502": "Roscoe",
-		"026a0e02": "Mario - Baseball",
-		"027e0e02": "Yoshi - Baseball",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"02ef0502": "Huck",
-		"03b90502": "Gulliver",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04bf1d02": "Ed",
-		"04e71d02": "Ingrid",
-		"04ef1d02": "Alex"
+		"012a0502": "Elvis",
+		"012b0502": "Canberra",
+		"01590502": "Dora",
+		"016b0502": "Soleil",
+		"017f0502": "Zipper",
+		"023a0702": "Hammer Slam Bowser",
+		"024d0502": "Timmy \u0026 Tommy",
+		"02500a02": "Shovel Knight",
+		"03190502": "Rilla",
+		"03710102": "Mario - Wedding"
 	}
 }

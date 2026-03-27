@@ -4,21 +4,21 @@
 		"character": "Romin Kirishima",
 		"name": "Romin Kirishima",
 		"gameSeries": "Yu-Gi-Oh!",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38430001-04271902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38430001-04271902.png",
 		"tail": "04271902"
 	},
 	"next": "01860502.html",
 	"prev": "01080502.html",
 	"list": {
-		"00820502": "Mint",
-		"00890502": "Biff",
-		"016e0502": "Francine",
-		"02a10e02": "Boo - Baseball",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"02ff0502": "Plucky",
-		"03770402": "Marina",
-		"037b0002": "King K. Rool",
-		"04cd1d02": "Luke",
-		"04e41d02": "Sagat"
+		"00a40502": "Willow",
+		"010f0502": "Pelly",
+		"015c0502": "Lyman",
+		"01850502": "Rocco",
+		"019d0502": "Peewee",
+		"02680102": "Boo",
+		"027b0e02": "Daisy - Golf",
+		"03530902": "Link - Archer",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04ab1d02": "Luke"
 	}
 }

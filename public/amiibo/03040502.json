@@ -4,21 +4,21 @@
 		"character": "Louie",
 		"name": "Louie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036d0001-03040502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_036d0001-03040502.png",
 		"tail": "03040502"
 	},
 	"next": "01590502.html",
 	"prev": "028f0e02.html",
 	"list": {
-		"005f0502": "Jambette",
-		"00790502": "Deena",
-		"00d80502": "Broccolo",
-		"02780e02": "Daisy - Soccer",
-		"03060502": "Admiral",
-		"03500902": "Toon Link - The Wind Waker",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04d21d02": "Juri",
-		"04df1d02": "Ed",
-		"04f11d02": "Terry"
+		"00120002": "Captain Falcon",
+		"004d0502": "Pascal",
+		"01280502": "Cousteau",
+		"01920502": "Dotty",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02890e02": "Waluigi - Tennis",
+		"02fe0502": "Murphy",
+		"03ca0502": "Tiansheng",
+		"04a40902": "Sidon",
+		"04b31d02": "Blanka"
 	}
 }

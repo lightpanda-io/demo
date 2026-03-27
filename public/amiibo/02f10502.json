@@ -4,21 +4,21 @@
 		"character": "Boris",
 		"name": "Boris",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04810001-02f10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04810001-02f10502.png",
 		"tail": "02f10502"
 	},
 	"next": "016a0502.html",
 	"prev": "041a0902.html",
 	"list": {
-		"00430302": "Light Blue Yarn Yoshi",
-		"018c0502": "Broffina",
-		"01b40502": "Sylvia",
-		"02450502": "Reese",
-		"02970e02": "Bowser - Baseball",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03ac0502": "Wilbur",
-		"03c30502": "Audie",
-		"04121302": "Samus - Metroid Dread",
-		"04f21d02": "Mai"
+		"00880502": "Bella",
+		"00a50502": "Roald",
+		"00a80502": "K.K. Slider",
+		"00af0502": "Tommy - Uniform",
+		"01080502": "Kid Cat",
+		"01b10502": "Ribbot",
+		"024b0502": "Isabelle - Summer Outfit",
+		"03860002": "Incineroar",
+		"038d0002": "Piranha Plant",
+		"04e71d02": "Ingrid"
 	}
 }

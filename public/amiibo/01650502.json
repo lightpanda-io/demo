@@ -4,21 +4,21 @@
 		"character": "Caroline",
 		"name": "Caroline",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e30001-01650502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e30001-01650502.png",
 		"tail": "01650502"
 	},
 	"next": "01120502.html",
 	"prev": "00820502.html",
 	"list": {
-		"00570502": "Curt",
-		"007f0502": "Samson",
-		"008e0502": "Amelia",
-		"01130502": "Leif",
-		"013b0502": "Hazel",
-		"01660502": "Sparro",
-		"016b0502": "Soleil",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02460502": "Cyrus",
-		"04271902": "Romin Kirishima"
+		"00000002": "Mario",
+		"00d90502": "Coco",
+		"01180502": "Digby - Raincoat",
+		"015a0502": "Biskit",
+		"019f0502": "Olaf",
+		"01b70502": "Doc",
+		"02540c02": "Kirby",
+		"030b0502": "Leopold",
+		"03bb0502": "Lottie - Island",
+		"04d81d02": "Marisa"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Lily",
 		"name": "Lily",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d00001-04db1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d00001-04db1d02.png",
 		"tail": "04db1d02"
 	},
 	"next": "04d91d02.html",
 	"prev": "04d81d02.html",
 	"list": {
-		"00210002": "Mii Brawler",
-		"003d0102": "Mario - Silver Edition",
-		"013d0502": "Ava",
-		"018f0502": "Shep",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"03010502": "Claude",
-		"030e0502": "Tad",
-		"03af0502": "Mabel",
-		"03bf0502": "Isabelle - Sweater"
+		"00390102": "Bowser",
+		"00550502": "Bob",
+		"00e50502": "Mathilda",
+		"01710502": "Brewster",
+		"01910502": "Erik",
+		"01c30502": "Margie",
+		"03d60502": "Roswell",
+		"04b31d02": "Blanka",
+		"04b61d02": "Dee Jay",
+		"04dd1d02": "Rashid"
 	}
 }

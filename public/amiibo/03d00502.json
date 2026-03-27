@@ -4,21 +4,21 @@
 		"character": "Chabwick",
 		"name": "Chabwick",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a190001-03d00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a190001-03d00502.png",
 		"tail": "03d00502"
 	},
 	"next": "00b10502.html",
 	"prev": "00a20502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"00260002": "Jigglypuff",
-		"00850502": "Gruff",
-		"010e0502": "Tom Nook - Jacket",
-		"01780502": "Resetti - Without Hat",
-		"018a0502": "Penelope",
-		"03710102": "Mario - Wedding",
-		"038a0002": "Snake",
-		"03ad0502": "Blathers",
-		"04f01d02": "Ingrid"
+		"001c0002": "Falco",
+		"00a30502": "Cole",
+		"00da0502": "Groucho",
+		"00db0502": "Wendy",
+		"014e0502": "Pippy",
+		"01500502": "Bree",
+		"02b20e02": "Birdo - Golf",
+		"035c0902": "Bokoblin",
+		"03c40502": "Cyd",
+		"04251902": "Tatsuhisa “Luke” Kamijō"
 	}
 }

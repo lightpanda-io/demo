@@ -4,21 +4,21 @@
 		"character": "Buzz",
 		"name": "Buzz",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044e0001-03150502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_044e0001-03150502.png",
 		"tail": "03150502"
 	},
 	"next": "03ad0502.html",
 	"prev": "03a70102.html",
 	"list": {
-		"00700502": "Octavian",
-		"008c0502": "Flo",
-		"00f70502": "Pecan",
-		"01030502": "Pango",
-		"018e0502": "Pashmina",
-		"01be0502": "Nibbles",
-		"02600402": "Inkling Boy - Purple",
-		"034e0902": "Link - Skyward Sword",
-		"03850002": "Pichu",
-		"038c0002": "Richter"
+		"00590502": "Leonardo",
+		"00810502": "T-Bone",
+		"00e20502": "Zell",
+		"00fe0502": "Vic",
+		"01540502": "Moe",
+		"02980e02": "Bowser - Tennis",
+		"031d0502": "Chelsea",
+		"03ca0502": "Tiansheng",
+		"040f1802": "Magnamalo",
+		"04e11d02": "M. Bison"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Rosalina",
 		"name": "Rosalina",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00040000-02620102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00040000-02620102.png",
 		"tail": "02620102"
 	},
 	"next": "02460502.html",
 	"prev": "02ab0e02.html",
 	"list": {
-		"00160002": "Toon Link",
-		"009b0502": "Clay",
-		"009e0502": "Muffy",
-		"00de0502": "Butch",
-		"00f10502": "Bettina",
-		"01370502": "Tangy",
-		"02ec0502": "Hornsby",
-		"03120502": "Snooty",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04220002": "Steve"
+		"00560502": "Fauna",
+		"00830502": "Pudge",
+		"00910502": "Roscoe",
+		"01270502": "Bubbles",
+		"01d00502": "Iggly",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"03781402": "Solaire of Astora",
+		"03b10502": "Label",
+		"041e0002": "Pyra",
+		"04c10102": "Elephant Mario"
 	}
 }

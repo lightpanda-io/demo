@@ -4,21 +4,21 @@
 		"character": "Coach",
 		"name": "Coach",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02510001-00c10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02510001-00c10502.png",
 		"tail": "00c10502"
 	},
 	"next": "01910502.html",
 	"prev": "040e0f02.html",
 	"list": {
-		"00710502": "Winnie",
-		"00fb0502": "Anicotti",
-		"013d0502": "Ava",
-		"018b0502": "Boone",
-		"01c90502": "OHare",
-		"02440502": "Lottie",
-		"02b40e02": "Rosalina - Soccer",
-		"02e90502": "June",
-		"03540902": "Link - Rider",
-		"03a0ff02": "Toad - Power Up Band"
+		"00d60502": "Scoot",
+		"00e10502": "Timbra",
+		"00f20502": "Jay",
+		"01080502": "Kid Cat",
+		"011f0502": "Tabby",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02f40502": "Ketchup",
+		"03590902": "Urbosa",
+		"03601202": "Alm",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
 	}
 }

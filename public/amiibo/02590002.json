@@ -4,21 +4,21 @@
 		"character": "Cloud Strife",
 		"name": "Cloud",
 		"gameSeries": "Final Fantasy",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36000000-02590002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_36000000-02590002.png",
 		"tail": "02590002"
 	},
 	"next": "019b0502.html",
 	"prev": "00040002.html",
 	"list": {
-		"00190002": "Dr. Mario",
-		"00a90502": "Reese",
-		"00ac0502": "Copper",
-		"017b0502": "Shrunk - Loud Jacket",
-		"01b10502": "Ribbot",
-		"02810e02": "Yoshi - Horse Racing",
-		"03a50002": "Byleth",
-		"03bb0502": "Lottie - Island",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04d11d02": "Guile"
+		"00660502": "Deli",
+		"006c0502": "Quillson",
+		"00780502": "Limberg",
+		"00f10502": "Bettina",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02500a02": "Shovel Knight",
+		"02820e02": "Wario - Soccer",
+		"03090502": "Weber",
+		"035f1102": "Pikmin",
+		"03760402": "Pearl"
 	}
 }

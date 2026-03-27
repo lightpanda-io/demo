@@ -4,20 +4,21 @@
 		"character": "Akuma",
 		"name": "Akuma",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d50001-04c01d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d50001-04c01d02.png",
 		"tail": "04c01d02"
 	},
 	"next": "04e11d02.html",
 	"prev": "04bf1d02.html",
 	"list": {
-		"005a0502": "Cheri",
-		"00840502": "Midge",
-		"019f0502": "Olaf",
+		"000d0002": "Diddy Kong",
+		"006f0502": "Shari",
 		"01ce0502": "Cally",
-		"02760e02": "Peach - Golf",
-		"02eb0502": "Paolo",
-		"03741402": "Super Mario Cereal",
-		"041a0902": "Ganondorf - Tears of the Kingdom",
-		"04b61d02": "Dee Jay"
+		"02400502": "K. K. Slider",
+		"02600402": "Inkling Boy - Purple",
+		"02a80e02": "Baby Mario - Golf",
+		"037e0002": "Wolf",
+		"03d20502": "Ace",
+		"04180902": "Link - Tears of the Kingdom",
+		"04df1d02": "Ed"
 	}
 }

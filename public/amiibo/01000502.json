@@ -4,21 +4,21 @@
 		"character": "Drift",
 		"name": "Drift",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033c0001-01000502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033c0001-01000502.png",
 		"tail": "01000502"
 	},
 	"next": "01c30502.html",
 	"prev": "011a0502.html",
 	"list": {
-		"001c0002": "Falco",
-		"006d0502": "Marcie",
-		"017d0502": "Gulliver",
-		"02750e02": "Peach - Tennis",
-		"02910e02": "Diddy Kong - Soccer",
-		"02fc0502": "Bitty",
-		"034d0902": "Link - Twilight Princess",
-		"03601202": "Alm",
-		"03730102": "Bowser - Wedding",
-		"04e11d02": "M. Bison"
+		"00060002": "Samus",
+		"00fe0502": "Vic",
+		"01090502": "Agent S",
+		"011a0502": "Isabelle - Kimono",
+		"02490502": "Resetti",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"03120502": "Snooty",
+		"03150502": "Buzz",
+		"04af1d02": "Kimberly",
+		"04de1d02": "A.K.I"
 	}
 }

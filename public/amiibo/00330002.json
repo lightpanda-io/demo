@@ -4,21 +4,21 @@
 		"character": "R.O.B.",
 		"name": "R.O.B. - NES",
 		"gameSeries": "Classic Nintendo",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-00330002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07810000-00330002.png",
 		"tail": "00330002"
 	},
 	"next": "02bf0e02.html",
 	"prev": "01030502.html",
 	"list": {
-		"000a0002": "Kirby",
-		"001d0002": "Zero Suit Samus",
-		"00890502": "Biff",
-		"01350502": "Chevre",
-		"01620502": "Claudia",
-		"024a0502": "Kicks",
-		"026d0e02": "Mario - Horse Racing",
-		"02b80e02": "Rosalina - Horse Racing",
-		"03110502": "Sprocket",
-		"03d00502": "Chabwick"
+		"00010002": "Peach",
+		"008c0502": "Flo",
+		"009a0502": "Bunnie",
+		"00c20502": "Kitt",
+		"01580502": "Monty",
+		"015c0502": "Lyman",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02910e02": "Diddy Kong - Soccer",
+		"03611202": "Celica",
+		"036b0402": "Inkling Squid - Neon Purple"
 	}
 }

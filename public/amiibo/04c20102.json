@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Toad",
+		"name": "Captain Toad \u0026 Talking Flower",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_000a0100-04c20102.png",
+		"tail": "04c20102"
+	},
+	"next": "04c30102.html",
+	"prev": "03a0ff02.html",
+	"list": {
+		"00200002": "Dark Pit",
+		"002b0002": "Shulk",
+		"01440502": "Klaus",
+		"014f0502": "Buck",
+		"01af0502": "Zucker",
+		"02910e02": "Diddy Kong - Soccer",
+		"03540902": "Link - Rider",
+		"03c70502": "Reneigh",
+		"04b11d02": "Guile",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
+	}
+}

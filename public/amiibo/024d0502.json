@@ -4,20 +4,21 @@
 		"character": "Timmy \u0026 Tommy",
 		"name": "Timmy \u0026 Tommy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840000-024d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01840000-024d0502.png",
 		"tail": "024d0502"
 	},
 	"next": "000b0002.html",
 	"prev": "04220002.html",
 	"list": {
-		"00120002": "Captain Falcon",
-		"00bb0502": "Ozzie",
-		"01220502": "Del",
-		"01630502": "Curly",
-		"01b30502": "Chow",
-		"01b80502": "Pompom",
-		"023d0002": "Mewtwo",
-		"027e0e02": "Yoshi - Baseball",
-		"029f0e02": "Bowser Jr. - Horse Racing"
+		"000e0002": "Zelda",
+		"000f0002": "Little Mac",
+		"002d0002": "Mr. Game \u0026 Watch",
+		"00990502": "Chief",
+		"00b20502": "Shrunk",
+		"01480502": "Tucker",
+		"01610502": "Cube",
+		"02430502": "Digby",
+		"02770e02": "Peach - Horse Racing",
+		"039bff02": "Mario - Power Up Band"
 	}
 }

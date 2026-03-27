@@ -4,21 +4,21 @@
 		"character": "Bowser Jr.",
 		"name": "Bowser Jr. - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ca0301-029d0e02.png",
 		"tail": "029d0e02"
 	},
 	"next": "02600402.html",
 	"prev": "00d00502.html",
 	"list": {
-		"006b0502": "Gigi",
-		"00b20502": "Shrunk",
-		"00f30502": "Sprinkle",
-		"01300502": "Bam",
-		"025b0002": "Bayonetta",
+		"00070002": "Wii Fit Trainer",
+		"00ea0502": "Beau",
+		"00ef0502": "Agnes",
+		"018b0502": "Boone",
+		"01b90502": "Tank",
+		"01c20502": "Hippeux",
+		"02950e02": "Diddy Kong - Horse Racing",
 		"02b30e02": "Birdo - Horse Racing",
-		"037f0002": "Ridley",
-		"038d0002": "Piranha Plant",
-		"04261902": "Gakuto Sōgetsu",
-		"04c01d02": "Akuma"
+		"03b30502": "C.J.",
+		"04d61d02": "Dee Jay"
 	}
 }

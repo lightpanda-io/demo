@@ -4,21 +4,21 @@
 		"character": "Gruff",
 		"name": "Gruff",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_035a0001-00850502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_035a0001-00850502.png",
 		"tail": "00850502"
 	},
 	"next": "03661302.html",
 	"prev": "00310002.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"01160502": "Grams",
-		"012d0502": "Marina",
-		"01330502": "Deirdre",
-		"01d50502": "Goldie - Amiibo Festival",
-		"025b0002": "Bayonetta",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"036a0402": "Inkling Boy - Neon Green",
-		"04340402": "Frye",
-		"04401c02": "Luigi - My Mario Wooden Blocks"
+		"00cd0502": "Sly",
+		"01260502": "Rodeo",
+		"018d0502": "Croque",
+		"024c0502": "Rover",
+		"02840e02": "Wario - Tennis",
+		"02bc0e02": "Metal Mario - Golf",
+		"03150502": "Buzz",
+		"03c40502": "Cyd",
+		"03c70502": "Reneigh",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

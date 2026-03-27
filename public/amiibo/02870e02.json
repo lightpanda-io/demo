@@ -4,21 +4,21 @@
 		"character": "Waluigi",
 		"name": "Waluigi - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c60101-02870e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c60101-02870e02.png",
 		"tail": "02870e02"
 	},
 	"next": "01ac0502.html",
 	"prev": "035e1002.html",
 	"list": {
-		"004d0502": "Pascal",
-		"00870502": "Clyde",
-		"00fd0502": "Charlise",
-		"01ae0502": "Celia",
-		"027b0e02": "Daisy - Golf",
-		"02ad0e02": "Baby Luigi - Golf",
-		"03030502": "Julia",
-		"03cb0502": "Shino",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"04291902": "Nail Saionji"
+		"00640502": "Bill",
+		"00890502": "Biff",
+		"00a90502": "Reese",
+		"00f30502": "Sprinkle",
+		"01570502": "Astrid",
+		"017e0502": "Redd - Shirt",
+		"01870502": "Graham",
+		"02610402": "Inkling Squid - Orange",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"03c10502": "Megan"
 	}
 }

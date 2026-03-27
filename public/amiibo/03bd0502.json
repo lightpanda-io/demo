@@ -4,21 +4,21 @@
 		"character": "Wardell",
 		"name": "Wardell",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a080001-03bd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a080001-03bd0502.png",
 		"tail": "03bd0502"
 	},
 	"next": "03cd0502.html",
 	"prev": "018b0502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00ef0502": "Agnes",
-		"01520502": "Curlos",
-		"01c90502": "OHare",
-		"02400502": "K. K. Slider",
-		"02630102": "Wario",
-		"028a0e02": "Waluigi - Golf",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04aa1d02": "Luke",
-		"04d41d02": "Dhalsim"
+		"004c0502": "Digby",
+		"00d30502": "Cesar",
+		"011a0502": "Isabelle - Kimono",
+		"01370502": "Tangy",
+		"01700502": "Isabelle - Dress",
+		"01840502": "Mallary",
+		"01970502": "Tex",
+		"03ca0502": "Tiansheng",
+		"03cf0502": "Quinn",
+		"0430ff02": "Golden - Power Up Band"
 	}
 }

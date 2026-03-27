@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "8-Bit Link",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034f0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-034f0902.png",
 		"tail": "034f0902"
 	},
 	"next": "02fd0502.html",
 	"prev": "038e0402.html",
 	"list": {
-		"00950502": "Goose",
-		"014e0502": "Pippy",
-		"017c0502": "Pave",
-		"018b0502": "Boone",
-		"02590002": "Cloud",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03090502": "Weber",
-		"039bff02": "Mario - Power Up Band",
-		"04e71d02": "Ingrid",
-		"04f01d02": "Ingrid"
+		"00020002": "Yoshi",
+		"00c40502": "Tipper",
+		"01120502": "Mabel",
+		"01190502": "Don Resetti - Without Hat",
+		"02630102": "Wario",
+		"02b70e02": "Rosalina - Golf",
+		"02fa0502": "Billy",
+		"030f0502": "Norma",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"037f0002": "Ridley"
 	}
 }

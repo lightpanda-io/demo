@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010003-039cff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00010003-039cff02.png",
 		"tail": "039cff02"
 	},
 	"next": "003e0402.html",
 	"prev": "00480502.html",
 	"list": {
-		"00650502": "Kiki",
-		"008c0502": "Flo",
-		"00940502": "Eunice",
-		"01010502": "Vesta",
-		"013a0502": "Wart Jr.",
-		"01900502": "Lolly",
-		"02bb0e02": "Metal Mario - Tennis",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"03ae0502": "Celeste",
-		"03b50502": "Daisy Mae"
+		"00870502": "Clyde",
+		"00880502": "Bella",
+		"008a0502": "Yuka",
+		"011d0502": "Lily",
+		"01a70502": "Pietro",
+		"03030502": "Julia",
+		"03530902": "Link - Archer",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"03ad0502": "Blathers",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

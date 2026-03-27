@@ -4,21 +4,21 @@
 		"character": "Rex",
 		"name": "Rex",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e80001-02f50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03e80001-02f50502.png",
 		"tail": "02f50502"
 	},
 	"next": "00ea0502.html",
 	"prev": "038d0002.html",
 	"list": {
-		"00700502": "Octavian",
-		"00a10502": "Cyrano",
-		"00db0502": "Wendy",
-		"02480502": "Celeste",
-		"02e70502": "Vivian",
-		"034d0902": "Link - Twilight Princess",
-		"034f0902": "8-Bit Link",
-		"037c0002": "Young Link",
-		"03ab0502": "Orville",
-		"03c30502": "Audie"
+		"00040002": "Link",
+		"00490502": "Resetti",
+		"00650502": "Kiki",
+		"010f0502": "Pelly",
+		"01360502": "Drago",
+		"015b0502": "Victoria",
+		"028f0e02": "Donkey Kong - Golf",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"04a81d02": "Ryu",
+		"04db1d02": "Lily"
 	}
 }

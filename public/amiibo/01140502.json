@@ -4,21 +4,21 @@
 		"character": "Wendell",
 		"name": "Wendell",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a70001-01140502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a70001-01140502.png",
 		"tail": "01140502"
 	},
 	"next": "005d0502.html",
 	"prev": "010c0502.html",
 	"list": {
 		"000e0002": "Zelda",
-		"00440502": "Isabelle",
-		"00e80502": "Filbert",
-		"01220502": "Del",
-		"01970502": "Tex",
-		"024c0502": "Rover",
+		"00b00502": "Porter",
+		"00d20502": "Olivia",
+		"00eb0502": "Nan",
+		"01900502": "Lolly",
+		"019e0502": "Tammy",
+		"026f0e02": "Luigi - Baseball",
+		"02aa0e02": "Baby Luigi - Soccer",
 		"036e0a02": "King Knight",
-		"03a50002": "Byleth",
-		"03c80502": "Sasha",
-		"03d30502": "Rio"
+		"043a1302": "Samus \u0026 Vi-O-La"
 	}
 }

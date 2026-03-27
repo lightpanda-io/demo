@@ -4,21 +4,21 @@
 		"character": "Charlise",
 		"name": "Charlise",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02200001-00fd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02200001-00fd0502.png",
 		"tail": "00fd0502"
 	},
 	"next": "03100502.html",
 	"prev": "01560502.html",
 	"list": {
-		"00050002": "Fox",
-		"000b0002": "Marth",
-		"016e0502": "Francine",
-		"018d0502": "Croque",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"02a70e02": "Baby Mario - Tennis",
-		"030a0502": "Candi",
-		"030f0502": "Norma",
-		"03b00502": "Sable",
-		"04291902": "Nail Saionji"
+		"00430302": "Light Blue Yarn Yoshi",
+		"006b0502": "Gigi",
+		"00b90502": "Poncho",
+		"01610502": "Cube",
+		"01d00502": "Iggly",
+		"029a0e02": "Bowser - Horse Racing",
+		"03160502": "Cleo",
+		"04e01d02": "Akuma",
+		"04f11d02": "Terry",
+		"index": "Sandy"
 	}
 }

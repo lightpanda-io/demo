@@ -4,21 +4,21 @@
 		"character": "Harvey",
 		"name": "Harvey",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a050001-03b80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a050001-03b80502.png",
 		"tail": "03b80502"
 	},
 	"next": "03530902.html",
 	"prev": "011e0502.html",
 	"list": {
-		"00850502": "Gruff",
-		"009b0502": "Clay",
-		"00bf0502": "Harry",
-		"00f70502": "Pecan",
-		"01450502": "Daisy",
-		"02420502": "Tom Nook",
-		"024d0502": "Timmy \u0026 Tommy",
-		"026c0e02": "Mario - Golf",
-		"03b90502": "Gulliver",
-		"03c50502": "Judy"
+		"006d0502": "Marcie",
+		"00a40502": "Willow",
+		"012e0502": "Spork/Crackle",
+		"01670502": "Baabara",
+		"016b0502": "Soleil",
+		"018b0502": "Boone",
+		"02b10e02": "Birdo - Tennis",
+		"02b40e02": "Rosalina - Soccer",
+		"03710102": "Mario - Wedding",
+		"04271902": "Romin Kirishima"
 	}
 }

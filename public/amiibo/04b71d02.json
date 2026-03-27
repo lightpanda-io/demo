@@ -4,21 +4,21 @@
 		"character": "Manon",
 		"name": "Manon",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34cc0001-04b71d02.png",
 		"tail": "04b71d02"
 	},
 	"next": "04ae1d02.html",
 	"prev": "04ad1d02.html",
 	"list": {
-		"00550502": "Bob",
-		"00f90502": "Alice",
-		"01010502": "Vesta",
-		"014c0502": "Gala",
-		"016f0502": "Chrissy",
-		"018f0502": "Shep",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"02fa0502": "Billy",
-		"02fe0502": "Murphy",
-		"02ff0502": "Plucky"
+		"00080002": "Villager",
+		"00250002": "Greninja",
+		"00660502": "Deli",
+		"00820502": "Mint",
+		"00b20502": "Shrunk",
+		"00c80502": "Savannah",
+		"02b30e02": "Birdo - Horse Racing",
+		"03911602": "Loot Goblin",
+		"03b30502": "C.J.",
+		"04131302": "E.M.M.I."
 	}
 }

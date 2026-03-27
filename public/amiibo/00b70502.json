@@ -4,21 +4,21 @@
 		"character": "Chip",
 		"name": "Chip",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019a0001-00b70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_019a0001-00b70502.png",
 		"tail": "00b70502"
 	},
 	"next": "01620502.html",
 	"prev": "00350102.html",
 	"list": {
-		"00240002": "Charizard",
-		"007b0502": "Bangle",
-		"00de0502": "Butch",
-		"015f0502": "Chadder",
-		"01b70502": "Doc",
-		"02470502": "Blathers",
-		"025c0d02": "Shadow Mewtwo",
-		"028b0e02": "Waluigi - Horse Racing",
-		"035e1002": "Qbby",
-		"04cf1d02": "Kimberly"
+		"00360102": "Peach",
+		"006f0502": "Shari",
+		"011b0502": "Franklin",
+		"01c00502": "Gloria",
+		"025a0002": "Corrin",
+		"02b90e02": "Metal Mario - Soccer",
+		"03140502": "Dobie",
+		"03981702": "Daijobu",
+		"04b41d02": "Dhalsim",
+		"04f11d02": "Terry"
 	}
 }

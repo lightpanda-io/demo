@@ -4,21 +4,21 @@
 		"character": "Rowan",
 		"name": "Rowan",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fb0001-01c60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04fb0001-01c60502.png",
 		"tail": "01c60502"
 	},
 	"next": "01d70502.html",
 	"prev": "009d0502.html",
 	"list": {
-		"00af0502": "Tommy - Uniform",
-		"01040502": "Keaton",
-		"01220502": "Del",
-		"01480502": "Tucker",
-		"02520002": "Roy",
-		"02660102": "Daisy",
-		"02890e02": "Waluigi - Tennis",
-		"03160502": "Cleo",
-		"03651302": "Samus Aran",
-		"03cd0502": "Petri"
+		"00150002": "Bowser Jr.",
+		"00570502": "Curt",
+		"01400502": "Genji",
+		"019d0502": "Peewee",
+		"01a00502": "Lucy",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02870e02": "Waluigi - Soccer",
+		"03670102": "Goomba",
+		"03b30502": "C.J.",
+		"04ae1d02": "Kimberly"
 	}
 }

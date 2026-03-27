@@ -4,21 +4,21 @@
 		"character": "Wario",
 		"name": "Wario - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50501-02860e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c50501-02860e02.png",
 		"tail": "02860e02"
 	},
 	"next": "029c0e02.html",
 	"prev": "02ad0e02.html",
 	"list": {
-		"00a50502": "Roald",
-		"00aa0502": "Kicks",
-		"00c70502": "Vladimir",
-		"00fe0502": "Vic",
-		"02550c02": "Meta Knight",
-		"02740e02": "Peach - Baseball",
-		"02f70502": "Ursala",
-		"030c0502": "Spike",
-		"03580902": "Daruk",
-		"04ab1d02": "Luke"
+		"003a0202": "Chibi Robo",
+		"012b0502": "Canberra",
+		"014f0502": "Buck",
+		"02730e02": "Peach - Soccer",
+		"02960e02": "Bowser - Soccer",
+		"02f80502": "Jacob",
+		"03090502": "Weber",
+		"03b20502": "K.K. Slider",
+		"042b1802": "Palico",
+		"04e31d02": "Elena"
 	}
 }

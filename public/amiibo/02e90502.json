@@ -4,20 +4,21 @@
 		"character": "June",
 		"name": "June",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028a0001-02e90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_028a0001-02e90502.png",
 		"tail": "02e90502"
 	},
 	"next": "03741402.html",
 	"prev": "02eb0502.html",
 	"list": {
-		"00060002": "Samus",
-		"00690502": "Patty",
-		"01520502": "Curlos",
-		"018f0502": "Shep",
-		"01970502": "Tex",
-		"03040502": "Louie",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03b30502": "C.J.",
-		"03bf0502": "Isabelle - Sweater"
+		"00680502": "Kabuki",
+		"009d0502": "Axel",
+		"012e0502": "Spork/Crackle",
+		"015f0502": "Chadder",
+		"029e0e02": "Bowser Jr. - Golf",
+		"03ca0502": "Tiansheng",
+		"04200002": "Kazuya",
+		"04ad1d02": "Jamie",
+		"04bc1d02": "Cammy",
+		"04ef1d02": "Alex"
 	}
 }

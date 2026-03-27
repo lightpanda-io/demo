@@ -4,20 +4,21 @@
 		"character": "Metal Mario",
 		"name": "Metal Mario - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d00501-02bd0e02.png",
 		"tail": "02bd0e02"
 	},
 	"next": "041b0402.html",
 	"prev": "025f0402.html",
 	"list": {
-		"002a0002": "Robin",
-		"003d0102": "Mario - Silver Edition",
-		"00da0502": "Groucho",
-		"01040502": "Keaton",
-		"014c0502": "Gala",
-		"029f0e02": "Bowser Jr. - Horse Racing",
-		"02eb0502": "Paolo",
-		"03030502": "Julia",
-		"04d61d02": "Dee Jay"
+		"00200002": "Dark Pit",
+		"004b0502": "Timmy",
+		"00570502": "Curt",
+		"008e0502": "Amelia",
+		"00fb0502": "Anicotti",
+		"01b50502": "Jacques",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"034f0902": "8-Bit Link",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04d91d02": "JP"
 	}
 }

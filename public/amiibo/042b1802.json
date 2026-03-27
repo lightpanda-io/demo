@@ -4,21 +4,21 @@
 		"character": "Palico",
 		"name": "Palico",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35090100-042b1802.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35090100-042b1802.png",
 		"tail": "042b1802"
 	},
-	"next": "0430ff02.html",
-	"prev": "00fe0502.html",
+	"next": "042d1802.html",
+	"prev": "04101802.html",
 	"list": {
-		"00310002": "Mega Man",
-		"004b0502": "Timmy",
-		"00730502": "Sterling",
-		"00c90502": "Kidd",
-		"01970502": "Tex",
-		"024d0502": "Timmy \u0026 Tommy",
-		"02990e02": "Bowser - Golf",
-		"02fc0502": "Bitty",
-		"037d0002": "Isabelle",
-		"040c0f02": "Razewing Ratha"
+		"00380102": "Toad",
+		"00410302": "Green Yarn Yoshi",
+		"00a30502": "Cole",
+		"01a90502": "Papi",
+		"01c10502": "Lobo",
+		"02690e02": "Mario - Soccer",
+		"027f0e02": "Yoshi - Tennis",
+		"03160502": "Cleo",
+		"03830002": "Ivysaur",
+		"04aa1d02": "Luke"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Mega Man",
 		"name": "Mega Man",
 		"gameSeries": "Megaman",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34800000-03791502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34800000-03791502.png",
 		"tail": "03791502"
 	},
 	"next": "03ab0502.html",
 	"prev": "02fd0502.html",
 	"list": {
-		"00110002": "Lucario",
-		"00200002": "Dark Pit",
-		"01150502": "Cyrus",
-		"01b00502": "Peggy",
-		"01c60502": "Rowan",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02560c02": "King Dedede",
-		"028b0e02": "Waluigi - Horse Racing",
-		"04220002": "Steve",
-		"04df1d02": "Ed"
+		"00870502": "Clyde",
+		"00f00502": "Julian",
+		"011b0502": "Franklin",
+		"024c0502": "Rover",
+		"02820e02": "Wario - Soccer",
+		"028d0e02": "Donkey Kong - Baseball",
+		"03c60502": "Raymond",
+		"03ce0502": "Cephalobot",
+		"040e0f02": "Tsukino",
+		"04261902": "Gakuto Sōgetsu"
 	}
 }

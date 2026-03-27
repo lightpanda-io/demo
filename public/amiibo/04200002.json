@@ -4,21 +4,21 @@
 		"character": "Kazuya",
 		"name": "Kazuya",
 		"gameSeries": "Tekken",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33c00000-04200002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_33c00000-04200002.png",
 		"tail": "04200002"
 	},
 	"next": "001c0002.html",
 	"prev": "03aa0502.html",
 	"list": {
-		"00250002": "Greninja",
-		"00680502": "Kabuki",
-		"006f0502": "Shari",
-		"00a30502": "Cole",
-		"02600402": "Inkling Boy - Purple",
-		"02ec0502": "Hornsby",
-		"03710102": "Mario - Wedding",
-		"04291902": "Nail Saionji",
-		"04a60902": "Yunobo",
-		"04e81d02": "Terry"
+		"00310002": "Mega Man",
+		"00830502": "Pudge",
+		"012a0502": "Elvis",
+		"012f0502": "Freckles",
+		"02700e02": "Luigi - Tennis",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"02f00502": "Sylvana",
+		"030f0502": "Norma",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04d41d02": "Dhalsim"
 	}
 }

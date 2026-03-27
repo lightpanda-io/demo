@@ -4,21 +4,21 @@
 		"character": "Samus",
 		"name": "Samus - Metroid Dread",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00000-04121302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c00000-04121302.png",
 		"tail": "04121302"
 	},
 	"next": "005e0502.html",
 	"prev": "00970502.html",
 	"list": {
-		"00070002": "Wii Fit Trainer",
-		"00510502": "Luna",
-		"00fe0502": "Vic",
-		"01650502": "Caroline",
-		"016e0502": "Francine",
-		"02940e02": "Diddy Kong - Golf",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"03620002": "Cloud - Player 2",
-		"036e0a02": "King Knight",
-		"04ab1d02": "Luke"
+		"008b0502": "Lionel",
+		"01750502": "Tommy - Suit",
+		"01d50502": "Goldie - Amiibo Festival",
+		"02400502": "K. K. Slider",
+		"026c0e02": "Mario - Golf",
+		"02700e02": "Luigi - Tennis",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"02e60f02": "Qurupeco and Dan",
+		"03c90502": "Ione",
+		"04ce1d02": "Jamie"
 	}
 }

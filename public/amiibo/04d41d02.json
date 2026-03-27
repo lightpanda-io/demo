@@ -4,21 +4,21 @@
 		"character": "Dhalsim",
 		"name": "Dhalsim",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04d41d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c90001-04d41d02.png",
 		"tail": "04d41d02"
 	},
 	"next": "04dd1d02.html",
 	"prev": "04da1d02.html",
 	"list": {
-		"00440502": "Isabelle",
-		"00860502": "Flurry",
-		"00970502": "Benjamin",
-		"00af0502": "Tommy - Uniform",
-		"00d30502": "Cesar",
-		"026b0e02": "Mario - Tennis",
-		"030d0502": "Cashmere",
-		"03770402": "Marina",
-		"042c1802": "Palamute",
-		"04b71d02": "Manon"
+		"00790502": "Deena",
+		"00b70502": "Chip",
+		"01170502": "Timmy - Full Apron",
+		"011e0502": "Anchovy",
+		"017c0502": "Pave",
+		"023a0702": "Hammer Slam Bowser",
+		"023d0002": "Mewtwo",
+		"027c0e02": "Daisy - Horse Racing",
+		"02890e02": "Waluigi - Tennis",
+		"02fa0502": "Billy"
 	}
 }

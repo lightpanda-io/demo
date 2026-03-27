@@ -4,21 +4,21 @@
 		"character": "Ryu",
 		"name": "Ryu",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c00001-04a81d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c00001-04a81d02.png",
 		"tail": "04a81d02"
 	},
 	"next": "04b51d02.html",
 	"prev": "04bc1d02.html",
 	"list": {
-		"00360102": "Peach",
-		"00cf0502": "Avery",
-		"019e0502": "Tammy",
-		"01d50502": "Goldie - Amiibo Festival",
-		"02630102": "Wario",
-		"02f20502": "Wade",
-		"03900402": "Octoling Octopus",
-		"040c0f02": "Razewing Ratha",
-		"04aa1d02": "Luke",
-		"04d91d02": "JP"
+		"00290002": "Lucina",
+		"002d0002": "Mr. Game \u0026 Watch",
+		"00560502": "Fauna",
+		"01c80502": "Bruce",
+		"025e0402": "Marie",
+		"02b80e02": "Rosalina - Horse Racing",
+		"02eb0502": "Paolo",
+		"03050502": "Bea",
+		"031c0502": "Chai",
+		"03920a02": "Shovel Knight - Gold Edition"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Nate",
 		"name": "Nate",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02190001-007e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02190001-007e0502.png",
 		"tail": "007e0502"
 	},
 	"next": "02b90e02.html",
 	"prev": "01510502.html",
 	"list": {
-		"00080002": "Villager",
-		"00880502": "Bella",
-		"01260502": "Rodeo",
-		"01460502": "Stinky",
-		"01940502": "Queenie",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"035e1002": "Qbby",
-		"03760402": "Pearl",
-		"038d0002": "Piranha Plant",
-		"03d70502": "Faith"
+		"00020002": "Yoshi",
+		"009e0502": "Muffy",
+		"013b0502": "Hazel",
+		"016a0502": "Antonio",
+		"02510002": "Lucas",
+		"02560c02": "King Dedede",
+		"025e0402": "Marie",
+		"02760e02": "Peach - Golf",
+		"02e50f02": "Barioth and Ayuria",
+		"04241902": "Yuga Ohdo"
 	}
 }

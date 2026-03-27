@@ -4,21 +4,21 @@
 		"character": "Rashid",
 		"name": "Rashid",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d20001-04dd1d02.png",
 		"tail": "04dd1d02"
 	},
 	"next": "04de1d02.html",
 	"prev": "04d41d02.html",
 	"list": {
-		"005f0502": "Jambette",
-		"00b80502": "Jack",
-		"00e40502": "Teddy",
-		"01450502": "Daisy",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02720e02": "Luigi - Horse Racing",
-		"02b40e02": "Rosalina - Soccer",
-		"02e30f02": "Nabiru",
-		"03bc0502": "Niko",
-		"042b1802": "Palico"
+		"00310002": "Mega Man",
+		"00420302": "Pink Yarn Yoshi",
+		"00b30502": "Don Resetti",
+		"015a0502": "Biskit",
+		"01ca0502": "Gayle",
+		"03981702": "Daijobu",
+		"03990902": "Link - Link's Awakening",
+		"04101802": "Palico",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04d91d02": "JP"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Hero",
 		"name": "Hero",
 		"gameSeries": "Dragon Quest",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36400000-03a20002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_36400000-03a20002.png",
 		"tail": "03a20002"
 	},
 	"next": "00480502.html",
 	"prev": "03500902.html",
 	"list": {
-		"00050002": "Fox",
-		"00620502": "Sheldon",
-		"00fc0502": "Chops",
-		"01050502": "Gladys",
-		"01a10502": "Elmer",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"035a0902": "Mipha",
-		"038b0002": "Simon",
-		"041e0002": "Pyra",
-		"04be1d02": "A.K.I"
+		"000b0002": "Marth",
+		"00790502": "Deena",
+		"00a50502": "Roald",
+		"02500a02": "Shovel Knight",
+		"02790e02": "Daisy - Baseball",
+		"02840e02": "Wario - Tennis",
+		"03050502": "Bea",
+		"03981702": "Daijobu",
+		"039dff02": "Peach - Power Up Band",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

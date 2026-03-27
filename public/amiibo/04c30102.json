@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Poplin",
+		"name": "Poplin \u0026 Prince Florian",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00250100-04c30102.png",
+		"tail": "04c30102"
+	},
+	"next": "01a30502.html",
+	"prev": "04c20102.html",
+	"list": {
+		"00250002": "Greninja",
+		"00430302": "Light Blue Yarn Yoshi",
+		"01cd0502": "Grizzly",
+		"02440502": "Lottie",
+		"024b0502": "Isabelle - Summer Outfit",
+		"025b0002": "Bayonetta",
+		"02890e02": "Waluigi - Tennis",
+		"03791502": "Mega Man",
+		"03c30502": "Audie",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
+	}
+}

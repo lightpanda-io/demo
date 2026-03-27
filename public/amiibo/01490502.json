@@ -4,21 +4,21 @@
 		"character": "Blanche",
 		"name": "Blanche",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043e0001-01490502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_043e0001-01490502.png",
 		"tail": "01490502"
 	},
 	"next": "026d0e02.html",
 	"prev": "018c0502.html",
 	"list": {
-		"00100002": "Pit",
-		"002e0002": "R.O.B. - Famicom",
-		"00580502": "Portia",
-		"006b0502": "Gigi",
-		"00780502": "Limberg",
-		"02750e02": "Peach - Tennis",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03791502": "Mega Man",
-		"042e0002": "Sora",
-		"04cb1d02": "Ryu"
+		"00a90502": "Reese",
+		"01040502": "Keaton",
+		"012b0502": "Canberra",
+		"014c0502": "Gala",
+		"01d70502": "Rosie - Amiibo Festival",
+		"02530002": "Ryu",
+		"02e50f02": "Barioth and Ayuria",
+		"037f0002": "Ridley",
+		"03ce0502": "Cephalobot",
+		"04370402": "Marie - Alterna"
 	}
 }

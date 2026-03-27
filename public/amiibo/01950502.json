@@ -4,21 +4,21 @@
 		"character": "Fang",
 		"name": "Fang",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05110001-01950502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05110001-01950502.png",
 		"tail": "01950502"
 	},
 	"next": "03bf0502.html",
 	"prev": "036d0a02.html",
 	"list": {
-		"00fc0502": "Chops",
-		"01330502": "Deirdre",
-		"019b0502": "Rudy",
-		"027a0e02": "Daisy - Tennis",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"03120502": "Snooty",
-		"03190502": "Rilla",
-		"03cb0502": "Shino",
-		"03d30502": "Rio",
-		"04e31d02": "Elena"
+		"00340102": "Mario",
+		"01000502": "Drift",
+		"010e0502": "Tom Nook - Jacket",
+		"01660502": "Sparro",
+		"01980502": "Melba",
+		"01c60502": "Rowan",
+		"02f10502": "Boris",
+		"03d40502": "Frett",
+		"04e61d02": "Alex",
+		"04e71d02": "Ingrid"
 	}
 }

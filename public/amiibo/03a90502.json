@@ -4,21 +4,21 @@
 		"character": "Timmy \u0026 Tommy",
 		"name": "Timmy \u0026 Tommy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01840501-03a90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01840501-03a90502.png",
 		"tail": "03a90502"
 	},
 	"next": "01690502.html",
 	"prev": "016c0502.html",
 	"list": {
-		"002c0002": "Ness",
-		"00570502": "Curt",
-		"008c0502": "Flo",
-		"00ae0502": "Katie",
-		"00fb0502": "Anicotti",
-		"02410502": "Mabel",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"02fb0502": "Boyd",
-		"039dff02": "Peach - Power Up Band",
-		"04e11d02": "M. Bison"
+		"004f0502": "Redd",
+		"00940502": "Eunice",
+		"00b20502": "Shrunk",
+		"02780e02": "Daisy - Soccer",
+		"027c0e02": "Daisy - Horse Racing",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"031b0502": "Étoile",
+		"03961702": "Hayakawa",
+		"03c80502": "Sasha",
+		"041b0402": "Octoling - Blue"
 	}
 }

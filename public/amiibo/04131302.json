@@ -4,21 +4,21 @@
 		"character": "E.M.M.I.",
 		"name": "E.M.M.I.",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c40000-04131302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c40000-04131302.png",
 		"tail": "04131302"
 	},
 	"next": "03540902.html",
 	"prev": "01990502.html",
 	"list": {
-		"00770502": "Poppy",
-		"00b30502": "Don Resetti",
-		"01110502": "Pete",
-		"01340502": "Hans",
-		"013b0502": "Hazel",
-		"015f0502": "Chadder",
-		"01ca0502": "Gayle",
-		"02650102": "Diddy Kong",
-		"03090502": "Weber",
-		"04ed1d02": "Sagat"
+		"000d0002": "Diddy Kong",
+		"00710502": "Winnie",
+		"009e0502": "Muffy",
+		"011d0502": "Lily",
+		"014f0502": "Buck",
+		"01b40502": "Sylvia",
+		"01c10502": "Lobo",
+		"02b70e02": "Rosalina - Golf",
+		"03b90502": "Gulliver",
+		"03bd0502": "Wardell"
 	}
 }

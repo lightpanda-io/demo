@@ -4,21 +4,21 @@
 		"character": "Roscoe",
 		"name": "Roscoe",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a80001-00910502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03a80001-00910502.png",
 		"tail": "00910502"
 	},
 	"next": "00180002.html",
 	"prev": "02f60502.html",
 	"list": {
-		"00580502": "Portia",
-		"00780502": "Limberg",
-		"00ae0502": "Katie",
-		"012f0502": "Freckles",
-		"01630502": "Curly",
-		"01860502": "Katt",
-		"01a70502": "Pietro",
-		"026d0e02": "Mario - Horse Racing",
-		"02750e02": "Peach - Tennis",
-		"04b41d02": "Dhalsim"
+		"00340102": "Mario",
+		"00ab0502": "Labelle",
+		"014d0502": "Joey",
+		"018e0502": "Pashmina",
+		"025c0d02": "Shadow Mewtwo",
+		"03b20502": "K.K. Slider",
+		"03c30502": "Audie",
+		"04210002": "Sephiroth",
+		"042c1802": "Palamute",
+		"043e1b02": "Mio"
 	}
 }

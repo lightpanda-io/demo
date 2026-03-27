@@ -4,21 +4,21 @@
 		"character": "Metal Mario",
 		"name": "Metal Mario - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d00301-02bb0e02.png",
 		"tail": "02bb0e02"
 	},
 	"next": "004e0502.html",
 	"prev": "016f0502.html",
 	"list": {
-		"00cd0502": "Sly",
-		"00f50502": "Hugh",
-		"01450502": "Daisy",
-		"01740502": "Celeste",
-		"01b50502": "Jacques",
-		"02b60e02": "Rosalina - Tennis",
-		"02ec0502": "Hornsby",
-		"02f10502": "Boris",
-		"03931702": "Pawapuro",
-		"043e1b02": "Mio"
+		"00220002": "Mii Swordfighter",
+		"00bc0502": "Tia",
+		"00df0502": "Gabi",
+		"01660502": "Sparro",
+		"01b20502": "Annalise",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"02770e02": "Peach - Horse Racing",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02a10e02": "Boo - Baseball",
+		"index": "Sandy"
 	}
 }

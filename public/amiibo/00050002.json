@@ -4,21 +4,21 @@
 		"character": "Fox",
 		"name": "Fox",
 		"gameSeries": "Star Fox",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05800000-00050002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05800000-00050002.png",
 		"tail": "00050002"
 	},
 	"next": "02610402.html",
 	"prev": "02840e02.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"00990502": "Chief",
-		"00eb0502": "Nan",
-		"00ee0502": "Benedict",
-		"01190502": "Don Resetti - Without Hat",
-		"01590502": "Dora",
-		"01610502": "Cube",
-		"02810e02": "Yoshi - Horse Racing",
+		"01370502": "Tangy",
+		"013c0502": "Beardo",
+		"01c70502": "Maelle",
 		"02940e02": "Diddy Kong - Golf",
-		"036e0a02": "King Knight"
+		"02c10e02": "Pink Gold Peach - Golf",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"02ee0502": "Tybalt",
+		"02f20502": "Wade",
+		"030b0502": "Leopold",
+		"043d1b02": "Noah"
 	}
 }

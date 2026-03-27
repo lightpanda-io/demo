@@ -4,21 +4,21 @@
 		"character": "Goomba",
 		"name": "Goomba",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00150000-03670102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00150000-03670102.png",
 		"tail": "03670102"
 	},
 	"next": "03640002.html",
 	"prev": "03690402.html",
 	"list": {
-		"00720502": "Knox",
-		"013a0502": "Wart Jr.",
-		"02eb0502": "Paolo",
-		"034e0902": "Link - Skyward Sword",
-		"036d0a02": "Specter Knight",
-		"03b40502": "Flick",
-		"03c30502": "Audie",
-		"03c80502": "Sasha",
-		"040f1802": "Magnamalo",
-		"04131302": "E.M.M.I."
+		"00220002": "Mii Swordfighter",
+		"00290002": "Lucina",
+		"004b0502": "Timmy",
+		"01060502": "Hamphrey",
+		"01300502": "Bam",
+		"019f0502": "Olaf",
+		"024e0502": "Kapp'n",
+		"02b30e02": "Birdo - Horse Racing",
+		"02e30f02": "Nabiru",
+		"04a40902": "Sidon"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Bertha",
 		"name": "Bertha",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03930001-00a00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03930001-00a00502.png",
 		"tail": "00a00502"
 	},
 	"next": "025c0d02.html",
 	"prev": "023d0002.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00500502": "Saharah",
-		"006c0502": "Quillson",
-		"00ed0502": "Ruby",
-		"012a0502": "Elvis",
-		"017d0502": "Gulliver",
-		"026b0e02": "Mario - Tennis",
-		"02ff0502": "Plucky",
-		"040d0f02": "Ena",
-		"04210002": "Sephiroth"
+		"00340102": "Mario",
+		"00490502": "Resetti",
+		"00820502": "Mint",
+		"00d30502": "Cesar",
+		"02a70e02": "Baby Mario - Tennis",
+		"043a1302": "Samus \u0026 Vi-O-La",
+		"04b71d02": "Manon",
+		"04ba1d02": "Zangief",
+		"04c01d02": "Akuma",
+		"04fa0f02": "Ratha"
 	}
 }

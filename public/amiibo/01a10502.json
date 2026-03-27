@@ -4,21 +4,21 @@
 		"character": "Elmer",
 		"name": "Elmer",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a70001-01a10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03a70001-01a10502.png",
 		"tail": "01a10502"
 	},
 	"next": "03080502.html",
 	"prev": "01270502.html",
 	"list": {
-		"00220002": "Mii Swordfighter",
-		"004f0502": "Redd",
-		"00750502": "Punchy",
-		"014e0502": "Pippy",
-		"01780502": "Resetti - Without Hat",
-		"02700e02": "Luigi - Tennis",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"03a10002": "Joker",
-		"03d70502": "Faith",
-		"04da1d02": "Zangief"
+		"00300002": "Sonic",
+		"00580502": "Portia",
+		"009b0502": "Clay",
+		"00b90502": "Poncho",
+		"00fd0502": "Charlise",
+		"01b70502": "Doc",
+		"024a0502": "Kicks",
+		"02ef0502": "Huck",
+		"03d10502": "Zoe",
+		"04390402": "Marina - Side Order"
 	}
 }

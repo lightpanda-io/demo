@@ -4,21 +4,21 @@
 		"character": "Wario",
 		"name": "Wario - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50301-02840e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c50301-02840e02.png",
 		"tail": "02840e02"
 	},
 	"next": "00050002.html",
 	"prev": "00810502.html",
 	"list": {
-		"007d0502": "Monique",
-		"009d0502": "Axel",
-		"00ad0502": "Booker",
-		"00b40502": "Isabelle - Winter",
-		"01c30502": "Margie",
-		"02740e02": "Peach - Baseball",
-		"02ea0502": "Piper",
-		"02f20502": "Wade",
-		"02f30502": "Carrie",
-		"035b0902": "Revali"
+		"00170002": "Sheik",
+		"00d00502": "Nana",
+		"013c0502": "Beardo",
+		"01750502": "Tommy - Suit",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03b10502": "Label",
+		"03d00502": "Chabwick",
+		"041c0402": "Smallfry",
+		"04b01d02": "Chun-Li"
 	}
 }

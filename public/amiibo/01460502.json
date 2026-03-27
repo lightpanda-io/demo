@@ -4,21 +4,21 @@
 		"character": "Stinky",
 		"name": "Stinky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026a0001-01460502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_026a0001-01460502.png",
 		"tail": "01460502"
 	},
 	"next": "016e0502.html",
 	"prev": "03c00502.html",
 	"list": {
-		"00470502": "Sable",
-		"00540502": "Lottie",
-		"00ce0502": "Blaire",
-		"00d40502": "Carmen",
-		"01430502": "Diva",
-		"016e0502": "Francine",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"035e1002": "Qbby",
-		"03941702": "Ikari",
-		"04b31d02": "Blanka"
+		"00170002": "Sheik",
+		"00860502": "Flurry",
+		"009f0502": "Henry",
+		"018c0502": "Broffina",
+		"01b10502": "Ribbot",
+		"01cf0502": "Simon",
+		"026f0e02": "Luigi - Baseball",
+		"02a60e02": "Baby Mario - Baseball",
+		"036d0a02": "Specter Knight",
+		"04360402": "Callie - Alterna"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Zangief",
 		"name": "Zangief",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34cf0001-04ba1d02.png",
 		"tail": "04ba1d02"
 	},
 	"next": "04b41d02.html",
 	"prev": "04b01d02.html",
 	"list": {
-		"001c0002": "Falco",
-		"00810502": "T-Bone",
-		"013e0502": "Chester",
-		"01450502": "Daisy",
-		"01700502": "Isabelle - Dress",
-		"02440502": "Lottie",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"02f00502": "Sylvana",
-		"039cff02": "Luigi - Power Up Band",
-		"04ac1d02": "Jamie"
+		"00580502": "Portia",
+		"00ea0502": "Beau",
+		"01110502": "Pete",
+		"01540502": "Moe",
+		"02850e02": "Wario - Golf",
+		"02ad0e02": "Baby Luigi - Golf",
+		"02b30e02": "Birdo - Horse Racing",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"03770402": "Marina",
+		"03d00502": "Chabwick"
 	}
 }

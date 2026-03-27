@@ -4,21 +4,21 @@
 		"character": "Ganon",
 		"name": "Ganondorf",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01020100-001b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01020100-001b0002.png",
 		"tail": "001b0002"
 	},
 	"next": "027b0e02.html",
 	"prev": "031d0502.html",
 	"list": {
-		"00340102": "Mario",
-		"00570502": "Curt",
-		"00820502": "Mint",
-		"00d00502": "Nana",
-		"00e40502": "Teddy",
-		"00f90502": "Alice",
-		"02570c02": "Waddle Dee",
-		"03030502": "Julia",
-		"03701202": "Tiki",
-		"04180902": "Link - Tears of the Kingdom"
+		"00040002": "Link",
+		"00260002": "Jigglypuff",
+		"00a60502": "Molly",
+		"00c10502": "Coach",
+		"00fd0502": "Charlise",
+		"016e0502": "Francine",
+		"01ab0502": "Rod",
+		"02f40502": "Ketchup",
+		"03ae0502": "Celeste",
+		"04271902": "Romin Kirishima"
 	}
 }

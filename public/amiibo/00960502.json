@@ -4,21 +4,21 @@
 		"character": "Annalisa",
 		"name": "Annalisa",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02080001-00960502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02080001-00960502.png",
 		"tail": "00960502"
 	},
 	"next": "00bc0502.html",
 	"prev": "02ac0e02.html",
 	"list": {
-		"01170502": "Timmy - Full Apron",
-		"01940502": "Queenie",
-		"01a80502": "Aurora",
-		"01d00502": "Iggly",
-		"025d0402": "Callie",
-		"026e0e02": "Luigi - Soccer",
-		"031c0502": "Chai",
-		"03ba0502": "Wisp",
-		"04380402": "Pearl - Side Order",
-		"04be1d02": "A.K.I"
+		"000b0002": "Marth",
+		"000e0002": "Zelda",
+		"002e0002": "R.O.B. - Famicom",
+		"006e0502": "Puck",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02820e02": "Wario - Soccer",
+		"02890e02": "Waluigi - Tennis",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04e81d02": "Terry",
+		"04f01d02": "Ingrid"
 	}
 }

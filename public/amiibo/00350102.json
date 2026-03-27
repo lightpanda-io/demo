@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010000-00350102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00010000-00350102.png",
 		"tail": "00350102"
 	},
 	"next": "00b70502.html",
 	"prev": "003f0402.html",
 	"list": {
-		"009c0502": "Diana",
-		"01450502": "Daisy",
-		"01b20502": "Annalise",
-		"01c20502": "Hippeux",
-		"02670102": "Waluigi",
-		"02800e02": "Yoshi - Golf",
-		"02b00e02": "Birdo - Baseball",
-		"035e1002": "Qbby",
-		"03640002": "Bayonetta - Player 2",
-		"04d31d02": "Blanka"
+		"00450502": "Tom Nook",
+		"00bc0502": "Tia",
+		"00c30502": "Tom",
+		"01530502": "Skye",
+		"01b30502": "Chow",
+		"01c90502": "OHare",
+		"02f00502": "Sylvana",
+		"02fa0502": "Billy",
+		"03070502": "Ellie",
+		"035e1002": "Qbby"
 	}
 }

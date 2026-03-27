@@ -4,21 +4,21 @@
 		"character": "Chief",
 		"name": "Chief",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050b0001-00990502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_050b0001-00990502.png",
 		"tail": "00990502"
 	},
 	"next": "036a0402.html",
 	"prev": "02c10e02.html",
 	"list": {
-		"00980502": "Pancetti",
-		"00f40502": "Flip",
-		"01010502": "Vesta",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"02ff0502": "Plucky",
-		"03050502": "Bea",
-		"034f0902": "8-Bit Link",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03b00502": "Sable"
+		"00450502": "Tom Nook",
+		"00d40502": "Carmen",
+		"012f0502": "Freckles",
+		"01560502": "Hamlet",
+		"02560c02": "King Dedede",
+		"02600402": "Inkling Boy - Purple",
+		"02e60f02": "Qurupeco and Dan",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03870002": "Pokemon Trainer",
+		"04b01d02": "Chun-Li"
 	}
 }

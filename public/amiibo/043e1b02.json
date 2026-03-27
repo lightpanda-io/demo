@@ -4,21 +4,21 @@
 		"character": "Mio",
 		"name": "Mio",
 		"gameSeries": "Xenoblade",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22440000-043e1b02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22440000-043e1b02.png",
 		"tail": "043e1b02"
 	},
 	"next": "042e0002.html",
 	"prev": "043d1b02.html",
 	"list": {
-		"008e0502": "Amelia",
-		"00950502": "Goose",
-		"01350502": "Chevre",
-		"01990502": "Bones",
-		"01b60502": "Sally",
-		"01d00502": "Iggly",
-		"03170502": "Ike",
-		"03550902": "Guardian",
-		"03670102": "Goomba",
-		"037a0002": "Daisy"
+		"00cd0502": "Sly",
+		"014c0502": "Gala",
+		"014e0502": "Pippy",
+		"01570502": "Astrid",
+		"01b80502": "Pompom",
+		"02400502": "K. K. Slider",
+		"026b0e02": "Mario - Tennis",
+		"03680102": "Koopa Troopa",
+		"03b90502": "Gulliver",
+		"04b71d02": "Manon"
 	}
 }

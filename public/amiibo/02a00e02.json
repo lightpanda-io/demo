@@ -4,21 +4,20 @@
 		"character": "Boo",
 		"name": "Boo - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cb0101-02a00e02.png",
 		"tail": "02a00e02"
 	},
 	"next": "036e0a02.html",
 	"prev": "012e0502.html",
 	"list": {
-		"00010002": "Peach",
-		"00920502": "Truffles",
-		"010c0502": "Rover",
-		"01970502": "Tex",
-		"023f0502": "Isabelle - Winter Outfit",
-		"02980e02": "Bowser - Tennis",
-		"03750d02": "Detective Pikachu",
-		"03850002": "Pichu",
-		"043e1b02": "Mio",
-		"04b81d02": "Marisa"
+		"00090002": "Pikachu",
+		"00da0502": "Groucho",
+		"01010502": "Vesta",
+		"02780e02": "Daisy - Soccer",
+		"03961702": "Hayakawa",
+		"04b81d02": "Marisa",
+		"04cf1d02": "Kimberly",
+		"04dc1d02": "Cammy",
+		"04de1d02": "A.K.I"
 	}
 }

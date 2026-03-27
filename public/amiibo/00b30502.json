@@ -4,21 +4,21 @@
 		"character": "Don Resetti",
 		"name": "Don Resetti",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0001-00b30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018f0001-00b30502.png",
 		"tail": "00b30502"
 	},
 	"next": "01600502.html",
 	"prev": "02930e02.html",
 	"list": {
-		"004d0502": "Pascal",
-		"00b60502": "Nat",
-		"00c70502": "Vladimir",
-		"01640502": "Boomer",
-		"01a90502": "Papi",
-		"01c90502": "OHare",
-		"02820e02": "Wario - Soccer",
-		"02e30f02": "Nabiru",
-		"030a0502": "Candi",
-		"03810002": "Ice Climbers"
+		"00670502": "Alli",
+		"006d0502": "Marcie",
+		"00810502": "T-Bone",
+		"00940502": "Eunice",
+		"00c00502": "Gwen",
+		"00e10502": "Timbra",
+		"01300502": "Bam",
+		"02740e02": "Peach - Baseball",
+		"030b0502": "Leopold",
+		"03990902": "Link - Link's Awakening"
 	}
 }

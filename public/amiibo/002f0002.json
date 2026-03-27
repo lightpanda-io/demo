@@ -4,21 +4,21 @@
 		"character": "Duck Hunt",
 		"name": "Duck Hunt",
 		"gameSeries": "Classic Nintendo",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07820000-002f0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07820000-002f0002.png",
 		"tail": "002f0002"
 	},
 	"next": "03160502.html",
 	"prev": "026f0e02.html",
 	"list": {
-		"00aa0502": "Kicks",
-		"00b40502": "Isabelle - Winter",
-		"013c0502": "Beardo",
-		"01450502": "Daisy",
-		"027e0e02": "Yoshi - Baseball",
-		"02a70e02": "Baby Mario - Tennis",
-		"02b20e02": "Birdo - Golf",
-		"02f00502": "Sylvana",
-		"03a10002": "Joker",
-		"04be1d02": "A.K.I"
+		"006f0502": "Shari",
+		"01350502": "Chevre",
+		"01570502": "Astrid",
+		"01cb0502": "Cranston",
+		"01ce0502": "Cally",
+		"02510002": "Lucas",
+		"03701202": "Tiki",
+		"03750d02": "Detective Pikachu",
+		"043c1302": "Sylux",
+		"04a50902": "Tulin"
 	}
 }

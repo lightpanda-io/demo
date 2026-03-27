@@ -4,21 +4,21 @@
 		"character": "Terry",
 		"name": "Terry",
 		"gameSeries": "Fatal Fury",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04e81d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3c800001-04e81d02.png",
 		"tail": "04e81d02"
 	},
 	"next": "04f21d02.html",
 	"prev": "04e11d02.html",
 	"list": {
-		"005b0502": "Kyle",
-		"00900502": "Cherry",
-		"00b00502": "Porter",
-		"01150502": "Cyrus",
-		"019e0502": "Tammy",
-		"02570c02": "Waddle Dee",
-		"03070502": "Ellie",
-		"03ad0502": "Blathers",
-		"04b61d02": "Dee Jay",
-		"04de1d02": "A.K.I"
+		"002e0002": "R.O.B. - Famicom",
+		"01730502": "Phineas",
+		"02490502": "Resetti",
+		"02f20502": "Wade",
+		"030b0502": "Leopold",
+		"03170502": "Ike",
+		"031d0502": "Chelsea",
+		"037d0002": "Isabelle",
+		"03be0502": "Tom Nook - Coat",
+		"04360402": "Callie - Alterna"
 	}
 }

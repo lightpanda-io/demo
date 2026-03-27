@@ -4,21 +4,21 @@
 		"character": "Donkey Kong",
 		"name": "Donkey Kong - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c70501-02900e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c70501-02900e02.png",
 		"tail": "02900e02"
 	},
 	"next": "01050502.html",
 	"prev": "01850502.html",
 	"list": {
-		"00190002": "Dr. Mario",
-		"00bc0502": "Tia",
-		"00ea0502": "Beau",
-		"00fe0502": "Vic",
-		"019e0502": "Tammy",
-		"01be0502": "Nibbles",
-		"02ec0502": "Hornsby",
-		"03020502": "Raddle",
-		"03990902": "Link - Link's Awakening",
-		"04cb1d02": "Ryu"
+		"00160002": "Toon Link",
+		"00310002": "Mega Man",
+		"00710502": "Winnie",
+		"00890502": "Biff",
+		"01100502": "Phyllis",
+		"01550502": "Flora",
+		"023f0502": "Isabelle - Winter Outfit",
+		"028d0e02": "Donkey Kong - Baseball",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
 	}
 }

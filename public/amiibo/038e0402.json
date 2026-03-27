@@ -4,21 +4,21 @@
 		"character": "Octoling",
 		"name": "Octoling Girl",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050100-038e0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08050100-038e0402.png",
 		"tail": "038e0402"
 	},
 	"next": "034f0902.html",
 	"prev": "00af0502.html",
 	"list": {
-		"005a0502": "Cheri",
-		"007e0502": "Nate",
-		"01240502": "Ken",
-		"015b0502": "Victoria",
-		"016f0502": "Chrissy",
-		"02910e02": "Diddy Kong - Soccer",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03a40002": "Terry",
-		"03b40502": "Flick"
+		"005d0502": "Renée",
+		"01480502": "Tucker",
+		"01570502": "Astrid",
+		"019d0502": "Peewee",
+		"01cc0502": "Frobert",
+		"02650102": "Diddy Kong",
+		"026e0e02": "Luigi - Soccer",
+		"02780e02": "Daisy - Soccer",
+		"02b60e02": "Rosalina - Tennis",
+		"02b70e02": "Rosalina - Golf"
 	}
 }

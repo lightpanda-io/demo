@@ -4,21 +4,21 @@
 		"character": "Metal Mario",
 		"name": "Metal Mario - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d00201-02ba0e02.png",
 		"tail": "02ba0e02"
 	},
-	"next": "04101802.html",
+	"next": "026a0e02.html",
 	"prev": "03b30502.html",
 	"list": {
-		"00a30502": "Cole",
-		"00b70502": "Chip",
-		"013a0502": "Wart Jr.",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"02690e02": "Mario - Soccer",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03af0502": "Mabel",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04411c02": "Peach - My Mario Wooden Blocks",
-		"04b61d02": "Dee Jay"
+		"00790502": "Deena",
+		"00ed0502": "Ruby",
+		"01a40502": "Elise",
+		"02380602": "8-Bit Mario Classic Color",
+		"02960e02": "Bowser - Soccer",
+		"03630002": "Corrin - Player 2",
+		"04180902": "Link - Tears of the Kingdom",
+		"04d81d02": "Marisa",
+		"04df1d02": "Ed",
+		"04e51d02": "C. Viper"
 	}
 }

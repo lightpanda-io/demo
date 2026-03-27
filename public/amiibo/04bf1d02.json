@@ -4,21 +4,21 @@
 		"character": "Ed",
 		"name": "Ed",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d40001-04bf1d02.png",
 		"tail": "04bf1d02"
 	},
 	"next": "04c01d02.html",
 	"prev": "04be1d02.html",
 	"list": {
-		"006a0502": "Jitters",
-		"00e80502": "Filbert",
-		"00fa0502": "Camofrog",
-		"01030502": "Pango",
-		"01b70502": "Doc",
-		"01bb0502": "Rizzo",
-		"02f30502": "Carrie",
-		"030c0502": "Spike",
-		"031d0502": "Chelsea",
-		"04aa1d02": "Luke"
+		"00e10502": "Timbra",
+		"017e0502": "Redd - Shirt",
+		"01820502": "Pinky",
+		"01b00502": "Peggy",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02980e02": "Bowser - Tennis",
+		"031a0502": "Marty",
+		"037e0002": "Wolf",
+		"03b10502": "Label",
+		"04ae1d02": "Kimberly"
 	}
 }

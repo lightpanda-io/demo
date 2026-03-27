@@ -4,21 +4,21 @@
 		"character": "Judy",
 		"name": "Judy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png",
 		"tail": "03c50502"
 	},
 	"next": "019d0502.html",
 	"prev": "01070502.html",
 	"list": {
-		"00500502": "Saharah",
-		"00c30502": "Tom",
-		"01640502": "Boomer",
-		"01850502": "Rocco",
-		"028c0e02": "Donkey Kong - Soccer",
-		"03180502": "Tasha",
-		"03880002": "Chrom",
-		"03d50502": "Azalea",
-		"04a50902": "Tulin",
-		"04d91d02": "JP"
+		"010b0502": "Rocket",
+		"010f0502": "Pelly",
+		"01310502": "Friga",
+		"01480502": "Tucker",
+		"01a90502": "Papi",
+		"01d20502": "Twiggy",
+		"02e80502": "Hopkins",
+		"04af1d02": "Kimberly",
+		"04cf1d02": "Kimberly",
+		"04d51d02": "E. Honda"
 	}
 }

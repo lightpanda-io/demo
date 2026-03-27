@@ -4,21 +4,21 @@
 		"character": "Apollo",
 		"name": "Apollo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_044b0001-016c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_044b0001-016c0502.png",
 		"tail": "016c0502"
 	},
 	"next": "03a90502.html",
 	"prev": "029f0e02.html",
 	"list": {
-		"001a0002": "Wario",
-		"00cb0502": "Egbert",
-		"013b0502": "Hazel",
-		"02770e02": "Peach - Horse Racing",
-		"03040502": "Louie",
-		"03070502": "Ellie",
-		"03160502": "Cleo",
-		"03860002": "Incineroar",
-		"03c10502": "Megan",
-		"04131302": "E.M.M.I."
+		"00150002": "Bowser Jr.",
+		"00720502": "Knox",
+		"00c50502": "Prince",
+		"01710502": "Brewster",
+		"017f0502": "Zipper",
+		"027a0e02": "Daisy - Tennis",
+		"02a20e02": "Boo - Tennis",
+		"02e90502": "June",
+		"04e31d02": "Elena",
+		"04e71d02": "Ingrid"
 	}
 }

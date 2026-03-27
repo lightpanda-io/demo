@@ -4,21 +4,21 @@
 		"character": "Broffina",
 		"name": "Broffina",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a50001-018c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02a50001-018c0502.png",
 		"tail": "018c0502"
 	},
 	"next": "01490502.html",
 	"prev": "01590502.html",
 	"list": {
-		"009c0502": "Diana",
-		"01120502": "Mabel",
-		"01a60502": "Mira",
-		"02740e02": "Peach - Baseball",
-		"03870002": "Pokemon Trainer",
+		"00450502": "Tom Nook",
+		"00970502": "Benjamin",
+		"01150502": "Cyrus",
+		"01320502": "Ricky",
+		"01550502": "Flora",
+		"03a10002": "Joker",
 		"03a40002": "Terry",
-		"03c60502": "Raymond",
-		"03ca0502": "Tiansheng",
-		"04140902": "Zelda \u0026 Loftwing",
-		"042b1802": "Palico"
+		"03a70102": "Peach - Cat",
+		"03bc0502": "Niko",
+		"04cf1d02": "Kimberly"
 	}
 }

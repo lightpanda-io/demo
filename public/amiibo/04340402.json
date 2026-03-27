@@ -4,21 +4,21 @@
 		"character": "Frye",
 		"name": "Frye",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08080000-04340402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08080000-04340402.png",
 		"tail": "04340402"
 	},
 	"next": "04350402.html",
 	"prev": "04330402.html",
 	"list": {
-		"00820502": "Mint",
-		"008b0502": "Lionel",
-		"00b10502": "Leila",
-		"014b0502": "Marshal",
-		"01690502": "Maple",
-		"01b80502": "Pompom",
-		"01cf0502": "Simon",
-		"036c0a02": "Plague Knight",
-		"04a40902": "Sidon",
+		"001e0002": "Olimar",
+		"00470502": "Sable",
+		"00e10502": "Timbra",
+		"00f00502": "Julian",
+		"012c0502": "Colton",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02980e02": "Bowser - Tennis",
+		"03741402": "Super Mario Cereal",
+		"039fff02": "Yoshi - Power Up Band",
 		"04d61d02": "Dee Jay"
 	}
 }

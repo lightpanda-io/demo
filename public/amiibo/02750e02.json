@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20301-02750e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c20301-02750e02.png",
 		"tail": "02750e02"
 	},
 	"next": "00b90502.html",
 	"prev": "00540502.html",
 	"list": {
-		"00170002": "Sheik",
-		"001b0002": "Ganondorf",
-		"007d0502": "Monique",
-		"00a00502": "Bertha",
-		"01410502": "Greta",
-		"01580502": "Monty",
-		"01a30502": "Rory",
-		"01a50502": "Walt",
-		"02470502": "Blathers",
-		"043b1302": "Samus"
+		"00180002": "Ike",
+		"006e0502": "Puck",
+		"00c90502": "Kidd",
+		"02510002": "Lucas",
+		"02770e02": "Peach - Horse Racing",
+		"02850e02": "Wario - Golf",
+		"039dff02": "Peach - Power Up Band",
+		"042c1802": "Palamute",
+		"04ce1d02": "Jamie",
+		"04f31d02": "Mai"
 	}
 }

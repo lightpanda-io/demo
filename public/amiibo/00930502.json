@@ -4,21 +4,21 @@
 		"character": "Eugene",
 		"name": "Eugene",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c60001-00930502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03c60001-00930502.png",
 		"tail": "00930502"
 	},
 	"next": "00f70502.html",
 	"prev": "00b20502.html",
 	"list": {
-		"007a0502": "Snake",
-		"00c30502": "Tom",
-		"00d60502": "Scoot",
-		"00d70502": "Whitney",
-		"01720502": "Katrina",
-		"02550c02": "Meta Knight",
-		"02e70502": "Vivian",
-		"031d0502": "Chelsea",
-		"04150402": "Inkling - Yellow",
-		"04200002": "Kazuya"
+		"00010002": "Peach",
+		"00a20502": "Peanut",
+		"00a90502": "Reese",
+		"01570502": "Astrid",
+		"02fe0502": "Murphy",
+		"03050502": "Bea",
+		"034d0902": "Link - Twilight Princess",
+		"03661302": "Metroid",
+		"03bf0502": "Isabelle - Sweater",
+		"03d10502": "Zoe"
 	}
 }

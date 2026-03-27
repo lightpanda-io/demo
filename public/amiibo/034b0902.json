@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link - Ocarina of Time",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034b0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-034b0902.png",
 		"tail": "034b0902"
 	},
 	"next": "02a10e02.html",
 	"prev": "01480502.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"00600502": "Rasher",
-		"006f0502": "Shari",
-		"00780502": "Limberg",
-		"00bf0502": "Harry",
-		"00c20502": "Kitt",
-		"00d40502": "Carmen",
-		"013f0502": "Merry",
-		"01440502": "Klaus",
-		"03130502": "Olive"
+		"003f0402": "Inkling Boy",
+		"006b0502": "Gigi",
+		"008c0502": "Flo",
+		"027a0e02": "Daisy - Tennis",
+		"030c0502": "Spike",
+		"03150502": "Buzz",
+		"035f1102": "Pikmin",
+		"03b20502": "K.K. Slider",
+		"03b80502": "Harvey",
+		"03be0502": "Tom Nook - Coat"
 	}
 }

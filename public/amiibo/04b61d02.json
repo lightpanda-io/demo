@@ -4,21 +4,21 @@
 		"character": "Dee Jay",
 		"name": "Dee Jay",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34cb0001-04b61d02.png",
 		"tail": "04b61d02"
 	},
 	"next": "04bc1d02.html",
 	"prev": "04b21d02.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"00f70502": "Pecan",
-		"01080502": "Kid Cat",
-		"01410502": "Greta",
-		"023e0302": "Mega Yarn Yoshi",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"02ea0502": "Piper",
-		"030a0502": "Candi",
-		"03941702": "Ikari",
-		"04bc1d02": "Cammy"
+		"00730502": "Sterling",
+		"00d90502": "Coco",
+		"00fc0502": "Chops",
+		"02890e02": "Waluigi - Tennis",
+		"02920e02": "Diddy Kong - Baseball",
+		"03920a02": "Shovel Knight - Gold Edition",
+		"03b10502": "Label",
+		"04131302": "E.M.M.I.",
+		"041f0002": "Mythra",
+		"04d41d02": "Dhalsim"
 	}
 }

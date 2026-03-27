@@ -4,21 +4,21 @@
 		"character": "Soleil",
 		"name": "Soleil",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03820001-016b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03820001-016b0502.png",
 		"tail": "016b0502"
 	},
 	"next": "01bd0502.html",
 	"prev": "024c0502.html",
 	"list": {
-		"004d0502": "Pascal",
-		"00710502": "Winnie",
-		"00720502": "Knox",
-		"01140502": "Wendell",
-		"01610502": "Cube",
-		"01b80502": "Pompom",
-		"01bc0502": "Sydney",
-		"02ec0502": "Hornsby",
-		"04b11d02": "Guile",
-		"04da1d02": "Zangief"
+		"002f0002": "Duck Hunt",
+		"003e0402": "Inkling Girl",
+		"005f0502": "Jambette",
+		"01410502": "Greta",
+		"01c50502": "Rosie",
+		"023e0302": "Mega Yarn Yoshi",
+		"02f20502": "Wade",
+		"02f30502": "Carrie",
+		"04b51d02": "E. Honda",
+		"04be1d02": "A.K.I"
 	}
 }

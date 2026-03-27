@@ -4,21 +4,21 @@
 		"character": "M. Bison",
 		"name": "M. Bison",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04e11d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d60001-04e11d02.png",
 		"tail": "04e11d02"
 	},
 	"next": "04e81d02.html",
 	"prev": "04c01d02.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00140002": "Bowser",
-		"00a60502": "Molly",
-		"00a90502": "Reese",
-		"01410502": "Greta",
-		"01b40502": "Sylvia",
-		"028d0e02": "Donkey Kong - Baseball",
-		"03120502": "Snooty",
-		"04d01d02": "Chun-Li",
-		"04dc1d02": "Cammy"
+		"00720502": "Knox",
+		"00990502": "Chief",
+		"00dd0502": "Rhonda",
+		"01150502": "Cyrus",
+		"014a0502": "Gaston",
+		"02410502": "Mabel",
+		"038c0002": "Richter",
+		"03c40502": "Cyd",
+		"04af1d02": "Kimberly",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

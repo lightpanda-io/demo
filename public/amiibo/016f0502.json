@@ -4,21 +4,21 @@
 		"character": "Chrissy",
 		"name": "Chrissy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a10001-016f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a10001-016f0502.png",
 		"tail": "016f0502"
 	},
 	"next": "02bb0e02.html",
 	"prev": "00600502.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00ef0502": "Agnes",
-		"00fb0502": "Anicotti",
-		"01180502": "Digby - Raincoat",
-		"01490502": "Blanche",
-		"01690502": "Maple",
-		"02a20e02": "Boo - Tennis",
-		"031d0502": "Chelsea",
-		"04340402": "Frye",
-		"04b71d02": "Manon"
+		"004a0502": "Joan",
+		"00770502": "Poppy",
+		"00cc0502": "Cookie",
+		"00fe0502": "Vic",
+		"01090502": "Agent S",
+		"010a0502": "Big Top",
+		"011b0502": "Franklin",
+		"01800502": "Goldie",
+		"01be0502": "Nibbles",
+		"023b0702": "Turbo Charge Donkey Kong"
 	}
 }

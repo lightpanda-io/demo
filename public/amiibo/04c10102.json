@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Super Mario Bros.",
+		"character": "Mario",
+		"name": "Elephant Mario",
+		"gameSeries": "Super Mario",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000400-04c10102.png",
+		"tail": "04c10102"
+	},
+	"next": "03a0ff02.html",
+	"prev": "00030002.html",
+	"list": {
+		"003c0102": "Mario - Gold Edition",
+		"00550502": "Bob",
+		"00b10502": "Leila",
+		"01930502": "Pierce",
+		"01990502": "Bones",
+		"01b50502": "Jacques",
+		"02770e02": "Peach - Horse Racing",
+		"03720102": "Peach - Wedding",
+		"03870002": "Pokemon Trainer",
+		"04131302": "E.M.M.I."
+	}
+}

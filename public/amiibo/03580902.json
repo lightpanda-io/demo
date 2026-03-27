@@ -4,21 +4,21 @@
 		"character": "Daruk",
 		"name": "Daruk",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01050000-03580902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01050000-03580902.png",
 		"tail": "03580902"
 	},
 	"next": "04a50902.html",
 	"prev": "018d0502.html",
 	"list": {
-		"011a0502": "Isabelle - Kimono",
-		"01260502": "Rodeo",
-		"019f0502": "Olaf",
-		"01bc0502": "Sydney",
-		"027d0e02": "Yoshi - Soccer",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"02ec0502": "Hornsby",
-		"03ca0502": "Tiansheng",
-		"04340402": "Frye",
-		"04f01d02": "Ingrid"
+		"00350102": "Luigi",
+		"00610502": "Tiffany",
+		"00670502": "Alli",
+		"01880502": "Peaches",
+		"01b30502": "Chow",
+		"02540c02": "Kirby",
+		"02f30502": "Carrie",
+		"03d00502": "Chabwick",
+		"040c0f02": "Razewing Ratha",
+		"04b41d02": "Dhalsim"
 	}
 }
