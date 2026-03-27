@@ -245,8 +245,12 @@ func fetch(ctx context.Context, u *url.URL) (*Page, error) {
 	}
 
 	var a []*cdp.Node
-	if err := chromedp.Run(ctx, chromedp.Nodes(`a[href]`, &a)); err != nil {
+	if err := chromedp.Run(ctx, chromedp.Nodes(`a[href]`, &a, chromedp.AtLeast(0))); err != nil {
 		return nil, fmt.Errorf("get links: %w", err)
+	}
+
+	if len(a) == 0 {
+		slog.Info("no links found", slog.Any("url", u))
 	}
 
 	links := make([]*url.URL, 0, len(a))
