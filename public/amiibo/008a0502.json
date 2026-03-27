@@ -4,21 +4,21 @@
 		"character": "Yuka",
 		"name": "Yuka",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03bc0001-008a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03bc0001-008a0502.png",
 		"tail": "008a0502"
 	},
 	"next": "02420502.html",
 	"prev": "00bc0502.html",
 	"list": {
-		"00e90502": "Kitty",
-		"00fd0502": "Charlise",
-		"01d50502": "Goldie - Amiibo Festival",
-		"02530002": "Ryu",
-		"02600402": "Inkling Boy - Purple",
-		"02790e02": "Daisy - Baseball",
-		"02f90502": "Maddie",
-		"03820002": "Inkling",
-		"038d0002": "Piranha Plant",
-		"04b31d02": "Blanka"
+		"00230002": "Mii Gunner",
+		"00390102": "Bowser",
+		"01100502": "Phyllis",
+		"013a0502": "Wart Jr.",
+		"01980502": "Melba",
+		"023a0702": "Hammer Slam Bowser",
+		"040e0f02": "Tsukino",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04b21d02": "Juri",
+		"04f31d02": "Mai"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Zelda",
 		"name": "Zelda - Tears of the Kingdom",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010000-04190902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010000-04190902.png",
 		"tail": "04190902"
 	},
 	"next": "00ba0502.html",
 	"prev": "01170502.html",
 	"list": {
-		"00410302": "Green Yarn Yoshi",
-		"00970502": "Benjamin",
-		"00d20502": "Olivia",
-		"01840502": "Mallary",
-		"019c0502": "Naomi",
-		"01c50502": "Rosie",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"034c0902": "Link - Majora's Mask",
-		"03c40502": "Cyd",
-		"04db1d02": "Lily"
+		"00070002": "Wii Fit Trainer",
+		"003f0402": "Inkling Boy",
+		"00e40502": "Teddy",
+		"011d0502": "Lily",
+		"024a0502": "Kicks",
+		"02620102": "Rosalina",
+		"02650102": "Diddy Kong",
+		"02a00e02": "Boo - Soccer",
+		"02f80502": "Jacob",
+		"03611202": "Celica"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Simon",
 		"name": "Simon",
 		"gameSeries": "Castlevania",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c00000-038b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_37c00000-038b0002.png",
 		"tail": "038b0002"
 	},
 	"next": "040f1802.html",
 	"prev": "043c1302.html",
 	"list": {
-		"003a0202": "Chibi Robo",
-		"00550502": "Bob",
-		"00700502": "Octavian",
-		"007f0502": "Samson",
-		"00b50502": "Blanca",
-		"01260502": "Rodeo",
-		"015b0502": "Victoria",
-		"02380602": "8-Bit Mario Classic Color",
-		"023e0302": "Mega Yarn Yoshi",
-		"02550c02": "Meta Knight"
+		"00870502": "Clyde",
+		"00ad0502": "Booker",
+		"01500502": "Bree",
+		"01d40502": "Isabelle - Character Parfait",
+		"02930e02": "Diddy Kong - Tennis",
+		"02ef0502": "Huck",
+		"02f30502": "Carrie",
+		"03080502": "Boots",
+		"034e0902": "Link - Skyward Sword",
+		"04d31d02": "Blanka"
 	}
 }

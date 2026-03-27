@@ -4,21 +4,21 @@
 		"character": "Pietro",
 		"name": "Pietro",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d20001-01a70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04d20001-01a70502.png",
 		"tail": "01a70502"
 	},
 	"next": "02a70e02.html",
 	"prev": "036b0402.html",
 	"list": {
-		"00e70502": "Bianca",
-		"01200502": "Kody",
-		"019c0502": "Naomi",
+		"00050002": "Fox",
+		"00870502": "Clyde",
+		"00b50502": "Blanca",
+		"00ee0502": "Benedict",
+		"011a0502": "Isabelle - Kimono",
+		"01ae0502": "Celia",
 		"01b80502": "Pompom",
-		"02b90e02": "Metal Mario - Soccer",
-		"02f80502": "Jacob",
-		"034e0902": "Link - Skyward Sword",
-		"04281902": "Roa Kirishima",
-		"04de1d02": "A.K.I",
-		"04e41d02": "Sagat"
+		"0432ff02": "Diddy Kong - Power Up Band",
+		"04cb1d02": "Ryu",
+		"04fb0f02": "Ratha V"
 	}
 }

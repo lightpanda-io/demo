@@ -4,21 +4,21 @@
 		"character": "Merengue",
 		"name": "Merengue",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b90001-01600502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04b90001-01600502.png",
 		"tail": "01600502"
 	},
 	"next": "009e0502.html",
 	"prev": "00b30502.html",
 	"list": {
-		"00770502": "Poppy",
-		"00d90502": "Coco",
-		"01070502": "Freya",
+		"011b0502": "Franklin",
 		"01420502": "Wolfgang",
-		"01520502": "Curlos",
-		"017f0502": "Zipper",
-		"023a0702": "Hammer Slam Bowser",
-		"02690e02": "Mario - Soccer",
-		"04370402": "Marie - Alterna",
-		"04a40902": "Sidon"
+		"023d0002": "Mewtwo",
+		"023e0302": "Mega Yarn Yoshi",
+		"02640102": "Donkey Kong",
+		"02ec0502": "Hornsby",
+		"02f10502": "Boris",
+		"02f60502": "Stu",
+		"03680102": "Koopa Troopa",
+		"040f1802": "Magnamalo"
 	}
 }

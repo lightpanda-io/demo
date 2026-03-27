@@ -4,21 +4,21 @@
 		"character": "King Knight",
 		"name": "King Knight",
 		"gameSeries": "Shovel Knight",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c30000-036e0a02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35c30000-036e0a02.png",
 		"tail": "036e0a02"
 	},
 	"next": "00400402.html",
 	"prev": "02a00e02.html",
 	"list": {
-		"00260002": "Jigglypuff",
-		"01000502": "Drift",
-		"01560502": "Hamlet",
-		"02700e02": "Luigi - Tennis",
-		"03c90502": "Ione",
-		"03d00502": "Chabwick",
-		"03d10502": "Zoe",
-		"043e1b02": "Mio",
-		"04bb1d02": "Lily",
-		"04d91d02": "JP"
+		"000c0002": "Luigi",
+		"00970502": "Benjamin",
+		"00cd0502": "Sly",
+		"010c0502": "Rover",
+		"012a0502": "Elvis",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"02680102": "Boo",
+		"02f60502": "Stu",
+		"03c10502": "Megan",
+		"03d60502": "Roswell"
 	}
 }

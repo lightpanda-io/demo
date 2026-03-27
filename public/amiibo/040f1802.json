@@ -4,21 +4,21 @@
 		"character": "Magnamalo",
 		"name": "Magnamalo",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35080000-040f1802.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35080000-040f1802.png",
 		"tail": "040f1802"
 	},
 	"next": "02b60e02.html",
 	"prev": "038b0002.html",
 	"list": {
-		"008c0502": "Flo",
-		"00ab0502": "Labelle",
-		"00bc0502": "Tia",
-		"01550502": "Flora",
-		"01a00502": "Lucy",
-		"025f0402": "Inkling Girl - Lime Green",
-		"027c0e02": "Daisy - Horse Racing",
-		"039bff02": "Mario - Power Up Band",
-		"03a60102": "Mario - Cat",
-		"03b70502": "Saharah"
+		"00520502": "Tortimer",
+		"007d0502": "Monique",
+		"00b30502": "Don Resetti",
+		"016d0502": "Derwin",
+		"01970502": "Tex",
+		"030c0502": "Spike",
+		"03ac0502": "Wilbur",
+		"041d0002": "Min Min",
+		"04c01d02": "Akuma",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

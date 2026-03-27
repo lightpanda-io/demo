@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20101-02730e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c20101-02730e02.png",
 		"tail": "02730e02"
 	},
 	"next": "03c00502.html",
 	"prev": "041d0002.html",
 	"list": {
-		"00a20502": "Peanut",
-		"01000502": "Drift",
-		"01c80502": "Bruce",
-		"02770e02": "Peach - Horse Racing",
-		"027b0e02": "Daisy - Golf",
-		"02960e02": "Bowser - Soccer",
-		"03160502": "Cleo",
-		"03bb0502": "Lottie - Island",
-		"03cb0502": "Shino",
-		"03cc0502": "Marlo"
+		"009a0502": "Bunnie",
+		"010c0502": "Rover",
+		"01560502": "Hamlet",
+		"01c60502": "Rowan",
+		"02560c02": "King Dedede",
+		"02ff0502": "Plucky",
+		"03020502": "Raddle",
+		"031e0502": "Toby",
+		"03d00502": "Chabwick",
+		"042d1802": "Malzeno"
 	}
 }

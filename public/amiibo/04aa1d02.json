@@ -4,21 +4,20 @@
 		"character": "Luke",
 		"name": "Luke",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c20000-04aa1d02.png",
 		"tail": "04aa1d02"
 	},
 	"next": "04ab1d02.html",
 	"prev": "02530002.html",
 	"list": {
-		"00560502": "Fauna",
-		"00580502": "Portia",
-		"005c0502": "Al",
-		"01580502": "Monty",
-		"01a60502": "Mira",
-		"03030502": "Julia",
-		"031b0502": "Étoile",
-		"036d0a02": "Specter Knight",
-		"03850002": "Pichu",
-		"04e61d02": "Alex"
+		"00490502": "Resetti",
+		"00990502": "Chief",
+		"01500502": "Bree",
+		"01a50502": "Walt",
+		"030e0502": "Tad",
+		"03720102": "Peach - Wedding",
+		"03bd0502": "Wardell",
+		"03c40502": "Cyd",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

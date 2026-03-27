@@ -4,21 +4,21 @@
 		"character": "Kimberly",
 		"name": "Kimberly",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c40001-04cf1d02.png",
 		"tail": "04cf1d02"
 	},
 	"next": "04d81d02.html",
 	"prev": "04d71d02.html",
 	"list": {
-		"001f0002": "Palutena",
-		"00240002": "Charizard",
-		"004d0502": "Pascal",
-		"008d0502": "Cobb",
-		"00f70502": "Pecan",
-		"01630502": "Curly",
-		"01890502": "Dizzy",
-		"01cc0502": "Frobert",
-		"02a70e02": "Baby Mario - Tennis",
-		"034e0902": "Link - Skyward Sword"
+		"00be0502": "Fuchsia",
+		"00e80502": "Filbert",
+		"01530502": "Skye",
+		"01570502": "Astrid",
+		"01660502": "Sparro",
+		"02ef0502": "Huck",
+		"035d0302": "Poochy",
+		"037a0002": "Daisy",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04a50902": "Tulin"
 	}
 }

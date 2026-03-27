@@ -4,21 +4,21 @@
 		"character": "Azalea",
 		"name": "Azalea",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1e0001-03d50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a1e0001-03d50502.png",
 		"tail": "03d50502"
 	},
 	"next": "00060002.html",
 	"prev": "013c0502.html",
 	"list": {
+		"000f0002": "Little Mac",
 		"00310002": "Mega Man",
-		"00340102": "Mario",
-		"016d0502": "Derwin",
-		"01d30502": "Robin",
-		"02a20e02": "Boo - Tennis",
-		"02e60f02": "Qurupeco and Dan",
-		"042c1802": "Palamute",
-		"04a91d02": "Ken",
-		"04ad1d02": "Jamie",
-		"04dc1d02": "Cammy"
+		"00850502": "Gruff",
+		"01420502": "Wolfgang",
+		"02520002": "Roy",
+		"026c0e02": "Mario - Golf",
+		"02740e02": "Peach - Baseball",
+		"02770e02": "Peach - Horse Racing",
+		"027b0e02": "Daisy - Golf",
+		"03a40002": "Terry"
 	}
 }

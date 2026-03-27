@@ -4,21 +4,21 @@
 		"character": "Rilla",
 		"name": "Rilla",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03740101-03190502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03740101-03190502.png",
 		"tail": "03190502"
 	},
 	"next": "00080002.html",
 	"prev": "041e0002.html",
 	"list": {
-		"00220002": "Mii Swordfighter",
-		"00340102": "Mario",
-		"00b70502": "Chip",
+		"00120002": "Captain Falcon",
+		"008b0502": "Lionel",
+		"00de0502": "Butch",
+		"013c0502": "Beardo",
+		"015c0502": "Lyman",
 		"016b0502": "Soleil",
-		"01a50502": "Walt",
-		"02500a02": "Shovel Knight",
-		"02740e02": "Peach - Baseball",
-		"03b60502": "Kicks",
-		"04cb1d02": "Ryu",
-		"04e41d02": "Sagat"
+		"02540c02": "Kirby",
+		"025d0402": "Callie",
+		"03160502": "Cleo",
+		"04a40902": "Sidon"
 	}
 }

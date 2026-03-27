@@ -4,21 +4,21 @@
 		"character": "Charizard",
 		"name": "Charizard",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19060000-00240002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_19060000-00240002.png",
 		"tail": "00240002"
 	},
 	"next": "01a60502.html",
 	"prev": "005f0502.html",
 	"list": {
-		"00960502": "Annalisa",
-		"00b30502": "Don Resetti",
-		"01170502": "Timmy - Full Apron",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"036f1202": "Chrom",
-		"038a0002": "Snake",
-		"03d60502": "Roswell",
-		"041d0002": "Min Min",
-		"04360402": "Callie - Alterna",
-		"043a1302": "Samus \u0026 Vi-O-La"
+		"00230002": "Mii Gunner",
+		"00580502": "Portia",
+		"00f50502": "Hugh",
+		"00fd0502": "Charlise",
+		"01500502": "Bree",
+		"02690e02": "Mario - Soccer",
+		"02b70e02": "Rosalina - Golf",
+		"037d0002": "Isabelle",
+		"039fff02": "Yoshi - Power Up Band",
+		"04aa1d02": "Luke"
 	}
 }

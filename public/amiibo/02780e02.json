@@ -4,21 +4,21 @@
 		"character": "Daisy",
 		"name": "Daisy - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c30101-02780e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c30101-02780e02.png",
 		"tail": "02780e02"
 	},
 	"next": "00090002.html",
 	"prev": "02490502.html",
 	"list": {
-		"00810502": "T-Bone",
-		"00a70502": "Walker",
-		"00f90502": "Alice",
-		"01630502": "Curly",
-		"016b0502": "Soleil",
-		"01850502": "Rocco",
-		"01900502": "Lolly",
-		"019f0502": "Olaf",
-		"02b80e02": "Rosalina - Horse Racing",
-		"04be1d02": "A.K.I"
+		"00260002": "Jigglypuff",
+		"01160502": "Grams",
+		"014b0502": "Marshal",
+		"01510502": "Rooney",
+		"01a40502": "Elise",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02bc0e02": "Metal Mario - Golf",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04190902": "Zelda - Tears of the Kingdom"
 	}
 }

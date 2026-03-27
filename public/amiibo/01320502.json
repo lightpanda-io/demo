@@ -4,21 +4,21 @@
 		"character": "Ricky",
 		"name": "Ricky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e70001-01320502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e70001-01320502.png",
 		"tail": "01320502"
 	},
 	"next": "01610502.html",
 	"prev": "014f0502.html",
 	"list": {
-		"00580502": "Portia",
-		"00a10502": "Cyrano",
-		"01260502": "Rodeo",
-		"017f0502": "Zipper",
-		"019f0502": "Olaf",
-		"02540c02": "Kirby",
-		"02890e02": "Waluigi - Tennis",
-		"030b0502": "Leopold",
-		"03b30502": "C.J.",
-		"04370402": "Marie - Alterna"
+		"003e0402": "Inkling Girl",
+		"00540502": "Lottie",
+		"00710502": "Winnie",
+		"00e20502": "Zell",
+		"01450502": "Daisy",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02940e02": "Diddy Kong - Golf",
+		"03ce0502": "Cephalobot",
+		"04db1d02": "Lily",
+		"04fa0f02": "Ratha"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Tasha",
 		"name": "Tasha",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ea0001-03180502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ea0001-03180502.png",
 		"tail": "03180502"
 	},
 	"next": "01d30502.html",
 	"prev": "02b30e02.html",
 	"list": {
-		"01030502": "Pango",
-		"02720e02": "Luigi - Horse Racing",
-		"02810e02": "Yoshi - Horse Racing",
-		"028b0e02": "Waluigi - Horse Racing",
-		"030a0502": "Candi",
-		"03c70502": "Reneigh",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04b51d02": "E. Honda",
-		"04df1d02": "Ed",
-		"04e51d02": "C. Viper"
+		"00df0502": "Gabi",
+		"00e50502": "Mathilda",
+		"01690502": "Maple",
+		"01900502": "Lolly",
+		"01960502": "Frita",
+		"01be0502": "Nibbles",
+		"02640102": "Donkey Kong",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02ad0e02": "Baby Luigi - Golf",
+		"04df1d02": "Ed"
 	}
 }

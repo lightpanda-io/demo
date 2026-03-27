@@ -4,21 +4,21 @@
 		"character": "Pelly",
 		"name": "Pelly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a00001-010f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a00001-010f0502.png",
 		"tail": "010f0502"
 	},
 	"next": "01cc0502.html",
 	"prev": "02890e02.html",
 	"list": {
-		"00540502": "Lottie",
-		"00e40502": "Teddy",
+		"00080002": "Villager",
+		"00600502": "Rasher",
+		"00e90502": "Kitty",
+		"01250502": "Mitzi",
+		"013b0502": "Hazel",
 		"01610502": "Cube",
-		"01bb0502": "Rizzo",
-		"024b0502": "Isabelle - Summer Outfit",
-		"035e1002": "Qbby",
-		"04121302": "Samus - Metroid Dread",
-		"04ae1d02": "Kimberly",
-		"04d61d02": "Dee Jay",
-		"04f11d02": "Terry"
+		"02380602": "8-Bit Mario Classic Color",
+		"02700e02": "Luigi - Tennis",
+		"03a80502": "Tom Nook",
+		"03b40502": "Flick"
 	}
 }

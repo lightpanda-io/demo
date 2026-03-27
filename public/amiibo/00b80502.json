@@ -4,21 +4,21 @@
 		"character": "Jack",
 		"name": "Jack",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ad0001-00b80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01ad0001-00b80502.png",
 		"tail": "00b80502"
 	},
 	"next": "03931702.html",
 	"prev": "03110502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"001b0002": "Ganondorf",
-		"002c0002": "Ness",
-		"003c0102": "Mario - Gold Edition",
-		"007b0502": "Bangle",
-		"00940502": "Eunice",
-		"014e0502": "Pippy",
-		"01550502": "Flora",
-		"019f0502": "Olaf",
-		"03bb0502": "Lottie - Island"
+		"00470502": "Sable",
+		"00e60502": "Ed",
+		"012c0502": "Colton",
+		"015a0502": "Biskit",
+		"019d0502": "Peewee",
+		"01a80502": "Aurora",
+		"026c0e02": "Mario - Golf",
+		"03a50002": "Byleth",
+		"043d1b02": "Noah",
+		"04f11d02": "Terry"
 	}
 }

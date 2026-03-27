@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Yoshi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00370102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030000-00370102.png",
 		"tail": "00370102"
 	},
 	"next": "04421c02.html",
 	"prev": "00b00502.html",
 	"list": {
-		"00440502": "Isabelle",
-		"008c0502": "Flo",
-		"00b50502": "Blanca",
-		"00cb0502": "Egbert",
-		"01260502": "Rodeo",
-		"02ff0502": "Plucky",
-		"03820002": "Inkling",
-		"04421c02": "Yoshi - My Mario Wooden Blocks",
-		"04a40902": "Sidon",
-		"04c91e03": "Bandana Waddle Dee"
+		"00d70502": "Whitney",
+		"01420502": "Wolfgang",
+		"01700502": "Isabelle - Dress",
+		"01740502": "Celeste",
+		"018d0502": "Croque",
+		"02380602": "8-Bit Mario Classic Color",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"029e0e02": "Bowser Jr. - Golf",
+		"03ad0502": "Blathers",
+		"04ec1d02": "Elena"
 	}
 }

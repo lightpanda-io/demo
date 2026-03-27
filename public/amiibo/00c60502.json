@@ -4,21 +4,21 @@
 		"character": "Pate",
 		"name": "Pate",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03090001-00c60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03090001-00c60502.png",
 		"tail": "00c60502"
 	},
 	"next": "000a0002.html",
 	"prev": "02420502.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"003f0402": "Inkling Boy",
-		"004d0502": "Pascal",
-		"00680502": "Kabuki",
-		"012e0502": "Spork/Crackle",
-		"02390602": "8-Bit Mario Modern Color",
-		"02890e02": "Waluigi - Tennis",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03860002": "Incineroar"
+		"00440502": "Isabelle",
+		"00890502": "Biff",
+		"00db0502": "Wendy",
+		"00fb0502": "Anicotti",
+		"01100502": "Phyllis",
+		"013a0502": "Wart Jr.",
+		"015e0502": "Frank",
+		"01910502": "Erik",
+		"037c0002": "Young Link",
+		"04fb0f02": "Ratha V"
 	}
 }

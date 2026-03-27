@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Girl",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-003e0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000100-003e0402.png",
 		"tail": "003e0402"
 	},
 	"next": "01c10502.html",
 	"prev": "039cff02.html",
 	"list": {
-		"00080002": "Villager",
-		"00150002": "Bowser Jr.",
-		"002f0002": "Duck Hunt",
-		"009f0502": "Henry",
-		"00ed0502": "Ruby",
-		"014a0502": "Gaston",
-		"017c0502": "Pave",
-		"01910502": "Erik",
-		"028f0e02": "Donkey Kong - Golf",
-		"index": "Sandy"
+		"00210002": "Mii Brawler",
+		"00320002": "Pac-Man",
+		"00400402": "Inkling Squid",
+		"00410302": "Green Yarn Yoshi",
+		"01210502": "Miranda",
+		"01610502": "Cube",
+		"01660502": "Sparro",
+		"03cf0502": "Quinn",
+		"04d21d02": "Juri",
+		"04dc1d02": "Cammy"
 	}
 }

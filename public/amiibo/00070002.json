@@ -4,21 +4,21 @@
 		"character": "Wii Fit Trainer",
 		"name": "Wii Fit Trainer",
 		"gameSeries": "Wii Fit",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07000000-00070002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07000000-00070002.png",
 		"tail": "00070002"
 	},
 	"next": "001a0002.html",
 	"prev": "02be0e02.html",
 	"list": {
-		"000c0002": "Luigi",
-		"00720502": "Knox",
-		"00c30502": "Tom",
-		"00ef0502": "Agnes",
-		"00fe0502": "Vic",
-		"01230502": "Paula",
-		"01bf0502": "Kevin",
-		"01d50502": "Goldie - Amiibo Festival",
-		"02b50e02": "Rosalina - Baseball",
-		"04bd1d02": "Rashid"
+		"005d0502": "Renée",
+		"007b0502": "Bangle",
+		"00820502": "Mint",
+		"00850502": "Gruff",
+		"01020502": "Marcel",
+		"01760502": "Gracie",
+		"02870e02": "Waluigi - Soccer",
+		"037a0002": "Daisy",
+		"039eff02": "Daisy - Power Up Band",
+		"03d60502": "Roswell"
 	}
 }

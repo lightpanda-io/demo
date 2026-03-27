@@ -4,21 +4,21 @@
 		"character": "Zell",
 		"name": "Zell",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d80001-00e20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02d80001-00e20502.png",
 		"tail": "00e20502"
 	},
 	"next": "009b0502.html",
 	"prev": "03651302.html",
 	"list": {
-		"00240002": "Charizard",
-		"00800502": "Tutu",
-		"01a00502": "Lucy",
-		"028d0e02": "Donkey Kong - Baseball",
-		"02b10e02": "Birdo - Tennis",
-		"03911602": "Loot Goblin",
-		"03a10002": "Joker",
-		"041c0402": "Smallfry",
-		"04ae1d02": "Kimberly",
-		"04d41d02": "Dhalsim"
+		"008c0502": "Flo",
+		"01ce0502": "Cally",
+		"02510002": "Lucas",
+		"02810e02": "Yoshi - Horse Racing",
+		"02990e02": "Bowser - Golf",
+		"030c0502": "Spike",
+		"04ad1d02": "Jamie",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)",
+		"04df1d02": "Ed",
+		"04ef1d02": "Alex"
 	}
 }

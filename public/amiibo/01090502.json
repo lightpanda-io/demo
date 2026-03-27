@@ -4,21 +4,21 @@
 		"character": "Agent S",
 		"name": "Agent S",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e20001-01090502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e20001-01090502.png",
 		"tail": "01090502"
 	},
 	"next": "00250002.html",
 	"prev": "02940e02.html",
 	"list": {
-		"00690502": "Patty",
-		"00790502": "Deena",
-		"011f0502": "Tabby",
-		"01740502": "Celeste",
-		"02960e02": "Bowser - Soccer",
-		"02f90502": "Maddie",
-		"03070502": "Ellie",
-		"031e0502": "Toby",
-		"03a0ff02": "Toad - Power Up Band",
-		"04e51d02": "C. Viper"
+		"00090002": "Pikachu",
+		"000d0002": "Diddy Kong",
+		"009f0502": "Henry",
+		"00ad0502": "Booker",
+		"01b90502": "Tank",
+		"01bd0502": "Barold",
+		"03170502": "Ike",
+		"03941702": "Ikari",
+		"03d10502": "Zoe",
+		"0432ff02": "Diddy Kong - Power Up Band"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Knox",
 		"name": "Knox",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a40001-00720502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02a40001-00720502.png",
 		"tail": "00720502"
 	},
 	"next": "02640102.html",
 	"prev": "008c0502.html",
 	"list": {
-		"00240002": "Charizard",
-		"005c0502": "Al",
-		"010f0502": "Pelly",
-		"01380502": "Mac",
-		"01480502": "Tucker",
-		"01570502": "Astrid",
-		"01a60502": "Mira",
-		"02a20e02": "Boo - Tennis",
-		"02bb0e02": "Metal Mario - Tennis",
-		"03180502": "Tasha"
+		"00470502": "Sable",
+		"00820502": "Mint",
+		"00940502": "Eunice",
+		"00cd0502": "Sly",
+		"01750502": "Tommy - Suit",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01d00502": "Iggly",
+		"02870e02": "Waluigi - Soccer",
+		"039bff02": "Mario - Power Up Band",
+		"040c0f02": "Razewing Ratha"
 	}
 }

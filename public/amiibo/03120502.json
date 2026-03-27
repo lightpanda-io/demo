@@ -4,21 +4,21 @@
 		"character": "Snooty",
 		"name": "Snooty",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02060001-03120502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02060001-03120502.png",
 		"tail": "03120502"
 	},
 	"next": "023e0302.html",
 	"prev": "01580502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"00a30502": "Cole",
-		"01530502": "Skye",
-		"018b0502": "Boone",
-		"018f0502": "Shep",
-		"01d10502": "Angus",
-		"02470502": "Blathers",
-		"027b0e02": "Daisy - Golf",
-		"03951702": "Yabe",
-		"043f1c02": "Mario - My Mario Wooden Blocks"
+		"000f0002": "Little Mac",
+		"00b20502": "Shrunk",
+		"00ff0502": "Ankha",
+		"02b60e02": "Rosalina - Tennis",
+		"03150502": "Buzz",
+		"038a0002": "Snake",
+		"040c0f02": "Razewing Ratha",
+		"040e0f02": "Tsukino",
+		"0431ff02": "Donkey Kong - Power Up Band",
+		"04dc1d02": "Cammy"
 	}
 }

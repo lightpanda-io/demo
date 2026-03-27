@@ -4,21 +4,21 @@
 		"character": "Croque",
 		"name": "Croque",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03490001-018d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03490001-018d0502.png",
 		"tail": "018d0502"
 	},
 	"next": "03580902.html",
 	"prev": "02690e02.html",
 	"list": {
-		"00190002": "Dr. Mario",
-		"00a70502": "Walker",
-		"00b30502": "Don Resetti",
-		"01390502": "Eloise",
-		"018a0502": "Penelope",
-		"025c0d02": "Shadow Mewtwo",
-		"02bd0e02": "Metal Mario - Horse Racing",
-		"03100502": "Gonzo",
-		"03c80502": "Sasha",
-		"04be1d02": "A.K.I"
+		"00030002": "Donkey Kong",
+		"00060002": "Samus",
+		"01090502": "Agent S",
+		"01330502": "Deirdre",
+		"013c0502": "Beardo",
+		"015a0502": "Biskit",
+		"03630002": "Corrin - Player 2",
+		"043a1302": "Samus \u0026 Vi-O-La",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04da1d02": "Zangief"
 	}
 }

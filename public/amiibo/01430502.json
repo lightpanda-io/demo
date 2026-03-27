@@ -4,21 +4,21 @@
 		"character": "Diva",
 		"name": "Diva",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_034a0001-01430502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_034a0001-01430502.png",
 		"tail": "01430502"
 	},
 	"next": "00920502.html",
 	"prev": "030d0502.html",
 	"list": {
-		"00910502": "Roscoe",
-		"011c0502": "Jingle",
-		"012f0502": "Freckles",
-		"02630102": "Wario",
-		"02720e02": "Luigi - Horse Racing",
-		"03040502": "Louie",
-		"038f0402": "Octoling Boy",
-		"03971702": "Ganda",
-		"03a40002": "Terry",
-		"04b81d02": "Marisa"
+		"00070002": "Wii Fit Trainer",
+		"00110002": "Lucario",
+		"01590502": "Dora",
+		"02f10502": "Boris",
+		"02fc0502": "Bitty",
+		"03c60502": "Raymond",
+		"03d10502": "Zoe",
+		"042b1802": "Palico",
+		"04e81d02": "Terry",
+		"04ef1d02": "Alex"
 	}
 }

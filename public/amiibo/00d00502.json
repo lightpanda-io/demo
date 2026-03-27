@@ -4,21 +4,21 @@
 		"character": "Nana",
 		"name": "Nana",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fa0001-00d00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03fa0001-00d00502.png",
 		"tail": "00d00502"
 	},
 	"next": "029d0e02.html",
 	"prev": "012d0502.html",
 	"list": {
-		"00410302": "Green Yarn Yoshi",
-		"00600502": "Rasher",
-		"00a50502": "Roald",
-		"00de0502": "Butch",
-		"019a0502": "Anabelle",
-		"02540c02": "Kirby",
-		"02ef0502": "Huck",
-		"038f0402": "Octoling Boy",
-		"04291902": "Nail Saionji",
-		"04a60902": "Yunobo"
+		"00210002": "Mii Brawler",
+		"003f0402": "Inkling Boy",
+		"00a00502": "Bertha",
+		"00e20502": "Zell",
+		"01240502": "Ken",
+		"01460502": "Stinky",
+		"01cd0502": "Grizzly",
+		"036c0a02": "Plague Knight",
+		"03aa0502": "Isabelle",
+		"04c41e03": "Kirby (\u0026 Warp Star)"
 	}
 }

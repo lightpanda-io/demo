@@ -4,21 +4,21 @@
 		"character": "Pippy",
 		"name": "Pippy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049a0001-014e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_049a0001-014e0502.png",
 		"tail": "014e0502"
 	},
 	"next": "00020002.html",
 	"prev": "02b90e02.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00460502": "DJ KK",
-		"004e0502": "Harriet",
-		"009c0502": "Diana",
-		"01410502": "Greta",
-		"01a10502": "Elmer",
-		"02470502": "Blathers",
-		"02bb0e02": "Metal Mario - Tennis",
-		"02ed0502": "Stella",
-		"03741402": "Super Mario Cereal"
+		"00070002": "Wii Fit Trainer",
+		"004d0502": "Pascal",
+		"017e0502": "Redd - Shirt",
+		"02490502": "Resetti",
+		"03120502": "Snooty",
+		"03530902": "Link - Archer",
+		"037d0002": "Isabelle",
+		"03820002": "Inkling",
+		"03ce0502": "Cephalobot",
+		"04a91d02": "Ken"
 	}
 }

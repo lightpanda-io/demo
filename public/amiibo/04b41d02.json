@@ -4,20 +4,21 @@
 		"character": "Dhalsim",
 		"name": "Dhalsim",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c90001-04b41d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c90001-04b41d02.png",
 		"tail": "04b41d02"
 	},
 	"next": "04bd1d02.html",
 	"prev": "04ba1d02.html",
 	"list": {
-		"000e0002": "Zelda",
-		"00330002": "R.O.B. - NES",
-		"00ed0502": "Ruby",
-		"00ef0502": "Agnes",
-		"01160502": "Grams",
-		"02880e02": "Waluigi - Baseball",
-		"02e80502": "Hopkins",
-		"03cc0502": "Marlo",
-		"04ce1d02": "Jamie"
+		"000f0002": "Little Mac",
+		"005e0502": "Lopez",
+		"00b80502": "Jack",
+		"00d90502": "Coco",
+		"01550502": "Flora",
+		"019c0502": "Naomi",
+		"01b50502": "Jacques",
+		"02640102": "Donkey Kong",
+		"03670102": "Goomba",
+		"03bd0502": "Wardell"
 	}
 }

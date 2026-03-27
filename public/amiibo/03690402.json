@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Girl - Neon Pink",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-03690402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000100-03690402.png",
 		"tail": "03690402"
 	},
 	"next": "03670102.html",
 	"prev": "015f0502.html",
 	"list": {
-		"00ff0502": "Ankha",
-		"011b0502": "Franklin",
-		"014b0502": "Marshal",
-		"02f80502": "Jacob",
-		"03100502": "Gonzo",
-		"03611202": "Celica",
-		"037a0002": "Daisy",
-		"03951702": "Yabe",
-		"039bff02": "Mario - Power Up Band",
-		"04e61d02": "Alex"
+		"00280002": "King Dedede",
+		"00900502": "Cherry",
+		"01520502": "Curlos",
+		"01640502": "Boomer",
+		"03590902": "Urbosa",
+		"036a0402": "Inkling Boy - Neon Green",
+		"038e0402": "Octoling Girl",
+		"03a20002": "Hero",
+		"03a50002": "Byleth",
+		"040d0f02": "Ena"
 	}
 }

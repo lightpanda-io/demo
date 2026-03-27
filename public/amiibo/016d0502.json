@@ -4,21 +4,21 @@
 		"character": "Derwin",
 		"name": "Derwin",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030f0001-016d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_030f0001-016d0502.png",
 		"tail": "016d0502"
 	},
 	"next": "002e0002.html",
 	"prev": "04421c02.html",
 	"list": {
-		"009d0502": "Axel",
-		"00d20502": "Olivia",
-		"01070502": "Freya",
-		"010d0502": "Blathers",
-		"01150502": "Cyrus",
-		"01930502": "Pierce",
-		"01b60502": "Sally",
-		"01bb0502": "Rizzo",
+		"00c50502": "Prince",
+		"017e0502": "Redd - Shirt",
 		"02810e02": "Yoshi - Horse Racing",
-		"04e11d02": "M. Bison"
+		"02b90e02": "Metal Mario - Soccer",
+		"02fa0502": "Billy",
+		"03100502": "Gonzo",
+		"03530902": "Link - Archer",
+		"03ab0502": "Orville",
+		"03cf0502": "Quinn",
+		"04cd1d02": "Luke"
 	}
 }

@@ -4,20 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Boy - Neon Green",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000200-036a0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000200-036a0402.png",
 		"tail": "036a0402"
 	},
 	"next": "00890502.html",
 	"prev": "00990502.html",
 	"list": {
-		"00600502": "Rasher",
-		"00fd0502": "Charlise",
-		"010d0502": "Blathers",
-		"01c20502": "Hippeux",
-		"01cf0502": "Simon",
-		"03701202": "Tiki",
-		"03840002": "Squirtle",
-		"03a10002": "Joker",
-		"03b80502": "Harvey"
+		"005f0502": "Jambette",
+		"00f40502": "Flip",
+		"012b0502": "Canberra",
+		"024c0502": "Rover",
+		"02ef0502": "Huck",
+		"03c80502": "Sasha",
+		"04210002": "Sephiroth",
+		"043a1302": "Samus \u0026 Vi-O-La",
+		"04d81d02": "Marisa",
+		"04e71d02": "Ingrid"
 	}
 }

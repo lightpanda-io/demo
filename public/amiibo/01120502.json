@@ -4,21 +4,21 @@
 		"character": "Mabel",
 		"name": "Mabel",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01880001-01120502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01880001-01120502.png",
 		"tail": "01120502"
 	},
 	"next": "04150402.html",
 	"prev": "01650502.html",
 	"list": {
-		"00950502": "Goose",
-		"00cd0502": "Sly",
-		"012c0502": "Colton",
-		"01430502": "Diva",
-		"01550502": "Flora",
-		"01ca0502": "Gayle",
-		"02b90e02": "Metal Mario - Soccer",
-		"039cff02": "Luigi - Power Up Band",
-		"039eff02": "Daisy - Power Up Band",
-		"041f0002": "Mythra"
+		"00100002": "Pit",
+		"005e0502": "Lopez",
+		"00d50502": "Rodney",
+		"013a0502": "Wart Jr.",
+		"01a10502": "Elmer",
+		"01d70502": "Rosie - Amiibo Festival",
+		"02b40e02": "Rosalina - Soccer",
+		"03690402": "Inkling Girl - Neon Pink",
+		"03a70102": "Peach - Cat",
+		"03cf0502": "Quinn"
 	}
 }

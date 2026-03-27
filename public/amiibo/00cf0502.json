@@ -4,21 +4,21 @@
 		"character": "Avery",
 		"name": "Avery",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04500001-00cf0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04500001-00cf0502.png",
 		"tail": "00cf0502"
 	},
 	"next": "02f30502.html",
 	"prev": "02ef0502.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"008d0502": "Cobb",
-		"015a0502": "Biskit",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"03020502": "Raddle",
-		"03620002": "Cloud - Player 2",
-		"038d0002": "Piranha Plant",
-		"03941702": "Ikari",
-		"04241902": "Yuga Ohdo",
-		"04e81d02": "Terry"
+		"001c0002": "Falco",
+		"00520502": "Tortimer",
+		"006e0502": "Puck",
+		"00980502": "Pancetti",
+		"01480502": "Tucker",
+		"02710e02": "Luigi - Golf",
+		"02840e02": "Wario - Tennis",
+		"041e0002": "Pyra",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"04eb1d02": "M. Bison"
 	}
 }

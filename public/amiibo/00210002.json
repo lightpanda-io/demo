@@ -4,21 +4,21 @@
 		"character": "Mii",
 		"name": "Mii Brawler",
 		"gameSeries": "Mii",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07c00000-00210002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07c00000-00210002.png",
 		"tail": "00210002"
 	},
 	"next": "02830e02.html",
 	"prev": "015d0502.html",
 	"list": {
-		"00090002": "Pikachu",
-		"01200502": "Kody",
-		"013e0502": "Chester",
-		"01550502": "Flora",
-		"01cf0502": "Simon",
-		"01d40502": "Isabelle - Character Parfait",
-		"03a80502": "Tom Nook",
-		"03be0502": "Tom Nook - Coat",
-		"03d40502": "Frett",
-		"04a40902": "Sidon"
+		"00150002": "Bowser Jr.",
+		"00830502": "Pudge",
+		"008a0502": "Yuka",
+		"00c70502": "Vladimir",
+		"01590502": "Dora",
+		"01860502": "Katt",
+		"02470502": "Blathers",
+		"02780e02": "Daisy - Soccer",
+		"03d50502": "Azalea",
+		"04140902": "Zelda \u0026 Loftwing"
 	}
 }

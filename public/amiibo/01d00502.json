@@ -4,21 +4,21 @@
 		"character": "Iggly",
 		"name": "Iggly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046a0001-01d00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_046a0001-01d00502.png",
 		"tail": "01d00502"
 	},
 	"next": "00fe0502.html",
 	"prev": "01a80502.html",
 	"list": {
-		"001e0002": "Olimar",
-		"00300002": "Sonic",
-		"003d0102": "Mario - Silver Edition",
-		"00890502": "Biff",
-		"009c0502": "Diana",
-		"00c00502": "Gwen",
-		"00e50502": "Mathilda",
-		"01b60502": "Sally",
-		"03741402": "Super Mario Cereal",
-		"039eff02": "Daisy - Power Up Band"
+		"00310002": "Mega Man",
+		"00520502": "Tortimer",
+		"01240502": "Ken",
+		"012f0502": "Freckles",
+		"01480502": "Tucker",
+		"01900502": "Lolly",
+		"02430502": "Digby",
+		"02e90502": "June",
+		"03bc0502": "Niko",
+		"04ad1d02": "Jamie"
 	}
 }

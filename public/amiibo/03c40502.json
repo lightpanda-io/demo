@@ -4,21 +4,21 @@
 		"character": "Cyd",
 		"name": "Cyd",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0d0001-03c40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0d0001-03c40502.png",
 		"tail": "03c40502"
 	},
 	"next": "00390102.html",
 	"prev": "02b80e02.html",
 	"list": {
-		"00140002": "Bowser",
-		"00910502": "Roscoe",
-		"00a50502": "Roald",
-		"01740502": "Celeste",
-		"02990e02": "Bowser - Golf",
-		"03b80502": "Harvey",
-		"03d30502": "Rio",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04bc1d02": "Cammy",
-		"04f31d02": "Mai"
+		"00150002": "Bowser Jr.",
+		"00980502": "Pancetti",
+		"00a70502": "Walker",
+		"00ac0502": "Copper",
+		"00f40502": "Flip",
+		"016c0502": "Apollo",
+		"01930502": "Pierce",
+		"01ac0502": "Purrl",
+		"02390602": "8-Bit Mario Modern Color",
+		"04fa0f02": "Ratha"
 	}
 }

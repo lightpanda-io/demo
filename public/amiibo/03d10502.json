@@ -4,21 +4,21 @@
 		"character": "Zoe",
 		"name": "Zoe",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1a0001-03d10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a1a0001-03d10502.png",
 		"tail": "03d10502"
 	},
 	"next": "00450502.html",
 	"prev": "028d0e02.html",
 	"list": {
-		"00b70502": "Chip",
-		"012d0502": "Marina",
-		"01750502": "Tommy - Suit",
-		"01850502": "Rocco",
-		"01c80502": "Bruce",
-		"02490502": "Resetti",
-		"02a20e02": "Boo - Tennis",
-		"03c40502": "Cyd",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04390402": "Marina - Side Order"
+		"003c0102": "Mario - Gold Edition",
+		"00e80502": "Filbert",
+		"01360502": "Drago",
+		"015c0502": "Lyman",
+		"01870502": "Graham",
+		"01a90502": "Papi",
+		"01c10502": "Lobo",
+		"02a50e02": "Baby Mario - Soccer",
+		"03b00502": "Sable",
+		"03c90502": "Ione"
 	}
 }

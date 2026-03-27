@@ -4,21 +4,21 @@
 		"character": "Peanut",
 		"name": "Peanut",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04dd0001-00a20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04dd0001-00a20502.png",
 		"tail": "00a20502"
 	},
 	"next": "03d00502.html",
 	"prev": "00db0502.html",
 	"list": {
-		"003f0402": "Inkling Boy",
-		"00ad0502": "Booker",
-		"00f50502": "Hugh",
-		"01090502": "Agent S",
-		"011d0502": "Lily",
-		"01850502": "Rocco",
-		"01ac0502": "Purrl",
-		"02630102": "Wario",
-		"03ab0502": "Orville",
-		"03d00502": "Chabwick"
+		"002e0002": "R.O.B. - Famicom",
+		"00480502": "Kapp'n",
+		"011e0502": "Anchovy",
+		"01550502": "Flora",
+		"01660502": "Sparro",
+		"02470502": "Blathers",
+		"024d0502": "Timmy \u0026 Tommy",
+		"03791502": "Mega Man",
+		"03b60502": "Kicks",
+		"04b61d02": "Dee Jay"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Daisy Mae",
 		"name": "Daisy Mae",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a040001-03b50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a040001-03b50502.png",
 		"tail": "03b50502"
 	},
 	"next": "013f0502.html",
 	"prev": "01780502.html",
 	"list": {
-		"006a0502": "Jitters",
-		"01000502": "Drift",
-		"01380502": "Mac",
-		"015f0502": "Chadder",
-		"01660502": "Sparro",
-		"01740502": "Celeste",
-		"02990e02": "Bowser - Golf",
-		"03900402": "Octoling Octopus",
-		"03b40502": "Flick",
-		"04cb1d02": "Ryu"
+		"00520502": "Tortimer",
+		"00840502": "Midge",
+		"00e60502": "Ed",
+		"00fc0502": "Chops",
+		"02440502": "Lottie",
+		"02b80e02": "Rosalina - Horse Racing",
+		"036d0a02": "Specter Knight",
+		"036f1202": "Chrom",
+		"03770402": "Marina",
+		"041c0402": "Smallfry"
 	}
 }

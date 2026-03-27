@@ -4,21 +4,21 @@
 		"character": "Tangy",
 		"name": "Tangy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02620001-01370502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02620001-01370502.png",
 		"tail": "01370502"
 	},
 	"next": "00980502.html",
 	"prev": "03870002.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"00a00502": "Bertha",
-		"01d60502": "Stitches - Amiibo Festival",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02a60e02": "Baby Mario - Baseball",
-		"02eb0502": "Paolo",
-		"03611202": "Celica",
-		"03810002": "Ice Climbers",
-		"03ac0502": "Wilbur",
-		"03cb0502": "Shino"
+		"00260002": "Jigglypuff",
+		"00420302": "Pink Yarn Yoshi",
+		"00530502": "Lyle",
+		"00f30502": "Sprinkle",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02870e02": "Waluigi - Soccer",
+		"02af0e02": "Birdo - Soccer",
+		"02ec0502": "Hornsby",
+		"03080502": "Boots",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

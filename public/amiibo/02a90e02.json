@@ -4,21 +4,21 @@
 		"character": "Baby Mario",
 		"name": "Baby Mario - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cc0501-02a90e02.png",
 		"tail": "02a90e02"
 	},
 	"next": "02ac0e02.html",
 	"prev": "00190002.html",
 	"list": {
-		"00520502": "Tortimer",
-		"007f0502": "Samson",
-		"00ba0502": "Felicity",
-		"00c80502": "Savannah",
-		"02690e02": "Mario - Soccer",
-		"02890e02": "Waluigi - Tennis",
-		"028d0e02": "Donkey Kong - Baseball",
-		"03cd0502": "Petri",
-		"04d41d02": "Dhalsim",
-		"04ee1d02": "C. Viper"
+		"00190002": "Dr. Mario",
+		"00420302": "Pink Yarn Yoshi",
+		"00d20502": "Olivia",
+		"01040502": "Keaton",
+		"01230502": "Paula",
+		"01610502": "Cube",
+		"02ec0502": "Hornsby",
+		"03770402": "Marina",
+		"040d0f02": "Ena",
+		"04ce1d02": "Jamie"
 	}
 }

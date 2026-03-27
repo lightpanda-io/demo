@@ -4,21 +4,21 @@
 		"character": "Robin",
 		"name": "Robin",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022e0001-01d30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_022e0001-01d30502.png",
 		"tail": "01d30502"
 	},
 	"next": "00dc0502.html",
 	"prev": "03180502.html",
 	"list": {
-		"001b0002": "Ganondorf",
-		"00750502": "Punchy",
-		"00990502": "Chief",
-		"00e80502": "Filbert",
-		"00ee0502": "Benedict",
-		"00f40502": "Flip",
-		"013e0502": "Chester",
-		"014d0502": "Joey",
-		"02410502": "Mabel",
-		"04150402": "Inkling - Yellow"
+		"00620502": "Sheldon",
+		"00650502": "Kiki",
+		"008a0502": "Yuka",
+		"00970502": "Benjamin",
+		"00ac0502": "Copper",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"03550902": "Guardian",
+		"037a0002": "Daisy",
+		"03880002": "Chrom",
+		"04271902": "Romin Kirishima"
 	}
 }

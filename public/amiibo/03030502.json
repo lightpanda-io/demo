@@ -4,21 +4,21 @@
 		"character": "Julia",
 		"name": "Julia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_043b0001-03030502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_043b0001-03030502.png",
 		"tail": "03030502"
 	},
 	"next": "01560502.html",
 	"prev": "01a50502.html",
 	"list": {
-		"00480502": "Kapp'n",
-		"010d0502": "Blathers",
-		"01cd0502": "Grizzly",
-		"03190502": "Rilla",
-		"03830002": "Ivysaur",
-		"038f0402": "Octoling Boy",
-		"03be0502": "Tom Nook - Coat",
-		"03ca0502": "Tiansheng",
-		"042d1802": "Malzeno",
-		"04c41e03": "Kirby"
+		"00230002": "Mii Gunner",
+		"006a0502": "Jitters",
+		"00c80502": "Savannah",
+		"01050502": "Gladys",
+		"01150502": "Cyrus",
+		"015c0502": "Lyman",
+		"023a0702": "Hammer Slam Bowser",
+		"02400502": "K. K. Slider",
+		"03c10502": "Megan",
+		"041a0902": "Ganondorf - Tears of the Kingdom"
 	}
 }

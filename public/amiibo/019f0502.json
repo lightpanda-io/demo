@@ -4,21 +4,21 @@
 		"character": "Olaf",
 		"name": "Olaf",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02090001-019f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02090001-019f0502.png",
 		"tail": "019f0502"
 	},
 	"next": "00dd0502.html",
 	"prev": "03620002.html",
 	"list": {
-		"010c0502": "Rover",
-		"01620502": "Claudia",
-		"018f0502": "Shep",
-		"01990502": "Bones",
-		"02920e02": "Diddy Kong - Baseball",
-		"02bb0e02": "Metal Mario - Tennis",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03cf0502": "Quinn",
-		"04bb1d02": "Lily",
-		"04cc1d02": "Ken"
+		"002e0002": "R.O.B. - Famicom",
+		"00960502": "Annalisa",
+		"01190502": "Don Resetti - Without Hat",
+		"01650502": "Caroline",
+		"01ca0502": "Gayle",
+		"024d0502": "Timmy \u0026 Tommy",
+		"02570c02": "Waddle Dee",
+		"027b0e02": "Daisy - Golf",
+		"036c0a02": "Plague Knight",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Lyman",
 		"name": "Lyman",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03c50001-015c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03c50001-015c0502.png",
 		"tail": "015c0502"
 	},
 	"next": "00a10502.html",
 	"prev": "01710502.html",
 	"list": {
-		"00640502": "Bill",
-		"00b90502": "Poncho",
-		"00e30502": "Pekoe",
-		"01120502": "Mabel",
-		"018a0502": "Penelope",
-		"03a80502": "Tom Nook",
-		"04230002": "Alex",
-		"043e1b02": "Mio",
-		"04bd1d02": "Rashid",
-		"04f31d02": "Mai"
+		"00620502": "Sheldon",
+		"00930502": "Eugene",
+		"00a80502": "K.K. Slider",
+		"01320502": "Ricky",
+		"01cb0502": "Cranston",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02ad0e02": "Baby Luigi - Golf",
+		"038c0002": "Richter",
+		"043b1302": "Samus",
+		"04ce1d02": "Jamie"
 	}
 }

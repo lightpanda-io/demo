@@ -4,21 +4,21 @@
 		"character": "Freckles",
 		"name": "Freckles",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030e0001-012f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_030e0001-012f0502.png",
 		"tail": "012f0502"
 	},
 	"next": "03d60502.html",
 	"prev": "02e50f02.html",
 	"list": {
-		"00660502": "Deli",
-		"00b80502": "Jack",
-		"01180502": "Digby - Raincoat",
-		"018e0502": "Pashmina",
-		"02400502": "K. K. Slider",
-		"03911602": "Loot Goblin",
-		"03a90502": "Timmy \u0026 Tommy",
-		"04121302": "Samus - Metroid Dread",
-		"04a91d02": "Ken",
-		"04e71d02": "Ingrid"
+		"01230502": "Paula",
+		"016b0502": "Soleil",
+		"019e0502": "Tammy",
+		"02e50f02": "Barioth and Ayuria",
+		"03090502": "Weber",
+		"03100502": "Gonzo",
+		"034c0902": "Link - Majora's Mask",
+		"037f0002": "Ridley",
+		"039cff02": "Luigi - Power Up Band",
+		"03a10002": "Joker"
 	}
 }

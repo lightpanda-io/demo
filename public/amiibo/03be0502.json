@@ -4,21 +4,21 @@
 		"character": "Tom Nook",
 		"name": "Tom Nook - Coat",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830301-03be0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01830301-03be0502.png",
 		"tail": "03be0502"
 	},
 	"next": "02930e02.html",
 	"prev": "019d0502.html",
 	"list": {
-		"00420302": "Pink Yarn Yoshi",
-		"00c80502": "Savannah",
-		"01890502": "Dizzy",
-		"01d70502": "Rosie - Amiibo Festival",
-		"023f0502": "Isabelle - Winter Outfit",
-		"031a0502": "Marty",
-		"031e0502": "Toby",
-		"03830002": "Ivysaur",
-		"04af1d02": "Kimberly",
-		"04d01d02": "Chun-Li"
+		"009c0502": "Diana",
+		"00b20502": "Shrunk",
+		"01130502": "Leif",
+		"01ba0502": "Becky",
+		"02400502": "K. K. Slider",
+		"025e0402": "Marie",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"02b20e02": "Birdo - Golf",
+		"02ee0502": "Tybalt",
+		"04c10102": "Elephant Mario"
 	}
 }

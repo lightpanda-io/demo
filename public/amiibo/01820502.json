@@ -4,21 +4,21 @@
 		"character": "Pinky",
 		"name": "Pinky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02150001-01820502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02150001-01820502.png",
 		"tail": "01820502"
 	},
 	"next": "03130502.html",
 	"prev": "04281902.html",
 	"list": {
-		"00000002": "Mario",
-		"00230002": "Mii Gunner",
-		"014b0502": "Marshal",
-		"01a80502": "Aurora",
-		"01af0502": "Zucker",
-		"023a0702": "Hammer Slam Bowser",
-		"02b30e02": "Birdo - Horse Racing",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03500902": "Toon Link - The Wind Waker",
-		"03a10002": "Joker"
+		"011f0502": "Tabby",
+		"018b0502": "Boone",
+		"019f0502": "Olaf",
+		"024e0502": "Kapp'n",
+		"02eb0502": "Paolo",
+		"03590902": "Urbosa",
+		"03860002": "Incineroar",
+		"040e0f02": "Tsukino",
+		"04b31d02": "Blanka",
+		"04e81d02": "Terry"
 	}
 }

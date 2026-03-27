@@ -4,21 +4,21 @@
 		"character": "Orville",
 		"name": "Orville",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a000001-03ab0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a000001-03ab0502.png",
 		"tail": "03ab0502"
 	},
 	"next": "031c0502.html",
 	"prev": "03791502.html",
 	"list": {
-		"00100002": "Pit",
-		"00970502": "Benjamin",
-		"00f00502": "Julian",
-		"012e0502": "Spork/Crackle",
-		"016b0502": "Soleil",
-		"01800502": "Goldie",
-		"02f30502": "Carrie",
-		"035a0902": "Mipha",
-		"03a50002": "Byleth",
-		"04d11d02": "Guile"
+		"00620502": "Sheldon",
+		"00850502": "Gruff",
+		"01010502": "Vesta",
+		"01860502": "Katt",
+		"01970502": "Tex",
+		"02f70502": "Ursala",
+		"03a60102": "Mario - Cat",
+		"04ce1d02": "Jamie",
+		"04d81d02": "Marisa",
+		"04df1d02": "Ed"
 	}
 }

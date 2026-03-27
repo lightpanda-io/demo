@@ -4,21 +4,21 @@
 		"character": "Cobb",
 		"name": "Cobb",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04800001-008d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04800001-008d0502.png",
 		"tail": "008d0502"
 	},
 	"next": "02910e02.html",
 	"prev": "02390602.html",
 	"list": {
-		"00910502": "Roscoe",
-		"01860502": "Katt",
-		"01bf0502": "Kevin",
-		"024b0502": "Isabelle - Summer Outfit",
-		"02770e02": "Peach - Horse Racing",
-		"028a0e02": "Waluigi - Golf",
-		"02b70e02": "Rosalina - Golf",
-		"035f1102": "Pikmin",
-		"03961702": "Hayakawa",
-		"04360402": "Callie - Alterna"
+		"00210002": "Mii Brawler",
+		"01420502": "Wolfgang",
+		"019b0502": "Rudy",
+		"02600402": "Inkling Boy - Purple",
+		"02640102": "Donkey Kong",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02920e02": "Diddy Kong - Baseball",
+		"02b80e02": "Rosalina - Horse Racing",
+		"02ef0502": "Huck",
+		"03580902": "Daruk"
 	}
 }

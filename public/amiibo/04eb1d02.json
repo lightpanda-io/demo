@@ -4,21 +4,21 @@
 		"character": "M. Bison",
 		"name": "M. Bison",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d60001-04eb1d02.png",
 		"tail": "04eb1d02"
 	},
 	"next": "04f11d02.html",
 	"prev": "04e01d02.html",
 	"list": {
-		"00780502": "Limberg",
-		"00c90502": "Kidd",
-		"016b0502": "Soleil",
-		"016f0502": "Chrissy",
-		"01750502": "Tommy - Suit",
-		"017c0502": "Pave",
-		"02a60e02": "Baby Mario - Baseball",
-		"02b60e02": "Rosalina - Tennis",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"04bf1d02": "Ed"
+		"001a0002": "Wario",
+		"008d0502": "Cobb",
+		"00a00502": "Bertha",
+		"011a0502": "Isabelle - Kimono",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02810e02": "Yoshi - Horse Racing",
+		"030c0502": "Spike",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"04e01d02": "Akuma"
 	}
 }

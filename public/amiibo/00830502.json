@@ -4,20 +4,21 @@
 		"character": "Pudge",
 		"name": "Pudge",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02800001-00830502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02800001-00830502.png",
 		"tail": "00830502"
 	},
 	"next": "00f20502.html",
 	"prev": "00ee0502.html",
 	"list": {
-		"00290002": "Lucina",
-		"00700502": "Octavian",
-		"01030502": "Pango",
-		"01590502": "Dora",
-		"01c70502": "Maelle",
-		"029f0e02": "Bowser Jr. - Horse Racing",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"03651302": "Samus Aran",
-		"04f11d02": "Terry"
+		"00440502": "Isabelle",
+		"00a60502": "Molly",
+		"011e0502": "Anchovy",
+		"013f0502": "Merry",
+		"01870502": "Graham",
+		"01d30502": "Robin",
+		"02550c02": "Meta Knight",
+		"02640102": "Donkey Kong",
+		"036a0402": "Inkling Boy - Neon Green",
+		"04b11d02": "Guile"
 	}
 }

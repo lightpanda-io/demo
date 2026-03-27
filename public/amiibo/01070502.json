@@ -4,21 +4,21 @@
 		"character": "Freya",
 		"name": "Freya",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05100001-01070502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05100001-01070502.png",
 		"tail": "01070502"
 	},
 	"next": "03c50502.html",
 	"prev": "02ed0502.html",
 	"list": {
-		"01050502": "Gladys",
-		"01420502": "Wolfgang",
-		"01960502": "Frita",
-		"023e0302": "Mega Yarn Yoshi",
-		"02480502": "Celeste",
-		"02800e02": "Yoshi - Golf",
-		"037c0002": "Young Link",
-		"03c20502": "Dom",
-		"04e11d02": "M. Bison",
-		"04e81d02": "Terry"
+		"00150002": "Bowser Jr.",
+		"01a00502": "Lucy",
+		"01c80502": "Bruce",
+		"026c0e02": "Mario - Golf",
+		"02820e02": "Wario - Soccer",
+		"02ef0502": "Huck",
+		"036b0402": "Inkling Squid - Neon Purple",
+		"03800002": "Dark Samus",
+		"03931702": "Pawapuro",
+		"04e51d02": "C. Viper"
 	}
 }

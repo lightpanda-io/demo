@@ -4,21 +4,21 @@
 		"character": "Papi",
 		"name": "Papi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03b00001-01a90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03b00001-01a90502.png",
 		"tail": "01a90502"
 	},
 	"next": "01890502.html",
 	"prev": "04180902.html",
 	"list": {
-		"00840502": "Midge",
-		"01340502": "Hans",
-		"013e0502": "Chester",
-		"01a50502": "Walt",
-		"01d30502": "Robin",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"02580002": "Mega Man - Gold Edition",
-		"026b0e02": "Mario - Tennis",
-		"03010502": "Claude",
-		"037f0002": "Ridley"
+		"008b0502": "Lionel",
+		"009b0502": "Clay",
+		"00af0502": "Tommy - Uniform",
+		"012e0502": "Spork/Crackle",
+		"02560c02": "King Dedede",
+		"03c70502": "Reneigh",
+		"03ce0502": "Cephalobot",
+		"03d20502": "Ace",
+		"04330402": "Shiver",
+		"04a91d02": "Ken"
 	}
 }

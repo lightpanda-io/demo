@@ -4,21 +4,21 @@
 		"character": "Cyrus",
 		"name": "Cyrus",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018b0000-02460502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018b0000-02460502.png",
 		"tail": "02460502"
 	},
 	"next": "01960502.html",
 	"prev": "02620102.html",
 	"list": {
-		"00380102": "Toad",
-		"00750502": "Punchy",
+		"00060002": "Samus",
+		"00140002": "Bowser",
+		"005a0502": "Cheri",
 		"010a0502": "Big Top",
-		"01100502": "Phyllis",
-		"01570502": "Astrid",
-		"01960502": "Frita",
-		"01aa0502": "Apple",
-		"02850e02": "Wario - Golf",
-		"043e1b02": "Mio",
-		"04421c02": "Yoshi - My Mario Wooden Blocks"
+		"02550c02": "Meta Knight",
+		"03b10502": "Label",
+		"03b40502": "Flick",
+		"04ab1d02": "Luke",
+		"04b71d02": "Manon",
+		"04cb1d02": "Ryu"
 	}
 }

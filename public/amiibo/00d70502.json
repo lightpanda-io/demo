@@ -4,21 +4,21 @@
 		"character": "Whitney",
 		"name": "Whitney",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050e0001-00d70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_050e0001-00d70502.png",
 		"tail": "00d70502"
 	},
 	"next": "017e0502.html",
 	"prev": "01b40502.html",
 	"list": {
-		"00a80502": "K.K. Slider",
-		"00c10502": "Coach",
-		"01440502": "Klaus",
-		"024a0502": "Kicks",
-		"02ad0e02": "Baby Luigi - Golf",
-		"041a0902": "Ganondorf - Tears of the Kingdom",
-		"04220002": "Steve",
-		"04271902": "Romin Kirishima",
-		"04d11d02": "Guile",
-		"04f01d02": "Ingrid"
+		"011b0502": "Franklin",
+		"01210502": "Miranda",
+		"01780502": "Resetti - Without Hat",
+		"023d0002": "Mewtwo",
+		"02b60e02": "Rosalina - Tennis",
+		"03a80502": "Tom Nook",
+		"03ad0502": "Blathers",
+		"04b41d02": "Dhalsim",
+		"04b91d02": "JP",
+		"04d31d02": "Blanka"
 	}
 }

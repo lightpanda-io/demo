@@ -4,21 +4,21 @@
 		"character": "Blathers",
 		"name": "Blathers",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920001-03ad0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01920001-03ad0502.png",
 		"tail": "03ad0502"
 	},
 	"next": "00740502.html",
 	"prev": "03150502.html",
 	"list": {
-		"00890502": "Biff",
-		"00940502": "Eunice",
-		"00bf0502": "Harry",
-		"01490502": "Blanche",
-		"01b50502": "Jacques",
-		"02b00e02": "Birdo - Baseball",
-		"02b60e02": "Rosalina - Tennis",
-		"03810002": "Ice Climbers",
-		"04d01d02": "Chun-Li",
-		"04e71d02": "Ingrid"
+		"000d0002": "Diddy Kong",
+		"00310002": "Mega Man",
+		"00390102": "Bowser",
+		"00a00502": "Bertha",
+		"01000502": "Drift",
+		"015f0502": "Chadder",
+		"01a30502": "Rory",
+		"023d0002": "Mewtwo",
+		"024a0502": "Kicks",
+		"04dd1d02": "Rashid"
 	}
 }

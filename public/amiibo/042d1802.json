@@ -4,21 +4,21 @@
 		"character": "Malzeno",
 		"name": "Malzeno",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350b0000-042d1802.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350b0000-042d1802.png",
 		"tail": "042d1802"
 	},
-	"next": "03710102.html",
-	"prev": "02520002.html",
+	"next": "04fa0f02.html",
+	"prev": "042b1802.html",
 	"list": {
-		"00470502": "Sable",
-		"005f0502": "Jambette",
-		"01380502": "Mac",
-		"01500502": "Bree",
-		"028a0e02": "Waluigi - Golf",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"03010502": "Claude",
-		"034e0902": "Link - Skyward Sword",
-		"04b71d02": "Manon"
+		"00fa0502": "Camofrog",
+		"01050502": "Gladys",
+		"010f0502": "Pelly",
+		"011f0502": "Tabby",
+		"01470502": "Tammi",
+		"01c60502": "Rowan",
+		"02710e02": "Luigi - Golf",
+		"027e0e02": "Yoshi - Baseball",
+		"035e1002": "Qbby",
+		"03cd0502": "Petri"
 	}
 }

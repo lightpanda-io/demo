@@ -4,21 +4,21 @@
 		"character": "Ice Climbers",
 		"name": "Ice Climbers",
 		"gameSeries": "Classic Nintendo",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_078f0000-03810002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_078f0000-03810002.png",
 		"tail": "03810002"
 	},
 	"next": "042a1902.html",
 	"prev": "03130502.html",
 	"list": {
-		"001c0002": "Falco",
-		"00830502": "Pudge",
-		"01690502": "Maple",
-		"018b0502": "Boone",
-		"02580002": "Mega Man - Gold Edition",
-		"02690e02": "Mario - Soccer",
-		"040d0f02": "Ena",
-		"041b0402": "Octoling - Blue",
-		"04c91e03": "Bandana Waddle Dee",
-		"04e81d02": "Terry"
+		"00390102": "Bowser",
+		"00650502": "Kiki",
+		"008c0502": "Flo",
+		"014b0502": "Marshal",
+		"016e0502": "Francine",
+		"01b10502": "Ribbot",
+		"03010502": "Claude",
+		"03580902": "Daruk",
+		"03690402": "Inkling Girl - Neon Pink",
+		"03951702": "Yabe"
 	}
 }

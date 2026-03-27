@@ -4,21 +4,21 @@
 		"character": "Tad",
 		"name": "Tad",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03410001-030e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03410001-030e0502.png",
 		"tail": "030e0502"
 	},
 	"next": "018a0502.html",
 	"prev": "036c0a02.html",
 	"list": {
-		"00510502": "Luna",
-		"005e0502": "Lopez",
-		"00840502": "Midge",
-		"00940502": "Eunice",
-		"00ef0502": "Agnes",
-		"018e0502": "Pashmina",
-		"01b20502": "Annalise",
-		"01cf0502": "Simon",
-		"03b40502": "Flick",
-		"04a40902": "Sidon"
+		"00e80502": "Filbert",
+		"00fa0502": "Camofrog",
+		"00fe0502": "Vic",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02780e02": "Daisy - Soccer",
+		"02860e02": "Wario - Horse Racing",
+		"02890e02": "Waluigi - Tennis",
+		"03150502": "Buzz",
+		"035c0902": "Bokoblin",
+		"03880002": "Chrom"
 	}
 }

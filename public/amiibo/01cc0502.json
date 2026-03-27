@@ -4,21 +4,21 @@
 		"character": "Frobert",
 		"name": "Frobert",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033a0001-01cc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033a0001-01cc0502.png",
 		"tail": "01cc0502"
 	},
 	"next": "02b30e02.html",
 	"prev": "010f0502.html",
 	"list": {
-		"001f0002": "Palutena",
-		"00730502": "Sterling",
-		"00e30502": "Pekoe",
-		"017f0502": "Zipper",
-		"02830e02": "Wario - Baseball",
-		"02a30e02": "Boo - Golf",
+		"00000002": "Mario",
+		"00690502": "Patty",
+		"008d0502": "Cobb",
+		"00940502": "Eunice",
+		"01330502": "Deirdre",
+		"01600502": "Merengue",
+		"01b80502": "Pompom",
+		"03060502": "Admiral",
 		"03160502": "Cleo",
-		"03bf0502": "Isabelle - Sweater",
-		"04261902": "Gakuto Sōgetsu",
-		"04be1d02": "A.K.I"
+		"03be0502": "Tom Nook - Coat"
 	}
 }

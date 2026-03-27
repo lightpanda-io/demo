@@ -4,21 +4,21 @@
 		"character": "Boo",
 		"name": "Boo",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00170000-02680102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00170000-02680102.png",
 		"tail": "02680102"
 	},
 	"next": "018e0502.html",
 	"prev": "02f80502.html",
 	"list": {
-		"00010002": "Peach",
-		"00b10502": "Leila",
-		"00f30502": "Sprinkle",
-		"02550c02": "Meta Knight",
-		"029e0e02": "Bowser Jr. - Golf",
-		"02f40502": "Ketchup",
-		"03160502": "Cleo",
-		"041e0002": "Pyra",
-		"043e1b02": "Mio",
-		"04b81d02": "Marisa"
+		"00c30502": "Tom",
+		"00f70502": "Pecan",
+		"010d0502": "Blathers",
+		"01820502": "Pinky",
+		"018c0502": "Broffina",
+		"01960502": "Frita",
+		"01c10502": "Lobo",
+		"02580002": "Mega Man - Gold Edition",
+		"03800002": "Dark Samus",
+		"03b10502": "Label"
 	}
 }

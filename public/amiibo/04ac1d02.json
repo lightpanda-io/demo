@@ -4,21 +4,21 @@
 		"character": "Jamie",
 		"name": "Jamie",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c30000-04ac1d02.png",
 		"tail": "04ac1d02"
 	},
 	"next": "04ad1d02.html",
 	"prev": "04ab1d02.html",
 	"list": {
-		"002d0002": "Mr. Game \u0026 Watch",
-		"00490502": "Resetti",
-		"00fc0502": "Chops",
-		"01260502": "Rodeo",
-		"01960502": "Frita",
-		"02400502": "K. K. Slider",
-		"026a0e02": "Mario - Baseball",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"03a0ff02": "Toad - Power Up Band",
-		"042b1802": "Palico"
+		"00220002": "Mii Swordfighter",
+		"00290002": "Lucina",
+		"01450502": "Daisy",
+		"01b90502": "Tank",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"024b0502": "Isabelle - Summer Outfit",
+		"025b0002": "Bayonetta",
+		"028f0e02": "Donkey Kong - Golf",
+		"02b10e02": "Birdo - Tennis",
+		"04340402": "Frye"
 	}
 }

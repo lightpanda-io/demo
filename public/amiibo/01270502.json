@@ -4,21 +4,21 @@
 		"character": "Bubbles",
 		"name": "Bubbles",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03920001-01270502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03920001-01270502.png",
 		"tail": "01270502"
 	},
 	"next": "01a10502.html",
 	"prev": "013b0502.html",
 	"list": {
-		"008b0502": "Lionel",
-		"00c40502": "Tipper",
-		"016a0502": "Antonio",
-		"01d30502": "Robin",
-		"029e0e02": "Bowser Jr. - Golf",
-		"02e90502": "June",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"03a80502": "Tom Nook",
-		"03ce0502": "Cephalobot",
-		"04b71d02": "Manon"
+		"002b0002": "Shulk",
+		"003a0202": "Chibi Robo",
+		"007a0502": "Snake",
+		"01320502": "Ricky",
+		"013a0502": "Wart Jr.",
+		"02780e02": "Daisy - Soccer",
+		"02790e02": "Daisy - Baseball",
+		"03781402": "Solaire of Astora",
+		"03c30502": "Audie",
+		"04de1d02": "A.K.I"
 	}
 }

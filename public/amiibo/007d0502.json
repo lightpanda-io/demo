@@ -4,21 +4,21 @@
 		"character": "Monique",
 		"name": "Monique",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02680001-007d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02680001-007d0502.png",
 		"tail": "007d0502"
 	},
 	"next": "02ee0502.html",
 	"prev": "02a40e02.html",
 	"list": {
-		"00250002": "Greninja",
-		"007b0502": "Bangle",
-		"008b0502": "Lionel",
-		"01840502": "Mallary",
-		"018b0502": "Boone",
-		"035c0902": "Bokoblin",
-		"038d0002": "Piranha Plant",
-		"039bff02": "Mario - Power Up Band",
-		"04131302": "E.M.M.I.",
-		"042d1802": "Malzeno"
+		"00010002": "Peach",
+		"00780502": "Limberg",
+		"01170502": "Timmy - Full Apron",
+		"01360502": "Drago",
+		"01980502": "Melba",
+		"01a70502": "Pietro",
+		"01be0502": "Nibbles",
+		"024d0502": "Timmy \u0026 Tommy",
+		"026c0e02": "Mario - Golf",
+		"03630002": "Corrin - Player 2"
 	}
 }

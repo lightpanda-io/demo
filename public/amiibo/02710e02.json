@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10401-02710e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c10401-02710e02.png",
 		"tail": "02710e02"
 	},
 	"next": "00d50502.html",
 	"prev": "00180002.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"000c0002": "Luigi",
-		"002b0002": "Shulk",
-		"016f0502": "Chrissy",
-		"02f50502": "Rex",
-		"035b0902": "Revali",
-		"03750d02": "Detective Pikachu",
-		"03be0502": "Tom Nook - Coat",
-		"03c30502": "Audie",
-		"03d60502": "Roswell"
+		"00700502": "Octavian",
+		"00bc0502": "Tia",
+		"00bf0502": "Harry",
+		"00c70502": "Vladimir",
+		"00d50502": "Rodney",
+		"017c0502": "Pave",
+		"017d0502": "Gulliver",
+		"018b0502": "Boone",
+		"02950e02": "Diddy Kong - Horse Racing",
+		"03bd0502": "Wardell"
 	}
 }

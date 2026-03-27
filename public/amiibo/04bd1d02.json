@@ -4,21 +4,21 @@
 		"character": "Rashid",
 		"name": "Rashid",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d20001-04bd1d02.png",
 		"tail": "04bd1d02"
 	},
 	"next": "04be1d02.html",
 	"prev": "04b41d02.html",
 	"list": {
-		"00b40502": "Isabelle - Winter",
-		"01660502": "Sparro",
-		"01730502": "Phineas",
-		"017d0502": "Gulliver",
-		"01850502": "Rocco",
-		"01a20502": "Puddles",
-		"01b80502": "Pompom",
-		"039cff02": "Luigi - Power Up Band",
-		"041d0002": "Min Min",
-		"04d41d02": "Dhalsim"
+		"00010002": "Peach",
+		"00090002": "Pikachu",
+		"00490502": "Resetti",
+		"004e0502": "Harriet",
+		"00a60502": "Molly",
+		"00b80502": "Jack",
+		"01270502": "Bubbles",
+		"01700502": "Isabelle - Dress",
+		"025a0002": "Corrin",
+		"03a30002": "Banjo \u0026 Kazooie"
 	}
 }

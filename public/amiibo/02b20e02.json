@@ -4,21 +4,21 @@
 		"character": "Birdo",
 		"name": "Birdo - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ce0401-02b20e02.png",
 		"tail": "02b20e02"
 	},
 	"next": "02850e02.html",
 	"prev": "036f1202.html",
 	"list": {
-		"000b0002": "Marth",
-		"00a20502": "Peanut",
-		"01340502": "Hans",
-		"01420502": "Wolfgang",
-		"01600502": "Merengue",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"01bf0502": "Kevin",
-		"029f0e02": "Bowser Jr. - Horse Racing",
-		"040f1802": "Magnamalo",
-		"04b21d02": "Juri"
+		"00270002": "Meta Knight",
+		"00670502": "Alli",
+		"00840502": "Midge",
+		"00a30502": "Cole",
+		"00cd0502": "Sly",
+		"02440502": "Lottie",
+		"034e0902": "Link - Skyward Sword",
+		"03880002": "Chrom",
+		"04ad1d02": "Jamie",
+		"index": "Sandy"
 	}
 }

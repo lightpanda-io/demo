@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00101-02690e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c00101-02690e02.png",
 		"tail": "02690e02"
 	},
 	"next": "018d0502.html",
 	"prev": "00fb0502.html",
 	"list": {
-		"001b0002": "Ganondorf",
-		"00980502": "Pancetti",
-		"01420502": "Wolfgang",
-		"018b0502": "Boone",
-		"03060502": "Admiral",
-		"030b0502": "Leopold",
-		"03741402": "Super Mario Cereal",
-		"03b20502": "K.K. Slider",
-		"041c0402": "Smallfry",
-		"04200002": "Kazuya"
+		"004c0502": "Digby",
+		"00ad0502": "Booker",
+		"00b00502": "Porter",
+		"00fe0502": "Vic",
+		"01a00502": "Lucy",
+		"027c0e02": "Daisy - Horse Racing",
+		"03981702": "Daijobu",
+		"03a50002": "Byleth",
+		"03c80502": "Sasha",
+		"04e11d02": "M. Bison"
 	}
 }

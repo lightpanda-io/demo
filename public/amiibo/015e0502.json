@@ -4,21 +4,20 @@
 		"character": "Frank",
 		"name": "Frank",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04510001-015e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04510001-015e0502.png",
 		"tail": "015e0502"
 	},
 	"next": "02770e02.html",
 	"prev": "00e40502.html",
 	"list": {
-		"00060002": "Samus",
-		"00640502": "Bill",
-		"00a90502": "Reese",
-		"00b00502": "Porter",
-		"00f90502": "Alice",
-		"014b0502": "Marshal",
-		"02a30e02": "Boo - Golf",
-		"02af0e02": "Birdo - Soccer",
-		"041f0002": "Mythra",
+		"00260002": "Jigglypuff",
+		"01740502": "Celeste",
+		"02590002": "Cloud",
+		"02760e02": "Peach - Golf",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"02f50502": "Rex",
+		"037e0002": "Wolf",
 		"04b71d02": "Manon"
 	}
 }

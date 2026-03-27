@@ -4,21 +4,20 @@
 		"character": "Rolf",
 		"name": "Rolf",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04fa0001-01680502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04fa0001-01680502.png",
 		"tail": "01680502"
 	},
 	"next": "01940502.html",
 	"prev": "00740502.html",
 	"list": {
-		"00600502": "Rasher",
-		"006d0502": "Marcie",
-		"010d0502": "Blathers",
-		"01260502": "Rodeo",
-		"01990502": "Bones",
-		"019b0502": "Rudy",
-		"02570c02": "Waddle Dee",
-		"02700e02": "Luigi - Tennis",
-		"041d0002": "Min Min",
-		"043c1302": "Sylux"
+		"00560502": "Fauna",
+		"01170502": "Timmy - Full Apron",
+		"01690502": "Maple",
+		"018e0502": "Pashmina",
+		"02680102": "Boo",
+		"03b10502": "Label",
+		"04261902": "Gakuto Sōgetsu",
+		"04ba1d02": "Zangief",
+		"04f31d02": "Mai"
 	}
 }

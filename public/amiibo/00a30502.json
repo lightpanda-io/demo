@@ -4,21 +4,21 @@
 		"character": "Cole",
 		"name": "Cole",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a60001-00a30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a60001-00a30502.png",
 		"tail": "00a30502"
 	},
 	"next": "00700502.html",
 	"prev": "01550502.html",
 	"list": {
-		"002e0002": "R.O.B. - Famicom",
-		"004f0502": "Redd",
-		"008f0502": "Jeremiah",
-		"00980502": "Pancetti",
-		"01ce0502": "Cally",
-		"02880e02": "Waluigi - Baseball",
-		"02940e02": "Diddy Kong - Golf",
-		"03900402": "Octoling Octopus",
-		"04e01d02": "Akuma",
-		"04ef1d02": "Alex"
+		"00300002": "Sonic",
+		"01150502": "Cyrus",
+		"025b0002": "Bayonetta",
+		"02830e02": "Wario - Baseball",
+		"034b0902": "Link - Ocarina of Time",
+		"036d0a02": "Specter Knight",
+		"03d00502": "Chabwick",
+		"04a91d02": "Ken",
+		"04bc1d02": "Cammy",
+		"04ce1d02": "Jamie"
 	}
 }

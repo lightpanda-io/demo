@@ -4,21 +4,21 @@
 		"character": "Pokemon Trainer",
 		"name": "Pokemon Trainer",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1d400000-03870002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1d400000-03870002.png",
 		"tail": "03870002"
 	},
 	"next": "01370502.html",
 	"prev": "014d0502.html",
 	"list": {
-		"003a0202": "Chibi Robo",
-		"00910502": "Roscoe",
-		"00c90502": "Kidd",
+		"00ef0502": "Agnes",
 		"01130502": "Leif",
-		"01a60502": "Mira",
-		"025c0d02": "Shadow Mewtwo",
-		"035d0302": "Poochy",
-		"037b0002": "King K. Rool",
-		"04b21d02": "Juri",
-		"index": "Sandy"
+		"016d0502": "Derwin",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"034d0902": "Link - Twilight Princess",
+		"03951702": "Yabe",
+		"03a90502": "Timmy \u0026 Tommy",
+		"04c01d02": "Akuma",
+		"04ee1d02": "C. Viper"
 	}
 }

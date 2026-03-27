@@ -4,21 +4,21 @@
 		"character": "Redd",
 		"name": "Redd",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a80001-004f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a80001-004f0502.png",
 		"tail": "004f0502"
 	},
 	"next": "02410502.html",
 	"prev": "00130002.html",
 	"list": {
-		"00110002": "Lucario",
-		"00720502": "Knox",
-		"00b10502": "Leila",
-		"01040502": "Keaton",
-		"01110502": "Pete",
-		"01180502": "Digby - Raincoat",
-		"01b70502": "Doc",
-		"026d0e02": "Mario - Horse Racing",
-		"03961702": "Hayakawa",
-		"04e71d02": "Ingrid"
+		"00020002": "Yoshi",
+		"006e0502": "Puck",
+		"00950502": "Goose",
+		"011c0502": "Jingle",
+		"01520502": "Curlos",
+		"01b80502": "Pompom",
+		"028f0e02": "Donkey Kong - Golf",
+		"02f90502": "Maddie",
+		"035a0902": "Mipha",
+		"038f0402": "Octoling Boy"
 	}
 }

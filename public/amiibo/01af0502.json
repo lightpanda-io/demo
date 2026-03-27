@@ -4,21 +4,21 @@
 		"character": "Zucker",
 		"name": "Zucker",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042b0001-01af0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_042b0001-01af0502.png",
 		"tail": "01af0502"
 	},
 	"next": "039eff02.html",
 	"prev": "01830502.html",
 	"list": {
-		"00190002": "Dr. Mario",
-		"007b0502": "Bangle",
-		"00d10502": "Peck",
-		"01130502": "Leif",
-		"012a0502": "Elvis",
-		"01340502": "Hans",
-		"014d0502": "Joey",
-		"01600502": "Merengue",
-		"01c80502": "Bruce",
-		"03b00502": "Sable"
+		"00150002": "Bowser Jr.",
+		"00780502": "Limberg",
+		"00bd0502": "Lucha",
+		"00e90502": "Kitty",
+		"015b0502": "Victoria",
+		"019c0502": "Naomi",
+		"02970e02": "Bowser - Baseball",
+		"03140502": "Dobie",
+		"039cff02": "Luigi - Power Up Band",
+		"03c20502": "Dom"
 	}
 }

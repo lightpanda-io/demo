@@ -4,21 +4,21 @@
 		"character": "Ione",
 		"name": "Ione",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a120001-03c90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a120001-03c90502.png",
 		"tail": "03c90502"
 	},
 	"next": "00a60502.html",
 	"prev": "03c60502.html",
 	"list": {
-		"00750502": "Punchy",
-		"00ff0502": "Ankha",
-		"01730502": "Phineas",
-		"01830502": "Mott",
-		"01b90502": "Tank",
-		"027f0e02": "Yoshi - Tennis",
-		"037d0002": "Isabelle",
-		"03951702": "Yabe",
-		"03ca0502": "Tiansheng",
-		"041f0002": "Mythra"
+		"00780502": "Limberg",
+		"007e0502": "Nate",
+		"00840502": "Midge",
+		"015a0502": "Biskit",
+		"023a0702": "Hammer Slam Bowser",
+		"03010502": "Claude",
+		"04281902": "Roa Kirishima",
+		"04ab1d02": "Luke",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04d01d02": "Chun-Li"
 	}
 }

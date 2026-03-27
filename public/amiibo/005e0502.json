@@ -4,21 +4,21 @@
 		"character": "Lopez",
 		"name": "Lopez",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02db0001-005e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02db0001-005e0502.png",
 		"tail": "005e0502"
 	},
 	"next": "00a40502.html",
 	"prev": "04121302.html",
 	"list": {
-		"00040002": "Link",
-		"003d0102": "Mario - Silver Edition",
-		"00ad0502": "Booker",
-		"00bb0502": "Ozzie",
-		"01610502": "Cube",
-		"01640502": "Boomer",
-		"01660502": "Sparro",
-		"02850e02": "Wario - Golf",
-		"028a0e02": "Waluigi - Golf",
-		"043e1b02": "Mio"
+		"00180002": "Ike",
+		"00c40502": "Tipper",
+		"00d60502": "Scoot",
+		"015a0502": "Biskit",
+		"017b0502": "Shrunk - Loud Jacket",
+		"018e0502": "Pashmina",
+		"01b80502": "Pompom",
+		"025f0402": "Inkling Girl - Lime Green",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)",
+		"04db1d02": "Lily"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle - Kimono",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810201-011a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810201-011a0502.png",
 		"tail": "011a0502"
 	},
 	"next": "01000502.html",
 	"prev": "029c0e02.html",
 	"list": {
-		"00110002": "Lucario",
-		"011b0502": "Franklin",
-		"01520502": "Curlos",
-		"017f0502": "Zipper",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"02e40f02": "Rathian and Cheval",
-		"034b0902": "Link - Ocarina of Time",
-		"03aa0502": "Isabelle",
-		"04401c02": "Luigi - My Mario Wooden Blocks",
-		"04a40902": "Sidon"
+		"006b0502": "Gigi",
+		"00850502": "Gruff",
+		"00880502": "Bella",
+		"008f0502": "Jeremiah",
+		"009c0502": "Diana",
+		"014c0502": "Gala",
+		"025d0402": "Callie",
+		"031e0502": "Toby",
+		"03770402": "Marina",
+		"04230002": "Alex"
 	}
 }

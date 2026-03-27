@@ -4,21 +4,21 @@
 		"character": "Rodeo",
 		"name": "Rodeo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024b0001-01260502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_024b0001-01260502.png",
 		"tail": "01260502"
 	},
 	"next": "02a80e02.html",
 	"prev": "02540c02.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00880502": "Bella",
-		"01150502": "Cyrus",
-		"01480502": "Tucker",
-		"014e0502": "Pippy",
-		"01900502": "Lolly",
-		"02460502": "Cyrus",
+		"00970502": "Benjamin",
+		"00c50502": "Prince",
+		"01bc0502": "Sydney",
+		"01c80502": "Bruce",
+		"02730e02": "Peach - Soccer",
 		"028a0e02": "Waluigi - Golf",
-		"04d91d02": "JP",
-		"04ef1d02": "Alex"
+		"02fb0502": "Boyd",
+		"03590902": "Urbosa",
+		"04da1d02": "Zangief",
+		"04e01d02": "Akuma"
 	}
 }

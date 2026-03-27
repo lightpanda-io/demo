@@ -4,21 +4,21 @@
 		"character": "Gracie",
 		"name": "Gracie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a90001-01760502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a90001-01760502.png",
 		"tail": "01760502"
 	},
 	"next": "03701202.html",
 	"prev": "00a60502.html",
 	"list": {
-		"00a50502": "Roald",
+		"009d0502": "Axel",
+		"00b50502": "Blanca",
 		"00ef0502": "Agnes",
-		"01450502": "Daisy",
-		"02560c02": "King Dedede",
-		"027a0e02": "Daisy - Tennis",
-		"03150502": "Buzz",
-		"03b50502": "Daisy Mae",
-		"03b70502": "Saharah",
-		"03cb0502": "Shino",
-		"04bd1d02": "Rashid"
+		"00fc0502": "Chops",
+		"015f0502": "Chadder",
+		"01610502": "Cube",
+		"01cc0502": "Frobert",
+		"03030502": "Julia",
+		"03040502": "Louie",
+		"03d60502": "Roswell"
 	}
 }

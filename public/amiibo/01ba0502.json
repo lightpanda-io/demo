@@ -4,21 +4,21 @@
 		"character": "Becky",
 		"name": "Becky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a20001-01ba0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02a20001-01ba0502.png",
 		"tail": "01ba0502"
 	},
 	"next": "01440502.html",
 	"prev": "03ca0502.html",
 	"list": {
-		"011f0502": "Tabby",
-		"01790502": "Timmy - Suit",
-		"01c30502": "Margie",
-		"02860e02": "Wario - Horse Racing",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"035d0302": "Poochy",
-		"03680102": "Koopa Troopa",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"03a60102": "Mario - Cat",
-		"04db1d02": "Lily"
+		"00f40502": "Flip",
+		"00f80502": "Drake",
+		"014a0502": "Gaston",
+		"014f0502": "Buck",
+		"02710e02": "Luigi - Golf",
+		"030b0502": "Leopold",
+		"036f1202": "Chrom",
+		"039cff02": "Luigi - Power Up Band",
+		"0430ff02": "Golden - Power Up Band",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)"
 	}
 }

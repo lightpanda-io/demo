@@ -4,21 +4,21 @@
 		"character": "Bitty",
 		"name": "Bitty",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03950001-02fc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03950001-02fc0502.png",
 		"tail": "02fc0502"
 	},
 	"next": "03a70102.html",
 	"prev": "01ab0502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"002f0002": "Duck Hunt",
-		"00d10502": "Peck",
-		"01460502": "Stinky",
-		"02b00e02": "Birdo - Baseball",
-		"02fc0502": "Bitty",
-		"03130502": "Olive",
-		"037d0002": "Isabelle",
-		"03b30502": "C.J.",
-		"042a1902": "Asana Mutsuba"
+		"00140002": "Bowser",
+		"01630502": "Curly",
+		"01680502": "Rolf",
+		"01ab0502": "Rod",
+		"01d00502": "Iggly",
+		"02880e02": "Waluigi - Baseball",
+		"031a0502": "Marty",
+		"03810002": "Ice Climbers",
+		"03c50502": "Judy",
+		"03d00502": "Chabwick"
 	}
 }

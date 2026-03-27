@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link - Tears of the Kingdom",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-04180902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-04180902.png",
 		"tail": "04180902"
 	},
 	"next": "01a90502.html",
 	"prev": "01cf0502.html",
 	"list": {
-		"00340102": "Mario",
-		"003a0202": "Chibi Robo",
-		"003e0402": "Inkling Girl",
-		"00790502": "Deena",
-		"00950502": "Goose",
-		"00ae0502": "Katie",
-		"00f20502": "Jay",
-		"017c0502": "Pave",
-		"01a90502": "Papi",
-		"036a0402": "Inkling Boy - Neon Green"
+		"00a60502": "Molly",
+		"00b40502": "Isabelle - Winter",
+		"01060502": "Hamphrey",
+		"01bc0502": "Sydney",
+		"02980e02": "Bowser - Tennis",
+		"02b40e02": "Rosalina - Soccer",
+		"03010502": "Claude",
+		"03b60502": "Kicks",
+		"04bd1d02": "Rashid",
+		"04dd1d02": "Rashid"
 	}
 }

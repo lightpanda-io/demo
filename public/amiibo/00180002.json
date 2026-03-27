@@ -4,21 +4,21 @@
 		"character": "Ike",
 		"name": "Ike",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21010000-00180002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21010000-00180002.png",
 		"tail": "00180002"
 	},
 	"next": "02710e02.html",
 	"prev": "00910502.html",
 	"list": {
-		"006b0502": "Gigi",
-		"00770502": "Poppy",
-		"00ea0502": "Beau",
-		"01230502": "Paula",
-		"01af0502": "Zucker",
-		"02870e02": "Waluigi - Soccer",
-		"029e0e02": "Bowser Jr. - Golf",
-		"037f0002": "Ridley",
-		"04281902": "Roa Kirishima",
-		"04ab1d02": "Luke"
+		"00620502": "Sheldon",
+		"00a80502": "K.K. Slider",
+		"00a90502": "Reese",
+		"00b90502": "Poncho",
+		"011d0502": "Lily",
+		"01530502": "Skye",
+		"017f0502": "Zipper",
+		"01ba0502": "Becky",
+		"02540c02": "Kirby",
+		"040d0f02": "Ena"
 	}
 }

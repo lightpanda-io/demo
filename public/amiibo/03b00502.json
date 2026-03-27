@@ -4,21 +4,21 @@
 		"character": "Sable",
 		"name": "Sable",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-03b00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01870001-03b00502.png",
 		"tail": "03b00502"
 	},
 	"next": "01040502.html",
 	"prev": "00e60502.html",
 	"list": {
-		"002f0002": "Duck Hunt",
-		"00620502": "Sheldon",
-		"015e0502": "Frank",
-		"01910502": "Erik",
-		"02b10e02": "Birdo - Tennis",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"02e40f02": "Rathian and Cheval",
-		"02f70502": "Ursala",
-		"03961702": "Hayakawa",
-		"04b51d02": "E. Honda"
+		"00f50502": "Hugh",
+		"026b0e02": "Mario - Tennis",
+		"02a70e02": "Baby Mario - Tennis",
+		"03160502": "Cleo",
+		"03951702": "Yabe",
+		"040c0f02": "Razewing Ratha",
+		"04101802": "Palico",
+		"04370402": "Marie - Alterna",
+		"04d11d02": "Guile",
+		"04f31d02": "Mai"
 	}
 }

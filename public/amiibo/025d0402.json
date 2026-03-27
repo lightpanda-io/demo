@@ -4,21 +4,21 @@
 		"character": "Callie",
 		"name": "Callie",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08010000-025d0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08010000-025d0402.png",
 		"tail": "025d0402"
 	},
 	"next": "04360402.html",
 	"prev": "01c70502.html",
 	"list": {
-		"004e0502": "Harriet",
-		"00840502": "Midge",
-		"009c0502": "Diana",
-		"00cc0502": "Cookie",
-		"01800502": "Goldie",
-		"024a0502": "Kicks",
-		"02710e02": "Luigi - Golf",
-		"02f00502": "Sylvana",
-		"037c0002": "Young Link",
-		"03961702": "Hayakawa"
+		"000d0002": "Diddy Kong",
+		"01000502": "Drift",
+		"01560502": "Hamlet",
+		"01820502": "Pinky",
+		"01840502": "Mallary",
+		"01ad0502": "Static",
+		"02480502": "Celeste",
+		"02980e02": "Bowser - Tennis",
+		"03640002": "Bayonetta - Player 2",
+		"03bd0502": "Wardell"
 	}
 }

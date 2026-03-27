@@ -4,21 +4,21 @@
 		"character": "Peewee",
 		"name": "Peewee",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_036a0001-019d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_036a0001-019d0502.png",
 		"tail": "019d0502"
 	},
 	"next": "03be0502.html",
 	"prev": "03c50502.html",
 	"list": {
-		"00010002": "Peach",
-		"00d40502": "Carmen",
-		"01560502": "Hamlet",
-		"02f30502": "Carrie",
-		"03ab0502": "Orville",
-		"03b30502": "C.J.",
-		"03c50502": "Judy",
-		"03d40502": "Frett",
-		"04ac1d02": "Jamie",
-		"04d21d02": "Juri"
+		"00320002": "Pac-Man",
+		"00560502": "Fauna",
+		"014e0502": "Pippy",
+		"019c0502": "Naomi",
+		"019d0502": "Peewee",
+		"038c0002": "Richter",
+		"039fff02": "Yoshi - Power Up Band",
+		"03bf0502": "Isabelle - Sweater",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)",
+		"04e51d02": "C. Viper"
 	}
 }

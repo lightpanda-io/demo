@@ -4,21 +4,21 @@
 		"character": "C.J.",
 		"name": "C.J.",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a020001-03b30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a020001-03b30502.png",
 		"tail": "03b30502"
 	},
 	"next": "02ba0e02.html",
 	"prev": "01530502.html",
 	"list": {
-		"005e0502": "Lopez",
-		"00d80502": "Broccolo",
-		"011d0502": "Lily",
-		"01250502": "Mitzi",
-		"01450502": "Daisy",
-		"017f0502": "Zipper",
-		"01910502": "Erik",
-		"023a0702": "Hammer Slam Bowser",
-		"03b90502": "Gulliver",
-		"04370402": "Marie - Alterna"
+		"00110002": "Lucario",
+		"00620502": "Sheldon",
+		"01110502": "Pete",
+		"01cb0502": "Cranston",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"037a0002": "Daisy",
+		"03830002": "Ivysaur",
+		"03ca0502": "Tiansheng",
+		"04b91d02": "JP",
+		"04d61d02": "Dee Jay"
 	}
 }

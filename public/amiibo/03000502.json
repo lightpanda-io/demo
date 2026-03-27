@@ -4,21 +4,21 @@
 		"character": "Sandy",
 		"name": "Sandy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04380001-03000502.png",
 		"tail": "03000502"
 	},
 	"next": "00b40502.html",
 	"prev": "04c91e03.html",
 	"list": {
-		"008a0502": "Yuka",
-		"00e90502": "Kitty",
-		"010c0502": "Rover",
-		"012c0502": "Colton",
-		"01880502": "Peaches",
-		"02930e02": "Diddy Kong - Tennis",
-		"02b20e02": "Birdo - Golf",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"04370402": "Marie - Alterna"
+		"00440502": "Isabelle",
+		"00c10502": "Coach",
+		"02a00e02": "Boo - Soccer",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"02ee0502": "Tybalt",
+		"02f50502": "Rex",
+		"037f0002": "Ridley",
+		"03890002": "Ken",
+		"03b70502": "Saharah",
+		"04cd1d02": "Luke"
 	}
 }

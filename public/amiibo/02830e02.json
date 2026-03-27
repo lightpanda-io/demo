@@ -4,21 +4,21 @@
 		"character": "Wario",
 		"name": "Wario - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c50201-02830e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c50201-02830e02.png",
 		"tail": "02830e02"
 	},
 	"next": "00c30502.html",
 	"prev": "00210002.html",
 	"list": {
-		"00540502": "Lottie",
-		"00a50502": "Roald",
-		"00a60502": "Molly",
-		"010b0502": "Rocket",
-		"01440502": "Klaus",
-		"014c0502": "Gala",
-		"01550502": "Flora",
-		"01aa0502": "Apple",
-		"02af0e02": "Birdo - Soccer",
-		"03cc0502": "Marlo"
+		"009d0502": "Axel",
+		"00d30502": "Cesar",
+		"011d0502": "Lily",
+		"01290502": "Velma",
+		"012f0502": "Freckles",
+		"01a70502": "Pietro",
+		"03030502": "Julia",
+		"03670102": "Goomba",
+		"03c20502": "Dom",
+		"04b81d02": "Marisa"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Cammy",
 		"name": "Cammy",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d10001-04bc1d02.png",
 		"tail": "04bc1d02"
 	},
 	"next": "04a81d02.html",
 	"prev": "04b61d02.html",
 	"list": {
-		"000c0002": "Luigi",
-		"002c0002": "Ness",
-		"00a60502": "Molly",
-		"00b40502": "Isabelle - Winter",
-		"01d40502": "Isabelle - Character Parfait",
-		"023f0502": "Isabelle - Winter Outfit",
+		"00130002": "Rosalina \u0026 Luma",
+		"00410302": "Green Yarn Yoshi",
+		"006a0502": "Jitters",
+		"00be0502": "Fuchsia",
+		"00e30502": "Pekoe",
+		"01220502": "Del",
+		"01240502": "Ken",
 		"02780e02": "Daisy - Soccer",
-		"030c0502": "Spike",
-		"035d0302": "Poochy",
-		"03880002": "Chrom"
+		"03b20502": "K.K. Slider",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Marlo",
 		"name": "Marlo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a150001-03cc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a150001-03cc0502.png",
 		"tail": "03cc0502"
 	},
 	"next": "02700e02.html",
 	"prev": "00320002.html",
 	"list": {
-		"006a0502": "Jitters",
-		"01110502": "Pete",
-		"012f0502": "Freckles",
-		"01720502": "Katrina",
-		"01bf0502": "Kevin",
-		"02690e02": "Mario - Soccer",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"03150502": "Buzz",
-		"03a10002": "Joker",
-		"03cc0502": "Marlo"
+		"000f0002": "Little Mac",
+		"00480502": "Kapp'n",
+		"00660502": "Deli",
+		"01960502": "Frita",
+		"01c70502": "Maelle",
+		"02620102": "Rosalina",
+		"02700e02": "Luigi - Tennis",
+		"03a60102": "Mario - Cat",
+		"03ca0502": "Tiansheng",
+		"042d1802": "Malzeno"
 	}
 }

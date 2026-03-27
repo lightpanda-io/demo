@@ -4,21 +4,21 @@
 		"character": "Bayonetta",
 		"name": "Bayonetta - Player 2",
 		"gameSeries": "Bayonetta",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400100-03640002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_32400100-03640002.png",
 		"tail": "03640002"
 	},
 	"next": "003c0102.html",
 	"prev": "03670102.html",
 	"list": {
-		"00b70502": "Chip",
-		"00d20502": "Olivia",
-		"012b0502": "Canberra",
-		"013d0502": "Ava",
-		"01790502": "Timmy - Suit",
-		"019c0502": "Naomi",
-		"019f0502": "Olaf",
-		"01a70502": "Pietro",
-		"02a30e02": "Boo - Golf",
-		"02e60f02": "Qurupeco and Dan"
+		"00170002": "Sheik",
+		"00490502": "Resetti",
+		"00670502": "Alli",
+		"00d10502": "Peck",
+		"012c0502": "Colton",
+		"023a0702": "Hammer Slam Bowser",
+		"023d0002": "Mewtwo",
+		"02460502": "Cyrus",
+		"039eff02": "Daisy - Power Up Band",
+		"0431ff02": "Donkey Kong - Power Up Band"
 	}
 }

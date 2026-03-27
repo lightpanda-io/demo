@@ -4,21 +4,21 @@
 		"character": "Bluebear",
 		"name": "Bluebear",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027d0001-00630502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_027d0001-00630502.png",
 		"tail": "00630502"
 	},
 	"next": "00150002.html",
 	"prev": "03070502.html",
 	"list": {
-		"00250002": "Greninja",
-		"002c0002": "Ness",
-		"00a90502": "Reese",
-		"00c10502": "Coach",
-		"01a70502": "Pietro",
-		"023d0002": "Mewtwo",
-		"02740e02": "Peach - Baseball",
-		"02ed0502": "Stella",
-		"04ba1d02": "Zangief",
-		"04d01d02": "Chun-Li"
+		"00200002": "Dark Pit",
+		"00fc0502": "Chops",
+		"014f0502": "Buck",
+		"01880502": "Peaches",
+		"028e0e02": "Donkey Kong - Tennis",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02f80502": "Jacob",
+		"03140502": "Dobie",
+		"04271902": "Romin Kirishima",
+		"04ac1d02": "Jamie"
 	}
 }

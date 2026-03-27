@@ -4,21 +4,21 @@
 		"character": "Winnie",
 		"name": "Winnie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a90001-00710502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03a90001-00710502.png",
 		"tail": "00710502"
 	},
 	"next": "00840502.html",
 	"prev": "00d80502.html",
 	"list": {
-		"00290002": "Lucina",
-		"00ae0502": "Katie",
-		"01910502": "Erik",
-		"02390602": "8-Bit Mario Modern Color",
-		"02510002": "Lucas",
-		"026a0e02": "Mario - Baseball",
-		"027f0e02": "Yoshi - Tennis",
-		"038c0002": "Richter",
-		"03971702": "Ganda",
-		"03b90502": "Gulliver"
+		"009f0502": "Henry",
+		"011b0502": "Franklin",
+		"01290502": "Velma",
+		"01360502": "Drago",
+		"01860502": "Katt",
+		"03170502": "Ike",
+		"038e0402": "Octoling Girl",
+		"043b1302": "Samus",
+		"04421c02": "Yoshi - My Mario Wooden Blocks",
+		"04b81d02": "Marisa"
 	}
 }

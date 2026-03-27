@@ -4,21 +4,21 @@
 		"character": "Tex",
 		"name": "Tex",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046b0001-01970502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_046b0001-01970502.png",
 		"tail": "01970502"
 	},
 	"next": "02450502.html",
 	"prev": "014c0502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00800502": "Tutu",
-		"01d30502": "Robin",
-		"02750e02": "Peach - Tennis",
-		"02810e02": "Yoshi - Horse Racing",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03b20502": "K.K. Slider",
-		"03d30502": "Rio",
-		"04180902": "Link - Tears of the Kingdom",
-		"04de1d02": "A.K.I"
+		"00a10502": "Cyrano",
+		"00b90502": "Poncho",
+		"01250502": "Mitzi",
+		"014e0502": "Pippy",
+		"02ff0502": "Plucky",
+		"03b00502": "Sable",
+		"03b80502": "Harvey",
+		"04360402": "Callie - Alterna",
+		"04a60902": "Yunobo",
+		"04bd1d02": "Rashid"
 	}
 }

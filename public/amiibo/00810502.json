@@ -4,21 +4,20 @@
 		"character": "T-Bone",
 		"name": "T-Bone",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024f0001-00810502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_024f0001-00810502.png",
 		"tail": "00810502"
 	},
 	"next": "02840e02.html",
 	"prev": "00df0502.html",
 	"list": {
-		"00020002": "Yoshi",
-		"00370102": "Yoshi",
-		"00930502": "Eugene",
-		"015b0502": "Victoria",
-		"01b80502": "Pompom",
-		"02ff0502": "Plucky",
-		"03670102": "Goomba",
-		"03c90502": "Ione",
-		"04b21d02": "Juri",
-		"04d71d02": "Manon"
+		"00ac0502": "Copper",
+		"011e0502": "Anchovy",
+		"01630502": "Curly",
+		"01b30502": "Chow",
+		"02430502": "Digby",
+		"02570c02": "Waddle Dee",
+		"02610402": "Inkling Squid - Orange",
+		"03500902": "Toon Link - The Wind Waker",
+		"03880002": "Chrom"
 	}
 }

@@ -4,21 +4,20 @@
 		"character": "Marina",
 		"name": "Marina",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08040000-03770402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08040000-03770402.png",
 		"tail": "03770402"
 	},
 	"next": "04390402.html",
 	"prev": "00950502.html",
 	"list": {
-		"00640502": "Bill",
-		"00860502": "Flurry",
-		"00a00502": "Bertha",
-		"00a30502": "Cole",
-		"01b50502": "Jacques",
-		"02b90e02": "Metal Mario - Soccer",
-		"02f90502": "Maddie",
-		"03981702": "Daijobu",
-		"03ae0502": "Celeste",
-		"042a1902": "Asana Mutsuba"
+		"00190002": "Dr. Mario",
+		"007e0502": "Nate",
+		"00940502": "Eunice",
+		"00b20502": "Shrunk",
+		"02e40f02": "Rathian and Cheval",
+		"03651302": "Samus Aran",
+		"03680102": "Koopa Troopa",
+		"038b0002": "Simon",
+		"03cf0502": "Quinn"
 	}
 }

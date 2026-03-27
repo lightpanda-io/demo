@@ -4,21 +4,21 @@
 		"character": "Palamute",
 		"name": "Palamute",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0100-042c1802.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350a0100-042c1802.png",
 		"tail": "042c1802"
 	},
 	"next": "012c0502.html",
 	"prev": "00f60502.html",
 	"list": {
-		"00880502": "Bella",
-		"01950502": "Fang",
-		"02570c02": "Waddle Dee",
-		"02a50e02": "Baby Mario - Soccer",
-		"03060502": "Admiral",
-		"03090502": "Weber",
-		"03cc0502": "Marlo",
-		"040f1802": "Magnamalo",
-		"041b0402": "Octoling - Blue",
-		"04e41d02": "Sagat"
+		"00b70502": "Chip",
+		"00d00502": "Nana",
+		"00ea0502": "Beau",
+		"014d0502": "Joey",
+		"01cf0502": "Simon",
+		"02820e02": "Wario - Soccer",
+		"02ea0502": "Piper",
+		"03180502": "Tasha",
+		"03ab0502": "Orville",
+		"04c20102": "Captain Toad \u0026 Talking Flower"
 	}
 }

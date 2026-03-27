@@ -4,21 +4,21 @@
 		"character": "Boo",
 		"name": "Boo - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cb0301-02a20e02.png",
 		"tail": "02a20e02"
 	},
 	"next": "01800502.html",
 	"prev": "009b0502.html",
 	"list": {
-		"01660502": "Sparro",
-		"01690502": "Maple",
-		"01880502": "Peaches",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"025a0002": "Corrin",
-		"02bb0e02": "Metal Mario - Tennis",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"03730102": "Bowser - Wedding",
-		"03c00502": "Sherb",
-		"03c90502": "Ione"
+		"00200002": "Dark Pit",
+		"00300002": "Sonic",
+		"004f0502": "Redd",
+		"005b0502": "Kyle",
+		"00970502": "Benjamin",
+		"00e10502": "Timbra",
+		"00ef0502": "Agnes",
+		"017b0502": "Shrunk - Loud Jacket",
+		"02720e02": "Luigi - Horse Racing",
+		"03cf0502": "Quinn"
 	}
 }

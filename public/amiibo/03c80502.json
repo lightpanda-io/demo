@@ -4,21 +4,21 @@
 		"character": "Sasha",
 		"name": "Sasha",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a110001-03c80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a110001-03c80502.png",
 		"tail": "03c80502"
 	},
 	"next": "002a0002.html",
 	"prev": "01b60502.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"008a0502": "Yuka",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"01ba0502": "Becky",
-		"01cf0502": "Simon",
-		"023e0302": "Mega Yarn Yoshi",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"02f60502": "Stu",
-		"03b40502": "Flick",
-		"03b70502": "Saharah"
+		"00640502": "Bill",
+		"00b70502": "Chip",
+		"00c60502": "Pate",
+		"01190502": "Don Resetti - Without Hat",
+		"028c0e02": "Donkey Kong - Soccer",
+		"029f0e02": "Bowser Jr. - Horse Racing",
+		"02bf0e02": "Pink Gold Peach - Baseball",
+		"02f70502": "Ursala",
+		"03c60502": "Raymond",
+		"index": "Sandy"
 	}
 }

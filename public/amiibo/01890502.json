@@ -4,21 +4,21 @@
 		"character": "Dizzy",
 		"name": "Dizzy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03240001-01890502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03240001-01890502.png",
 		"tail": "01890502"
 	},
 	"next": "01b30502.html",
 	"prev": "01a90502.html",
 	"list": {
-		"000e0002": "Zelda",
-		"00380102": "Toad",
-		"003c0102": "Mario - Gold Edition",
-		"00a00502": "Bertha",
-		"013d0502": "Ava",
-		"01820502": "Pinky",
-		"02450502": "Reese",
-		"02fd0502": "Maggie",
-		"03a10002": "Joker",
-		"04f31d02": "Mai"
+		"00030002": "Donkey Kong",
+		"00ee0502": "Benedict",
+		"01630502": "Curly",
+		"028a0e02": "Waluigi - Golf",
+		"02a60e02": "Baby Mario - Baseball",
+		"02e90502": "June",
+		"030c0502": "Spike",
+		"03651302": "Samus Aran",
+		"03a50002": "Byleth",
+		"04411c02": "Peach - My Mario Wooden Blocks"
 	}
 }

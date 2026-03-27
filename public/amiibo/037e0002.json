@@ -4,21 +4,21 @@
 		"character": "Wolf",
 		"name": "Wolf",
 		"gameSeries": "Star Fox",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05840000-037e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05840000-037e0002.png",
 		"tail": "037e0002"
 	},
 	"next": "01aa0502.html",
 	"prev": "01cb0502.html",
 	"list": {
-		"00220002": "Mii Swordfighter",
-		"00500502": "Saharah",
-		"006c0502": "Quillson",
-		"00930502": "Eugene",
-		"00b90502": "Poncho",
-		"02790e02": "Daisy - Baseball",
-		"02860e02": "Wario - Horse Racing",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"02e50f02": "Barioth and Ayuria",
-		"03540902": "Link - Rider"
+		"00700502": "Octavian",
+		"00980502": "Pancetti",
+		"00a30502": "Cole",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"02380602": "8-Bit Mario Classic Color",
+		"026a0e02": "Mario - Baseball",
+		"02890e02": "Waluigi - Tennis",
+		"03941702": "Ikari",
+		"0431ff02": "Donkey Kong - Power Up Band",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

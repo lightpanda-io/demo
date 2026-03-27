@@ -4,20 +4,21 @@
 		"character": "Jamie",
 		"name": "Jamie",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c30001-04ce1d02.png",
 		"tail": "04ce1d02"
 	},
 	"next": "04d71d02.html",
 	"prev": "04cd1d02.html",
 	"list": {
-		"003e0402": "Inkling Girl",
-		"00b30502": "Don Resetti",
-		"01550502": "Flora",
-		"019a0502": "Anabelle",
-		"01a80502": "Aurora",
-		"02b70e02": "Rosalina - Golf",
-		"031d0502": "Chelsea",
-		"042a1902": "Asana Mutsuba",
-		"04d91d02": "JP"
+		"00200002": "Dark Pit",
+		"004f0502": "Redd",
+		"00ba0502": "Felicity",
+		"014c0502": "Gala",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02890e02": "Waluigi - Tennis",
+		"02e70502": "Vivian",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03d10502": "Zoe",
+		"04aa1d02": "Luke"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Moose",
 		"name": "Moose",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_041a0001-00e00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_041a0001-00e00502.png",
 		"tail": "00e00502"
 	},
 	"next": "02390602.html",
 	"prev": "03990902.html",
 	"list": {
-		"00390102": "Bowser",
-		"010d0502": "Blathers",
-		"019a0502": "Anabelle",
-		"01ad0502": "Static",
-		"02e20f02": "One-Eyed Rathalos and Rider - Female",
-		"02e30f02": "Nabiru",
-		"02fb0502": "Boyd",
-		"037a0002": "Daisy",
-		"03ae0502": "Celeste",
-		"04a81d02": "Ryu"
+		"004e0502": "Harriet",
+		"00660502": "Deli",
+		"00680502": "Kabuki",
+		"00f40502": "Flip",
+		"00fc0502": "Chops",
+		"01640502": "Boomer",
+		"01650502": "Caroline",
+		"01ce0502": "Cally",
+		"02560c02": "King Dedede",
+		"02c10e02": "Pink Gold Peach - Golf"
 	}
 }

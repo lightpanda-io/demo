@@ -4,21 +4,21 @@
 		"character": "Big Man",
 		"name": "Big Man",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08090000-04350402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08090000-04350402.png",
 		"tail": "04350402"
 	},
 	"next": "03d40502.html",
 	"prev": "04340402.html",
 	"list": {
-		"01560502": "Hamlet",
-		"023e0302": "Mega Yarn Yoshi",
-		"027b0e02": "Daisy - Golf",
-		"02ba0e02": "Metal Mario - Baseball",
-		"03130502": "Olive",
-		"03710102": "Mario - Wedding",
-		"03c20502": "Dom",
-		"04271902": "Romin Kirishima",
-		"042c1802": "Palamute",
-		"04390402": "Marina - Side Order"
+		"00d60502": "Scoot",
+		"00df0502": "Gabi",
+		"00fa0502": "Camofrog",
+		"010f0502": "Pelly",
+		"012d0502": "Marina",
+		"02380602": "8-Bit Mario Classic Color",
+		"02e80502": "Hopkins",
+		"03ac0502": "Wilbur",
+		"03d30502": "Rio",
+		"04fc0f02": "Rudy"
 	}
 }

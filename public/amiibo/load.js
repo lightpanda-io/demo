@@ -1,3 +1,4 @@
+
 async function loadAmiibo(url) {
   try {
     const response = await fetch(url);
@@ -41,4 +42,3 @@ function update(data) {
 	alt.append(li);
   }
 }
-

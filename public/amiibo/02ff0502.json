@@ -4,21 +4,21 @@
 		"character": "Plucky",
 		"name": "Plucky",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a30001-02ff0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02a30001-02ff0502.png",
 		"tail": "02ff0502"
 	},
 	"next": "01400502.html",
 	"prev": "023e0302.html",
 	"list": {
-		"002a0002": "Robin",
-		"004b0502": "Timmy",
-		"00980502": "Pancetti",
-		"01380502": "Mac",
-		"01560502": "Hamlet",
-		"01b90502": "Tank",
-		"02ee0502": "Tybalt",
-		"03560902": "Zelda",
-		"042a1902": "Asana Mutsuba",
-		"04370402": "Marie - Alterna"
+		"00bd0502": "Lucha",
+		"01100502": "Phyllis",
+		"01790502": "Timmy - Suit",
+		"01910502": "Erik",
+		"025a0002": "Corrin",
+		"03170502": "Ike",
+		"031a0502": "Marty",
+		"040c0f02": "Razewing Ratha",
+		"042e0002": "Sora",
+		"04b51d02": "E. Honda"
 	}
 }

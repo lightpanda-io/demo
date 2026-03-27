@@ -4,21 +4,21 @@
 		"character": "Sidon",
 		"name": "Sidon",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_010a0000-04a40902.png",
 		"tail": "04a40902"
 	},
 	"next": "04a30902.html",
 	"prev": "04a60902.html",
 	"list": {
-		"005c0502": "Al",
-		"005e0502": "Lopez",
-		"01490502": "Blanche",
-		"014c0502": "Gala",
-		"02460502": "Cyrus",
-		"02730e02": "Peach - Soccer",
-		"02bc0e02": "Metal Mario - Golf",
-		"03770402": "Marina",
-		"03ae0502": "Celeste",
-		"03c10502": "Megan"
+		"00680502": "Kabuki",
+		"007d0502": "Monique",
+		"00910502": "Roscoe",
+		"00940502": "Eunice",
+		"00d70502": "Whitney",
+		"01350502": "Chevre",
+		"013c0502": "Beardo",
+		"016f0502": "Chrissy",
+		"01b40502": "Sylvia",
+		"01d50502": "Goldie - Amiibo Festival"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Sonic",
 		"name": "Sonic",
 		"gameSeries": "Sonic",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32000000-00300002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_32000000-00300002.png",
 		"tail": "00300002"
 	},
 	"next": "013d0502.html",
 	"prev": "00b40502.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00300002": "Sonic",
-		"00a80502": "K.K. Slider",
-		"00bd0502": "Lucha",
-		"00d40502": "Carmen",
-		"013b0502": "Hazel",
-		"01600502": "Merengue",
-		"02840e02": "Wario - Tennis",
-		"030c0502": "Spike",
-		"04f21d02": "Mai"
+		"011d0502": "Lily",
+		"01550502": "Flora",
+		"016f0502": "Chrissy",
+		"01890502": "Dizzy",
+		"01c20502": "Hippeux",
+		"02e80502": "Hopkins",
+		"03720102": "Peach - Wedding",
+		"04220002": "Steve",
+		"043d1b02": "Noah",
+		"04b41d02": "Dhalsim"
 	}
 }

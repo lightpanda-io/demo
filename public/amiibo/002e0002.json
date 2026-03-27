@@ -4,21 +4,21 @@
 		"character": "R.O.B.",
 		"name": "R.O.B. - Famicom",
 		"gameSeries": "Classic Nintendo",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_07810000-002e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_07810000-002e0002.png",
 		"tail": "002e0002"
 	},
 	"next": "03620002.html",
 	"prev": "016d0502.html",
 	"list": {
-		"00540502": "Lottie",
-		"006e0502": "Puck",
-		"00d10502": "Peck",
-		"01c50502": "Rosie",
-		"02580002": "Mega Man - Gold Edition",
-		"02900e02": "Donkey Kong - Horse Racing",
-		"03601202": "Alm",
-		"03640002": "Bayonetta - Player 2",
-		"04b31d02": "Blanka",
-		"04ed1d02": "Sagat"
+		"00ce0502": "Blaire",
+		"01170502": "Timmy - Full Apron",
+		"011d0502": "Lily",
+		"01580502": "Monty",
+		"015a0502": "Biskit",
+		"01bc0502": "Sydney",
+		"026b0e02": "Mario - Tennis",
+		"02730e02": "Peach - Soccer",
+		"03880002": "Chrom",
+		"03951702": "Yabe"
 	}
 }

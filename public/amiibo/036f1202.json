@@ -4,21 +4,21 @@
 		"character": "Chrom",
 		"name": "Chrom",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21080000-036f1202.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21080000-036f1202.png",
 		"tail": "036f1202"
 	},
 	"next": "02b20e02.html",
 	"prev": "028a0e02.html",
 	"list": {
-		"006a0502": "Jitters",
-		"00bd0502": "Lucha",
-		"00c00502": "Gwen",
-		"01300502": "Bam",
-		"01570502": "Astrid",
-		"02640102": "Donkey Kong",
-		"02af0e02": "Birdo - Soccer",
-		"03c00502": "Sherb",
-		"0430ff02": "Golden - Power Up Band",
-		"04390402": "Marina - Side Order"
+		"000c0002": "Luigi",
+		"008f0502": "Jeremiah",
+		"00a10502": "Cyrano",
+		"03090502": "Weber",
+		"03100502": "Gonzo",
+		"03530902": "Link - Archer",
+		"037c0002": "Young Link",
+		"03820002": "Inkling",
+		"03b10502": "Label",
+		"040e0f02": "Tsukino"
 	}
 }

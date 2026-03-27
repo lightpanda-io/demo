@@ -4,21 +4,21 @@
 		"character": "Sora",
 		"name": "Sora",
 		"gameSeries": "Kingdom Hearts",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3f000000-042e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3f000000-042e0002.png",
 		"tail": "042e0002"
 	},
 	"next": "04c41e03.html",
 	"prev": "043e1b02.html",
 	"list": {
-		"00810502": "T-Bone",
-		"01790502": "Timmy - Suit",
-		"01910502": "Erik",
-		"01aa0502": "Apple",
-		"01c00502": "Gloria",
-		"02700e02": "Luigi - Tennis",
-		"03070502": "Ellie",
-		"03601202": "Alm",
-		"03ac0502": "Wilbur",
-		"04d91d02": "JP"
+		"00160002": "Toon Link",
+		"001d0002": "Zero Suit Samus",
+		"004a0502": "Joan",
+		"00890502": "Biff",
+		"00ce0502": "Blaire",
+		"01450502": "Daisy",
+		"01650502": "Caroline",
+		"02500a02": "Shovel Knight",
+		"02660102": "Daisy",
+		"03bc0502": "Niko"
 	}
 }

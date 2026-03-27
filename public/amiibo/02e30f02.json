@@ -4,21 +4,21 @@
 		"character": "Nabiru",
 		"name": "Nabiru",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35010000-02e30f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35010000-02e30f02.png",
 		"tail": "02e30f02"
 	},
 	"next": "01150502.html",
 	"prev": "00550502.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"006d0502": "Marcie",
-		"008d0502": "Cobb",
-		"00a20502": "Peanut",
-		"01070502": "Freya",
-		"02fc0502": "Bitty",
-		"03010502": "Claude",
-		"03120502": "Snooty",
-		"03850002": "Pichu",
-		"04210002": "Sephiroth"
+		"004d0502": "Pascal",
+		"00770502": "Poppy",
+		"00b40502": "Isabelle - Winter",
+		"01c00502": "Gloria",
+		"01d40502": "Isabelle - Character Parfait",
+		"02690e02": "Mario - Soccer",
+		"02e30f02": "Nabiru",
+		"03620002": "Cloud - Player 2",
+		"03680102": "Koopa Troopa",
+		"04b41d02": "Dhalsim"
 	}
 }

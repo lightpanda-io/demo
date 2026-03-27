@@ -4,21 +4,21 @@
 		"character": "Sephiroth",
 		"name": "Sephiroth",
 		"gameSeries": "Final Fantasy",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_36010000-04210002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_36010000-04210002.png",
 		"tail": "04210002"
 	},
 	"next": "01330502.html",
 	"prev": "04291902.html",
 	"list": {
-		"000c0002": "Luigi",
-		"014d0502": "Joey",
-		"01590502": "Dora",
-		"01700502": "Isabelle - Dress",
-		"019f0502": "Olaf",
-		"01ad0502": "Static",
-		"02920e02": "Diddy Kong - Baseball",
-		"02ed0502": "Stella",
-		"03160502": "Cleo",
-		"041d0002": "Min Min"
+		"004a0502": "Joan",
+		"008a0502": "Yuka",
+		"00b60502": "Nat",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02400502": "K. K. Slider",
+		"02720e02": "Luigi - Horse Racing",
+		"02880e02": "Waluigi - Baseball",
+		"02930e02": "Diddy Kong - Tennis",
+		"02b10e02": "Birdo - Tennis",
+		"04b61d02": "Dee Jay"
 	}
 }

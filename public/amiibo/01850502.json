@@ -4,21 +4,21 @@
 		"character": "Rocco",
 		"name": "Rocco",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03900001-01850502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03900001-01850502.png",
 		"tail": "01850502"
 	},
 	"next": "02900e02.html",
 	"prev": "01130502.html",
 	"list": {
-		"00b40502": "Isabelle - Winter",
-		"00f10502": "Bettina",
-		"010a0502": "Big Top",
-		"01150502": "Cyrus",
-		"018c0502": "Broffina",
-		"02a50e02": "Baby Mario - Soccer",
-		"03090502": "Weber",
-		"036e0a02": "King Knight",
-		"041e0002": "Pyra",
-		"04d31d02": "Blanka"
+		"004a0502": "Joan",
+		"00df0502": "Gabi",
+		"010b0502": "Rocket",
+		"01470502": "Tammi",
+		"029d0e02": "Bowser Jr. - Tennis",
+		"02f70502": "Ursala",
+		"03cc0502": "Marlo",
+		"0432ff02": "Diddy Kong - Power Up Band",
+		"04bb1d02": "Lily",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

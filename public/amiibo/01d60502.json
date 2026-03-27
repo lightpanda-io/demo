@@ -4,21 +4,21 @@
 		"character": "Stitches",
 		"name": "Stitches - Amiibo Festival",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02820001-01d60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02820001-01d60502.png",
 		"tail": "01d60502"
 	},
 	"next": "004d0502.html",
 	"prev": "02f20502.html",
 	"list": {
-		"006d0502": "Marcie",
-		"007a0502": "Snake",
-		"01670502": "Baabara",
-		"019e0502": "Tammy",
-		"01cb0502": "Cranston",
-		"01d40502": "Isabelle - Character Parfait",
-		"03010502": "Claude",
-		"03640002": "Bayonetta - Player 2",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"03c80502": "Sasha"
+		"00c50502": "Prince",
+		"00dd0502": "Rhonda",
+		"01240502": "Ken",
+		"01310502": "Friga",
+		"01ba0502": "Becky",
+		"01c60502": "Rowan",
+		"02430502": "Digby",
+		"02f40502": "Ketchup",
+		"035d0302": "Poochy",
+		"037a0002": "Daisy"
 	}
 }

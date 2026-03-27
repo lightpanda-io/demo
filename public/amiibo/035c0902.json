@@ -4,20 +4,21 @@
 		"character": "Bokoblin",
 		"name": "Bokoblin",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01410000-035c0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01410000-035c0902.png",
 		"tail": "035c0902"
 	},
 	"next": "02b50e02.html",
 	"prev": "00ea0502.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00270002": "Meta Knight",
-		"00370102": "Yoshi",
-		"00760502": "Opal",
-		"00e00502": "Moose",
-		"02620102": "Rosalina",
-		"028f0e02": "Donkey Kong - Golf",
-		"03130502": "Olive",
-		"03750d02": "Detective Pikachu"
+		"004b0502": "Timmy",
+		"008f0502": "Jeremiah",
+		"00950502": "Goose",
+		"00ad0502": "Booker",
+		"00d00502": "Nana",
+		"01400502": "Genji",
+		"018a0502": "Penelope",
+		"01920502": "Dotty",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"03c20502": "Dom"
 	}
 }

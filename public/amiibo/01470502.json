@@ -4,21 +4,21 @@
 		"character": "Tammi",
 		"name": "Tammi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03fc0001-01470502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03fc0001-01470502.png",
 		"tail": "01470502"
 	},
 	"next": "006b0502.html",
 	"prev": "01910502.html",
 	"list": {
-		"00250002": "Greninja",
-		"00c50502": "Prince",
-		"00d00502": "Nana",
-		"00d90502": "Coco",
-		"01160502": "Grams",
-		"02f60502": "Stu",
-		"03180502": "Tasha",
-		"03b70502": "Saharah",
-		"04bf1d02": "Ed",
-		"04e31d02": "Elena"
+		"00800502": "Tutu",
+		"00910502": "Roscoe",
+		"00d30502": "Cesar",
+		"011a0502": "Isabelle - Kimono",
+		"016e0502": "Francine",
+		"035e1002": "Qbby",
+		"037d0002": "Isabelle",
+		"039fff02": "Yoshi - Power Up Band",
+		"03a0ff02": "Toad - Power Up Band",
+		"04d31d02": "Blanka"
 	}
 }

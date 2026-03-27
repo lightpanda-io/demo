@@ -4,21 +4,20 @@
 		"character": "Bowser Jr.",
 		"name": "Bowser Jr. - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ca0401-029e0e02.png",
 		"tail": "029e0e02"
 	},
 	"next": "02570c02.html",
 	"prev": "00610502.html",
 	"list": {
-		"008d0502": "Cobb",
-		"00930502": "Eugene",
-		"01bb0502": "Rizzo",
-		"029a0e02": "Bowser - Horse Racing",
-		"02a00e02": "Boo - Soccer",
-		"02b00e02": "Birdo - Baseball",
-		"02ee0502": "Tybalt",
-		"03070502": "Ellie",
-		"04241902": "Yuga Ohdo",
-		"04f11d02": "Terry"
+		"00600502": "Rasher",
+		"00a50502": "Roald",
+		"011f0502": "Tabby",
+		"01710502": "Brewster",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02f90502": "Maddie",
+		"03120502": "Snooty",
+		"04200002": "Kazuya"
 	}
 }

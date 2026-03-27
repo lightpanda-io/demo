@@ -4,21 +4,21 @@
 		"character": "Rosalina",
 		"name": "Rosalina - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cf0201-02b50e02.png",
 		"tail": "02b50e02"
 	},
 	"next": "023d0002.html",
 	"prev": "035c0902.html",
 	"list": {
-		"00170002": "Sheik",
-		"00bf0502": "Harry",
-		"01680502": "Rolf",
-		"01a40502": "Elise",
-		"01be0502": "Nibbles",
-		"028c0e02": "Donkey Kong - Soccer",
-		"03090502": "Weber",
-		"041f0002": "Mythra",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"04d01d02": "Chun-Li"
+		"00700502": "Octavian",
+		"01000502": "Drift",
+		"01290502": "Velma",
+		"013e0502": "Chester",
+		"02480502": "Celeste",
+		"02970e02": "Bowser - Baseball",
+		"03710102": "Mario - Wedding",
+		"043b1302": "Samus",
+		"04af1d02": "Kimberly",
+		"04e31d02": "Elena"
 	}
 }

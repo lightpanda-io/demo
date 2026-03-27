@@ -4,21 +4,21 @@
 		"character": "Pyra",
 		"name": "Pyra",
 		"gameSeries": "Xenoblade",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22410000-041e0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22410000-041e0002.png",
 		"tail": "041e0002"
 	},
 	"next": "03190502.html",
 	"prev": "00b10502.html",
 	"list": {
-		"00260002": "Jigglypuff",
-		"00430302": "Light Blue Yarn Yoshi",
-		"00f20502": "Jay",
-		"01160502": "Grams",
-		"01480502": "Tucker",
-		"01d20502": "Twiggy",
-		"02510002": "Lucas",
-		"02e40f02": "Rathian and Cheval",
-		"03500902": "Toon Link - The Wind Waker",
-		"03850002": "Pichu"
+		"00200002": "Dark Pit",
+		"00300002": "Sonic",
+		"006f0502": "Shari",
+		"00880502": "Bella",
+		"010f0502": "Pelly",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"02f20502": "Wade",
+		"03b80502": "Harvey",
+		"04d61d02": "Dee Jay"
 	}
 }

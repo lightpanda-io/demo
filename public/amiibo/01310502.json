@@ -4,21 +4,21 @@
 		"character": "Friga",
 		"name": "Friga",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04630001-01310502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04630001-01310502.png",
 		"tail": "01310502"
 	},
 	"next": "01280502.html",
 	"prev": "03680102.html",
 	"list": {
-		"00810502": "T-Bone",
-		"01480502": "Tucker",
-		"01880502": "Peaches",
-		"019b0502": "Rudy",
-		"02680102": "Boo",
-		"02920e02": "Diddy Kong - Baseball",
-		"02a80e02": "Baby Mario - Golf",
-		"02ef0502": "Huck",
-		"03781402": "Solaire of Astora",
-		"03ca0502": "Tiansheng"
+		"009a0502": "Bunnie",
+		"01010502": "Vesta",
+		"02600402": "Inkling Boy - Purple",
+		"026c0e02": "Mario - Golf",
+		"02770e02": "Peach - Horse Racing",
+		"03020502": "Raddle",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"04a50902": "Tulin",
+		"04b01d02": "Chun-Li",
+		"04f21d02": "Mai"
 	}
 }

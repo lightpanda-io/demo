@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Silver Edition",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-003d0102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-003d0102.png",
 		"tail": "003d0102"
 	},
 	"next": "03860002.html",
 	"prev": "01b20502.html",
 	"list": {
-		"01720502": "Katrina",
-		"01750502": "Tommy - Suit",
-		"017d0502": "Gulliver",
-		"01930502": "Pierce",
-		"01b10502": "Ribbot",
-		"02fc0502": "Bitty",
-		"030d0502": "Cashmere",
-		"031e0502": "Toby",
-		"03810002": "Ice Climbers",
-		"04210002": "Sephiroth"
+		"00620502": "Sheldon",
+		"00980502": "Pancetti",
+		"01070502": "Freya",
+		"01080502": "Kid Cat",
+		"02590002": "Cloud",
+		"02690e02": "Mario - Soccer",
+		"02b20e02": "Birdo - Golf",
+		"02fd0502": "Maggie",
+		"030f0502": "Norma",
+		"04230002": "Alex"
 	}
 }

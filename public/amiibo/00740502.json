@@ -4,21 +4,21 @@
 		"character": "Bonbon",
 		"name": "Bonbon",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a50001-00740502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a50001-00740502.png",
 		"tail": "00740502"
 	},
 	"next": "01680502.html",
 	"prev": "03ad0502.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00780502": "Limberg",
-		"007b0502": "Bangle",
-		"027e0e02": "Yoshi - Baseball",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"030c0502": "Spike",
-		"03800002": "Dark Samus",
-		"03810002": "Ice Climbers",
-		"040e0f02": "Tsukino",
-		"04e31d02": "Elena"
+		"00b70502": "Chip",
+		"01430502": "Diva",
+		"015e0502": "Frank",
+		"01a20502": "Puddles",
+		"023a0702": "Hammer Slam Bowser",
+		"02980e02": "Bowser - Tennis",
+		"03190502": "Rilla",
+		"035c0902": "Bokoblin",
+		"03cb0502": "Shino",
+		"03d60502": "Roswell"
 	}
 }

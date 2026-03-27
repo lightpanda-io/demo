@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Golden - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-0430ff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000003-0430ff02.png",
 		"tail": "0430ff02"
 	},
 	"next": "008e0502.html",
-	"prev": "042b1802.html",
+	"prev": "04fc0f02.html",
 	"list": {
-		"004e0502": "Harriet",
-		"009a0502": "Bunnie",
-		"00a90502": "Reese",
-		"00aa0502": "Kicks",
-		"012a0502": "Elvis",
-		"01af0502": "Zucker",
-		"027d0e02": "Yoshi - Soccer",
+		"000f0002": "Little Mac",
+		"00330002": "R.O.B. - NES",
+		"01040502": "Keaton",
+		"01b30502": "Chow",
+		"029b0e02": "Bowser Jr. - Soccer",
 		"02ae0e02": "Baby Luigi - Horse Racing",
-		"038b0002": "Simon",
-		"03ac0502": "Wilbur"
+		"02fe0502": "Murphy",
+		"03951702": "Yabe",
+		"04220002": "Steve",
+		"043d1b02": "Noah"
 	}
 }

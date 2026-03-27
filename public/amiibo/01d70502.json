@@ -4,21 +4,21 @@
 		"character": "Rosie",
 		"name": "Rosie - Amiibo Festival",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025f0001-01d70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_025f0001-01d70502.png",
 		"tail": "01d70502"
 	},
 	"next": "024a0502.html",
 	"prev": "01c60502.html",
 	"list": {
-		"00640502": "Bill",
-		"00bd0502": "Lucha",
-		"00c90502": "Kidd",
-		"01b40502": "Sylvia",
-		"01be0502": "Nibbles",
-		"025d0402": "Callie",
-		"02f00502": "Sylvana",
-		"03640002": "Bayonetta - Player 2",
-		"038f0402": "Octoling Boy",
-		"03bc0502": "Niko"
+		"00080002": "Villager",
+		"00320002": "Pac-Man",
+		"00f10502": "Bettina",
+		"00ff0502": "Ankha",
+		"01050502": "Gladys",
+		"016e0502": "Francine",
+		"026e0e02": "Luigi - Soccer",
+		"02810e02": "Yoshi - Horse Racing",
+		"02fe0502": "Murphy",
+		"04bc1d02": "Cammy"
 	}
 }

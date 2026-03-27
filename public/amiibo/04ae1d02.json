@@ -4,21 +4,21 @@
 		"character": "Kimberly",
 		"name": "Kimberly",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c40000-04ae1d02.png",
 		"tail": "04ae1d02"
 	},
 	"next": "04af1d02.html",
 	"prev": "04b71d02.html",
 	"list": {
-		"00220002": "Mii Swordfighter",
-		"00a50502": "Roald",
-		"013e0502": "Chester",
-		"01560502": "Hamlet",
-		"026f0e02": "Luigi - Baseball",
-		"027a0e02": "Daisy - Tennis",
-		"03530902": "Link - Archer",
-		"03c20502": "Dom",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"04281902": "Roa Kirishima"
+		"00160002": "Toon Link",
+		"00570502": "Curt",
+		"011a0502": "Isabelle - Kimono",
+		"01b70502": "Doc",
+		"01b80502": "Pompom",
+		"02520002": "Roy",
+		"02b20e02": "Birdo - Golf",
+		"02f60502": "Stu",
+		"03911602": "Loot Goblin",
+		"043b1302": "Samus"
 	}
 }

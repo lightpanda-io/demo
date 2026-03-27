@@ -4,21 +4,21 @@
 		"character": "Dom",
 		"name": "Dom",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0b0001-03c20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0b0001-03c20502.png",
 		"tail": "03c20502"
 	},
 	"next": "024e0502.html",
 	"prev": "031c0502.html",
 	"list": {
-		"00430302": "Light Blue Yarn Yoshi",
-		"00620502": "Sheldon",
-		"010f0502": "Pelly",
-		"01520502": "Curlos",
-		"02590002": "Cloud",
-		"02870e02": "Waluigi - Soccer",
-		"02fb0502": "Boyd",
-		"02fe0502": "Murphy",
-		"031b0502": "Étoile",
-		"03aa0502": "Isabelle"
+		"00640502": "Bill",
+		"008d0502": "Cobb",
+		"008e0502": "Amelia",
+		"026e0e02": "Luigi - Soccer",
+		"028b0e02": "Waluigi - Horse Racing",
+		"02990e02": "Bowser - Golf",
+		"03050502": "Bea",
+		"03750d02": "Detective Pikachu",
+		"03b80502": "Harvey",
+		"04271902": "Romin Kirishima"
 	}
 }

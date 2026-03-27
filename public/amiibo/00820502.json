@@ -4,21 +4,21 @@
 		"character": "Mint",
 		"name": "Mint",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e60001-00820502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e60001-00820502.png",
 		"tail": "00820502"
 	},
 	"next": "01650502.html",
 	"prev": "04140902.html",
 	"list": {
-		"003c0102": "Mario - Gold Edition",
-		"00530502": "Lyle",
-		"00690502": "Patty",
-		"006b0502": "Gigi",
-		"01500502": "Bree",
-		"017f0502": "Zipper",
-		"026f0e02": "Luigi - Baseball",
-		"03530902": "Link - Archer",
-		"039bff02": "Mario - Power Up Band",
-		"03b40502": "Flick"
+		"00250002": "Greninja",
+		"00740502": "Bonbon",
+		"01730502": "Phineas",
+		"02af0e02": "Birdo - Soccer",
+		"030d0502": "Cashmere",
+		"03110502": "Sprocket",
+		"031c0502": "Chai",
+		"03760402": "Pearl",
+		"04390402": "Marina - Side Order",
+		"04f21d02": "Mai"
 	}
 }

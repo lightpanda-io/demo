@@ -4,21 +4,21 @@
 		"character": "Melba",
 		"name": "Melba",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03be0001-01980502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03be0001-01980502.png",
 		"tail": "01980502"
 	},
 	"next": "026e0e02.html",
 	"prev": "02ee0502.html",
 	"list": {
-		"00450502": "Tom Nook",
-		"00b70502": "Chip",
+		"002b0002": "Shulk",
+		"00c90502": "Kidd",
+		"01130502": "Leif",
+		"011e0502": "Anchovy",
+		"01200502": "Kody",
 		"01250502": "Mitzi",
-		"016b0502": "Soleil",
-		"02a00e02": "Boo - Soccer",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"03550902": "Guardian",
-		"035c0902": "Bokoblin",
-		"04340402": "Frye",
-		"04dc1d02": "Cammy"
+		"03c20502": "Dom",
+		"04d01d02": "Chun-Li",
+		"04db1d02": "Lily",
+		"04de1d02": "A.K.I"
 	}
 }

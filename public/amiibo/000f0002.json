@@ -4,21 +4,21 @@
 		"character": "Little Mac",
 		"name": "Little Mac",
 		"gameSeries": "Punch Out",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06c00000-000f0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_06c00000-000f0002.png",
 		"tail": "000f0002"
 	},
 	"next": "00f00502.html",
 	"prev": "00890502.html",
 	"list": {
-		"00a70502": "Walker",
-		"011d0502": "Lily",
-		"01430502": "Diva",
-		"014d0502": "Joey",
-		"01b90502": "Tank",
-		"02520002": "Roy",
-		"02850e02": "Wario - Golf",
-		"03190502": "Rilla",
-		"03730102": "Bowser - Wedding",
-		"04e31d02": "Elena"
+		"00510502": "Luna",
+		"006e0502": "Puck",
+		"00f50502": "Hugh",
+		"02710e02": "Luigi - Golf",
+		"02a50e02": "Baby Mario - Soccer",
+		"035c0902": "Bokoblin",
+		"03630002": "Corrin - Player 2",
+		"0432ff02": "Diddy Kong - Power Up Band",
+		"04cb1d02": "Ryu",
+		"04e61d02": "Alex"
 	}
 }

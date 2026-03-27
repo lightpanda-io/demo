@@ -4,21 +4,21 @@
 		"character": "Anicotti",
 		"name": "Anicotti",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04160001-00fb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04160001-00fb0502.png",
 		"tail": "00fb0502"
 	},
 	"next": "02690e02.html",
 	"prev": "010e0502.html",
 	"list": {
-		"00290002": "Lucina",
-		"00560502": "Fauna",
-		"023e0302": "Mega Yarn Yoshi",
-		"03800002": "Dark Samus",
-		"03981702": "Daijobu",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04330402": "Shiver",
-		"04a30902": "Riju",
-		"04cf1d02": "Kimberly",
-		"04d91d02": "JP"
+		"00a90502": "Reese",
+		"01820502": "Pinky",
+		"01aa0502": "Apple",
+		"01ae0502": "Celia",
+		"02480502": "Celeste",
+		"02680102": "Boo",
+		"02790e02": "Daisy - Baseball",
+		"02810e02": "Yoshi - Horse Racing",
+		"031a0502": "Marty",
+		"03a90502": "Timmy \u0026 Tommy"
 	}
 }

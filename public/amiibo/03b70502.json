@@ -4,21 +4,21 @@
 		"character": "Saharah",
 		"name": "Saharah",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a60001-03b70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a60001-03b70502.png",
 		"tail": "03b70502"
 	},
 	"next": "006a0502.html",
 	"prev": "00460502.html",
 	"list": {
-		"008e0502": "Amelia",
-		"00a50502": "Roald",
-		"010a0502": "Big Top",
-		"016c0502": "Apollo",
-		"01b10502": "Ribbot",
+		"008d0502": "Cobb",
+		"01280502": "Cousteau",
+		"01680502": "Rolf",
+		"016f0502": "Chrissy",
+		"02520002": "Roy",
 		"02590002": "Cloud",
-		"02f30502": "Carrie",
-		"034d0902": "Link - Twilight Princess",
-		"03741402": "Super Mario Cereal",
-		"040f1802": "Magnamalo"
+		"02600402": "Inkling Boy - Purple",
+		"02b00e02": "Birdo - Baseball",
+		"03800002": "Dark Samus",
+		"04140902": "Zelda \u0026 Loftwing"
 	}
 }

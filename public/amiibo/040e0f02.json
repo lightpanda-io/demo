@@ -4,20 +4,21 @@
 		"character": "Tsukino",
 		"name": "Tsukino",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35070000-040e0f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35070000-040e0f02.png",
 		"tail": "040e0f02"
 	},
 	"next": "00c10502.html",
 	"prev": "035a0902.html",
 	"list": {
-		"00770502": "Poppy",
-		"00d10502": "Peck",
-		"00ff0502": "Ankha",
-		"01380502": "Mac",
-		"01570502": "Astrid",
-		"02ed0502": "Stella",
-		"03661302": "Metroid",
-		"03810002": "Ice Climbers",
-		"04210002": "Sephiroth"
+		"00d20502": "Olivia",
+		"012a0502": "Elvis",
+		"012b0502": "Canberra",
+		"01640502": "Boomer",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"031b0502": "Étoile",
+		"03601202": "Alm",
+		"03741402": "Super Mario Cereal",
+		"03b70502": "Saharah",
+		"03bc0502": "Niko"
 	}
 }

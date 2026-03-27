@@ -4,21 +4,21 @@
 		"character": "Violet",
 		"name": "Violet",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03700001-015d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03700001-015d0502.png",
 		"tail": "015d0502"
 	},
 	"next": "00210002.html",
 	"prev": "00750502.html",
 	"list": {
-		"00560502": "Fauna",
-		"01730502": "Phineas",
-		"01860502": "Katt",
-		"023f0502": "Isabelle - Winter Outfit",
-		"02e30f02": "Nabiru",
-		"02f70502": "Ursala",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"039fff02": "Yoshi - Power Up Band",
-		"03c90502": "Ione",
-		"043a1302": "Samus \u0026 Vi-O-La"
+		"001e0002": "Olimar",
+		"008d0502": "Cobb",
+		"01030502": "Pango",
+		"01240502": "Ken",
+		"01350502": "Chevre",
+		"01760502": "Gracie",
+		"01880502": "Peaches",
+		"01bf0502": "Kevin",
+		"037c0002": "Young Link",
+		"03a60102": "Mario - Cat"
 	}
 }

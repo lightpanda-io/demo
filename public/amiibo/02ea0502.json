@@ -4,21 +4,21 @@
 		"character": "Piper",
 		"name": "Piper",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02320001-02ea0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02320001-02ea0502.png",
 		"tail": "02ea0502"
 	},
 	"next": "02550c02.html",
 	"prev": "02bc0e02.html",
 	"list": {
-		"001a0002": "Wario",
-		"00da0502": "Groucho",
-		"011e0502": "Anchovy",
-		"019b0502": "Rudy",
-		"01d60502": "Stitches - Amiibo Festival",
-		"02790e02": "Daisy - Baseball",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"02eb0502": "Paolo",
-		"04a81d02": "Ryu",
-		"04ce1d02": "Jamie"
+		"00010002": "Peach",
+		"00400402": "Inkling Squid",
+		"00580502": "Portia",
+		"00e40502": "Teddy",
+		"01260502": "Rodeo",
+		"01830502": "Mott",
+		"03c40502": "Cyd",
+		"04b61d02": "Dee Jay",
+		"04d41d02": "Dhalsim",
+		"04e11d02": "M. Bison"
 	}
 }

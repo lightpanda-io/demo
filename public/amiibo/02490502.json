@@ -4,21 +4,21 @@
 		"character": "Resetti",
 		"name": "Resetti",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0000-02490502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018e0000-02490502.png",
 		"tail": "02490502"
 	},
 	"next": "02780e02.html",
 	"prev": "01aa0502.html",
 	"list": {
-		"007f0502": "Samson",
-		"017a0502": "Lottie - Black Skirt And Bow",
-		"018e0502": "Pashmina",
-		"01b80502": "Pompom",
-		"026c0e02": "Mario - Golf",
-		"02a00e02": "Boo - Soccer",
-		"03100502": "Gonzo",
-		"031b0502": "Étoile",
-		"035f1102": "Pikmin",
-		"03d60502": "Roswell"
+		"006f0502": "Shari",
+		"00b60502": "Nat",
+		"00c60502": "Pate",
+		"00ca0502": "Phoebe",
+		"02390602": "8-Bit Mario Modern Color",
+		"02b60e02": "Rosalina - Tennis",
+		"03630002": "Corrin - Player 2",
+		"03781402": "Solaire of Astora",
+		"040d0f02": "Ena",
+		"041f0002": "Mythra"
 	}
 }

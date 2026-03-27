@@ -4,21 +4,21 @@
 		"character": "Octoling",
 		"name": "Octoling Boy",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08050200-038f0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08050200-038f0402.png",
 		"tail": "038f0402"
 	},
 	"next": "03550902.html",
 	"prev": "01a20502.html",
 	"list": {
-		"00780502": "Limberg",
-		"00940502": "Eunice",
-		"00eb0502": "Nan",
-		"027e0e02": "Yoshi - Baseball",
-		"02980e02": "Bowser - Tennis",
-		"036f1202": "Chrom",
-		"03c50502": "Judy",
-		"04180902": "Link - Tears of the Kingdom",
-		"04251902": "Tatsuhisa “Luke” Kamijō",
-		"04a40902": "Sidon"
+		"00460502": "DJ KK",
+		"00660502": "Deli",
+		"00aa0502": "Kicks",
+		"00be0502": "Fuchsia",
+		"012c0502": "Colton",
+		"01cd0502": "Grizzly",
+		"027d0e02": "Yoshi - Soccer",
+		"03890002": "Ken",
+		"03a0ff02": "Toad - Power Up Band",
+		"04281902": "Roa Kirishima"
 	}
 }

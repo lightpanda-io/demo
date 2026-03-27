@@ -4,21 +4,21 @@
 		"character": "Daijobu",
 		"name": "Daijobu",
 		"gameSeries": "Power Pros",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38050001-03981702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38050001-03981702.png",
 		"tail": "03981702"
 	},
 	"next": "01c80502.html",
 	"prev": "02a50e02.html",
 	"list": {
-		"009f0502": "Henry",
-		"00fa0502": "Camofrog",
-		"00fe0502": "Vic",
-		"017b0502": "Shrunk - Loud Jacket",
-		"01c90502": "OHare",
-		"01d60502": "Stitches - Amiibo Festival",
-		"025f0402": "Inkling Girl - Lime Green",
-		"03680102": "Koopa Troopa",
-		"04121302": "Samus - Metroid Dread",
-		"041b0402": "Octoling - Blue"
+		"009c0502": "Diana",
+		"00ce0502": "Blaire",
+		"00f70502": "Pecan",
+		"014b0502": "Marshal",
+		"01740502": "Celeste",
+		"01800502": "Goldie",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"02fe0502": "Murphy",
+		"03190502": "Rilla"
 	}
 }

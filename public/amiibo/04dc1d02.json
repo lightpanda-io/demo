@@ -4,21 +4,21 @@
 		"character": "Cammy",
 		"name": "Cammy",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d10001-04dc1d02.png",
 		"tail": "04dc1d02"
 	},
 	"next": "04cb1d02.html",
 	"prev": "04d61d02.html",
 	"list": {
-		"00530502": "Lyle",
-		"00830502": "Pudge",
-		"00b10502": "Leila",
-		"00df0502": "Gabi",
-		"01850502": "Rocco",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"02ff0502": "Plucky",
-		"03860002": "Incineroar",
-		"03951702": "Yabe",
-		"04291902": "Nail Saionji"
+		"002f0002": "Duck Hunt",
+		"00820502": "Mint",
+		"00d90502": "Coco",
+		"01430502": "Diva",
+		"01c40502": "Lucky",
+		"025e0402": "Marie",
+		"02fc0502": "Bitty",
+		"04131302": "E.M.M.I.",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04e01d02": "Akuma"
 	}
 }

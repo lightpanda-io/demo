@@ -4,21 +4,21 @@
 		"character": "Blathers",
 		"name": "Blathers",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01920000-02470502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01920000-02470502.png",
 		"tail": "02470502"
 	},
 	"next": "035b0902.html",
 	"prev": "009f0502.html",
 	"list": {
-		"00250002": "Greninja",
-		"00390102": "Bowser",
-		"00b70502": "Chip",
-		"01b70502": "Doc",
-		"02910e02": "Diddy Kong - Soccer",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"03710102": "Mario - Wedding",
-		"038a0002": "Snake",
-		"04df1d02": "Ed",
-		"04e51d02": "C. Viper"
+		"00270002": "Meta Knight",
+		"00590502": "Leonardo",
+		"005c0502": "Al",
+		"01280502": "Cousteau",
+		"01650502": "Caroline",
+		"02a60e02": "Baby Mario - Baseball",
+		"03140502": "Dobie",
+		"03620002": "Cloud - Player 2",
+		"037c0002": "Young Link",
+		"04d11d02": "Guile"
 	}
 }

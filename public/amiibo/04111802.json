@@ -4,21 +4,21 @@
 		"character": "Palamute",
 		"name": "Palamute",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_350a0000-04111802.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350a0000-04111802.png",
 		"tail": "04111802"
 	},
 	"next": "03aa0502.html",
 	"prev": "01150502.html",
 	"list": {
-		"00250002": "Greninja",
-		"005a0502": "Cheri",
-		"007e0502": "Nate",
-		"01330502": "Deirdre",
-		"015e0502": "Frank",
-		"018f0502": "Shep",
-		"024a0502": "Kicks",
-		"026c0e02": "Mario - Golf",
-		"03080502": "Boots",
-		"04ce1d02": "Jamie"
+		"00440502": "Isabelle",
+		"008c0502": "Flo",
+		"00a10502": "Cyrano",
+		"01550502": "Flora",
+		"018e0502": "Pashmina",
+		"01b10502": "Ribbot",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02700e02": "Luigi - Tennis",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"04b91d02": "JP"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Leif",
 		"name": "Leif",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b40001-01130502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01b40001-01130502.png",
 		"tail": "01130502"
 	},
 	"next": "01850502.html",
 	"prev": "010a0502.html",
 	"list": {
-		"00570502": "Curt",
-		"01300502": "Bam",
-		"01430502": "Diva",
+		"00360102": "Peach",
+		"003e0402": "Inkling Girl",
+		"00430302": "Light Blue Yarn Yoshi",
+		"00770502": "Poppy",
+		"010a0502": "Big Top",
 		"01640502": "Boomer",
-		"01790502": "Timmy - Suit",
-		"02460502": "Cyrus",
-		"02f00502": "Sylvana",
-		"03030502": "Julia",
-		"037b0002": "King K. Rool",
-		"03d00502": "Chabwick"
+		"01ae0502": "Celia",
+		"01d30502": "Robin",
+		"037f0002": "Ridley",
+		"040c0f02": "Razewing Ratha"
 	}
 }

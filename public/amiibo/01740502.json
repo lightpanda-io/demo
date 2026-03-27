@@ -4,20 +4,21 @@
 		"character": "Celeste",
 		"name": "Celeste",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930001-01740502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01930001-01740502.png",
 		"tail": "01740502"
 	},
 	"next": "030f0502.html",
 	"prev": "00e30502.html",
 	"list": {
-		"00080002": "Villager",
-		"01730502": "Phineas",
-		"02630102": "Wario",
-		"03070502": "Ellie",
-		"03741402": "Super Mario Cereal",
-		"03a50002": "Byleth",
-		"03d10502": "Zoe",
-		"04cc1d02": "Ken",
-		"04d21d02": "Juri"
+		"00030002": "Donkey Kong",
+		"00050002": "Fox",
+		"00fa0502": "Camofrog",
+		"013c0502": "Beardo",
+		"016d0502": "Derwin",
+		"01960502": "Frita",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"03620002": "Cloud - Player 2",
+		"03c30502": "Audie",
+		"04f31d02": "Mai"
 	}
 }

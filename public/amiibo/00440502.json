@@ -4,21 +4,20 @@
 		"character": "Isabelle",
 		"name": "Isabelle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810001-00440502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810001-00440502.png",
 		"tail": "00440502"
 	},
 	"next": "02e80502.html",
 	"prev": "01cd0502.html",
 	"list": {
-		"00370102": "Yoshi",
-		"007f0502": "Samson",
-		"01020502": "Marcel",
-		"019f0502": "Olaf",
-		"035f1102": "Pikmin",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03b00502": "Sable",
-		"03c40502": "Cyd",
-		"040e0f02": "Tsukino",
-		"04db1d02": "Lily"
+		"00650502": "Kiki",
+		"00ac0502": "Copper",
+		"00c60502": "Pate",
+		"00eb0502": "Nan",
+		"01290502": "Velma",
+		"02440502": "Lottie",
+		"03ac0502": "Wilbur",
+		"04d81d02": "Marisa",
+		"index": "Sandy"
 	}
 }

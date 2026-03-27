@@ -4,21 +4,21 @@
 		"character": "Diddy Kong",
 		"name": "Diddy Kong - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c80201-02920e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c80201-02920e02.png",
 		"tail": "02920e02"
 	},
 	"next": "00f80502.html",
 	"prev": "02a70e02.html",
 	"list": {
-		"00020002": "Yoshi",
-		"00650502": "Kiki",
-		"006e0502": "Puck",
-		"00b90502": "Poncho",
-		"00c10502": "Coach",
-		"00df0502": "Gabi",
-		"01830502": "Mott",
-		"03590902": "Urbosa",
-		"038a0002": "Snake",
-		"04ef1d02": "Alex"
+		"001b0002": "Ganondorf",
+		"00f00502": "Julian",
+		"00f40502": "Flip",
+		"01250502": "Mitzi",
+		"01310502": "Friga",
+		"019f0502": "Olaf",
+		"02ef0502": "Huck",
+		"039cff02": "Luigi - Power Up Band",
+		"03cf0502": "Quinn",
+		"04131302": "E.M.M.I."
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Patty",
 		"name": "Patty",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b10001-00690502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02b10001-00690502.png",
 		"tail": "00690502"
 	},
 	"next": "01c00502.html",
 	"prev": "002a0002.html",
 	"list": {
-		"00c90502": "Kidd",
-		"012e0502": "Spork/Crackle",
-		"014b0502": "Marshal",
-		"017c0502": "Pave",
-		"01990502": "Bones",
-		"02690e02": "Mario - Soccer",
-		"02ff0502": "Plucky",
-		"04ae1d02": "Kimberly",
-		"04b71d02": "Manon",
-		"04f21d02": "Mai"
+		"00170002": "Sheik",
+		"00780502": "Limberg",
+		"00f70502": "Pecan",
+		"011b0502": "Franklin",
+		"01360502": "Drago",
+		"02820e02": "Wario - Soccer",
+		"02b10e02": "Birdo - Tennis",
+		"02f10502": "Boris",
+		"03951702": "Yabe",
+		"04e41d02": "Sagat"
 	}
 }

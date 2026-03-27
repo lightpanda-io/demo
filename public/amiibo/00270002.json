@@ -4,21 +4,21 @@
 		"character": "Meta Knight",
 		"name": "Meta Knight",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-00270002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f010000-00270002.png",
 		"tail": "00270002"
 	},
-	"next": "01be0502.html",
+	"next": "04c61e03.html",
 	"prev": "03880002.html",
 	"list": {
-		"00fe0502": "Vic",
-		"010a0502": "Big Top",
-		"01480502": "Tucker",
-		"01530502": "Skye",
-		"01a80502": "Aurora",
-		"024a0502": "Kicks",
-		"03590902": "Urbosa",
-		"038e0402": "Octoling Girl",
-		"03b80502": "Harvey",
-		"03be0502": "Tom Nook - Coat"
+		"001e0002": "Olimar",
+		"00320002": "Pac-Man",
+		"007a0502": "Snake",
+		"02690e02": "Mario - Soccer",
+		"02870e02": "Waluigi - Soccer",
+		"034b0902": "Link - Ocarina of Time",
+		"03951702": "Yabe",
+		"04be1d02": "A.K.I",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04cf1d02": "Kimberly"
 	}
 }

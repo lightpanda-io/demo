@@ -4,21 +4,21 @@
 		"character": "Rasher",
 		"name": "Rasher",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_047a0001-00600502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_047a0001-00600502.png",
 		"tail": "00600502"
 	},
 	"next": "016f0502.html",
 	"prev": "03c70502.html",
 	"list": {
-		"00e30502": "Pekoe",
-		"013b0502": "Hazel",
-		"01600502": "Merengue",
-		"01800502": "Goldie",
-		"018e0502": "Pashmina",
-		"01c90502": "OHare",
-		"023f0502": "Isabelle - Winter Outfit",
-		"025b0002": "Bayonetta",
-		"03520902": "Toon Zelda - The Wind Waker",
-		"03981702": "Daijobu"
+		"00710502": "Winnie",
+		"007f0502": "Samson",
+		"00b60502": "Nat",
+		"011d0502": "Lily",
+		"015b0502": "Victoria",
+		"017e0502": "Redd - Shirt",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"03150502": "Buzz",
+		"031c0502": "Chai",
+		"03d30502": "Rio"
 	}
 }

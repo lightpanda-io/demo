@@ -4,21 +4,21 @@
 		"character": "Ed",
 		"name": "Ed",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03aa0001-00e60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03aa0001-00e60502.png",
 		"tail": "00e60502"
 	},
 	"next": "03b00502.html",
 	"prev": "00e10502.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"00770502": "Poppy",
-		"01820502": "Pinky",
-		"018c0502": "Broffina",
-		"01920502": "Dotty",
-		"02a50e02": "Baby Mario - Soccer",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"02ee0502": "Tybalt",
-		"038c0002": "Richter",
-		"03a30002": "Banjo \u0026 Kazooie"
+		"00420302": "Pink Yarn Yoshi",
+		"00640502": "Bill",
+		"006f0502": "Shari",
+		"00a30502": "Cole",
+		"00ef0502": "Agnes",
+		"014a0502": "Gaston",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"03b10502": "Label",
+		"03c60502": "Raymond",
+		"04d61d02": "Dee Jay"
 	}
 }

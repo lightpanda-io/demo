@@ -4,21 +4,21 @@
 		"character": "Booker",
 		"name": "Booker",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_019e0001-00ad0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_019e0001-00ad0502.png",
 		"tail": "00ad0502"
 	},
 	"next": "01c40502.html",
 	"prev": "02990e02.html",
 	"list": {
-		"00360102": "Peach",
-		"006d0502": "Marcie",
-		"009c0502": "Diana",
-		"00a70502": "Walker",
-		"01060502": "Hamphrey",
-		"02700e02": "Luigi - Tennis",
-		"02eb0502": "Paolo",
-		"02f50502": "Rex",
-		"04b31d02": "Blanka",
-		"04e31d02": "Elena"
+		"01400502": "Genji",
+		"01980502": "Melba",
+		"02470502": "Blathers",
+		"02920e02": "Diddy Kong - Baseball",
+		"029e0e02": "Bowser Jr. - Golf",
+		"02bd0e02": "Metal Mario - Horse Racing",
+		"03a10002": "Joker",
+		"03d10502": "Zoe",
+		"03d40502": "Frett",
+		"043e1b02": "Mio"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Gabi",
 		"name": "Gabi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04990001-00df0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04990001-00df0502.png",
 		"tail": "00df0502"
 	},
 	"next": "00810502.html",
 	"prev": "02e10f02.html",
 	"list": {
-		"00620502": "Sheldon",
-		"00c80502": "Savannah",
-		"00dc0502": "Alfonso",
-		"01050502": "Gladys",
-		"010a0502": "Big Top",
-		"01d70502": "Rosie - Amiibo Festival",
-		"029a0e02": "Bowser - Horse Racing",
-		"03010502": "Claude",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03a30002": "Banjo \u0026 Kazooie"
+		"00220002": "Mii Swordfighter",
+		"00290002": "Lucina",
+		"00910502": "Roscoe",
+		"01240502": "Ken",
+		"01b00502": "Peggy",
+		"01b70502": "Doc",
+		"02540c02": "Kirby",
+		"02ee0502": "Tybalt",
+		"041e0002": "Pyra",
+		"04d71d02": "Manon"
 	}
 }

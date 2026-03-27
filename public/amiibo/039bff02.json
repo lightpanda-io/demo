@@ -4,20 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000003-039bff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000003-039bff02.png",
 		"tail": "039bff02"
 	},
 	"next": "00100002.html",
 	"prev": "001d0002.html",
 	"list": {
-		"002f0002": "Duck Hunt",
-		"00510502": "Luna",
-		"00a80502": "K.K. Slider",
-		"00c80502": "Savannah",
-		"00cd0502": "Sly",
-		"00d50502": "Rodney",
-		"025d0402": "Callie",
-		"02710e02": "Luigi - Golf",
-		"04b21d02": "Juri"
+		"00090002": "Pikachu",
+		"004a0502": "Joan",
+		"00720502": "Knox",
+		"00980502": "Pancetti",
+		"00db0502": "Wendy",
+		"01a80502": "Aurora",
+		"01c40502": "Lucky",
+		"02440502": "Lottie",
+		"02900e02": "Donkey Kong - Horse Racing",
+		"02e80502": "Hopkins"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Joey",
 		"name": "Joey",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03080001-014d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03080001-014d0502.png",
 		"tail": "014d0502"
 	},
 	"next": "03870002.html",
 	"prev": "025b0002.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"00b50502": "Blanca",
-		"012f0502": "Freckles",
-		"01cd0502": "Grizzly",
-		"02540c02": "Kirby",
-		"02620102": "Rosalina",
-		"02a30e02": "Boo - Golf",
-		"030c0502": "Spike",
-		"037b0002": "King K. Rool",
+		"00690502": "Patty",
+		"01240502": "Ken",
+		"01750502": "Tommy - Suit",
+		"01bc0502": "Sydney",
+		"024e0502": "Kapp'n",
+		"026c0e02": "Mario - Golf",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"02c20e02": "Pink Gold Peach - Horse Racing",
+		"03590902": "Urbosa",
 		"04eb1d02": "M. Bison"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Olive",
 		"name": "Olive",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02860001-03130502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02860001-03130502.png",
 		"tail": "03130502"
 	},
 	"next": "03810002.html",
 	"prev": "01820502.html",
 	"list": {
-		"00180002": "Ike",
-		"00860502": "Flurry",
-		"009f0502": "Henry",
-		"01270502": "Bubbles",
-		"01400502": "Genji",
-		"01500502": "Bree",
-		"02400502": "K. K. Slider",
-		"02720e02": "Luigi - Horse Racing",
-		"02a70e02": "Baby Mario - Tennis",
-		"04d81d02": "Marisa"
+		"001b0002": "Ganondorf",
+		"002e0002": "R.O.B. - Famicom",
+		"003d0102": "Mario - Silver Edition",
+		"00890502": "Biff",
+		"00b00502": "Porter",
+		"00eb0502": "Nan",
+		"02580002": "Mega Man - Gold Edition",
+		"02710e02": "Luigi - Golf",
+		"03590902": "Urbosa",
+		"03ad0502": "Blathers"
 	}
 }

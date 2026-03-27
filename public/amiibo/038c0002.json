@@ -4,21 +4,21 @@
 		"character": "Richter",
 		"name": "Richter",
 		"gameSeries": "Castlevania",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37c10000-038c0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_37c10000-038c0002.png",
 		"tail": "038c0002"
 	},
 	"next": "008f0502.html",
 	"prev": "03601202.html",
 	"list": {
-		"001f0002": "Palutena",
-		"00410302": "Green Yarn Yoshi",
-		"01300502": "Bam",
-		"01940502": "Queenie",
-		"035c0902": "Bokoblin",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"03b80502": "Harvey",
-		"03bb0502": "Lottie - Island",
-		"04271902": "Romin Kirishima",
-		"04291902": "Nail Saionji"
+		"000a0002": "Kirby",
+		"000f0002": "Little Mac",
+		"00600502": "Rasher",
+		"01080502": "Kid Cat",
+		"01150502": "Cyrus",
+		"013a0502": "Wart Jr.",
+		"01450502": "Daisy",
+		"02750e02": "Peach - Tennis",
+		"03661302": "Metroid",
+		"042d1802": "Malzeno"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Deena",
 		"name": "Deena",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_030b0001-00790502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_030b0001-00790502.png",
 		"tail": "00790502"
 	},
 	"next": "03830002.html",
 	"prev": "03611202.html",
 	"list": {
-		"00570502": "Curt",
-		"00b40502": "Isabelle - Winter",
-		"010b0502": "Rocket",
-		"01100502": "Phyllis",
-		"02430502": "Digby",
-		"025b0002": "Bayonetta",
-		"036e0a02": "King Knight",
-		"03900402": "Octoling Octopus",
-		"04b41d02": "Dhalsim",
-		"04d91d02": "JP"
+		"00770502": "Poppy",
+		"00a60502": "Molly",
+		"01150502": "Cyrus",
+		"026e0e02": "Luigi - Soccer",
+		"03070502": "Ellie",
+		"03a40002": "Terry",
+		"03b50502": "Daisy Mae",
+		"03cc0502": "Marlo",
+		"04bd1d02": "Rashid",
+		"04c01d02": "Akuma"
 	}
 }

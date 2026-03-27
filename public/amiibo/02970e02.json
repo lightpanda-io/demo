@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Bowser - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90201-02970e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c90201-02970e02.png",
 		"tail": "02970e02"
 	},
 	"next": "02560c02.html",
 	"prev": "01840502.html",
 	"list": {
-		"00270002": "Meta Knight",
-		"00360102": "Peach",
-		"00760502": "Opal",
-		"00be0502": "Fuchsia",
-		"01260502": "Rodeo",
-		"01560502": "Hamlet",
-		"02670102": "Waluigi",
-		"02690e02": "Mario - Soccer",
-		"02ae0e02": "Baby Luigi - Horse Racing",
-		"02fc0502": "Bitty"
+		"00020002": "Yoshi",
+		"009b0502": "Clay",
+		"01750502": "Tommy - Suit",
+		"01c40502": "Lucky",
+		"01cc0502": "Frobert",
+		"02f70502": "Ursala",
+		"037b0002": "King K. Rool",
+		"042b1802": "Palico",
+		"04330402": "Shiver",
+		"04db1d02": "Lily"
 	}
 }

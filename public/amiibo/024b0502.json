@@ -4,21 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle - Summer Outfit",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-024b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810000-024b0502.png",
 		"tail": "024b0502"
 	},
 	"next": "01510502.html",
 	"prev": "00650502.html",
 	"list": {
-		"00240002": "Charizard",
-		"00a40502": "Willow",
-		"00b90502": "Poncho",
-		"00da0502": "Groucho",
-		"011c0502": "Jingle",
-		"01660502": "Sparro",
-		"01830502": "Mott",
-		"03010502": "Claude",
-		"03931702": "Pawapuro",
-		"04121302": "Samus - Metroid Dread"
+		"00290002": "Lucina",
+		"00d40502": "Carmen",
+		"015c0502": "Lyman",
+		"02770e02": "Peach - Horse Racing",
+		"02e50f02": "Barioth and Ayuria",
+		"02fa0502": "Billy",
+		"03080502": "Boots",
+		"039eff02": "Daisy - Power Up Band",
+		"04360402": "Callie - Alterna",
+		"04da1d02": "Zangief"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Lolly",
 		"name": "Lolly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026f0001-01900502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_026f0001-01900502.png",
 		"tail": "01900502"
 	},
 	"next": "025f0402.html",
 	"prev": "011c0502.html",
 	"list": {
-		"00060002": "Samus",
-		"00210002": "Mii Brawler",
-		"005f0502": "Jambette",
-		"00990502": "Chief",
-		"02700e02": "Luigi - Tennis",
-		"03170502": "Ike",
-		"03680102": "Koopa Troopa",
-		"03b30502": "C.J.",
-		"04c91e03": "Bandana Waddle Dee",
-		"04dc1d02": "Cammy"
+		"00650502": "Kiki",
+		"006d0502": "Marcie",
+		"00fc0502": "Chops",
+		"01140502": "Wendell",
+		"012f0502": "Freckles",
+		"02b90e02": "Metal Mario - Soccer",
+		"02f00502": "Sylvana",
+		"03160502": "Cleo",
+		"03661302": "Metroid",
+		"04101802": "Palico"
 	}
 }

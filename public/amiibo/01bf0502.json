@@ -4,21 +4,21 @@
 		"character": "Kevin",
 		"name": "Kevin",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04870001-01bf0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04870001-01bf0502.png",
 		"tail": "01bf0502"
 	},
 	"next": "00ce0502.html",
 	"prev": "028c0e02.html",
 	"list": {
-		"002b0002": "Shulk",
-		"00560502": "Fauna",
-		"00640502": "Bill",
-		"009f0502": "Henry",
-		"019f0502": "Olaf",
-		"02b70e02": "Rosalina - Golf",
-		"03680102": "Koopa Troopa",
-		"04261902": "Gakuto Sōgetsu",
-		"04ec1d02": "Elena",
-		"04ed1d02": "Sagat"
+		"000b0002": "Marth",
+		"00d10502": "Peck",
+		"01650502": "Caroline",
+		"01890502": "Dizzy",
+		"01d40502": "Isabelle - Character Parfait",
+		"02420502": "Tom Nook",
+		"02850e02": "Wario - Golf",
+		"031d0502": "Chelsea",
+		"04c20102": "Captain Toad \u0026 Talking Flower",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

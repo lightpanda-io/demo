@@ -4,21 +4,21 @@
 		"character": "Vladimir",
 		"name": "Vladimir",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02830001-00c70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02830001-00c70502.png",
 		"tail": "00c70502"
 	},
 	"next": "030b0502.html",
 	"prev": "02e60f02.html",
 	"list": {
-		"00ac0502": "Copper",
-		"016f0502": "Chrissy",
-		"018a0502": "Penelope",
-		"01ab0502": "Rod",
-		"01bc0502": "Sydney",
-		"03640002": "Bayonetta - Player 2",
-		"03ce0502": "Cephalobot",
-		"03d10502": "Zoe",
-		"04251902": "Tatsuhisa “Luke” Kamijō",
-		"04bf1d02": "Ed"
+		"00cc0502": "Cookie",
+		"00e80502": "Filbert",
+		"010b0502": "Rocket",
+		"012d0502": "Marina",
+		"016a0502": "Antonio",
+		"01970502": "Tex",
+		"01d00502": "Iggly",
+		"03900402": "Octoling Octopus",
+		"03a50002": "Byleth",
+		"03be0502": "Tom Nook - Coat"
 	}
 }

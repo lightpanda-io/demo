@@ -4,21 +4,21 @@
 		"character": "Rizzo",
 		"name": "Rizzo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04150001-01bb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04150001-01bb0502.png",
 		"tail": "01bb0502"
 	},
 	"next": "02940e02.html",
 	"prev": "00e90502.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00400402": "Inkling Squid",
-		"00580502": "Portia",
-		"00820502": "Mint",
-		"00ad0502": "Booker",
-		"01270502": "Bubbles",
-		"02750e02": "Peach - Tennis",
-		"028e0e02": "Donkey Kong - Tennis",
-		"02930e02": "Diddy Kong - Tennis",
-		"03601202": "Alm"
+		"00020002": "Yoshi",
+		"00030002": "Donkey Kong",
+		"00060002": "Samus",
+		"00f60502": "Hopper",
+		"018e0502": "Pashmina",
+		"01900502": "Lolly",
+		"026c0e02": "Mario - Golf",
+		"02700e02": "Luigi - Tennis",
+		"02860e02": "Wario - Horse Racing",
+		"028f0e02": "Donkey Kong - Golf"
 	}
 }

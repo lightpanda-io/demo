@@ -4,21 +4,21 @@
 		"character": "Lionel",
 		"name": "Lionel",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ee0001-008b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ee0001-008b0502.png",
 		"tail": "008b0502"
 	},
 	"next": "01b50502.html",
 	"prev": "026d0e02.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00130002": "Rosalina \u0026 Luma",
-		"00e30502": "Pekoe",
-		"01770502": "Leilani",
-		"02420502": "Tom Nook",
-		"024b0502": "Isabelle - Summer Outfit",
-		"02540c02": "Kirby",
-		"02820e02": "Wario - Soccer",
-		"02a50e02": "Baby Mario - Soccer",
-		"03d50502": "Azalea"
+		"003d0102": "Mario - Silver Edition",
+		"009d0502": "Axel",
+		"009e0502": "Muffy",
+		"01400502": "Genji",
+		"019e0502": "Tammy",
+		"02550c02": "Meta Knight",
+		"031a0502": "Marty",
+		"03530902": "Link - Archer",
+		"03640002": "Bayonetta - Player 2",
+		"03670102": "Goomba"
 	}
 }

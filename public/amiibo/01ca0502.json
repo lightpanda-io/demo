@@ -4,21 +4,21 @@
 		"character": "Gayle",
 		"name": "Gayle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ca0001-01ca0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02ca0001-01ca0502.png",
 		"tail": "01ca0502"
 	},
 	"next": "037a0002.html",
 	"prev": "02f70502.html",
 	"list": {
-		"002a0002": "Robin",
-		"00530502": "Lyle",
-		"01370502": "Tangy",
-		"01770502": "Leilani",
-		"02560c02": "King Dedede",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03180502": "Tasha",
+		"003e0402": "Inkling Girl",
+		"00630502": "Bluebear",
+		"017d0502": "Gulliver",
+		"018c0502": "Broffina",
+		"02510002": "Lucas",
+		"02bf0e02": "Pink Gold Peach - Baseball",
 		"03ce0502": "Cephalobot",
-		"04360402": "Callie - Alterna",
-		"04b51d02": "E. Honda"
+		"04be1d02": "A.K.I",
+		"04df1d02": "Ed",
+		"04e81d02": "Terry"
 	}
 }

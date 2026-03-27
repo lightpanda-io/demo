@@ -4,21 +4,20 @@
 		"character": "Boo",
 		"name": "Boo - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cb0501-02a40e02.png",
 		"tail": "02a40e02"
 	},
 	"next": "007d0502.html",
 	"prev": "00a50502.html",
 	"list": {
-		"006d0502": "Marcie",
-		"01860502": "Katt",
-		"01960502": "Frita",
-		"01b60502": "Sally",
-		"01ce0502": "Cally",
-		"029f0e02": "Bowser Jr. - Horse Racing",
-		"041d0002": "Min Min",
-		"042f1a02": "Donkey Kong \u0026 Pauline",
-		"04a81d02": "Ryu",
-		"04f01d02": "Ingrid"
+		"00190002": "Dr. Mario",
+		"00d30502": "Cesar",
+		"00f60502": "Hopper",
+		"019f0502": "Olaf",
+		"01ca0502": "Gayle",
+		"02860e02": "Wario - Horse Racing",
+		"02ea0502": "Piper",
+		"030d0502": "Cashmere",
+		"03d30502": "Rio"
 	}
 }

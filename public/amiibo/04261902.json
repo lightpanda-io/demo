@@ -4,21 +4,21 @@
 		"character": "Gakuto Sōgetsu",
 		"name": "Gakuto Sōgetsu",
 		"gameSeries": "Yu-Gi-Oh!",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38420001-04261902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38420001-04261902.png",
 		"tail": "04261902"
 	},
 	"next": "03a40002.html",
 	"prev": "00220002.html",
 	"list": {
-		"002a0002": "Robin",
-		"00aa0502": "Kicks",
-		"00ae0502": "Katie",
-		"00b10502": "Leila",
-		"01820502": "Pinky",
-		"03680102": "Koopa Troopa",
-		"03d60502": "Roswell",
-		"042d1802": "Malzeno",
-		"04cc1d02": "Ken",
-		"04e81d02": "Terry"
+		"00f90502": "Alice",
+		"01480502": "Tucker",
+		"01560502": "Hamlet",
+		"023e0302": "Mega Yarn Yoshi",
+		"027f0e02": "Yoshi - Tennis",
+		"02a50e02": "Baby Mario - Soccer",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"03150502": "Buzz",
+		"03770402": "Marina",
+		"04421c02": "Yoshi - My Mario Wooden Blocks"
 	}
 }

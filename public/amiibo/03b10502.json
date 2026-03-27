@@ -4,21 +4,21 @@
 		"character": "Label",
 		"name": "Label",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01890101-03b10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01890101-03b10502.png",
 		"tail": "03b10502"
 	},
 	"next": "04220002.html",
 	"prev": "04401c02.html",
 	"list": {
-		"002e0002": "R.O.B. - Famicom",
-		"00930502": "Eugene",
-		"00f70502": "Pecan",
-		"01250502": "Mitzi",
-		"016e0502": "Francine",
-		"02640102": "Donkey Kong",
-		"03190502": "Rilla",
-		"03820002": "Inkling",
-		"04230002": "Alex",
-		"04d01d02": "Chun-Li"
+		"00260002": "Jigglypuff",
+		"005d0502": "Renée",
+		"012c0502": "Colton",
+		"01d80502": "K. K. Slider - Pikopuri",
+		"02980e02": "Bowser - Tennis",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"03540902": "Link - Rider",
+		"03a70102": "Peach - Cat",
+		"03b60502": "Kicks",
+		"04df1d02": "Ed"
 	}
 }

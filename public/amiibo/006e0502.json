@@ -4,21 +4,20 @@
 		"character": "Puck",
 		"name": "Puck",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04650001-006e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04650001-006e0502.png",
 		"tail": "006e0502"
 	},
 	"next": "03590902.html",
 	"prev": "025c0d02.html",
 	"list": {
-		"00090002": "Pikachu",
-		"002f0002": "Duck Hunt",
-		"00df0502": "Gabi",
-		"00e10502": "Timbra",
-		"01360502": "Drago",
-		"016b0502": "Soleil",
-		"02660102": "Daisy",
-		"027d0e02": "Yoshi - Soccer",
-		"03b60502": "Kicks",
-		"04121302": "Samus - Metroid Dread"
+		"00470502": "Sable",
+		"013f0502": "Merry",
+		"01440502": "Klaus",
+		"015a0502": "Biskit",
+		"01ca0502": "Gayle",
+		"02f20502": "Wade",
+		"03140502": "Dobie",
+		"035a0902": "Mipha",
+		"03661302": "Metroid"
 	}
 }

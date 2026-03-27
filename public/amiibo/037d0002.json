@@ -4,21 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810000-037d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810000-037d0002.png",
 		"tail": "037d0002"
 	},
 	"next": "02530002.html",
 	"prev": "028e0e02.html",
 	"list": {
-		"00ac0502": "Copper",
-		"00e90502": "Kitty",
-		"01160502": "Grams",
-		"013b0502": "Hazel",
-		"015d0502": "Violet",
-		"01880502": "Peaches",
-		"02600402": "Inkling Boy - Purple",
-		"02a00e02": "Boo - Soccer",
-		"030f0502": "Norma",
-		"04b31d02": "Blanka"
+		"00a80502": "K.K. Slider",
+		"00b10502": "Leila",
+		"00d10502": "Peck",
+		"01690502": "Maple",
+		"01710502": "Brewster",
+		"02820e02": "Wario - Soccer",
+		"02b10e02": "Birdo - Tennis",
+		"04b41d02": "Dhalsim",
+		"04c30102": "Poplin \u0026 Prince Florian",
+		"04ee1d02": "C. Viper"
 	}
 }

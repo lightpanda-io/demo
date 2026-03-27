@@ -4,21 +4,21 @@
 		"character": "Marie",
 		"name": "Marie",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08020000-025e0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08020000-025e0402.png",
 		"tail": "025e0402"
 	},
 	"next": "04370402.html",
 	"prev": "01be0502.html",
 	"list": {
-		"00280002": "King Dedede",
-		"016e0502": "Francine",
-		"01820502": "Pinky",
-		"01930502": "Pierce",
-		"01970502": "Tex",
-		"01b00502": "Peggy",
-		"02770e02": "Peach - Horse Racing",
-		"042d1802": "Malzeno",
-		"04390402": "Marina - Side Order",
-		"04ae1d02": "Kimberly"
+		"00d20502": "Olivia",
+		"01120502": "Mabel",
+		"01700502": "Isabelle - Dress",
+		"01b40502": "Sylvia",
+		"03050502": "Bea",
+		"03640002": "Bayonetta - Player 2",
+		"03d50502": "Azalea",
+		"04c30102": "Poplin \u0026 Prince Florian",
+		"04c41e03": "Kirby (\u0026 Warp Star)",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)"
 	}
 }

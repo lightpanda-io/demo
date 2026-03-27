@@ -4,21 +4,21 @@
 		"character": "Anchovy",
 		"name": "Anchovy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022f0001-011e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_022f0001-011e0502.png",
 		"tail": "011e0502"
 	},
 	"next": "03b80502.html",
 	"prev": "00640502.html",
 	"list": {
-		"00810502": "T-Bone",
-		"00f00502": "Julian",
-		"01640502": "Boomer",
-		"01940502": "Queenie",
-		"019a0502": "Anabelle",
-		"01b20502": "Annalise",
-		"03810002": "Ice Climbers",
-		"04101802": "Palico",
-		"04e31d02": "Elena",
-		"04e41d02": "Sagat"
+		"00c20502": "Kitt",
+		"01440502": "Klaus",
+		"02ac0e02": "Baby Luigi - Tennis",
+		"02ee0502": "Tybalt",
+		"03580902": "Daruk",
+		"03781402": "Solaire of Astora",
+		"03900402": "Octoling Octopus",
+		"042e0002": "Sora",
+		"04ae1d02": "Kimberly",
+		"04f11d02": "Terry"
 	}
 }

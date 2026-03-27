@@ -4,21 +4,21 @@
 		"character": "Sable",
 		"name": "Sable",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01870001-00470502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01870001-00470502.png",
 		"tail": "00470502"
 	},
 	"next": "01710502.html",
 	"prev": "03890002.html",
 	"list": {
-		"00470502": "Sable",
-		"00780502": "Limberg",
-		"009a0502": "Bunnie",
-		"00d80502": "Broccolo",
-		"00fe0502": "Vic",
-		"011a0502": "Isabelle - Kimono",
-		"040c0f02": "Razewing Ratha",
-		"04bb1d02": "Lily",
-		"04d21d02": "Juri",
-		"04ee1d02": "C. Viper"
+		"016d0502": "Derwin",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"025f0402": "Inkling Girl - Lime Green",
+		"028e0e02": "Donkey Kong - Tennis",
+		"02a30e02": "Boo - Golf",
+		"03651302": "Samus Aran",
+		"04131302": "E.M.M.I.",
+		"041f0002": "Mythra",
+		"04291902": "Nail Saionji",
+		"04e11d02": "M. Bison"
 	}
 }

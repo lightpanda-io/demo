@@ -4,21 +4,21 @@
 		"character": "Noah",
 		"name": "Noah",
 		"gameSeries": "Xenoblade",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_22430000-043d1b02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_22430000-043d1b02.png",
 		"tail": "043d1b02"
 	},
 	"next": "043e1b02.html",
 	"prev": "009e0502.html",
 	"list": {
-		"00060002": "Samus",
-		"00ae0502": "Katie",
-		"00d70502": "Whitney",
-		"00e40502": "Teddy",
-		"014c0502": "Gala",
-		"034c0902": "Link - Majora's Mask",
-		"03781402": "Solaire of Astora",
-		"03a60102": "Mario - Cat",
-		"0431ff02": "Donkey Kong - Power Up Band",
-		"043b1302": "Samus"
+		"00180002": "Ike",
+		"00270002": "Meta Knight",
+		"00880502": "Bella",
+		"03670102": "Goomba",
+		"03680102": "Koopa Troopa",
+		"03ae0502": "Celeste",
+		"03b60502": "Kicks",
+		"04251902": "Tatsuhisa “Luke” Kamijō",
+		"04261902": "Gakuto Sōgetsu",
+		"042d1802": "Malzeno"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Bowser",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00050000-00140002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00050000-00140002.png",
 		"tail": "00140002"
 	},
 	"next": "00970502.html",
 	"prev": "03d60502.html",
 	"list": {
-		"00270002": "Meta Knight",
-		"003d0102": "Mario - Silver Edition",
-		"00540502": "Lottie",
-		"006c0502": "Quillson",
-		"010a0502": "Big Top",
-		"01ba0502": "Becky",
-		"01c70502": "Maelle",
-		"03be0502": "Tom Nook - Coat",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04220002": "Steve"
+		"00a20502": "Peanut",
+		"012d0502": "Marina",
+		"016b0502": "Soleil",
+		"01cb0502": "Cranston",
+		"02830e02": "Wario - Baseball",
+		"03540902": "Link - Rider",
+		"041f0002": "Mythra",
+		"04340402": "Frye",
+		"04a60902": "Yunobo",
+		"04e31d02": "Elena"
 	}
 }

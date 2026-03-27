@@ -4,21 +4,21 @@
 		"character": "Solaire of Astora",
 		"name": "Solaire of Astora",
 		"gameSeries": "Dark Souls",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_33800000-03781402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_33800000-03781402.png",
 		"tail": "03781402"
 	},
 	"next": "04281902.html",
 	"prev": "00d30502.html",
 	"list": {
-		"00380102": "Toad",
-		"00410302": "Green Yarn Yoshi",
-		"01370502": "Tangy",
-		"01b40502": "Sylvia",
-		"01b60502": "Sally",
-		"01be0502": "Nibbles",
-		"02490502": "Resetti",
-		"025d0402": "Callie",
-		"02b30e02": "Birdo - Horse Racing",
-		"03c90502": "Ione"
+		"002b0002": "Shulk",
+		"003c0102": "Mario - Gold Edition",
+		"00b30502": "Don Resetti",
+		"00df0502": "Gabi",
+		"00fe0502": "Vic",
+		"01a50502": "Walt",
+		"01b10502": "Ribbot",
+		"02970e02": "Bowser - Baseball",
+		"034e0902": "Link - Skyward Sword",
+		"03820002": "Inkling"
 	}
 }

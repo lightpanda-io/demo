@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "8-Bit Mario Modern Color",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-02390602.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-02390602.png",
 		"tail": "02390602"
 	},
 	"next": "008d0502.html",
 	"prev": "00e00502.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"005a0502": "Cheri",
-		"008d0502": "Cobb",
-		"00af0502": "Tommy - Uniform",
-		"012f0502": "Freckles",
-		"01d40502": "Isabelle - Character Parfait",
-		"02ec0502": "Hornsby",
-		"03a50002": "Byleth",
-		"03ca0502": "Tiansheng",
-		"04241902": "Yuga Ohdo"
+		"00230002": "Mii Gunner",
+		"00430302": "Light Blue Yarn Yoshi",
+		"008b0502": "Lionel",
+		"00be0502": "Fuchsia",
+		"00c30502": "Tom",
+		"01990502": "Bones",
+		"02850e02": "Wario - Golf",
+		"03170502": "Ike",
+		"03cf0502": "Quinn",
+		"041e0002": "Pyra"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "King Dedede",
 		"name": "King Dedede",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f020000-00280002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f020000-00280002.png",
 		"tail": "00280002"
 	},
 	"next": "02520002.html",
 	"prev": "00da0502.html",
 	"list": {
-		"000d0002": "Diddy Kong",
-		"00120002": "Captain Falcon",
-		"00310002": "Mega Man",
-		"00470502": "Sable",
-		"00e20502": "Zell",
-		"01120502": "Mabel",
+		"00000002": "Mario",
+		"00c20502": "Kitt",
 		"012f0502": "Freckles",
-		"01d80502": "K. K. Slider - Pikopuri",
-		"037d0002": "Isabelle",
-		"041e0002": "Pyra"
+		"01540502": "Moe",
+		"016f0502": "Chrissy",
+		"018c0502": "Broffina",
+		"034c0902": "Link - Majora's Mask",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"04ab1d02": "Luke",
+		"04c01d02": "Akuma"
 	}
 }

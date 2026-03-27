@@ -4,21 +4,21 @@
 		"character": "Joker",
 		"name": "Joker",
 		"gameSeries": "Persona",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3a000000-03a10002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3a000000-03a10002.png",
 		"tail": "03a10002"
 	},
 	"next": "005c0502.html",
 	"prev": "00ec0502.html",
 	"list": {
-		"01160502": "Grams",
-		"011c0502": "Jingle",
-		"01c60502": "Rowan",
-		"02ad0e02": "Baby Luigi - Golf",
-		"03010502": "Claude",
-		"03090502": "Weber",
-		"03170502": "Ike",
-		"03730102": "Bowser - Wedding",
-		"037d0002": "Isabelle",
-		"04a81d02": "Ryu"
+		"00070002": "Wii Fit Trainer",
+		"00a00502": "Bertha",
+		"01120502": "Mabel",
+		"01190502": "Don Resetti - Without Hat",
+		"01210502": "Miranda",
+		"01920502": "Dotty",
+		"02590002": "Cloud",
+		"028f0e02": "Donkey Kong - Golf",
+		"02f80502": "Jacob",
+		"03080502": "Boots"
 	}
 }

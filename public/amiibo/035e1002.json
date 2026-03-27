@@ -4,21 +4,21 @@
 		"character": "Qbby",
 		"name": "Qbby",
 		"gameSeries": "BoxBoy!",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f400000-035e1002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f400000-035e1002.png",
 		"tail": "035e1002"
 	},
 	"next": "02870e02.html",
 	"prev": "00c90502.html",
 	"list": {
-		"004c0502": "Digby",
-		"00f50502": "Hugh",
-		"01190502": "Don Resetti - Without Hat",
-		"01730502": "Phineas",
-		"01a10502": "Elmer",
-		"01c00502": "Gloria",
-		"036e0a02": "King Knight",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04a81d02": "Ryu",
-		"04d81d02": "Marisa"
+		"00340102": "Mario",
+		"00680502": "Kabuki",
+		"009b0502": "Clay",
+		"009e0502": "Muffy",
+		"00ab0502": "Labelle",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02740e02": "Peach - Baseball",
+		"03651302": "Samus Aran",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04fc0f02": "Rudy"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c00501-026d0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c00501-026d0e02.png",
 		"tail": "026d0e02"
 	},
 	"next": "008b0502.html",
 	"prev": "01490502.html",
 	"list": {
-		"00080002": "Villager",
-		"00700502": "Octavian",
-		"007d0502": "Monique",
-		"00ae0502": "Katie",
-		"011b0502": "Franklin",
-		"02980e02": "Bowser - Tennis",
-		"02b80e02": "Rosalina - Horse Racing",
-		"03070502": "Ellie",
-		"030a0502": "Candi",
-		"04d51d02": "E. Honda"
+		"00b50502": "Blanca",
+		"00f10502": "Bettina",
+		"01090502": "Agent S",
+		"01b80502": "Pompom",
+		"02430502": "Digby",
+		"02790e02": "Daisy - Baseball",
+		"02be0e02": "Pink Gold Peach - Soccer",
+		"03140502": "Dobie",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03d20502": "Ace"
 	}
 }

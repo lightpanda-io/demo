@@ -4,21 +4,20 @@
 		"character": "Gala",
 		"name": "Gala",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04850001-014c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04850001-014c0502.png",
 		"tail": "014c0502"
 	},
 	"next": "01970502.html",
 	"prev": "01390502.html",
 	"list": {
-		"00a80502": "K.K. Slider",
-		"00b10502": "Leila",
-		"025e0402": "Marie",
-		"02610402": "Inkling Squid - Orange",
-		"02a60e02": "Baby Mario - Baseball",
-		"02ec0502": "Hornsby",
-		"02f10502": "Boris",
-		"02fa0502": "Billy",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"04230002": "Alex"
+		"00370102": "Yoshi",
+		"00450502": "Tom Nook",
+		"004d0502": "Pascal",
+		"00ec0502": "Bud",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"019c0502": "Naomi",
+		"03850002": "Pichu",
+		"04cd1d02": "Luke",
+		"04d51d02": "E. Honda"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Carrie",
 		"name": "Carrie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d30001-02f30502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d30001-02f30502.png",
 		"tail": "02f30502"
 	},
 	"next": "00650502.html",
 	"prev": "00cf0502.html",
 	"list": {
-		"00490502": "Resetti",
-		"00510502": "Luna",
-		"007d0502": "Monique",
-		"00b10502": "Leila",
-		"00b20502": "Shrunk",
-		"015d0502": "Violet",
-		"01670502": "Baabara",
-		"03bf0502": "Isabelle - Sweater",
-		"04241902": "Yuga Ohdo",
-		"04421c02": "Yoshi - My Mario Wooden Blocks"
+		"00d50502": "Rodney",
+		"01980502": "Melba",
+		"01c50502": "Rosie",
+		"031d0502": "Chelsea",
+		"03540902": "Link - Rider",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03ae0502": "Celeste",
+		"03c80502": "Sasha",
+		"04ba1d02": "Zangief",
+		"04e11d02": "M. Bison"
 	}
 }

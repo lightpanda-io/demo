@@ -4,21 +4,21 @@
 		"character": "Bones",
 		"name": "Bones",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ee0001-01990502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02ee0001-01990502.png",
 		"tail": "01990502"
 	},
 	"next": "04131302.html",
 	"prev": "02800e02.html",
 	"list": {
-		"00bb0502": "Ozzie",
-		"00ce0502": "Blaire",
-		"00db0502": "Wendy",
-		"012c0502": "Colton",
-		"01c20502": "Hippeux",
-		"03620002": "Cloud - Player 2",
-		"03680102": "Koopa Troopa",
-		"03810002": "Ice Climbers",
-		"03911602": "Loot Goblin",
-		"04a50902": "Tulin"
+		"006e0502": "Puck",
+		"007a0502": "Snake",
+		"007f0502": "Samson",
+		"00810502": "T-Bone",
+		"012d0502": "Marina",
+		"01bd0502": "Barold",
+		"01d10502": "Angus",
+		"026d0e02": "Mario - Horse Racing",
+		"04261902": "Gakuto Sōgetsu",
+		"04de1d02": "A.K.I"
 	}
 }

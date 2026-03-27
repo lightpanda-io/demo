@@ -4,21 +4,21 @@
 		"character": "Hazel",
 		"name": "Hazel",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ef0001-013b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ef0001-013b0502.png",
 		"tail": "013b0502"
 	},
 	"next": "01270502.html",
 	"prev": "00f40502.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00200002": "Dark Pit",
-		"006d0502": "Marcie",
-		"01530502": "Skye",
-		"016e0502": "Francine",
-		"01ab0502": "Rod",
-		"02580002": "Mega Man - Gold Edition",
-		"02860e02": "Wario - Horse Racing",
-		"02a10e02": "Boo - Baseball",
-		"03c60502": "Raymond"
+		"00820502": "Mint",
+		"00aa0502": "Kicks",
+		"00f80502": "Drake",
+		"00fe0502": "Vic",
+		"01b50502": "Jacques",
+		"024f0902": "Midna \u0026 Wolf Link",
+		"03680102": "Koopa Troopa",
+		"03d30502": "Rio",
+		"04bb1d02": "Lily",
+		"04fa0f02": "Ratha"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Wart Jr.",
 		"name": "Wart Jr.",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_033d0001-013a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_033d0001-013a0502.png",
 		"tail": "013a0502"
 	},
 	"next": "00aa0502.html",
 	"prev": "00f50502.html",
 	"list": {
-		"009c0502": "Diana",
-		"00a00502": "Bertha",
-		"00ff0502": "Ankha",
-		"011e0502": "Anchovy",
-		"01d10502": "Angus",
-		"02950e02": "Diddy Kong - Horse Racing",
-		"03090502": "Weber",
-		"03110502": "Sprocket",
-		"03640002": "Bayonetta - Player 2",
-		"04dc1d02": "Cammy"
+		"005f0502": "Jambette",
+		"00d60502": "Scoot",
+		"00db0502": "Wendy",
+		"010d0502": "Blathers",
+		"01550502": "Flora",
+		"01cd0502": "Grizzly",
+		"01d20502": "Twiggy",
+		"02380602": "8-Bit Mario Classic Color",
+		"04bf1d02": "Ed",
+		"04de1d02": "A.K.I"
 	}
 }

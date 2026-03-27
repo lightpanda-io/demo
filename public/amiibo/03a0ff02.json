@@ -4,21 +4,21 @@
 		"character": "Toad",
 		"name": "Toad - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_000a0003-03a0ff02.png",
 		"tail": "03a0ff02"
 	},
-	"next": "01a30502.html",
-	"prev": "00030002.html",
+	"next": "04c20102.html",
+	"prev": "04c10102.html",
 	"list": {
-		"006d0502": "Marcie",
-		"00930502": "Eugene",
-		"012a0502": "Elvis",
-		"01b50502": "Jacques",
-		"026d0e02": "Mario - Horse Racing",
-		"028d0e02": "Donkey Kong - Baseball",
-		"03500902": "Toon Link - The Wind Waker",
-		"04340402": "Frye",
-		"04d41d02": "Dhalsim",
-		"04d91d02": "JP"
+		"00480502": "Kapp'n",
+		"00b40502": "Isabelle - Winter",
+		"00d50502": "Rodney",
+		"00d60502": "Scoot",
+		"019f0502": "Olaf",
+		"02530002": "Ryu",
+		"03080502": "Boots",
+		"03830002": "Ivysaur",
+		"04b41d02": "Dhalsim",
+		"04e61d02": "Alex"
 	}
 }

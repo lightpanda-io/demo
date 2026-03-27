@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - My Mario Wooden Blocks",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00010004-04401c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00010004-04401c02.png",
 		"tail": "04401c02"
 	},
 	"next": "03b10502.html",
 	"prev": "000c0002.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00730502": "Sterling",
-		"00f20502": "Jay",
-		"018d0502": "Croque",
-		"02530002": "Ryu",
-		"02a20e02": "Boo - Tennis",
-		"03750d02": "Detective Pikachu",
-		"03951702": "Yabe",
-		"03cc0502": "Marlo",
-		"04261902": "Gakuto Sōgetsu"
+		"000b0002": "Marth",
+		"00550502": "Bob",
+		"00640502": "Bill",
+		"01210502": "Miranda",
+		"02700e02": "Luigi - Tennis",
+		"02a40e02": "Boo - Horse Racing",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"02e70502": "Vivian",
+		"03611202": "Celica",
+		"04bf1d02": "Ed"
 	}
 }

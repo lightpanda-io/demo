@@ -4,21 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle - Sweater",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810501-03bf0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810501-03bf0502.png",
 		"tail": "03bf0502"
 	},
 	"next": "007a0502.html",
 	"prev": "01950502.html",
 	"list": {
-		"00440502": "Isabelle",
-		"005f0502": "Jambette",
-		"00af0502": "Tommy - Uniform",
-		"02620102": "Rosalina",
-		"02740e02": "Peach - Baseball",
-		"028d0e02": "Donkey Kong - Baseball",
-		"029a0e02": "Bowser - Horse Racing",
-		"03840002": "Squirtle",
-		"04200002": "Kazuya",
-		"043d1b02": "Noah"
+		"00220002": "Mii Swordfighter",
+		"00370102": "Yoshi",
+		"01ba0502": "Becky",
+		"025f0402": "Inkling Girl - Lime Green",
+		"03150502": "Buzz",
+		"03770402": "Marina",
+		"03ab0502": "Orville",
+		"03bc0502": "Niko",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04dc1d02": "Cammy"
 	}
 }

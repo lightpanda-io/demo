@@ -4,21 +4,21 @@
 		"character": "Beardo",
 		"name": "Beardo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02210001-013c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02210001-013c0502.png",
 		"tail": "013c0502"
 	},
 	"next": "03d50502.html",
 	"prev": "01290502.html",
 	"list": {
-		"00590502": "Leonardo",
-		"00d60502": "Scoot",
-		"01240502": "Ken",
-		"01900502": "Lolly",
-		"01d30502": "Robin",
-		"02520002": "Roy",
-		"026f0e02": "Luigi - Baseball",
-		"02910e02": "Diddy Kong - Soccer",
-		"03500902": "Toon Link - The Wind Waker",
-		"04150402": "Inkling - Yellow"
+		"005c0502": "Al",
+		"00c10502": "Coach",
+		"012c0502": "Colton",
+		"01300502": "Bam",
+		"01c60502": "Rowan",
+		"02a50e02": "Baby Mario - Soccer",
+		"02a70e02": "Baby Mario - Tennis",
+		"03640002": "Bayonetta - Player 2",
+		"03690402": "Inkling Girl - Neon Pink",
+		"04bf1d02": "Ed"
 	}
 }

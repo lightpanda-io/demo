@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Bowser - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90301-02980e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c90301-02980e02.png",
 		"tail": "02980e02"
 	},
 	"next": "01640502.html",
 	"prev": "02790e02.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"002c0002": "Ness",
-		"00610502": "Tiffany",
-		"00c90502": "Kidd",
-		"01200502": "Kody",
-		"01830502": "Mott",
-		"02610402": "Inkling Squid - Orange",
-		"03601202": "Alm",
-		"03701202": "Tiki",
-		"04c41e03": "Kirby"
+		"00290002": "Lucina",
+		"006b0502": "Gigi",
+		"007c0502": "Phil",
+		"01130502": "Leif",
+		"01bb0502": "Rizzo",
+		"02850e02": "Wario - Golf",
+		"03b40502": "Flick",
+		"04101802": "Palico",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04fa0f02": "Ratha"
 	}
 }

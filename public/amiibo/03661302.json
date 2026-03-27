@@ -4,21 +4,21 @@
 		"character": "Metroid",
 		"name": "Metroid",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c10000-03661302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c10000-03661302.png",
 		"tail": "03661302"
 	},
 	"next": "01b80502.html",
 	"prev": "00850502.html",
 	"list": {
-		"00820502": "Mint",
-		"01180502": "Digby - Raincoat",
-		"011a0502": "Isabelle - Kimono",
-		"01810502": "Stitches",
-		"01940502": "Queenie",
-		"01ab0502": "Rod",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"02b90e02": "Metal Mario - Soccer",
-		"03520902": "Toon Zelda - The Wind Waker",
-		"04b61d02": "Dee Jay"
+		"00360102": "Peach",
+		"00950502": "Goose",
+		"00f40502": "Flip",
+		"018d0502": "Croque",
+		"02f20502": "Wade",
+		"03aa0502": "Isabelle",
+		"03d60502": "Roswell",
+		"043d1b02": "Noah",
+		"04bc1d02": "Cammy",
+		"04eb1d02": "M. Bison"
 	}
 }

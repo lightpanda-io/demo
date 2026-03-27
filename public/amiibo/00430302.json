@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Light Blue Yarn Yoshi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030102-00430302.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030102-00430302.png",
 		"tail": "00430302"
 	},
 	"next": "01670502.html",
 	"prev": "03710102.html",
 	"list": {
-		"00110002": "Lucario",
-		"00be0502": "Fuchsia",
-		"00ce0502": "Blaire",
-		"01680502": "Rolf",
-		"01c30502": "Margie",
-		"01d20502": "Twiggy",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"02e90502": "June",
-		"02fb0502": "Boyd",
-		"03b90502": "Gulliver"
+		"00480502": "Kapp'n",
+		"00910502": "Roscoe",
+		"00ab0502": "Labelle",
+		"00b90502": "Poncho",
+		"00f30502": "Sprinkle",
+		"01480502": "Tucker",
+		"02a00e02": "Boo - Soccer",
+		"02f90502": "Maddie",
+		"03070502": "Ellie",
+		"04ac1d02": "Jamie"
 	}
 }

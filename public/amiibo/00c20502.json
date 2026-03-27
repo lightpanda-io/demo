@@ -4,21 +4,21 @@
 		"character": "Kitt",
 		"name": "Kitt",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d10001-00c20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d10001-00c20502.png",
 		"tail": "00c20502"
 	},
 	"next": "00c50502.html",
 	"prev": "02a80e02.html",
 	"list": {
-		"00060002": "Samus",
-		"00410302": "Green Yarn Yoshi",
-		"006b0502": "Gigi",
-		"00c60502": "Pate",
-		"025d0402": "Callie",
-		"03590902": "Urbosa",
-		"03630002": "Corrin - Player 2",
-		"03640002": "Bayonetta - Player 2",
-		"03941702": "Ikari",
-		"03b50502": "Daisy Mae"
+		"000c0002": "Luigi",
+		"00c00502": "Gwen",
+		"00ed0502": "Ruby",
+		"02400502": "K. K. Slider",
+		"02550c02": "Meta Knight",
+		"02640102": "Donkey Kong",
+		"02bc0e02": "Metal Mario - Golf",
+		"039bff02": "Mario - Power Up Band",
+		"03d30502": "Rio",
+		"042a1902": "Asana Mutsuba"
 	}
 }

@@ -4,20 +4,21 @@
 		"character": "Bayonetta",
 		"name": "Bayonetta",
 		"gameSeries": "Bayonetta",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_32400000-025b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_32400000-025b0002.png",
 		"tail": "025b0002"
 	},
 	"next": "014d0502.html",
 	"prev": "04390402.html",
 	"list": {
-		"00ef0502": "Agnes",
-		"01bf0502": "Kevin",
-		"02f00502": "Sylvana",
-		"035d0302": "Poochy",
-		"03690402": "Inkling Girl - Neon Pink",
-		"03d00502": "Chabwick",
-		"04140902": "Zelda \u0026 Loftwing",
-		"043d1b02": "Noah",
-		"043f1c02": "Mario - My Mario Wooden Blocks"
+		"00040002": "Link",
+		"00530502": "Lyle",
+		"00e10502": "Timbra",
+		"01170502": "Timmy - Full Apron",
+		"01250502": "Mitzi",
+		"01260502": "Rodeo",
+		"01300502": "Bam",
+		"01af0502": "Zucker",
+		"024c0502": "Rover",
+		"03850002": "Pichu"
 	}
 }

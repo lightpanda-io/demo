@@ -4,21 +4,21 @@
 		"character": "Rathian",
 		"name": "Rathian and Cheval",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35020100-02e40f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35020100-02e40f02.png",
 		"tail": "02e40f02"
 	},
 	"next": "028b0e02.html",
 	"prev": "03560902.html",
 	"list": {
-		"00a00502": "Bertha",
-		"01010502": "Vesta",
-		"01270502": "Bubbles",
-		"01820502": "Pinky",
-		"01d00502": "Iggly",
-		"031a0502": "Marty",
-		"03890002": "Ken",
-		"03ab0502": "Orville",
-		"04261902": "Gakuto Sōgetsu",
-		"04ed1d02": "Sagat"
+		"000e0002": "Zelda",
+		"00410302": "Green Yarn Yoshi",
+		"00470502": "Sable",
+		"00f90502": "Alice",
+		"01440502": "Klaus",
+		"01450502": "Daisy",
+		"02480502": "Celeste",
+		"04a30902": "Riju",
+		"04b41d02": "Dhalsim",
+		"04f01d02": "Ingrid"
 	}
 }

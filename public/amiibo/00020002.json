@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Yoshi",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030000-00020002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030000-00020002.png",
 		"tail": "00020002"
 	},
 	"next": "02b10e02.html",
 	"prev": "014e0502.html",
 	"list": {
-		"00170002": "Sheik",
-		"00e20502": "Zell",
-		"00f00502": "Julian",
+		"00530502": "Lyle",
+		"007d0502": "Monique",
+		"008e0502": "Amelia",
 		"00f30502": "Sprinkle",
-		"01280502": "Cousteau",
-		"01440502": "Klaus",
-		"02990e02": "Bowser - Golf",
-		"03730102": "Bowser - Wedding",
-		"04b71d02": "Manon",
-		"04d81d02": "Marisa"
+		"01200502": "Kody",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01850502": "Rocco",
+		"025e0402": "Marie",
+		"03010502": "Claude",
+		"04bf1d02": "Ed"
 	}
 }

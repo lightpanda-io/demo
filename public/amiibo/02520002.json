@@ -4,21 +4,20 @@
 		"character": "Roy",
 		"name": "Roy",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21040000-02520002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21040000-02520002.png",
 		"tail": "02520002"
 	},
-	"next": "042d1802.html",
+	"next": "03710102.html",
 	"prev": "00280002.html",
 	"list": {
-		"00970502": "Benjamin",
-		"00fc0502": "Chops",
-		"01150502": "Cyrus",
-		"01220502": "Del",
-		"01670502": "Baabara",
-		"01720502": "Katrina",
-		"02ee0502": "Tybalt",
-		"039cff02": "Luigi - Power Up Band",
-		"03b50502": "Daisy Mae",
-		"04d41d02": "Dhalsim"
+		"000d0002": "Diddy Kong",
+		"00540502": "Lottie",
+		"00ca0502": "Phoebe",
+		"01b00502": "Peggy",
+		"01c60502": "Rowan",
+		"027d0e02": "Yoshi - Soccer",
+		"042c1802": "Palamute",
+		"04350402": "Big Man",
+		"04fc0f02": "Rudy"
 	}
 }

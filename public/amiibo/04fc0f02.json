@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Monster Hunter",
+		"character": "Rudy",
+		"name": "Rudy",
+		"gameSeries": "Monster Hunter",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_350e0000-04fc0f02.png",
+		"tail": "04fc0f02"
+	},
+	"next": "0430ff02.html",
+	"prev": "04fb0f02.html",
+	"list": {
+		"00070002": "Wii Fit Trainer",
+		"01700502": "Isabelle - Dress",
+		"03661302": "Metroid",
+		"03931702": "Pawapuro",
+		"03961702": "Hayakawa",
+		"03b10502": "Label",
+		"03c00502": "Sherb",
+		"04a91d02": "Ken",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)",
+		"04d51d02": "E. Honda"
+	}
+}

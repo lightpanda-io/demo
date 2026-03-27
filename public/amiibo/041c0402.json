@@ -4,21 +4,21 @@
 		"character": "Smallfry",
 		"name": "Smallfry",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08060100-041c0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08060100-041c0402.png",
 		"tail": "041c0402"
 	},
 	"next": "03820002.html",
 	"prev": "04251902.html",
 	"list": {
-		"004a0502": "Joan",
-		"006f0502": "Shari",
-		"00ba0502": "Felicity",
-		"01550502": "Flora",
-		"02750e02": "Peach - Tennis",
-		"02b50e02": "Rosalina - Baseball",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"03840002": "Squirtle",
-		"03890002": "Ken",
-		"03b00502": "Sable"
+		"001e0002": "Olimar",
+		"003d0102": "Mario - Silver Edition",
+		"008d0502": "Cobb",
+		"00b10502": "Leila",
+		"00f30502": "Sprinkle",
+		"01440502": "Klaus",
+		"01ce0502": "Cally",
+		"01d50502": "Goldie - Amiibo Festival",
+		"023e0302": "Mega Yarn Yoshi",
+		"040d0f02": "Ena"
 	}
 }

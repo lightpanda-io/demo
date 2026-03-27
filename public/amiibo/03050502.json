@@ -4,21 +4,21 @@
 		"character": "Bea",
 		"name": "Bea",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02f40001-03050502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02f40001-03050502.png",
 		"tail": "03050502"
 	},
 	"next": "018b0502.html",
 	"prev": "023a0702.html",
 	"list": {
-		"004c0502": "Digby",
-		"006d0502": "Marcie",
-		"009c0502": "Diana",
-		"00ed0502": "Ruby",
-		"012d0502": "Marina",
-		"02540c02": "Kirby",
-		"025a0002": "Corrin",
-		"029d0e02": "Bowser Jr. - Tennis",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"042d1802": "Malzeno"
+		"00400402": "Inkling Squid",
+		"00c40502": "Tipper",
+		"00d90502": "Coco",
+		"00f40502": "Flip",
+		"014a0502": "Gaston",
+		"01b50502": "Jacques",
+		"02420502": "Tom Nook",
+		"037f0002": "Ridley",
+		"03bb0502": "Lottie - Island",
+		"03cb0502": "Shino"
 	}
 }

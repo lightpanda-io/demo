@@ -4,21 +4,21 @@
 		"character": "Ken",
 		"name": "Ken",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c10000-03890002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c10000-03890002.png",
 		"tail": "03890002"
 	},
 	"next": "00470502.html",
 	"prev": "015a0502.html",
 	"list": {
-		"00390102": "Bowser",
-		"00680502": "Kabuki",
-		"010a0502": "Big Top",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"02e40f02": "Rathian and Cheval",
-		"034f0902": "8-Bit Link",
-		"037a0002": "Daisy",
-		"04421c02": "Yoshi - My Mario Wooden Blocks",
-		"04c91e03": "Bandana Waddle Dee",
-		"04d11d02": "Guile"
+		"00250002": "Greninja",
+		"00810502": "T-Bone",
+		"00a90502": "Reese",
+		"011e0502": "Anchovy",
+		"02790e02": "Daisy - Baseball",
+		"02860e02": "Wario - Horse Racing",
+		"02ba0e02": "Metal Mario - Baseball",
+		"03040502": "Louie",
+		"03800002": "Dark Samus",
+		"03ce0502": "Cephalobot"
 	}
 }

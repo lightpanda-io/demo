@@ -4,21 +4,21 @@
 		"character": "Bowser",
 		"name": "Bowser - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c90401-02990e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c90401-02990e02.png",
 		"tail": "02990e02"
 	},
 	"next": "00ad0502.html",
 	"prev": "008f0502.html",
 	"list": {
-		"00350102": "Luigi",
-		"00440502": "Isabelle",
-		"00fc0502": "Chops",
-		"00ff0502": "Ankha",
-		"01a20502": "Puddles",
-		"02a30e02": "Boo - Golf",
-		"02af0e02": "Birdo - Soccer",
-		"035a0902": "Mipha",
-		"041b0402": "Octoling - Blue",
-		"04b21d02": "Juri"
+		"00180002": "Ike",
+		"011a0502": "Isabelle - Kimono",
+		"011f0502": "Tabby",
+		"01940502": "Queenie",
+		"01c80502": "Bruce",
+		"02b10e02": "Birdo - Tennis",
+		"031a0502": "Marty",
+		"03900402": "Octoling Octopus",
+		"03ab0502": "Orville",
+		"04380402": "Pearl - Side Order"
 	}
 }

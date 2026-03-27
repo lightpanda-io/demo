@@ -4,21 +4,21 @@
 		"character": "Barioth",
 		"name": "Barioth and Ayuria",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35030100-02e50f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35030100-02e50f02.png",
 		"tail": "02e50f02"
 	},
 	"next": "012f0502.html",
 	"prev": "01870502.html",
 	"list": {
-		"00a30502": "Cole",
-		"00e40502": "Teddy",
-		"00ec0502": "Bud",
-		"02610402": "Inkling Squid - Orange",
-		"02680102": "Boo",
-		"026e0e02": "Luigi - Soccer",
-		"026f0e02": "Luigi - Baseball",
-		"03090502": "Weber",
-		"03b50502": "Daisy Mae",
-		"04131302": "E.M.M.I."
+		"00620502": "Sheldon",
+		"00790502": "Deena",
+		"01260502": "Rodeo",
+		"01540502": "Moe",
+		"01a70502": "Pietro",
+		"01b20502": "Annalise",
+		"01d60502": "Stitches - Amiibo Festival",
+		"03931702": "Pawapuro",
+		"03b00502": "Sable",
+		"03ba0502": "Wisp"
 	}
 }

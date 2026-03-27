@@ -4,21 +4,21 @@
 		"character": "Ace",
 		"name": "Ace",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1b0001-03d20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a1b0001-03d20502.png",
 		"tail": "03d20502"
 	},
 	"next": "00220002.html",
 	"prev": "03cd0502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"00510502": "Luna",
-		"00b10502": "Leila",
-		"00ec0502": "Bud",
-		"01670502": "Baabara",
-		"023a0702": "Hammer Slam Bowser",
-		"02e80502": "Hopkins",
-		"031e0502": "Toby",
-		"04b91d02": "JP",
-		"04e31d02": "Elena"
+		"005e0502": "Lopez",
+		"00890502": "Biff",
+		"01b80502": "Pompom",
+		"01b90502": "Tank",
+		"01c00502": "Gloria",
+		"01c30502": "Margie",
+		"031a0502": "Marty",
+		"042b1802": "Palico",
+		"04df1d02": "Ed",
+		"04e11d02": "M. Bison"
 	}
 }

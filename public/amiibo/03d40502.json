@@ -4,21 +4,20 @@
 		"character": "Frett",
 		"name": "Frett",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a1d0001-03d40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a1d0001-03d40502.png",
 		"tail": "03d40502"
 	},
 	"next": "00c90502.html",
 	"prev": "04350402.html",
 	"list": {
-		"005d0502": "Renée",
-		"01580502": "Monty",
-		"01730502": "Phineas",
-		"01840502": "Mallary",
-		"018f0502": "Shep",
-		"01a10502": "Elmer",
-		"02690e02": "Mario - Soccer",
-		"030f0502": "Norma",
-		"03ad0502": "Blathers",
-		"04e11d02": "M. Bison"
+		"00030002": "Donkey Kong",
+		"011c0502": "Jingle",
+		"01260502": "Rodeo",
+		"01460502": "Stinky",
+		"01d30502": "Robin",
+		"02f10502": "Boris",
+		"03c30502": "Audie",
+		"04281902": "Roa Kirishima",
+		"04fa0f02": "Ratha"
 	}
 }

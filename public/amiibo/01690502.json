@@ -4,21 +4,21 @@
 		"character": "Maple",
 		"name": "Maple",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_027e0001-01690502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_027e0001-01690502.png",
 		"tail": "01690502"
 	},
 	"next": "00190002.html",
 	"prev": "03a90502.html",
 	"list": {
-		"00ad0502": "Booker",
-		"00de0502": "Butch",
-		"010c0502": "Rover",
-		"01340502": "Hans",
-		"018f0502": "Shep",
-		"02560c02": "King Dedede",
-		"026d0e02": "Mario - Horse Racing",
-		"02970e02": "Bowser - Baseball",
-		"04421c02": "Yoshi - My Mario Wooden Blocks",
-		"04b11d02": "Guile"
+		"00180002": "Ike",
+		"01030502": "Pango",
+		"01450502": "Daisy",
+		"019d0502": "Peewee",
+		"02710e02": "Luigi - Golf",
+		"02960e02": "Bowser - Soccer",
+		"02b20e02": "Birdo - Golf",
+		"035d0302": "Poochy",
+		"04380402": "Pearl - Side Order",
+		"04b01d02": "Chun-Li"
 	}
 }

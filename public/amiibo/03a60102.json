@@ -4,20 +4,21 @@
 		"character": "Mario",
 		"name": "Mario - Cat",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000300-03a60102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000300-03a60102.png",
 		"tail": "03a60102"
 	},
 	"next": "017b0502.html",
 	"prev": "01a60502.html",
 	"list": {
-		"00900502": "Cherry",
-		"00a10502": "Cyrano",
-		"01020502": "Marcel",
-		"01220502": "Del",
-		"013e0502": "Chester",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"03530902": "Link - Archer",
-		"03aa0502": "Isabelle",
-		"03d30502": "Rio"
+		"00560502": "Fauna",
+		"00f40502": "Flip",
+		"013c0502": "Beardo",
+		"01670502": "Baabara",
+		"018b0502": "Boone",
+		"01b60502": "Sally",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03150502": "Buzz",
+		"04d41d02": "Dhalsim",
+		"04ee1d02": "C. Viper"
 	}
 }

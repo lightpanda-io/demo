@@ -4,21 +4,21 @@
 		"character": "Wisp",
 		"name": "Wisp",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a060001-03ba0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a060001-03ba0502.png",
 		"tail": "03ba0502"
 	},
 	"next": "00be0502.html",
 	"prev": "004d0502.html",
 	"list": {
-		"00c00502": "Gwen",
-		"00d70502": "Whitney",
-		"00df0502": "Gabi",
-		"01020502": "Marcel",
-		"013f0502": "Merry",
-		"014f0502": "Buck",
-		"01710502": "Brewster",
-		"03010502": "Claude",
-		"04251902": "Tatsuhisa “Luke” Kamijō",
-		"04d81d02": "Marisa"
+		"00d80502": "Broccolo",
+		"00f60502": "Hopper",
+		"01730502": "Phineas",
+		"01970502": "Tex",
+		"023d0002": "Mewtwo",
+		"034e0902": "Link - Skyward Sword",
+		"036a0402": "Inkling Boy - Neon Green",
+		"03ad0502": "Blathers",
+		"04340402": "Frye",
+		"04fb0f02": "Ratha V"
 	}
 }

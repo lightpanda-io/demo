@@ -4,21 +4,21 @@
 		"character": "Wolfgang",
 		"name": "Wolfgang",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_050d0001-01420502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_050d0001-01420502.png",
 		"tail": "01420502"
 	},
 	"next": "027f0e02.html",
 	"prev": "00ce0502.html",
 	"list": {
-		"00350102": "Luigi",
-		"00c10502": "Coach",
-		"00d70502": "Whitney",
-		"00e20502": "Zell",
-		"02500a02": "Shovel Knight",
-		"028c0e02": "Donkey Kong - Soccer",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"03601202": "Alm",
-		"03820002": "Inkling",
-		"03a50002": "Byleth"
+		"00ce0502": "Blaire",
+		"012a0502": "Elvis",
+		"01860502": "Katt",
+		"01c80502": "Bruce",
+		"025a0002": "Corrin",
+		"02770e02": "Peach - Horse Racing",
+		"02a70e02": "Baby Mario - Tennis",
+		"02b50e02": "Rosalina - Baseball",
+		"03070502": "Ellie",
+		"04d61d02": "Dee Jay"
 	}
 }

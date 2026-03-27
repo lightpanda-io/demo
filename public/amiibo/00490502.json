@@ -4,21 +4,21 @@
 		"character": "Resetti",
 		"name": "Resetti",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018e0001-00490502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018e0001-00490502.png",
 		"tail": "00490502"
 	},
 	"next": "01b00502.html",
 	"prev": "027f0e02.html",
 	"list": {
-		"001e0002": "Olimar",
-		"003d0102": "Mario - Silver Edition",
-		"00c90502": "Kidd",
-		"01000502": "Drift",
-		"02830e02": "Wario - Baseball",
-		"02930e02": "Diddy Kong - Tennis",
-		"030e0502": "Tad",
-		"03941702": "Ikari",
-		"03b20502": "K.K. Slider",
-		"04b61d02": "Dee Jay"
+		"00f50502": "Hugh",
+		"01690502": "Maple",
+		"01930502": "Pierce",
+		"01bd0502": "Barold",
+		"01c90502": "OHare",
+		"02590002": "Cloud",
+		"03880002": "Chrom",
+		"03ae0502": "Celeste",
+		"04220002": "Steve",
+		"04d41d02": "Dhalsim"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Gulliver",
 		"name": "Gulliver",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-03b90502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a20001-03b90502.png",
 		"tail": "03b90502"
 	},
 	"next": "01080502.html",
 	"prev": "00ff0502.html",
 	"list": {
-		"00350102": "Luigi",
-		"00880502": "Bella",
-		"014f0502": "Buck",
-		"01950502": "Fang",
-		"02930e02": "Diddy Kong - Tennis",
-		"02a50e02": "Baby Mario - Soccer",
-		"02ea0502": "Piper",
-		"02f00502": "Sylvana",
-		"02f80502": "Jacob",
-		"04e11d02": "M. Bison"
+		"00150002": "Bowser Jr.",
+		"00830502": "Pudge",
+		"013e0502": "Chester",
+		"016d0502": "Derwin",
+		"018b0502": "Boone",
+		"02510002": "Lucas",
+		"030c0502": "Spike",
+		"03540902": "Link - Rider",
+		"03941702": "Ikari",
+		"04d81d02": "Marisa"
 	}
 }

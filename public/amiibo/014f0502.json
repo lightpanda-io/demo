@@ -4,21 +4,21 @@
 		"character": "Buck",
 		"name": "Buck",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03a40001-014f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03a40001-014f0502.png",
 		"tail": "014f0502"
 	},
 	"next": "01320502.html",
 	"prev": "035f1102.html",
 	"list": {
-		"00140002": "Bowser",
-		"00560502": "Fauna",
-		"008c0502": "Flo",
-		"009f0502": "Henry",
-		"00e60502": "Ed",
-		"010a0502": "Big Top",
-		"01b20502": "Annalise",
-		"03030502": "Julia",
-		"03170502": "Ike",
-		"031d0502": "Chelsea"
+		"001c0002": "Falco",
+		"00d40502": "Carmen",
+		"01240502": "Ken",
+		"019a0502": "Anabelle",
+		"025f0402": "Inkling Girl - Lime Green",
+		"040f1802": "Magnamalo",
+		"04291902": "Nail Saionji",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04af1d02": "Kimberly",
+		"04ba1d02": "Zangief"
 	}
 }

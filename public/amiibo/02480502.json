@@ -4,21 +4,21 @@
 		"character": "Celeste",
 		"name": "Celeste",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01930000-02480502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01930000-02480502.png",
 		"tail": "02480502"
 	},
 	"next": "00420302.html",
 	"prev": "023f0502.html",
 	"list": {
-		"01050502": "Gladys",
-		"019b0502": "Rudy",
-		"027a0e02": "Daisy - Tennis",
-		"02b10e02": "Birdo - Tennis",
-		"031d0502": "Chelsea",
-		"035a0902": "Mipha",
-		"03620002": "Cloud - Player 2",
-		"03b30502": "C.J.",
-		"04241902": "Yuga Ohdo",
-		"04291902": "Nail Saionji"
+		"00280002": "King Dedede",
+		"00410302": "Green Yarn Yoshi",
+		"00810502": "T-Bone",
+		"00d80502": "Broccolo",
+		"00ee0502": "Benedict",
+		"010d0502": "Blathers",
+		"01a90502": "Papi",
+		"031e0502": "Toby",
+		"04131302": "E.M.M.I.",
+		"04e51d02": "C. Viper"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00040002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-00040002.png",
 		"tail": "00040002"
 	},
 	"next": "02590002.html",
 	"prev": "03741402.html",
 	"list": {
-		"004a0502": "Joan",
-		"00b30502": "Don Resetti",
-		"01230502": "Paula",
-		"01ab0502": "Rod",
-		"01c90502": "OHare",
-		"029a0e02": "Bowser - Horse Racing",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"03850002": "Pichu",
-		"03a90502": "Timmy \u0026 Tommy",
-		"03ba0502": "Wisp"
+		"00800502": "Tutu",
+		"00920502": "Truffles",
+		"00d50502": "Rodney",
+		"01060502": "Hamphrey",
+		"01470502": "Tammi",
+		"01900502": "Lolly",
+		"02a60e02": "Baby Mario - Baseball",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"04411c02": "Peach - My Mario Wooden Blocks",
+		"04de1d02": "A.K.I"
 	}
 }

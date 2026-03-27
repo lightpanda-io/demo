@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10101-026e0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c10101-026e0e02.png",
 		"tail": "026e0e02"
 	},
 	"next": "03880002.html",
 	"prev": "01980502.html",
 	"list": {
-		"003a0202": "Chibi Robo",
-		"007b0502": "Bangle",
-		"009d0502": "Axel",
-		"00cd0502": "Sly",
-		"01050502": "Gladys",
-		"01a20502": "Puddles",
-		"026f0e02": "Luigi - Baseball",
-		"027d0e02": "Yoshi - Soccer",
-		"04131302": "E.M.M.I.",
-		"04bf1d02": "Ed"
+		"00810502": "T-Bone",
+		"00a70502": "Walker",
+		"00f60502": "Hopper",
+		"01620502": "Claudia",
+		"016a0502": "Antonio",
+		"018d0502": "Croque",
+		"019c0502": "Naomi",
+		"02470502": "Blathers",
+		"03a40002": "Terry",
+		"04fc0f02": "Rudy"
 	}
 }

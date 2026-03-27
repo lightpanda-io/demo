@@ -4,21 +4,21 @@
 		"character": "Cheri",
 		"name": "Cheri",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02870001-005a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02870001-005a0502.png",
 		"tail": "005a0502"
 	},
 	"next": "03a80502.html",
 	"prev": "034e0902.html",
 	"list": {
-		"00400402": "Inkling Squid",
+		"00580502": "Portia",
 		"00a80502": "K.K. Slider",
-		"00c50502": "Prince",
-		"00e60502": "Ed",
-		"02460502": "Cyrus",
-		"02480502": "Celeste",
-		"02f30502": "Carrie",
-		"036c0a02": "Plague Knight",
-		"03d70502": "Faith",
-		"04230002": "Alex"
+		"00ca0502": "Phoebe",
+		"01850502": "Rocco",
+		"01d00502": "Iggly",
+		"024d0502": "Timmy \u0026 Tommy",
+		"02670102": "Waluigi",
+		"028a0e02": "Waluigi - Golf",
+		"02a00e02": "Boo - Soccer",
+		"03d10502": "Zoe"
 	}
 }

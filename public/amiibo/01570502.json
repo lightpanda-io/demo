@@ -4,21 +4,21 @@
 		"character": "Astrid",
 		"name": "Astrid",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d60001-01570502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d60001-01570502.png",
 		"tail": "01570502"
 	},
 	"next": "023f0502.html",
 	"prev": "027a0e02.html",
 	"list": {
-		"008a0502": "Yuka",
-		"00bf0502": "Harry",
-		"00c00502": "Gwen",
-		"00e10502": "Timbra",
-		"01230502": "Paula",
-		"018d0502": "Croque",
-		"01b30502": "Chow",
-		"037d0002": "Isabelle",
-		"04180902": "Link - Tears of the Kingdom",
-		"042e0002": "Sora"
+		"001a0002": "Wario",
+		"00610502": "Tiffany",
+		"006f0502": "Shari",
+		"01b10502": "Ribbot",
+		"028a0e02": "Waluigi - Golf",
+		"030f0502": "Norma",
+		"035e1002": "Qbby",
+		"03800002": "Dark Samus",
+		"03971702": "Ganda",
+		"042d1802": "Malzeno"
 	}
 }

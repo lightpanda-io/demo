@@ -4,21 +4,20 @@
 		"character": "Elena",
 		"name": "Elena",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34d80001-04ec1d02.png",
 		"tail": "04ec1d02"
 	},
 	"next": "04ed1d02.html",
 	"prev": "04f31d02.html",
 	"list": {
-		"00950502": "Goose",
-		"00e60502": "Ed",
-		"015d0502": "Violet",
-		"016f0502": "Chrissy",
-		"01810502": "Stitches",
-		"01b80502": "Pompom",
-		"026a0e02": "Mario - Baseball",
-		"027f0e02": "Yoshi - Tennis",
-		"02e10f02": "One-Eyed Rathalos and Rider - Male",
-		"03150502": "Buzz"
+		"00870502": "Clyde",
+		"01590502": "Dora",
+		"01700502": "Isabelle - Dress",
+		"01a90502": "Papi",
+		"027e0e02": "Yoshi - Baseball",
+		"02910e02": "Diddy Kong - Soccer",
+		"03cb0502": "Shino",
+		"04aa1d02": "Luke",
+		"04d41d02": "Dhalsim"
 	}
 }

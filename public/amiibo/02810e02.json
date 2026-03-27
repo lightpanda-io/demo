@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Yoshi - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40501-02810e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c40501-02810e02.png",
 		"tail": "02810e02"
 	},
 	"next": "00cd0502.html",
 	"prev": "03860002.html",
 	"list": {
-		"00370102": "Yoshi",
-		"00670502": "Alli",
-		"00cd0502": "Sly",
-		"01220502": "Del",
-		"01880502": "Peaches",
-		"02810e02": "Yoshi - Horse Racing",
-		"03190502": "Rilla",
-		"03951702": "Yabe",
-		"04a40902": "Sidon",
-		"04e61d02": "Alex"
+		"00610502": "Tiffany",
+		"006d0502": "Marcie",
+		"010f0502": "Pelly",
+		"01430502": "Diva",
+		"02780e02": "Daisy - Soccer",
+		"02a00e02": "Boo - Soccer",
+		"02b20e02": "Birdo - Golf",
+		"036d0a02": "Specter Knight",
+		"041a0902": "Ganondorf - Tears of the Kingdom",
+		"04330402": "Shiver"
 	}
 }

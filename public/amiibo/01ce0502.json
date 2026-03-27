@@ -4,21 +4,21 @@
 		"character": "Cally",
 		"name": "Cally",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e80001-01ce0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e80001-01ce0502.png",
 		"tail": "01ce0502"
 	},
 	"next": "02e60f02.html",
 	"prev": "00840502.html",
 	"list": {
-		"00000002": "Mario",
-		"00250002": "Greninja",
-		"002b0002": "Shulk",
-		"01250502": "Mitzi",
-		"013c0502": "Beardo",
-		"02a10e02": "Boo - Baseball",
-		"02f40502": "Ketchup",
-		"038a0002": "Snake",
-		"038e0402": "Octoling Girl",
-		"04210002": "Sephiroth"
+		"00720502": "Knox",
+		"01290502": "Velma",
+		"01380502": "Mac",
+		"013b0502": "Hazel",
+		"01480502": "Tucker",
+		"01940502": "Queenie",
+		"025e0402": "Marie",
+		"02750e02": "Peach - Tennis",
+		"03b90502": "Gulliver",
+		"0430ff02": "Golden - Power Up Band"
 	}
 }

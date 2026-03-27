@@ -4,21 +4,21 @@
 		"character": "Tutu",
 		"name": "Tutu",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021b0001-00800502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_021b0001-00800502.png",
 		"tail": "00800502"
 	},
 	"next": "03bc0502.html",
 	"prev": "02fa0502.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"000f0002": "Little Mac",
-		"01aa0502": "Apple",
-		"024a0502": "Kicks",
-		"03a20002": "Hero",
-		"03ab0502": "Orville",
-		"03be0502": "Tom Nook - Coat",
-		"03ca0502": "Tiansheng",
-		"04401c02": "Luigi - My Mario Wooden Blocks",
-		"04ed1d02": "Sagat"
+		"00870502": "Clyde",
+		"00e70502": "Bianca",
+		"013f0502": "Merry",
+		"01410502": "Greta",
+		"01690502": "Maple",
+		"02410502": "Mabel",
+		"027d0e02": "Yoshi - Soccer",
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03760402": "Pearl",
+		"04111802": "Palamute"
 	}
 }

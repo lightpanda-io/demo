@@ -4,21 +4,21 @@
 		"character": "Samus",
 		"name": "Zero Suit Samus",
 		"gameSeries": "Metroid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_05c00100-001d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c00100-001d0002.png",
 		"tail": "001d0002"
 	},
 	"next": "039bff02.html",
 	"prev": "003c0102.html",
 	"list": {
-		"00330002": "R.O.B. - NES",
-		"00450502": "Tom Nook",
-		"016b0502": "Soleil",
-		"02860e02": "Wario - Horse Racing",
-		"028e0e02": "Donkey Kong - Tennis",
-		"02920e02": "Diddy Kong - Baseball",
-		"02e80502": "Hopkins",
-		"03a20002": "Hero",
-		"04241902": "Yuga Ohdo",
-		"04390402": "Marina - Side Order"
+		"00430302": "Light Blue Yarn Yoshi",
+		"00560502": "Fauna",
+		"00920502": "Truffles",
+		"013c0502": "Beardo",
+		"01520502": "Curlos",
+		"02530002": "Ryu",
+		"03a0ff02": "Toad - Power Up Band",
+		"03a80502": "Tom Nook",
+		"04340402": "Frye",
+		"04cd1d02": "Luke"
 	}
 }

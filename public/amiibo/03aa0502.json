@@ -4,20 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810401-03aa0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810401-03aa0502.png",
 		"tail": "03aa0502"
 	},
 	"next": "04200002.html",
 	"prev": "04111802.html",
 	"list": {
-		"00090002": "Pikachu",
-		"007f0502": "Samson",
-		"011e0502": "Anchovy",
-		"019a0502": "Anabelle",
-		"01b30502": "Chow",
-		"01be0502": "Nibbles",
-		"03d00502": "Chabwick",
-		"04340402": "Frye",
-		"04cc1d02": "Ken"
+		"00550502": "Bob",
+		"00660502": "Deli",
+		"00850502": "Gruff",
+		"00870502": "Clyde",
+		"00d10502": "Peck",
+		"02750e02": "Peach - Tennis",
+		"037c0002": "Young Link",
+		"03ba0502": "Wisp",
+		"03cd0502": "Petri",
+		"04230002": "Alex"
 	}
 }

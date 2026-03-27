@@ -4,21 +4,21 @@
 		"character": "One-Eyed Rathalos",
 		"name": "One-Eyed Rathalos and Rider - Female",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35000200-02e20f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35000200-02e20f02.png",
 		"tail": "02e20f02"
 	},
 	"next": "00ac0502.html",
 	"prev": "024a0502.html",
 	"list": {
-		"005f0502": "Jambette",
-		"00730502": "Sterling",
-		"010d0502": "Blathers",
-		"01290502": "Velma",
-		"01c70502": "Maelle",
-		"024c0502": "Rover",
-		"02730e02": "Peach - Soccer",
-		"02850e02": "Wario - Golf",
-		"02ab0e02": "Baby Luigi - Baseball",
-		"04ce1d02": "Jamie"
+		"00bb0502": "Ozzie",
+		"01070502": "Freya",
+		"01aa0502": "Apple",
+		"02740e02": "Peach - Baseball",
+		"02820e02": "Wario - Soccer",
+		"028f0e02": "Donkey Kong - Golf",
+		"02990e02": "Bowser - Golf",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"043c1302": "Sylux",
+		"04bc1d02": "Cammy"
 	}
 }

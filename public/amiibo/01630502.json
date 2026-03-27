@@ -4,21 +4,21 @@
 		"character": "Curly",
 		"name": "Curly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04780001-01630502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04780001-01630502.png",
 		"tail": "01630502"
 	},
 	"next": "039fff02.html",
 	"prev": "01d10502.html",
 	"list": {
-		"00980502": "Pancetti",
-		"00dc0502": "Alfonso",
-		"019b0502": "Rudy",
-		"02470502": "Blathers",
-		"027e0e02": "Yoshi - Baseball",
-		"03d00502": "Chabwick",
-		"03d10502": "Zoe",
-		"041b0402": "Octoling - Blue",
-		"04af1d02": "Kimberly",
-		"04ed1d02": "Sagat"
+		"00070002": "Wii Fit Trainer",
+		"00580502": "Portia",
+		"00670502": "Alli",
+		"00990502": "Chief",
+		"00ad0502": "Booker",
+		"010b0502": "Rocket",
+		"02b70e02": "Rosalina - Golf",
+		"02bc0e02": "Metal Mario - Golf",
+		"037b0002": "King K. Rool",
+		"043e1b02": "Mio"
 	}
 }

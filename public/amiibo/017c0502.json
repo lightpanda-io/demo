@@ -4,21 +4,21 @@
 		"character": "Pave",
 		"name": "Pave",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01ab0001-017c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01ab0001-017c0502.png",
 		"tail": "017c0502"
 	},
 	"next": "02820e02.html",
 	"prev": "01060502.html",
 	"list": {
-		"001b0002": "Ganondorf",
-		"00260002": "Jigglypuff",
-		"00610502": "Tiffany",
-		"00710502": "Winnie",
-		"008b0502": "Lionel",
-		"01ac0502": "Purrl",
-		"02540c02": "Kirby",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"030d0502": "Cashmere",
-		"04e31d02": "Elena"
+		"011b0502": "Franklin",
+		"016c0502": "Apollo",
+		"01790502": "Timmy - Suit",
+		"01cf0502": "Simon",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"023d0002": "Mewtwo",
+		"03580902": "Daruk",
+		"037f0002": "Ridley",
+		"03ca0502": "Tiansheng",
+		"04411c02": "Peach - My Mario Wooden Blocks"
 	}
 }

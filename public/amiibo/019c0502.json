@@ -4,21 +4,21 @@
 		"character": "Naomi",
 		"name": "Naomi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02b80001-019c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02b80001-019c0502.png",
 		"tail": "019c0502"
 	},
 	"next": "03020502.html",
 	"prev": "00290002.html",
 	"list": {
-		"00230002": "Mii Gunner",
-		"00270002": "Meta Knight",
-		"00cc0502": "Cookie",
-		"013f0502": "Merry",
-		"01930502": "Pierce",
-		"02550c02": "Meta Knight",
-		"02650102": "Diddy Kong",
-		"02730e02": "Peach - Soccer",
-		"036d0a02": "Specter Knight",
-		"037e0002": "Wolf"
+		"000e0002": "Zelda",
+		"00240002": "Charizard",
+		"007c0502": "Phil",
+		"008a0502": "Yuka",
+		"00a30502": "Cole",
+		"00b90502": "Poncho",
+		"00c30502": "Tom",
+		"014b0502": "Marshal",
+		"03870002": "Pokemon Trainer",
+		"04281902": "Roa Kirishima"
 	}
 }

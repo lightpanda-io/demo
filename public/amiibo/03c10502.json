@@ -4,21 +4,21 @@
 		"character": "Megan",
 		"name": "Megan",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a0a0001-03c10502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0a0001-03c10502.png",
 		"tail": "03c10502"
 	},
 	"next": "00410302.html",
 	"prev": "01100502.html",
 	"list": {
-		"003c0102": "Mario - Gold Edition",
-		"01650502": "Caroline",
-		"01900502": "Lolly",
-		"01c50502": "Rosie",
-		"02600402": "Inkling Boy - Purple",
-		"026c0e02": "Mario - Golf",
-		"027e0e02": "Yoshi - Baseball",
-		"02880e02": "Waluigi - Baseball",
-		"03a40002": "Terry",
-		"04bc1d02": "Cammy"
+		"00a30502": "Cole",
+		"01670502": "Baabara",
+		"01810502": "Stitches",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"02b00e02": "Birdo - Baseball",
+		"02f20502": "Wade",
+		"02f30502": "Carrie",
+		"03701202": "Tiki",
+		"03af0502": "Mabel",
+		"04281902": "Roa Kirishima"
 	}
 }

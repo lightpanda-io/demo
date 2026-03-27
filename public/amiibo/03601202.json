@@ -4,21 +4,21 @@
 		"character": "Alm",
 		"name": "Alm",
 		"gameSeries": "Fire Emblem",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_21060000-03601202.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_21060000-03601202.png",
 		"tail": "03601202"
 	},
 	"next": "038c0002.html",
 	"prev": "041b0402.html",
 	"list": {
-		"00b00502": "Porter",
-		"00ff0502": "Ankha",
-		"013b0502": "Hazel",
-		"02740e02": "Peach - Baseball",
-		"02760e02": "Peach - Golf",
-		"027d0e02": "Yoshi - Soccer",
-		"03160502": "Cleo",
-		"03a90502": "Timmy \u0026 Tommy",
-		"04d81d02": "Marisa",
-		"04df1d02": "Ed"
+		"00870502": "Clyde",
+		"009d0502": "Axel",
+		"00a80502": "K.K. Slider",
+		"01b00502": "Peggy",
+		"01c60502": "Rowan",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"025f0402": "Inkling Girl - Lime Green",
+		"02860e02": "Wario - Horse Racing",
+		"03040502": "Louie",
+		"03b00502": "Sable"
 	}
 }

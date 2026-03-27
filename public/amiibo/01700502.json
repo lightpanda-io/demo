@@ -4,21 +4,21 @@
 		"character": "Isabelle",
 		"name": "Isabelle - Dress",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01810301-01700502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810301-01700502.png",
 		"tail": "01700502"
 	},
 	"next": "00680502.html",
 	"prev": "03520902.html",
 	"list": {
-		"00010002": "Peach",
-		"002c0002": "Ness",
-		"00370102": "Yoshi",
+		"00450502": "Tom Nook",
 		"01160502": "Grams",
-		"01b50502": "Jacques",
-		"029a0e02": "Bowser - Horse Racing",
-		"03661302": "Metroid",
-		"038f0402": "Octoling Boy",
-		"039fff02": "Yoshi - Power Up Band",
-		"040d0f02": "Ena"
+		"01180502": "Digby - Raincoat",
+		"014f0502": "Buck",
+		"01770502": "Leilani",
+		"02440502": "Lottie",
+		"02560c02": "King Dedede",
+		"03090502": "Weber",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"03cc0502": "Marlo"
 	}
 }

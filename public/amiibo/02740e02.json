@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20201-02740e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c20201-02740e02.png",
 		"tail": "02740e02"
 	},
 	"next": "01550502.html",
 	"prev": "00250002.html",
 	"list": {
-		"00840502": "Midge",
-		"00b50502": "Blanca",
-		"00ee0502": "Benedict",
-		"01530502": "Skye",
-		"023e0302": "Mega Yarn Yoshi",
-		"02600402": "Inkling Boy - Purple",
-		"02750e02": "Peach - Tennis",
-		"030c0502": "Spike",
-		"03ba0502": "Wisp",
-		"03c40502": "Cyd"
+		"01060502": "Hamphrey",
+		"01240502": "Ken",
+		"01630502": "Curly",
+		"016b0502": "Soleil",
+		"01c40502": "Lucky",
+		"03981702": "Daijobu",
+		"03b10502": "Label",
+		"04230002": "Alex",
+		"04e81d02": "Terry",
+		"04f21d02": "Mai"
 	}
 }

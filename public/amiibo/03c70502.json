@@ -4,21 +4,21 @@
 		"character": "Reneigh",
 		"name": "Reneigh",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a100001-03c70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a100001-03c70502.png",
 		"tail": "03c70502"
 	},
 	"next": "00600502.html",
 	"prev": "01250502.html",
 	"list": {
-		"00980502": "Pancetti",
-		"01170502": "Timmy - Full Apron",
-		"01590502": "Dora",
-		"015b0502": "Victoria",
-		"02380602": "8-Bit Mario Classic Color",
-		"02740e02": "Peach - Baseball",
-		"02810e02": "Yoshi - Horse Racing",
-		"03040502": "Louie",
-		"037b0002": "King K. Rool",
-		"03b90502": "Gulliver"
+		"011c0502": "Jingle",
+		"01380502": "Mac",
+		"013c0502": "Beardo",
+		"01a20502": "Puddles",
+		"01a70502": "Pietro",
+		"01ae0502": "Celia",
+		"03160502": "Cleo",
+		"03b70502": "Saharah",
+		"03c60502": "Raymond",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

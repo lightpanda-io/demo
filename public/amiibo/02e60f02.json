@@ -4,21 +4,21 @@
 		"character": "Qurupeco",
 		"name": "Qurupeco and Dan",
 		"gameSeries": "Monster Hunter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35040100-02e60f02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35040100-02e60f02.png",
 		"tail": "02e60f02"
 	},
 	"next": "00c70502.html",
 	"prev": "01ce0502.html",
 	"list": {
-		"002c0002": "Ness",
-		"008d0502": "Cobb",
-		"00930502": "Eugene",
-		"00ba0502": "Felicity",
-		"00f60502": "Hopper",
-		"018c0502": "Broffina",
-		"01b90502": "Tank",
-		"024c0502": "Rover",
-		"02b30e02": "Birdo - Horse Racing",
-		"030a0502": "Candi"
+		"00460502": "DJ KK",
+		"00c70502": "Vladimir",
+		"01320502": "Ricky",
+		"015e0502": "Frank",
+		"02590002": "Cloud",
+		"03090502": "Weber",
+		"034b0902": "Link - Ocarina of Time",
+		"034f0902": "8-Bit Link",
+		"03750d02": "Detective Pikachu",
+		"04180902": "Link - Tears of the Kingdom"
 	}
 }

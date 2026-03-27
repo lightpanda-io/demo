@@ -4,21 +4,21 @@
 		"character": "Molly",
 		"name": "Molly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03170001-00a60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03170001-00a60502.png",
 		"tail": "00a60502"
 	},
 	"next": "01760502.html",
 	"prev": "03c90502.html",
 	"list": {
-		"00720502": "Knox",
-		"00a60502": "Molly",
-		"01900502": "Lolly",
-		"01a50502": "Walt",
-		"01d40502": "Isabelle - Character Parfait",
-		"02f60502": "Stu",
-		"02ff0502": "Plucky",
-		"03530902": "Link - Archer",
-		"03870002": "Pokemon Trainer",
-		"043c1302": "Sylux"
+		"004a0502": "Joan",
+		"00620502": "Sheldon",
+		"00a80502": "K.K. Slider",
+		"00f80502": "Drake",
+		"010c0502": "Rover",
+		"01860502": "Katt",
+		"01950502": "Fang",
+		"03a10002": "Joker",
+		"040e0f02": "Tsukino",
+		"04fa0f02": "Ratha"
 	}
 }

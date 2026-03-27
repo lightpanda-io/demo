@@ -4,21 +4,21 @@
 		"character": "Goose",
 		"name": "Goose",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02990001-00950502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02990001-00950502.png",
 		"tail": "00950502"
 	},
 	"next": "03770402.html",
 	"prev": "00cd0502.html",
 	"list": {
-		"00620502": "Sheldon",
-		"00730502": "Sterling",
-		"00ba0502": "Felicity",
-		"00eb0502": "Nan",
-		"024a0502": "Kicks",
-		"02860e02": "Wario - Horse Racing",
-		"02a50e02": "Baby Mario - Soccer",
-		"031d0502": "Chelsea",
-		"03560902": "Zelda",
-		"039fff02": "Yoshi - Power Up Band"
+		"00960502": "Annalisa",
+		"009a0502": "Bunnie",
+		"01120502": "Mabel",
+		"013a0502": "Wart Jr.",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02730e02": "Peach - Soccer",
+		"034f0902": "8-Bit Link",
+		"03800002": "Dark Samus",
+		"04bb1d02": "Lily",
+		"04d01d02": "Chun-Li"
 	}
 }

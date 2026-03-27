@@ -4,21 +4,21 @@
 		"character": "Bunnie",
 		"name": "Bunnie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04940001-009a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04940001-009a0502.png",
 		"tail": "009a0502"
 	},
 	"next": "035d0302.html",
 	"prev": "03090502.html",
 	"list": {
-		"00420302": "Pink Yarn Yoshi",
-		"00a30502": "Cole",
-		"00ae0502": "Katie",
-		"01180502": "Digby - Raincoat",
-		"01270502": "Bubbles",
-		"01660502": "Sparro",
-		"02b90e02": "Metal Mario - Soccer",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"038f0402": "Octoling Boy",
-		"042d1802": "Malzeno"
+		"00940502": "Eunice",
+		"019f0502": "Olaf",
+		"026a0e02": "Mario - Baseball",
+		"02f30502": "Carrie",
+		"02f60502": "Stu",
+		"03190502": "Rilla",
+		"03741402": "Super Mario Cereal",
+		"03781402": "Solaire of Astora",
+		"03b50502": "Daisy Mae",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

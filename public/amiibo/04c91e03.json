@@ -2,23 +2,23 @@
 	"amiibo": {
 		"amiiboSeries": "Kirby Air Riders",
 		"character": "Waddle Dee",
-		"name": "Bandana Waddle Dee",
+		"name": "Bandana Waddle Dee (\u0026 Winged Star)",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f030100-04c91e03.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f030100-04c91e03.png",
 		"tail": "04c91e03"
 	},
 	"next": "index.html",
 	"prev": "04c41e03.html",
 	"list": {
-		"00b00502": "Porter",
-		"01850502": "Rocco",
-		"02e30f02": "Nabiru",
-		"02f90502": "Maddie",
-		"03020502": "Raddle",
-		"03a70102": "Peach - Cat",
-		"03ae0502": "Celeste",
-		"03d40502": "Frett",
-		"040d0f02": "Ena",
-		"04261902": "Gakuto Sōgetsu"
+		"001f0002": "Palutena",
+		"01130502": "Leif",
+		"01900502": "Lolly",
+		"01b30502": "Chow",
+		"02410502": "Mabel",
+		"03791502": "Mega Man",
+		"03d10502": "Zoe",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"042b1802": "Palico",
+		"04d51d02": "E. Honda"
 	}
 }

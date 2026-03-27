@@ -4,21 +4,21 @@
 		"character": "Terry",
 		"name": "Terry",
 		"gameSeries": "Fatal Fury",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_3c800001-04f11d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_3c800001-04f11d02.png",
 		"tail": "04f11d02"
 	},
 	"next": "04f31d02.html",
 	"prev": "04eb1d02.html",
 	"list": {
-		"00e40502": "Teddy",
-		"01200502": "Kody",
-		"01960502": "Frita",
-		"01ca0502": "Gayle",
-		"02530002": "Ryu",
-		"02b30e02": "Birdo - Horse Racing",
-		"030d0502": "Cashmere",
-		"03730102": "Bowser - Wedding",
-		"04121302": "Samus - Metroid Dread",
-		"04e61d02": "Alex"
+		"00240002": "Charizard",
+		"00df0502": "Gabi",
+		"02730e02": "Peach - Soccer",
+		"02a90e02": "Baby Mario - Horse Racing",
+		"02b20e02": "Birdo - Golf",
+		"02f50502": "Rex",
+		"037d0002": "Isabelle",
+		"039bff02": "Mario - Power Up Band",
+		"04390402": "Marina - Side Order",
+		"04cf1d02": "Kimberly"
 	}
 }

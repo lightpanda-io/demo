@@ -4,21 +4,21 @@
 		"character": "Porter",
 		"name": "Porter",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01950001-00b00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01950001-00b00502.png",
 		"tail": "00b00502"
 	},
 	"next": "00370102.html",
 	"prev": "000b0002.html",
 	"list": {
-		"000b0002": "Marth",
-		"009a0502": "Bunnie",
-		"00e30502": "Pekoe",
-		"012d0502": "Marina",
-		"01330502": "Deirdre",
-		"01510502": "Rooney",
-		"01690502": "Maple",
-		"02420502": "Tom Nook",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"04e81d02": "Terry"
+		"00040002": "Link",
+		"00650502": "Kiki",
+		"00d70502": "Whitney",
+		"00ef0502": "Agnes",
+		"013c0502": "Beardo",
+		"01980502": "Melba",
+		"01d10502": "Angus",
+		"02730e02": "Peach - Soccer",
+		"02aa0e02": "Baby Luigi - Soccer",
+		"04111802": "Palamute"
 	}
 }

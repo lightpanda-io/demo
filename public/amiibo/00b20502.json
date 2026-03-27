@@ -4,21 +4,21 @@
 		"character": "Shrunk",
 		"name": "Shrunk",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01b10001-00b20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01b10001-00b20502.png",
 		"tail": "00b20502"
 	},
 	"next": "00930502.html",
 	"prev": "00aa0502.html",
 	"list": {
-		"004f0502": "Redd",
-		"007a0502": "Snake",
-		"00d60502": "Scoot",
-		"01020502": "Marcel",
-		"01bb0502": "Rizzo",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"030e0502": "Tad",
-		"030f0502": "Norma",
-		"031b0502": "Étoile",
-		"035c0902": "Bokoblin"
+		"00370102": "Yoshi",
+		"009c0502": "Diana",
+		"00b50502": "Blanca",
+		"00f50502": "Hugh",
+		"01a10502": "Elmer",
+		"01ad0502": "Static",
+		"01b20502": "Annalise",
+		"02a00e02": "Boo - Soccer",
+		"03520902": "Toon Zelda - The Wind Waker",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

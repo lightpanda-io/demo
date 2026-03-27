@@ -4,21 +4,21 @@
 		"character": "Marina",
 		"name": "Marina",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_042a0001-012d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_042a0001-012d0502.png",
 		"tail": "012d0502"
 	},
 	"next": "00d00502.html",
 	"prev": "00920502.html",
 	"list": {
-		"00d40502": "Carmen",
-		"011c0502": "Jingle",
-		"01440502": "Klaus",
-		"015f0502": "Chadder",
-		"01b90502": "Tank",
-		"02a10e02": "Boo - Baseball",
-		"02a80e02": "Baby Mario - Golf",
-		"02b40e02": "Rosalina - Soccer",
-		"02ef0502": "Huck",
-		"04a60902": "Yunobo"
+		"00bb0502": "Ozzie",
+		"01000502": "Drift",
+		"01320502": "Ricky",
+		"01840502": "Mallary",
+		"019c0502": "Naomi",
+		"023d0002": "Mewtwo",
+		"042d1802": "Malzeno",
+		"04a91d02": "Ken",
+		"04cf1d02": "Kimberly",
+		"04da1d02": "Zangief"
 	}
 }

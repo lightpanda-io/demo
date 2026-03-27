@@ -4,20 +4,21 @@
 		"character": "Stu",
 		"name": "Stu",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_024d0001-02f60502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_024d0001-02f60502.png",
 		"tail": "02f60502"
 	},
 	"next": "00910502.html",
 	"prev": "02770e02.html",
 	"list": {
-		"00580502": "Portia",
-		"00b90502": "Poncho",
-		"01030502": "Pango",
-		"011d0502": "Lily",
-		"027f0e02": "Yoshi - Tennis",
-		"03b10502": "Label",
-		"03c70502": "Reneigh",
-		"04bd1d02": "Rashid",
-		"04c01d02": "Akuma"
+		"001e0002": "Olimar",
+		"005d0502": "Renée",
+		"00940502": "Eunice",
+		"010b0502": "Rocket",
+		"019e0502": "Tammy",
+		"02530002": "Ryu",
+		"03bf0502": "Isabelle - Sweater",
+		"03d00502": "Chabwick",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"index": "Sandy"
 	}
 }

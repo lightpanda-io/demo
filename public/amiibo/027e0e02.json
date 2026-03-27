@@ -4,21 +4,20 @@
 		"character": "Yoshi",
 		"name": "Yoshi - Baseball",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c40201-027e0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c40201-027e0e02.png",
 		"tail": "027e0e02"
 	},
 	"next": "00010002.html",
 	"prev": "00eb0502.html",
 	"list": {
-		"00440502": "Isabelle",
-		"00b20502": "Shrunk",
-		"017d0502": "Gulliver",
-		"01960502": "Frita",
-		"01d40502": "Isabelle - Character Parfait",
-		"04180902": "Link - Tears of the Kingdom",
-		"04261902": "Gakuto Sōgetsu",
-		"04bc1d02": "Cammy",
-		"04d91d02": "JP",
-		"04de1d02": "A.K.I"
+		"00280002": "King Dedede",
+		"00bb0502": "Ozzie",
+		"010c0502": "Rover",
+		"019b0502": "Rudy",
+		"01b10502": "Ribbot",
+		"02480502": "Celeste",
+		"03b80502": "Harvey",
+		"04271902": "Romin Kirishima",
+		"0432ff02": "Diddy Kong - Power Up Band"
 	}
 }

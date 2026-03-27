@@ -4,21 +4,21 @@
 		"character": "Merry",
 		"name": "Merry",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026d0001-013f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_026d0001-013f0502.png",
 		"tail": "013f0502"
 	},
 	"next": "010a0502.html",
 	"prev": "03b50502.html",
 	"list": {
-		"006d0502": "Marcie",
-		"00f50502": "Hugh",
-		"01610502": "Cube",
-		"01c90502": "OHare",
-		"01cb0502": "Cranston",
-		"01cf0502": "Simon",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"02800e02": "Yoshi - Golf",
-		"02e90502": "June",
-		"03550902": "Guardian"
+		"001b0002": "Ganondorf",
+		"01220502": "Del",
+		"01570502": "Astrid",
+		"01d40502": "Isabelle - Character Parfait",
+		"01d50502": "Goldie - Amiibo Festival",
+		"025d0402": "Callie",
+		"02960e02": "Bowser - Soccer",
+		"03890002": "Ken",
+		"04db1d02": "Lily",
+		"04e61d02": "Alex"
 	}
 }

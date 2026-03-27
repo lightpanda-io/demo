@@ -4,21 +4,21 @@
 		"character": "Rhonda",
 		"name": "Rhonda",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04b30001-00dd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04b30001-00dd0502.png",
 		"tail": "00dd0502"
 	},
 	"next": "028a0e02.html",
 	"prev": "019f0502.html",
 	"list": {
-		"002c0002": "Ness",
-		"01300502": "Bam",
-		"01600502": "Merengue",
-		"017b0502": "Shrunk - Loud Jacket",
-		"01970502": "Tex",
-		"01c00502": "Gloria",
-		"01d30502": "Robin",
-		"02660102": "Daisy",
-		"03b70502": "Saharah",
-		"03ca0502": "Tiansheng"
+		"003a0202": "Chibi Robo",
+		"007f0502": "Samson",
+		"00940502": "Eunice",
+		"00b60502": "Nat",
+		"01220502": "Del",
+		"01460502": "Stinky",
+		"015d0502": "Violet",
+		"02410502": "Mabel",
+		"03730102": "Bowser - Wedding",
+		"04af1d02": "Kimberly"
 	}
 }

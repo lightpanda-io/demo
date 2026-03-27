@@ -4,21 +4,21 @@
 		"character": "Rosalina",
 		"name": "Rosalina - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cf0101-02b40e02.png",
 		"tail": "02b40e02"
 	},
 	"next": "034e0902.html",
 	"prev": "00000002.html",
 	"list": {
-		"00410302": "Green Yarn Yoshi",
-		"004c0502": "Digby",
-		"00d20502": "Olivia",
-		"00fb0502": "Anicotti",
-		"011c0502": "Jingle",
-		"01240502": "Ken",
-		"02720e02": "Luigi - Horse Racing",
-		"03b80502": "Harvey",
-		"04d11d02": "Guile",
-		"04d61d02": "Dee Jay"
+		"00300002": "Sonic",
+		"00580502": "Portia",
+		"00670502": "Alli",
+		"00860502": "Flurry",
+		"01080502": "Kid Cat",
+		"014d0502": "Joey",
+		"02490502": "Resetti",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03760402": "Pearl",
+		"04aa1d02": "Luke"
 	}
 }

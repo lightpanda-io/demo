@@ -4,21 +4,21 @@
 		"character": "Blaire",
 		"name": "Blaire",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04de0001-00ce0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04de0001-00ce0502.png",
 		"tail": "00ce0502"
 	},
 	"next": "01420502.html",
 	"prev": "01bf0502.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"00650502": "Kiki",
-		"00820502": "Mint",
-		"010d0502": "Blathers",
-		"017f0502": "Zipper",
-		"024e0502": "Kapp'n",
-		"02600402": "Inkling Boy - Purple",
-		"02a20e02": "Boo - Tennis",
-		"04350402": "Big Man",
-		"04d71d02": "Manon"
+		"00430302": "Light Blue Yarn Yoshi",
+		"00580502": "Portia",
+		"00940502": "Eunice",
+		"016b0502": "Soleil",
+		"02480502": "Celeste",
+		"025e0402": "Marie",
+		"035a0902": "Mipha",
+		"035f1102": "Pikmin",
+		"036e0a02": "King Knight",
+		"039fff02": "Yoshi - Power Up Band"
 	}
 }

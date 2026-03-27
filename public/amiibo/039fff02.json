@@ -4,21 +4,21 @@
 		"character": "Yoshi",
 		"name": "Yoshi - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00030003-039fff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030003-039fff02.png",
 		"tail": "039fff02"
 	},
 	"next": "026c0e02.html",
 	"prev": "01630502.html",
 	"list": {
-		"00010002": "Peach",
-		"00510502": "Luna",
-		"01050502": "Gladys",
-		"01560502": "Hamlet",
-		"01d40502": "Isabelle - Character Parfait",
-		"024b0502": "Isabelle - Summer Outfit",
-		"02790e02": "Daisy - Baseball",
-		"035b0902": "Revali",
-		"036d0a02": "Specter Knight",
-		"039fff02": "Yoshi - Power Up Band"
+		"008b0502": "Lionel",
+		"009e0502": "Muffy",
+		"01010502": "Vesta",
+		"010d0502": "Blathers",
+		"014c0502": "Gala",
+		"01520502": "Curlos",
+		"01a70502": "Pietro",
+		"03540902": "Link - Rider",
+		"038c0002": "Richter",
+		"04cd1d02": "Luke"
 	}
 }

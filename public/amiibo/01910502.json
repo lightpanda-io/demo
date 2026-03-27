@@ -4,21 +4,21 @@
 		"character": "Erik",
 		"name": "Erik",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02df0001-01910502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02df0001-01910502.png",
 		"tail": "01910502"
 	},
 	"next": "01470502.html",
 	"prev": "00c10502.html",
 	"list": {
-		"00400402": "Inkling Squid",
-		"005e0502": "Lopez",
-		"00c20502": "Kitt",
-		"00e10502": "Timbra",
-		"00eb0502": "Nan",
-		"00f40502": "Flip",
-		"030b0502": "Leopold",
-		"035d0302": "Poochy",
-		"03a0ff02": "Toad - Power Up Band",
-		"04d21d02": "Juri"
+		"00360102": "Peach",
+		"00810502": "T-Bone",
+		"00cb0502": "Egbert",
+		"014c0502": "Gala",
+		"01b10502": "Ribbot",
+		"01be0502": "Nibbles",
+		"02750e02": "Peach - Tennis",
+		"02f40502": "Ketchup",
+		"04b71d02": "Manon",
+		"04e31d02": "Elena"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Bam",
 		"name": "Bam",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02d70001-01300502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02d70001-01300502.png",
 		"tail": "01300502"
 	},
 	"next": "019a0502.html",
 	"prev": "01450502.html",
 	"list": {
-		"00b50502": "Blanca",
-		"00bf0502": "Harry",
-		"00f40502": "Flip",
-		"01100502": "Phyllis",
-		"01480502": "Tucker",
-		"02980e02": "Bowser - Tennis",
-		"02be0e02": "Pink Gold Peach - Soccer",
-		"02ed0502": "Stella",
-		"036f1202": "Chrom",
-		"04ad1d02": "Jamie"
+		"00170002": "Sheik",
+		"00390102": "Bowser",
+		"01770502": "Leilani",
+		"018f0502": "Shep",
+		"01990502": "Bones",
+		"026e0e02": "Luigi - Soccer",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"04281902": "Roa Kirishima",
+		"04a30902": "Riju",
+		"04f21d02": "Mai"
 	}
 }

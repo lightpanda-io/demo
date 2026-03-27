@@ -4,21 +4,21 @@
 		"character": "Murphy",
 		"name": "Murphy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02840001-02fe0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02840001-02fe0502.png",
 		"tail": "02fe0502"
 	},
 	"next": "02f20502.html",
 	"prev": "016a0502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"00e40502": "Teddy",
-		"01380502": "Mac",
+		"00890502": "Biff",
+		"00f40502": "Flip",
 		"014f0502": "Buck",
-		"01550502": "Flora",
-		"02a00e02": "Boo - Soccer",
-		"03c10502": "Megan",
-		"043c1302": "Sylux",
-		"04b11d02": "Guile",
-		"04f11d02": "Terry"
+		"02580002": "Mega Man - Gold Edition",
+		"02b30e02": "Birdo - Horse Racing",
+		"02e80502": "Hopkins",
+		"02ff0502": "Plucky",
+		"03010502": "Claude",
+		"043d1b02": "Noah",
+		"04d01d02": "Chun-Li"
 	}
 }

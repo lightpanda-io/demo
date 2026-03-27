@@ -4,21 +4,21 @@
 		"character": "King K. Rool",
 		"name": "King K. Rool",
 		"gameSeries": "Donkey Kong",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00c00000-037b0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00c00000-037b0002.png",
 		"tail": "037b0002"
 	},
 	"next": "04291902.html",
 	"prev": "02440502.html",
 	"list": {
-		"00100002": "Pit",
-		"00110002": "Lucario",
-		"00160002": "Toon Link",
-		"001a0002": "Wario",
-		"00d40502": "Carmen",
-		"01080502": "Kid Cat",
-		"015f0502": "Chadder",
-		"01790502": "Timmy - Suit",
-		"018d0502": "Croque",
-		"02470502": "Blathers"
+		"00440502": "Isabelle",
+		"00fe0502": "Vic",
+		"011c0502": "Jingle",
+		"02e90502": "June",
+		"02f00502": "Sylvana",
+		"03810002": "Ice Climbers",
+		"03890002": "Ken",
+		"03c70502": "Reneigh",
+		"03d20502": "Ace",
+		"04401c02": "Luigi - My Mario Wooden Blocks"
 	}
 }

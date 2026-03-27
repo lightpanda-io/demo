@@ -4,21 +4,21 @@
 		"character": "Zelda",
 		"name": "Zelda \u0026 Loftwing",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01010300-04140902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010300-04140902.png",
 		"tail": "04140902"
 	},
 	"next": "00820502.html",
 	"prev": "00c30502.html",
 	"list": {
-		"005c0502": "Al",
-		"007c0502": "Phil",
-		"008e0502": "Amelia",
-		"00940502": "Eunice",
-		"00bd0502": "Lucha",
-		"01000502": "Drift",
-		"01c10502": "Lobo",
-		"02b80e02": "Rosalina - Horse Racing",
-		"03990902": "Link - Link's Awakening",
-		"04d81d02": "Marisa"
+		"002d0002": "Mr. Game \u0026 Watch",
+		"00660502": "Deli",
+		"01410502": "Greta",
+		"02800e02": "Yoshi - Golf",
+		"02ec0502": "Hornsby",
+		"02f30502": "Carrie",
+		"03850002": "Pichu",
+		"03b30502": "C.J.",
+		"04380402": "Pearl - Side Order",
+		"04dc1d02": "Cammy"
 	}
 }

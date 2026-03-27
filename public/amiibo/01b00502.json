@@ -4,21 +4,21 @@
 		"character": "Peggy",
 		"name": "Peggy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04830001-01b00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04830001-01b00502.png",
 		"tail": "01b00502"
 	},
 	"next": "034d0902.html",
 	"prev": "00490502.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00270002": "Meta Knight",
-		"004f0502": "Redd",
-		"00cc0502": "Cookie",
-		"01170502": "Timmy - Full Apron",
-		"01340502": "Hans",
-		"034c0902": "Link - Majora's Mask",
-		"03690402": "Inkling Girl - Neon Pink",
-		"03c00502": "Sherb",
-		"04c91e03": "Bandana Waddle Dee"
+		"002c0002": "Ness",
+		"00420302": "Pink Yarn Yoshi",
+		"00710502": "Winnie",
+		"007d0502": "Monique",
+		"00c50502": "Prince",
+		"01010502": "Vesta",
+		"01770502": "Leilani",
+		"042f1a02": "Donkey Kong \u0026 Pauline",
+		"04b11d02": "Guile",
+		"04e61d02": "Alex"
 	}
 }

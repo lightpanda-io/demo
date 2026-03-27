@@ -4,21 +4,21 @@
 		"character": "Ganda",
 		"name": "Ganda",
 		"gameSeries": "Power Pros",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38040001-03971702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38040001-03971702.png",
 		"tail": "03971702"
 	},
 	"next": "02790e02.html",
 	"prev": "00420302.html",
 	"list": {
-		"00680502": "Kabuki",
-		"00810502": "T-Bone",
-		"00860502": "Flurry",
-		"01790502": "Timmy - Suit",
-		"01ce0502": "Cally",
-		"02810e02": "Yoshi - Horse Racing",
-		"03050502": "Bea",
-		"03580902": "Daruk",
-		"03b90502": "Gulliver",
-		"04f11d02": "Terry"
+		"00550502": "Bob",
+		"009d0502": "Axel",
+		"00bf0502": "Harry",
+		"01350502": "Chevre",
+		"016a0502": "Antonio",
+		"01bb0502": "Rizzo",
+		"02a70e02": "Baby Mario - Tennis",
+		"02f50502": "Rex",
+		"03540902": "Link - Rider",
+		"04d81d02": "Marisa"
 	}
 }

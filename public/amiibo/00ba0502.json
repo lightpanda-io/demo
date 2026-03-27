@@ -4,21 +4,21 @@
 		"character": "Felicity",
 		"name": "Felicity",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_026e0001-00ba0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_026e0001-00ba0502.png",
 		"tail": "00ba0502"
 	},
 	"next": "017d0502.html",
 	"prev": "04190902.html",
 	"list": {
-		"00790502": "Deena",
-		"00b60502": "Nat",
-		"00e70502": "Bianca",
-		"01300502": "Bam",
-		"01580502": "Monty",
-		"01a90502": "Papi",
-		"01b00502": "Peggy",
-		"023a0702": "Hammer Slam Bowser",
-		"02750e02": "Peach - Tennis",
-		"030f0502": "Norma"
+		"00260002": "Jigglypuff",
+		"00f90502": "Alice",
+		"016c0502": "Apollo",
+		"01cb0502": "Cranston",
+		"02f70502": "Ursala",
+		"03620002": "Cloud - Player 2",
+		"03a10002": "Joker",
+		"03c60502": "Raymond",
+		"041f0002": "Mythra",
+		"04c01d02": "Akuma"
 	}
 }

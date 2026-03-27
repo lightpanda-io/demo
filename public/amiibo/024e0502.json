@@ -4,21 +4,21 @@
 		"character": "Kapp'n",
 		"name": "Kapp'n",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01960000-024e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01960000-024e0502.png",
 		"tail": "024e0502"
 	},
 	"next": "00780502.html",
 	"prev": "03c20502.html",
 	"list": {
-		"00a70502": "Walker",
-		"00dd0502": "Rhonda",
-		"01580502": "Monty",
-		"01830502": "Mott",
-		"026b0e02": "Mario - Tennis",
-		"02700e02": "Luigi - Tennis",
-		"02fd0502": "Maggie",
-		"035f1102": "Pikmin",
-		"037f0002": "Ridley",
-		"04e41d02": "Sagat"
+		"00120002": "Captain Falcon",
+		"00490502": "Resetti",
+		"00fb0502": "Anicotti",
+		"01080502": "Kid Cat",
+		"01690502": "Maple",
+		"018e0502": "Pashmina",
+		"01c40502": "Lucky",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"035a0902": "Mipha",
+		"04e71d02": "Ingrid"
 	}
 }

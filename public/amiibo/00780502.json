@@ -4,21 +4,21 @@
 		"character": "Limberg",
 		"name": "Limberg",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040d0001-00780502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_040d0001-00780502.png",
 		"tail": "00780502"
 	},
 	"next": "03090502.html",
 	"prev": "024e0502.html",
 	"list": {
-		"00190002": "Dr. Mario",
-		"00580502": "Portia",
-		"018f0502": "Shep",
-		"01d40502": "Isabelle - Character Parfait",
-		"02580002": "Mega Man - Gold Edition",
-		"02b70e02": "Rosalina - Golf",
-		"04140902": "Zelda \u0026 Loftwing",
-		"04a30902": "Riju",
-		"04b21d02": "Juri",
-		"04f21d02": "Mai"
+		"00890502": "Biff",
+		"00ec0502": "Bud",
+		"010f0502": "Pelly",
+		"01d50502": "Goldie - Amiibo Festival",
+		"01d60502": "Stitches - Amiibo Festival",
+		"024a0502": "Kicks",
+		"02a40e02": "Boo - Horse Racing",
+		"02bb0e02": "Metal Mario - Tennis",
+		"03c40502": "Cyd",
+		"041c0402": "Smallfry"
 	}
 }

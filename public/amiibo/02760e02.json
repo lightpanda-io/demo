@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c20401-02760e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c20401-02760e02.png",
 		"tail": "02760e02"
 	},
 	"next": "012a0502.html",
 	"prev": "02a10e02.html",
 	"list": {
-		"00280002": "King Dedede",
-		"00920502": "Truffles",
-		"01070502": "Freya",
-		"01180502": "Digby - Raincoat",
-		"01a10502": "Elmer",
-		"02e70502": "Vivian",
-		"03500902": "Toon Link - The Wind Waker",
-		"039cff02": "Luigi - Power Up Band",
-		"03a80502": "Tom Nook",
-		"042f1a02": "Donkey Kong \u0026 Pauline"
+		"00ea0502": "Beau",
+		"00ff0502": "Ankha",
+		"01200502": "Kody",
+		"01930502": "Pierce",
+		"02720e02": "Luigi - Horse Racing",
+		"03010502": "Claude",
+		"030a0502": "Candi",
+		"037d0002": "Isabelle",
+		"03a70102": "Peach - Cat",
+		"04ba1d02": "Zangief"
 	}
 }

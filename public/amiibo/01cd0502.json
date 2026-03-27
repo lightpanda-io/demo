@@ -4,21 +4,21 @@
 		"character": "Grizzly",
 		"name": "Grizzly",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_021d0001-01cd0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_021d0001-01cd0502.png",
 		"tail": "01cd0502"
 	},
 	"next": "00440502.html",
 	"prev": "03bc0502.html",
 	"list": {
-		"001c0002": "Falco",
-		"00740502": "Bonbon",
-		"01220502": "Del",
-		"013e0502": "Chester",
-		"015e0502": "Frank",
-		"025d0402": "Callie",
-		"04c01d02": "Akuma",
-		"04d41d02": "Dhalsim",
-		"04de1d02": "A.K.I",
-		"04e81d02": "Terry"
+		"013a0502": "Wart Jr.",
+		"01ba0502": "Becky",
+		"01d10502": "Angus",
+		"01d60502": "Stitches - Amiibo Festival",
+		"02690e02": "Mario - Soccer",
+		"028a0e02": "Waluigi - Golf",
+		"02a50e02": "Baby Mario - Soccer",
+		"03a20002": "Hero",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)",
+		"04cb1d02": "Ryu"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Ken",
 		"name": "Ken",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02a60001-01240502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02a60001-01240502.png",
 		"tail": "01240502"
 	},
 	"next": "003f0402.html",
 	"prev": "01880502.html",
 	"list": {
-		"00330002": "R.O.B. - NES",
-		"00a20502": "Peanut",
-		"00f30502": "Sprinkle",
-		"01920502": "Dotty",
-		"02430502": "Digby",
-		"030d0502": "Cashmere",
-		"03150502": "Buzz",
-		"031c0502": "Chai",
-		"043a1302": "Samus \u0026 Vi-O-La",
-		"04ba1d02": "Zangief"
+		"00100002": "Pit",
+		"001f0002": "Palutena",
+		"003c0102": "Mario - Gold Edition",
+		"011f0502": "Tabby",
+		"01600502": "Merengue",
+		"01cf0502": "Simon",
+		"03900402": "Octoling Octopus",
+		"03b90502": "Gulliver",
+		"04ae1d02": "Kimberly",
+		"04db1d02": "Lily"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Pink Gold Peach",
 		"name": "Pink Gold Peach - Tennis",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09d10301-02c00e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09d10301-02c00e02.png",
 		"tail": "02c00e02"
 	},
 	"next": "00ec0502.html",
 	"prev": "027b0e02.html",
 	"list": {
-		"003f0402": "Inkling Boy",
-		"00500502": "Saharah",
-		"006e0502": "Puck",
-		"00c00502": "Gwen",
-		"01280502": "Cousteau",
-		"01290502": "Velma",
-		"01480502": "Tucker",
-		"016c0502": "Apollo",
-		"03cf0502": "Quinn",
-		"04ed1d02": "Sagat"
+		"002c0002": "Ness",
+		"002e0002": "R.O.B. - Famicom",
+		"00dd0502": "Rhonda",
+		"00e70502": "Bianca",
+		"01380502": "Mac",
+		"01d20502": "Twiggy",
+		"03180502": "Tasha",
+		"034d0902": "Link - Twilight Princess",
+		"03a50002": "Byleth",
+		"042a1902": "Asana Mutsuba"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Luigi",
 		"name": "Luigi - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09c10501-02720e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09c10501-02720e02.png",
 		"tail": "02720e02"
 	},
 	"next": "027d0e02.html",
 	"prev": "03a80502.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00570502": "Curt",
-		"01100502": "Phyllis",
-		"014f0502": "Buck",
-		"01b90502": "Tank",
-		"02410502": "Mabel",
-		"02590002": "Cloud",
-		"02960e02": "Bowser - Soccer",
-		"02a80e02": "Baby Mario - Golf",
-		"02fd0502": "Maggie"
+		"00190002": "Dr. Mario",
+		"004a0502": "Joan",
+		"00a80502": "K.K. Slider",
+		"02400502": "K. K. Slider",
+		"02580002": "Mega Man - Gold Edition",
+		"02a40e02": "Boo - Horse Racing",
+		"02a50e02": "Baby Mario - Soccer",
+		"036c0a02": "Plague Knight",
+		"03a40002": "Terry",
+		"03c40502": "Cyd"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Pascal",
 		"name": "Pascal",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a40001-004d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a40001-004d0502.png",
 		"tail": "004d0502"
 	},
 	"next": "03ba0502.html",
 	"prev": "01d60502.html",
 	"list": {
-		"00340102": "Mario",
-		"00c40502": "Tipper",
-		"00c50502": "Prince",
-		"011c0502": "Jingle",
-		"013e0502": "Chester",
-		"02750e02": "Peach - Tennis",
-		"02830e02": "Wario - Baseball",
-		"02f80502": "Jacob",
-		"035a0902": "Mipha",
-		"03ab0502": "Orville"
+		"00880502": "Bella",
+		"00920502": "Truffles",
+		"00b80502": "Jack",
+		"00ff0502": "Ankha",
+		"01870502": "Graham",
+		"025e0402": "Marie",
+		"03150502": "Buzz",
+		"03b60502": "Kicks",
+		"04bb1d02": "Lily",
+		"04e51d02": "C. Viper"
 	}
 }

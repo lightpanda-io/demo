@@ -4,21 +4,21 @@
 		"character": "Kody",
 		"name": "Kody",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02810001-01200502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02810001-01200502.png",
 		"tail": "01200502"
 	},
 	"next": "029f0e02.html",
 	"prev": "011f0502.html",
 	"list": {
-		"013a0502": "Wart Jr.",
-		"01540502": "Moe",
-		"01710502": "Brewster",
-		"019c0502": "Naomi",
-		"026e0e02": "Luigi - Soccer",
-		"02ed0502": "Stella",
-		"040d0f02": "Ena",
-		"04111802": "Palamute",
-		"041b0402": "Octoling - Blue",
-		"04e81d02": "Terry"
+		"000a0002": "Kirby",
+		"00990502": "Chief",
+		"00b50502": "Blanca",
+		"01980502": "Melba",
+		"02800e02": "Yoshi - Golf",
+		"03900402": "Octoling Octopus",
+		"03b40502": "Flick",
+		"03c30502": "Audie",
+		"04c30102": "Poplin \u0026 Prince Florian",
+		"04fb0f02": "Ratha V"
 	}
 }

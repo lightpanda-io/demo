@@ -4,21 +4,21 @@
 		"character": "Claudia",
 		"name": "Claudia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04ff0001-01620502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ff0001-01620502.png",
 		"tail": "01620502"
 	},
 	"next": "01410502.html",
 	"prev": "00b70502.html",
 	"list": {
-		"00350102": "Luigi",
-		"009e0502": "Muffy",
-		"00a30502": "Cole",
-		"00b50502": "Blanca",
-		"01600502": "Merengue",
-		"03180502": "Tasha",
-		"03760402": "Pearl",
-		"041f0002": "Mythra",
-		"04b91d02": "JP",
-		"04be1d02": "A.K.I"
+		"00450502": "Tom Nook",
+		"00560502": "Fauna",
+		"00580502": "Portia",
+		"00cc0502": "Cookie",
+		"01780502": "Resetti - Without Hat",
+		"02820e02": "Wario - Soccer",
+		"028c0e02": "Donkey Kong - Soccer",
+		"02c00e02": "Pink Gold Peach - Tennis",
+		"03b30502": "C.J.",
+		"04dc1d02": "Cammy"
 	}
 }

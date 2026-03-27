@@ -4,21 +4,21 @@
 		"character": "Kiki",
 		"name": "Kiki",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02610001-00650502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02610001-00650502.png",
 		"tail": "00650502"
 	},
 	"next": "024b0502.html",
 	"prev": "02f30502.html",
 	"list": {
-		"00720502": "Knox",
-		"007c0502": "Phil",
-		"009a0502": "Bunnie",
-		"013e0502": "Chester",
-		"01cb0502": "Cranston",
-		"02800e02": "Yoshi - Golf",
-		"02eb0502": "Paolo",
-		"03760402": "Pearl",
-		"039cff02": "Luigi - Power Up Band",
-		"03d00502": "Chabwick"
+		"000b0002": "Marth",
+		"00b90502": "Poncho",
+		"016f0502": "Chrissy",
+		"018e0502": "Pashmina",
+		"01ce0502": "Cally",
+		"01d30502": "Robin",
+		"02440502": "Lottie",
+		"031d0502": "Chelsea",
+		"04bb1d02": "Lily",
+		"04c41e03": "Kirby (\u0026 Warp Star)"
 	}
 }

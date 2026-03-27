@@ -4,21 +4,21 @@
 		"character": "Kicks",
 		"name": "Kicks",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01940000-024a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01940000-024a0502.png",
 		"tail": "024a0502"
 	},
 	"next": "02e20f02.html",
 	"prev": "01d70502.html",
 	"list": {
-		"00010002": "Peach",
-		"003f0402": "Inkling Boy",
-		"010f0502": "Pelly",
-		"02660102": "Daisy",
-		"02eb0502": "Paolo",
-		"03670102": "Goomba",
-		"037a0002": "Daisy",
-		"03a20002": "Hero",
-		"03c20502": "Dom",
-		"03c30502": "Audie"
+		"00130002": "Rosalina \u0026 Luma",
+		"01090502": "Agent S",
+		"01270502": "Bubbles",
+		"01b90502": "Tank",
+		"01c10502": "Lobo",
+		"02480502": "Celeste",
+		"028c0e02": "Donkey Kong - Soccer",
+		"03bb0502": "Lottie - Island",
+		"03c50502": "Judy",
+		"04e51d02": "C. Viper"
 	}
 }

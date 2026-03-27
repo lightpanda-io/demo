@@ -4,21 +4,21 @@
 		"character": "Peach",
 		"name": "Peach - Power Up Band",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020003-039dff02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020003-039dff02.png",
 		"tail": "039dff02"
 	},
 	"next": "02f80502.html",
 	"prev": "03840002.html",
 	"list": {
-		"004f0502": "Redd",
-		"00580502": "Portia",
-		"00670502": "Alli",
-		"00e30502": "Pekoe",
-		"024a0502": "Kicks",
-		"024f0902": "Midna \u0026 Wolf Link",
-		"027a0e02": "Daisy - Tennis",
-		"02a30e02": "Boo - Golf",
-		"03530902": "Link - Archer",
-		"039dff02": "Peach - Power Up Band"
+		"004b0502": "Timmy",
+		"00740502": "Bonbon",
+		"00f20502": "Jay",
+		"01230502": "Paula",
+		"02b60e02": "Rosalina - Tennis",
+		"030e0502": "Tad",
+		"03be0502": "Tom Nook - Coat",
+		"04150402": "Inkling - Yellow",
+		"04210002": "Sephiroth",
+		"04df1d02": "Ed"
 	}
 }

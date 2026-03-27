@@ -4,21 +4,21 @@
 		"character": "Weber",
 		"name": "Weber",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03120001-03090502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03120001-03090502.png",
 		"tail": "03090502"
 	},
 	"next": "009a0502.html",
 	"prev": "00780502.html",
 	"list": {
-		"00340102": "Mario",
-		"00720502": "Knox",
-		"00e30502": "Pekoe",
-		"01990502": "Bones",
-		"01d20502": "Twiggy",
-		"026e0e02": "Luigi - Soccer",
-		"02aa0e02": "Baby Luigi - Soccer",
-		"031a0502": "Marty",
-		"03690402": "Inkling Girl - Neon Pink",
-		"042b1802": "Palico"
+		"008a0502": "Yuka",
+		"00ae0502": "Katie",
+		"010d0502": "Blathers",
+		"01300502": "Bam",
+		"01790502": "Timmy - Suit",
+		"01840502": "Mallary",
+		"01c80502": "Bruce",
+		"02e60f02": "Qurupeco and Dan",
+		"03c40502": "Cyd",
+		"04ad1d02": "Jamie"
 	}
 }

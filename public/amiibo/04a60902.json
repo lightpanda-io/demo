@@ -4,21 +4,21 @@
 		"character": "Yunobo",
 		"name": "Yunobo",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_010c0000-04a60902.png",
 		"tail": "04a60902"
 	},
 	"next": "04a40902.html",
 	"prev": "04a50902.html",
 	"list": {
-		"00540502": "Lottie",
-		"007c0502": "Phil",
-		"00b40502": "Isabelle - Winter",
-		"01250502": "Mitzi",
-		"01310502": "Friga",
-		"01d60502": "Stitches - Amiibo Festival",
-		"028a0e02": "Waluigi - Golf",
-		"039fff02": "Yoshi - Power Up Band",
-		"03cf0502": "Quinn",
-		"04a40902": "Sidon"
+		"00640502": "Bill",
+		"00850502": "Gruff",
+		"00950502": "Goose",
+		"01620502": "Claudia",
+		"016a0502": "Antonio",
+		"01c20502": "Hippeux",
+		"02ab0e02": "Baby Luigi - Baseball",
+		"02b90e02": "Metal Mario - Soccer",
+		"040f1802": "Magnamalo",
+		"04de1d02": "A.K.I"
 	}
 }

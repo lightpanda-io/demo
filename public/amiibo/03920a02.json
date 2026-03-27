@@ -4,21 +4,21 @@
 		"character": "Shovel Knight",
 		"name": "Shovel Knight - Gold Edition",
 		"gameSeries": "Shovel Knight",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_35c00000-03920a02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_35c00000-03920a02.png",
 		"tail": "03920a02"
 	},
 	"next": "03730102.html",
 	"prev": "00fc0502.html",
 	"list": {
-		"00000002": "Mario",
-		"00170002": "Sheik",
-		"00ea0502": "Beau",
-		"01060502": "Hamphrey",
-		"01ae0502": "Celia",
-		"02880e02": "Waluigi - Baseball",
-		"02ae0e02": "Baby Luigi - Horse Racing",
-		"03120502": "Snooty",
-		"034d0902": "Link - Twilight Princess",
-		"03560902": "Zelda"
+		"006c0502": "Quillson",
+		"00870502": "Clyde",
+		"00930502": "Eugene",
+		"015c0502": "Lyman",
+		"01640502": "Boomer",
+		"017d0502": "Gulliver",
+		"02a70e02": "Baby Mario - Tennis",
+		"03a50002": "Byleth",
+		"04b21d02": "Juri",
+		"04c30102": "Poplin \u0026 Prince Florian"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Rooney",
 		"name": "Rooney",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03da0001-01510502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03da0001-01510502.png",
 		"tail": "01510502"
 	},
 	"next": "007e0502.html",
 	"prev": "024b0502.html",
 	"list": {
-		"007a0502": "Snake",
-		"00820502": "Mint",
-		"015d0502": "Violet",
-		"01c60502": "Rowan",
-		"02420502": "Tom Nook",
-		"02540c02": "Kirby",
-		"026b0e02": "Mario - Tennis",
-		"02700e02": "Luigi - Tennis",
-		"03130502": "Olive",
-		"03c20502": "Dom"
+		"001e0002": "Olimar",
+		"005c0502": "Al",
+		"016f0502": "Chrissy",
+		"02a70e02": "Baby Mario - Tennis",
+		"036e0a02": "King Knight",
+		"039dff02": "Peach - Power Up Band",
+		"03b50502": "Daisy Mae",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"042e0002": "Sora",
+		"04eb1d02": "M. Bison"
 	}
 }

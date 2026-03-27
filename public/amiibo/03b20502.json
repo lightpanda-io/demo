@@ -4,21 +4,21 @@
 		"character": "K.K. Slider",
 		"name": "K.K. Slider",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820001-03b20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01820001-03b20502.png",
 		"tail": "03b20502"
 	},
 	"next": "015b0502.html",
 	"prev": "02670102.html",
 	"list": {
-		"00940502": "Eunice",
-		"00bf0502": "Harry",
-		"00d60502": "Scoot",
-		"00fd0502": "Charlise",
-		"01170502": "Timmy - Full Apron",
-		"014b0502": "Marshal",
-		"02c10e02": "Pink Gold Peach - Golf",
-		"03090502": "Weber",
-		"037a0002": "Daisy",
-		"03d00502": "Chabwick"
+		"005d0502": "Renée",
+		"00980502": "Pancetti",
+		"00a70502": "Walker",
+		"01380502": "Mac",
+		"023b0702": "Turbo Charge Donkey Kong",
+		"02420502": "Tom Nook",
+		"02910e02": "Diddy Kong - Soccer",
+		"02e60f02": "Qurupeco and Dan",
+		"04b61d02": "Dee Jay",
+		"04d11d02": "Guile"
 	}
 }

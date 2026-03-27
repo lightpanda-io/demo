@@ -4,21 +4,21 @@
 		"character": "Broccolo",
 		"name": "Broccolo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04180001-00d80502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04180001-00d80502.png",
 		"tail": "00d80502"
 	},
 	"next": "00710502.html",
 	"prev": "00a10502.html",
 	"list": {
-		"003a0202": "Chibi Robo",
-		"00860502": "Flurry",
-		"00ab0502": "Labelle",
-		"00f90502": "Alice",
-		"01060502": "Hamphrey",
-		"014e0502": "Pippy",
-		"01860502": "Katt",
-		"02600402": "Inkling Boy - Purple",
-		"03900402": "Octoling Octopus",
-		"03a60102": "Mario - Cat"
+		"00770502": "Poppy",
+		"010e0502": "Tom Nook - Jacket",
+		"01220502": "Del",
+		"01a50502": "Walt",
+		"02520002": "Roy",
+		"02a10e02": "Boo - Baseball",
+		"038b0002": "Simon",
+		"03b90502": "Gulliver",
+		"03cc0502": "Marlo",
+		"04e41d02": "Sagat"
 	}
 }

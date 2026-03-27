@@ -4,21 +4,21 @@
 		"character": "Tom Nook",
 		"name": "Tom Nook",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01830001-00450502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01830001-00450502.png",
 		"tail": "00450502"
 	},
 	"next": "00eb0502.html",
 	"prev": "03d10502.html",
 	"list": {
-		"00150002": "Bowser Jr.",
-		"006f0502": "Shari",
-		"00ef0502": "Agnes",
-		"014d0502": "Joey",
-		"02400502": "K. K. Slider",
-		"02410502": "Mabel",
-		"02760e02": "Peach - Golf",
-		"027a0e02": "Daisy - Tennis",
-		"039eff02": "Daisy - Power Up Band",
-		"04f21d02": "Mai"
+		"000c0002": "Luigi",
+		"009e0502": "Muffy",
+		"00aa0502": "Kicks",
+		"01390502": "Eloise",
+		"015b0502": "Victoria",
+		"01d20502": "Twiggy",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"03cb0502": "Shino",
+		"043d1b02": "Noah",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

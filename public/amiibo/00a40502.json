@@ -4,21 +4,21 @@
 		"character": "Willow",
 		"name": "Willow",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04cc0001-00a40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04cc0001-00a40502.png",
 		"tail": "00a40502"
 	},
 	"next": "005f0502.html",
 	"prev": "005e0502.html",
 	"list": {
-		"00470502": "Sable",
-		"00dd0502": "Rhonda",
-		"01900502": "Lolly",
-		"01ba0502": "Becky",
-		"01bd0502": "Barold",
-		"02670102": "Waluigi",
-		"02a50e02": "Baby Mario - Soccer",
-		"03781402": "Solaire of Astora",
-		"043f1c02": "Mario - My Mario Wooden Blocks",
-		"04e11d02": "M. Bison"
+		"00720502": "Knox",
+		"00930502": "Eugene",
+		"00d80502": "Broccolo",
+		"01040502": "Keaton",
+		"01850502": "Rocco",
+		"01870502": "Graham",
+		"025d0402": "Callie",
+		"02e40f02": "Rathian and Cheval",
+		"04330402": "Shiver",
+		"04a40902": "Sidon"
 	}
 }

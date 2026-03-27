@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Squid - Neon Purple",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-036b0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000300-036b0402.png",
 		"tail": "036b0402"
 	},
 	"next": "01a70502.html",
 	"prev": "026b0e02.html",
 	"list": {
-		"00180002": "Ike",
-		"00240002": "Charizard",
-		"00270002": "Meta Knight",
-		"006e0502": "Puck",
-		"00b60502": "Nat",
-		"013a0502": "Wart Jr.",
-		"02b20e02": "Birdo - Golf",
-		"03b40502": "Flick",
-		"03bf0502": "Isabelle - Sweater",
-		"03c20502": "Dom"
+		"009a0502": "Bunnie",
+		"00ac0502": "Copper",
+		"010a0502": "Big Top",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01880502": "Peaches",
+		"01a90502": "Papi",
+		"02440502": "Lottie",
+		"02640102": "Donkey Kong",
+		"04b11d02": "Guile",
+		"04f31d02": "Mai"
 	}
 }

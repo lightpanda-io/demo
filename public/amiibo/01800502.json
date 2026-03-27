@@ -4,21 +4,21 @@
 		"character": "Goldie",
 		"name": "Goldie",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02ea0001-01800502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02ea0001-01800502.png",
 		"tail": "01800502"
 	},
 	"next": "03951702.html",
 	"prev": "02a20e02.html",
 	"list": {
-		"00030002": "Donkey Kong",
-		"00580502": "Portia",
-		"00850502": "Gruff",
-		"01840502": "Mallary",
-		"01ab0502": "Rod",
-		"025c0d02": "Shadow Mewtwo",
-		"035e1002": "Qbby",
-		"03730102": "Bowser - Wedding",
-		"037b0002": "King K. Rool",
-		"04b91d02": "JP"
+		"010a0502": "Big Top",
+		"012c0502": "Colton",
+		"01360502": "Drago",
+		"02430502": "Digby",
+		"02680102": "Boo",
+		"02b20e02": "Birdo - Golf",
+		"03020502": "Raddle",
+		"03781402": "Solaire of Astora",
+		"03890002": "Ken",
+		"04b01d02": "Chun-Li"
 	}
 }

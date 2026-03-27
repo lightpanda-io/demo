@@ -4,21 +4,21 @@
 		"character": "Bud",
 		"name": "Bud",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03e60001-00ec0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03e60001-00ec0502.png",
 		"tail": "00ec0502"
 	},
 	"next": "03a10002.html",
 	"prev": "02c00e02.html",
 	"list": {
-		"00710502": "Winnie",
-		"01350502": "Chevre",
-		"01960502": "Frita",
-		"01b70502": "Doc",
-		"01cf0502": "Simon",
-		"02990e02": "Bowser - Golf",
-		"02b40e02": "Rosalina - Soccer",
-		"031b0502": "Étoile",
-		"04350402": "Big Man",
-		"04e71d02": "Ingrid"
+		"000c0002": "Luigi",
+		"00c70502": "Vladimir",
+		"010b0502": "Rocket",
+		"02630102": "Wario",
+		"027a0e02": "Daisy - Tennis",
+		"03620002": "Cloud - Player 2",
+		"041d0002": "Min Min",
+		"042e0002": "Sora",
+		"04c91e03": "Bandana Waddle Dee (\u0026 Winged Star)",
+		"04cb1d02": "Ryu"
 	}
 }

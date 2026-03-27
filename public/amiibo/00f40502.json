@@ -4,21 +4,21 @@
 		"character": "Flip",
 		"name": "Flip",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ff0001-00f40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ff0001-00f40502.png",
 		"tail": "00f40502"
 	},
 	"next": "013b0502.html",
 	"prev": "02a30e02.html",
 	"list": {
-		"008f0502": "Jeremiah",
-		"009e0502": "Muffy",
-		"010a0502": "Big Top",
-		"01390502": "Eloise",
-		"01770502": "Leilani",
-		"02590002": "Cloud",
-		"030c0502": "Spike",
-		"031c0502": "Chai",
-		"04b51d02": "E. Honda",
-		"04f31d02": "Mai"
+		"00ae0502": "Katie",
+		"00f20502": "Jay",
+		"01480502": "Tucker",
+		"01a30502": "Rory",
+		"01bd0502": "Barold",
+		"02510002": "Lucas",
+		"030b0502": "Leopold",
+		"03a30002": "Banjo \u0026 Kazooie",
+		"03c00502": "Sherb",
+		"040f1802": "Magnamalo"
 	}
 }

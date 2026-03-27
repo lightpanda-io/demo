@@ -4,21 +4,21 @@
 		"character": "Gulliver",
 		"name": "Gulliver",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a20001-017d0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a20001-017d0502.png",
 		"tail": "017d0502"
 	},
 	"next": "02880e02.html",
 	"prev": "00ba0502.html",
 	"list": {
-		"00b90502": "Poncho",
-		"00be0502": "Fuchsia",
-		"01190502": "Don Resetti - Without Hat",
-		"01800502": "Goldie",
-		"01c80502": "Bruce",
-		"024c0502": "Rover",
-		"029a0e02": "Bowser - Horse Racing",
-		"031e0502": "Toby",
-		"035a0902": "Mipha",
-		"03b60502": "Kicks"
+		"000e0002": "Zelda",
+		"00c60502": "Pate",
+		"00d30502": "Cesar",
+		"01170502": "Timmy - Full Apron",
+		"018b0502": "Boone",
+		"019c0502": "Naomi",
+		"04180902": "Link - Tears of the Kingdom",
+		"04350402": "Big Man",
+		"04370402": "Marie - Alterna",
+		"04dc1d02": "Cammy"
 	}
 }

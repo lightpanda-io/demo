@@ -4,21 +4,21 @@
 		"character": "Bowser Jr.",
 		"name": "Bowser Jr. - Soccer",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ca0101-029b0e02.png",
 		"tail": "029b0e02"
 	},
 	"next": "00620502.html",
 	"prev": "004a0502.html",
 	"list": {
-		"00100002": "Pit",
-		"00b10502": "Leila",
-		"01a90502": "Papi",
-		"02bf0e02": "Pink Gold Peach - Baseball",
-		"03040502": "Louie",
-		"036f1202": "Chrom",
-		"038b0002": "Simon",
-		"03c10502": "Megan",
-		"042c1802": "Palamute",
-		"043f1c02": "Mario - My Mario Wooden Blocks"
+		"00730502": "Sterling",
+		"00da0502": "Groucho",
+		"00e50502": "Mathilda",
+		"01590502": "Dora",
+		"01af0502": "Zucker",
+		"023f0502": "Isabelle - Winter Outfit",
+		"02480502": "Celeste",
+		"02670102": "Waluigi",
+		"02890e02": "Waluigi - Tennis",
+		"02ba0e02": "Metal Mario - Baseball"
 	}
 }

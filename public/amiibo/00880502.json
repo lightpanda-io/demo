@@ -4,21 +4,21 @@
 		"character": "Bella",
 		"name": "Bella",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_040e0001-00880502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_040e0001-00880502.png",
 		"tail": "00880502"
 	},
 	"next": "01360502.html",
 	"prev": "00f30502.html",
 	"list": {
-		"00160002": "Toon Link",
-		"002b0002": "Shulk",
-		"005c0502": "Al",
-		"00880502": "Bella",
-		"009d0502": "Axel",
-		"00f00502": "Julian",
-		"016e0502": "Francine",
-		"03c20502": "Dom",
-		"04350402": "Big Man",
-		"04a30902": "Riju"
+		"002f0002": "Duck Hunt",
+		"00500502": "Saharah",
+		"00730502": "Sterling",
+		"013e0502": "Chester",
+		"01540502": "Moe",
+		"015d0502": "Violet",
+		"026e0e02": "Luigi - Soccer",
+		"043d1b02": "Noah",
+		"04b61d02": "Dee Jay",
+		"04fc0f02": "Rudy"
 	}
 }

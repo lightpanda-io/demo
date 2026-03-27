@@ -4,21 +4,21 @@
 		"character": "Paolo",
 		"name": "Paolo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03280001-02eb0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03280001-02eb0502.png",
 		"tail": "02eb0502"
 	},
 	"next": "02e90502.html",
 	"prev": "018e0502.html",
 	"list": {
-		"01060502": "Hamphrey",
-		"01510502": "Rooney",
-		"02670102": "Waluigi",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"02f00502": "Sylvana",
-		"03a40002": "Terry",
-		"03bc0502": "Niko",
-		"04220002": "Steve",
-		"043c1302": "Sylux",
-		"04f01d02": "Ingrid"
+		"00310002": "Mega Man",
+		"00420302": "Pink Yarn Yoshi",
+		"004d0502": "Pascal",
+		"00bb0502": "Ozzie",
+		"01200502": "Kody",
+		"01b20502": "Annalise",
+		"027a0e02": "Daisy - Tennis",
+		"03030502": "Julia",
+		"03100502": "Gonzo",
+		"03190502": "Rilla"
 	}
 }

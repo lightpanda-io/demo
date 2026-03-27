@@ -4,21 +4,21 @@
 		"character": "Sylvia",
 		"name": "Sylvia",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03d70001-01b40502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03d70001-01b40502.png",
 		"tail": "01b40502"
 	},
 	"next": "00d70502.html",
 	"prev": "03a30002.html",
 	"list": {
-		"00620502": "Sheldon",
-		"00680502": "Kabuki",
-		"006a0502": "Jitters",
-		"01050502": "Gladys",
-		"01b10502": "Ribbot",
-		"01c90502": "OHare",
-		"02b70e02": "Rosalina - Golf",
-		"035d0302": "Poochy",
-		"043e1b02": "Mio",
-		"04b01d02": "Chun-Li"
+		"00530502": "Lyle",
+		"00f70502": "Pecan",
+		"00fe0502": "Vic",
+		"015d0502": "Violet",
+		"018e0502": "Pashmina",
+		"023e0302": "Mega Yarn Yoshi",
+		"02960e02": "Bowser - Soccer",
+		"03100502": "Gonzo",
+		"034d0902": "Link - Twilight Princess",
+		"03701202": "Tiki"
 	}
 }

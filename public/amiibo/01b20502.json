@@ -4,21 +4,21 @@
 		"character": "Annalise",
 		"name": "Annalise",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03ad0001-01b20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03ad0001-01b20502.png",
 		"tail": "01b20502"
 	},
 	"next": "003d0102.html",
 	"prev": "03d70502.html",
 	"list": {
-		"00200002": "Dark Pit",
-		"00310002": "Mega Man",
-		"008f0502": "Jeremiah",
-		"01470502": "Tammi",
-		"01570502": "Astrid",
-		"01af0502": "Zucker",
-		"02580002": "Mega Man - Gold Edition",
-		"02b00e02": "Birdo - Baseball",
-		"038b0002": "Simon",
-		"04220002": "Steve"
+		"00150002": "Bowser Jr.",
+		"00160002": "Toon Link",
+		"00170002": "Sheik",
+		"00ca0502": "Phoebe",
+		"00d10502": "Peck",
+		"00fa0502": "Camofrog",
+		"01cd0502": "Grizzly",
+		"03870002": "Pokemon Trainer",
+		"041c0402": "Smallfry",
+		"04fc0f02": "Rudy"
 	}
 }

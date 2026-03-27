@@ -1,0 +1,24 @@
+{
+	"amiibo": {
+		"amiiboSeries": "Kirby Air Riders",
+		"character": "Meta Knight",
+		"name": "Meta Knight (\u0026 Shadow Star)",
+		"gameSeries": "Kirby",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f010000-04c61e03.png",
+		"tail": "04c61e03"
+	},
+	"next": "01be0502.html",
+	"prev": "00270002.html",
+	"list": {
+		"008a0502": "Yuka",
+		"01460502": "Stinky",
+		"01650502": "Caroline",
+		"01900502": "Lolly",
+		"01b80502": "Pompom",
+		"01d40502": "Isabelle - Character Parfait",
+		"03560902": "Zelda",
+		"035c0902": "Bokoblin",
+		"03a0ff02": "Toad - Power Up Band",
+		"04150402": "Inkling - Yellow"
+	}
+}

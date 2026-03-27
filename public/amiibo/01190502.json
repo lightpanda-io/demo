@@ -4,21 +4,21 @@
 		"character": "Don Resetti",
 		"name": "Don Resetti - Without Hat",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018f0101-01190502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018f0101-01190502.png",
 		"tail": "01190502"
 	},
 	"next": "03ca0502.html",
 	"prev": "01280502.html",
 	"list": {
-		"016e0502": "Francine",
-		"01c90502": "OHare",
+		"00700502": "Octavian",
+		"007b0502": "Bangle",
+		"007c0502": "Phil",
+		"007d0502": "Monique",
+		"00970502": "Benjamin",
+		"01d30502": "Robin",
 		"02790e02": "Daisy - Baseball",
-		"03060502": "Admiral",
-		"03560902": "Zelda",
-		"03810002": "Ice Climbers",
-		"03a40002": "Terry",
-		"03a60102": "Mario - Cat",
-		"041a0902": "Ganondorf - Tears of the Kingdom",
-		"04251902": "Tatsuhisa “Luke” Kamijō"
+		"02ae0e02": "Baby Luigi - Horse Racing",
+		"03750d02": "Detective Pikachu",
+		"04e51d02": "C. Viper"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Niko",
 		"name": "Niko",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_0a070001-03bc0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a070001-03bc0502.png",
 		"tail": "03bc0502"
 	},
 	"next": "01cd0502.html",
 	"prev": "00800502.html",
 	"list": {
-		"002a0002": "Robin",
-		"016b0502": "Soleil",
-		"019d0502": "Peewee",
-		"01c20502": "Hippeux",
-		"02510002": "Lucas",
-		"02a60e02": "Baby Mario - Baseball",
-		"03d70502": "Faith",
-		"040d0f02": "Ena",
-		"04d61d02": "Dee Jay",
-		"04d71d02": "Manon"
+		"00380102": "Toad",
+		"003e0402": "Inkling Girl",
+		"00670502": "Alli",
+		"00880502": "Bella",
+		"02700e02": "Luigi - Tennis",
+		"030d0502": "Cashmere",
+		"03aa0502": "Isabelle",
+		"03b70502": "Saharah",
+		"03cc0502": "Marlo",
+		"04ec1d02": "Elena"
 	}
 }

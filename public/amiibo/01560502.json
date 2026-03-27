@@ -4,21 +4,21 @@
 		"character": "Hamlet",
 		"name": "Hamlet",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_037e0001-01560502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_037e0001-01560502.png",
 		"tail": "01560502"
 	},
 	"next": "00fd0502.html",
 	"prev": "03030502.html",
 	"list": {
-		"00340102": "Mario",
-		"00ab0502": "Labelle",
-		"01700502": "Isabelle - Dress",
-		"01b40502": "Sylvia",
-		"01c20502": "Hippeux",
-		"02860e02": "Wario - Horse Racing",
-		"02e90502": "June",
-		"03a80502": "Tom Nook",
-		"03be0502": "Tom Nook - Coat",
-		"04ec1d02": "Elena"
+		"00a70502": "Walker",
+		"01100502": "Phyllis",
+		"011b0502": "Franklin",
+		"02e10f02": "One-Eyed Rathalos and Rider - Male",
+		"02f60502": "Stu",
+		"03070502": "Ellie",
+		"03770402": "Marina",
+		"03981702": "Daijobu",
+		"04101802": "Palico",
+		"04dc1d02": "Cammy"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Toby",
 		"name": "Toby",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04a80101-031e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04a80101-031e0502.png",
 		"tail": "031e0502"
 	},
 	"next": "00d90502.html",
 	"prev": "04360402.html",
 	"list": {
-		"001a0002": "Wario",
-		"00510502": "Luna",
-		"00c90502": "Kidd",
-		"01030502": "Pango",
-		"01ab0502": "Rod",
-		"02610402": "Inkling Squid - Orange",
-		"02b90e02": "Metal Mario - Soccer",
-		"036b0402": "Inkling Squid - Neon Purple",
-		"04d21d02": "Juri",
-		"04e71d02": "Ingrid"
+		"00060002": "Samus",
+		"00220002": "Mii Swordfighter",
+		"00820502": "Mint",
+		"00ea0502": "Beau",
+		"00ef0502": "Agnes",
+		"011f0502": "Tabby",
+		"01310502": "Friga",
+		"01780502": "Resetti - Without Hat",
+		"028a0e02": "Waluigi - Golf",
+		"03bb0502": "Lottie - Island"
 	}
 }

@@ -4,21 +4,20 @@
 		"character": "Diana",
 		"name": "Diana",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02de0001-009c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02de0001-009c0502.png",
 		"tail": "009c0502"
 	},
 	"next": "03961702.html",
 	"prev": "01940502.html",
 	"list": {
-		"00510502": "Luna",
-		"00540502": "Lottie",
-		"00bd0502": "Lucha",
-		"01810502": "Stitches",
-		"01860502": "Katt",
-		"02570c02": "Waddle Dee",
-		"035f1102": "Pikmin",
-		"03781402": "Solaire of Astora",
-		"03920a02": "Shovel Knight - Gold Edition",
-		"03af0502": "Mabel"
+		"006b0502": "Gigi",
+		"010d0502": "Blathers",
+		"01160502": "Grams",
+		"01500502": "Bree",
+		"01ba0502": "Becky",
+		"02400502": "K. K. Slider",
+		"03190502": "Rilla",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04de1d02": "A.K.I"
 	}
 }

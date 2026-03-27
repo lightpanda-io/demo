@@ -4,21 +4,21 @@
 		"character": "K.K. Slider",
 		"name": "K. K. Slider",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01820000-02400502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01820000-02400502.png",
 		"tail": "02400502"
 	},
 	"next": "00510502.html",
 	"prev": "01c40502.html",
 	"list": {
-		"00130002": "Rosalina \u0026 Luma",
-		"00390102": "Bowser",
-		"00f20502": "Jay",
-		"01280502": "Cousteau",
-		"023a0702": "Hammer Slam Bowser",
-		"02810e02": "Yoshi - Horse Racing",
-		"030a0502": "Candi",
-		"034f0902": "8-Bit Link",
-		"03b00502": "Sable",
-		"03c90502": "Ione"
+		"007a0502": "Snake",
+		"00850502": "Gruff",
+		"00c60502": "Pate",
+		"00f40502": "Flip",
+		"01d00502": "Iggly",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03770402": "Marina",
+		"038e0402": "Octoling Girl",
+		"03bd0502": "Wardell",
+		"03c60502": "Raymond"
 	}
 }

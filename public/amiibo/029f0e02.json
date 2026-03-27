@@ -4,21 +4,21 @@
 		"character": "Bowser Jr.",
 		"name": "Bowser Jr. - Horse Racing",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09ca0501-029f0e02.png",
 		"tail": "029f0e02"
 	},
 	"next": "016c0502.html",
 	"prev": "01200502.html",
 	"list": {
-		"00830502": "Pudge",
-		"00840502": "Midge",
-		"009a0502": "Bunnie",
-		"00ce0502": "Blaire",
-		"00d70502": "Whitney",
-		"00e50502": "Mathilda",
-		"01320502": "Ricky",
-		"014d0502": "Joey",
-		"01880502": "Peaches",
-		"03a70102": "Peach - Cat"
+		"000e0002": "Zelda",
+		"00170002": "Sheik",
+		"00340102": "Mario",
+		"006b0502": "Gigi",
+		"01550502": "Flora",
+		"01610502": "Cube",
+		"030f0502": "Norma",
+		"03130502": "Olive",
+		"03500902": "Toon Link - The Wind Waker",
+		"04d01d02": "Chun-Li"
 	}
 }

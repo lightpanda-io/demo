@@ -4,21 +4,21 @@
 		"character": "Mewtwo",
 		"name": "Mewtwo",
 		"gameSeries": "Pokemon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19960000-023d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_19960000-023d0002.png",
 		"tail": "023d0002"
 	},
 	"next": "00a00502.html",
 	"prev": "02b50e02.html",
 	"list": {
-		"00920502": "Truffles",
-		"00c20502": "Kitt",
-		"01410502": "Greta",
-		"01740502": "Celeste",
-		"019c0502": "Naomi",
-		"01b40502": "Sylvia",
-		"025c0d02": "Shadow Mewtwo",
-		"03b40502": "Flick",
-		"040d0f02": "Ena",
-		"04281902": "Roa Kirishima"
+		"00330002": "R.O.B. - NES",
+		"00450502": "Tom Nook",
+		"013a0502": "Wart Jr.",
+		"01b50502": "Jacques",
+		"023e0302": "Mega Yarn Yoshi",
+		"02720e02": "Luigi - Horse Racing",
+		"02770e02": "Peach - Horse Racing",
+		"02ba0e02": "Metal Mario - Baseball",
+		"02f60502": "Stu",
+		"04ce1d02": "Jamie"
 	}
 }

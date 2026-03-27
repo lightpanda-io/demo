@@ -4,21 +4,21 @@
 		"character": "Zangief",
 		"name": "Zangief",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34cf0001-04da1d02.png",
 		"tail": "04da1d02"
 	},
 	"next": "04d41d02.html",
 	"prev": "04d01d02.html",
 	"list": {
-		"007f0502": "Samson",
-		"00970502": "Benjamin",
-		"00b50502": "Blanca",
-		"00cc0502": "Cookie",
-		"00fe0502": "Vic",
-		"01c70502": "Maelle",
-		"023e0302": "Mega Yarn Yoshi",
-		"035b0902": "Revali",
-		"03640002": "Bayonetta - Player 2",
-		"043f1c02": "Mario - My Mario Wooden Blocks"
+		"00710502": "Winnie",
+		"007e0502": "Nate",
+		"01790502": "Timmy - Suit",
+		"019e0502": "Tammy",
+		"02420502": "Tom Nook",
+		"02600402": "Inkling Boy - Purple",
+		"02930e02": "Diddy Kong - Tennis",
+		"03a60102": "Mario - Cat",
+		"03d70502": "Faith",
+		"043e1b02": "Mio"
 	}
 }

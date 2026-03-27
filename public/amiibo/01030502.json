@@ -4,21 +4,21 @@
 		"character": "Pango",
 		"name": "Pango",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02020001-01030502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02020001-01030502.png",
 		"tail": "01030502"
 	},
 	"next": "00330002.html",
 	"prev": "00160002.html",
 	"list": {
-		"00140002": "Bowser",
-		"00570502": "Curt",
-		"01110502": "Pete",
-		"01530502": "Skye",
-		"01800502": "Goldie",
-		"01b70502": "Doc",
-		"024d0502": "Timmy \u0026 Tommy",
-		"035f1102": "Pikmin",
-		"03900402": "Octoling Octopus",
-		"04411c02": "Peach - My Mario Wooden Blocks"
+		"00c20502": "Kitt",
+		"010f0502": "Pelly",
+		"01210502": "Miranda",
+		"01550502": "Flora",
+		"024a0502": "Kicks",
+		"02640102": "Donkey Kong",
+		"0430ff02": "Golden - Power Up Band",
+		"04370402": "Marie - Alterna",
+		"04401c02": "Luigi - My Mario Wooden Blocks",
+		"04a40902": "Sidon"
 	}
 }

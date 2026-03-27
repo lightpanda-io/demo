@@ -4,21 +4,21 @@
 		"character": "Candi",
 		"name": "Candi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04140001-030a0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04140001-030a0502.png",
 		"tail": "030a0502"
 	},
 	"next": "031b0502.html",
 	"prev": "01bc0502.html",
 	"list": {
-		"01110502": "Pete",
-		"013b0502": "Hazel",
-		"01740502": "Celeste",
-		"017d0502": "Gulliver",
-		"02a90e02": "Baby Mario - Horse Racing",
-		"03730102": "Bowser - Wedding",
-		"03770402": "Marina",
-		"03a70102": "Peach - Cat",
-		"03b20502": "K.K. Slider",
-		"03b90502": "Gulliver"
+		"00770502": "Poppy",
+		"00cc0502": "Cookie",
+		"00f10502": "Bettina",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03150502": "Buzz",
+		"03661302": "Metroid",
+		"03951702": "Yabe",
+		"04b51d02": "E. Honda",
+		"04b71d02": "Manon",
+		"04f31d02": "Mai"
 	}
 }

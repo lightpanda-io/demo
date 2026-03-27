@@ -4,21 +4,21 @@
 		"character": "Luke",
 		"name": "Luke",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34c20001-04cd1d02.png",
 		"tail": "04cd1d02"
 	},
 	"next": "04ce1d02.html",
 	"prev": "04e71d02.html",
 	"list": {
-		"001c0002": "Falco",
-		"00380102": "Toad",
-		"00870502": "Clyde",
-		"00b20502": "Shrunk",
-		"00c70502": "Vladimir",
-		"01580502": "Monty",
-		"019d0502": "Peewee",
-		"029e0e02": "Bowser Jr. - Golf",
-		"030b0502": "Leopold",
-		"04350402": "Big Man"
+		"000e0002": "Zelda",
+		"01050502": "Gladys",
+		"01060502": "Hamphrey",
+		"01650502": "Caroline",
+		"01cc0502": "Frobert",
+		"02440502": "Lottie",
+		"028a0e02": "Waluigi - Golf",
+		"02c10e02": "Pink Gold Peach - Golf",
+		"03170502": "Ike",
+		"04d81d02": "Marisa"
 	}
 }

@@ -2,23 +2,23 @@
 	"amiibo": {
 		"amiiboSeries": "Kirby Air Riders",
 		"character": "Kirby",
-		"name": "Kirby",
+		"name": "Kirby (\u0026 Warp Star)",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f000000-04c41e03.png",
 		"tail": "04c41e03"
 	},
 	"next": "04c91e03.html",
 	"prev": "042e0002.html",
 	"list": {
-		"00020002": "Yoshi",
-		"002f0002": "Duck Hunt",
-		"00af0502": "Tommy - Uniform",
+		"00120002": "Captain Falcon",
+		"00ef0502": "Agnes",
+		"01000502": "Drift",
 		"01860502": "Katt",
-		"01ca0502": "Gayle",
-		"025e0402": "Marie",
-		"030f0502": "Norma",
-		"03880002": "Chrom",
-		"03951702": "Yabe",
-		"03961702": "Hayakawa"
+		"01960502": "Frita",
+		"03110502": "Sprocket",
+		"03160502": "Cleo",
+		"03500902": "Toon Link - The Wind Waker",
+		"038f0402": "Octoling Boy",
+		"04380402": "Pearl - Side Order"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Dee Jay",
 		"name": "Dee Jay",
 		"gameSeries": "Street Fighter",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_34cb0001-04d61d02.png",
 		"tail": "04d61d02"
 	},
 	"next": "04dc1d02.html",
 	"prev": "04d21d02.html",
 	"list": {
-		"000c0002": "Luigi",
-		"000d0002": "Diddy Kong",
-		"003a0202": "Chibi Robo",
-		"00a10502": "Cyrano",
-		"00b30502": "Don Resetti",
-		"00d50502": "Rodney",
-		"00da0502": "Groucho",
-		"00e10502": "Timbra",
-		"01020502": "Marcel",
-		"03840002": "Squirtle"
+		"00d20502": "Olivia",
+		"00fc0502": "Chops",
+		"01010502": "Vesta",
+		"011a0502": "Isabelle - Kimono",
+		"019c0502": "Naomi",
+		"027d0e02": "Yoshi - Soccer",
+		"02e40f02": "Rathian and Cheval",
+		"034f0902": "8-Bit Link",
+		"036e0a02": "King Knight",
+		"0431ff02": "Donkey Kong - Power Up Band"
 	}
 }

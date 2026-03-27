@@ -4,21 +4,21 @@
 		"character": "Vic",
 		"name": "Vic",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_02520001-00fe0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02520001-00fe0502.png",
 		"tail": "00fe0502"
 	},
-	"next": "042b1802.html",
+	"next": "040c0f02.html",
 	"prev": "01d00502.html",
 	"list": {
-		"009e0502": "Muffy",
-		"00ae0502": "Katie",
-		"00d50502": "Rodney",
-		"01120502": "Mabel",
-		"01b00502": "Peggy",
-		"02460502": "Cyrus",
-		"027b0e02": "Daisy - Golf",
-		"03b10502": "Label",
-		"04190902": "Zelda - Tears of the Kingdom",
-		"04bc1d02": "Cammy"
+		"00000002": "Mario",
+		"003a0202": "Chibi Robo",
+		"00ef0502": "Agnes",
+		"00f90502": "Alice",
+		"01440502": "Klaus",
+		"01b20502": "Annalise",
+		"01ce0502": "Cally",
+		"02550c02": "Meta Knight",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)",
+		"04d71d02": "Manon"
 	}
 }

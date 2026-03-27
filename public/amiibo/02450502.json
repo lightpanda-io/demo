@@ -4,21 +4,21 @@
 		"character": "Reese",
 		"name": "Reese",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018a0000-02450502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018a0000-02450502.png",
 		"tail": "02450502"
 	},
 	"next": "00e70502.html",
 	"prev": "01970502.html",
 	"list": {
-		"001d0002": "Zero Suit Samus",
-		"00be0502": "Fuchsia",
-		"01480502": "Tucker",
-		"02460502": "Cyrus",
-		"02790e02": "Daisy - Baseball",
-		"03b50502": "Daisy Mae",
-		"04200002": "Kazuya",
-		"04271902": "Romin Kirishima",
-		"043c1302": "Sylux",
-		"04d41d02": "Dhalsim"
+		"00280002": "King Dedede",
+		"01440502": "Klaus",
+		"02380602": "8-Bit Mario Classic Color",
+		"026d0e02": "Mario - Horse Racing",
+		"02720e02": "Luigi - Horse Racing",
+		"02830e02": "Wario - Baseball",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"034e0902": "Link - Skyward Sword",
+		"03900402": "Octoling Octopus",
+		"040c0f02": "Razewing Ratha"
 	}
 }

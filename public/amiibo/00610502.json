@@ -4,21 +4,21 @@
 		"character": "Tiffany",
 		"name": "Tiffany",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_049b0001-00610502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_049b0001-00610502.png",
 		"tail": "00610502"
 	},
 	"next": "029e0e02.html",
 	"prev": "03af0502.html",
 	"list": {
-		"00050002": "Fox",
-		"00430302": "Light Blue Yarn Yoshi",
-		"00a30502": "Cole",
-		"00a60502": "Molly",
-		"00c30502": "Tom",
-		"00fe0502": "Vic",
-		"01450502": "Daisy",
-		"01820502": "Pinky",
-		"02850e02": "Wario - Golf",
-		"02b00e02": "Birdo - Baseball"
+		"00470502": "Sable",
+		"00740502": "Bonbon",
+		"00770502": "Poppy",
+		"00930502": "Eugene",
+		"014a0502": "Gaston",
+		"018e0502": "Pashmina",
+		"026d0e02": "Mario - Horse Racing",
+		"03180502": "Tasha",
+		"03ca0502": "Tiansheng",
+		"04cf1d02": "Kimberly"
 	}
 }

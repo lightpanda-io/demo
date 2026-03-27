@@ -4,21 +4,20 @@
 		"character": "Peach",
 		"name": "Peach - Cat",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00020100-03a70102.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020100-03a70102.png",
 		"tail": "03a70102"
 	},
 	"next": "03150502.html",
 	"prev": "02fc0502.html",
 	"list": {
-		"00560502": "Fauna",
-		"00cf0502": "Avery",
-		"01860502": "Katt",
-		"01a70502": "Pietro",
-		"02ff0502": "Plucky",
-		"037b0002": "King K. Rool",
-		"03a30002": "Banjo \u0026 Kazooie",
-		"04230002": "Alex",
-		"04c01d02": "Akuma",
-		"04d11d02": "Guile"
+		"000f0002": "Little Mac",
+		"004a0502": "Joan",
+		"01210502": "Miranda",
+		"01360502": "Drago",
+		"01650502": "Caroline",
+		"01c20502": "Hippeux",
+		"02810e02": "Yoshi - Horse Racing",
+		"03630002": "Corrin - Player 2",
+		"04d71d02": "Manon"
 	}
 }

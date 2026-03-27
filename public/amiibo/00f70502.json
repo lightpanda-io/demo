@@ -4,21 +4,21 @@
 		"character": "Pecan",
 		"name": "Pecan",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04e00001-00f70502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04e00001-00f70502.png",
 		"tail": "00f70502"
 	},
 	"next": "00110002.html",
 	"prev": "00930502.html",
 	"list": {
-		"005e0502": "Lopez",
-		"006d0502": "Marcie",
-		"009c0502": "Diana",
-		"00d10502": "Peck",
-		"01340502": "Hans",
-		"02ad0e02": "Baby Luigi - Golf",
-		"031b0502": "Étoile",
-		"03870002": "Pokemon Trainer",
-		"03cd0502": "Petri",
-		"04a91d02": "Ken"
+		"001f0002": "Palutena",
+		"00430302": "Light Blue Yarn Yoshi",
+		"010e0502": "Tom Nook - Jacket",
+		"01180502": "Digby - Raincoat",
+		"013e0502": "Chester",
+		"03730102": "Bowser - Wedding",
+		"03a60102": "Mario - Cat",
+		"03d30502": "Rio",
+		"04271902": "Romin Kirishima",
+		"04c61e03": "Meta Knight (\u0026 Shadow Star)"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Piranha Plant",
 		"name": "Piranha Plant",
 		"gameSeries": "Super Mario",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00240000-038d0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00240000-038d0002.png",
 		"tail": "038d0002"
 	},
 	"next": "02f50502.html",
 	"prev": "01860502.html",
 	"list": {
-		"00c30502": "Tom",
-		"00cd0502": "Sly",
-		"00d40502": "Carmen",
-		"01a40502": "Elise",
-		"02610402": "Inkling Squid - Orange",
-		"02b10e02": "Birdo - Tennis",
-		"040e0f02": "Tsukino",
-		"04291902": "Nail Saionji",
-		"04b51d02": "E. Honda",
-		"04c01d02": "Akuma"
+		"00120002": "Captain Falcon",
+		"00310002": "Mega Man",
+		"005a0502": "Cheri",
+		"00850502": "Gruff",
+		"008e0502": "Amelia",
+		"02540c02": "Kirby",
+		"03661302": "Metroid",
+		"03b80502": "Harvey",
+		"03c00502": "Sherb",
+		"03d40502": "Frett"
 	}
 }

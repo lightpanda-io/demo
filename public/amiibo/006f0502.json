@@ -4,21 +4,21 @@
 		"character": "Shari",
 		"name": "Shari",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04000001-006f0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04000001-006f0502.png",
 		"tail": "006f0502"
 	},
 	"next": "004a0502.html",
 	"prev": "00380102.html",
 	"list": {
-		"00f50502": "Hugh",
-		"014d0502": "Joey",
-		"01750502": "Tommy - Suit",
-		"01ae0502": "Celia",
-		"01c00502": "Gloria",
-		"02430502": "Digby",
-		"028f0e02": "Donkey Kong - Golf",
-		"02a00e02": "Boo - Soccer",
-		"03bc0502": "Niko",
-		"04401c02": "Luigi - My Mario Wooden Blocks"
+		"006a0502": "Jitters",
+		"006b0502": "Gigi",
+		"00860502": "Flurry",
+		"00a10502": "Cyrano",
+		"00fd0502": "Charlise",
+		"02720e02": "Luigi - Horse Racing",
+		"02910e02": "Diddy Kong - Soccer",
+		"036d0a02": "Specter Knight",
+		"03a90502": "Timmy \u0026 Tommy",
+		"04241902": "Yuga Ohdo"
 	}
 }

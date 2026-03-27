@@ -4,20 +4,21 @@
 		"character": "Vesta",
 		"name": "Vesta",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04c50001-01010502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04c50001-01010502.png",
 		"tail": "01010502"
 	},
 	"next": "01350502.html",
 	"prev": "01b50502.html",
 	"list": {
-		"007e0502": "Nate",
-		"00840502": "Midge",
-		"00930502": "Eugene",
-		"01bb0502": "Rizzo",
-		"02410502": "Mabel",
-		"02640102": "Donkey Kong",
-		"03951702": "Yabe",
-		"03b20502": "K.K. Slider",
-		"03cf0502": "Quinn"
+		"00360102": "Peach",
+		"018e0502": "Pashmina",
+		"01940502": "Queenie",
+		"01a30502": "Rory",
+		"02670102": "Waluigi",
+		"02820e02": "Wario - Soccer",
+		"02920e02": "Diddy Kong - Baseball",
+		"02a20e02": "Boo - Tennis",
+		"03ab0502": "Orville",
+		"043f1c02": "Mario - My Mario Wooden Blocks"
 	}
 }

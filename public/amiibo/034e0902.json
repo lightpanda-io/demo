@@ -4,21 +4,21 @@
 		"character": "Link",
 		"name": "Link - Skyward Sword",
 		"gameSeries": "The Legend of Zelda",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-034e0902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-034e0902.png",
 		"tail": "034e0902"
 	},
 	"next": "005a0502.html",
 	"prev": "02b40e02.html",
 	"list": {
-		"00c90502": "Kidd",
-		"01140502": "Wendell",
-		"019b0502": "Rudy",
-		"026d0e02": "Mario - Horse Racing",
-		"02e90502": "June",
-		"03880002": "Chrom",
-		"03ab0502": "Orville",
-		"03c30502": "Audie",
-		"04200002": "Kazuya",
-		"04291902": "Nail Saionji"
+		"00930502": "Eugene",
+		"009f0502": "Henry",
+		"00ec0502": "Bud",
+		"017a0502": "Lottie - Black Skirt And Bow",
+		"01b10502": "Ribbot",
+		"023e0302": "Mega Yarn Yoshi",
+		"02a60e02": "Baby Mario - Baseball",
+		"03060502": "Admiral",
+		"039dff02": "Peach - Power Up Band",
+		"04261902": "Gakuto Sōgetsu"
 	}
 }

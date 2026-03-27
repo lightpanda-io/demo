@@ -4,21 +4,21 @@
 		"character": "Billy",
 		"name": "Billy",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03580001-02fa0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03580001-02fa0502.png",
 		"tail": "02fa0502"
 	},
 	"next": "00800502.html",
 	"prev": "02f00502.html",
 	"list": {
-		"00320002": "Pac-Man",
-		"00740502": "Bonbon",
-		"01070502": "Freya",
-		"012e0502": "Spork/Crackle",
-		"013b0502": "Hazel",
-		"016f0502": "Chrissy",
-		"02800e02": "Yoshi - Golf",
-		"03601202": "Alm",
-		"04390402": "Marina - Side Order",
-		"04b91d02": "JP"
+		"00be0502": "Fuchsia",
+		"00d30502": "Cesar",
+		"01150502": "Cyrus",
+		"012b0502": "Canberra",
+		"016e0502": "Francine",
+		"01700502": "Isabelle - Dress",
+		"01740502": "Celeste",
+		"019d0502": "Peewee",
+		"02670102": "Waluigi",
+		"04da1d02": "Zangief"
 	}
 }

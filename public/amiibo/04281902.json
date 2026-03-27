@@ -4,20 +4,21 @@
 		"character": "Roa Kirishima",
 		"name": "Roa Kirishima",
 		"gameSeries": "Yu-Gi-Oh!",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38440001-04281902.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38440001-04281902.png",
 		"tail": "04281902"
 	},
 	"next": "01820502.html",
 	"prev": "03781402.html",
 	"list": {
-		"00b60502": "Nat",
-		"01450502": "Daisy",
-		"01690502": "Maple",
-		"01d60502": "Stitches - Amiibo Festival",
-		"02430502": "Digby",
-		"02a20e02": "Boo - Tennis",
-		"03810002": "Ice Climbers",
-		"043e1b02": "Mio",
-		"04a91d02": "Ken"
+		"009b0502": "Clay",
+		"01190502": "Don Resetti - Without Hat",
+		"01570502": "Astrid",
+		"01780502": "Resetti - Without Hat",
+		"01970502": "Tex",
+		"01a30502": "Rory",
+		"030c0502": "Spike",
+		"038d0002": "Piranha Plant",
+		"03b50502": "Daisy Mae",
+		"04ee1d02": "C. Viper"
 	}
 }

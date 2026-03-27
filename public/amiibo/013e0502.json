@@ -4,21 +4,21 @@
 		"character": "Chester",
 		"name": "Chester",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_028c0001-013e0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_028c0001-013e0502.png",
 		"tail": "013e0502"
 	},
 	"next": "02ae0e02.html",
 	"prev": "00620502.html",
 	"list": {
-		"00440502": "Isabelle",
-		"00650502": "Kiki",
-		"00720502": "Knox",
-		"00900502": "Cherry",
-		"00c40502": "Tipper",
-		"010a0502": "Big Top",
-		"013c0502": "Beardo",
-		"01a10502": "Elmer",
-		"02990e02": "Bowser - Golf",
-		"03820002": "Inkling"
+		"00130002": "Rosalina \u0026 Luma",
+		"00dc0502": "Alfonso",
+		"00e90502": "Kitty",
+		"01540502": "Moe",
+		"019f0502": "Olaf",
+		"01ca0502": "Gayle",
+		"02390602": "8-Bit Mario Modern Color",
+		"03590902": "Urbosa",
+		"040d0f02": "Ena",
+		"04d41d02": "Dhalsim"
 	}
 }

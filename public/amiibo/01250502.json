@@ -4,21 +4,21 @@
 		"character": "Mitzi",
 		"name": "Mitzi",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_025e0001-01250502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_025e0001-01250502.png",
 		"tail": "01250502"
 	},
 	"next": "03c70502.html",
 	"prev": "01ac0502.html",
 	"list": {
-		"00080002": "Villager",
-		"00a90502": "Reese",
-		"00fd0502": "Charlise",
-		"010d0502": "Blathers",
-		"02b70e02": "Rosalina - Golf",
-		"034c0902": "Link - Majora's Mask",
-		"03670102": "Goomba",
-		"039bff02": "Mario - Power Up Band",
-		"04421c02": "Yoshi - My Mario Wooden Blocks",
-		"04d01d02": "Chun-Li"
+		"01640502": "Boomer",
+		"02490502": "Resetti",
+		"027a0e02": "Daisy - Tennis",
+		"029b0e02": "Bowser Jr. - Soccer",
+		"02a70e02": "Baby Mario - Tennis",
+		"02fa0502": "Billy",
+		"03010502": "Claude",
+		"03870002": "Pokemon Trainer",
+		"04200002": "Kazuya",
+		"04330402": "Shiver"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Gloria",
 		"name": "Gloria",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03160001-01c00502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03160001-01c00502.png",
 		"tail": "01c00502"
 	},
 	"next": "00a80502.html",
 	"prev": "00690502.html",
 	"list": {
-		"00350102": "Luigi",
+		"00370102": "Yoshi",
 		"00ad0502": "Booker",
-		"01570502": "Astrid",
-		"017e0502": "Redd - Shirt",
-		"024b0502": "Isabelle - Summer Outfit",
-		"02640102": "Donkey Kong",
-		"02880e02": "Waluigi - Baseball",
-		"030b0502": "Leopold",
-		"041b0402": "Octoling - Blue",
-		"04e81d02": "Terry"
+		"012a0502": "Elvis",
+		"01430502": "Diva",
+		"01a40502": "Elise",
+		"026b0e02": "Mario - Tennis",
+		"035d0302": "Poochy",
+		"03d10502": "Zoe",
+		"04190902": "Zelda - Tears of the Kingdom",
+		"04370402": "Marie - Alterna"
 	}
 }

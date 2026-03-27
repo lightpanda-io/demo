@@ -4,21 +4,21 @@
 		"character": "Meta Knight",
 		"name": "Meta Knight",
 		"gameSeries": "Kirby",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f010000-02550c02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f010000-02550c02.png",
 		"tail": "02550c02"
 	},
 	"next": "01b10502.html",
 	"prev": "02ea0502.html",
 	"list": {
-		"000a0002": "Kirby",
-		"001c0002": "Falco",
-		"004c0502": "Digby",
-		"006f0502": "Shari",
-		"01950502": "Fang",
-		"02630102": "Wario",
-		"038a0002": "Snake",
-		"03b40502": "Flick",
-		"04a40902": "Sidon",
-		"04d41d02": "Dhalsim"
+		"00360102": "Peach",
+		"00d20502": "Olivia",
+		"00f40502": "Flip",
+		"01090502": "Agent S",
+		"014a0502": "Gaston",
+		"02600402": "Inkling Boy - Purple",
+		"02890e02": "Waluigi - Tennis",
+		"02fa0502": "Billy",
+		"03060502": "Admiral",
+		"03941702": "Ikari"
 	}
 }

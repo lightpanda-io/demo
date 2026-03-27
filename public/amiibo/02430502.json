@@ -4,21 +4,21 @@
 		"character": "Digby",
 		"name": "Digby",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0000-02430502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018c0000-02430502.png",
 		"tail": "02430502"
 	},
 	"next": "01a20502.html",
 	"prev": "00520502.html",
 	"list": {
-		"00a40502": "Willow",
-		"00f80502": "Drake",
-		"01160502": "Grams",
-		"01320502": "Ricky",
-		"01510502": "Rooney",
-		"01b60502": "Sally",
+		"00930502": "Eugene",
+		"00ea0502": "Beau",
+		"015e0502": "Frank",
+		"01aa0502": "Apple",
+		"01b00502": "Peggy",
+		"03100502": "Gonzo",
+		"035a0902": "Mipha",
 		"03750d02": "Detective Pikachu",
-		"04271902": "Romin Kirishima",
-		"04390402": "Marina - Side Order",
-		"04c91e03": "Bandana Waddle Dee"
+		"03a40002": "Terry",
+		"03c50502": "Judy"
 	}
 }

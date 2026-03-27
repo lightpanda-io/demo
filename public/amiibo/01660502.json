@@ -4,21 +4,21 @@
 		"character": "Sparro",
 		"name": "Sparro",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_023f0001-01660502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_023f0001-01660502.png",
 		"tail": "01660502"
 	},
 	"next": "03520902.html",
 	"prev": "00110002.html",
 	"list": {
-		"00060002": "Samus",
-		"00350102": "Luigi",
-		"00790502": "Deena",
-		"01080502": "Kid Cat",
-		"014d0502": "Joey",
-		"01cc0502": "Frobert",
-		"025a0002": "Corrin",
-		"02990e02": "Bowser - Golf",
-		"02ef0502": "Huck",
-		"02f80502": "Jacob"
+		"00010002": "Peach",
+		"00610502": "Tiffany",
+		"00b60502": "Nat",
+		"01990502": "Bones",
+		"019d0502": "Peewee",
+		"01bf0502": "Kevin",
+		"023d0002": "Mewtwo",
+		"03961702": "Hayakawa",
+		"043f1c02": "Mario - My Mario Wooden Blocks",
+		"04411c02": "Peach - My Mario Wooden Blocks"
 	}
 }

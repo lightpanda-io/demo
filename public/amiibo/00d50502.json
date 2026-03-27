@@ -4,21 +4,21 @@
 		"character": "Rodney",
 		"name": "Rodney",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_03810001-00d50502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03810001-00d50502.png",
 		"tail": "00d50502"
 	},
 	"next": "02a50e02.html",
 	"prev": "02710e02.html",
 	"list": {
-		"00680502": "Kabuki",
-		"00bd0502": "Lucha",
-		"01160502": "Grams",
-		"025d0402": "Callie",
-		"02bb0e02": "Metal Mario - Tennis",
+		"00210002": "Mii Brawler",
+		"01230502": "Paula",
+		"02990e02": "Bowser - Golf",
 		"02ed0502": "Stella",
-		"038f0402": "Octoling Boy",
-		"03b60502": "Kicks",
-		"04a40902": "Sidon",
-		"04d11d02": "Guile"
+		"02ff0502": "Plucky",
+		"03ab0502": "Orville",
+		"03d60502": "Roswell",
+		"043e1b02": "Mio",
+		"04d61d02": "Dee Jay",
+		"04f01d02": "Ingrid"
 	}
 }

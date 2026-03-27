@@ -4,21 +4,21 @@
 		"character": "Ikari",
 		"name": "Ikari",
 		"gameSeries": "Power Pros",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_38010001-03941702.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_38010001-03941702.png",
 		"tail": "03941702"
 	},
 	"next": "03500902.html",
 	"prev": "01930502.html",
 	"list": {
-		"001c0002": "Falco",
-		"00330002": "R.O.B. - NES",
+		"00340102": "Mario",
 		"00680502": "Kabuki",
-		"00770502": "Poppy",
-		"009f0502": "Henry",
+		"00c90502": "Kidd",
+		"00e90502": "Kitty",
 		"01000502": "Drift",
-		"01660502": "Sparro",
-		"028d0e02": "Donkey Kong - Baseball",
-		"02940e02": "Diddy Kong - Golf",
-		"039fff02": "Yoshi - Power Up Band"
+		"01ab0502": "Rod",
+		"02570c02": "Waddle Dee",
+		"02eb0502": "Paolo",
+		"04140902": "Zelda \u0026 Loftwing",
+		"04340402": "Frye"
 	}
 }

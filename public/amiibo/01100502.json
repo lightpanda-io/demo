@@ -4,21 +4,21 @@
 		"character": "Phyllis",
 		"name": "Phyllis",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01a10001-01100502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01a10001-01100502.png",
 		"tail": "01100502"
 	},
 	"next": "03c10502.html",
 	"prev": "02a60e02.html",
 	"list": {
-		"00370102": "Yoshi",
-		"00a30502": "Cole",
-		"00fe0502": "Vic",
-		"014f0502": "Buck",
-		"02c00e02": "Pink Gold Peach - Tennis",
-		"03a40002": "Terry",
-		"042a1902": "Asana Mutsuba",
-		"04340402": "Frye",
-		"04a60902": "Yunobo",
-		"04d31d02": "Blanka"
+		"00040002": "Link",
+		"006b0502": "Gigi",
+		"00e40502": "Teddy",
+		"015e0502": "Frank",
+		"01b60502": "Sally",
+		"02410502": "Mabel",
+		"02440502": "Lottie",
+		"03060502": "Admiral",
+		"03bc0502": "Niko",
+		"04b81d02": "Marisa"
 	}
 }

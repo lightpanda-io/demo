@@ -4,21 +4,21 @@
 		"character": "Digby",
 		"name": "Digby",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_018c0001-004c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018c0001-004c0502.png",
 		"tail": "004c0502"
 	},
 	"next": "037c0002.html",
 	"prev": "03cf0502.html",
 	"list": {
-		"00240002": "Charizard",
-		"002c0002": "Ness",
-		"003a0202": "Chibi Robo",
-		"006a0502": "Jitters",
-		"008b0502": "Lionel",
-		"00c50502": "Prince",
-		"00ce0502": "Blaire",
-		"01a50502": "Walt",
-		"02ac0e02": "Baby Luigi - Tennis",
-		"02ad0e02": "Baby Luigi - Golf"
+		"003c0102": "Mario - Gold Edition",
+		"00900502": "Cherry",
+		"00a30502": "Cole",
+		"00c00502": "Gwen",
+		"01480502": "Tucker",
+		"027a0e02": "Daisy - Tennis",
+		"029c0e02": "Bowser Jr. - Baseball",
+		"02e90502": "June",
+		"036e0a02": "King Knight",
+		"03cc0502": "Marlo"
 	}
 }

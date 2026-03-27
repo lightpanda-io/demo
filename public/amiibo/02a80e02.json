@@ -4,21 +4,21 @@
 		"character": "Baby Mario",
 		"name": "Baby Mario - Golf",
 		"gameSeries": "Mario Sports Superstars",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_09cc0401-02a80e02.png",
 		"tail": "02a80e02"
 	},
 	"next": "00c20502.html",
 	"prev": "01260502.html",
 	"list": {
-		"00260002": "Jigglypuff",
-		"00d20502": "Olivia",
-		"00e90502": "Kitty",
-		"01b40502": "Sylvia",
-		"027d0e02": "Yoshi - Soccer",
-		"02810e02": "Yoshi - Horse Racing",
-		"02860e02": "Wario - Horse Racing",
-		"028a0e02": "Waluigi - Golf",
-		"029b0e02": "Bowser Jr. - Soccer",
-		"03730102": "Bowser - Wedding"
+		"00930502": "Eugene",
+		"00c70502": "Vladimir",
+		"00f80502": "Drake",
+		"00fc0502": "Chops",
+		"017e0502": "Redd - Shirt",
+		"02e20f02": "One-Eyed Rathalos and Rider - Female",
+		"03150502": "Buzz",
+		"03890002": "Ken",
+		"03c20502": "Dom",
+		"04b21d02": "Juri"
 	}
 }

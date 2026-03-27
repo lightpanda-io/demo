@@ -4,21 +4,21 @@
 		"character": "Snake",
 		"name": "Snake",
 		"gameSeries": "Metal Gear Solid",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_37800000-038a0002.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_37800000-038a0002.png",
 		"tail": "038a0002"
 	},
 	"next": "011b0502.html",
 	"prev": "027c0e02.html",
 	"list": {
-		"00310002": "Mega Man",
-		"00460502": "DJ KK",
-		"006c0502": "Quillson",
-		"01220502": "Del",
-		"01320502": "Ricky",
-		"01960502": "Frita",
-		"024a0502": "Kicks",
-		"03911602": "Loot Goblin",
-		"03c40502": "Cyd",
-		"04f21d02": "Mai"
+		"00140002": "Bowser",
+		"00190002": "Dr. Mario",
+		"00c60502": "Pate",
+		"00ce0502": "Blaire",
+		"01680502": "Rolf",
+		"02b70e02": "Rosalina - Golf",
+		"03040502": "Louie",
+		"03a40002": "Terry",
+		"041e0002": "Pyra",
+		"04b81d02": "Marisa"
 	}
 }

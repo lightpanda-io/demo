@@ -4,21 +4,21 @@
 		"character": "Flo",
 		"name": "Flo",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_046c0001-008c0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_046c0001-008c0502.png",
 		"tail": "008c0502"
 	},
 	"next": "00720502.html",
 	"prev": "00760502.html",
 	"list": {
-		"00140002": "Bowser",
-		"00450502": "Tom Nook",
-		"00630502": "Bluebear",
-		"00740502": "Bonbon",
-		"008b0502": "Lionel",
-		"01550502": "Flora",
-		"01ae0502": "Celia",
-		"01d20502": "Twiggy",
-		"04ad1d02": "Jamie",
-		"04d51d02": "E. Honda"
+		"00770502": "Poppy",
+		"00920502": "Truffles",
+		"00bf0502": "Harry",
+		"00c80502": "Savannah",
+		"01020502": "Marcel",
+		"01790502": "Timmy - Suit",
+		"02b30e02": "Birdo - Horse Racing",
+		"02b40e02": "Rosalina - Soccer",
+		"04281902": "Roa Kirishima",
+		"04ce1d02": "Jamie"
 	}
 }

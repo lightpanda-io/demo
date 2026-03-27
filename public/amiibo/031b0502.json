@@ -4,21 +4,21 @@
 		"character": "Étoile",
 		"name": "Étoile",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04d30101-031b0502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04d30101-031b0502.png",
 		"tail": "031b0502"
 	},
 	"next": "009d0502.html",
 	"prev": "030a0502.html",
 	"list": {
-		"00100002": "Pit",
-		"00dc0502": "Alfonso",
-		"017b0502": "Shrunk - Loud Jacket",
-		"023b0702": "Turbo Charge Donkey Kong",
-		"02670102": "Waluigi",
-		"02710e02": "Luigi - Golf",
-		"03170502": "Ike",
-		"03750d02": "Detective Pikachu",
-		"03770402": "Marina",
-		"03a40002": "Terry"
+		"00850502": "Gruff",
+		"00bd0502": "Lucha",
+		"018d0502": "Croque",
+		"03560902": "Zelda",
+		"03870002": "Pokemon Trainer",
+		"03ad0502": "Blathers",
+		"03ae0502": "Celeste",
+		"03b10502": "Label",
+		"03bb0502": "Lottie - Island",
+		"04180902": "Link - Tears of the Kingdom"
 	}
 }

@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Girl - Lime Green",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000100-025f0402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000100-025f0402.png",
 		"tail": "025f0402"
 	},
 	"next": "02bd0e02.html",
 	"prev": "01900502.html",
 	"list": {
-		"00110002": "Lucario",
-		"017d0502": "Gulliver",
-		"02760e02": "Peach - Golf",
-		"02c20e02": "Pink Gold Peach - Horse Racing",
-		"030a0502": "Candi",
-		"039eff02": "Daisy - Power Up Band",
-		"04421c02": "Yoshi - My Mario Wooden Blocks",
-		"04b11d02": "Guile",
-		"04be1d02": "A.K.I",
-		"04bf1d02": "Ed"
+		"00220002": "Mii Swordfighter",
+		"00730502": "Sterling",
+		"011a0502": "Isabelle - Kimono",
+		"012c0502": "Colton",
+		"01a70502": "Pietro",
+		"02430502": "Digby",
+		"02e90502": "June",
+		"034b0902": "Link - Ocarina of Time",
+		"04ab1d02": "Luke",
+		"04ed1d02": "Sagat"
 	}
 }

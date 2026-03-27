@@ -4,21 +4,21 @@
 		"character": "Inkling",
 		"name": "Inkling Squid - Orange",
 		"gameSeries": "Splatoon",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000300-02610402.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_08000300-02610402.png",
 		"tail": "02610402"
 	},
 	"next": "041a0902.html",
 	"prev": "00050002.html",
 	"list": {
-		"01250502": "Mitzi",
-		"015b0502": "Victoria",
-		"01700502": "Isabelle - Dress",
-		"01a20502": "Puddles",
-		"02460502": "Cyrus",
-		"02fb0502": "Boyd",
-		"03050502": "Bea",
-		"038e0402": "Octoling Girl",
-		"03941702": "Ikari",
-		"04c91e03": "Bandana Waddle Dee"
+		"009f0502": "Henry",
+		"00b40502": "Isabelle - Winter",
+		"02810e02": "Yoshi - Horse Racing",
+		"02870e02": "Waluigi - Soccer",
+		"02930e02": "Diddy Kong - Tennis",
+		"02a10e02": "Boo - Baseball",
+		"03060502": "Admiral",
+		"035f1102": "Pikmin",
+		"03d60502": "Roswell",
+		"04210002": "Sephiroth"
 	}
 }

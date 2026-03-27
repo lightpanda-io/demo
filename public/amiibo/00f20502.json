@@ -4,21 +4,21 @@
 		"character": "Jay",
 		"name": "Jay",
 		"gameSeries": "Animal Crossing",
-		"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_022d0001-00f20502.png",
+		"image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_022d0001-00f20502.png",
 		"tail": "00f20502"
 	},
 	"next": "02500a02.html",
 	"prev": "00830502.html",
 	"list": {
-		"00110002": "Lucario",
-		"00710502": "Winnie",
-		"00930502": "Eugene",
-		"01740502": "Celeste",
-		"01820502": "Pinky",
-		"01930502": "Pierce",
-		"01bb0502": "Rizzo",
-		"028f0e02": "Donkey Kong - Golf",
-		"04380402": "Pearl - Side Order",
-		"04bc1d02": "Cammy"
+		"00490502": "Resetti",
+		"006e0502": "Puck",
+		"00860502": "Flurry",
+		"00d70502": "Whitney",
+		"01080502": "Kid Cat",
+		"02820e02": "Wario - Soccer",
+		"02f20502": "Wade",
+		"03ce0502": "Cephalobot",
+		"04a50902": "Tulin",
+		"04c01d02": "Akuma"
 	}
 }
