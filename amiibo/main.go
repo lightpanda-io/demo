@@ -84,7 +84,7 @@ func run(ctx context.Context, args []string, _, stderr io.Writer) error {
 	return nil
 }
 
-const endpoint = "https://www.amiiboapi.com/api/amiibo/"
+const endpoint = "https://amiiboapi.org/api/amiibo/"
 
 type Serie string
 type Game string
@@ -175,8 +175,6 @@ const tpl = `
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="load.js"></script>
-		<script>loadAmiibo('{{ .JSON }}');</script>
 		<title id="title">Amiibo Character</title>
 	</head>
 	<body>
@@ -192,11 +190,13 @@ const tpl = `
 		<ul id="alt"></ul>
 		<p id="nav"></p>
 	</body>
+	<script src="load.js"></script>
+	<script>loadAmiibo('{{ .JSON }}');</script>
 </html>`
 
 func generate(_ context.Context, list []Amiibo, outdir string) error {
 	// create the js load
-	if err := os.WriteFile(filepath.Join(outdir, "load.json"), []byte(jsload), 0666); err != nil {
+	if err := os.WriteFile(filepath.Join(outdir, "load.js"), []byte(jsload), 0666); err != nil {
 		return fmt.Errorf("write load.js: %w", err)
 	}
 
