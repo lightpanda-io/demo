@@ -52,9 +52,15 @@ const html = await page.content();
 
 if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
   console.log(html.substring(0, 20));
+  console.log(html);
   throw new Error("html content is not as expected");
 }
-console.log(html);
+
+const title = await page.title();
+if (title != "Outdoor Odyssey Nomad Backpack") {
+  console.log(title);
+  throw new Error("title is not as expected");
+}
 
 await page.close();
 await context.close();

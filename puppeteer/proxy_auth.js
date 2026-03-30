@@ -36,12 +36,17 @@ await page.authenticate({
 await page.goto(url);
 
 const html = await page.content();
-console.log(html);
 if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
   console.log(html.substring(0, 20));
+  console.log(html);
   throw new Error("html content is not as expected");
 }
 
+const title = await page.title();
+if (title != "Outdoor Odyssey Nomad Backpack") {
+  console.log(title);
+  throw new Error("title is not as expected");
+}
 
 await page.close();
 await context.close();
