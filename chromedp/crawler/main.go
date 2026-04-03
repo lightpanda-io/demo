@@ -239,13 +239,11 @@ func fetch(ctx context.Context, u *url.URL) (*Page, error) {
 		return nil, fmt.Errorf("navigate %v: %w", u, err)
 	}
 
-	err = chromedp.Run(ctx, chromedp.WaitReady(`body`, chromedp.ByQuery))
-	if err != nil {
-		return nil, fmt.Errorf("navigate %v: %w", u, err)
-	}
+	timeoutctx, cancel := context.WithTimeout(ctx, 10*time.Second)
+	defer cancel()
 
 	var a []*cdp.Node
-	if err := chromedp.Run(ctx, chromedp.Nodes(`a[href]`, &a, chromedp.AtLeast(0))); err != nil {
+	if err := chromedp.Run(timeoutctx, chromedp.Nodes(`a[href]`, &a, chromedp.AtLeast(1))); err != nil {
 		return nil, fmt.Errorf("get links: %w", err)
 	}
 
