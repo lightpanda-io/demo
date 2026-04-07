@@ -92,6 +92,9 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"integration/google_news_redirection.js"}},
 		{Bin: "node", Args: []string{"integration/bing.js"}},
 		{Bin: "node", Args: []string{"integration/anthropic_docs.js"}},
+		{Bin: "node", Args: []string{"integration/search_on_amazon.js"}},
+		{Bin: "node", Args: []string{"integration/ebay_list.js"}},
+		{Bin: "node", Args: []string{"integration/scrapethissite.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
