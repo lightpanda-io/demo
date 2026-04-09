@@ -48,6 +48,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 		progress = flags.Bool("with-progress", false, "display regression and progression")
 		explain  = flags.String("explain", "", "Explain the difference in details for a given test")
+
+		completion = flags.Bool("completion", false, "Display completion summary")
 	)
 
 	// usage func declaration.
@@ -130,6 +132,23 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	lasttcs, err := cli.Fetch(ctx, last.Date, last.Commit)
 	if err != nil {
 		return fmt.Errorf("fetch last: %w", err)
+	}
+
+	// If the completion is requested, display the completion percentage per group
+	if *completion {
+		completions := ListCompletion(lasttcs)
+		var pass, total int
+		for _, c := range completions {
+			pass += c.Pass
+			total += c.Total
+
+			percent := c.Pass * 100 / c.Total
+			fmt.Fprintf(stdout, "%-30s %d%%\n", c.Name, percent)
+		}
+
+		percent := pass * 100 / total
+		fmt.Fprintf(stdout, "%-30s %d%%\n", "Overall", percent)
+		return nil
 	}
 
 	prevtcs, err := cli.Fetch(ctx, prev.Date, prev.Commit)
