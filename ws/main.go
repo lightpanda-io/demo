@@ -109,6 +109,13 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte("<li id=query>"))
 		res.Write([]byte(req.URL.RawQuery))
 		res.Write([]byte("</ul>"))
+	case "/get/headers":
+		enc := json.NewEncoder(res)
+		if err := enc.Encode(req.Header); err != nil {
+			fmt.Fprintf(os.Stderr, "encode json: %v", err)
+			res.WriteHeader(500)
+		}
+		res.Header().Set("Content-Type", "application/json")
 	default:
 		s.next.ServeHTTP(res, req)
 	}
