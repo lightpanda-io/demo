@@ -27,15 +27,22 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto(url);
-
+const response = await page.goto(url);
 const html = await page.content();
-if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
-  console.log(html.substring(0, 20));
-  throw new Error("html content is not as expected");
-}
-
 
 await page.close();
 await context.close();
 await browser.disconnect();
+
+if (response == null) {
+  throw new Error("response is null");
+}
+
+if (response.status() != 200) {
+  throw new Error("bad response code");
+}
+
+if (html.substring(0, 20) !== "<!DOCTYPE html><html") {
+  console.log(html.substring(0, 20));
+  throw new Error("html content is not as expected");
+}
