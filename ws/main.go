@@ -95,7 +95,6 @@ func (s Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		}
 		res.Header().Set("Content-Type", "application/json")
 	case "/form/submit":
-		defer req.Body.Close()
 		body, err := io.ReadAll(req.Body)
 		if err != nil {
 			panic(err)
