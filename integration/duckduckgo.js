@@ -66,10 +66,10 @@ for (const link of links) {
       "https://sourceforge.net/projects/lightpanda-browser.mirror/",
     )
   )
-    found.docs = true;
+    found.sourceforge = true;
 }
 
-if (!found.homepage || !found.github || !found.docs) {
+if (!found.homepage || !found.github || !found.sourceforge) {
   console.log("Failed to find expected links", found);
   throw new Error("invalid results");
 }
