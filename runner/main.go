@@ -115,6 +115,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
+		{Bin: "node", Args: []string{"puppeteer/ua.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -283,6 +284,13 @@ func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte("<li id=query>"))
 		res.Write([]byte(req.URL.RawQuery))
 		res.Write([]byte("</ul>"))
+	case "/get/headers":
+		enc := json.NewEncoder(res)
+		if err := enc.Encode(req.Header); err != nil {
+			fmt.Fprintf(os.Stderr, "encode json: %v", err)
+			res.WriteHeader(500)
+		}
+		res.Header().Set("Content-Type", "application/json")
 	default:
 		h.fs.ServeHTTP(res, req)
 	}
