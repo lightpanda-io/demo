@@ -143,11 +143,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			total += c.Total
 
 			percent := c.Pass * 100 / c.Total
-			fmt.Fprintf(stdout, "%-30s %d%%\n", c.Name, percent)
+			fmt.Fprintf(stdout, "%-30s %5d%%\t%d/%d\n", c.Name, percent, c.Pass, c.Total)
 		}
 
 		percent := pass * 100 / total
-		fmt.Fprintf(stdout, "%-30s %d%%\n", "Overall", percent)
+		fmt.Fprintf(stdout, "%-30s %5d%%\t%d/%d\n", "Overall", percent, pass, total)
 		return nil
 	}
 
