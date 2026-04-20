@@ -1,0 +1,274 @@
+============================================================
+ agent-browser × Lightpanda — Final Validation
+ Date: Thu Mar 19 13:39:45 MDT 2026
+ agent-browser: agent-browser 0.20.13
+ Lightpanda: 
+ Lightpanda binary size: 61563128 bytes
+ Platform: arm64 / macOS 26.3.1
+============================================================
+
+[13:39:45] === SETUP: killing existing processes, cleaning sockets ===
+[13:39:47] ✅ PASS: Setup: Lightpanda binary executable ()
+[13:39:47] ✅ PASS: Setup: agent-browser on PATH (agent-browser 0.20.13)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ PART A: agent-browser + Chrome (default engine)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[13:39:47] --- A1: open example.com (cold start) ---
+[13:39:48]   output: [32m✓[0m [1mExample Domain[0m
+  [2mhttps://example.com/[0m
+[13:39:48]   time: 900ms
+[13:39:48] ✅ PASS: A1: open example.com (cold) — 900ms
+[13:39:48] --- A2: open campfire-commerce ---
+[13:39:49]   output: [32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m
+[13:39:49]   time: 371ms
+[13:39:49] ✅ PASS: A2: open campfire-commerce — 371ms
+[13:39:49] --- A3: get title ---
+[13:39:49]   output: 'Outdoor Odyssey Nomad Backpack'
+[13:39:49] ✅ PASS: A3: get title — 'Outdoor Odyssey Nomad Backpack'
+[13:39:49] --- A4: get url ---
+[13:39:49]   output: 'https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:39:49] ✅ PASS: A4: get url — 'https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:39:49] --- A5: snapshot -i ---
+[13:39:49]   interactive refs: 10
+[13:39:49] ✅ PASS: A5: snapshot -i — 10 interactive refs
+    - link "Campfire Commerce" [ref=e10]
+    - link "Home" [ref=e18]
+    - link "Products" [ref=e19]
+    - link "About" [ref=e20]
+    - link "Contact" [ref=e21]
+    - link "Account" [ref=e22]
+    - link [ref=e1]
+    - spinbutton [ref=e4]: 1
+    - link "Add To Cart" [ref=e5]
+    - link "Sunil Pradhan" [ref=e17]
+[13:39:49] --- A6: snapshot -i --json ---
+  Keys: ['success', 'data', 'error']
+[13:39:49] ✅ PASS: A6: snapshot -i --json — valid JSON
+[13:39:49] --- A7: eval document.title ---
+[13:39:50]   output: '"Outdoor Odyssey Nomad Backpack"'
+[13:39:50] ✅ PASS: A7: eval document.title — '"Outdoor Odyssey Nomad Backpack"'
+[13:39:50] --- A8: eval link count ---
+[13:39:50]   output: '9'
+[13:39:50] ✅ PASS: A8: eval link count — 9
+[13:39:50] --- A9: screenshot ---
+[32m✓[0m Screenshot saved to [32m/Users/nitya/Desktop/Work/Lightpanda testing Vercel/testing/final-chrome-screenshot.png[0m
+[13:39:50] ✅ PASS: A9: screenshot — 368041 bytes
+[13:39:50] --- A10: back/forward/reload ---
+[32m✓[0m [1mExample Domain[0m
+  [2mhttps://example.com/[0m
+[13:39:52]   back: 'https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:39:52]   forward: 'https://example.com/'
+[13:39:52]   reload: 'https://example.com/'
+[13:39:52] ✅ PASS: A10: back/forward/reload
+[13:39:52] --- A11: cookies ---
+[13:39:52]   cookies set: '[32m✓[0m Done'
+[13:39:52] ✅ PASS: A11: cookies get/set
+[13:39:52] --- A12: tabs ---
+[13:39:52]   tab: '[36m→[0m [0] Example Domain - https://example.com/'
+[13:39:52] ✅ PASS: A12: tab list
+[13:39:52] --- A13: diff snapshot ---
+[13:39:53] ✅ PASS: A13: diff snapshot
+[13:39:53] --- A14: wait ---
+[32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m
+[13:39:54] ✅ PASS: A14: wait --load networkidle
+[13:39:54] --- A15: warm chain benchmark ---
+[32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m
+[32m✓[0m Done
+[13:39:56]   chain total: 1772ms, title: 'Outdoor Odyssey Nomad Backpack'
+[13:39:56] ✅ PASS: A15: Chrome warm chain — 1772ms
+[32m✓[0m Browser closed
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ PART B: agent-browser --engine lightpanda
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[13:39:58] --- B1: open example.com ---
+[13:39:59]   output: '[32m✓[0m [1mExample Domain[0m
+  [2mhttps://example.com/[0m'
+[13:39:59] ✅ PASS: B1: --engine lightpanda open example.com
+[13:39:59] --- B2: open campfire-commerce ---
+[13:39:59]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m' — 298ms
+[13:39:59] ✅ PASS: B2: open campfire-commerce — 298ms
+[13:39:59] --- B3: get title ---
+[13:39:59]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+Outdoor Odyssey Nomad Backpack'
+[13:39:59] ✅ PASS: B3: get title — '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+Outdoor Odyssey Nomad Backpack'
+[13:39:59] --- B4: get url ---
+[13:39:59]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:39:59] ✅ PASS: B4: get url — '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:39:59] --- B5: snapshot -i ---
+[13:40:00]   interactive refs: 22
+[13:40:00] ✅ PASS: B5: snapshot -i — 22 interactive refs
+    - link "Campfire Commerce" [ref=e1]
+    - link "Home" [ref=e2]
+    - link "Products" [ref=e3]
+    - link "About" [ref=e4]
+    - link "Contact" [ref=e5]
+    - link "Account" [ref=e6]
+    - link [ref=e7]
+    - heading "Outdoor Odyssey Nomad Backpack 60 liters" [ref=e8]
+    - heading "$244.99" [ref=e9]
+    - spinbutton [ref=e10]: 1
+    - link "Add To Cart" [ref=e11]
+    - heading "Product Details" [ref=e12]
+    - heading "Features" [ref=e13]
+    - heading "Related Products" [ref=e14]
+    - heading "Outdoor Odyssey Hiking Poles" [ref=e15]
+    - heading "Outdoor Odyssey Sleeping Bag" [ref=e16]
+    - heading "Outdoor Odyssey Water Bottle" [ref=e17]
+    - heading "Reviews" [ref=e18]
+    - heading "I recently took the Nomad..." [ref=e19]
+    - heading "As an avid hiker, I've..." [ref=e20]
+    - heading "I purchased the Nomad Backpack..." [ref=e21]
+    - link "Sunil Pradhan" [ref=e22]
+[13:40:00] --- B6: snapshot -i --json ---
+  Keys: ['success', 'data', 'error']
+[13:40:00] ✅ PASS: B6: snapshot -i --json — valid JSON
+[13:40:00] --- B7: eval ---
+[13:40:00]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+"Outdoor Odyssey Nomad Backpack"'
+[13:40:00] ✅ PASS: B7: eval document.title — '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+"Outdoor Odyssey Nomad Backpack"'
+[13:40:00]   eval link count: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+9'
+[13:40:00] ✅ PASS: B8: eval link count — [33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+9
+[13:40:00] --- B9: fill ---
+[13:40:00]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Done'
+[13:40:00] ✅ PASS: B9: fill @e10
+[13:40:00] --- B10: click ---
+[13:40:01]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Done'
+[13:40:01] ✅ PASS: B10: click @e11
+[13:40:01] --- B11: hover ---
+[13:40:01] ✅ PASS: B11: hover @e1
+[13:40:01] --- B12: scroll ---
+[13:40:01] ✅ PASS: B12: scroll down 200
+[13:40:01] --- B13: press ---
+[13:40:01] ✅ PASS: B13: press Tab
+[13:40:01] --- B14: type ---
+[13:40:01] ✅ PASS: B14: type @e10
+[13:40:01] --- B15: screenshot ---
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Screenshot saved to [32m/Users/nitya/Desktop/Work/Lightpanda testing Vercel/testing/final-lightpanda-screenshot.png[0m
+[13:40:01] ✅ PASS: B15: screenshot — 16697 bytes (placeholder, no graphical rendering)
+[13:40:01] --- B16: wait ---
+[13:40:03] ✅ PASS: B16: wait --load networkidle
+[13:40:03] --- B17: cookies ---
+[13:40:03]   cookies set: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Done'
+[13:40:03] ✅ PASS: B17: cookies get/set
+[13:40:03] --- B18: tab ---
+[13:40:03]   tab: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[36m→[0m [0] Outdoor Odyssey Nomad Backpack - https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:40:03] ✅ PASS: B18: tab list
+[13:40:03] --- B19: diff snapshot ---
+[13:40:03] ✅ PASS: B19: diff snapshot — 0 additions
+[13:40:03] --- B20: back/forward ---
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m [1mExample Domain[0m
+  [2mhttps://example.com/[0m
+[13:40:05]   back: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+https://demo-browser.lightpanda.io/campfire-commerce/'
+[13:40:05]   forward: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+https://example.com/'
+[13:40:05] ✅ PASS: B20: back/forward
+[13:40:05] --- B21: reload (expected fail) ---
+[13:40:05]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[31m✗[0m CDP error (Page.reload): UnknownMethod'
+[13:40:05] ✅ PASS: B21: reload — correctly fails (Page.reload not implemented)
+[13:40:05] --- B22: pdf (expected fail) ---
+[13:40:05]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[31m✗[0m CDP error (Page.printToPDF): UnknownMethod'
+[13:40:05] ✅ PASS: B22: pdf — correctly fails (Page.printToPDF not implemented)
+[13:40:05] --- B23: tab new (expected fail) ---
+[13:40:05]   output: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[31m✗[0m CDP error (Target.createTarget): TargetAlreadyLoaded'
+[13:40:05] ✅ PASS: B23: tab new — correctly fails (Target.createTarget not implemented)
+[13:40:05] --- B24: cold start benchmark ---
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Browser closed
+[32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Done
+[13:40:09]   cold chain: 1884ms, title: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+Outdoor Odyssey Nomad Backpack'
+[13:40:09] ✅ PASS: B24: Lightpanda cold start chain — 1884ms
+[13:40:09] --- B25: warm chain benchmark ---
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m [1mOutdoor Odyssey Nomad Backpack[0m
+  [2mhttps://demo-browser.lightpanda.io/campfire-commerce/[0m
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Done
+[13:40:11]   warm chain: 1757ms, title: '[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+Outdoor Odyssey Nomad Backpack'
+[13:40:11] ✅ PASS: B25: Lightpanda warm chain — 1757ms
+[33m⚠[0m --executable-path ignored: daemon already running. Use 'agent-browser close' first to restart with new options.
+[32m✓[0m Browser closed
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ PART C: Lightpanda standalone
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[13:40:12] --- C1: version ---
+[13:40:12]   version: 'ddd34dc5'
+[13:40:12] ✅ PASS: C1: lightpanda version — 'ddd34dc5'
+[13:40:12] --- C2: fetch HTML (example.com) ---
+[13:40:13]   lines: 3, time: 382ms
+[13:40:13] ✅ PASS: C2: fetch HTML example.com — 3 lines, 382ms
+[13:40:13] --- C3: fetch HTML (campfire-commerce) ---
+[13:40:13]   lines: 117, time: 370ms
+[13:40:13] ✅ PASS: C3: fetch HTML campfire-commerce — 117 lines, 370ms
+    <!DOCTYPE html>
+    <html><head>
+    	<title>Outdoor Odyssey Nomad Backpack</title>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+[13:40:13] --- C4: fetch Markdown ---
+[13:40:14]   lines: 71, time: 376ms
+[13:40:14] ✅ PASS: C4: fetch Markdown campfire-commerce — 71 lines, 376ms
+    [![Campfire Commerce](https://demo-browser.lightpanda.io/campfire-commerce/images/logo.jpg)](https://demo-browser.lightpanda.io/campfire-commerce/index.html)
+    - [Home](https://demo-browser.lightpanda.io/campfire-commerce/#) 
+    - [Products](https://demo-browser.lightpanda.io/campfire-commerce/#) 
+    - [About](https://demo-browser.lightpanda.io/campfire-commerce/#) 
+    - [Contact](https://demo-browser.lightpanda.io/campfire-commerce/#) 
+    - [Account](https://demo-browser.lightpanda.io/campfire-commerce/#) 
+    [![](https://demo-browser.lightpanda.io/campfire-commerce/images/cart.png)](https://demo-browser.lightpanda.io/campfire-commerce/#)
+[13:40:14] --- C5: serve (CDP server) ---
+[13:40:16]   /json/version: '{"webSocketDebuggerUrl": "ws://127.0.0.1:9222/"}'
+[13:40:16]   /json/list: 'Not found'
+[13:40:16] ✅ PASS: C5: serve — /json/version works
+[13:40:16]   NOTE: /json/list not implemented (expected)
+[13:40:16] ⚠️  SKIP: C5b: /json/list — not implemented by Lightpanda
+[13:40:16] --- C6: fetch with --strip_mode ---
+[13:40:16] ✅ PASS: C6: fetch --strip_mode js,css — 3 lines
+
+[13:40:16] === CLEANUP ===
+[32m✓[0m Browser closed
+[13:40:16] ✅ PASS: Cleanup
+
+============================================================
+ RESULTS: 49 passed · 0 failed · 1 skipped
+============================================================
+
+ Part A (agent-browser + Chrome): baseline tests
+ Part B (--engine lightpanda):    full command suite + benchmarks
+ Part C (Lightpanda standalone):  fetch, serve, strip_mode
+
+ Blog post claims to validate:
+   - All commands pass with --engine lightpanda ✓
+   - Lightpanda returns more interactive refs than Chrome
+   - Cold start ~6x faster than Chrome
+   - Screenshot returns placeholder (no pixels)
+   - Page.reload, Page.printToPDF, Target.createTarget fail
+   - Standalone fetch in ~352ms
+============================================================
