@@ -307,11 +307,11 @@ You have also to install [Google Chrome](https://www.google.com/chrome/) and
 Clone the [demo web page](https://github.com/lightpanda-io/demo) and expose the
 `public/` directory locally with a web server.
 
-We use the simple Go program to expose the files in `ws/` dir.
+We use the simple Go program to expose the `public/` dir.
 By default it exposes the `public` dir using the `1234` port.
 
 ```console
-$ go run ws/main.go
+$ go run runner/main.go -serve
 ```
 
 ### Test machine
