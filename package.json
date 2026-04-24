@@ -5,7 +5,7 @@
   "description": "Lightpanda browser demo",
   "main": "index.js",
   "scripts": {
-    "ws": "go run ws/main.go",
+    "ws": "go run runner/main.go -serve",
     "bench-playwright-cdp": "node playwright/cdp.js",
     "bench-puppeteer-cdp": "node puppeteer/cdp.js"
   },

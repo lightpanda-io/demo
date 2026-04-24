@@ -25,6 +25,7 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -62,6 +63,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		verbose  = flags.Bool("verbose", false, "enable debug log level")
 		httpAddr = flags.String("http-addr", env("RUNNER_HTTP_ADDRESS", httpAddrDefault), "http server address")
 		httpDir  = flags.String("http-dir", env("RUNNER_HTTP_DIR", httpDirDefault), "http dir to expose")
+		httpWait = flags.Int("http-wait", envInt("RUNNER_HTTP_WAIT", 0), "per-response delay in ms")
+		serve    = flags.Bool("serve", false, "only run the http servers, skip the integration tests")
 	)
 
 	// usage func declaration.
@@ -74,6 +77,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
 		fmt.Fprintf(stderr, "\tRUNNER_HTTP_ADDRESS\tdefault %s\n", httpAddrDefault)
 		fmt.Fprintf(stderr, "\tRUNNER_HTTP_DIR\tdefault %s\n", httpDirDefault)
+		fmt.Fprintf(stderr, "\tRUNNER_HTTP_WAIT\tdefault 0 (ms)\n")
 	}
 	if err := flags.Parse(args[1:]); err != nil {
 		return err
@@ -88,9 +92,16 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return errors.New("too much arguments")
 	}
 
+	wait := time.Duration(*httpWait) * time.Millisecond
+
+	// In serve-only mode, just run the http servers and block.
+	if *serve {
+		return runhttp(ctx, *httpAddr, *httpDir, wait)
+	}
+
 	// Start the http server in its own goroutine.
 	go func() {
-		if err := runhttp(ctx, *httpAddr, *httpDir); err != nil {
+		if err := runhttp(ctx, *httpAddr, *httpDir, wait); err != nil {
 			slog.Error("http server", slog.String("err", err.Error()))
 		}
 	}()
@@ -191,54 +202,73 @@ func runtest(ctx context.Context, t Test) error {
 	return nil
 }
 
-// run the local http server
-func runhttp(ctx context.Context, addr, dir string) error {
-	fs := http.FileServer(http.Dir(dir))
-
-	srv := &http.Server{
-		Addr:    addr,
-		Handler: Handler{fs: fs},
-		BaseContext: func(net.Listener) context.Context {
-			return ctx
-		},
+// runhttp starts the default and broken-robots servers on consecutive ports
+// starting at addr (default on basePort, broken-robots on basePort+1).
+// Returns when ctx is canceled or any server errors.
+func runhttp(ctx context.Context, addr, dir string, wait time.Duration) error {
+	host, portStr, err := net.SplitHostPort(addr)
+	if err != nil {
+		return fmt.Errorf("invalid address %q: %w", addr, err)
+	}
+	basePort, err := strconv.Atoi(portStr)
+	if err != nil {
+		return fmt.Errorf("invalid port in %q: %w", addr, err)
 	}
 
-	// shutdown api server on context cancelation
-	go func(ctx context.Context, srv *http.Server) {
-		<-ctx.Done()
-		slog.Debug("http server shutting down")
-		// we use context.Background() here b/c ctx is already canceled.
-		if err := srv.Shutdown(context.Background()); err != nil {
-			// context cancellation error is ignored.
-			if !errors.Is(err, context.Canceled) {
-				slog.Error("http server shutdown", slog.String("err", err.Error()))
-			}
+	def := DefaultServer{
+		next: http.FileServer(http.Dir(dir)),
+		wait: wait,
+	}
+	handlers := []http.Handler{
+		def,
+		BrokenRobotsServer{DefaultServer: def},
+	}
+
+	fmt.Fprintf(os.Stderr, "expose dir: %q\n", dir)
+
+	errCh := make(chan error, len(handlers))
+	for i, h := range handlers {
+		listenAddr := net.JoinHostPort(host, strconv.Itoa(basePort+i))
+		srv := &http.Server{
+			Addr:    listenAddr,
+			Handler: h,
+			BaseContext: func(net.Listener) context.Context {
+				return ctx
+			},
 		}
-	}(ctx, srv)
+		fmt.Fprintf(os.Stderr, "listen %T on %q\n", h, listenAddr)
 
-	// ListenAndServe always returns a non-nil error.
-	if err := srv.ListenAndServe(); err != http.ErrServerClosed {
-		return fmt.Errorf("http server: %w", err)
+		go func(srv *http.Server) {
+			<-ctx.Done()
+			if err := srv.Shutdown(context.Background()); err != nil && !errors.Is(err, context.Canceled) {
+				slog.Error("http server shutdown",
+					slog.String("addr", srv.Addr),
+					slog.String("err", err.Error()))
+			}
+		}(srv)
+
+		go func(srv *http.Server) {
+			if err := srv.ListenAndServe(); err != http.ErrServerClosed {
+				errCh <- fmt.Errorf("http server %s: %w", srv.Addr, err)
+				return
+			}
+			errCh <- nil
+		}(srv)
 	}
 
-	return nil
+	return <-errCh
 }
 
-// env returns the env value corresponding to the key or the default string.
-func env(key, dflt string) string {
-	val, ok := os.LookupEnv(key)
-	if !ok {
-		return dflt
+type DefaultServer struct {
+	next http.Handler
+	wait time.Duration
+}
+
+func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	if s.wait > 0 {
+		time.Sleep(s.wait)
 	}
 
-	return val
-}
-
-type Handler struct {
-	fs http.Handler
-}
-
-func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	switch req.URL.Path {
 	case "/auth":
 		user, pass, ok := req.BasicAuth()
@@ -250,7 +280,6 @@ func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 
 		res.Header().Add("Content-Type", "text/html")
 		res.Write([]byte("<html><body>Hello</body></html>"))
-
 	case "/cookies/set":
 		http.SetCookie(res, &http.Cookie{
 			Name:  "lightpanda",
@@ -292,6 +321,42 @@ func (h Handler) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		}
 		res.Header().Set("Content-Type", "application/json")
 	default:
-		h.fs.ServeHTTP(res, req)
+		s.next.ServeHTTP(res, req)
 	}
+}
+
+// BrokenRobotsServer behaves like DefaultServer, but always returns 500 for /robots.txt
+type BrokenRobotsServer struct {
+	DefaultServer
+}
+
+func (s BrokenRobotsServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	if req.URL.Path == "/robots.txt" {
+		http.Error(res, "Internal Server Error", http.StatusInternalServerError)
+		return
+	}
+	s.DefaultServer.ServeHTTP(res, req)
+}
+
+// env returns the env value corresponding to the key or the default string.
+func env(key, dflt string) string {
+	val, ok := os.LookupEnv(key)
+	if !ok {
+		return dflt
+	}
+
+	return val
+}
+
+// envInt returns the env value parsed as int, or the default on missing/invalid.
+func envInt(key string, dflt int) int {
+	val, ok := os.LookupEnv(key)
+	if !ok {
+		return dflt
+	}
+	n, err := strconv.Atoi(val)
+	if err != nil {
+		return dflt
+	}
+	return n
 }
