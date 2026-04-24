@@ -269,6 +269,10 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		time.Sleep(s.wait)
 	}
 
+	if strings.HasPrefix(req.URL.Path, "/caching/") {
+		res.Header().Set("Cache-Control", "public, max-age=30000")
+	}
+
 	switch req.URL.Path {
 	case "/auth":
 		user, pass, ok := req.BasicAuth()
