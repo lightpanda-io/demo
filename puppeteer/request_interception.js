@@ -21,7 +21,6 @@ const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
-
 (async () => {
   // Connect to the browser and open a new blank page
   let opts = {};
