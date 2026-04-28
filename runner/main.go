@@ -222,6 +222,7 @@ func runhttp(ctx context.Context, addr, dir string, wait time.Duration) error {
 	handlers := []http.Handler{
 		def,
 		BrokenRobotsServer{DefaultServer: def},
+		CacheServer{DefaultServer: def},
 	}
 
 	fmt.Fprintf(os.Stderr, "expose dir: %q\n", dir)
@@ -336,6 +337,16 @@ func (s BrokenRobotsServer) ServeHTTP(res http.ResponseWriter, req *http.Request
 		return
 	}
 	s.DefaultServer.ServeHTTP(res, req)
+}
+
+type CacheServer struct {
+	DefaultServer
+}
+
+func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	res.Header().Set("Cache-Control", "public, max-age=3600")
+    res.Header().Set("Age", "0")
+    s.DefaultServer.ServeHTTP(res, req)
 }
 
 // env returns the env value corresponding to the key or the default string.
