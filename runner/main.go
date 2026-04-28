@@ -151,6 +151,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	if *cache {
 		tests = append(tests, []Test{
 			{Bin: "node", Args: []string{"puppeteer/cache.js"}},
+			{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
 		}...)
 	}
 
