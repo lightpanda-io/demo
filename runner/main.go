@@ -65,6 +65,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		httpDir  = flags.String("http-dir", env("RUNNER_HTTP_DIR", httpDirDefault), "http dir to expose")
 		httpWait = flags.Int("http-wait", envInt("RUNNER_HTTP_WAIT", 0), "per-response delay in ms")
 		serve    = flags.Bool("serve", false, "only run the http servers, skip the integration tests")
+		cache    = flags.Bool("cache", false, "enable cache integration tests")
 	)
 
 	// usage func declaration.
@@ -106,9 +107,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		}
 	}()
 
-	// Run end to end tests.
-	fails := 0
-	for _, t := range []Test{
+	tests := []Test {
 		{Bin: "node", Args: []string{"puppeteer/basic.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cdp.js"}, Env: []string{"RUNS=10"}},
 		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
@@ -147,7 +146,17 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		// add fetch + tls mostly for proxy
 		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=https://demo-browser.lightpanda.io/campfire-commerce/"}},
 		{Bin: "go", Args: []string{"run", "fetch/main.go", "https://demo-browser.lightpanda.io/campfire-commerce/"}, Dir: "chromedp"},
-	} {
+	}
+
+	if *cache {
+		tests = append(tests, []Test{
+			{Bin: "node", Args: []string{"puppeteer/cache.js"}},
+		}...)
+	}
+
+	// Run end to end tests.
+	fails := 0
+	for _, t := range tests {
 		if *verbose {
 			t.Stderr = stderr
 			t.Stdout = stdout
