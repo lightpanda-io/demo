@@ -27,58 +27,56 @@ const page = await context.newPage();
 const client = await page._client();
 
 const canClear = await client.send("Network.canClearBrowserCache");
-if (!canClear.result) {
-    console.log("Cache is disabled, skipping.");
-    return;
-}
+if (canClear.result) {
+    let servedFromCache = false;
+    let fromDiskCache = false;
 
-let servedFromCache = false;
-let fromDiskCache = false;
-
-client.on('Network.requestServedFromCache', () => {
-    servedFromCache = true;
-});
-
-client.on('Network.responseReceived', (event) => {
-    if (event.response.url === url && event.response.fromDiskCache) {
-        fromDiskCache = true;
-    }
-});
-
-await client.send("Network.clearBrowserCache");
-
-await page.setRequestInterception(true);
-page.on('request', (request) => {
-    request.respond({
-        status: 200,
-        headers: {
-            'Content-Type': 'text/html',
-            'Cache-Control': 'max-age=3600',
-        },
-        body: '<html><body>cached body</body></html>',
+    client.on('Network.requestServedFromCache', () => {
+        servedFromCache = true;
     });
-});
 
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
-await page.setRequestInterception(false);
+    client.on('Network.responseReceived', (event) => {
+        if (event.response.url === url && event.response.fromDiskCache) {
+            fromDiskCache = true;
+        }
+    });
 
-if (servedFromCache) {
-    throw new Error("Expected first request to not be served from cache");
-}
-if (fromDiskCache) {
-    throw new Error("Expected first request to not be served from disk cache");
-}
+    await client.send("Network.clearBrowserCache");
 
-console.log("OK: first request was a cache miss");
+    await page.setRequestInterception(true);
+    page.on('request', (request) => {
+        request.respond({
+            status: 200,
+            headers: {
+                'Content-Type': 'text/html',
+                'Cache-Control': 'max-age=3600',
+            },
+            body: '<html><body>cached body</body></html>',
+        });
+    });
 
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
-if (!servedFromCache) {
-    throw new Error("Expected second request to be served from cache");
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+    await page.setRequestInterception(false);
+
+    if (servedFromCache) {
+        throw new Error("Expected first request to not be served from cache");
+    }
+    if (fromDiskCache) {
+        throw new Error("Expected first request to not be served from disk cache");
+    }
+
+    console.log("OK: first request was a cache miss");
+
+
+    await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+    if (!servedFromCache) {
+        throw new Error("Expected second request to be served from cache");
+    }
+    if (!fromDiskCache) {
+        throw new Error("Expected second request to be served from disk cache");
+    }
+    console.log("OK: second request was a cache hit");
 }
-if (!fromDiskCache) {
-    throw new Error("Expected second request to be served from disk cache");
-}
-console.log("OK: second request was a cache hit");
 
 await page.close();
 await context.close();

@@ -24,78 +24,72 @@ const page = await context.newPage();
 const client = await page._client();
 
 const canClear = await client.send("Network.canClearBrowserCache");
-if (!canClear.result) {
-    console.log("Cache is disabled, skipping.");
-    return;
-}
+if (canClear.result) {
+    let servedFromCache = false;
+    let fromDiskCache = false;
 
-let servedFromCache = false;
-let fromDiskCache = false;
-
-client.on('Network.requestServedFromCache', () => {
-    servedFromCache = true;
-});
-client.on('Network.responseReceived', (event) => {
-    if (event.response.url === url && event.response.fromDiskCache) {
-        fromDiskCache = true;
-    }
-});
-
-const goto = () => page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
-const reset = () => { servedFromCache = false; fromDiskCache = false; };
-
-// Start clean
-await client.send('Network.clearBrowserCache');
-
-
-await page.setRequestInterception(true);
-page.on('request', (request) => {
-    request.respond({
-        status: 200,
-        headers: {
-            'Content-Type': 'text/html',
-            'Cache-Control': 'max-age=3600',
-        },
-        body: '<html><body>cached body</body></html>',
+    client.on('Network.requestServedFromCache', () => {
+        servedFromCache = true;
     });
-});
+    client.on('Network.responseReceived', (event) => {
+        if (event.response.url === url && event.response.fromDiskCache) {
+            fromDiskCache = true;
+        }
+    });
 
-// First request — should be a miss, we also add cache headers.
-await goto();
-if (servedFromCache) throw new Error("Expected first request to not be served from cache");
-if (fromDiskCache) throw new Error("Expected first request to not be from disk cache");
-console.log("OK: first request was a cache miss");
+    const goto = () => page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+    const reset = () => { servedFromCache = false; fromDiskCache = false; };
 
-// Second request — should be a hit
-reset();
-await goto();
-if (!servedFromCache) throw new Error("Expected second request to be served from cache");
-if (!fromDiskCache) throw new Error("Expected second request to be from disk cache");
-console.log("OK: second request was a cache hit");
+    // Start clean
+    await client.send('Network.clearBrowserCache');
 
-// Disable cache — request should be a miss even though cache was populated
-reset();
-await client.send('Network.setCacheDisabled', { cacheDisabled: true });
-await goto();
-if (servedFromCache) throw new Error("Expected request to not be served from cache when disabled");
-if (fromDiskCache) throw new Error("Expected request to not be from disk cache when disabled");
-console.log("OK: request was a cache miss when cache disabled");
+    await page.setRequestInterception(true);
+    page.on('request', (request) => {
+        request.respond({
+            status: 200,
+            headers: {
+                'Content-Type': 'text/html',
+                'Cache-Control': 'max-age=3600',
+            },
+            body: '<html><body>cached body</body></html>',
+        });
+    });
 
-// Clear cache and re-enable — verify nothing gets cached with two requests
-reset();
-await client.send('Network.clearBrowserCache');
-await client.send('Network.setCacheDisabled', { cacheDisabled: false });
-await goto();
-if (servedFromCache) throw new Error("Expected first request after clear to be a miss");
-console.log("OK: first request after clearBrowserCache was a miss");
+    // First request — should be a miss
+    await goto();
+    if (servedFromCache) throw new Error("Expected first request to not be served from cache");
+    if (fromDiskCache) throw new Error("Expected first request to not be from disk cache");
+    console.log("OK: first request was a cache miss");
 
-reset();
-await goto();
-if (!servedFromCache) throw new Error("Expected second request after clear to be a cache hit");
-if (!fromDiskCache) throw new Error("Expected second request after clear to be from disk cache");
-console.log("OK: second request after clearBrowserCache was a cache hit");
+    // Second request — should be a hit
+    reset();
+    await goto();
+    if (!servedFromCache) throw new Error("Expected second request to be served from cache");
+    if (!fromDiskCache) throw new Error("Expected second request to be from disk cache");
+    console.log("OK: second request was a cache hit");
 
-await page.setRequestInterception(false);
+    // Disable cache — request should be a miss even though cache was populated
+    reset();
+    await client.send('Network.setCacheDisabled', { cacheDisabled: true });
+    await goto();
+    if (servedFromCache) throw new Error("Expected request to not be served from cache when disabled");
+    if (fromDiskCache) throw new Error("Expected request to not be from disk cache when disabled");
+    console.log("OK: request was a cache miss when cache disabled");
+
+    // Clear cache and re-enable — verify nothing gets cached with two requests
+    reset();
+    await client.send('Network.clearBrowserCache');
+    await client.send('Network.setCacheDisabled', { cacheDisabled: false });
+    await goto();
+    if (servedFromCache) throw new Error("Expected first request after clear to be a miss");
+    console.log("OK: first request after clearBrowserCache was a miss");
+
+    reset();
+    await goto();
+    if (!servedFromCache) throw new Error("Expected second request after clear to be a cache hit");
+    if (!fromDiskCache) throw new Error("Expected second request after clear to be from disk cache");
+    console.log("OK: second request after clearBrowserCache was a cache hit");
+}
 
 await page.close();
 await context.close();
