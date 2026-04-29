@@ -23,6 +23,12 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 const client = await page._client();
 
+const canClear = await client.send("Network.canClearBrowserCache");
+if (!canClear.result) {
+    console.log("Cache is disabled, skipping.");
+    return;
+}
+
 let servedFromCache = false;
 let fromDiskCache = false;
 
