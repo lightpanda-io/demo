@@ -15,12 +15,16 @@
 import puppeteer from 'puppeteer-core';
 
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
-const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/cache.html';
+const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1236/cache/cache.html';
 
-// use browserWSEndpoint to pass the Lightpanda's CDP server address.
-const browser = await puppeteer.connect({
-    browserWSEndpoint: browserAddress,
-});
+let opts = {};
+if (browserAddress.substring(0, 5) == 'ws://') {
+    opts.browserWSEndpoint = browserAddress;
+} else {
+    opts.browserURL = browserAddress;
+}
+
+const browser = await puppeteer.connect(opts);
 
 const canClear = await (async () => {
     const context = await browser.createBrowserContext();
@@ -37,7 +41,6 @@ if (!canClear) {
     await browser.disconnect();
     process.exit(0);
 }
-
 
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
@@ -57,21 +60,7 @@ client.on('Network.responseReceived', (event) => {
 });
 
 await client.send("Network.clearBrowserCache");
-
-await page.setRequestInterception(true);
-page.on('request', (request) => {
-    request.respond({
-        status: 200,
-        headers: {
-            'Content-Type': 'text/html',
-            'Cache-Control': 'max-age=3600',
-        },
-        body: '<html><body>cached body</body></html>',
-    });
-});
-
 await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
-await page.setRequestInterception(false);
 
 if (servedFromCache) {
     throw new Error("Expected first request to not be served from cache");

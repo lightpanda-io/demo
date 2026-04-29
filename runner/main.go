@@ -130,6 +130,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/pending-page.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cache-vary.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -225,6 +226,7 @@ func runhttp(ctx context.Context, addr, dir string, wait time.Duration) error {
 	handlers := []http.Handler{
 		def,
 		BrokenRobotsServer{DefaultServer: def},
+		CacheServer{},
 	}
 
 	fmt.Fprintf(os.Stderr, "expose dir: %q\n", dir)
@@ -339,6 +341,36 @@ func (s BrokenRobotsServer) ServeHTTP(res http.ResponseWriter, req *http.Request
 		return
 	}
 	s.DefaultServer.ServeHTTP(res, req)
+}
+
+type CacheServer struct {}
+
+func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+    path := req.URL.Path
+
+    switch {
+    case strings.HasPrefix(path, "/vary/"):
+	    req.URL.Path = path[len("/vary"):]
+	    res.Header().Set("Cache-Control", "max-age=3600")
+	    res.Header().Set("Vary", "X-Internal-Header")
+	    res.Header().Set("Content-Type", "text/html")
+	    res.Write([]byte("<html><body>vary</body></html>"))
+
+	case strings.HasPrefix(path, "/cache/"):
+	    req.URL.Path = path[len("/cache"):]
+	    res.Header().Set("Cache-Control", "max-age=3600")
+	    res.Header().Set("Content-Type", "text/html")
+	    res.Write([]byte("<html><body>cache</body></html>"))
+
+	case strings.HasPrefix(path, "/no-store/"):
+	    req.URL.Path = path[len("/no-store"):]
+	    res.Header().Set("Cache-Control", "no-store")
+	    res.Header().Set("Content-Type", "text/html")
+	    res.Write([]byte("<html><body>no-store</body></html>"))
+
+    default:
+        http.NotFound(res, req)
+    }
 }
 
 // env returns the env value corresponding to the key or the default string.

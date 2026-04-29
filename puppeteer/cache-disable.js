@@ -14,7 +14,7 @@
 import puppeteer from 'puppeteer-core';
 
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
-const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/cache.html';
+const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1236/cache/cache.html';
 
 const browser = await puppeteer.connect({
     browserWSEndpoint: browserAddress,
@@ -57,18 +57,6 @@ const reset = () => { servedFromCache = false; fromDiskCache = false; };
 
 // Start clean
 await client.send('Network.clearBrowserCache');
-
-await page.setRequestInterception(true);
-page.on('request', (request) => {
-    request.respond({
-        status: 200,
-        headers: {
-            'Content-Type': 'text/html',
-            'Cache-Control': 'max-age=3600',
-        },
-        body: '<html><body>cached body</body></html>',
-    });
-});
 
 // First request — should be a miss
 await goto();
