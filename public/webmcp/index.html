@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WebMCP demo — note taking app</title>
+  <style>
+    body { font: 14px system-ui, sans-serif; max-width: 640px; margin: 2em auto; padding: 0 1em; }
+    h1 { margin-bottom: 0; }
+    .subtitle { color: #666; margin-top: 0.3em; }
+    ul { padding-left: 1em; }
+    li { margin: 0.5em 0; }
+    .note-title { font-weight: bold; }
+    .note-body { color: #444; }
+    .empty { color: #888; font-style: italic; }
+  </style>
+</head>
+<body>
+  <h1>Notes</h1>
+  <p class="subtitle">
+    Driven by an agent via <a href="https://webmachinelearning.github.io/webmcp/">WebMCP</a>.
+    See <code>demo/puppeteer/webmcp.js</code>.
+  </p>
+
+  <ul id="notes"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
