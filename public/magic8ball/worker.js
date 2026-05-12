@@ -19,9 +19,8 @@ const answers = [
 
 self.addEventListener('message', (event) => {
 	const question = String(event.data || '');
-	const thinking = 10 + Math.random() * 10;
 	setTimeout(() => {
 		const pick = answers[Math.floor(Math.random() * answers.length)];
 		self.postMessage(pick);
-	}, thinking);
+	}, 0);
 });
