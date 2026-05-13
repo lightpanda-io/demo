@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic 8-Ball — worker + iframe + postMessage</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Magic 8-Ball</h1>
+	<p>Ask the oracle. Your question travels: window → iframe (postMessage) → Worker → back again.</p>
+
+	<img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Magic8ball.jpg" alt="Magic 8-Ball" width="200">
+	<p>
+		Image by Christian Heldt,
+		<a href="https://commons.wikimedia.org/wiki/File:Magic8ball.jpg">via Wikimedia Commons</a>
+		(public domain).
+	</p>
+
+	<div>Answer: <span id="answer">ask me anything</span></div>
+
+	<form id="ask-form">
+		<input id="question" type="text" placeholder="Will my code work on the first try?" autocomplete="off">
+		<button type="submit">Ask</button>
+	</form>
+
+	<p>The oracle's chamber:</p>
+	<iframe id="child" src="iframe.html"></iframe>
+
+	<script src="index.js"></script>
+</body>
+</html>
