@@ -12,7 +12,7 @@
 // limitations under the License.
 
 // Import the Chromium browser into our scraper.
-import { chromium } from 'playwright';
+import { chromium } from 'playwright-core';
 
 // browserAddress
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
