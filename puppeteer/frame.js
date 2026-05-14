@@ -14,14 +14,10 @@
 'use strict'
 
 import puppeteer from 'puppeteer-core';
+import { connectBrowser } from './helpers.js'
 
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/frames/index.html';
-
-// use browserWSEndpoint to pass the Lightpanda's CDP server address.
-const browser = await puppeteer.connect({
-  browserWSEndpoint: browserAddress,
-});
+const browser = await connectBrowser();
 
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();

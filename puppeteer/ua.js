@@ -2,10 +2,9 @@
 
 import puppeteer from 'puppeteer-core';
 import assert from 'assert';
+import { connectBrowser } from './helpers.js'
 
-const browser = await puppeteer.connect({
-  browserWSEndpoint: 'ws://127.0.0.1:9222',
-});
+const browser = await connectBrowser();
 
 const context = await browser.createBrowserContext();
 const page = await context.newPage();

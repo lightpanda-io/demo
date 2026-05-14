@@ -14,24 +14,14 @@
 'use strict'
 
 import puppeteer from 'puppeteer-core';
+import { connectBrowser } from './helpers.js'
 
-// ws address
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
-
 (async () => {
-  // Connect to the browser and open a new blank page
-  let opts = {};
-  if (browserAddress.substring(0, 5) == 'ws://') {
-      opts.browserWSEndpoint = browserAddress;
-  } else {
-      opts.browserURL = browserAddress;
-  }
-
-  const browser = await puppeteer.connect(opts);
+  const browser = await connectBrowser();
   const context = await browser.createBrowserContext();
   const page = await context.newPage();
 
