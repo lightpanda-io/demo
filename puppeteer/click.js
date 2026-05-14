@@ -15,18 +15,9 @@
 
 import puppeteer from 'puppeteer-core';
 import assert from 'assert';
+import { connectBrowser } from './helpers.js'
 
-// ws address
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
-
-// Connect to the browser and open a new blank page
-let opts = {};
-if (browserAddress.substring(0, 5) == 'ws://') {
-    opts.browserWSEndpoint = browserAddress;
-} else {
-    opts.browserURL = browserAddress;
-}
-const browser = await puppeteer.connect(opts);
+const browser = await connectBrowser();
 
 // The rest of your script remains the same.
 const context = await browser.createBrowserContext();

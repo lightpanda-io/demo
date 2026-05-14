@@ -14,9 +14,10 @@
 'use strict'
 
 import puppeteer from 'puppeteer-core';
+import { connectBrowser } from './helpers.js'
 
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/magic8ball/';
+const browser = await connectBrowser();
 
 const expectedAnswers = [
     'It is certain.',
@@ -36,11 +37,6 @@ const expectedAnswers = [
     'Absolutely not.',
     'The stars say yes.',
 ];
-
-// use browserWSEndpoint to pass the Lightpanda's CDP server address.
-const browser = await puppeteer.connect({
-    browserWSEndpoint: browserAddress,
-});
 
 // runs
 const runs = process.env.RUNS ? parseInt(process.env.RUNS) : 100;

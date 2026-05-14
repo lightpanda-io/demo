@@ -11,25 +11,17 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
 'use strict'
 
 import puppeteer from 'puppeteer-core';
-import { connectBrowser } from './helpers.js'
 
-const url = process.env.URL ? process.env.URL : 'https://example.com';
-const browser = await connectBrowser();
+const browserAddress = process.env.BROWSER_ADDRESS ?? 'ws://127.0.0.1:9222';
 
-// The rest of your script remains the same.
-const context = await browser.createBrowserContext();
-const page = await context.newPage();
-const client = page._client();
+export async function connectBrowser() {
+    const opts = browserAddress.startsWith('ws://')
+        ? { browserWSEndpoint: browserAddress }
+        : { browserURL: browserAddress };
 
-await page.goto(url, { waitUntil: 'networkidle0'});
-
-const axtree = await client.send('Accessibility.getFullAXTree', {});
-console.log(JSON.stringify(axtree));
-
-await page.close();
-await context.close();
-await browser.disconnect();
-
+    return puppeteer.connect(opts);
+}
