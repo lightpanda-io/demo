@@ -25,3 +25,29 @@ export async function connectBrowser() {
 
     return puppeteer.connect(opts);
 }
+
+export async function isCacheClearable(browser) {
+    const context = await browser.createBrowserContext();
+    const page = await context.newPage();
+    try {
+        const client = await page._client();
+        const result = await client.send("Network.canClearBrowserCache");
+        return result.result;
+    } catch {
+        return false;
+    } finally {
+        await page.close();
+        await context.close();
+    }
+}
+
+export async function needsCache(browser) {
+    let avail = await isCacheClearable(browser);
+
+    if (!avail) {
+        console.log("Cache not available, skipping.");
+        await browser.disconnect();
+        process.exit(0);
+    }
+}
+
