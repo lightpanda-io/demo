@@ -1,6 +1,6 @@
 module github.com/lightpanda-io/demo/wptrunner
 
-go 1.26
+go 1.25
 
 require (
 	github.com/chromedp/chromedp v0.15.1
