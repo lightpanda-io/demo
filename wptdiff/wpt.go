@@ -4,7 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
+	"os"
+	"path/filepath"
+	"strings"
 	"time"
 )
 
@@ -26,7 +30,14 @@ func (c Commit) String() string {
 	if len(c) < 8 {
 		return string(c)
 	}
+	if c.IsLocal() {
+		return filepath.Base(string(c))
+	}
 	return string(c[0:8])
+}
+
+func (c Commit) IsLocal() bool {
+	return strings.HasSuffix(string(c), ".json")
 }
 
 type Run struct {
@@ -64,6 +75,13 @@ func (c *Client) FetchHistory(ctx context.Context) ([]Run, error) {
 	return runs, nil
 }
 
+func Local(ctx context.Context, name string) Run {
+	return Run{
+		Commit: Commit(name),
+		Date:   time.Now(),
+	}
+}
+
 type TestCase struct {
 	Name     string      `json:"name"`
 	Message  string      `json:"message"`
@@ -74,6 +92,10 @@ type TestCase struct {
 }
 
 func (c *Client) Fetch(ctx context.Context, date time.Time, commit Commit) ([]*TestCase, error) {
+	if commit.IsLocal() {
+		return fetchLocal(ctx, string(commit))
+	}
+
 	req, err := http.NewRequestWithContext(ctx, "GET", fmt.Sprintf(
 		"%s/wpt/%s_%s.json",
 		c.baseurl, date.Format("2006-01-02_15-04"), string(commit),
@@ -94,8 +116,22 @@ func (c *Client) Fetch(ctx context.Context, date time.Time, commit Commit) ([]*T
 		return nil, fmt.Errorf("bad status: %d", resp.StatusCode)
 	}
 
+	return read(resp.Body)
+}
+
+func fetchLocal(ctx context.Context, name string) ([]*TestCase, error) {
+	f, err := os.Open(name)
+	if err != nil {
+		return nil, fmt.Errorf("open file %s: %w", name, err)
+	}
+	defer f.Close()
+
+	return read(f)
+}
+
+func read(r io.Reader) ([]*TestCase, error) {
 	var tcs []*TestCase
-	dec := json.NewDecoder(resp.Body)
+	dec := json.NewDecoder(r)
 	if err := dec.Decode(&tcs); err != nil {
 		return nil, fmt.Errorf("decode: %w", err)
 	}

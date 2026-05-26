@@ -45,6 +45,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		verbose = flags.Bool("verbose", false, "enable debug log level")
 		list    = flags.Bool("list", false, "list available commits")
 		n       = flags.Int("n", 10, "number of runs to list, 0 for all")
+		local   = flags.String("local", "", "path to a local run")
 
 		progress = flags.Bool("with-progress", false, "display regression and progression")
 		explain  = flags.String("explain", "", "Explain the difference in details for a given test")
@@ -80,6 +81,10 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	runs, err := cli.FetchHistory(ctx)
 	if err != nil {
 		return fmt.Errorf("history: %w", err)
+	}
+
+	if *local != "" {
+		runs = append(runs, Local(ctx, *local))
 	}
 
 	nruns := len(runs)
