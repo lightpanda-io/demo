@@ -245,6 +245,14 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		defer close(testresults)
 		pool, ctx := errgroup.WithContext(ctx)
 
+		wptAddrHttps := strings.Replace(*wptAddr, "http://", "https://", 1)
+
+		addr := Address{
+			http:  *wptAddr,
+			https: strings.Replace(wptAddrHttps, ":8000", ":8443", 1),
+			http2: strings.Replace(wptAddrHttps, ":8000", ":9000", 1),
+		}
+
 		for range *concurrency {
 			pool.Go(func() error {
 				for {
@@ -265,7 +273,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 							// continue
 						}
 
-						res, err := runtest(ctx, cdp, *wptAddr, t)
+						res, err := runtest(ctx, cdp, t, addr)
 						if err != nil {
 							// We use debug here to avoid useless output.
 							slog.Debug("run test error", slog.String("test", t), slog.Any("err", err))
@@ -397,8 +405,14 @@ func (r *TestResult) CountOK() int {
 
 // runtest connect to the browser, navigates to the test url and get the test
 // results.
-func runtest(ctx context.Context, cdp, addr, test string) (*TestResult, error) {
-	u := addr + test
+func runtest(ctx context.Context, cdp, test string, addr Address) (*TestResult, error) {
+	base := addr.http
+	if strings.Contains(test, ".https.") {
+		base = addr.https
+	} else if strings.Contains(test, ".h2.") {
+		base = addr.http2
+	}
+	u := base + test
 	slog.Debug("run test", slog.String("test", test), slog.String("cdp", cdp), slog.String("url", u))
 
 	res := &TestResult{Name: test}
@@ -499,4 +513,10 @@ func env(key, dflt string) string {
 	}
 
 	return val
+}
+
+type Address struct {
+	http  string
+	https string
+	http2 string
 }
