@@ -361,6 +361,22 @@ func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	    res.Header().Set("Content-Type", "text/html")
 	    res.Write([]byte("<html><body>vary</body></html>"))
 
+	case strings.HasPrefix(path, "/revalidate/"):
+	    etag := `"abc123"`
+	    lastModified := "Thu, 01 Jan 2026 00:00:00 GMT"
+
+	    // Respond 304 if the client sent matching validators.
+	    if req.Header.Get("If-None-Match") == etag {
+	        res.WriteHeader(http.StatusNotModified)
+	        return
+	    }
+
+	    res.Header().Set("Cache-Control", "max-age=1")
+	    res.Header().Set("ETag", etag)
+	    res.Header().Set("Last-Modified", lastModified)
+	    res.Header().Set("Content-Type", "text/html")
+	    res.Write([]byte("<html><body>revalidate</body></html>"))
+
 	case strings.HasPrefix(path, "/cache/"):
 	    req.URL.Path = path[len("/cache"):]
 	    res.Header().Set("Cache-Control", "max-age=3600")
