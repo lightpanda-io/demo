@@ -62,7 +62,16 @@ for (let i = 0; i < 3; i++) {
     await context.close();
     await browser.disconnect();
 
-    if (intercepts.script != 1) {
+    // In chrome, this is likely to be equal to 1, not 2. The exact interaction
+    // between Request Interception and Caching seems ambiguous, with chrome
+    // having 2 levels of cache (in-memory and on-disk) which behave differently.
+    // Items served from the in-memory cache does _not_ trigger RI messages, but
+    // items served form the the disk-cache does. On-memory items appear to be
+    // tied to the page/context, but I can't imgine this is a guarantee, since
+    // there must be some memory limit. In short, the exact behavior seems
+    // ambiguous. We'll stick with our less ambiguous implementation (cached items
+    // always trigger RI messages) until we have clear reason not too.
+    if (intercepts.script != 2) {
       console.log(`script1.js interception count: ${JSON.stringify(intercepts)}`);
       throw new Error('wrong request interception count for script1.js');
     }
