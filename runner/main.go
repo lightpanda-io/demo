@@ -124,6 +124,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-redirect-local.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
+		{Bin: "node", Args: []string{"puppeteer/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ua.js"}},
@@ -277,6 +278,10 @@ type DefaultServer struct {
 func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	if s.wait > 0 {
 		time.Sleep(s.wait)
+	}
+
+	if strings.HasPrefix(req.URL.Path, "/caching/") {
+		res.Header().Set("Cache-Control", "public, max-age=30000")
 	}
 
 	switch req.URL.Path {
