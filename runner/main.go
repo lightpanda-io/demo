@@ -118,6 +118,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/dynamic_scripts.js"}},
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
+		{Bin: "node", Args: []string{"puppeteer/form_file.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
 		{Bin: "node", Args: []string{"puppeteer/multi.js"}},
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
@@ -328,6 +329,20 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte("<li id=query>"))
 		res.Write([]byte(req.URL.RawQuery))
 		res.Write([]byte("</ul>"))
+	case "/form/upload":
+		f, h, err := req.FormFile("file")
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "form decode: %v", err)
+			res.WriteHeader(500)
+			return
+		}
+		f.Close()
+
+		res.Header().Add("Content-Type", "text/html")
+		res.Write([]byte("<html><body><p id=res>"))
+		fmt.Fprintf(res, "received: %s (%d)", h.Filename, h.Size)
+		res.Write([]byte("</p></body></html>"))
+
 	case "/get/headers":
 		enc := json.NewEncoder(res)
 		if err := enc.Encode(req.Header); err != nil {
@@ -353,36 +368,35 @@ func (s BrokenRobotsServer) ServeHTTP(res http.ResponseWriter, req *http.Request
 	s.DefaultServer.ServeHTTP(res, req)
 }
 
-type CacheServer struct {}
+type CacheServer struct{}
 
 func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-    path := req.URL.Path
+	path := req.URL.Path
 
-    switch {
-    case strings.HasPrefix(path, "/vary/"):
-	    req.URL.Path = path[len("/vary"):]
-	    res.Header().Set("Cache-Control", "max-age=3600")
-	    res.Header().Set("Vary", "X-Internal-Header")
-	    res.Header().Set("Content-Type", "text/html")
-	    res.Write([]byte("<html><body>vary</body></html>"))
+	switch {
+	case strings.HasPrefix(path, "/vary/"):
+		req.URL.Path = path[len("/vary"):]
+		res.Header().Set("Cache-Control", "max-age=3600")
+		res.Header().Set("Vary", "X-Internal-Header")
+		res.Header().Set("Content-Type", "text/html")
+		res.Write([]byte("<html><body>vary</body></html>"))
 
 	case strings.HasPrefix(path, "/cache/"):
-	    req.URL.Path = path[len("/cache"):]
-	    res.Header().Set("Cache-Control", "max-age=3600")
-	    res.Header().Set("Content-Type", "text/html")
-	    res.Write([]byte("<html><body>cache</body></html>"))
+		req.URL.Path = path[len("/cache"):]
+		res.Header().Set("Cache-Control", "max-age=3600")
+		res.Header().Set("Content-Type", "text/html")
+		res.Write([]byte("<html><body>cache</body></html>"))
 
 	case strings.HasPrefix(path, "/no-store/"):
-	    req.URL.Path = path[len("/no-store"):]
-	    res.Header().Set("Cache-Control", "no-store")
-	    res.Header().Set("Content-Type", "text/html")
-	    res.Write([]byte("<html><body>no-store</body></html>"))
+		req.URL.Path = path[len("/no-store"):]
+		res.Header().Set("Cache-Control", "no-store")
+		res.Header().Set("Content-Type", "text/html")
+		res.Write([]byte("<html><body>no-store</body></html>"))
 
-    default:
-        http.NotFound(res, req)
-    }
+	default:
+		http.NotFound(res, req)
+	}
 }
-
 
 // env returns the env value corresponding to the key or the default string.
 func env(key, dflt string) string {
