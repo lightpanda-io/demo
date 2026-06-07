@@ -82,7 +82,8 @@ const (
 	exitOK   = 0
 	exitFail = 1
 
-	CDPTimeout = 10 * time.Second
+	CDPTimeout  = 10 * time.Second
+	LongTimeout = 30 * time.Second
 )
 
 // main starts interruptable context and runs the program.
@@ -168,13 +169,13 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	// Only list all tests.
 	if *list {
 		for _, t := range tests {
-			fmt.Fprintf(stdout, "%s\n", t)
+			fmt.Fprintf(stdout, "%s\n", t.URL)
 		}
 		return nil
 	}
 
 	// queue channel is used to dispatch the tests from the producer to runners.
-	queue := make(chan string)
+	queue := make(chan Test)
 	// testresults channel pipes test results from the runners to the reporter.
 	testresults := make(chan *TestResult)
 
@@ -213,7 +214,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 			// apply filters (include patterns)
 			matchFilter := false
 			for _, filter := range filters {
-				if strings.Contains(t, filter) {
+				if strings.Contains(t.URL, filter) {
 					matchFilter = true
 					break
 				}
@@ -224,7 +225,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 			// apply ignore patterns (exclude patterns)
 			for _, pattern := range exclude {
-				if matchPattern(t, pattern) {
+				if matchPattern(t.URL, pattern) {
 					continue NEXT
 				}
 			}
@@ -265,7 +266,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 							return nil
 						}
 
-						slog.Debug("wait for browser readyness", slog.String("test", t))
+						slog.Debug("wait for browser readyness", slog.String("test", t.URL))
 						select {
 						case <-ctx.Done():
 							return nil
@@ -276,11 +277,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 						res, err := runtest(ctx, cdp, t, addr)
 						if err != nil {
 							// We use debug here to avoid useless output.
-							slog.Debug("run test error", slog.String("test", t), slog.Any("err", err))
+							slog.Debug("run test error", slog.String("test", t.URL), slog.Any("err", err))
 
 							// we start the browser again and continue to next tests
 							res = &TestResult{
-								Name:    t,
+								Name:    t.URL,
 								Message: err.Error(),
 
 								// This is not always the test which really
@@ -405,19 +406,24 @@ func (r *TestResult) CountOK() int {
 
 // runtest connect to the browser, navigates to the test url and get the test
 // results.
-func runtest(ctx context.Context, cdp, test string, addr Address) (*TestResult, error) {
+func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestResult, error) {
 	base := addr.http
-	if strings.Contains(test, ".https.") {
+	if strings.Contains(test.URL, ".https.") {
 		base = addr.https
-	} else if strings.Contains(test, ".h2.") {
+	} else if strings.Contains(test.URL, ".h2.") {
 		base = addr.http2
 	}
-	u := base + test
-	slog.Debug("run test", slog.String("test", test), slog.String("cdp", cdp), slog.String("url", u))
+	u := base + test.URL
+	slog.Debug("run test", slog.String("test", test.URL), slog.String("cdp", cdp), slog.String("url", u))
 
-	res := &TestResult{Name: test}
+	res := &TestResult{Name: test.URL}
 
-	ctx, cancel := context.WithTimeout(ctx, 10*time.Second)
+	timeout := CDPTimeout
+	if test.Long {
+		timeout = LongTimeout
+	}
+
+	ctx, cancel := context.WithTimeout(ctx, timeout)
 	defer cancel()
 
 	ctx, cancel = chromedp.NewRemoteAllocator(ctx,
@@ -435,18 +441,29 @@ func runtest(ctx context.Context, cdp, test string, addr Address) (*TestResult, 
 		case errors.Is(err, syscall.ECONNREFUSED),
 			errors.Is(err, syscall.ECONNABORTED),
 			errors.Is(err, syscall.ECONNRESET):
-			return nil, fmt.Errorf("%s: navigate: %w", test, err)
+			return nil, fmt.Errorf("%s: navigate: %w", test.URL, err)
 		}
 		res.Elapsed = time.Since(start)
 		res.Message = strings.TrimSpace(err.Error())
 		return res, nil
 	}
 
+	err = chromedp.Run(ctx,
+		chromedp.Poll(`window.report !== undefined`, nil,
+			chromedp.WithPollingInterval(500*time.Millisecond),
+			chromedp.WithPollingTimeout(5*time.Second),
+		),
+	) // ignore errors here, we try to always get the result.
+	if err != nil {
+		return nil, fmt.Errorf("page load error: %w", err)
+	}
+	fmt.Println(err)
+
 	var status, report string
 	_ = chromedp.Run(ctx,
 		chromedp.Poll(`report.complete === true`, nil,
 			chromedp.WithPollingInterval(500*time.Millisecond),
-			chromedp.WithPollingTimeout(5*time.Second),
+			chromedp.WithPollingTimeout(timeout-5*time.Second),
 		),
 	) // ignore errors here, we try to always get the result.
 
@@ -462,7 +479,7 @@ func runtest(ctx context.Context, cdp, test string, addr Address) (*TestResult, 
 		case errors.Is(err, syscall.ECONNREFUSED),
 			errors.Is(err, syscall.ECONNABORTED),
 			errors.Is(err, syscall.ECONNRESET):
-			return nil, fmt.Errorf("%s: eval: %w", test, err)
+			return nil, fmt.Errorf("%s: eval: %w", test.URL, err)
 		}
 
 		res.Message = strings.TrimSpace(err.Error())

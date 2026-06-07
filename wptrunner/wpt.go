@@ -9,8 +9,14 @@ import (
 	"sort"
 )
 
-// fetchManifest request /MANIFEST.json file and extract test harness test urls.
-func fetchManifest(ctx context.Context, addr string) ([]string, error) {
+type Test struct {
+	URL string
+	// whether the test is expected to take long
+	Long bool
+}
+
+// fetchManifest request /MANIFEST.json file and extract test harness tests.
+func fetchManifest(ctx context.Context, addr string) ([]Test, error) {
 	u, err := url.JoinPath(addr, "MANIFEST.json")
 	if err != nil {
 		return nil, fmt.Errorf("create url: %w", err)
@@ -48,20 +54,22 @@ func fetchManifest(ctx context.Context, addr string) ([]string, error) {
 		base = "/"
 	}
 
-	urls := make([]string, 0, 4000)
-	if err := walkManifest(manifest.Items.Testharness, "", base, &urls); err != nil {
+	tests := make([]Test, 0, 37000)
+	if err := walkManifest(manifest.Items.Testharness, "", base, &tests); err != nil {
 		return nil, err
 	}
 
 	// Keep results in same order.
-	sort.Strings(urls)
+	sort.Slice(tests, func(i, j int) bool {
+		return tests[i].URL < tests[j].URL
+	})
 
-	return urls, nil
+	return tests, nil
 }
 
 // walkManifest recursively walks the testharness directory tree.
 // Leaves are entries whose value is a JSON array (not an object).
-func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls *[]string) error {
+func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, tests *[]Test) error {
 	for key, raw := range node {
 		// Determine whether this value is an object (subdirectory) or array (file entry).
 		trimmed := json.RawMessage(raw)
@@ -76,7 +84,7 @@ func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls
 			if err := json.Unmarshal(trimmed, &sub); err != nil {
 				return fmt.Errorf("unmarshal subdir %q: %w", key, err)
 			}
-			if err := walkManifest(sub, pathPrefix+"/"+key, base, urls); err != nil {
+			if err := walkManifest(sub, pathPrefix+"/"+key, base, tests); err != nil {
 				return err
 			}
 
@@ -106,7 +114,18 @@ func walkManifest(node map[string]json.RawMessage, pathPrefix, base string, urls
 					}
 					u = base + u
 				}
-				*urls = append(*urls, u)
+
+				var opts struct {
+					Timeout string `json:"timeout"`
+				}
+				if err := json.Unmarshal(variant[1], &opts); err != nil {
+					return fmt.Errorf("unmarshal options for %q: %w", key, err)
+				}
+
+				*tests = append(*tests, Test{
+					URL:  u,
+					Long: opts.Timeout == "long",
+				})
 			}
 		}
 	}
