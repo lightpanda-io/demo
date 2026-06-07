@@ -457,7 +457,6 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 	if err != nil {
 		return nil, fmt.Errorf("page load error: %w", err)
 	}
-	fmt.Println(err)
 
 	var status, report string
 	_ = chromedp.Run(ctx,
