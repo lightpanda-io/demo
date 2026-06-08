@@ -70,9 +70,9 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 	cmd := exec.CommandContext(ctx, b.Path,
 		"serve",
-		"--log_level", "error",
+		"--log-level", "error",
 		"--port", strconv.Itoa(b.Port),
-		"--insecure_disable_tls_host_verification",
+		"--insecure-disable-tls-host-verification",
 	)
 
 	// We keep a reference to the original context to restart the browser with

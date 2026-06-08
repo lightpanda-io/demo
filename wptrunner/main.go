@@ -448,28 +448,65 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 		return res, nil
 	}
 
-	err = chromedp.Run(ctx,
-		chromedp.Poll(`window.report !== undefined`, nil,
-			chromedp.WithPollingInterval(500*time.Millisecond),
-			chromedp.WithPollingTimeout(5*time.Second),
-		),
-	) // ignore errors here, we try to always get the result.
-	if err != nil {
-		return nil, fmt.Errorf("page load error: %w", err)
+	// Wait for the test to finish, bailing out early if it stops making progress.
+	// "Progress" = subtests being registered or the report log growing. A healthy
+	// test (even a slow one with thousands of cases) keeps making progress; a test
+	// that is fundamentally broken (missing API, hung) flatlines. If nothing
+	// changes for stallGrace we stop waiting and report whatever we have.
+	const (
+		stallGrace   = 5 * time.Second
+		probeTimeout = 2 * time.Second
+	)
+	var lastFP string
+	lastChange := time.Now()
+WAIT:
+	for {
+		// Bound each probe so that a hung JS runtime doesn't block for 1 long (30
+		// second) probe
+		pctx, pcancel := context.WithTimeout(ctx, probeTimeout)
+		var fp string
+		err = chromedp.Run(pctx, chromedp.Evaluate(`(function(){
+			if (typeof report === "undefined") return "undef";
+			return report.complete + "|" + Object.keys(report.cases).length + "|" + report.log.length;
+		})()`, &fp))
+		pcancel()
+
+		switch {
+		case err == nil && strings.HasPrefix(fp, "true|"):
+			break WAIT // report.complete === true
+		case errors.Is(err, syscall.ECONNREFUSED),
+			errors.Is(err, syscall.ECONNABORTED),
+			errors.Is(err, syscall.ECONNRESET):
+			return nil, fmt.Errorf("%s: progress: %w", test.URL, err)
+		case err == nil && fp != lastFP:
+			lastFP = fp
+			lastChange = time.Now()
+		}
+
+		if ctx.Err() != nil {
+			break // overall test deadline reached
+		}
+		if time.Since(lastChange) > stallGrace {
+			res.Message = fmt.Sprintf("aborted: no progress for %s", stallGrace)
+			break
+		}
+
+		select {
+		case <-ctx.Done():
+			break WAIT
+		case <-time.After(500 * time.Millisecond):
+		}
 	}
 
+	// Read the final report. Bound it too, so a hung page can't block here until
+	// the test deadline.
 	var status, report string
-	_ = chromedp.Run(ctx,
-		chromedp.Poll(`report.complete === true`, nil,
-			chromedp.WithPollingInterval(500*time.Millisecond),
-			chromedp.WithPollingTimeout(timeout-5*time.Second),
-		),
-	) // ignore errors here, we try to always get the result.
-
-	err = chromedp.Run(ctx,
+	rctx, rcancel := context.WithTimeout(ctx, probeTimeout)
+	err = chromedp.Run(rctx,
 		chromedp.Evaluate(`report.status;`, &status),
 		chromedp.Evaluate(`report.log;`, &report),
 	)
+	rcancel()
 	res.Elapsed = time.Since(start)
 
 	// invalid test result.
@@ -481,7 +518,10 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 			return nil, fmt.Errorf("%s: eval: %w", test.URL, err)
 		}
 
-		res.Message = strings.TrimSpace(err.Error())
+		// Keep the stall message if we already have one.
+		if res.Message == "" {
+			res.Message = strings.TrimSpace(err.Error())
+		}
 		return res, nil
 	}
 
