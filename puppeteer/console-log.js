@@ -22,15 +22,15 @@ const browser = await connectBrowser();
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-let info = false;
+let log = false;
 let err = false;
 page.on('console', (evt) => {
   console.log("LOG", evt.type(), evt.text());
   if (evt.type() == "error") {
     err = true;
   }
-  if (evt.type() == "info") {
-    info = true;
+  if (evt.type() == "log") {
+    log = true;
   }
 });
 
@@ -44,8 +44,8 @@ await context.close();
 await browser.disconnect();
 
 
-if (info == false) {
-  throw new Error("console info evt not catched");
+if (log == false) {
+  throw new Error("console log evt not catched");
 }
 if (err == false) {
   throw new Error("console error evt not catched");
