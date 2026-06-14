@@ -29,7 +29,11 @@ page.on('console', (evt) => {
   if (evt.type() == "error") {
     err = true;
   }
-  if (evt.type() == "log") {
+  // TODO: remove '|| evt.type() == "info"'
+  // This is only added since we have some PRs based on commits prior to
+  // https://github.com/lightpanda-io/browser/pull/2731 which changed the type
+  // from info to log
+  if (evt.type() == "log" || evt.type() == "info") {
     log = true;
   }
 });
