@@ -11,22 +11,20 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 import puppeteer from "puppeteer-core";
 import { connectBrowser, needsCache } from "./helpers.js";
 
 const url = process.env.URL
   ? process.env.URL
-  : "http://127.0.0.1:1236/revalidate/page.html";
+  : "http://127.0.0.1:1236/revalidate-lm/page.html";
+
 const browser = await connectBrowser();
 await needsCache(browser);
-
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 const client = await page._client();
 
 let servedFromCache = false;
-
 client.on("Network.requestServedFromCache", () => {
   servedFromCache = true;
 });
@@ -43,7 +41,8 @@ console.log("OK: first request was a cache miss");
 // Wait for the 1s max-age to expire.
 await new Promise((resolve) => setTimeout(resolve, 2000));
 
-// Second request — entry is stale, should revalidate and serve from cache.
+// Second request — entry is stale, should revalidate (If-Modified-Since)
+// and serve from cache after a 304.
 servedFromCache = false;
 await page.goto(url, { waitUntil: "networkidle0", timeout: 4000 });
 if (!servedFromCache) {
