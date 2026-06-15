@@ -14,9 +14,9 @@
 import puppeteer from "puppeteer-core";
 import { connectBrowser, needsCache } from "./helpers.js";
 
-const url = process.env.URL
-  ? process.env.URL
-  : "http://127.0.0.1:1236/revalidate-lm/page.html";
+const base = process.env.BASE_URL || "http://127.0.0.1:1236";
+const url = `${base}/revalidate-lm/page.html`;
+const bumpUrl = `${base}/revalidate/bump`;
 
 const browser = await connectBrowser();
 await needsCache(browser);
@@ -31,34 +31,61 @@ client.on("Network.requestServedFromCache", () => {
 
 await client.send("Network.clearBrowserCache");
 
-// First request — cold miss, should fetch and store.
-await page.goto(url, { waitUntil: "networkidle0", timeout: 4000 });
-if (servedFromCache) {
-  throw new Error("Expected first request to not be served from cache");
-}
-console.log("OK: first request was a cache miss");
+// 1. Cold miss — stores current version (vN).
+let response = await page.goto(url, {
+  waitUntil: "networkidle0",
+  timeout: 4000,
+});
+if (servedFromCache) throw new Error("Expected cold miss");
+let body = await page.content();
+const versionMatch = body.match(/v(\d+)/);
+if (!versionMatch) throw new Error(`Could not parse version from: ${body}`);
+const v0 = versionMatch[1];
+console.log(`OK: cold miss, got v${v0}`);
 
-// Wait for the 1s max-age to expire.
-await new Promise((resolve) => setTimeout(resolve, 2000));
+// Wait for max-age=1 to expire.
+await new Promise((r) => setTimeout(r, 1500));
 
-// Second request — entry is stale, should revalidate (If-Modified-Since)
-// and serve from cache after a 304.
+// 2. Stale → revalidation: server unchanged → 304 → served from cache (v0).
 servedFromCache = false;
 await page.goto(url, { waitUntil: "networkidle0", timeout: 4000 });
-if (!servedFromCache) {
-  throw new Error(
-    "Expected second request to be served from cache after revalidation",
-  );
+body = await page.content();
+if (!body.includes(`v${v0}`)) {
+  throw new Error(`Expected revalidated v${v0}, got: ${body}`);
 }
-console.log("OK: second request was revalidated and served from cache");
+console.log(`OK: revalidation succeeded (304), still v${v0}`);
 
-// Third request — fresh, served from cache.
+await new Promise((r) => setTimeout(r, 1500));
+
+// 3. Bump server-side version out-of-band (simulates content change).
+await fetch(bumpUrl);
+
+// 4. Stale → revalidation: If-None-Match no longer matches → 200 with new version.
+servedFromCache = false;
+response = await page.goto(url, { waitUntil: "networkidle0", timeout: 4000 });
+if (servedFromCache)
+  throw new Error("Expected network fetch for changed content");
+if (response.status() !== 200) {
+  throw new Error(`Expected 200, got ${response.status()}`);
+}
+body = await page.content();
+const v1Match = body.match(/v(\d+)/);
+if (!v1Match || v1Match[1] === v0) {
+  throw new Error(`Expected new version after change, got: ${body}`);
+}
+const v1 = v1Match[1];
+console.log(`OK: revalidation detected change, got v${v1}`);
+
+// 5. Fresh from cache, vN+1.
+await new Promise((r) => setTimeout(r, 100));
 servedFromCache = false;
 await page.goto(url, { waitUntil: "networkidle0", timeout: 4000 });
-if (!servedFromCache) {
-  throw new Error("Expected third request to be served from cache");
+if (!servedFromCache) throw new Error("Expected fresh cache hit");
+body = await page.content();
+if (!body.includes(`v${v1}`)) {
+  throw new Error(`Expected cached v${v1}, got: ${body}`);
 }
-console.log("OK: third request was served from cache");
+console.log(`OK: served fresh v${v1} from cache`);
 
 await page.close();
 await context.close();
