@@ -14,11 +14,15 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
+	"image"
+	"image/color"
+	"image/png"
 	"io"
 	"log/slog"
 	"net"
@@ -30,6 +34,26 @@ import (
 	"time"
 	"sync/atomic"
 )
+
+// downloadImage is a small, deterministic PNG served as a file download
+// (Content-Disposition: attachment) by the /download/image endpoint. It is
+// encoded once so every request returns byte-identical content, letting the
+// end-to-end test compare the on-disk download against a plain GET of the body.
+var downloadImage = mustPNG()
+
+func mustPNG() []byte {
+	img := image.NewRGBA(image.Rect(0, 0, 8, 8))
+	for y := 0; y < 8; y++ {
+		for x := 0; x < 8; x++ {
+			img.Set(x, y, color.RGBA{R: uint8(x * 32), G: uint8(y * 32), B: 0x80, A: 0xff})
+		}
+	}
+	var buf bytes.Buffer
+	if err := png.Encode(&buf, img); err != nil {
+		panic(err)
+	}
+	return buf.Bytes()
+}
 
 const (
 	exitOK   = 0
@@ -120,6 +144,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form_file.js"}},
+		{Bin: "node", Args: []string{"puppeteer/download.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies.js"}},
 		{Bin: "node", Args: []string{"puppeteer/multi.js"}},
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
@@ -140,6 +165,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
 		{Bin: "node", Args: []string{"playwright/links.js"}, Env: []string{"BASE_URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/click.js"}},
+		{Bin: "node", Args: []string{"playwright/download.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
@@ -345,6 +371,15 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte("<html><body><p id=res>"))
 		fmt.Fprintf(res, "received: %s (%d)", h.Filename, h.Size)
 		res.Write([]byte("</p></body></html>"))
+
+	case "/download/image":
+		// A file download: Content-Disposition: attachment drives the
+		// Browser.setDownloadBehavior path (lightpanda issue #2701). The body is
+		// a small binary PNG so we exercise the stream-to-disk path, not HTML.
+		res.Header().Set("Content-Type", "image/png")
+		res.Header().Set("Content-Disposition", `attachment; filename="lightpanda.png"`)
+		res.Header().Set("Content-Length", strconv.Itoa(len(downloadImage)))
+		res.Write(downloadImage)
 
 	case "/get/headers":
 		enc := json.NewEncoder(res)
