@@ -28,6 +28,7 @@ import (
 	"strconv"
 	"strings"
 	"time"
+	"sync/atomic"
 )
 
 const (
@@ -144,6 +145,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-vary.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-no-store.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cache-revalidation-etag.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cache-revalidation-last-modified.js"}},
 		{Bin: "go", Args: []string{"run", "fetch/main.go", "test"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
@@ -233,7 +236,7 @@ func runhttp(ctx context.Context, addr, dir string, wait time.Duration) error {
 	handlers := []http.Handler{
 		def,
 		BrokenRobotsServer{DefaultServer: def},
-		CacheServer{},
+		&CacheServer{},
 	}
 
 	fmt.Fprintf(os.Stderr, "expose dir: %q\n", dir)
@@ -368,10 +371,17 @@ func (s BrokenRobotsServer) ServeHTTP(res http.ResponseWriter, req *http.Request
 	s.DefaultServer.ServeHTTP(res, req)
 }
 
-type CacheServer struct{}
+type CacheServer struct {
+	count atomic.Int64
+}
 
-func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-	path := req.URL.Path
+func lmForVersion(v int64) string {
+    base := time.Date(2026, 1, 1, 0, 0, 0, 0, time.UTC)
+    return base.Add(time.Duration(v) * 24 * time.Hour).Format(http.TimeFormat)
+}
+
+func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+    path := req.URL.Path
 
 	switch {
 	case strings.HasPrefix(path, "/vary/"):
@@ -380,6 +390,44 @@ func (s CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Vary", "X-Internal-Header")
 		res.Header().Set("Content-Type", "text/html")
 		res.Write([]byte("<html><body>vary</body></html>"))
+
+	case path == "/revalidate/bump":
+	    s.count.Add(1)
+	    res.WriteHeader(http.StatusOK)
+
+	case strings.HasPrefix(path, "/revalidate-etag/"):
+	    current := s.count.Load()
+	    etag := fmt.Sprintf(`"etag-v%d"`, current)
+
+	    if req.Header.Get("If-None-Match") == etag {
+	        res.WriteHeader(http.StatusNotModified)
+	        return
+	    }
+
+        res.Header().Set("Cache-Control", "max-age=1")
+        res.Header().Set("ETag", etag)
+        res.Header().Set("Content-Type", "text/html")
+        fmt.Fprintf(res, "<html><body>revalidate-etag v%d</body></html>", current)
+
+    case strings.HasPrefix(path, "/revalidate-lm/"):
+        current := s.count.Load()
+        lastModified := lmForVersion(current)
+
+        if ims := req.Header.Get("If-Modified-Since"); ims != "" {
+            if t, err := time.Parse(http.TimeFormat, ims); err == nil {
+                lm, _ := time.Parse(http.TimeFormat, lastModified)
+                if !lm.After(t) {
+                    res.Header().Set("Cache-Control", "max-age=1")
+                    res.WriteHeader(http.StatusNotModified)
+                    return
+                }
+            }
+        }
+
+        res.Header().Set("Cache-Control", "max-age=1")
+        res.Header().Set("Last-Modified", lastModified)
+        res.Header().Set("Content-Type", "text/html")
+        fmt.Fprintf(res, "<html><body>revalidate-lm v%d</body></html>", current)
 
 	case strings.HasPrefix(path, "/cache/"):
 		req.URL.Path = path[len("/cache"):]
