@@ -28,16 +28,42 @@ await page.goto('https://docs.anthropic.com/en/docs/agents-and-tools/claude-code
 
 const html = await page.content();
 
-// Verify the page title rendered
-const title = await page.evaluate(() => {
-  const el = document.getElementById('page-title');
-  return el ? el.textContent : null;
+// Detect a real Cloudflare/captcha interstitial and exit with the dedicated
+// captcha exit code (103). A genuine challenge replaces the whole document:
+// the title becomes "Just a moment..." / "Attention Required!" AND the real
+// page content (the #page-title heading) is absent. We require both signals so
+// the always-present Turnstile <script> on the *successful* page is not
+// mistaken for an interstitial.
+const captcha = await page.evaluate(() => {
+  const docTitle = document.title || '';
+  const isChallengeTitle = /just a moment|attention required|checking your browser/i.test(docTitle);
+  const hasRealContent = !!document.getElementById('page-title');
+  return isChallengeTitle && !hasRealContent;
 });
 
-if (!title || !title.includes('Claude Code')) {
-  console.log('Page title:', title);
+if (captcha) {
+  console.log('Captcha / Cloudflare challenge detected, document.title:', await page.title());
+  await page.close();
+  await context.close();
+  await browser.disconnect();
+  process.exit(103);
+}
+
+// Verify the page rendered: the document title carries the product name
+// ("Overview - Claude Code Docs") and the #page-title heading is present.
+const titleInfo = await page.evaluate(() => {
+  const el = document.getElementById('page-title');
+  return { docTitle: document.title, pageTitle: el ? el.textContent.trim() : null };
+});
+
+if (!titleInfo.docTitle || !titleInfo.docTitle.includes('Claude Code')) {
+  console.log('Document title:', titleInfo.docTitle);
   console.log(html.substring(0, 500));
-  throw new Error('Page title not found or missing "Claude Code"');
+  throw new Error('Document title not found or missing "Claude Code"');
+}
+
+if (!titleInfo.pageTitle) {
+  throw new Error('Page title heading (#page-title) not rendered');
 }
 
 // Verify key section headings rendered
@@ -52,13 +78,21 @@ for (const expected of ['Get started', 'What you can do', 'Next steps']) {
   }
 }
 
-// Verify sidebar navigation rendered
+// Verify sidebar navigation rendered. The docs site exposes nav as <a> links
+// under #navigation-items (formerly id="sidebar-title").
 const sidebar = await page.evaluate(() => {
-  return Array.from(document.querySelectorAll('[id="sidebar-title"]')).map(el => el.textContent.trim());
+  return Array.from(document.querySelectorAll('#navigation-items a')).map(el => el.textContent.trim());
 });
 
 if (sidebar.length === 0) {
   throw new Error('Sidebar navigation not rendered');
+}
+
+for (const expected of ['Overview', 'Quickstart']) {
+  if (!sidebar.some(s => s.includes(expected))) {
+    console.log('Sidebar links found:', sidebar.slice(0, 12));
+    throw new Error(`Missing expected sidebar link: "${expected}"`);
+  }
 }
 
 await page.close();
