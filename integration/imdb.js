@@ -31,10 +31,31 @@ await page.goto('https://www.imdb.com/', { waitUntil: 'networkidle0' });
 await page.waitForSelector('input[name="q"]', { timeout: 10000 });
 await page.type('input[name="q"]', MOVIE);
 
-await Promise.all([
-  page.waitForNavigation({ waitUntil: 'networkidle0' }),
+const [searchResponse] = await Promise.all([
+  page.waitForNavigation({ waitUntil: 'networkidle0' }).catch(() => null),
   page.keyboard.press('Enter'),
 ]);
+
+// IMDB (Amazon) frequently serves an anti-bot / captcha challenge instead of
+// the search results. Detect it and exit with the dedicated captcha code (103)
+// so the integration runner reports it as CAPTCHA rather than a real failure.
+// Signals: a non-OK navigation status (202 challenge, 403/429/503), or bot-wall
+// text on the page ("verify that you're not a robot", "Robot Check", etc.).
+const EXIT_CAPTCHA = 103;
+const blocked = await page.evaluate(() => {
+  const text = `${document.title}\n${document.body?.innerText ?? ''}`;
+  return /not a robot|Max challenge attempts|Request blocked|Robot Check|403 Forbidden|Enable JavaScript|To discuss automated access/i.test(
+    text,
+  );
+});
+const status = searchResponse ? searchResponse.status() : 0;
+if (blocked || [202, 403, 429, 503].includes(status)) {
+  console.log(`Captcha / anti-bot challenge detected (status ${status})`);
+  await page.close();
+  await context.close();
+  await browser.disconnect();
+  process.exit(EXIT_CAPTCHA);
+}
 
 const results = await page.evaluate(() => {
   const items = Array.from(
