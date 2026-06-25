@@ -106,9 +106,9 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		start := time.Now()
 		if err := runtest(ctx, t); err != nil {
 			if errors.Is(ErrCaptcha, err) {
-				fmt.Fprintf(stdout, "=== CAPTCHA\t%s\n", t)
+				fmt.Fprintf(stdout, "=== CAPTCHA\t%v\t%s\n", time.Since(start), t)
 			} else {
-				fmt.Fprintf(stdout, "=== ERR\t%s\n", t)
+				fmt.Fprintf(stdout, "=== ERR\t%v\t%s\n", time.Since(start), t)
 			}
 			fails++
 			continue
