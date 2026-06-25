@@ -40,17 +40,35 @@ await Promise.all([
   page.keyboard.press("Enter"),
 ]);
 
-const links = await page.evaluate(() => {
-  return Array.from(
+const result = await page.evaluate(() => {
+  // DuckDuckGo serves an anti-bot challenge ("anomaly modal") instead of
+  // results when it flags the traffic as automated. Detect it so we don't
+  // report a misleading "invalid results" failure.
+  const captcha =
+    document.querySelector('[data-testid="anomaly-modal"]') !== null ||
+    document.body.innerHTML.includes("containing a duck");
+
+  const links = Array.from(
     document.querySelectorAll('a[data-testid="result-title-a"]'),
-  ).map((row) => {
-    return row.getAttribute("href");
-  });
+  ).map((row) => row.getAttribute("href"));
+
+  return { captcha, links };
 });
 
 await page.close();
 await context.close();
 await browser.disconnect();
+
+if (result.captcha) {
+  // Not a Lightpanda failure: DuckDuckGo blocked the request with its
+  // bot-detection CAPTCHA, so no results were ever rendered. Skip the
+  // assertions instead of reporting a false negative.
+  console.log("SKIP: DuckDuckGo served an anti-bot CAPTCHA, no results to check");
+  // integration/main.go detects the special error code
+  process.exit(103);
+}
+
+const links = result.links;
 
 let found = {
   homepage: false,
