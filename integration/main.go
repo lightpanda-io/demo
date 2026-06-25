@@ -105,7 +105,11 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 		start := time.Now()
 		if err := runtest(ctx, t); err != nil {
-			fmt.Fprintf(stdout, "=== ERR\t%s\n", t)
+			if errors.Is(ErrCaptcha, err) {
+				fmt.Fprintf(stdout, "=== CAPTCHA\t%s\n", t)
+			} else {
+				fmt.Fprintf(stdout, "=== ERR\t%s\n", t)
+			}
 			fails++
 			continue
 		}
@@ -132,6 +136,8 @@ func (t Test) String() string {
 	return t.Bin + " " + strings.Join(t.Args, " ")
 }
 
+var ErrCaptcha = errors.New("captcha detected")
+
 func runtest(ctx context.Context, t Test) error {
 	cmd := exec.CommandContext(ctx, t.Bin, t.Args...)
 
@@ -141,7 +147,13 @@ func runtest(ctx context.Context, t Test) error {
 	cmd.Stderr = t.Stderr
 
 	if err := cmd.Run(); err != nil {
-		return fmt.Errorf("run: %w", err)
+		switch cmd.ProcessState.ExitCode() {
+		case 103:
+			return ErrCaptcha
+		default:
+			return fmt.Errorf("run: %w", err)
+		}
+
 	}
 
 	return nil
