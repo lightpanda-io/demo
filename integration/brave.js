@@ -19,13 +19,15 @@ const browser = await connect({ browserWSEndpoint: "ws://127.0.0.1:9222" });
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto("https://search.brave.com", { waitUntil: "networkidle0" });
+await page.goto("https://search.brave.com");
+await page.waitForSelector("#searchbox");
 
 await page.type("#searchbox", "lightpanda");
 await Promise.all([
-  page.waitForNavigation({ waitUntil: "networkidle0" }),
+  page.waitForNavigation({ waitUntil: "load" }),
   page.keyboard.press("Enter"),
 ]);
+await page.waitForSelector("#results");
 
 const links = await page.$$eval("#results a[href]", (anchors) =>
   anchors.map((a) => a.getAttribute("href")),
