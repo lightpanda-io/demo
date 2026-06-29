@@ -73,6 +73,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"--log-level", "error",
 		"--port", strconv.Itoa(b.Port),
 		"--insecure-disable-tls-host-verification",
+		"--http-cache-dir", "/tmp/lp-cache/",
 	)
 
 	// We keep a reference to the original context to restart the browser with
