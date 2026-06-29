@@ -1,0 +1,70 @@
+// Copyright 2023-2024 Lightpanda (Selecy SAS)
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+'use strict'
+
+import puppeteer from 'puppeteer-core';
+import { connectBrowser } from './helpers.js'
+
+// web serveur url
+const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
+
+(async () => {
+  const browser = await connectBrowser();
+  const context = await browser.createBrowserContext();
+  const page = await context.newPage();
+
+  await page.setRequestInterception(true);
+  page.on('request', req => {
+    if (req.isInterceptResolutionHandled()) return;
+
+    const url = req.url();
+    if (url.endsWith('reviews.json')) {
+       return req.respond({
+          ok: true,
+          status: 302,
+          headers: {location: 'reviews_redirect.json'},
+        });
+    }
+    req.continue();
+  });
+  // Navigate the page to a URL
+  await page.goto(baseURL + '/campfire-commerce/');
+
+  await page.waitForFunction(() => {
+      const desc = document.querySelector('#product-description');
+      return desc.textContent.length > 0;
+  }, {timeout: 100}); // timeout 100ms
+
+  // ensure the reviews are loaded.
+  await page.waitForFunction(() => {
+      const reviews = document.querySelectorAll('#product-reviews > div');
+      return reviews.length > 0;
+  }, {timeout: 100}); // timeout 100ms
+
+  let res = {};
+
+  res.reviews = await page.evaluate(() => {
+    const r = document.querySelectorAll('#product-reviews > div > p');
+    return Array.from(r).map((n) => n.textContent);
+  });
+
+  if (res.reviews[0] != 'It was ok' || res.reviews[1] != 'I liked it' || res.reviews[2] != 'What a backpack!') {
+    console.log(res);
+    throw new Error("invalid reviews");
+  }
+
+  await page.close();
+  await context.close();
+  await browser.disconnect();
+})();
