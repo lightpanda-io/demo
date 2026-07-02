@@ -1,0 +1,24 @@
+{
+  "related": [
+    {
+      "game": "Animal Crossing",
+      "name": "Isabelle",
+      "serie": "Animal Crossing"
+    },
+    {
+      "game": "Animal Crossing",
+      "name": "Coach",
+      "serie": "Animal Crossing"
+    },
+    {
+      "game": "Mario Sports Superstars",
+      "name": "Boo - Soccer",
+      "serie": "Mario Sports Superstars"
+    }
+  ],
+  "start": {
+    "game": "Animal Crossing",
+    "name": "Sandy",
+    "serie": "Animal Crossing"
+  }
+}

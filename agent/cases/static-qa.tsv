@@ -1,0 +1,12 @@
+# Static Q&A regression cases for the live LLM layer, against the
+# campfire-commerce demo site (JS-rendered product page).
+# One case per line, TAB-separated: <task>\t<expected-substring>
+# The expected substring must appear (case-insensitive) in the agent's final
+# answer on stdout. Keep answers unambiguous so LLM phrasing does not matter —
+# match on the load-bearing token only, and avoid bare small numbers (too weak
+# as substrings).
+# Lines starting with # and blank lines are ignored.
+Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the price of the product on that page.	244.99
+Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the name of the product being sold.	Nomad Backpack
+Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the name of the cheapest related product listed on the page.	Water Bottle
+Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the price of the Outdoor Odyssey Hiking Poles shown in the related products.	79.99
