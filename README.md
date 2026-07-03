@@ -23,6 +23,7 @@ You can find script examples to use the browser with different librairies.
 
 * `runner/` contains a Go program running many of examples scripts against local demo website
 * `integration/` contains a Go program running scripts against real world websites.
+* `agent/` contains the `lightpanda agent` regression suite (deterministic script replay against the `public/` demo sites + a live LLM layer).
 
 ## Tools
 

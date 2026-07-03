@@ -1,0 +1,35 @@
+{
+  "features": [
+    "Large 60-liter capacity for multi-day outdoor adventures",
+    "Padded shoulder straps and back panel for comfort and support",
+    "Multiple compartments and pockets, including a sleeping bag compartment and hydration bladder sleeve, for easy organization",
+    "Durable and water-resistant materials with compression straps and attachment points for trekking poles or ice axes for added functionality and convenience"
+  ],
+  "name": "Outdoor Odyssey Nomad Backpack 60 liters",
+  "price": "$244.99",
+  "related": [
+    {
+      "name": "Outdoor Odyssey Hiking Poles",
+      "price": "$79.99"
+    },
+    {
+      "name": "Outdoor Odyssey Sleeping Bag",
+      "price": "$129.99"
+    },
+    {
+      "name": "Outdoor Odyssey Water Bottle",
+      "price": "$19.99"
+    }
+  ],
+  "reviews": [
+    {
+      "title": "I recently took the Nomad..."
+    },
+    {
+      "title": "As an avid hiker, I've..."
+    },
+    {
+      "title": "I purchased the Nomad Backpack..."
+    }
+  ]
+}
