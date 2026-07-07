@@ -12,6 +12,11 @@
 #   live           — drive the real LLM agent (needs an API key):
 #                      * static Q&A: ask closed-form questions about a local
 #                        fixture page, substring-match the answer.
+#                      * form save+replay: ask the agent to fill and submit a
+#                        local form fixture and /save the script, then replay
+#                        it token-free — the only e2e check that the Recorder
+#                        emits interaction calls (fill/click), not just
+#                        goto/extract.
 #                      * HN save+replay: ask the agent to scrape live Hacker
 #                        News and /save a reproducible script, then replay it
 #                        token-free and validate the output against a shape
@@ -153,39 +158,59 @@ run_live_qa() {
   done <"$HERE/cases/static-qa.tsv"
 }
 
-run_live_hn() {
-  info "== live layer: HN save + replay (model=$LP_MODEL) =="
-  local script="$TMP/hn-live.js" task
-  task="$(cat "$HERE/cases/hn-live.task")"
+# Save + replay flow shared by the live cases: run the agent with the task
+# from cases/<name>.task and --save, require every space-separated regex in
+# <required-calls> to match the saved script, then replay it token-free and
+# validate the output with cases/<name>.jq. Extra args go to the save run
+# (e.g. --http-proxy).
+run_live_save_replay() {
+  local name="$1" save_timeout="$2" replay_timeout="$3" required="$4"
+  shift 4
+  local script="$TMP/$name.js" task
+  task="$(cat "$HERE/cases/$name.task")"
 
-  local proxy_args=()
-  [ -n "${LP_HTTP_PROXY:-}" ] && proxy_args=(--http-proxy "$LP_HTTP_PROXY")
-
-  timeout 900 "$LPD" agent --provider gemini --model "$LP_MODEL" "${proxy_args[@]}" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
-  check_usage "$TMP/err" "HN save"
+  timeout "$save_timeout" "$LPD" agent --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
+  check_usage "$TMP/err" "$name save"
 
   if [ ! -s "$script" ]; then
-    fail "HN save produced no script"
+    fail "$name save produced no script"
     show_err "$TMP/err"
     return
   fi
-  if grep -q 'goto(' "$script" && grep -q 'extract(' "$script"; then
-    pass "HN saved script looks replayable (has goto + extract)"
+  local p missing=""
+  for p in $required; do
+    grep -qE "$p" "$script" || missing="$missing $p"
+  done
+  if [ -z "$missing" ]; then
+    pass "$name saved script records the expected calls ($required)"
   else
-    fail "HN saved script missing goto/extract — see below"
+    fail "$name saved script missing$missing — see below"
     sed 's/^/    /' "$script"
   fi
 
   # Replay without --task runs no LLM — no key or tokens needed.
-  if ! timeout 300 "$LPD" agent "$script" >"$TMP/out" 2>/dev/null; then
-    fail "HN saved script failed on replay"; return
+  if ! timeout "$replay_timeout" "$LPD" agent "$script" >"$TMP/out" 2>/dev/null; then
+    fail "$name saved script failed on replay"; return
   fi
-  if jq -e -f "$HERE/cases/hn-live.jq" "$TMP/out" >/dev/null 2>&1; then
-    pass "HN replay output satisfies shape invariant"
+  if jq -e -f "$HERE/cases/$name.jq" "$TMP/out" >/dev/null 2>&1; then
+    pass "$name replay output satisfies cases/$name.jq"
   else
-    fail "HN replay output violates cases/hn-live.jq"
+    fail "$name replay output violates cases/$name.jq"
     info "  output: $(tr '\n' ' ' <"$TMP/out" | cut -c1-300)"
   fi
+}
+
+run_live_hn() {
+  info "== live layer: HN save + replay (model=$LP_MODEL) =="
+  local proxy_args=()
+  [ -n "${LP_HTTP_PROXY:-}" ] && proxy_args=(--http-proxy "$LP_HTTP_PROXY")
+  run_live_save_replay hn-live 900 300 'goto\( extract\(' "${proxy_args[@]}"
+}
+
+run_live_form_save() {
+  info "== live layer: form save + replay (model=$LP_MODEL) =="
+  # The agent may submit via click or by pressing Enter — accept either.
+  run_live_save_replay form-live 300 120 'fill\( click\(|press\('
 }
 
 # --- dispatch ----------------------------------------------------------------
@@ -195,11 +220,11 @@ case "$LAYER" in
   deterministic) run_deterministic ;;
   live)
     [ -n "${GOOGLE_API_KEY:-}${GEMINI_API_KEY:-}" ] || { red "GOOGLE_API_KEY/GEMINI_API_KEY unset — cannot run live layer"; exit 2; }
-    run_live_qa; run_live_hn ;;
+    run_live_qa; run_live_form_save; run_live_hn ;;
   all)
     run_deterministic
     if [ -n "${GOOGLE_API_KEY:-}${GEMINI_API_KEY:-}" ]; then
-      run_live_qa; run_live_hn
+      run_live_qa; run_live_form_save; run_live_hn
     else
       info "GOOGLE_API_KEY/GEMINI_API_KEY unset — skipping live layer"
     fi ;;

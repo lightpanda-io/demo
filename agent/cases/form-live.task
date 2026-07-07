@@ -1,0 +1,1 @@
+Go to http://127.0.0.1:1234/form/get.html, type "lightpanda42" into the text input whose name is h3, then submit the form. The server echoes the request back. Return a JSON object with keys "method" (the echoed HTTP method string) and "query" (the echoed query string).

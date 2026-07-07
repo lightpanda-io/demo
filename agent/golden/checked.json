@@ -1,0 +1,4 @@
+{
+  "method": "GET",
+  "query": "promo=daily&plan=pro&events=click-input-change"
+}

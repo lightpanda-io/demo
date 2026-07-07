@@ -10,3 +10,5 @@ Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the price of the prod
 Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the name of the product being sold.	Nomad Backpack
 Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the name of the cheapest related product listed on the page.	Water Bottle
 Go to http://127.0.0.1:1234/campfire-commerce/ and tell me the price of the Outdoor Odyssey Hiking Poles shown in the related products.	79.99
+Go to http://127.0.0.1:1234/form/get.html, type "panda42" into the text input whose name is h3, submit the form, and tell me the query string the server echoed back.	h3=panda42
+Go to http://127.0.0.1:1234/amiibo/index.html and tell me the name of the amiibo character shown on that page.	Sandy

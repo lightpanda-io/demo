@@ -1,0 +1,11 @@
+{
+  "get": {
+    "method": "GET",
+    "query": "h1=v1&h3=panda&favorite+drink=tea&ta=hello"
+  },
+  "post": {
+    "body": "h1=v1&h3=v3&favorite+drink=tea&s1=go",
+    "method": "POST",
+    "query": ""
+  }
+}
