@@ -1,0 +1,70 @@
+{
+  "fetch": [
+    {
+      "Domain": "",
+      "Expires": "0001-01-01T00:00:00Z",
+      "HttpOnly": false,
+      "MaxAge": 0,
+      "Name": "lightpanda",
+      "Partitioned": false,
+      "Path": "",
+      "Quoted": false,
+      "Raw": "",
+      "RawExpires": "",
+      "SameSite": 0,
+      "Secure": false,
+      "Unparsed": null,
+      "Value": "browser"
+    },
+    {
+      "Domain": "",
+      "Expires": "0001-01-01T00:00:00Z",
+      "HttpOnly": false,
+      "MaxAge": 0,
+      "Name": "redirect",
+      "Partitioned": false,
+      "Path": "",
+      "Quoted": false,
+      "Raw": "",
+      "RawExpires": "",
+      "SameSite": 0,
+      "Secure": false,
+      "Unparsed": null,
+      "Value": "cookie"
+    }
+  ],
+  "xhr": [
+    {
+      "Domain": "",
+      "Expires": "0001-01-01T00:00:00Z",
+      "HttpOnly": false,
+      "MaxAge": 0,
+      "Name": "lightpanda",
+      "Partitioned": false,
+      "Path": "",
+      "Quoted": false,
+      "Raw": "",
+      "RawExpires": "",
+      "SameSite": 0,
+      "Secure": false,
+      "Unparsed": null,
+      "Value": "browser"
+    },
+    {
+      "Domain": "",
+      "Expires": "0001-01-01T00:00:00Z",
+      "HttpOnly": false,
+      "MaxAge": 0,
+      "Name": "redirect",
+      "Partitioned": false,
+      "Path": "",
+      "Quoted": false,
+      "Raw": "",
+      "RawExpires": "",
+      "SameSite": 0,
+      "Secure": false,
+      "Unparsed": null,
+      "Value": "cookie"
+    }
+  ]
+}

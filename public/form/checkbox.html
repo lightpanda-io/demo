@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<body>
+<form id=f action=submit>
+  <input type=checkbox id=news name=news value=weekly checked>
+  <input type=checkbox id=promo name=promo value=daily>
+  <input type=radio id=free name=plan value=free checked>
+  <input type=radio id=pro name=plan value=pro>
+  <input type=hidden id=events name=events>
+  <input id=submit type=submit>
+</form>
+<script>
+// Record the event order on #promo into a submitted field, so the /form/submit
+// echo pins that toggling dispatches click, then input, then change.
+for (const type of ['click', 'input', 'change']) {
+  document.getElementById('promo').addEventListener(type, () => {
+    const events = document.getElementById('events');
+    events.value = events.value ? events.value + '-' + type : type;
+  });
+}
+</script>
+</body>
