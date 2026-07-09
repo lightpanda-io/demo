@@ -24,6 +24,12 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 const client = page._client();
 
+await client.send('LP.configureLoading', {
+  subFrame: true,
+  worker: true,
+  externalStylesheets: true,
+});
+
 await page.goto(url, { waitUntil: 'networkidle0'});
 
 const cmd = await client.send('LP.getMarkdown', {});

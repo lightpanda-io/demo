@@ -31,8 +31,8 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
-	"time"
 	"sync/atomic"
+	"time"
 )
 
 // downloadImage is a small, deterministic PNG served as a file download
@@ -161,6 +161,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/magic8ball.js"}, Env: []string{"RUNS=5"}},
 		{Bin: "node", Args: []string{"puppeteer/webmcp.js"}},
 		{Bin: "node", Args: []string{"puppeteer/webmcp_raw.js"}},
+		{Bin: "node", Args: []string{"puppeteer/markdown.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
+		{Bin: "node", Args: []string{"puppeteer/lp-configure-loading.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -412,12 +414,12 @@ type CacheServer struct {
 }
 
 func lmForVersion(v int64) string {
-    base := time.Date(2026, 1, 1, 0, 0, 0, 0, time.UTC)
-    return base.Add(time.Duration(v) * 24 * time.Hour).Format(http.TimeFormat)
+	base := time.Date(2026, 1, 1, 0, 0, 0, 0, time.UTC)
+	return base.Add(time.Duration(v) * 24 * time.Hour).Format(http.TimeFormat)
 }
 
 func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
-    path := req.URL.Path
+	path := req.URL.Path
 
 	switch {
 	case strings.HasPrefix(path, "/vary/"):
@@ -428,42 +430,42 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Write([]byte("<html><body>vary</body></html>"))
 
 	case path == "/revalidate/bump":
-	    s.count.Add(1)
-	    res.WriteHeader(http.StatusOK)
+		s.count.Add(1)
+		res.WriteHeader(http.StatusOK)
 
 	case strings.HasPrefix(path, "/revalidate-etag/"):
-	    current := s.count.Load()
-	    etag := fmt.Sprintf(`"etag-v%d"`, current)
+		current := s.count.Load()
+		etag := fmt.Sprintf(`"etag-v%d"`, current)
 
-	    if req.Header.Get("If-None-Match") == etag {
-	        res.WriteHeader(http.StatusNotModified)
-	        return
-	    }
+		if req.Header.Get("If-None-Match") == etag {
+			res.WriteHeader(http.StatusNotModified)
+			return
+		}
 
-        res.Header().Set("Cache-Control", "max-age=1")
-        res.Header().Set("ETag", etag)
-        res.Header().Set("Content-Type", "text/html")
-        fmt.Fprintf(res, "<html><body>revalidate-etag v%d</body></html>", current)
+		res.Header().Set("Cache-Control", "max-age=1")
+		res.Header().Set("ETag", etag)
+		res.Header().Set("Content-Type", "text/html")
+		fmt.Fprintf(res, "<html><body>revalidate-etag v%d</body></html>", current)
 
-    case strings.HasPrefix(path, "/revalidate-lm/"):
-        current := s.count.Load()
-        lastModified := lmForVersion(current)
+	case strings.HasPrefix(path, "/revalidate-lm/"):
+		current := s.count.Load()
+		lastModified := lmForVersion(current)
 
-        if ims := req.Header.Get("If-Modified-Since"); ims != "" {
-            if t, err := time.Parse(http.TimeFormat, ims); err == nil {
-                lm, _ := time.Parse(http.TimeFormat, lastModified)
-                if !lm.After(t) {
-                    res.Header().Set("Cache-Control", "max-age=1")
-                    res.WriteHeader(http.StatusNotModified)
-                    return
-                }
-            }
-        }
+		if ims := req.Header.Get("If-Modified-Since"); ims != "" {
+			if t, err := time.Parse(http.TimeFormat, ims); err == nil {
+				lm, _ := time.Parse(http.TimeFormat, lastModified)
+				if !lm.After(t) {
+					res.Header().Set("Cache-Control", "max-age=1")
+					res.WriteHeader(http.StatusNotModified)
+					return
+				}
+			}
+		}
 
-        res.Header().Set("Cache-Control", "max-age=1")
-        res.Header().Set("Last-Modified", lastModified)
-        res.Header().Set("Content-Type", "text/html")
-        fmt.Fprintf(res, "<html><body>revalidate-lm v%d</body></html>", current)
+		res.Header().Set("Cache-Control", "max-age=1")
+		res.Header().Set("Last-Modified", lastModified)
+		res.Header().Set("Content-Type", "text/html")
+		fmt.Fprintf(res, "<html><body>revalidate-lm v%d</body></html>", current)
 
 	case strings.HasPrefix(path, "/cache/"):
 		req.URL.Path = path[len("/cache"):]
