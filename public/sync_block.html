@@ -1,0 +1,20 @@
+<html>
+<p>sync block</p>
+<script>
+  const s = new Date();
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'slow.html');
+  xhr.responseType = 'json';
+  xhr.onload = function() {
+    console.warn('load done', new Date() - s, this.status);
+  };
+  xhr.onabort = function(err) {
+    console.warn('abort', err);
+  }
+  xhr.send();
+  for (let i = 0; i < 100000; i++){
+    document.querySelectorAll('*');
+  }
+  console.warn('loop done', new Date() - s);
+
+</script>
