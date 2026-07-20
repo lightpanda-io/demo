@@ -38,7 +38,6 @@ let response = await page.goto(url, {
 });
 if (servedFromCache) throw new Error("Expected cold miss");
 let body = await page.content();
-console.warn(body);
 const versionMatch = body.match(/version: (\d+)/);
 if (!versionMatch) throw new Error(`Could not parse version from: ${body}`);
 const v0 = versionMatch[1];

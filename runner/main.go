@@ -424,7 +424,11 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	switch {
 	case path == "/vary/index.html":
 		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
-	case path == "/vary/script.html":
+	case path == "/vary/script.js":
+		req.URL.Path = path[len("/vary"):]
+		res.Header().Set("Cache-Control", "max-age=3600")
+		res.Header().Set("Vary", "X-Internal-Header")
+		res.Header().Set("Content-Type", "text/html")
 		res.Write([]byte("var x;"))
 
 	case path == "/revalidate/bump":
@@ -446,7 +450,7 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Cache-Control", "max-age=1")
 		res.Header().Set("ETag", etag)
 		res.Header().Set("Content-Type", "text/html")
-		fmt.Fprintf(res, "<html><body>revalidate-etag v%d</body></html>", current)
+		fmt.Fprintf(res, "document.writeln('version: %d')", current)
 
 	case path == "/revalidate-lm/index.html":
 		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
@@ -469,7 +473,7 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Cache-Control", "max-age=1")
 		res.Header().Set("Last-Modified", lastModified)
 		res.Header().Set("Content-Type", "text/html")
-		fmt.Fprintf(res, "<html><body>revalidate-lm v%d</body></html>", current)
+		fmt.Fprintf(res, "document.writeln('version: %d')", current)
 
 	case strings.HasPrefix(path, "/cache/"):
 		req.URL.Path = path[len("/cache"):]
