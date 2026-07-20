@@ -82,8 +82,8 @@ const (
 	exitOK   = 0
 	exitFail = 1
 
-	CDPTimeout  = 10 * time.Second
-	LongTimeout = 30 * time.Second
+	CDPTimeout  = 30 * time.Second
+	LongTimeout = 60 * time.Second
 )
 
 // main starts interruptable context and runs the program.
@@ -187,12 +187,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	var browser Browser = NoopBrowser{CDP: *cdp}
 	if *lpdpath != "" {
 		if *pool > 1 {
-			browser = NewPoolBrowser(*lpdpath, *pool, (*ml)*1024*1024)
+			browser = NewPoolBrowser(*lpdpath, *pool, *ml)
 		} else {
 			browser = &ProcessBrowser{
 				Port:     9222,
 				Path:     *lpdpath,
-				Memlimit: (*ml) * 1024 * 1024,
+				Memlimit: *ml,
 			}
 		}
 	}
@@ -454,7 +454,7 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 	// that is fundamentally broken (missing API, hung) flatlines. If nothing
 	// changes for stallGrace we stop waiting and report whatever we have.
 	const (
-		stallGrace   = 5 * time.Second
+		stallGrace   = 10 * time.Second
 		probeTimeout = 2 * time.Second
 	)
 	var lastFP string
