@@ -454,7 +454,7 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 	// that is fundamentally broken (missing API, hung) flatlines. If nothing
 	// changes for stallGrace we stop waiting and report whatever we have.
 	const (
-		stallGrace   = 5 * time.Second
+		stallGrace   = 10 * time.Second
 		probeTimeout = 2 * time.Second
 	)
 	var lastFP string
