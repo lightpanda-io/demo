@@ -32,7 +32,7 @@ client.on('Network.requestServedFromCache', () => {
 });
 
 client.on('Network.responseReceived', (event) => {
-    if (event.response.url === 'http://127.0.0.1:1236/vary/script.js' && event.response.fromDiskCache) {
+    if (event.response.url.endsWith('/vary/script.js') && event.response.fromDiskCache) {
         fromDiskCache = true;
     }
 });

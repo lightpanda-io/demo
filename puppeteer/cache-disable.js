@@ -29,7 +29,7 @@ client.on('Network.requestServedFromCache', () => {
     servedFromCache = true;
 });
 client.on('Network.responseReceived', (event) => {
-    if (event.response.url === 'http://127.0.0.1:1234/caching/simple.js' && event.response.fromDiskCache) {
+    if (event.response.url.endsWith('/caching/simple.js') && event.response.fromDiskCache) {
         fromDiskCache = true;
     }
 });
