@@ -68,12 +68,18 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		return ErrBrowserIsRunning
 	}
 
-	cmd := exec.CommandContext(ctx, b.Path,
+	args := []string{
 		"serve",
 		"--log-level", "error",
 		"--port", strconv.Itoa(b.Port),
 		"--insecure-disable-tls-host-verification",
-	)
+	}
+
+	if limit := b.Memlimit; limit > 0 {
+		args = append(args, "--v8-max-heap-mb", strconv.Itoa(int(b.Memlimit)))
+	}
+
+	cmd := exec.CommandContext(ctx, b.Path, args...)
 
 	// We keep a reference to the original context to restart the browser with
 	// it.
@@ -91,35 +97,6 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 
 	b.ready = ready
 	b.done = done
-
-	if limit := b.Memlimit; limit > 0 {
-		go func() {
-			for {
-				select {
-				case <-ctx.Done():
-					return
-				case <-time.After(time.Millisecond * 500):
-					rss, err := memUsage(cmd)
-					if err != nil {
-						slog.Error("mem check error", slog.Any("err", err))
-						continue
-					}
-					if rss > uint64(limit) {
-						slog.Info("memory limit exceeded, stopping browser",
-							slog.Uint64("rss", rss),
-							slog.Uint64("limit", uint64(limit)),
-						)
-						// kill the process.
-						// It will be auto-restarted
-						if err := cmd.Process.Kill(); err != nil {
-							slog.Error("kill process on mem limit", slog.Any("err", err))
-						}
-						return
-					}
-				}
-			}
-		}()
-	}
 
 	go func() {
 		defer close(done)

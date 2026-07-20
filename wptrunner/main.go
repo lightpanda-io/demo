@@ -187,12 +187,12 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	var browser Browser = NoopBrowser{CDP: *cdp}
 	if *lpdpath != "" {
 		if *pool > 1 {
-			browser = NewPoolBrowser(*lpdpath, *pool, (*ml)*1024*1024)
+			browser = NewPoolBrowser(*lpdpath, *pool, *ml)
 		} else {
 			browser = &ProcessBrowser{
 				Port:     9222,
 				Path:     *lpdpath,
-				Memlimit: (*ml) * 1024 * 1024,
+				Memlimit: *ml,
 			}
 		}
 	}
