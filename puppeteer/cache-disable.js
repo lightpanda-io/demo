@@ -14,7 +14,7 @@
 import puppeteer from 'puppeteer-core';
 import { connectBrowser, needsCache } from './helpers.js';
 
-const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1236/cache/cache.html';
+const url = 'http://127.0.0.1:1234/caching/simple.html';
 const browser = await connectBrowser();
 await needsCache(browser);
 
@@ -29,12 +29,12 @@ client.on('Network.requestServedFromCache', () => {
     servedFromCache = true;
 });
 client.on('Network.responseReceived', (event) => {
-    if (event.response.url === url && event.response.fromDiskCache) {
+    if (event.response.url === 'http://127.0.0.1:1234/caching/simple.js' && event.response.fromDiskCache) {
         fromDiskCache = true;
     }
 });
 
-const goto = () => page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+const goto = () => page.goto(url, { waitUntil: 'load', timeout: 4000 });
 const reset = () => { servedFromCache = false; fromDiskCache = false; };
 
 // Start clean

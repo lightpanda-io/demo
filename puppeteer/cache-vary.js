@@ -14,7 +14,7 @@
 import puppeteer from 'puppeteer-core';
 import { connectBrowser, needsCache } from './helpers.js';
 
-const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1236/vary/cache.html';
+const url = 'http://127.0.0.1:1236/vary/index.html';
 const browser = await connectBrowser();
 await needsCache(browser);
 
@@ -32,7 +32,7 @@ client.on('Network.requestServedFromCache', () => {
 });
 
 client.on('Network.responseReceived', (event) => {
-    if (event.response.url === url && event.response.fromDiskCache) {
+    if (event.response.url === 'http://127.0.0.1:1236/vary/script.js' && event.response.fromDiskCache) {
         fromDiskCache = true;
     }
 });
@@ -40,20 +40,20 @@ client.on('Network.responseReceived', (event) => {
 await client.send("Network.clearBrowserCache");
 
 await page.setExtraHTTPHeaders({ 'X-Internal-Header': 'abc' });
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+await page.goto(url, { waitUntil: 'load', timeout: 4000 });
 if (servedFromCache) throw new Error("vary: first request (abc) should be a miss");
 console.log("OK: first request (X-Internal-Header: abc) was a cache miss");
 
 reset();
 await page.setExtraHTTPHeaders({ 'X-Internal-Header': 'abc' });
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+await page.goto(url, { waitUntil: 'load', timeout: 4000 });
 if (!servedFromCache) throw new Error("vary: second request (abc) should be a cache hit");
 if (!fromDiskCache) throw new Error("vary: second request (abc) should be from disk cache");
 console.log("OK: second request (X-Internal-Header: abc) was a cache hit");
 
 reset();
 await page.setExtraHTTPHeaders({ 'X-Internal-Header': 'xyz' });
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+await page.goto(url, { waitUntil: 'load', timeout: 4000 });
 if (servedFromCache) throw new Error("vary: third request (xyz) should be a cache miss");
 if (fromDiskCache) throw new Error("vary: third request (xyz) should not be from disk cache");
 console.log("OK: third request (X-Internal-Header: xyz) was a cache miss");

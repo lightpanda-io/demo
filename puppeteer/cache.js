@@ -15,7 +15,7 @@
 import puppeteer from 'puppeteer-core';
 import { connectBrowser, needsCache } from './helpers.js'
 
-const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1236/cache/cache.html';
+const url = 'http://127.0.0.1:1234/caching/simple.html';
 const browser = await connectBrowser();
 await needsCache(browser);
 
@@ -31,13 +31,13 @@ client.on('Network.requestServedFromCache', () => {
 });
 
 client.on('Network.responseReceived', (event) => {
-    if (event.response.url === url && event.response.fromDiskCache) {
+    if (event.response.url === 'http://127.0.0.1:1234/caching/simple.js' && event.response.fromDiskCache) {
         fromDiskCache = true;
     }
 });
 
 await client.send("Network.clearBrowserCache");
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+await page.goto(url, { waitUntil: 'load', timeout: 4000 });
 
 if (servedFromCache) {
     throw new Error("Expected first request to not be served from cache");
@@ -48,8 +48,7 @@ if (fromDiskCache) {
 
 console.log("OK: first request was a cache miss");
 
-
-await page.goto(url, { waitUntil: 'networkidle0', timeout: 4000 });
+await page.goto(url, { waitUntil: 'load', timeout: 4000 });
 if (!servedFromCache) {
     throw new Error("Expected second request to be served from cache");
 }

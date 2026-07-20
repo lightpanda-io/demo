@@ -422,18 +422,19 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 	path := req.URL.Path
 
 	switch {
-	case strings.HasPrefix(path, "/vary/"):
-		req.URL.Path = path[len("/vary"):]
-		res.Header().Set("Cache-Control", "max-age=3600")
-		res.Header().Set("Vary", "X-Internal-Header")
-		res.Header().Set("Content-Type", "text/html")
-		res.Write([]byte("<html><body>vary</body></html>"))
+	case path == "/vary/index.html":
+		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
+	case path == "/vary/script.html":
+		res.Write([]byte("var x;"))
 
 	case path == "/revalidate/bump":
 		s.count.Add(1)
 		res.WriteHeader(http.StatusOK)
 
-	case strings.HasPrefix(path, "/revalidate-etag/"):
+	case path == "/revalidate-etag/index.html":
+		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
+
+	case path == "/revalidate-etag/script.js":
 		current := s.count.Load()
 		etag := fmt.Sprintf(`"etag-v%d"`, current)
 
@@ -447,7 +448,10 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Content-Type", "text/html")
 		fmt.Fprintf(res, "<html><body>revalidate-etag v%d</body></html>", current)
 
-	case strings.HasPrefix(path, "/revalidate-lm/"):
+	case path == "/revalidate-lm/index.html":
+		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
+
+	case path == "/revalidate-lm/script.js":
 		current := s.count.Load()
 		lastModified := lmForVersion(current)
 
