@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 	"math/rand"
+	"os"
 	"os/exec"
 	"strconv"
 	"sync"
@@ -68,11 +69,18 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		return ErrBrowserIsRunning
 	}
 
+	// prepare cache unique dir
+	cache, err := os.MkdirTemp(os.TempDir(), "wpt_cache")
+	if err != nil {
+		return fmt.Errorf("create cache dir: %w", err)
+	}
+
 	args := []string{
 		"serve",
 		"--log-level", "error",
 		"--port", strconv.Itoa(b.Port),
 		"--insecure-disable-tls-host-verification",
+		"--http-cache-dir", cache,
 	}
 
 	if limit := b.Memlimit; limit > 0 {
