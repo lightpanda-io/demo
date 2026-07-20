@@ -448,16 +448,27 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 		return res, nil
 	}
 
-	// Wait for the test to finish, bailing out early if it stops making progress.
-	// "Progress" = subtests being registered or the report log growing. A healthy
-	// test (even a slow one with thousands of cases) keeps making progress; a test
-	// that is fundamentally broken (missing API, hung) flatlines. If nothing
-	// changes for stallGrace we stop waiting and report whatever we have.
+	// Wait for the test to finish, nudging it to wrap up if it stops making
+	// progress. "Progress" here means a subtest reaching a result — report.completed
+	// growing — NOT subtests merely being registered. A hung test registers its
+	// whole subtest list up front and then resolves none, so counting registrations
+	// would keep it alive; counting completions catches it. Concretely: a test gets
+	// noProgressGrace to land its first result, and every result after that rolls the
+	// window forward by another noProgressGrace.
+	//
+	// When the window lapses we force testharness to time out: any pending subtests
+	// are finalized as Timeout and report.complete flips, so the next probe reads a
+	// real report instead of us abandoning the run. The global timeout() only fires
+	// once explicit_timeout is set, so we set it in the same call — we do this here
+	// rather than in testharnessreport.js so that standalone runs keep testharness's
+	// own file timeout. If it doesn't take — testharness never loaded, or a wedged
+	// runtime — we give up and report whatever we have.
 	const (
-		stallGrace   = 10 * time.Second
-		probeTimeout = 2 * time.Second
+		noProgressGrace = 5 * time.Second
+		probeTimeout    = 2 * time.Second
 	)
 	var lastFP string
+	var forcedTimeout bool
 	lastChange := time.Now()
 WAIT:
 	for {
@@ -467,7 +478,7 @@ WAIT:
 		var fp string
 		err = chromedp.Run(pctx, chromedp.Evaluate(`(function(){
 			if (typeof report === "undefined") return "undef";
-			return report.complete + "|" + Object.keys(report.cases).length + "|" + report.log.length;
+			return report.complete + "|" + report.completed;
 		})()`, &fp))
 		pcancel()
 
@@ -486,9 +497,20 @@ WAIT:
 		if ctx.Err() != nil {
 			break // overall test deadline reached
 		}
-		if time.Since(lastChange) > stallGrace {
-			res.Message = fmt.Sprintf("aborted: no progress for %s", stallGrace)
-			break
+		if time.Since(lastChange) > noProgressGrace {
+			if forcedTimeout {
+				// We already asked testharness to time out and it still hasn't
+				// completed. Abandon and report whatever we have.
+				res.Message = fmt.Sprintf("aborted: no progress for %s", noProgressGrace)
+				break
+			}
+
+			// Force testharness to finalize pending subtests as Timeout
+			forcedTimeout = true
+			tctx, tcancel := context.WithTimeout(ctx, probeTimeout)
+			_ = chromedp.Run(tctx, chromedp.Evaluate(`typeof timeout === "function" && (setup({explicit_timeout: true}), timeout())`, nil))
+			tcancel()
+			continue
 		}
 
 		select {
