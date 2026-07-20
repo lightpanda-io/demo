@@ -82,8 +82,8 @@ const (
 	exitOK   = 0
 	exitFail = 1
 
-	CDPTimeout  = 10 * time.Second
-	LongTimeout = 30 * time.Second
+	CDPTimeout  = 30 * time.Second
+	LongTimeout = 60 * time.Second
 )
 
 // main starts interruptable context and runs the program.
