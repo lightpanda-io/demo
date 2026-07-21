@@ -463,16 +463,27 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 	// rather than in testharnessreport.js so that standalone runs keep testharness's
 	// own file timeout. If it doesn't take — testharness never loaded, or a wedged
 	// runtime — we give up and report whatever we have.
-	const (
-		noProgressGrace = 5 * time.Second
-		probeTimeout    = 2 * time.Second
-	)
+	const probeTimeout = 2 * time.Second
+	// How often we probe the page. Kept deliberately coarse: every probe is a
+	// Runtime.evaluate serviced by the same serve loop the test runs on, so a
+	// tight poll steals CPU from the very test we're waiting on — across a whole
+	// pool of runners that self-inflicted load is what pushes borderline tests
+	// past noProgressGrace. One probe per period is plenty; tests take seconds.
+	const pollInterval = 2 * time.Second
+	noProgressGrace := 5 * time.Second
+	if strings.Contains(test.URL, "/wasm/") {
+		// /wasm/ tests can be slow on the CI, but are known to be pass
+		noProgressGrace = 10 * time.Second
+	}
+
 	var lastFP string
 	var forcedTimeout bool
 	lastChange := time.Now()
 WAIT:
 	for {
-		// Bound each probe so that a hung JS runtime doesn't block for 1 long (30
+		iterStart := time.Now()
+
+		// Bound each probe so that a hung JS runtime doesn't block for 1 long (60
 		// second) probe
 		pctx, pcancel := context.WithTimeout(ctx, probeTimeout)
 		var fp string
@@ -513,10 +524,17 @@ WAIT:
 			continue
 		}
 
-		select {
-		case <-ctx.Done():
+		// We don't want to probe more than once every 2 seconds (unecessary load on
+		// the server). Let's wait 2 seconds - (time elapsed this iteration so far)
+		if d := pollInterval - time.Since(iterStart); d > 0 {
+			select {
+			case <-ctx.Done():
+				// test completed, we're done.
+				break WAIT
+			case <-time.After(d):
+			}
+		} else if ctx.Err() != nil {
 			break WAIT
-		case <-time.After(500 * time.Millisecond):
 		}
 	}
 
