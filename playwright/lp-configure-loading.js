@@ -35,12 +35,19 @@ const context = await browser.newContext({
 });
 
 const page = await context.newPage();
-await page.goto('/campfire-commerce/');
 
-
+// Reuse the browser-level CDP session rather than
+// page.context().newCDPSession(page). The latter makes playwright open a
+// *second* session on a page target it is already attached to, which
+// Lightpanda does not yet support.
 const client = await browser.newBrowserCDPSession();
-const cmd = await client.send('LP.getMarkdown');
-console.log(cmd.markdown);
+await client.send('LP.configureLoading', {
+  subFrame: true,
+  worker: true,
+  externalStylesheets: true,
+});
+
+await page.goto('/campfire-commerce/');
 
 await page.close();
 await context.close();
