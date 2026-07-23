@@ -72,6 +72,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"serve",
 		"--log-level", "error",
 		"--port", strconv.Itoa(b.Port),
+		"--ws-max-concurrent", "64",
 		"--insecure-disable-tls-host-verification",
 	}
 
