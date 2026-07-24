@@ -19,7 +19,7 @@ import { chromium } from 'playwright-core';
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 
 // web serveur url
-const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'https://doesnotexist.localhost:9832';
+const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
 // Connect to an existing browser
 console.log("Connection to browser on " + browserAddress);
@@ -45,70 +45,34 @@ const context = await browser.newContext({
 
 const page = await context.newPage();
 await page.route('**', async (route, request) => {
-  const url = request.url();
-  if (url === 'https://doesnotexist.localhost:9832/nope/') {
-    return route.continue({
-      url: "https://httpbin.io/xhr/post",
-    });
-  }
-  if (url === 'https://httpbin.io/post') {
-    return route.continue({
-      method: 'POST',
-      url: 'https://HTTPBIN.io/post',
-      headers: {'pw-injected': 'great', 'content-type': 'application/x-www-form-urlencoded'},
-      postData: 'over=9000&tea=keemun',
-    });
-  }
-
-  console.error("unexpected request: ", url);
-  return route.abort();
+  return route.continue();
 });
-await page.goto('/nope/');
+await page.goto('/campfire-commerce/');
 
+// ensure the price is loaded.
 await page.waitForFunction(() => {
-	return document.getElementById('response').textContent.length > 0
-}, {timeout: 5000});
+    const price = document.querySelector('#product-price');
+    return price.textContent.length > 0;
+}, {}, {timeout: 100}); // timeout 100ms
 
-const response = await page.locator('#response').textContent();
-const data = JSON.parse(response);
 
-if (data.url !== 'http://HTTPBIN.io/post') {
-  console.log(data.url);
-  throw new Error("Expected URL to be 'http://HTTPBIN.io/post'");
-}
+// ensure the reviews are loaded.
+await page.waitForFunction(() => {
+    const reviews = document.querySelectorAll('#product-reviews > div');
+    return reviews.length > 0;
+}, {}, {timeout: 100}); // timeout 100ms
 
-if (data.headers['Pw-Injected'] != 'great') {
-  console.log(data.headers);
-  throw new Error("Expected 'Pw-Injected: great' header");
-}
+let res = {};
 
-if (data.headers['Content-Type'] != 'application/x-www-form-urlencoded') {
-  console.log(data.headers);
-  throw new Error("Expected 'Content-Type: application/x-www-form-urlencoded' header");
-}
-
-if (data.headers['User-Agent'] != 'Lightpanda/1.0') {
-  console.log(data.headers);
-  throw new Error("Expected 'User-Agent: Lightpanda/1.0' header");
-}
-
-if (Object.keys(data.form).length != 2) {
-  console.log(data.form);
-  throw new Error("Expected 2 form field");
-}
-
-if (data.form['over'] != '9000') {
-  console.log(data.form);
-  throw new Error("Expected form field 'over: 9000'");
-}
-
-if (data.form['tea'] != 'keemun') {
-  console.log(data.form);
-  throw new Error("Expected form field 'tea: keemun'");
-}
+res.price = parseFloat((await page.locator('#product-price').textContent()).substring(1));
 
 await page.close();
 await context.close();
 
 // Turn off the browser to clean up after ourselves.
 await browser.close();
+
+if (res['price'] != 244.99) {
+  console.log(res);
+  throw new Error("invalid product price");
+}
