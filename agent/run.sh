@@ -38,8 +38,9 @@
 #                  often blocked by news.ycombinator.com); localhost fixtures
 #                  are never proxied
 #   MAX_TOKENS     per-live-task total-token ceiling (default: 3000000).
-#                  `total` counts cached reads, so a normal HN save is ~1M;
-#                  this is a loose backstop against a runaway agent loop.
+#                  `total` re-counts the re-sent context every turn (cached
+#                  reads included), so a normal HN save is ~0.2-1M; this is a
+#                  loose backstop against a runaway agent loop.
 set -uo pipefail
 
 LAYER="${1:-all}"
@@ -48,7 +49,7 @@ HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEMO="$(cd "$HERE/.." && pwd)"
 LPD="${LPD_PATH:-$DEMO/../browser/zig-out/bin/lightpanda}"
 # Pin an explicit model id — never a *-latest / *-preview alias, which drift.
-LP_MODEL="${LP_MODEL:-gemini-3.5-flash}"
+LP_MODEL="${LP_MODEL:-gemini-3.6-flash}"
 MAX_TOKENS="${MAX_TOKENS:-3000000}"
 
 export LIGHTPANDA_DISABLE_TELEMETRY=true
@@ -132,9 +133,10 @@ show_err() {
 # The $usage stderr line is a stable key=value contract for wrappers; the
 # ceiling is a backstop against runaway agent loops.
 check_usage() {
-  local errfile="$1" label="$2" total
-  total="$(sed -n '/^\$usage /{s/.*total=\([0-9]\+\).*/\1/p;q}' "$errfile")"
-  [ -n "$total" ] && info "  usage: total=${total} tokens ($label)"
+  local errfile="$1" label="$2" line total
+  line="$(sed -n '/^\$usage /{p;q}' "$errfile")"
+  total="$(printf '%s' "$line" | sed -n 's/.*total=\([0-9]\+\).*/\1/p')"
+  [ -n "$total" ] && info "  usage: ${line#\$usage } ($label)"
   if [ -n "$total" ] && [ "$total" -gt "$MAX_TOKENS" ]; then
     fail "$label exceeded token ceiling ($total > $MAX_TOKENS)"
   fi
