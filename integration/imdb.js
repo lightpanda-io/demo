@@ -26,13 +26,13 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://www.imdb.com/', { waitUntil: 'networkidle0' });
+await page.goto('https://www.imdb.com/', { waitUntil: 'load' });
 
 await page.waitForSelector('input[name="q"]', { timeout: 10000 });
 await page.type('input[name="q"]', MOVIE);
 
 const [searchResponse] = await Promise.all([
-  page.waitForNavigation({ waitUntil: 'networkidle0' }).catch(() => null),
+  page.waitForNavigation({ waitUntil: 'load' }).catch(() => null),
   page.keyboard.press('Enter'),
 ]);
 
