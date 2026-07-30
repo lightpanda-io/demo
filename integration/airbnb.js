@@ -26,7 +26,7 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
 await page.goto('https://www.airbnb.com/s/Tokyo/homes', {
-  waitUntil: 'networkidle0',
+  waitUntil: 'load',
   timeout: 30000,
 });
 
