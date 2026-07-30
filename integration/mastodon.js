@@ -26,7 +26,7 @@ const browser = await puppeteer.connect({
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-await page.goto('https://mastodon.social/explore', {waitUntil: 'networkidle0'});
+await page.goto('https://mastodon.social/explore', {waitUntil: 'load'});
 
 await page.waitForFunction(() => {
 	return document.querySelector('.item-list article') != null;
