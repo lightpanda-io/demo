@@ -475,6 +475,11 @@ func runtest(ctx context.Context, cdp string, test Test, addr Address) (*TestRes
 		// /wasm/ tests can be slow on the CI, but are known to be pass
 		noProgressGrace = 10 * time.Second
 	}
+	if strings.Contains(test.URL, "/WebCryptoAPI/") {
+		// A single 100k-iteration PBKDF2 subtest can exceed the default grace
+		// on the CI; the file as a whole still finishes within its timeout.
+		noProgressGrace = 15 * time.Second
+	}
 
 	var lastFP string
 	var forcedTimeout bool
