@@ -27,6 +27,7 @@ import (
 	"log/slog"
 	"net"
 	"net/http"
+	"net/url"
 	"os"
 	"os/exec"
 	"strconv"
@@ -153,6 +154,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_redirect.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cdp_session_redirect.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ua.js"}},
@@ -171,6 +173,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/download.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception_cache.js"}},
+		{Bin: "node", Args: []string{"playwright/cdp_session_redirect.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-vary.js"}},
@@ -181,6 +184,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "ri/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "ri_redirect/main.go", "http://127.0.0.1:1234"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "fromnode/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		// TODO using --pool=10 blocks the CI which timeout. We need to understand and fix the issue.
 		{Bin: "go", Args: []string{"run", "crawler/main.go", "--limit=100", "--pool=1", "http://127.0.0.1:1234/amiibo/"}, Dir: "chromedp"},
@@ -385,6 +389,11 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Content-Length", strconv.Itoa(len(downloadImage)))
 		res.Write(downloadImage)
 
+	case "/redirect/headers":
+		// Echo the interception probe header into the Location query string
+		// so the client can verify the header reached this hop, then check
+		// /get/headers to verify it was not re-applied after the redirect.
+		http.Redirect(res, req, "/get/headers?probe="+url.QueryEscape(req.Header.Get("X-Lightpanda-Probe")), http.StatusFound)
 	case "/get/headers":
 		enc := json.NewEncoder(res)
 		if err := enc.Encode(req.Header); err != nil {
