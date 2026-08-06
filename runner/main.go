@@ -173,7 +173,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/download.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception_cache.js"}},
-		{Bin: "node", Args: []string{"playwright/cdp_session_redirect.js"}},
+		{Bin: "node", Args: []string{"playwright/request_interception_redirect.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-disable.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-vary.js"}},
