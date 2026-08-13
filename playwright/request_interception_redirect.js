@@ -27,7 +27,12 @@
 //   - a header override applied via Fetch.continueRequest on the initial
 //     request reaches the first server (echoed back as a ?probe= query param
 //     on the redirect Location) but is NOT re-applied to the redirected
-//     request (Chromium limits overrides to a single network hop).
+//     request (Chromium limits overrides to a single network hop),
+//   - Playwright's network model sees the redirect chain (lightpanda issue
+//     #3174): the hop must arrive as Chromium's redirect form of
+//     Network.requestWillBeSent — redirectResponse populated, emitted before
+//     the hop's Fetch pause — so request.redirectedFrom()/redirectedTo() are
+//     linked and the navigation response carries the post-redirect URL.
 //
 // Unrelated paused requests (e.g. Chrome's favicon fetch) are continued and
 // ignored, so the test also runs against real Chrome for comparison.
@@ -81,6 +86,17 @@ try {
     const response = await page.goto(initialUrl, { timeout: 5000 });
     assert.equal(response.status(), 200);
     assert.equal(continuationErrors.length, 0, `continueRequest failed: ${continuationErrors[0]}`);
+
+    // The navigation response must expose the final (post-redirect) URL, and
+    // its request must link back to the initial hop through redirectedFrom().
+    assert.ok(response.url().startsWith(destinationPrefix), `response kept the pre-redirect URL: ${response.url()}`);
+    const finalRequest = response.request();
+    assert.equal(finalRequest.url(), response.url());
+    const firstRequest = finalRequest.redirectedFrom();
+    assert.ok(firstRequest, 'redirectedFrom() is null: the redirect hop was not reported as a redirect chain');
+    assert.equal(firstRequest.url(), initialUrl);
+    assert.equal(firstRequest.redirectedTo(), finalRequest);
+    assert.equal(firstRequest.redirectedFrom(), null);
 
     // Both hops must be paused: the initial request and the redirect target.
     assert.equal(pauses.length, 2, `expected 2 paused requests, got: ${pauses.map((p) => p.url)}`);
