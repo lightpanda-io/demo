@@ -159,6 +159,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ua.js"}},
+		{Bin: "node", Args: []string{"puppeteer/ua-ri.js"}},
+		{Bin: "node", Args: []string{"puppeteer/ua-extra-headers.js"}},
 		{Bin: "node", Args: []string{"puppeteer/pending-page.js"}},
 		{Bin: "node", Args: []string{"puppeteer/console-log.js"}},
 		{Bin: "node", Args: []string{"puppeteer/magic8ball.js"}, Env: []string{"RUNS=5"}},
