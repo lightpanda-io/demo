@@ -16,6 +16,8 @@ You can find script examples to use the browser with different librairies.
 
 * `puppeteer/` contains [Puppeteer](https://pptr.dev/) examples in Javascript.
 * `playwright/` contains [Playwright](https://playwright.dev/) examples in Javascript.
+* `bidi/` contains [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/) examples in Javascript,
+  driven by Puppeteer over the `/session` endpoint rather than CDP.
 * `chromedp/` contains [chromedp](https://github.com/chromedp/chromedp) examples in Go.
 * `rod/` contains [go-rod](https://github.com/go-rod/rod) examples in Go.
 
