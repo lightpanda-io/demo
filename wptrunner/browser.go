@@ -74,6 +74,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"--port", strconv.Itoa(b.Port),
 		"--ws-max-concurrent", "64",
 		"--insecure-disable-tls-host-verification",
+		"--http-cache-dir", "/tmp/lp-cache/",
 	}
 
 	if limit := b.Memlimit; limit > 0 {
