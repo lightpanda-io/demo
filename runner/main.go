@@ -168,6 +168,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/webmcp_raw.js"}},
 		{Bin: "node", Args: []string{"puppeteer/markdown.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/lp-configure-loading.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
+		{Bin: "node", Args: []string{"puppeteer/lp-configure-obey-robots.js"}, Env: []string{"URL=http://127.0.0.1:1234"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
