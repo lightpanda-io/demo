@@ -7,7 +7,8 @@
   "scripts": {
     "ws": "go run runner/main.go -serve",
     "bench-playwright-cdp": "node playwright/cdp.js",
-    "bench-puppeteer-cdp": "node puppeteer/cdp.js"
+    "bench-puppeteer-cdp": "node puppeteer/cdp.js",
+    "bench-selenium-bidi-cdp": "node selenium/bidi/cdp.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://lightpanda.io",
   "dependencies": {
     "playwright-core": "^1.60.0",
-    "puppeteer-core": "^24.43.1"
+    "puppeteer-core": "^24.43.1",
+    "selenium-webdriver": "^4.47.0"
   }
 }
