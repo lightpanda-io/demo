@@ -33,6 +33,7 @@ import (
 	"strconv"
 	"strings"
 	"sync/atomic"
+	"syscall"
 	"time"
 )
 
@@ -208,8 +209,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		}
 
 		start := time.Now()
-		if err := runtest(ctx, t); err != nil {
-			fmt.Fprintf(stdout, "=== ERR\t%s\n", t)
+		if err := runtest(ctx, t, stderr); err != nil {
+			fmt.Fprintf(stdout, "=== ERR\t%s: %v\n", t, err)
 			fails++
 			continue
 		}
@@ -240,19 +241,52 @@ func (t Test) String() string {
 	return name + " " + strings.Join(t.Args, " ")
 }
 
-func runtest(ctx context.Context, t Test) error {
+// testTimeout bounds a single test. A test that never finishes must show up
+// as an ERR with its output, not as the job timing out with no trace.
+const testTimeout = 3 * time.Minute
+
+func runtest(ctx context.Context, t Test, stderr io.Writer) error {
+	ctx, cancel := context.WithTimeout(ctx, testTimeout)
+	defer cancel()
+
 	cmd := exec.CommandContext(ctx, t.Bin, t.Args...)
 
 	cmd.Env = t.Env
 	cmd.Dir = t.Dir
+
+	// Without a verbose writer, keep the output and replay it on failure.
+	var out bytes.Buffer
 	cmd.Stdout = t.Stdout
 	cmd.Stderr = t.Stderr
-
-	if err := cmd.Run(); err != nil {
-		return fmt.Errorf("run: %w", err)
+	if cmd.Stdout == nil {
+		cmd.Stdout = &out
+	}
+	if cmd.Stderr == nil {
+		cmd.Stderr = &out
 	}
 
-	return nil
+	// `go run` execs the test binary as a child, which would keep our pipes
+	// open after the parent is killed: put the test in its own process group
+	// and kill the whole group on timeout.
+	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
+	cmd.Cancel = func() error {
+		return syscall.Kill(-cmd.Process.Pid, syscall.SIGKILL)
+	}
+	cmd.WaitDelay = 5 * time.Second
+
+	err := cmd.Run()
+	if err == nil {
+		return nil
+	}
+
+	if errors.Is(ctx.Err(), context.DeadlineExceeded) {
+		err = fmt.Errorf("timeout after %v", testTimeout)
+	}
+	if out.Len() > 0 {
+		fmt.Fprintf(stderr, "--- output: %s\n%s--- end\n", t, out.Bytes())
+	}
+
+	return fmt.Errorf("run: %w", err)
 }
 
 // runhttp starts the default and broken-robots servers on consecutive ports
