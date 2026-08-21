@@ -202,6 +202,13 @@ func (f Fetcher) Run(ctx context.Context, size uint, cdp string, opts *BrowserOp
 			ctx, cancel = chromedp.NewContext(ctx)
 			defer cancel()
 
+			// chromedp allocates the browser connection on the first Run and
+			// ties it to that call's context: do it here, on the long-lived
+			// one, so the per-page deadline in fetch can't take it down.
+			if err := chromedp.Run(ctx); err != nil {
+				return fmt.Errorf("fetcher %d connect: %w", i, err)
+			}
+
 			for {
 				select {
 				case <-ctx.Done():
@@ -234,16 +241,17 @@ func (f Fetcher) Run(ctx context.Context, size uint, cdp string, opts *BrowserOp
 func fetch(ctx context.Context, u *url.URL) (*Page, error) {
 	slog.Info("fetch", slog.Any("url", u))
 
+	// Bound the whole page, navigation included
+	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
+	defer cancel()
+
 	err := chromedp.Run(ctx, chromedp.Navigate(u.String()))
 	if err != nil {
 		return nil, fmt.Errorf("navigate %v: %w", u, err)
 	}
 
-	timeoutctx, cancel := context.WithTimeout(ctx, 10*time.Second)
-	defer cancel()
-
 	var a []*cdp.Node
-	if err := chromedp.Run(timeoutctx, chromedp.Nodes(`a[href]`, &a, chromedp.AtLeast(1))); err != nil {
+	if err := chromedp.Run(ctx, chromedp.Nodes(`a[href]`, &a, chromedp.AtLeast(1))); err != nil {
 		return nil, fmt.Errorf("get links: %w", err)
 	}
 
@@ -316,14 +324,36 @@ func (c Crawler) end() bool {
 	return true
 }
 
+// next returns a URL that is known but not yet queued, or nil.
+func (c Crawler) next() *url.URL {
+	for _, v := range c.known {
+		if v.s == Ready {
+			return v.u
+		}
+	}
+
+	return nil
+}
+
 func (c *Crawler) Run(ctx context.Context, seed *url.URL) error {
-	c.queue <- seed
-	c.append(seed, Queue)
+	c.append(seed, Ready)
 
 	for {
+		// Offer a ready URL and drain results in the same select. A fetcher
+		// that just handed back a result may not be parked on the queue yet,
+		// so a send that can't proceed must never stop us from receiving:
+		// with nothing in flight that would deadlock both sides.
+		var queue chan<- *url.URL
+		next := c.next()
+		if next != nil {
+			queue = c.queue
+		}
+
 		select {
 		case <-ctx.Done():
 			return nil
+		case queue <- next:
+			c.known[next.String()].s = Queue
 		case p, ok := <-c.result:
 			if !ok {
 				return nil
@@ -336,14 +366,12 @@ func (c *Crawler) Run(ctx context.Context, seed *url.URL) error {
 			}
 			v.s = Done
 
-			count := 0
 			for _, u := range p.Links {
 				// check the url to crawl limit.
 				if c.limit > 0 && len(c.known) >= c.limit {
 					break
 				}
 
-				count = 0
 				// use only links with the same domain than seed.
 				if seed.Host != u.Host {
 					slog.Debug("ignore external url", slog.Any("url", u))
@@ -355,24 +383,10 @@ func (c *Crawler) Run(ctx context.Context, seed *url.URL) error {
 				}
 				// mark url as known.
 				c.append(u, Ready)
-				count++
 			}
-			if count == 0 && c.end() {
+			if c.end() {
 				slog.Debug("no links added")
 				return nil
-			}
-		}
-
-		// non-blocking enqueue
-		for _, v := range c.known {
-			if v.s != Ready {
-				continue
-			}
-			select {
-			case c.queue <- v.u:
-				v.s = Queue
-			default:
-				// keep url in the buffer
 			}
 		}
 	}
