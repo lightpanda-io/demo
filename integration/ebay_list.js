@@ -28,15 +28,33 @@ const page = await context.newPage();
 
 await page.goto('https://www.ebay.com/b/Nigel-Sylvester-x-Air-Jordan-1-OG-Low-Better-With-Time/15709/bn_7124881158', {});
 
-const items = await page.evaluate(() => {
-  return Array.from(document.querySelectorAll('.brwrvr__item-results h3')).map(row => {
+const result = await page.evaluate(() => {
+  // eBay's edge (Akamai Bot Manager) serves a 403 "Error Page | eBay" block
+  // page instead of the listing when it flags the traffic as automated.
+  // Detect it so we don't report a misleading "invalid results" failure.
+  const captcha = document.title === 'Error Page | eBay';
+
+  const items = Array.from(document.querySelectorAll('.brwrvr__item-results h3')).map(row => {
     return row.textContent;
   });
+
+  return { captcha, items };
 });
 
 await page.close();
 await context.close();
 await browser.disconnect();
+
+if (result.captcha) {
+  // Not a Lightpanda failure: eBay blocked the request with its bot
+  // protection, so no listing was ever rendered. Skip the assertions
+  // instead of reporting a false negative.
+  console.log("SKIP: eBay served its anti-bot block page, no items to check");
+  // integration/main.go detects the special error code
+  process.exit(103);
+}
+
+const items = result.items;
 
 if (items.length < 20) {
   console.log("Invalid items length", items);
