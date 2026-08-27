@@ -31,6 +31,10 @@
 #   LPD_PATH       path to the lightpanda binary, same variable wptrunner uses
 #                  (default: ../browser/zig-out/bin/lightpanda, the sibling
 #                  workspace checkout; CI always sets it explicitly)
+#   LPD_ARGS       extra lightpanda options, word-split, passed to every
+#                  `lightpanda agent` invocation (e.g. "--load-resources
+#                  iframe --load-resources worker": magic8ball/dynamic need
+#                  both, and the browser disables them by default)
 #   GOOGLE_API_KEY or GEMINI_API_KEY (the binary accepts both) — required for
 #                  the live layer; live layer is skipped if neither is set
 #   LP_MODEL       Gemini model id for the live layer (default below)
@@ -48,6 +52,8 @@ LAYER="${1:-all}"
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 DEMO="$(cd "$HERE/.." && pwd)"
 LPD="${LPD_PATH:-$DEMO/../browser/zig-out/bin/lightpanda}"
+# shellcheck disable=SC2206  # word-splitting is the point
+LPD_ARGS=(${LPD_ARGS:-})
 # Pin an explicit model id — never a *-latest / *-preview alias, which drift.
 LP_MODEL="${LP_MODEL:-gemini-3.6-flash}"
 MAX_TOKENS="${MAX_TOKENS:-3000000}"
@@ -99,7 +105,7 @@ start_server() {
 # --- deterministic layer -----------------------------------------------------
 run_replay() {
   local name="$1"
-  if ! "$LPD" agent "$HERE/scripts/$name.js" >"$TMP/out" 2>/dev/null; then
+  if ! "$LPD" agent "${LPD_ARGS[@]}" "$HERE/scripts/$name.js" >"$TMP/out" 2>/dev/null; then
     fail "$name.js replay (non-zero exit)"; return
   fi
   if ! jq -e . "$TMP/out" >/dev/null 2>&1; then
@@ -148,7 +154,7 @@ run_live_qa() {
   while IFS=$'\t' read -r task expected; do
     [ -z "${task// }" ] && continue
     case "$task" in \#*) continue ;; esac
-    timeout 300 "$LPD" agent --provider gemini --model "$LP_MODEL" --task "$task" >"$TMP/out" 2>"$TMP/err"
+    timeout 300 "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" --task "$task" >"$TMP/out" 2>"$TMP/err"
     if grep -qiF "$expected" "$TMP/out"; then
       pass "Q&A: expected \"$expected\""
     else
@@ -171,7 +177,7 @@ run_live_save_replay() {
   local script="$TMP/$name.js" task
   task="$(cat "$HERE/cases/$name.task")"
 
-  timeout "$save_timeout" "$LPD" agent --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
+  timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
   check_usage "$TMP/err" "$name save"
 
   if [ ! -s "$script" ]; then
@@ -191,7 +197,7 @@ run_live_save_replay() {
   fi
 
   # Replay without --task runs no LLM — no key or tokens needed.
-  if ! timeout "$replay_timeout" "$LPD" agent "$script" >"$TMP/out" 2>/dev/null; then
+  if ! timeout "$replay_timeout" "$LPD" agent "${LPD_ARGS[@]}" "$script" >"$TMP/out" 2>/dev/null; then
     fail "$name saved script failed on replay"; return
   fi
   if jq -e -f "$HERE/cases/$name.jq" "$TMP/out" >/dev/null 2>&1; then
@@ -233,7 +239,7 @@ case "$LAYER" in
   update-golden)
     for s in "$HERE"/scripts/*.js; do
       name="$(basename "$s" .js)"
-      "$LPD" agent "$s" 2>/dev/null | jq -S . >"$HERE/golden/$name.json"
+      "$LPD" agent "${LPD_ARGS[@]}" "$s" 2>/dev/null | jq -S . >"$HERE/golden/$name.json"
       info "golden/$name.json regenerated"
     done
     info "review the diff before committing"
