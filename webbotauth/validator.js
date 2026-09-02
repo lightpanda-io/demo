@@ -164,6 +164,11 @@ async function validate(headers, method, path, authority) {
   return [200, { ok: true, label, keyid: params.keyid, agent: agentUrl, components, sig_base: sigBase }];
 }
 
+// One validator handles one request and exits with its verdict. Two of them
+// on different ports make a redirect test: the signature covers @authority,
+// so a hop onto the second validator has to be re-signed for it.
+const port = parseInt(process.env.PORT ?? "8989", 10);
+
 const server = http.createServer(async (req, res) => {
   const headers = Object.fromEntries(
     Object.entries(req.headers).map(([k, v]) => [k.toLowerCase(), v])
@@ -174,14 +179,25 @@ const server = http.createServer(async (req, res) => {
 
   const [status, result] = await validate(headers, req.method, req.url, headers["host"] ?? "localhost");
 
+  // /redirect?to=<url>: a validated request is sent on to `to` instead of
+  // answered, so the next hop can be checked by another validator.
+  const url = new URL(req.url, `http://127.0.0.1:${port}`);
+  const to = url.pathname === "/redirect" && status === 200 ? url.searchParams.get("to") : null;
+
   const body = Buffer.from(JSON.stringify(result, null, 2));
-  res.writeHead(status, { "Content-Type": "application/json", "Content-Length": body.length });
-  res.end(body);
-  console.log(`[${req.method}] ${req.url} → ${status} (${body})`);
+  if (to) {
+    res.writeHead(302, { Location: to, "Content-Length": 0 });
+    res.end();
+    console.log(`[${req.method}] ${req.url} → 302 ${to}`);
+  } else {
+    res.writeHead(status, { "Content-Type": "application/json", "Content-Length": body.length });
+    res.end(body);
+    console.log(`[${req.method}] ${req.url} → ${status} (${body})`);
+  }
 
   server.close(() => process.exit(status === 200 ? 0 : 1));
 });
 
-server.listen(8989, "127.0.0.1", () => {
-  console.log(`Validator listening on http://127.0.0.1:8989 (waiting for one request)`);
+server.listen(port, "127.0.0.1", () => {
+  console.log(`Validator listening on http://127.0.0.1:${port} (waiting for one request)`);
 });

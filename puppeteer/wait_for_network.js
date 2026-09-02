@@ -16,7 +16,7 @@
 import puppeteer from 'puppeteer-core';
 import { connectBrowser } from './helpers.js'
 
-const url = process.env.URL ? process.env.URL : 'https://httpbin.io/xhr/get';
+const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/xhr/get';
 const browser = await connectBrowser();
 
 // The rest of your script remains the same.
