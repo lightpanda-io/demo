@@ -84,6 +84,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"--load-resources", "iframe",
 		"--load-resources", "image",
 		"--load-resources", "worker",
+		"--load-resources", "stylesheet",
 		"--http-cache-dir", cache,
 	}
 
