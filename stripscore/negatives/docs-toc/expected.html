@@ -1,0 +1,10 @@
+<div>
+  <h1>Connection pooling</h1>
+  <p>Loom opens one pool per configured database and hands connections out per request. A request that never touches the database never borrows a connection, so a pool of eight is usually enough for a service that mostly serves cached pages.</p>
+  <h2>Sizing</h2>
+  <p>Start with the number of worker threads and raise it only when you see the borrow wait time in the metrics grow. A pool larger than the database can serve does not add throughput, it adds queueing on the far side where you cannot see it.</p>
+  <h2>Timeouts</h2>
+  <p>Two timeouts apply. The borrow timeout bounds how long a request waits for a free connection and should be short, a second or two, so that overload fails fast. The idle timeout controls how long an unused connection is kept open; set it below whatever the database or a proxy between you enforces, or the first query after a quiet period fails with a closed socket.</p>
+  <h2>Health checks</h2>
+  <p>Connections are tested with a lightweight ping when they have been idle longer than the check interval. Disable this only if every query already runs inside a retry, which it should not.</p>
+</div>

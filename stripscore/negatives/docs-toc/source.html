@@ -1,0 +1,34 @@
+<!doctype html>
+<html><head><title>Connection pooling - Loom docs</title></head>
+<body>
+<header>
+  <a href="/">Loom</a>
+  <nav><a href="/docs">Docs</a> <a href="/api">API</a> <a href="/blog">Blog</a> <a href="/github">GitHub</a></nav>
+</header>
+<nav aria-label="table of contents">
+  <ul>
+    <li><a href="/docs/getting-started">Getting started</a></li><li><a href="/docs/installation">Installation</a></li><li><a href="/docs/configuration">Configuration</a></li><li><a href="/docs/command-line">Command line</a></li><li><a href="/docs/environment-variables">Environment variables</a></li><li><a href="/docs/logging">Logging</a></li><li><a href="/docs/metrics">Metrics</a></li><li><a href="/docs/tracing">Tracing</a></li><li><a href="/docs/authentication">Authentication</a></li><li><a href="/docs/authorization">Authorization</a></li><li><a href="/docs/sessions">Sessions</a></li><li><a href="/docs/cookies">Cookies</a></li><li><a href="/docs/routing">Routing</a></li><li><a href="/docs/middleware">Middleware</a></li><li><a href="/docs/static-files">Static files</a></li><li><a href="/docs/templates">Templates</a></li><li><a href="/docs/forms">Forms</a></li><li><a href="/docs/validation">Validation</a></li><li><a href="/docs/file-uploads">File uploads</a></li><li><a href="/docs/websockets">WebSockets</a></li><li><a href="/docs/server-sent-events">Server sent events</a></li><li><a href="/docs/background-jobs">Background jobs</a></li><li><a href="/docs/scheduling">Scheduling</a></li><li><a href="/docs/caching">Caching</a></li><li><a href="/docs/rate-limiting">Rate limiting</a></li><li><a href="/docs/database-access">Database access</a></li><li><a href="/docs/migrations">Migrations</a></li><li><a href="/docs/transactions">Transactions</a></li><li><a href="/docs/connection-pooling">Connection pooling</a></li><li><a href="/docs/testing">Testing</a></li><li><a href="/docs/fixtures">Fixtures</a></li><li><a href="/docs/mocking">Mocking</a></li><li><a href="/docs/deployment">Deployment</a></li><li><a href="/docs/docker">Docker</a></li><li><a href="/docs/kubernetes">Kubernetes</a></li><li><a href="/docs/systemd">Systemd</a></li><li><a href="/docs/reverse-proxies">Reverse proxies</a></li><li><a href="/docs/tls">TLS</a></li><li><a href="/docs/http/2">HTTP/2</a></li><li><a href="/docs/compression">Compression</a></li><li><a href="/docs/internationalisation">Internationalisation</a></li><li><a href="/docs/time-zones">Time zones</a></li><li><a href="/docs/error-handling">Error handling</a></li><li><a href="/docs/debugging">Debugging</a></li><li><a href="/docs/profiling">Profiling</a></li><li><a href="/docs/security-headers">Security headers</a></li><li><a href="/docs/csrf">CSRF</a></li><li><a href="/docs/cors">CORS</a></li><li><a href="/docs/content-security-policy">Content security policy</a></li><li><a href="/docs/upgrading">Upgrading</a></li><li><a href="/docs/changelog">Changelog</a></li><li><a href="/docs/faq">FAQ</a></li><li><a href="/docs/glossary">Glossary</a></li><li><a href="/docs/contributing">Contributing</a></li><li><a href="/docs/license">License</a></li>
+  </ul>
+</nav>
+<main>
+  <article>
+    <h1>Connection pooling</h1>
+    <p>Loom opens one pool per configured database and hands connections out per request. A request that never touches the database never borrows a connection, so a pool of eight is usually enough for a service that mostly serves cached pages.</p>
+    <h2>Sizing</h2>
+    <p>Start with the number of worker threads and raise it only when you see the borrow wait time in the metrics grow. A pool larger than the database can serve does not add throughput, it adds queueing on the far side where you cannot see it.</p>
+    <h2>Timeouts</h2>
+    <p>Two timeouts apply. The borrow timeout bounds how long a request waits for a free connection and should be short, a second or two, so that overload fails fast. The idle timeout controls how long an unused connection is kept open; set it below whatever the database or a proxy between you enforces, or the first query after a quiet period fails with a closed socket.</p>
+    <h2>Health checks</h2>
+    <p>Connections are tested with a lightweight ping when they have been idle longer than the check interval. Disable this only if every query already runs inside a retry, which it should not.</p>
+  </article>
+  <nav aria-label="pagination"><a href="/docs/migrations">Previous: Migrations</a> <a href="/docs/transactions">Next: Transactions</a></nav>
+</main>
+<aside>
+  <h2>On this page</h2>
+  <ul><li><a href="#sizing">Sizing</a></li><li><a href="#timeouts">Timeouts</a></li><li><a href="#health-checks">Health checks</a></li></ul>
+</aside>
+<footer>
+  <p>Loom is released under the MIT license. Documentation is CC BY 4.0.</p>
+  <nav><a href="/privacy">Privacy</a> <a href="/edit">Edit this page</a></nav>
+</footer>
+</body></html>
