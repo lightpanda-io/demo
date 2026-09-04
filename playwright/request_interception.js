@@ -19,7 +19,7 @@ import { chromium } from 'playwright-core';
 const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 
 // web serveur url
-const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'https://doesnotexist.localhost:9832';
+const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
 // Connect to an existing browser
 console.log("Connection to browser on " + browserAddress);
@@ -44,17 +44,21 @@ const context = await browser.newContext({
 });
 
 const page = await context.newPage();
+// /nope/ does not exist: the route sends the navigation to the /xhr/post
+// page instead, then rewrites that page's XHR (url, method, headers, body)
+// before it reaches the echo endpoint.
+const xhrURL = baseURL + '/post?via=continue';
 await page.route('**', async (route, request) => {
   const url = request.url();
-  if (url === 'https://doesnotexist.localhost:9832/nope/') {
+  if (url === baseURL + '/nope/') {
     return route.continue({
-      url: "https://httpbin.io/xhr/post",
+      url: baseURL + '/xhr/post',
     });
   }
-  if (url === 'https://httpbin.io/post') {
+  if (url === baseURL + '/post') {
     return route.continue({
       method: 'POST',
-      url: 'https://HTTPBIN.io/post',
+      url: xhrURL,
       headers: {'pw-injected': 'great', 'content-type': 'application/x-www-form-urlencoded'},
       postData: 'over=9000&tea=keemun',
     });
@@ -72,9 +76,9 @@ await page.waitForFunction(() => {
 const response = await page.locator('#response').textContent();
 const data = JSON.parse(response);
 
-if (data.url !== 'http://HTTPBIN.io/post') {
+if (data.url !== xhrURL) {
   console.log(data.url);
-  throw new Error("Expected URL to be 'http://HTTPBIN.io/post'");
+  throw new Error(`Expected URL to be '${xhrURL}'`);
 }
 
 if (data.headers['Pw-Injected'] != 'great') {

@@ -171,6 +171,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/markdown.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/lp-configure-loading.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/lp-configure-obey-robots.js"}, Env: []string{"URL=http://127.0.0.1:1234"}},
+		{Bin: "node", Args: []string{"puppeteer/blocked-url-redirect.js"}, Env: []string{"URL=http://127.0.0.1:1234"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -191,6 +192,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/cache-no-store.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-revalidation-etag.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cache-revalidation-last-modified.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cache-redirect.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cache-redirect-stale.js"}},
 		{Bin: "go", Args: []string{"run", "fetch/main.go", "test"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "links/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "click/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
@@ -435,6 +438,59 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Content-Length", strconv.Itoa(len(downloadImage)))
 		res.Write(downloadImage)
 
+	case "/xhr/get", "/xhr/post":
+		// A page whose only network activity is one XMLHttpRequest to the
+		// echo endpoint of the same name, with the reply shown in #response.
+		// Local stand-in for httpbin.io/xhr/{get,post}.
+		method := strings.ToUpper(strings.TrimPrefix(req.URL.Path, "/xhr/"))
+		res.Header().Add("Content-Type", "text/html")
+		fmt.Fprintf(res, `<!DOCTYPE html><html><body><pre id="response"></pre><script>
+const xhr = new XMLHttpRequest();
+xhr.onload = function () {
+  if (xhr.status >= 200 && xhr.status < 300) {
+    document.getElementById('response').textContent = xhr.responseText;
+  } else {
+    console.log('The request failed!');
+  }
+};
+xhr.onerror = function () { console.log('There was an error!'); };
+xhr.open('%s', '/%s');
+xhr.send();
+</script></body></html>`, method, strings.ToLower(method))
+
+	case "/get", "/post":
+		// Echo the request as JSON in httpbin's shape: url, method, headers
+		// (one string per header) and the decoded form fields.
+		defer req.Body.Close()
+		if err := req.ParseForm(); err != nil {
+			http.Error(res, err.Error(), http.StatusBadRequest)
+			return
+		}
+		headers := make(map[string]string, len(req.Header))
+		for name, values := range req.Header {
+			headers[name] = strings.Join(values, ", ")
+		}
+		form := make(map[string]string, len(req.PostForm))
+		for name, values := range req.PostForm {
+			form[name] = strings.Join(values, ", ")
+		}
+		res.Header().Set("Content-Type", "application/json")
+		enc := json.NewEncoder(res)
+		err := enc.Encode(map[string]any{
+			"url":     "http://" + req.Host + req.URL.RequestURI(),
+			"method":  req.Method,
+			"headers": headers,
+			"form":    form,
+		})
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "encode json: %v", err)
+		}
+
+	case "/redirect/to":
+		// Generic 302 to the ?to= target. Every gate (robots.txt, the url
+		// blocklist, the per-host throttle) has to be re-applied to the
+		// target of a redirect, not just to the URL we were asked for.
+		http.Redirect(res, req, req.URL.Query().Get("to"), http.StatusFound)
 	case "/redirect/headers":
 		// Echo the interception probe header into the Location query string
 		// so the client can verify the header reached this hop, then check
@@ -530,6 +586,46 @@ func (s *CacheServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 		res.Header().Set("Last-Modified", lastModified)
 		res.Header().Set("Content-Type", "text/html")
 		fmt.Fprintf(res, "document.writeln('version: %d')", current)
+
+	case path == "/redirect/to":
+		// Generic 302 to the ?to= target, same as DefaultServer's.
+		http.Redirect(res, req, req.URL.Query().Get("to"), http.StatusFound)
+
+	case path == "/redirect-cache/index.html":
+		// The script is reached through a 302: the hop has to run its own
+		// cache lookup, and be stored under its own URL.
+		res.Write([]byte("<!DOCTYPE html><script src='/redirect/to?to=/redirect-cache/script.js'></script>"))
+
+	case path == "/redirect-cache/script.js":
+		res.Header().Set("Cache-Control", "max-age=3600")
+		res.Header().Set("Content-Type", "application/javascript")
+		res.Write([]byte("window.redirectedScript = true;"))
+
+	case path == "/redirect-stale/index.html":
+		res.Write([]byte("<!DOCTYPE html><script src='script.js'></script>"))
+
+	case path == "/redirect-stale/script.js":
+		// A revalidation (conditional request) is answered with a redirect
+		// instead of a 304. The validators were issued for this URL and must
+		// not follow the request to the target, which echoes what it got.
+		if req.Header.Get("If-None-Match") != "" || req.Header.Get("If-Modified-Since") != "" {
+			http.Redirect(res, req, "/redirect-stale/headers.js", http.StatusFound)
+			return
+		}
+		res.Header().Set("Cache-Control", "max-age=1")
+		res.Header().Set("ETag", `"redirect-stale"`)
+		res.Header().Set("Last-Modified", lmForVersion(0))
+		res.Header().Set("Content-Type", "application/javascript")
+		res.Write([]byte("window.stale = true;"))
+
+	case path == "/redirect-stale/headers.js":
+		hdrs, err := json.Marshal(req.Header)
+		if err != nil {
+			http.Error(res, err.Error(), http.StatusInternalServerError)
+			return
+		}
+		res.Header().Set("Content-Type", "application/javascript")
+		fmt.Fprintf(res, "window.echoedHeaders = %s;", hdrs)
 
 	case strings.HasPrefix(path, "/cache/"):
 		req.URL.Path = path[len("/cache"):]

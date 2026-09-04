@@ -41,6 +41,19 @@ try {
 // bot.txt is allowed by robots.txt
 await page.goto(url + "/bot.txt", {});
 
+// A redirect is a new request: the hop we land on has to pass robots.txt on
+// its own, even though the URL we asked for is allowed.
+try {
+  await page.goto(url + "/redirect/to?to=/human.txt", {});
+  throw new Error("No block");
+} catch (err) {
+  assert.equal("RobotsBlocked", err.message.substring(0, 13))
+}
+
+// and the same redirect onto an allowed path still goes through.
+await page.goto(url + "/redirect/to?to=/bot.txt", {});
+assert.equal(url + "/bot.txt", page.url());
+
 await page.close();
 await context.close();
 await browser.disconnect();
