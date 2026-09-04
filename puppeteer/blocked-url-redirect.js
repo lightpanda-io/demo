@@ -17,6 +17,10 @@ import { connectBrowser } from './helpers.js';
 
 // Network.setBlockedURLs applies to every hop of a navigation: a redirect
 // onto a blocked URL fails even though the URL we asked for is allowed.
+//
+// The blocked target is a path robots.txt allows: the runner may start the
+// browser with --obey-robots, and the last step needs the hop to land once
+// the blocklist is cleared.
 const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234';
 
 const browser = await connectBrowser();
@@ -41,21 +45,21 @@ const expectBlocked = async (target) => {
     } catch (err) {
         assert.equal("UrlBlocked", err.message.substring(0, 10));
     }
-    assert.deepEqual(failures, [{ url: url + '/human.txt', reason: 'inspector' }]);
+    assert.deepEqual(failures, [{ url: url + '/ua.html', reason: 'inspector' }]);
 };
 
 try {
     await client.send('Network.setBlockedURLs', {
-        // Anchored on the host: a bare '*/human.txt' would also match the
+        // Anchored on the host: a bare '*/ua.html' would also match the
         // query string of the redirect URL.
-        urlPatterns: [{ urlPattern: url.replace(/^https?/, '*') + '/human.txt', block: true }],
+        urlPatterns: [{ urlPattern: url.replace(/^https?/, '*') + '/ua.html', block: true }],
     });
 
-    await expectBlocked(url + '/human.txt');
+    await expectBlocked(url + '/ua.html');
     console.log("OK: direct navigation blocked");
 
     // The redirect URL is allowed; the hop it lands on is not.
-    await expectBlocked(url + '/redirect/to?to=/human.txt');
+    await expectBlocked(url + '/redirect/to?to=/ua.html');
     console.log("OK: redirect onto a blocked URL blocked");
 
     // A redirect onto an allowed URL still goes through.
@@ -67,8 +71,8 @@ try {
     await client.send('Network.setBlockedURLs', { urlPatterns: [] });
 }
 
-await page.goto(url + '/redirect/to?to=/human.txt', {});
-assert.equal(url + '/human.txt', page.url());
+await page.goto(url + '/redirect/to?to=/ua.html', {});
+assert.equal(url + '/ua.html', page.url());
 console.log("OK: cleared blocklist lets the redirect through");
 
 await page.close();
