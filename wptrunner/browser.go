@@ -86,6 +86,7 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		"--load-resources", "worker",
 		"--load-resources", "stylesheet",
 		"--http-cache-dir", cache,
+		"--experimental-features", "cors",
 	}
 
 	if limit := b.Memlimit; limit > 0 {
