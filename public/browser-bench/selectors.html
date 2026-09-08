@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>Selector benchmark</title></head>
+<body>
+<div id="bench"></div>
+<script>
+// Selector matching benchmark. Results go to console.warn (console.log/info are
+// filtered out of lightpanda's stderr).
+//
+//   cd ../demo && go run runner/main.go -serve -http-dir benchmark
+//   lightpanda fetch http://127.0.0.1:1234/selectors.html 2>&1 |
+//     sed -n -e 's/.*param\.0=//p' -e 's/^ *arg(1): \(.*\) (string)$/\1/p'
+//
+// (the two sed expressions cover the release and debug log formats)
+//
+// The interesting number is SCALE: how the per-query cost grows as the sibling
+// group widens. Each width is 4x the last, so linear matching lands near 4x and
+// quadratic matching near 16x.
+
+var WIDTHS = [250, 1000, 4000];
+var BUDGET_MS = 100;   // keep running a case until it has burned this much time
+var MAX_ITERS = 20000;
+
+// Cycling the tag keeps the of-type ordinals different from the child ordinals,
+// and the interleaved whitespace exercises the non-element sibling skipping.
+var ROW_TAGS = ['div', 'section', 'p'];
+
+function buildRows(width) {
+    var html = [];
+    for (var i = 0; i < width; i++) {
+        var tag = ROW_TAGS[i % ROW_TAGS.length];
+        html.push('<', tag, ' class="row r', i, '">');
+        html.push('<span class="cell">a', i, '</span>\n');
+        html.push('<span class="cell ', (i === width - 1 ? 'needle' : 'chaff'), '">b', i, '</span>');
+        html.push('</', tag, '>\n');
+    }
+    document.getElementById('bench').innerHTML = html.join('');
+}
+
+// Cases are ordered cheapest-first. `max` skips a case above a width where its
+// cost would dominate the whole run.
+var CASES = [
+    { name: 'tag (baseline)',      sel: '#bench > div' },
+    { name: 'class (baseline)',    sel: '#bench > .row' },
+    { name: ':first-child',        sel: '#bench > .row:first-child' },
+    { name: ':last-child',         sel: '#bench > .row:last-child' },
+    { name: ':nth-child(2n)',      sel: '#bench > .row:nth-child(2n)' },
+    { name: ':nth-last-child(2n)', sel: '#bench > .row:nth-last-child(2n)' },
+    { name: ':first-of-type',      sel: '#bench > .row:first-of-type' },
+    { name: ':last-of-type',       sel: '#bench > .row:last-of-type' },
+    { name: ':only-of-type',       sel: '#bench > .row:only-of-type' },
+    { name: ':nth-of-type(2n)',    sel: '#bench > .row:nth-of-type(2n)' },
+    { name: ':nth-last-of-type(2n)', sel: '#bench > .row:nth-last-of-type(2n)' },
+    // Same pseudo, 2-wide sibling groups: the cost should stay flat, which is
+    // what says the problem is group width and not nth-child itself.
+    { name: 'narrow :nth-child(2)', sel: '#bench .cell:nth-child(2)' },
+    // Same pseudo one segment up: matchDescendant re-tests the ancestor for
+    // every descendant, so the ordinal is recomputed once per cell.
+    { name: 'ancestor :nth-child(2n)', sel: '#bench > .row:nth-child(2n) .cell' },
+    { name: ':has()',              sel: '#bench div:has(.needle)' },
+    { name: ':lang(en)',           sel: '#bench .cell:lang(en)' },
+    // Backtracking blowup: the middle compound matches nothing, so every
+    // candidate rescans the whole sibling group for every preceding sibling.
+    { name: 'chained ~ (no match)', sel: '#bench .row ~ .nomatch ~ .row', max: 1000 }
+];
+
+function run(sel) {
+    var iters = 0;
+    var matched = 0;
+    var start = performance.now();
+    var elapsed = 0;
+    while (iters < MAX_ITERS) {
+        matched = document.querySelectorAll(sel).length;
+        iters++;
+        elapsed = performance.now() - start;
+        if (elapsed >= BUDGET_MS) break;
+    }
+    return { iters: iters, matched: matched, us: (elapsed * 1000) / iters };
+}
+
+function pad(v, n)  { v = '' + v; while (v.length < n) v += ' '; return v; }
+function padL(v, n) { v = '' + v; while (v.length < n) v = ' ' + v; return v; }
+
+var previous = {};
+console.warn('selector-bench widths=' + WIDTHS.join(','));
+
+for (var w = 0; w < WIDTHS.length; w++) {
+    var width = WIDTHS[w];
+    buildRows(width);
+
+    console.warn('');
+    console.warn('W=' + width);
+    console.warn('  ' + pad('case', 24) + padL('match', 7) + padL('iters', 8) + padL('us/query', 12) + padL('scale', 8));
+
+    for (var c = 0; c < CASES.length; c++) {
+        var kase = CASES[c];
+        if (kase.max && width > kase.max) {
+            console.warn('  ' + pad(kase.name, 24) + padL('-', 7) + padL('-', 8) + padL('skipped', 12) + padL('-', 8));
+            continue;
+        }
+
+        document.querySelectorAll(kase.sel); // warm the parsed-selector cache
+        var res = run(kase.sel);
+
+        var scale = '-';
+        if (previous[kase.name] > 0) {
+            scale = (res.us / previous[kase.name]).toFixed(1) + 'x';
+        }
+        previous[kase.name] = res.us;
+
+        console.warn('  ' + pad(kase.name, 24) + padL(res.matched, 7) + padL(res.iters, 8) +
+                     padL(res.us.toFixed(1), 12) + padL(scale, 8));
+    }
+}
+
+console.warn('');
+console.warn('selector-bench done');
+</script>
+</body>
+</html>
