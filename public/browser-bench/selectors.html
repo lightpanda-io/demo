@@ -3,6 +3,7 @@
 <head><meta charset="utf-8"><title>Selector benchmark</title></head>
 <body>
 <div id="bench"></div>
+<div id="attrbench"></div>
 <script>
 // Selector matching benchmark. Results go to console.warn (console.log/info are
 // filtered out of lightpanda's stderr).
@@ -57,11 +58,106 @@ var CASES = [
     // Same pseudo one segment up: matchDescendant re-tests the ancestor for
     // every descendant, so the ordinal is recomputed once per cell.
     { name: 'ancestor :nth-child(2n)', sel: '#bench > .row:nth-child(2n) .cell' },
+    // Comma list: both selectors walk the same root, so the ordinals should be
+    // indexed once for the pair, not once per selector.
+    { name: 'list of two nth', sel: '#bench > .row:nth-child(2n), #bench > .row:nth-child(3n)' },
     { name: ':has()',              sel: '#bench div:has(.needle)' },
     { name: ':lang(en)',           sel: '#bench .cell:lang(en)' },
     // Backtracking blowup: the middle compound matches nothing, so every
     // candidate rescans the whole sibling group for every preceding sibling.
     { name: 'chained ~ (no match)', sel: '#bench .row ~ .nomatch ~ .row', max: 1000 }
+];
+
+// ---------------------------------------------------------------------------
+// Attribute phase.
+//
+// The rows above carry exactly one attribute, so they measure the constant cost
+// of an attribute lookup and say nothing about how it scales with the number of
+// attributes on an element. These rows draw their attribute count from a
+// histogram measured over amazon and github (mean 2.1, with a tail where ~11%
+// of elements carry ~35% of all the attributes), so a lookup walks a realistic
+// number of entries.
+// ---------------------------------------------------------------------------
+
+// count -> weight. amazon + github, summed.
+var ATTR_HISTOGRAM = [411, 1841, 607, 415, 296, 124, 68, 89, 106, 38, 11];
+
+// Split deliberately: lightpanda interns the common attribute names, so a
+// lookup for one of those can compare pointers, while a `data-*` name has to
+// fall back to a byte compare. The cases below probe each path.
+var FILLER_NAMES = [
+    'href', 'type', 'title', 'role', 'src', 'alt', 'style', 'target', 'value',
+    'data-testid', 'data-component', 'aria-live', 'itemprop', 'data-analytics'
+];
+
+// xorshift32. Deterministic so the shape is identical across runs and browsers.
+function rng(seed) {
+    var s = seed;
+    return function () {
+        s ^= s << 13; s >>>= 0;
+        s ^= s >>> 17;
+        s ^= s << 5;  s >>>= 0;
+        return s / 4294967296;
+    };
+}
+
+// Returns the realized mean attribute count, so the table is self-documenting.
+function buildAttrRows(width) {
+    var total = 0;
+    for (var i = 0; i < ATTR_HISTOGRAM.length; i++) total += ATTR_HISTOGRAM[i];
+
+    var next = rng(0x9E3779B9);
+    var html = [];
+    var attr_count = 0;
+
+    for (var i = 0; i < width; i++) {
+        var r = next() * total, n = 0;
+        while (n < ATTR_HISTOGRAM.length - 1 && (r -= ATTR_HISTOGRAM[n]) > 0) n++;
+        attr_count += n;
+
+        // ~1 in 5 attributed elements carries no class at all: that is the case
+        // a has-class shortcut would serve, and a full-scan miss for `.row`.
+        var has_class = n > 0 && (i % 5) !== 0;
+        // class is not always the first attribute, so the scan has to walk past
+        // other entries to reach it.
+        var class_at = has_class ? Math.floor(next() * n) : -1;
+
+        var attrs = [];
+        var filler = 0;
+        for (var s = 0; s < n; s++) {
+            if (s === class_at) {
+                // A third of the class values hold several classes; those are
+                // the ones the class-value tokenizer actually costs on.
+                attrs.push(' class="row r' + i + (i % 3 === 0 ? ' chip tone-' + (i % 7) : '') + '"');
+            } else {
+                attrs.push(' ' + FILLER_NAMES[(i + filler) % FILLER_NAMES.length] + '="v' + i + '"');
+                filler++;
+            }
+        }
+        html.push('<div', attrs.join(''), '>x', i, '</div>\n');
+    }
+    document.getElementById('attrbench').innerHTML = html.join('');
+    return attr_count / width;
+}
+
+// Passes per attribute case; the reported number is the best of these.
+var ATTR_REPS = 5;
+
+var ATTR_CASES = [
+    // Walks to the class entry, then tokenizes its value.
+    { name: 'class hit',           sel: '#attrbench > .row' },
+    // Nothing matches: each candidate either scans every entry (no class at
+    // all) or finds class and fails on the value.
+    { name: 'class miss',          sel: '#attrbench > .nomatch' },
+    // Only the multi-class values match, so this leans on the tokenizer.
+    { name: 'class multi',         sel: '#attrbench > .chip' },
+    // Full scan of every candidate on a name that IS interned.
+    { name: 'interned miss',       sel: '#attrbench > [disabled]' },
+    // Same scan on a name that is NOT interned: the control that says how much
+    // of any win came from the interned-pointer path rather than from the walk.
+    { name: 'uninterned miss',     sel: '#attrbench > [data-absent]' },
+    // Interned name, present on most candidates.
+    { name: 'interned hit',        sel: '#attrbench > [href]' }
 ];
 
 function run(sel) {
@@ -101,6 +197,44 @@ for (var w = 0; w < WIDTHS.length; w++) {
 
         document.querySelectorAll(kase.sel); // warm the parsed-selector cache
         var res = run(kase.sel);
+
+        var scale = '-';
+        if (previous[kase.name] > 0) {
+            scale = (res.us / previous[kase.name]).toFixed(1) + 'x';
+        }
+        previous[kase.name] = res.us;
+
+        console.warn('  ' + pad(kase.name, 24) + padL(res.matched, 7) + padL(res.iters, 8) +
+                     padL(res.us.toFixed(1), 12) + padL(scale, 8));
+    }
+}
+
+console.warn('');
+console.warn('attribute phase (histogram: amazon + github)');
+
+// Empty the main tree so its rows cannot affect these walks.
+document.getElementById('bench').innerHTML = '';
+
+for (var w = 0; w < WIDTHS.length; w++) {
+    var width = WIDTHS[w];
+    var mean = buildAttrRows(width);
+
+    console.warn('');
+    console.warn('W=' + width + ' mean_attrs=' + mean.toFixed(2));
+    console.warn('  ' + pad('case', 24) + padL('match', 7) + padL('iters', 8) + padL('us/query', 12) + padL('scale', 8));
+
+    for (var c = 0; c < ATTR_CASES.length; c++) {
+        var kase = ATTR_CASES[c];
+        document.querySelectorAll(kase.sel); // warm the parsed-selector cache
+        // These cases are cheap (tens of us), so a single GC pause inside one
+        // budget swings the mean by more than any change worth measuring. Take
+        // the best of several passes: the main table above is a plain mean, so
+        // do not compare the two tables' absolute numbers to each other.
+        var res = null;
+        for (var rep = 0; rep < ATTR_REPS; rep++) {
+            var r = run(kase.sel);
+            if (res === null || r.us < res.us) res = r;
+        }
 
         var scale = '-';
         if (previous[kase.name] > 0) {
