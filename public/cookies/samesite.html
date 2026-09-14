@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<body>
+<form id=get method=get action="http://127.0.0.1:1234/cookies/get">
+  <input type=submit id=get_submit value=GET>
+</form>
+<form id=post method=post action="http://127.0.0.1:1234/cookies/get">
+  <input type=hidden name=h1 value=v1>
+  <input type=submit id=post_submit value=POST>
+</form>
+<iframe id=frame src="http://127.0.0.1:1234/cookies/get"></iframe>
+</body>

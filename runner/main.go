@@ -153,6 +153,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/frame.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-redirect-local.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cookies-samesite.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_redirect.js"}},
@@ -393,6 +394,29 @@ func (s DefaultServer) ServeHTTP(res http.ResponseWriter, req *http.Request) {
 			Value: "cookie",
 		})
 		http.Redirect(res, req, "/cookies/get", http.StatusFound)
+	case "/cookies/samesite/set":
+		// One cookie per SameSite mode, so a cross-site request to
+		// /cookies/get shows which ones the browser lets through. The first
+		// carries no SameSite attribute at all: Lax by default, which is what
+		// the "Lax-allowing-unsafe" exception (RFC 6265bis 5.6.7.2) applies to.
+		// Path=/ so they cover /cookies/get, the default would be this dir.
+		http.SetCookie(res, &http.Cookie{
+			Name:  "default",
+			Value: "1",
+			Path:  "/",
+		})
+		http.SetCookie(res, &http.Cookie{
+			Name:     "lax",
+			Value:    "2",
+			Path:     "/",
+			SameSite: http.SameSiteLaxMode,
+		})
+		http.SetCookie(res, &http.Cookie{
+			Name:     "strict",
+			Value:    "3",
+			Path:     "/",
+			SameSite: http.SameSiteStrictMode,
+		})
 	case "/cookies/get":
 		enc := json.NewEncoder(res)
 		if err := enc.Encode(req.Cookies()); err != nil {
