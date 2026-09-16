@@ -526,6 +526,13 @@ WAIT:
 			tctx, tcancel := context.WithTimeout(ctx, probeTimeout)
 			_ = chromedp.Run(tctx, chromedp.Evaluate(`typeof timeout === "function" && (setup({explicit_timeout: true}), timeout())`, nil))
 			tcancel()
+
+			// we called timeout(), give it a bit more time to finish what it can
+			select {
+			case <-ctx.Done():
+				break WAIT
+			case <-time.After(pollInterval):
+			}
 			continue
 		}
 
