@@ -13,37 +13,44 @@
 // limitations under the License.
 'use strict'
 
-// Lightpanda exposes a WebDriver BiDi endpoint on ws://127.0.0.1:9222/session.
-// It is a BiDi-only endpoint: there is no classic WebDriver HTTP server, so
-// Selenium's `Builder` can't be used. We talk to it with the low-level BiDi
-// modules shipped in selenium-webdriver instead.
-import BiDi from 'selenium-webdriver/bidi/index.js';
-import { Session } from 'selenium-webdriver/bidi/generated/session.js';
+// Lightpanda serves WebDriver on http://127.0.0.1:9222 (`serve --protocol
+// webdriver`). The driver is built the usual way, with Builder().usingServer()
+// and BiDi enabled: pages are loaded over the HTTP session (driver.get), and
+// everything else goes through the BiDi modules shipped in selenium-webdriver.
+import { Builder, Browser } from 'selenium-webdriver';
+import chrome from 'selenium-webdriver/chrome.js';
 import { BrowsingContext } from 'selenium-webdriver/bidi/generated/browsing_context.js';
 import { Script } from 'selenium-webdriver/bidi/generated/script.js';
 
-// BiDi websocket url.
-const bidiURL = process.env.BIDI_URL ? process.env.BIDI_URL : 'ws://127.0.0.1:9222/session';
+// WebDriver server url.
+const serverURL = process.env.WEBDRIVER_URL ? process.env.WEBDRIVER_URL : 'http://127.0.0.1:9222';
 
 // web page to load.
 const url = process.env.URL ? process.env.URL : 'https://demo-browser.lightpanda.io/campfire-commerce/';
 
 (async () => {
-  const bidi = new BiDi(bidiURL);
-  await bidi.waitForConnection();
+  const driver = await new Builder()
+    .usingServer(serverURL)
+    .forBrowser(Browser.CHROME)
+    .setChromeOptions(new chrome.Options().enableBidi())
+    .build();
 
-  const session = new Session(bidi);
-  const res = await session.new({ capabilities: {} });
-  console.log('session', res.sessionId, res.capabilities.browserName, res.capabilities.browserVersion);
+  const session = await driver.getSession();
+  const caps = await driver.getCapabilities();
+  console.log('session', session.getId(), caps.getBrowserName(), caps.getBrowserVersion());
+
+  // Load the page and wait for the load event.
+  await driver.get(url);
+
+  const bidi = await driver.getBidi();
+  await bidi.waitForConnection();
 
   const browsingContext = new BrowsingContext(bidi);
   const script = new Script(bidi);
 
-  // Create a new top-level browsing context (a tab).
-  const { context } = await browsingContext.create({ type: 'tab' });
-
-  // Load the page and wait for the load event.
-  await browsingContext.navigate({ context, url, wait: 'complete' });
+  // The session's top-level browsing context, the page driver.get loaded.
+  const { contexts } = await browsingContext.getTree({});
+  const context = contexts[0].context;
 
   // Evaluate some JavaScript in the page.
   const title = await script.evaluate({
@@ -60,7 +67,6 @@ const url = process.env.URL ? process.env.URL : 'https://demo-browser.lightpanda
   });
   console.log('links:', nodes.length);
 
-  await browsingContext.close({ context });
-  await session.end();
+  await driver.quit();
   bidi.close();
 })();
