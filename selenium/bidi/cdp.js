@@ -13,18 +13,18 @@
 // limitations under the License.
 'use strict'
 
-// Lightpanda exposes a WebDriver BiDi endpoint on ws://127.0.0.1:9222/session.
-// It is a BiDi-only endpoint: there is no classic WebDriver HTTP server, so
-// Selenium's `Builder` can't be used. We talk to it with the low-level BiDi
-// modules shipped in selenium-webdriver instead.
-import { WebDriver, Capabilities, Session as DriverSession } from 'selenium-webdriver';
-import { Session } from 'selenium-webdriver/bidi/generated/session.js';
-import { Browser } from 'selenium-webdriver/bidi/generated/browser.js';
+// Lightpanda serves WebDriver on http://127.0.0.1:9222 (`serve --protocol
+// webdriver`). The driver is built the usual way, with Builder().usingServer()
+// and BiDi enabled: pages are loaded over the HTTP session (driver.get), and
+// everything else goes through the BiDi modules shipped in selenium-webdriver.
+import { Builder, Browser } from 'selenium-webdriver';
+import chrome from 'selenium-webdriver/chrome.js';
+import { Browser as BiDiBrowser } from 'selenium-webdriver/bidi/generated/browser.js';
 import { BrowsingContext } from 'selenium-webdriver/bidi/generated/browsing_context.js';
 import getScriptManager from 'selenium-webdriver/bidi/scriptManager.js';
 
-// BiDi websocket url.
-const bidiURL = process.env.BIDI_URL ? process.env.BIDI_URL : 'ws://127.0.0.1:9222/session';
+// WebDriver server url.
+const serverURL = process.env.WEBDRIVER_URL ? process.env.WEBDRIVER_URL : 'http://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
@@ -55,21 +55,16 @@ async function evaluate(manager, context, fn) {
 }
 
 (async () => {
-  // Build a WebDriver instance around the BiDi endpoint. Lightpanda has no
-  // classic WebDriver HTTP server, so there is no Builder and no command
-  // executor: the driver only carries the `webSocketUrl` capability. That is
-  // enough for driver.getBidi(), driver.wait() and the BiDi modules; classic
-  // commands like driver.get() would fail.
-  const caps = new Capabilities().set('webSocketUrl', bidiURL);
-  const driver = new WebDriver(new DriverSession('lightpanda', caps), null);
+  const driver = await new Builder()
+    .usingServer(serverURL)
+    .forBrowser(Browser.CHROME)
+    .setChromeOptions(new chrome.Options().enableBidi())
+    .build();
 
   const bidi = await driver.getBidi();
   await bidi.waitForConnection();
 
-  const session = await Session.create(driver);
-  await session.new({ capabilities: {} });
-
-  const browser = await Browser.create(driver);
+  const browser = await BiDiBrowser.create(driver);
   const browsingContext = await BrowsingContext.create(driver);
   const script = await getScriptManager(null, driver);
 
@@ -81,8 +76,8 @@ async function evaluate(manager, context, fn) {
     const { userContext } = await browser.createUserContext({});
     const { context } = await browsingContext.create({ type: 'tab', userContext });
 
-    // Navigate the page to a URL
-    await browsingContext.navigate({ context, url: baseURL + '/campfire-commerce/', wait: 'complete' });
+    // Navigate the page to a URL, waiting for it to load.
+    await driver.get(baseURL + '/campfire-commerce/');
 
     // ensure the price is loaded.
     await driver.wait(() => evaluate(script, context, () => {
@@ -153,7 +148,7 @@ async function evaluate(manager, context, fn) {
     metrics[run] = process.hrtime.bigint() - rstart;
   }
 
-  await session.end();
+  await driver.quit();
   bidi.close();
 
   const gduration = process.hrtime.bigint() - gstart;
