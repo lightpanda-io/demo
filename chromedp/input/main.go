@@ -15,6 +15,7 @@ package main
 
 import (
 	"context"
+	"errors"
 	"flag"
 	"fmt"
 	"io"
@@ -23,6 +24,7 @@ import (
 	"os"
 
 	"github.com/chromedp/chromedp"
+	"github.com/chromedp/chromedp/kb"
 )
 
 const (
@@ -45,7 +47,7 @@ func main() {
 }
 
 const (
-	CdpWSDefault = "ws://127.0.0.1:9222/devtools/browser/b7d6c576-bc51-40fc-9c18-bf314a707840"
+	CdpWSDefault = "ws://127.0.0.1:9222/"
 )
 
 func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
@@ -62,7 +64,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 	exec := args[0]
 	flags.Usage = func() {
 		fmt.Fprintf(stderr, "usage: %s <url>]\n", exec)
-		fmt.Fprintf(stderr, "chromedp fetch url and type into the #input and #ta fields.\n")
+		fmt.Fprintf(stderr, "chromedp fetch url, type into the #input and #ta fields and press Enter on form controls.\n")
 		fmt.Fprintf(stderr, "\nCommand line options:\n")
 		flags.PrintDefaults()
 		fmt.Fprintf(stderr, "\nEnvironment vars:\n")
@@ -151,7 +153,50 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		return fmt.Errorf("incorrect keypress events with canceled beforeinput: %q", keypresses)
 	}
 
-	return nil
+	// Enter activates a button after its keypress, and submits the form at
+	// most once. Only the focused control's keypress and click are recorded.
+	enterCases := []struct {
+		id     string
+		expect string
+	}{
+		{id: "input", expect: "keypress submit"},
+		{id: "check", expect: "keypress submit"},
+		{id: "submit", expect: "keypress click submit"},
+		{id: "button", expect: "keypress click submit"},
+		{id: "ibutton", expect: "keypress click"},
+		{id: "reset", expect: "keypress click"},
+	}
+	var enterErrs []error
+	for _, c := range enterCases {
+		var events string
+		err = chromedp.Run(ctx,
+			chromedp.Navigate(url),
+			chromedp.Evaluate(fmt.Sprintf(`{
+				const form = document.getElementById("f");
+				form.insertAdjacentHTML("beforeend",
+					'<input id=check type=checkbox><button id=button>go</button>' +
+					'<input id=ibutton type=button value=b><input id=reset type=reset>');
+				window.events = [];
+				form.addEventListener("submit", (e) => {
+					e.preventDefault();
+					window.events.push("submit");
+				});
+				const el = document.getElementById(%q);
+				el.addEventListener("keypress", () => window.events.push("keypress"));
+				el.addEventListener("click", () => window.events.push("click"));
+			}`, c.id), nil),
+			chromedp.SendKeys("#"+c.id, kb.Enter, chromedp.ByQuery),
+			chromedp.Evaluate(`window.events.join(" ")`, &events),
+		)
+		if err != nil {
+			return fmt.Errorf("enter on #%s: %w", c.id, err)
+		}
+		if events != c.expect {
+			enterErrs = append(enterErrs, fmt.Errorf("incorrect events for enter on #%s: %q, expected %q", c.id, events, c.expect))
+		}
+	}
+
+	return errors.Join(enterErrs...)
 }
 
 // env returns the env value corresponding to the key or the default string.
