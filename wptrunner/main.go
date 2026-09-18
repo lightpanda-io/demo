@@ -186,14 +186,17 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 
 	var browser Browser = NoopBrowser{CDP: *cdp}
 	if *lpdpath != "" {
+
+		cmd := LightpandaCmd{
+			Port:     9222,
+			Path:     *lpdpath,
+			Memlimit: *ml,
+		}
+
 		if *pool > 1 {
-			browser = NewPoolBrowser(*lpdpath, *pool, *ml)
+			browser = NewPoolBrowser(cmd, *pool)
 		} else {
-			browser = &ProcessBrowser{
-				Port:     9222,
-				Path:     *lpdpath,
-				Memlimit: *ml,
-			}
+			browser = &ProcessBrowser{Cmd: cmd}
 		}
 	}
 
