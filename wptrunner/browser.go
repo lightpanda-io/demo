@@ -6,9 +6,7 @@ import (
 	"fmt"
 	"log/slog"
 	"math/rand"
-	"os"
 	"os/exec"
-	"strconv"
 	"sync"
 	"time"
 )
@@ -36,9 +34,7 @@ func (b NoopBrowser) Ready() <-chan string {
 type ProcessBrowser struct {
 	sync.Mutex
 
-	Path     string
-	Port     int
-	Memlimit uint
+	Cmd BrowserCmd
 
 	ready   chan struct{}
 	running bool
@@ -57,7 +53,7 @@ func (b *ProcessBrowser) Stop() {
 var ErrBrowserIsRunning = errors.New("browser is running")
 
 func (b *ProcessBrowser) CDP() string {
-	return fmt.Sprintf("ws://127.0.0.1:%d", b.Port)
+	return b.Cmd.CDP()
 }
 
 // non blocking
@@ -69,31 +65,10 @@ func (b *ProcessBrowser) Start(ctx context.Context) error {
 		return ErrBrowserIsRunning
 	}
 
-	// prepare cache unique dir
-	cache, err := os.MkdirTemp(os.TempDir(), "wpt_cache")
+	cmd, err := b.Cmd.Command(ctx)
 	if err != nil {
-		return fmt.Errorf("create cache dir: %w", err)
+		return fmt.Errorf("browser command: %w", err)
 	}
-
-	args := []string{
-		"serve",
-		"--log-level", "error",
-		"--port", strconv.Itoa(b.Port),
-		"--ws-max-concurrent", "64",
-		"--insecure-disable-tls-host-verification",
-		"--load-resources", "iframe",
-		"--load-resources", "image",
-		"--load-resources", "worker",
-		"--load-resources", "stylesheet",
-		"--http-cache-dir", cache,
-		"--experimental-features", "cors",
-	}
-
-	if limit := b.Memlimit; limit > 0 {
-		args = append(args, "--v8-max-heap-mb", strconv.Itoa(int(b.Memlimit)))
-	}
-
-	cmd := exec.CommandContext(ctx, b.Path, args...)
 
 	// We keep a reference to the original context to restart the browser with
 	// it.
@@ -167,15 +142,11 @@ type PoolBrowser struct {
 	cancel context.CancelFunc
 }
 
-func NewPoolBrowser(path string, n, ml uint) *PoolBrowser {
+func NewPoolBrowser(cmd BrowserCmd, n uint) *PoolBrowser {
 	procs := make([]*ProcessBrowser, n)
-	port := 9222
 	for i := range n {
-		procs[i] = &ProcessBrowser{
-			Memlimit: ml,
-			Port:     port + int(i),
-			Path:     path,
-		}
+		cmd := cmd.Copy(int(9222 + i))
+		procs[i] = &ProcessBrowser{Cmd: cmd}
 	}
 
 	return &PoolBrowser{
@@ -207,4 +178,10 @@ func (b *PoolBrowser) Ready() <-chan string {
 	i := rand.Intn(len(b.procs))
 	bb := b.procs[i]
 	return bb.Ready()
+}
+
+type BrowserCmd interface {
+	Command(ctx context.Context) (*exec.Cmd, error)
+	CDP() string
+	Copy(port int) BrowserCmd
 }
