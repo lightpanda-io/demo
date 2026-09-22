@@ -17,6 +17,19 @@
 // websocket is ever opened. Everything here is stock W3C WebDriver --
 // POST /session, POST /url, POST /execute/sync, DELETE /session -- so this
 // script runs unchanged against chromedriver or geckodriver.
+//
+// One session is created up front and reused for every run, matching
+// puppeteer/cdp.js, which connects to an already-running browser and only
+// makes a context per run. Creating a session per run instead would measure
+// the browser's startup rather than its page work -- geckodriver launches a
+// whole Firefox for each one, which was 92% of its time (914ms to create and
+// 330ms to quit, against 104ms of actual work) and made the numbers
+// incomparable with the other benchmarks in this directory.
+//
+// The difference that costs us: puppeteer gets a fresh browser context per
+// run, so each run starts clean. Here every run reuses the one browsing
+// context and relies on the navigation to reset it. The W3C equivalent would
+// be POST /session/{id}/window/new, which lightpanda does not implement yet.
 import { Builder, Browser } from 'selenium-webdriver';
 
 // WebDriver server url.
@@ -38,15 +51,14 @@ const gstart = process.hrtime.bigint();
 let metrics = [];
 
 (async () => {
+  const driver = await new Builder()
+    .usingServer(serverURL)
+    .forBrowser(browserName)
+    .build();
+
   for (var run = 0; run<runs; run++) {
     // measure run time.
     const rstart = process.hrtime.bigint();
-
-    // A fresh session is the HTTP session's isolated browser context.
-    const driver = await new Builder()
-      .usingServer(serverURL)
-      .forBrowser(browserName)
-      .build();
 
     // Navigate the page to a URL, waiting for it to load.
     await driver.get(baseURL + '/campfire-commerce/');
@@ -114,10 +126,10 @@ let metrics = [];
     process.stderr.write('.');
     if(run > 0 && run % 80 == 0) process.stderr.write('\n');
 
-    await driver.quit();
-
     metrics[run] = process.hrtime.bigint() - rstart;
   }
+
+  await driver.quit();
 
   const gduration = process.hrtime.bigint() - gstart;
 
