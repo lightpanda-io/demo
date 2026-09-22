@@ -17,8 +17,7 @@
 // webdriver`). The driver is built the usual way, with Builder().usingServer()
 // and BiDi enabled: pages are loaded over the HTTP session (driver.get), and
 // everything else goes through the BiDi modules shipped in selenium-webdriver.
-import { Builder, Browser } from 'selenium-webdriver';
-import chrome from 'selenium-webdriver/chrome.js';
+import { Builder, Browser, Capabilities } from 'selenium-webdriver';
 import { Browser as BiDiBrowser } from 'selenium-webdriver/bidi/generated/browser.js';
 import { BrowsingContext } from 'selenium-webdriver/bidi/generated/browsing_context.js';
 import getScriptManager from 'selenium-webdriver/bidi/scriptManager.js';
@@ -28,6 +27,10 @@ const serverURL = process.env.WEBDRIVER_URL ? process.env.WEBDRIVER_URL : 'http:
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
+
+// Lightpanda answers to any browserName; a real driver does not, so let the
+// caller name it: BROWSER=firefox runs this against geckodriver.
+const browserName = process.env.BROWSER ? process.env.BROWSER : Browser.CHROME;
 
 // runs
 const runs = process.env.RUNS ? parseInt(process.env.RUNS) : 100;
@@ -55,10 +58,16 @@ async function evaluate(manager, context, fn) {
 }
 
 (async () => {
+  // browserName and webSocketUrl are plain W3C capabilities -- going through
+  // them rather than chrome.Options keeps this driver-agnostic, so
+  // BROWSER=firefox runs it against geckodriver unchanged.
+  const capabilities = new Capabilities();
+  capabilities.setBrowserName(browserName);
+  capabilities.set('webSocketUrl', true);
+
   const driver = await new Builder()
     .usingServer(serverURL)
-    .forBrowser(Browser.CHROME)
-    .setChromeOptions(new chrome.Options().enableBidi())
+    .withCapabilities(capabilities)
     .build();
 
   const bidi = await driver.getBidi();

@@ -25,6 +25,10 @@ const serverURL = process.env.WEBDRIVER_URL ? process.env.WEBDRIVER_URL : 'http:
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
 
+// Lightpanda answers to any browserName; a real driver does not, so let the
+// caller name it: BROWSER=firefox runs this against geckodriver unchanged.
+const browserName = process.env.BROWSER ? process.env.BROWSER : Browser.CHROME;
+
 // runs
 const runs = process.env.RUNS ? parseInt(process.env.RUNS) : 100;
 
@@ -41,7 +45,7 @@ let metrics = [];
     // A fresh session is the HTTP session's isolated browser context.
     const driver = await new Builder()
       .usingServer(serverURL)
-      .forBrowser(Browser.CHROME)
+      .forBrowser(browserName)
       .build();
 
     // Navigate the page to a URL, waiting for it to load.

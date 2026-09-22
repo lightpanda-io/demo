@@ -30,10 +30,14 @@ const serverURL = process.env.WEBDRIVER_URL ? process.env.WEBDRIVER_URL : 'http:
 // web page to load.
 const url = process.env.URL ? process.env.URL : 'http://127.0.0.1:1234/campfire-commerce/';
 
+// Lightpanda answers to any browserName; a real driver does not, so let the
+// caller name it: BROWSER=firefox runs this against geckodriver unchanged.
+const browserName = process.env.BROWSER ? process.env.BROWSER : Browser.CHROME;
+
 (async () => {
   const driver = await new Builder()
     .usingServer(serverURL)
-    .forBrowser(Browser.CHROME)
+    .forBrowser(browserName)
     .build();
 
   try {
