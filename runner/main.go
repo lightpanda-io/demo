@@ -183,6 +183,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception_redirect.js"}},
 		{Bin: "node", Args: []string{"playwright/post_data.js"}},
+		{Bin: "node", Args: []string{"cdp/blank_lifecycle.js"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/dump.js"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/content.js"}, Env: []string{"RUNS=10"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/click.js"}},
