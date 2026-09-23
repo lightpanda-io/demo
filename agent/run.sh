@@ -204,7 +204,10 @@ run_live_save_replay() {
     pass "$name replay output satisfies cases/$name.jq"
   else
     fail "$name replay output violates cases/$name.jq"
-    info "  output: $(tr '\n' ' ' <"$TMP/out" | cut -c1-300)"
+    info "  output:"
+    { jq . "$TMP/out" 2>/dev/null || cat "$TMP/out"; } | sed 's/^/    /'
+    info "  saved script:"
+    sed 's/^/    /' "$script"
   fi
 }
 
