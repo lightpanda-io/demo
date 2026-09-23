@@ -12,10 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Scroll offsets clamp to the scrollable extent, and a wheel latches to a
-// single scroll container. Every expectation here was recorded from Chrome
-// (see the assertions' notes); run it against Chrome with
-// BROWSER_ADDRESS=http://127.0.0.1:9222 to re-check them.
+// Scroll clamping and wheel latching, recorded from Chrome.
+// Re-check with BROWSER_ADDRESS=http://127.0.0.1:9222.
 'use strict'
 
 import { connectBrowser } from './helpers.js'
@@ -35,12 +33,11 @@ function check(name, actual, expected) {
     if (!ok) failures.push(`${name}: expected ${JSON.stringify(expected)}, got ${JSON.stringify(actual)}`);
 }
 
-// Chrome animates a wheel scroll; let it finish before reading offsets back.
+// Chrome animates wheel scrolls.
 const settle = () => new Promise(r => setTimeout(r, 400));
 
 async function wheel(selector, deltaY) {
-    // Aim at the middle of the container's own box: a child scrolls out of it,
-    // and then the wheel would land on whatever took its place.
+    // Aim at the container itself: its children scroll away.
     const at = await page.evaluate((s) => {
         const r = document.querySelector(s).getBoundingClientRect();
         return { x: r.x + r.width / 2, y: r.y + r.height / 2 };
@@ -63,8 +60,7 @@ const reset = async () => {
     await settle();
 };
 
-// A scroll offset never passes scrollHeight - clientHeight. The limit itself is
-// whatever the box measures, so assert it relationally.
+// Offsets never pass scrollHeight - clientHeight.
 check('inline-sized box clamps', await page.evaluate(() => {
     const b = document.getElementById('box');
     b.scrollTop = 9999;
@@ -75,21 +71,18 @@ check('inline-sized box clamps', await page.evaluate(() => {
     };
 }), { top: true, left: true });
 
-// Same shape, sized by a stylesheet rule rather than an inline style.
 check('stylesheet-sized box clamps', await page.evaluate(() => {
     const s = document.getElementById('sheet');
     s.scrollTop = 9999;
     return s.scrollTop === s.scrollHeight - s.clientHeight;
 }), true);
 
-// An explicit box whose content is text, with no element child to measure.
 check('text-only box clamps', await page.evaluate(() => {
     const t = document.getElementById('text');
     t.scrollTop = 9999;
     return t.scrollTop === t.scrollHeight - t.clientHeight && t.scrollTop > 0;
 }), true);
 
-// The viewport clamps the same way, against the document's own extent.
 check('the viewport clamps', await page.evaluate(() => {
     window.scrollTo(0, 99999);
     const max = document.documentElement.scrollHeight - window.innerHeight;
@@ -98,9 +91,7 @@ check('the viewport clamps', await page.evaluate(() => {
     return clamped;
 }), true);
 
-// A wheel latches to one scroller: the container keeps the delta it can't use
-// instead of passing the rest to the page (cc/input/input_handler.cc,
-// FindNodeToLatch).
+// A wheel latches to one scroller (cc/input/input_handler.cc, FindNodeToLatch).
 await reset();
 const extent = await page.evaluate(() => {
     const o = document.getElementById('outer');
@@ -109,19 +100,15 @@ const extent = await page.evaluate(() => {
 await wheel('#outer', 1000);
 check('a saturating wheel does not reach the page', await state(), { outer: extent, win: 0 });
 
-// Once it can no longer move, the next wheel latches to the page instead.
 await wheel('#outer', 100);
 check('the next wheel chains to the page', await state(), { outer: extent, win: 100 });
 
-// Reversing direction latches back to the container. What it can't give back
-// stays unscrolled — no split here either.
 await reset();
 await page.evaluate(() => { window.scrollTo(0, 300); document.getElementById('outer').scrollTop = 9999; });
 await settle();
 await wheel('#outer', -500);
 check('reversing does not chain the remainder', await state(), { outer: 0, win: 300 });
 
-// overscroll-behavior keeps the latch on a container that can't move.
 await reset();
 await page.evaluate(() => {
     const o = document.getElementById('outer');

@@ -9,24 +9,20 @@
 </style>
 </head>
 <body>
-  <!-- inline-sized scroller: 500px of content in a 100px box -->
   <div id="box" style="width: 100px; height: 100px; overflow: scroll;">
     <div style="width: 500px; height: 500px;">content</div>
   </div>
 
-  <!-- same shape, but sized by a stylesheet rule -->
   <div id="sheet" class="panel">
     <div style="height: 500px;">content</div>
   </div>
 
-  <!-- explicit box, but the content is text: no element child to measure -->
   <div id="text" style="height: 100px; width: 200px; overflow: auto;">
     one two three four five six seven eight nine ten eleven twelve thirteen
     fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one
     twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven
   </div>
 
-  <!-- the chaining subject: a leaf inside an inline-sized scroller -->
   <div id="outer" style="height: 100px; overflow: auto;">
     <div style="height: 500px;"><p id="leaf">inner leaf</p></div>
   </div>
