@@ -75,4 +75,3 @@ if (!loaded) {
     console.log(`no "load" lifecycle event for the initial about:blank after ${timeoutMs}ms`);
     process.exit(1);
 }
-console.log('ok: "load" lifecycle event received for the initial about:blank');
