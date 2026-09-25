@@ -70,6 +70,46 @@ async function open(file) {
 }
 
 {
+    const page = await open('nested.html');
+    const q = (id) => `document.getElementById('${id}')`;
+
+    // A block with an auto width fills its container (kStretchImplicit in
+    // Blink's block_layout_algorithm.cc), and inline children join their
+    // parent's lines. Line heights depend on the font; assert only the shape.
+    check('a nested block fills its container', await page.evaluate(`(() => {
+        const p = ${q('nestedP')};
+        return p.offsetWidth === p.parentElement.clientWidth;
+    })()`), true);
+
+    check('text in a nested block wraps', await page.evaluate(`(() => {
+        const line = ${q('oneLinePlain')}.offsetHeight;
+        return ${q('nestedP')}.offsetHeight > 2 * line;
+    })()`), true);
+
+    check('text in a nested block scrolls its container', await page.evaluate(`(() => {
+        const b = ${q('nested')};
+        b.scrollTop = 9999;
+        return b.scrollTop > 0 && b.scrollTop === b.scrollHeight - b.clientHeight;
+    })()`), true);
+
+    check('text in an inline child scrolls its container', await page.evaluate(`(() => {
+        const b = ${q('inlineOnly')};
+        b.scrollTop = 9999;
+        return b.scrollTop > 0 && b.scrollTop === b.scrollHeight - b.clientHeight;
+    })()`), true);
+
+    check('the width stretches through auto-width blocks', await page.evaluate(`(() => {
+        const p = ${q('deepP')}, line = ${q('oneLinePlain')}.offsetHeight;
+        return { width: p.offsetWidth, severalLines: p.offsetHeight > 2 * line };
+    })()`), { width: 200, severalLines: true });
+
+    check("an inline child stays on its parent's line", await page.evaluate(
+        `${q('oneLineSpan')}.offsetHeight === ${q('oneLinePlain')}.offsetHeight`), true);
+
+    await page.close();
+}
+
+{
     const page = await open('short.html');
 
     check('a short document', await page.evaluate(() => {

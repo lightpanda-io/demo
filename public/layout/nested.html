@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Text nested below a sized box</title>
+<style>
+  body { margin: 0; }
+  .box { width: 200px; height: 100px; overflow: auto; }
+  .sheetW { width: 200px; }
+</style>
+</head>
+<body>
+  <!-- Karl's shape: the text sits in a <p>, part of it in an inline <b>. -->
+  <div id="nested" class="box">
+    <p id="nestedP">one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty<b>!</b></p>
+  </div>
+
+  <!-- Only an inline child holds the text. -->
+  <div id="inlineOnly" class="box"><span>one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one twenty-two</span></div>
+
+  <!-- The width stretches down through two auto-width blocks. -->
+  <div id="deep" class="sheetW">
+    <div><div><p id="deepP">one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty</p></div></div>
+  </div>
+
+  <!-- An inline child flows on the same line as its parent's text. -->
+  <div class="sheetW">
+    <p id="oneLineSpan">one <span>two</span></p>
+    <p id="oneLinePlain">one two</p>
+  </div>
+</body>
+</html>
