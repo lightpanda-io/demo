@@ -92,6 +92,12 @@ async function open(file) {
         return b.scrollTop > 0 && b.scrollTop === b.scrollHeight - b.clientHeight;
     })()`), true);
 
+    check('text below wrapper blocks scrolls its container', await page.evaluate(`(() => {
+        const b = ${q('wrapped')};
+        b.scrollTop = 9999;
+        return b.scrollTop > 0 && b.scrollTop === b.scrollHeight - b.clientHeight;
+    })()`), true);
+
     check('text in an inline child scrolls its container', await page.evaluate(`(() => {
         const b = ${q('inlineOnly')};
         b.scrollTop = 9999;
@@ -105,6 +111,14 @@ async function open(file) {
 
     check("an inline child stays on its parent's line", await page.evaluate(
         `${q('oneLineSpan')}.offsetHeight === ${q('oneLinePlain')}.offsetHeight`), true);
+
+    check('a <br> ends a line, a trailing one adds none', await page.evaluate(`(() => {
+        const line = ${q('oneLinePlain')}.offsetHeight;
+        return {
+            breaks: Math.round(${q('breaks')}.offsetHeight / line),
+            trailing: Math.round(${q('trailingBreak')}.offsetHeight / line),
+        };
+    })()`), { breaks: 3, trailing: 1 });
 
     await page.close();
 }
