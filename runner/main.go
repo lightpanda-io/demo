@@ -217,6 +217,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		// the same two over the HTTP session, with no websocket at all
 		{Bin: "node", Args: []string{"selenium/http/demo.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"selenium/http/cdp.js"}, Env: []string{"RUNS=2"}},
+		{Bin: "node", Args: []string{"selenium/http/form.js"}},
+		{Bin: "node", Args: []string{"selenium/http/click.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr

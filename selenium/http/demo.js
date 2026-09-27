@@ -177,17 +177,14 @@ const browserName = process.env.BROWSER ? process.env.BROWSER : Browser.CHROME;
     // ids are dropped on navigation
     await driver.get(url);
     await assert.rejects(() => name.getText(), error.WebDriverError, 'a reference does not survive a navigation');
-
-    console.log('selenium/http/demo.js: ok');
   } finally {
     await driver.quit();
   }
 })();
 
+// click and sendKeys are covered by form.js and click.js; clear only by the
+// browser's own tests.
 // Not implemented yet, so deliberately untested here:
-//   POST   /session/{id}/element/{id}/click
-//   POST   /session/{id}/element/{id}/value    (sendKeys)
-//   POST   /session/{id}/element/{id}/clear
 //   POST   /session/{id}/back, /forward
 //   GET    /session/{id}/cookie, POST, DELETE
 //   POST   /session/{id}/window/new, GET+POST /window/rect
