@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scroll clamp and wheel chaining</title>
+<style>
+  body { margin: 0; }
+  .panel { height: 100px; overflow: auto; }
+  #spacer { height: 3000px; }
+</style>
+</head>
+<body>
+  <div id="box" style="width: 100px; height: 100px; overflow: scroll;">
+    <div style="width: 500px; height: 500px;">content</div>
+  </div>
+
+  <div id="sheet" class="panel">
+    <div style="height: 500px;">content</div>
+  </div>
+
+  <div id="text" style="height: 100px; width: 200px; overflow: auto;">
+    one two three four five six seven eight nine ten eleven twelve thirteen
+    fourteen fifteen sixteen seventeen eighteen nineteen twenty twenty-one
+    twenty-two twenty-three twenty-four twenty-five twenty-six twenty-seven
+  </div>
+
+  <div id="outer" style="height: 100px; overflow: auto;">
+    <div style="height: 500px;"><p id="leaf">inner leaf</p></div>
+  </div>
+
+  <div id="spacer"></div>
+</body>
+</html>
