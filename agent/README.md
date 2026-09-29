@@ -91,8 +91,9 @@ Drives the real Gemini-backed agent:
   the task prompt pins the output contract and the schema verifies it; edit
   those two files together.
 
-The stable `$usage total=N` line lightpanda prints to stderr is captured per
-task; a loose `MAX_TOKENS` ceiling flags a runaway agent loop.
+The stable `$usage` line lightpanda prints to stderr is captured per task; a
+loose `MAX_TOKENS` ceiling on its uncached tokens (`total - cached`) flags a
+runaway agent loop.
 
 ## Running locally
 
