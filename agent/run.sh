@@ -41,9 +41,11 @@
 #   LP_HTTP_PROXY  optional proxy for the live HN call only (datacenter IPs are
 #                  often blocked by news.ycombinator.com); localhost fixtures
 #                  are never proxied
-#   MAX_TOKENS     per-live-task total-token ceiling (default: 3000000).
-#                  `total` re-counts the re-sent context every turn (cached
-#                  reads included), so a normal HN save is ~0.2-1M; this is a
+#   MAX_TOKENS     per-live-task ceiling on uncached tokens, i.e. `total`
+#                  minus `cached` (default: 1500000). `total` re-counts the
+#                  whole context every turn, so it grows with the square of
+#                  the turn count and swings 0.3-3.3M on a normal HN save;
+#                  the uncached part grows linearly (0.13-0.58M). This is a
 #                  loose backstop against a runaway agent loop.
 set -uo pipefail
 
@@ -56,7 +58,7 @@ LPD="${LPD_PATH:-$DEMO/../browser/zig-out/bin/lightpanda}"
 LPD_ARGS=(${LPD_ARGS:-})
 # Pin an explicit model id — never a *-latest / *-preview alias, which drift.
 LP_MODEL="${LP_MODEL:-gemini-3.6-flash}"
-MAX_TOKENS="${MAX_TOKENS:-3000000}"
+MAX_TOKENS="${MAX_TOKENS:-1500000}"
 
 export LIGHTPANDA_DISABLE_TELEMETRY=true
 
@@ -139,12 +141,15 @@ show_err() {
 # The $usage stderr line is a stable key=value contract for wrappers; the
 # ceiling is a backstop against runaway agent loops.
 check_usage() {
-  local errfile="$1" label="$2" line total
+  local errfile="$1" label="$2" line total cached uncached
   line="$(sed -n '/^\$usage /{p;q}' "$errfile")"
   total="$(printf '%s' "$line" | sed -n 's/.*total=\([0-9]\+\).*/\1/p')"
-  [ -n "$total" ] && info "  usage: ${line#\$usage } ($label)"
-  if [ -n "$total" ] && [ "$total" -gt "$MAX_TOKENS" ]; then
-    fail "$label exceeded token ceiling ($total > $MAX_TOKENS)"
+  cached="$(printf '%s' "$line" | sed -n 's/.*cached=\([0-9]\+\).*/\1/p')"
+  [ -n "$total" ] || return 0
+  info "  usage: ${line#\$usage } ($label)"
+  uncached=$((total - ${cached:-0}))
+  if [ "$uncached" -gt "$MAX_TOKENS" ]; then
+    fail "$label exceeded token ceiling ($uncached uncached > $MAX_TOKENS)"
   fi
 }
 
