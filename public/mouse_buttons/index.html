@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>mouse buttons</title>
+<style>
+  body { margin: 0; }
+  #t { position: absolute; left: 100px; top: 100px; width: 200px; height: 100px; }
+</style>
+</head>
+<body>
+<button id=t>target</button>
+<script>
+  window.events = [];
+  window.classes = {};
+  const types = [
+    'pointerover', 'mouseover', 'pointerdown', 'mousedown', 'pointermove',
+    'pointerup', 'mouseup', 'click', 'dblclick', 'auxclick', 'contextmenu',
+  ];
+  const t = document.getElementById('t');
+  for (const type of types) {
+    t.addEventListener(type, (e) => {
+      window.events.push(`${type}:${e.button}:${e.buttons}`);
+      window.classes[type] = e.constructor.name;
+      if (type === 'contextmenu') e.preventDefault();
+      // #pd: cancel pointerdown, which suppresses the compat mouse events.
+      if (type === 'pointerdown' && location.hash === '#pd') e.preventDefault();
+    });
+  }
+</script>
+</body>
+</html>

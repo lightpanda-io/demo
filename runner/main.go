@@ -141,6 +141,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/dump.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/links.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"puppeteer/click.js"}},
+		{Bin: "node", Args: []string{"puppeteer/mouse_buttons.js"}},
 		{Bin: "node", Args: []string{"puppeteer/wait_for_network.js"}},
 		{Bin: "node", Args: []string{"puppeteer/dynamic_scripts.js"}},
 		{Bin: "node", Args: []string{"puppeteer/location_write.js"}},
@@ -178,6 +179,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
 		{Bin: "node", Args: []string{"playwright/links.js"}, Env: []string{"BASE_URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/click.js"}},
+		{Bin: "node", Args: []string{"playwright/mouse_buttons.js"}},
 		{Bin: "node", Args: []string{"playwright/download.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception.js"}},
 		{Bin: "node", Args: []string{"playwright/request_interception_cache.js"}},
@@ -216,6 +218,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"selenium/bidi/cdp.js"}, Env: []string{"RUNS=2"}},
 		// the same two over the HTTP session, with no websocket at all
 		{Bin: "node", Args: []string{"selenium/http/demo.js"}, Env: []string{"URL=http://127.0.0.1:1234/campfire-commerce/"}},
+		{Bin: "node", Args: []string{"selenium/http/mouse_buttons.js"}},
 		{Bin: "node", Args: []string{"selenium/http/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"selenium/http/form.js"}},
 		{Bin: "node", Args: []string{"selenium/http/click.js"}},
