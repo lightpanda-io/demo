@@ -17,6 +17,7 @@
     'pointerup', 'mouseup', 'click', 'dblclick', 'auxclick', 'contextmenu',
   ];
   const t = document.getElementById('t');
+  t.disabled = location.hash === '#disabled';
   for (const type of types) {
     t.addEventListener(type, (e) => {
       window.events.push(`${type}:${e.button}:${e.buttons}`);

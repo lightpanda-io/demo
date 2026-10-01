@@ -89,6 +89,16 @@ await run('clickCount 0', '', async (p) => {
   'pointerdown:2:2', 'mousedown:2:2', 'contextmenu:2:2', 'pointerup:2:0', 'mouseup:2:0',
 ]);
 
+// A disabled control gets the pointer events, contextmenu and auxclick, but no
+// mouse events or click.
+await run('disabled', '#disabled', async (p) => {
+  await p.mouse.click(150, 150);
+  await p.mouse.click(150, 150, { button: 'right' });
+}, [
+  'pointermove:-1:0', 'pointerdown:0:1', 'pointerup:0:0',
+  'pointermove:-1:0', 'pointerdown:2:2', 'contextmenu:2:2', 'pointerup:2:0', 'auxclick:2:0',
+]);
+
 {
   const context = await browser.createBrowserContext();
   const page = await context.newPage();
