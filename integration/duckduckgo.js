@@ -35,8 +35,8 @@ await page.goto("https://duckduckgo.com", {
 });
 
 // The DuckDuckGo homepage renders its search box as a <textarea name="q">
-// (inside the search-mode searchbox), not an <input>.
-await page.type('[data-input-mode="search"] textarea[name=q]', "lightpanda");
+// in search mode, not an <input>.
+await page.type('textarea[name=q][data-mode="search"]', "lightpanda");
 await Promise.all([
   page.waitForNavigation({ waitUntil: "networkidle0" }),
   page.keyboard.press("Enter"),
