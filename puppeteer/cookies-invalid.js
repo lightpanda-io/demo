@@ -44,5 +44,14 @@ await context.setCookie({name: 'a b', value: 'café', url});
 const stored = (await context.cookies()).map((c) => [c.name, c.value]);
 assert.deepStrictEqual(stored, [['a b', 'café']], 'non-ASCII and inner spaces are kept');
 
+// A domain overrides the url's host; without a leading dot the cookie is
+// host-only.
+await context.setCookie(
+  {name: 'h', value: 'v', url, domain: 'other.test'},
+  {name: 'd', value: 'v', url, domain: '.other.test'},
+);
+const domains = (await context.cookies()).filter((c) => c.domain.endsWith('other.test')).map((c) => [c.name, c.domain]).sort();
+assert.deepStrictEqual(domains, [['d', '.other.test'], ['h', 'other.test']], 'domain overrides the url');
+
 await context.close();
 await browser.disconnect();
