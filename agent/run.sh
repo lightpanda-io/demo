@@ -41,9 +41,9 @@
 #   LP_HTTP_PROXY  optional proxy for the live HN call only (datacenter IPs are
 #                  often blocked by news.ycombinator.com); localhost fixtures
 #                  are never proxied
-#   MAX_TOKENS     per-live-task ceiling on uncached tokens, i.e. `total`
-#                  minus `cached` (default: 1500000). `total` re-counts the
-#                  whole context every turn, so it grows with the square of
+#   MAX_TOKENS     per-live-task ceiling on uncached tokens, i.e. `input`
+#                  minus `cached` plus `output` (default: 1500000). `input`
+#                  re-counts the whole context every turn, so it grows with the square of
 #                  the turn count and swings 0.3-3.3M on a normal HN save;
 #                  the uncached part grows linearly (0.13-0.58M). This is a
 #                  loose backstop against a runaway agent loop.
@@ -141,13 +141,14 @@ show_err() {
 # The $usage stderr line is a stable key=value contract for wrappers; the
 # ceiling is a backstop against runaway agent loops.
 check_usage() {
-  local errfile="$1" label="$2" line total cached uncached
+  local errfile="$1" label="$2" line input cached output uncached
   line="$(sed -n '/^\$usage /{p;q}' "$errfile")"
-  total="$(printf '%s' "$line" | sed -n 's/.*total=\([0-9]\+\).*/\1/p')"
-  cached="$(printf '%s' "$line" | sed -n 's/.*cached=\([0-9]\+\).*/\1/p')"
-  [ -n "$total" ] || return 0
+  input="$(printf '%s' "$line" | sed -n 's/.* input=\([0-9]\+\).*/\1/p')"
+  cached="$(printf '%s' "$line" | sed -n 's/.* cached=\([0-9]\+\).*/\1/p')"
+  output="$(printf '%s' "$line" | sed -n 's/.* output=\([0-9]\+\).*/\1/p')"
+  [ -n "$input" ] || return 0
   info "  usage: ${line#\$usage } ($label)"
-  uncached=$((total - ${cached:-0}))
+  uncached=$((input - ${cached:-0} + ${output:-0}))
   if [ "$uncached" -gt "$MAX_TOKENS" ]; then
     fail "$label exceeded token ceiling ($uncached uncached > $MAX_TOKENS)"
   fi

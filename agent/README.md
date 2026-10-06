@@ -92,7 +92,7 @@ Drives the real Gemini-backed agent:
   those two files together.
 
 The stable `$usage` line lightpanda prints to stderr is captured per task; a
-loose `MAX_TOKENS` ceiling on its uncached tokens (`total - cached`) flags a
+loose `MAX_TOKENS` ceiling on its uncached tokens (`input - cached + output`) flags a
 runaway agent loop.
 
 ## Running locally
