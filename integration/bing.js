@@ -26,13 +26,17 @@ const page = await context.newPage();
 
 await page.goto('https://www.bing.com/', { waitUntil: 'networkidle0' });
 
-const SEARCH_SELECTOR = '#sb_form_q, input[name="q"], input[type="search"]';
-await page.waitForSelector('textarea[name="q"]', { timeout: 5000 });
-await page.type('textarea[name="q"]', 'Lightpanda');
-await page.keyboard.press('Enter');
+// Bing's search box is <input id="sb_form_q" type="search">.
+const SEARCH_SELECTOR = '#sb_form_q';
+await page.waitForSelector(SEARCH_SELECTOR, { timeout: 5000 });
+await page.type(SEARCH_SELECTOR, 'Lightpanda');
 
-const submitBtn = await page.$('#sb_form_go, button[type="submit"], input[type="submit"][name="go"]');
-await submitBtn.click();
+// Enter submits the form: wait for that navigation instead of also clicking
+// the submit button on the page being unloaded.
+await Promise.all([
+  page.waitForNavigation({ waitUntil: 'load', timeout: 20000 }),
+  page.keyboard.press('Enter'),
+]);
 await page.waitForSelector('li.b_algo', { timeout: 15000 });
 
 const results = await page.evaluate(() => {
