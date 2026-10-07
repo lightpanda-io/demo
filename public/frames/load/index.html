@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<body>
+<!-- touched.html's own script reads `document` before this page does;
+     untouched.html's doesn't. Both documents belong to their iframe's realm,
+     so both must behave the same. -->
+<iframe id=touched src="touched.html"></iframe>
+<iframe id=untouched src="untouched.html"></iframe>
+<script>
+  var realms = {};
+  var loads = [];
+  window.addEventListener('load', () => {
+    for (const id of ['touched', 'untouched']) {
+      const el = document.getElementById(id);
+      const doc = el.contentDocument;
+      realms[id] = Object.getPrototypeOf(doc) === el.contentWindow.HTMLDocument.prototype ? 'child' : 'parent';
+
+      const f = doc.createElement('iframe');
+      f.src = 'blank.html';
+      f.addEventListener('load', () => loads.push(id));
+      doc.body.appendChild(f);
+    }
+  });
+</script>
+</body>
