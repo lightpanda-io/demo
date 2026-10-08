@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+   <textarea id="ta">one</textarea>
+   <textarea id="ro" readonly>ro</textarea>
+   <input id="roi" readonly value="ro">
+
+   <script>
+    // Each control's key and edit events, with the edit's inputType and data.
+    window.events = {};
+    for (const id of ['ta', 'ro', 'roi']) {
+        const el = document.getElementById(id);
+        events[id] = [];
+        for (const type of ['keydown', 'beforeinput', 'textInput', 'input', 'keyup']) {
+            el.addEventListener(type, (e) => {
+                events[id].push([type, e.inputType, e.data].filter((v) => v !== undefined).map(String).join(':'));
+            });
+        }
+    }
+   </script>
+</body>
+</html>
