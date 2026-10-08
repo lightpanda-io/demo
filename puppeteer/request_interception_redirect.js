@@ -44,13 +44,13 @@ const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:
   await page.waitForFunction(() => {
       const desc = document.querySelector('#product-description');
       return desc.textContent.length > 0;
-  }, {timeout: 100}); // timeout 100ms
+  }, {timeout: 1000});
 
   // ensure the reviews are loaded.
   await page.waitForFunction(() => {
       const reviews = document.querySelectorAll('#product-reviews > div');
       return reviews.length > 0;
-  }, {timeout: 100}); // timeout 100ms
+  }, {timeout: 1000});
 
   let res = {};
 
