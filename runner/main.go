@@ -156,6 +156,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/cookies-xhr.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-redirect-local.js"}},
 		{Bin: "node", Args: []string{"puppeteer/cookies-samesite.js"}},
+		{Bin: "node", Args: []string{"puppeteer/cookies-invalid.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_redirect.js"}},
