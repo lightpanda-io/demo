@@ -73,9 +73,7 @@ async function check(label, session, cases) {
             ]);
             outcome = 'reply received';
         } catch (e) {
-            // A CDP error reply still reached the session: only a timeout is a failure.
-            failed = e.message === 'timeout';
-            outcome = failed ? `no reply on the session after ${timeoutMs}ms` : `error reply received (${e.message.split('\n')[0]})`;
+            failures.push(e.message);
         }
         if (strayReplies > strayBefore) {
             // Target.closeTarget: the page closing rejects send() before the timeout.
@@ -83,7 +81,6 @@ async function check(label, session, cases) {
             outcome += ', reply without sessionId hit the root session';
         }
         if (failed) failures.push(name);
-        console.log(`${failed ? 'FAIL' : 'ok  '} ${name}: ${outcome}`);
     }
 }
 
