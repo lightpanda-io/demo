@@ -22,12 +22,10 @@ const browser = await connectBrowser();
 const context = await browser.createBrowserContext();
 const page = await context.newPage();
 
-// Lightpanda skips external stylesheets unless asked; Chrome always loads them.
+// Lightpanda only; Chrome rejects the command.
 const client = page._client();
 await client.send('LP.configureLoading', {externalStylesheets: true}).catch(() => {});
 
-// A multi-megabyte sheet still applies: its display:none hides the menu from
-// computed style and innerText, as in Chrome.
 await page.goto(baseURL + '/large_stylesheet.html', {waitUntil: 'load'});
 assert.deepStrictEqual(await page.evaluate(() => ({
   display: getComputedStyle(document.querySelector('.dropdown-menu')).display,
