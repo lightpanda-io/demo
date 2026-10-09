@@ -23,6 +23,7 @@
   },
   "homepage": "https://lightpanda.io",
   "dependencies": {
+    "agent-browser": "^0.38.2",
     "playwright-core": "^1.60.0",
     "puppeteer-core": "^24.43.1",
     "selenium-webdriver": "^4.47.0"

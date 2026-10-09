@@ -231,6 +231,8 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"selenium/http/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"selenium/http/form.js"}},
 		{Bin: "node", Args: []string{"selenium/http/click.js"}},
+
+		{Bin: "node", Args: []string{"agent-browser/axtree.js"}},
 	} {
 		if *verbose {
 			t.Stderr = stderr
