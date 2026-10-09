@@ -13,9 +13,7 @@
 // limitations under the License.
 'use strict'
 
-// A pointer-events:none control can't be clicked: Playwright's actionability
-// check sees the element underneath intercept the click, and refuses. Runs
-// unchanged against Chrome.
+// Runs unchanged against Chrome.
 import assert from 'assert';
 import { chromium } from 'playwright-core';
 
