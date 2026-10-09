@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card { color: red; }
+    .card::after { content: '*'; }
+    .card:hover::before { content: '>'; }
+  </style>
+</head>
+<body>
+  <div class="card">Card</div>
+  <script>
+    const card = document.querySelector('.card');
+    window.matched = [];
+    for (const rule of document.styleSheets[0].cssRules) {
+      if (card.matches(rule.selectorText)) {
+        window.matched.push(rule.selectorText);
+      }
+    }
+    window.done = true;
+  </script>
+</body>
+</html>

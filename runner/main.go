@@ -150,6 +150,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/editing.js"}},
 		{Bin: "node", Args: []string{"puppeteer/replace_children.js"}},
 		{Bin: "node", Args: []string{"puppeteer/pointer_events.js"}},
+		{Bin: "node", Args: []string{"puppeteer/pseudo_element.js"}},
 		{Bin: "node", Args: []string{"puppeteer/post_data.js"}},
 		{Bin: "node", Args: []string{"puppeteer/referrer.js"}},
 		{Bin: "node", Args: []string{"puppeteer/download.js"}},
