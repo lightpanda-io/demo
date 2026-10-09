@@ -25,8 +25,7 @@ await page.goto(baseURL + '/pointer_events.html', {waitUntil: 'load'});
 
 assert.strictEqual(await page.evaluate(() => getComputedStyle(document.getElementById('sat')).pointerEvents), 'none');
 
-// Puppeteer clicks at the element's center regardless; with pointer-events:none
-// the click lands on whatever is underneath, never on the control itself.
+// Which element underneath catches the click depends on layout.
 await page.click('#sat');
 await page.click('#sun');
 const clicks = await page.evaluate(() => window.clicks);
