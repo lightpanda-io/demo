@@ -548,9 +548,7 @@ xhr.send();
 		}
 		res.Header().Set("Content-Type", "application/json")
 	case "/large_stylesheet.css":
-		// A 2.5 MiB sheet, the size of a real aggregated Drupal theme
-		// (caltrain.com ships 2.35 MB), with the rule that hides the menu
-		// at the end so the whole body has to be parsed for it to apply.
+		// Over 2 MiB, with the rule under test last.
 		res.Header().Set("Content-Type", "text/css")
 		pad := []byte(".pad { color: #abcdef; }\n")
 		for n := 0; n < 5*1024*1024/2; n += len(pad) {
