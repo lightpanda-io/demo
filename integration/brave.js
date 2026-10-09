@@ -27,9 +27,9 @@ await Promise.all([
   page.waitForNavigation({ waitUntil: "load" }),
   page.keyboard.press("Enter"),
 ]);
-await page.waitForSelector("#results");
+await page.waitForSelector("#mixed-main [data-type=web]");
 
-const links = await page.$$eval("#results a[href]", (anchors) =>
+const links = await page.$$eval("#mixed-main a[href]", (anchors) =>
   anchors.map((a) => a.getAttribute("href")),
 );
 
