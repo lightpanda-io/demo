@@ -148,6 +148,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form_file.js"}},
 		{Bin: "node", Args: []string{"puppeteer/editing.js"}},
+		{Bin: "node", Args: []string{"puppeteer/large_stylesheet.js"}},
 		{Bin: "node", Args: []string{"puppeteer/post_data.js"}},
 		{Bin: "node", Args: []string{"puppeteer/referrer.js"}},
 		{Bin: "node", Args: []string{"puppeteer/download.js"}},
@@ -546,6 +547,16 @@ xhr.send();
 			res.WriteHeader(500)
 		}
 		res.Header().Set("Content-Type", "application/json")
+	case "/large_stylesheet.css":
+		// A 2.5 MiB sheet, the size of a real aggregated Drupal theme
+		// (caltrain.com ships 2.35 MB), with the rule that hides the menu
+		// at the end so the whole body has to be parsed for it to apply.
+		res.Header().Set("Content-Type", "text/css")
+		pad := []byte(".pad { color: #abcdef; }\n")
+		for n := 0; n < 5*1024*1024/2; n += len(pad) {
+			res.Write(pad)
+		}
+		res.Write([]byte(".dropdown-menu { display: none; }\n"))
 	default:
 		s.next.ServeHTTP(res, req)
 	}
