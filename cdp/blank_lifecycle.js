@@ -16,6 +16,7 @@
 // Raw CDP: create an about:blank target, then enable lifecycle events on it.
 // Chrome reports the initial about:blank as loaded ("load" lifecycle event).
 // chromiumoxide's new_page waits for this event.
+// Chrome's document is loaded too: document.readyState is "complete".
 
 // Node 22+ has a built-in WebSocket; older versions use ws (from puppeteer-core).
 const WebSocket = globalThis.WebSocket ?? (await import('ws')).default;
@@ -68,10 +69,23 @@ while (!events.some(isLoad) && Date.now() < deadline) {
 }
 const loaded = events.some(isLoad);
 
+const { result: { result: readyState } } = await send('Runtime.evaluate', {
+    expression: 'document.readyState',
+    returnByValue: true,
+}, sessionId);
+
 await send('Target.closeTarget', { targetId });
 ws.close();
 
+let failed = false;
 if (!loaded) {
     console.log(`no "load" lifecycle event for the initial about:blank after ${timeoutMs}ms`);
+    failed = true;
+}
+if (readyState.value !== 'complete') {
+    console.log(`document.readyState of the initial about:blank: expected "complete", got ${JSON.stringify(readyState.value)}`);
+    failed = true;
+}
+if (failed) {
     process.exit(1);
 }
