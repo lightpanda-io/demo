@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .disabled { pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="days">
+    <div id="sat" class="disabled" role="button">Sat 10</div>
+    <div id="sun" role="button">Sun 11</div>
+  </div>
+  <script>
+    window.clicks = [];
+    document.addEventListener('click', (e) => window.clicks.push(e.target.id || e.target.tagName));
+  </script>
+</body>
+</html>
