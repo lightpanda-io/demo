@@ -6,9 +6,13 @@
     .card::after { content: '*'; }
     .card:hover::before { content: '>'; }
   </style>
+  <style>
+    :is(#card::before, .card) { display: none; }
+    .card { display: block; }
+  </style>
 </head>
 <body>
-  <div class="card">Card</div>
+  <div id="card" class="card">Card</div>
   <script>
     const card = document.querySelector('.card');
     window.matched = [];
@@ -17,6 +21,7 @@
         window.matched.push(rule.selectorText);
       }
     }
+    window.display = getComputedStyle(card).display;
     window.done = true;
   </script>
 </body>

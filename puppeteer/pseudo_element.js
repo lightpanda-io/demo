@@ -23,9 +23,10 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 await page.goto(baseURL + '/pseudo_element.html', {waitUntil: 'load'});
 
-assert.deepStrictEqual(await page.evaluate(() => ({done: window.done, matched: window.matched})), {
+assert.deepStrictEqual(await page.evaluate(() => ({done: window.done, matched: window.matched, display: window.display})), {
   done: true,
   matched: ['.card'],
+  display: 'block',
 });
 
 assert.strictEqual(await page.$('.card::after'), null);
