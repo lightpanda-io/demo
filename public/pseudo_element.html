@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .card { color: red; }
+    .card::after { content: '*'; }
+    .card:hover::before { content: '>'; }
+  </style>
+  <style>
+    :is(#card::before, .card) { display: none; }
+    .card { display: block; }
+  </style>
+</head>
+<body>
+  <div id="card" class="card">Card</div>
+  <script>
+    const card = document.querySelector('.card');
+    window.matched = [];
+    for (const rule of document.styleSheets[0].cssRules) {
+      if (card.matches(rule.selectorText)) {
+        window.matched.push(rule.selectorText);
+      }
+    }
+    window.display = getComputedStyle(card).display;
+    window.done = true;
+  </script>
+</body>
+</html>
