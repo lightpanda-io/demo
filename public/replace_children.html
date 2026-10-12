@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="list"><p>old</p></div>
+  <script>
+    const parsed = new DOMParser().parseFromString('<ul><li>one</li><li>two</li></ul>', 'text/html');
+    const ul = parsed.body.firstChild;
+    const list = document.getElementById('list');
+    const mo = new MutationObserver(() => {});
+    mo.observe(list, {childList: true});
+
+    list.replaceChildren(ul, ul);
+    const records = mo.takeRecords();
+
+    let documentChild = 'none';
+    try {
+      list.replaceChildren(parsed);
+    } catch (e) {
+      documentChild = e.name;
+    }
+
+    window.result = {
+      adopted: ul.ownerDocument === document,
+      records: records.length,
+      added: records[0].addedNodes.length,
+      removed: records[0].removedNodes.length,
+      scrollWidth: document.documentElement.scrollWidth > 0,
+      documentChild: documentChild,
+    };
+  </script>
+</body>
+</html>
