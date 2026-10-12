@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Box sizes from the cascade</title>
+<style>
+  body { margin: 0; }
+  .imgw { width: 50px; }
+  .panel { height: 100px; overflow: auto; }
+  #panelAuto { height: auto; }
+  .tenth { height: 10vh; }
+</style>
+</head>
+<body>
+  <img id="img" class="imgw" width="300" height="20">
+
+  <div id="panelAuto" class="panel"><div style="height: 500px;">content</div></div>
+
+  <div id="inlineAuto" class="panel" style="height: 50%"><div style="height: 500px;">content</div></div>
+
+  <div id="tenth" class="tenth"></div>
+
+  <div id="textW" style="width: 200px">one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty</div>
+
+  <div id="textFree">one two three four five six seven eight nine ten eleven twelve</div>
+</body>
+</html>
