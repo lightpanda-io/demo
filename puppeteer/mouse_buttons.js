@@ -51,8 +51,9 @@ await run('middle click', '', (p) => p.mouse.click(150, 150, { button: 'middle' 
 await run('forward click', '', (p) => p.mouse.click(150, 150, { button: 'forward' }), [
   'pointermove:-1:0', 'pointerdown:4:16', 'mousedown:4:16', 'pointerup:4:0', 'mouseup:4:0', 'auxclick:4:0',
 ]);
-await run('double click', '', (p) => p.mouse.click(150, 150, { clickCount: 2 }), [
-  'pointermove:-1:0', 'pointerdown:0:1', 'mousedown:0:1', 'pointerup:0:0', 'mouseup:0:0', 'click:0:0', 'dblclick:0:0',
+await run('double click', '', (p) => p.mouse.click(150, 150, { count: 2 }), [
+  'pointermove:-1:0', 'pointerdown:0:1', 'mousedown:0:1', 'pointerup:0:0', 'mouseup:0:0', 'click:0:0',
+  'pointerdown:0:1', 'mousedown:0:1', 'pointerup:0:0', 'mouseup:0:0', 'click:0:0', 'dblclick:0:0',
 ]);
 
 await run('chord left+right, right up first', '', async (p) => {
@@ -103,7 +104,7 @@ await run('disabled', '#disabled', async (p) => {
   const context = await browser.createBrowserContext();
   const page = await context.newPage();
   await page.goto(url, { waitUntil: 'load' });
-  await page.mouse.click(150, 150, { clickCount: 2 });
+  await page.mouse.click(150, 150, { count: 2 });
   await page.mouse.click(150, 150, { button: 'right' });
   const classes = await page.evaluate(() => window.classes);
   for (const type of ['click', 'auxclick', 'contextmenu']) {
