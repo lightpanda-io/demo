@@ -54,8 +54,8 @@ const browserName = process.env.BROWSER ? process.env.BROWSER : Browser.CHROME;
   const bidi = await driver.getBidi();
   await bidi.waitForConnection();
 
-  const browsingContext = new BrowsingContext(bidi);
-  const script = new Script(bidi);
+  const browsingContext = await BrowsingContext.create(driver);
+  const script = await Script.create(driver);
 
   // The session's top-level browsing context, the page driver.get loaded.
   const { contexts } = await browsingContext.getTree({});
