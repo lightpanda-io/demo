@@ -16,6 +16,12 @@
   detailsXHR.onabort = function(err) {
     document.getElementById('product-description').innerHTML = 'xhr: aborted';
   }
+  detailsXHR.onerror = function(err) {
+    document.getElementById('product-description').innerHTML = 'xhr: error';
+  }
+  detailsXHR.ontimeout = function(err) {
+    document.getElementById('product-description').innerHTML = 'xhr: timeout';
+  }
   detailsXHR.send();
 
   // use fetch to retrieve reviews.
