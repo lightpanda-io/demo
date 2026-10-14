@@ -24,7 +24,7 @@ import { chromium } from 'playwright-core';
 import assert from 'assert';
 
 // browserAddress
-const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222/devtools/browser/2d9374c9-8cfd-462a-9c60-5fe18e940fb6';
+const browserAddress = process.env.BROWSER_ADDRESS ? process.env.BROWSER_ADDRESS : 'ws://127.0.0.1:9222';
 
 // web serveur url
 const baseURL = process.env.BASE_URL ? process.env.BASE_URL : 'http://127.0.0.1:1234';
