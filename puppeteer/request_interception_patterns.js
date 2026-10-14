@@ -61,7 +61,9 @@ try {
     let paused = [];
     const errors = [];
     session.on('Fetch.requestPaused', async (event) => {
-        paused.push({ url: event.request.url, resourceType: event.resourceType });
+        const stage = event.responseStatusCode === undefined && event.responseErrorReason === undefined
+            ? 'Request' : 'Response';
+        paused.push({ url: event.request.url, resourceType: event.resourceType, stage });
         try {
             if (event.request.url === reviewsURL) {
                 await session.send('Fetch.fulfillRequest', {
@@ -95,24 +97,40 @@ try {
         `unexpected paused set: ${JSON.stringify(paused)}`,
     );
     assert.equal(paused.find((p) => p.url === productURL).resourceType, 'XHR');
-    assert.equal(paused.find((p) => p.url === reviewsURL).resourceType, 'Fetch');
+    // The Fetch domain reports fetch() as XHR, like Chrome.
+    assert.equal(paused.find((p) => p.url === reviewsURL).resourceType, 'XHR');
     assert.deepEqual(res.reviews, ['over 9000!'], 'fulfillRequest on the matched fetch did not apply');
     assert.ok(res.desc.length > 0 && res.desc != 'xhr: aborted', `continued XHR did not load: ${res.desc}`);
 
-    // 2. resourceType mismatch on an otherwise-matching URL, a URL that
-    // matches nothing, and a Response-stage pattern (not paused at the
-    // Request stage): no pauses, and the page still loads on its own.
+    // 2. resourceType mismatch on an otherwise-matching URL and a URL that
+    // matches nothing: no pauses, and the page still loads on its own.
     paused = [];
     await session.send('Fetch.enable', {
         patterns: [
-            { urlPattern: '*/json/reviews.json', resourceType: 'XHR' },
+            { urlPattern: '*/json/reviews.json', resourceType: 'Document' },
             { urlPattern: '*/nope/*' },
-            { urlPattern: '*/json/*', requestStage: 'Response' },
         ],
     });
     res = await loadPage();
     assert.equal(paused.length, 0, `nothing should pause: ${JSON.stringify(paused)}`);
     assertRealReviews(res);
+
+    // A pattern only pauses at its own stage: a Response-stage pattern
+    // pauses each JSON request once, after its response. The handler's
+    // continueRequest and fulfillRequest work there too.
+    await session.send('Fetch.enable', {
+        patterns: [{ urlPattern: '*/json/*', requestStage: 'Response' }],
+    });
+    res = await loadPage();
+    assert.equal(errors.length, 0, `interception command failed: ${errors[0]}`);
+    assert.deepEqual(
+        paused.map((p) => [p.url, p.stage]).sort(),
+        [[productURL, 'Response'], [reviewsURL, 'Response']].sort(),
+        `unexpected paused set: ${JSON.stringify(paused)}`,
+    );
+    assert.deepEqual(res.reviews, ['over 9000!'], 'fulfillRequest at the Response stage did not apply');
+    assert.ok(res.desc.length > 0 && res.desc != 'xhr: error', `continued XHR did not load: ${res.desc}`);
+    paused = [];
 
     // 3. An explicit empty list pauses nothing (omitting `patterns` would
     // mean every request), and is rejected together with handleAuthRequests.
