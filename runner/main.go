@@ -186,6 +186,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/blocked-url-redirect.js"}, Env: []string{"URL=http://127.0.0.1:1234"}},
 		{Bin: "node", Args: []string{"puppeteer/default_page.js"}},
 		{Bin: "node", Args: []string{"puppeteer/debugger.js"}},
+		{Bin: "node", Args: []string{"puppeteer/multi_targets.js"}},
 		{Bin: "node", Args: []string{"playwright/connect.js"}},
 		{Bin: "node", Args: []string{"playwright/cdp.js"}, Env: []string{"RUNS=2"}},
 		{Bin: "node", Args: []string{"playwright/dump.js"}},
@@ -205,6 +206,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"cdp/blank_lifecycle.js"}},
 		{Bin: "node", Args: []string{"playwright/session_id.js"}},
 		{Bin: "node", Args: []string{"playwright/debugger.js"}},
+		{Bin: "node", Args: []string{"playwright/multi_targets.js"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/dump.js"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/content.js"}, Env: []string{"RUNS=10"}},
 		{Bin: "node", Args: []string{"puppeteer/bidi/click.js"}},
@@ -228,6 +230,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		// TODO using --pool=10 blocks the CI which timeout. We need to understand and fix the issue.
 		{Bin: "go", Args: []string{"run", "crawler/main.go", "--limit=100", "--pool=1", "http://127.0.0.1:1234/amiibo/"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "mconns/main.go", "http://127.0.0.1:1234/"}, Dir: "chromedp"},
+		{Bin: "go", Args: []string{"run", "multitargets/main.go", "http://127.0.0.1:1234"}, Dir: "chromedp"},
 		{Bin: "go", Args: []string{"run", "dump/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 		{Bin: "go", Args: []string{"run", "title/main.go", "http://127.0.0.1:1234/campfire-commerce/"}, Dir: "rod"},
 
