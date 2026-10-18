@@ -148,6 +148,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/form.js"}},
 		{Bin: "node", Args: []string{"puppeteer/form_file.js"}},
 		{Bin: "node", Args: []string{"puppeteer/editing.js"}},
+		{Bin: "node", Args: []string{"puppeteer/keyboard_keycode.js"}},
 		{Bin: "node", Args: []string{"puppeteer/replace_children.js"}},
 		{Bin: "node", Args: []string{"puppeteer/pointer_events.js"}},
 		{Bin: "node", Args: []string{"puppeteer/pseudo_element.js"}},
@@ -168,7 +169,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"puppeteer/request_interception_cache.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_redirect.js"}},
 		{Bin: "node", Args: []string{"puppeteer/request_interception_patterns.js"}},
-		// {Bin: "node", Args: []string{"puppeteer/request_interception_response.js"}}, // flakes because of a bug in Browser, @karl TODO
+		{Bin: "node", Args: []string{"puppeteer/request_interception_response.js"}}, // flakes because of a bug in Browser, @karl TODO
 		{Bin: "node", Args: []string{"puppeteer/cdp_session_redirect.js"}},
 		{Bin: "node", Args: []string{"puppeteer/authenticate.js"}},
 		{Bin: "node", Args: []string{"puppeteer/ri_authenticate.js"}},
@@ -192,6 +193,7 @@ func run(ctx context.Context, args []string, stdout, stderr io.Writer) error {
 		{Bin: "node", Args: []string{"playwright/links.js"}, Env: []string{"BASE_URL=http://127.0.0.1:1234/campfire-commerce/"}},
 		{Bin: "node", Args: []string{"playwright/click.js"}},
 		{Bin: "node", Args: []string{"playwright/mouse_buttons.js"}},
+		{Bin: "node", Args: []string{"playwright/keyboard_keycode.js"}},
 		{Bin: "node", Args: []string{"playwright/replace_children.js"}},
 		{Bin: "node", Args: []string{"playwright/pointer_events.js"}},
 		{Bin: "node", Args: []string{"playwright/download.js"}},
