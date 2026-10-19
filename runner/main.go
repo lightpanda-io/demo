@@ -544,6 +544,21 @@ xhr.send();
 			fmt.Fprintf(os.Stderr, "encode json: %v", err)
 		}
 
+	case "/net/close":
+		// Drop the connection without a response: a network failure that
+		// looks the same through a proxy, unlike a refused connection, which
+		// a proxy answers with a 502.
+		hj, ok := res.(http.Hijacker)
+		if !ok {
+			http.Error(res, "hijack unsupported", http.StatusInternalServerError)
+			return
+		}
+		conn, _, err := hj.Hijack()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "hijack: %v", err)
+			return
+		}
+		conn.Close()
 	case "/redirect/to":
 		// Generic 302 to the ?to= target. Every gate (robots.txt, the url
 		// blocklist, the per-host throttle) has to be re-applied to the
