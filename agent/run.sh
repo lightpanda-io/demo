@@ -38,9 +38,9 @@
 #   GOOGLE_API_KEY or GEMINI_API_KEY (the binary accepts both) — required for
 #                  the live layer; live layer is skipped if neither is set
 #   LP_MODEL       Gemini model id for the live layer (default below)
-#   LP_HTTP_PROXY  optional proxy for the live HN call only (datacenter IPs are
-#                  often blocked by news.ycombinator.com); localhost fixtures
-#                  are never proxied
+#   LP_HTTP_PROXY  optional proxy for the live HN save and replay only
+#                  (datacenter IPs are often blocked by news.ycombinator.com);
+#                  localhost fixtures are never proxied
 #   MAX_TOKENS     per-live-task ceiling on uncached tokens, i.e. `input`
 #                  minus `cached` plus `output` (default: 1500000). `input`
 #                  re-counts the whole context every turn, so it grows with the square of
@@ -64,11 +64,14 @@ export LIGHTPANDA_DISABLE_TELEMETRY=true
 
 PASS=0
 FAIL=0
-green() { printf '\033[32m%s\033[0m\n' "$1"; }
-red()   { printf '\033[31m%s\033[0m\n' "$1"; }
-pass()  { green "PASS: $1"; PASS=$((PASS + 1)); }
-fail()  { red   "FAIL: $1"; FAIL=$((FAIL + 1)); }
-info()  { printf '\033[2m%s\033[0m\n' "$1"; }
+SKIP=0
+green()  { printf '\033[32m%s\033[0m\n' "$1"; }
+red()    { printf '\033[31m%s\033[0m\n' "$1"; }
+yellow() { printf '\033[33m%s\033[0m\n' "$1"; }
+pass()   { green  "PASS: $1"; PASS=$((PASS + 1)); }
+fail()   { red    "FAIL: $1"; FAIL=$((FAIL + 1)); }
+skip()   { yellow "SKIP: $1"; SKIP=$((SKIP + 1)); }
+info()   { printf '\033[2m%s\033[0m\n' "$1"; }
 
 [ -x "$LPD" ] || { red "lightpanda binary not found or not executable: $LPD"; exit 2; }
 
@@ -172,14 +175,29 @@ run_live_qa() {
   done <"$HERE/cases/static-qa.tsv"
 }
 
+# HN answers a client it is rate limiting with a normal-looking 200 page
+# (title "Hacker News") whose body only says this, so a throttled replay reads
+# as an empty extraction.
+THROTTLE_TEXT="not able to serve your requests this quickly"
+THROTTLE_BACKOFF=60
+
+# throttled <url> [lightpanda args...]
+throttled() {
+  local url="$1"
+  shift
+  timeout 60 "$LPD" fetch "$@" --dump html "$url" 2>/dev/null | grep -qF "$THROTTLE_TEXT"
+}
+
 # Save + replay flow shared by the live cases: run the agent with the task
 # from cases/<name>.task and --save, require every space-separated regex in
 # <required-calls> to match the saved script, then replay it token-free and
-# validate the output with cases/<name>.jq. Extra args go to the save run
-# (e.g. --http-proxy).
+# validate the output with cases/<name>.jq. Extra args go to both the save
+# and the replay (e.g. --http-proxy). When <throttle-url> is set, a failed
+# replay is retried once after a backoff, and skipped rather than failed if
+# the site is still serving the throttle page.
 run_live_save_replay() {
-  local name="$1" save_timeout="$2" replay_timeout="$3" required="$4"
-  shift 4
+  local name="$1" save_timeout="$2" replay_timeout="$3" required="$4" throttle_url="$5"
+  shift 5
   local script="$TMP/$name.js" task
   task="$(cat "$HERE/cases/$name.task")"
 
@@ -203,31 +221,50 @@ run_live_save_replay() {
   fi
 
   # Replay without --task runs no LLM — no key or tokens needed.
-  if ! timeout "$replay_timeout" "$LPD" agent "${LPD_ARGS[@]}" "$script" >"$TMP/out" 2>/dev/null; then
-    fail "$name saved script failed on replay"; return
+  local attempt rc
+  for attempt in 1 2; do
+    rc=0
+    timeout "$replay_timeout" "$LPD" agent "${LPD_ARGS[@]}" "$@" "$script" >"$TMP/out" 2>"$TMP/replay-err" || rc=$?
+    if [ "$rc" -eq 0 ] && jq -e -f "$HERE/cases/$name.jq" "$TMP/out" >/dev/null 2>&1; then
+      pass "$name replay output satisfies cases/$name.jq"
+      return
+    fi
+    # Throttling is intermittent, so a probe right after a throttled replay
+    # can come back clean: retry unconditionally.
+    if [ "$attempt" -eq 2 ] || [ -z "$throttle_url" ]; then
+      break
+    fi
+    info "  $name replay failed; retrying in ${THROTTLE_BACKOFF}s in case $throttle_url was throttling"
+    sleep "$THROTTLE_BACKOFF"
+  done
+
+  if [ -n "$throttle_url" ] && throttled "$throttle_url" "$@"; then
+    skip "$name replay: $throttle_url is still throttling (\"$THROTTLE_TEXT\")"
+    return
   fi
-  if jq -e -f "$HERE/cases/$name.jq" "$TMP/out" >/dev/null 2>&1; then
-    pass "$name replay output satisfies cases/$name.jq"
+  if [ "$rc" -ne 0 ]; then
+    fail "$name saved script failed on replay"
   else
     fail "$name replay output violates cases/$name.jq"
     info "  output:"
     { jq . "$TMP/out" 2>/dev/null || cat "$TMP/out"; } | sed 's/^/    /'
-    info "  saved script:"
-    sed 's/^/    /' "$script"
   fi
+  show_err "$TMP/replay-err"
+  info "  saved script:"
+  sed 's/^/    /' "$script"
 }
 
 run_live_hn() {
   info "== live layer: HN save + replay (model=$LP_MODEL) =="
   local proxy_args=()
   [ -n "${LP_HTTP_PROXY:-}" ] && proxy_args=(--http-proxy "$LP_HTTP_PROXY")
-  run_live_save_replay hn-live 900 300 'goto\( extract\(' "${proxy_args[@]}"
+  run_live_save_replay hn-live 900 300 'goto\( extract\(' https://news.ycombinator.com "${proxy_args[@]}"
 }
 
 run_live_form_save() {
   info "== live layer: form save + replay (model=$LP_MODEL) =="
   # The agent may submit via click or by pressing Enter — accept either.
-  run_live_save_replay form-live 300 120 'fill\( click\(|press\('
+  run_live_save_replay form-live 300 120 'fill\( click\(|press\(' ""
 }
 
 # --- dispatch ----------------------------------------------------------------
@@ -258,10 +295,12 @@ esac
 
 echo
 echo "-------------------------------------"
+skipped=""
+[ "$SKIP" -gt 0 ] && skipped=", $SKIP skipped"
 if [ "$FAIL" -eq 0 ]; then
-  green "SUMMARY: $PASS passed, 0 failed"
+  green "SUMMARY: $PASS passed, 0 failed$skipped"
   exit 0
 else
-  red "SUMMARY: $PASS passed, $FAIL failed"
+  red "SUMMARY: $PASS passed, $FAIL failed$skipped"
   exit 1
 fi
