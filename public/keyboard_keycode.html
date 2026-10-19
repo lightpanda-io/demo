@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+   <textarea id="ta"></textarea>
+
+   <script>
+    // The legacy keyCode/which/charCode of each key event.
+    window.events = [];
+    const ta = document.getElementById('ta');
+    for (const type of ['keydown', 'keypress', 'keyup']) {
+        ta.addEventListener(type, (e) => {
+            events.push(`${type}:${e.key}:${e.keyCode}/${e.which}/${e.charCode}`);
+        });
+    }
+
+    // Like ProseMirror's captureKeyDown: cancel what looks like Delete (46) or
+    // an arrow key (37-40). A punctuation key reporting its character code as
+    // keyCode ('.' is 46, '%' is 37) never gets typed.
+    ta.addEventListener('keydown', (e) => {
+        if (e.keyCode === 46 || (e.keyCode >= 37 && e.keyCode <= 40)) e.preventDefault();
+    });
+   </script>
+</body>
+</html>
