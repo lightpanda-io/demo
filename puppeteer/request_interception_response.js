@@ -67,7 +67,9 @@ try {
     const session = await page.createCDPSession();
 
     // Each step installs its own handler; failures are collected, since an
-    // exception in an event listener would otherwise go unnoticed.
+    // exception in an event listener would otherwise go unnoticed. A failed
+    // handler still releases its request, so the step fails on its asserts
+    // instead of hanging the page until the runner's timeout.
     let onPaused = null;
     let paused = [];
     const errors = [];
@@ -77,6 +79,7 @@ try {
             await onPaused(event);
         } catch (error) {
             errors.push(error);
+            await session.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => {});
         }
     });
 
@@ -156,11 +159,13 @@ try {
     assert.equal(res.reviews.length, 3);
 
     // 4. A network failure pauses with responseErrorReason and no response;
-    // continuing it reports the original failure.
+    // continuing it reports the original failure. The server drops the
+    // connection without replying, which a proxy passes on as is.
     paused = [];
+    const closeURL = baseURL + '/net/close';
     await session.send('Fetch.enable', {
         // Exact: with --obey-robots, our robots.txt fetch would pause too.
-        patterns: [{ urlPattern: 'http://127.0.0.1:1/', requestStage: 'Response' }],
+        patterns: [{ urlPattern: closeURL, requestStage: 'Response' }],
     });
     onPaused = async (event) => {
         await assert.rejects(
@@ -169,10 +174,9 @@ try {
         );
         return session.send('Fetch.continueResponse', { requestId: event.requestId });
     };
-    // Nothing listens on port 1: the connection is refused.
-    const failed = await page.evaluate(() => {
-        return fetch('http://127.0.0.1:1/', { mode: 'no-cors' }).then(() => null, (e) => e.name);
-    });
+    const failed = await page.evaluate((url) => {
+        return fetch(url).then(() => null, (e) => e.name);
+    }, closeURL);
     assert.equal(errors.length, 0, `interception failed: ${errors[0]}`);
     assert.equal(failed, 'TypeError');
     assert.equal(paused.length, 1);
