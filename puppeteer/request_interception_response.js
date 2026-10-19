@@ -184,8 +184,83 @@ try {
     assert.equal(paused[0].responseStatusCode, undefined);
     assert.equal(paused[0].responseHeaders, undefined);
 
+    // Steps 5 and 6 need responses from the network: a 304 revalidation of a
+    // cached entry is not offered at the Response stage. Lightpanda disables
+    // the cache browser-wide, so finally turns it back on.
+    await page.setCacheEnabled(false);
+
+    // A Request-stage pause carries no response.
+    const stage = (event) => (event.responseStatusCode ?? event.responseErrorReason) === undefined ? 'Request' : 'Response';
+
+    // 5. continueRequest's interceptResponse overrides the Response patterns
+    // for that request: true pauses product.json's response with no Response
+    // pattern for it, false lets reviews.json's through despite one.
+    paused = [];
+    await session.send('Fetch.enable', {
+        patterns: [
+            { urlPattern: '*/json/*' },
+            { urlPattern: '*/json/reviews.json', requestStage: 'Response' },
+        ],
+    });
+    onPaused = async (event) => {
+        if (stage(event) === 'Request') {
+            return session.send('Fetch.continueRequest', {
+                requestId: event.requestId,
+                interceptResponse: event.request.url === productURL,
+            });
+        }
+        assert.equal(event.request.url, productURL);
+        assert.equal(event.responseStatusCode, 200);
+        const data = JSON.parse(await responseText(session, event.requestId));
+        data.name = 'intercepted';
+        return session.send('Fetch.fulfillRequest', {
+            requestId: event.requestId,
+            responseCode: event.responseStatusCode,
+            responseHeaders: event.responseHeaders,
+            body: Buffer.from(JSON.stringify(data)).toString('base64'),
+        });
+    };
+    res = await loadPage(pageURL);
+    assert.equal(errors.length, 0, `interception failed: ${errors[0]}`);
+    assert.deepEqual(
+        paused.map((p) => [p.request.url, stage(p)]).sort(),
+        [[productURL, 'Request'], [productURL, 'Response'], [reviewsURL, 'Request']].sort(),
+    );
+    assert.equal(res.name, 'intercepted', 'interceptResponse did not pause the product');
+    assert.equal(res.reviews.length, 3, `reviews not delivered: ${JSON.stringify(res.reviews)}`);
+
+    // 6. interceptResponse covers a single hop: the redirect response it was
+    // given for pauses, and the request it redirects to pauses at the Request
+    // stage only, as the patterns say.
+    paused = [];
+    await session.send('Fetch.enable', {
+        patterns: [{ urlPattern: '*', resourceType: 'Document' }],
+    });
+    const hopURL = baseURL + '/redirect/to?to=/campfire-commerce/';
+    onPaused = async (event) => {
+        if (stage(event) === 'Request') {
+            return session.send('Fetch.continueRequest', {
+                requestId: event.requestId,
+                interceptResponse: event.request.url === hopURL ? true : undefined,
+            });
+        }
+        return session.send('Fetch.continueResponse', { requestId: event.requestId });
+    };
+    res = await loadPage(hopURL);
+    assert.equal(errors.length, 0, `interception failed: ${errors[0]}`);
+    assert.deepEqual(
+        paused.map((p) => [p.request.url, stage(p), p.responseStatusCode]),
+        [
+            [hopURL, 'Request', undefined],
+            [hopURL, 'Response', 302],
+            [pageURL, 'Request', undefined],
+        ],
+    );
+    assert.equal(res.reviews.length, 3);
+
     await session.send('Fetch.disable');
 } finally {
+    await page.setCacheEnabled(true);
     await page.close();
     await context.close();
     await browser.disconnect();
