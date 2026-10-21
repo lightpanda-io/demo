@@ -19,6 +19,9 @@
 // the others are released unchanged. Playwright's network model must see the
 // rewritten body, as it does in Chrome. Like Chrome, the Fetch domain reports
 // fetch() as XHR.
+//
+// Then the same rewrite with Request-stage patterns only: continueRequest's
+// interceptResponse pauses reviews.json's response on demand.
 
 import { chromium } from 'playwright-core';
 import assert from 'assert';
@@ -38,20 +41,29 @@ const browser = await chromium.connectOverCDP(browserAddress);
 const context = await browser.newContext();
 const page = await context.newPage();
 
+let session;
 try {
-    const session = await context.newCDPSession(page);
+    session = await context.newCDPSession(page);
 
-    const pauses = [];
+    let pauses = [];
     const errors = [];
     session.on('Fetch.requestPaused', async (event) => {
         const url = event.request.url;
+        // A Request-stage pause carries no response.
+        const stage = event.responseStatusCode === undefined ? 'Request' : 'Response';
         try {
             if (![pageURL, productURL, reviewsURL].includes(url)) {
-                // e.g. Chrome's favicon fetch
-                return await session.send('Fetch.continueResponse', { requestId: event.requestId });
+                // e.g. Chrome's favicon fetch; continueRequest releases either stage.
+                return await session.send('Fetch.continueRequest', { requestId: event.requestId });
             }
-            pauses.push({ url, status: event.responseStatusCode, resourceType: event.resourceType });
+            pauses.push({ url, stage, status: event.responseStatusCode, resourceType: event.resourceType });
 
+            if (stage === 'Request') {
+                return await session.send('Fetch.continueRequest', {
+                    requestId: event.requestId,
+                    interceptResponse: url === reviewsURL,
+                });
+            }
             if (url !== reviewsURL) {
                 return await session.send('Fetch.continueResponse', { requestId: event.requestId });
             }
@@ -73,40 +85,67 @@ try {
         patterns: [{ urlPattern: '*', requestStage: 'Response' }],
     });
 
-    const reviewsResponse = page.waitForResponse(reviewsURL, { timeout: 5000 });
-    const response = await page.goto(pageURL, { timeout: 5000 });
-    assert.equal(response.status(), 200);
+    // The second load needs reviews.json from the network: a 304 revalidation
+    // of a cached entry is not offered at the Response stage. Lightpanda
+    // disables the cache browser-wide, so finally turns it back on.
+    await session.send('Network.setCacheDisabled', { cacheDisabled: true });
 
-    await page.waitForFunction(() => {
-        return document.querySelector('#product-description').textContent.length > 0
-            && document.querySelectorAll('#product-reviews > div').length > 0;
-    }, { timeout: 2000 });
-    assert.equal(errors.length, 0, `interception failed: ${errors[0]}`);
+    // Loads the page and checks reviews.json was rewritten, for the page and
+    // for Playwright's network model.
+    async function loadRewritten() {
+        const reviewsResponse = page.waitForResponse(reviewsURL, { timeout: 5000 });
+        const response = await page.goto(pageURL, { timeout: 5000 });
+        assert.equal(response.status(), 200);
+
+        await page.waitForFunction(() => {
+            return document.querySelector('#product-description').textContent.length > 0
+                && document.querySelectorAll('#product-reviews > div').length > 0;
+        }, { timeout: 2000 });
+        assert.equal(errors.length, 0, `interception failed: ${errors[0]}`);
+
+        // The page got the rewritten reviews and the untouched product.
+        const reviews = await page.locator('#product-reviews > div > p').allTextContents();
+        assert.equal(reviews.length, 4, JSON.stringify(reviews));
+        assert.equal(reviews[0], 'over 9000!');
+        const name = await page.locator('#product-name').textContent();
+        assert.equal(name, 'Outdoor Odyssey Nomad Backpack 60 liters');
+
+        // So does Playwright's network model.
+        const served = await (await reviewsResponse).json();
+        assert.equal(served.length, 4);
+        assert.equal(served[0], 'over 9000!');
+    }
+
+    await loadRewritten();
 
     // Each one paused once, at the response stage.
     assert.deepEqual(
-        pauses.map((p) => [p.url, p.status, p.resourceType]).sort(),
+        pauses.map((p) => [p.url, p.stage, p.status, p.resourceType]).sort(),
         [
-            [pageURL, 200, 'Document'],
-            [productURL, 200, 'XHR'],
-            [reviewsURL, 200, 'XHR'],
+            [pageURL, 'Response', 200, 'Document'],
+            [productURL, 'Response', 200, 'XHR'],
+            [reviewsURL, 'Response', 200, 'XHR'],
         ].sort(),
     );
 
-    // The page got the rewritten reviews and the untouched product.
-    const reviews = await page.locator('#product-reviews > div > p').allTextContents();
-    assert.equal(reviews.length, 4, JSON.stringify(reviews));
-    assert.equal(reviews[0], 'over 9000!');
-    const name = await page.locator('#product-name').textContent();
-    assert.equal(name, 'Outdoor Odyssey Nomad Backpack 60 liters');
-
-    // So does Playwright's network model.
-    const served = await (await reviewsResponse).json();
-    assert.equal(served.length, 4);
-    assert.equal(served[0], 'over 9000!');
+    // Request-stage patterns only: each one pauses at the request stage, and
+    // only reviews.json, continued with interceptResponse, at the response stage.
+    pauses = [];
+    await session.send('Fetch.enable', { patterns: [{ urlPattern: '*' }] });
+    await loadRewritten();
+    assert.deepEqual(
+        pauses.map((p) => [p.url, p.stage, p.status, p.resourceType]).sort(),
+        [
+            [pageURL, 'Request', undefined, 'Document'],
+            [productURL, 'Request', undefined, 'XHR'],
+            [reviewsURL, 'Request', undefined, 'XHR'],
+            [reviewsURL, 'Response', 200, 'XHR'],
+        ].sort(),
+    );
 
     await session.send('Fetch.disable');
 } finally {
+    await session?.send('Network.setCacheDisabled', { cacheDisabled: false });
     await page.close();
     await context.close();
     await browser.close();
