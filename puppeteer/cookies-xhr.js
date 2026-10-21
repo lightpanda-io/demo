@@ -42,10 +42,10 @@ const element = await page.$('pre');
 const pre = await page.evaluate(el => el.textContent, element);
 const obj = JSON.parse(pre);
 
-assert.equal(obj[0].Name, "hello");
-assert.equal(obj[0].Value, "world");
-assert.equal(obj[1].Name, "lightpanda");
-assert.equal(obj[1].Value, "browser");
+assert.equal(obj[0].Name, "lightpanda");
+assert.equal(obj[0].Value, "browser");
+assert.equal(obj[1].Name, "hello");
+assert.equal(obj[1].Value, "world");
 
 await page.close();
 await context.close();
