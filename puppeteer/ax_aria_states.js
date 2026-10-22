@@ -40,7 +40,8 @@ for (const node of nodes) {
 }
 
 // Chrome 156 Accessibility.getFullAXTree. Any token other than "false"
-// reads as true, and an empty aria-checked as false.
+// or "mixed" reads as true, untrimmed, and an empty aria-checked as false.
+// Options and tree items are only checkable once aria-checked is set.
 const expected = {
   'Expanded details': {expanded: true},
   'Collapsed details': {expanded: false},
@@ -64,6 +65,14 @@ const expected = {
   'Option mixed': {checked: 'mixed'},
   'Treeitem checked': {checked: 'true', expanded: false},
   'Native checked': {checked: 'true'},
+  'Padded collapsed': {expanded: true},
+  'Blank expanded': {expanded: true},
+  'Padded false': {checked: 'true'},
+  'Blank checked': {checked: 'true'},
+  'Option absent': {},
+  'Option empty': {},
+  'Treeitem absent': {},
+  'Native option': {},
 };
 
 const actual = Object.fromEntries(Object.keys(expected).map(name => [name, states[name]]));
