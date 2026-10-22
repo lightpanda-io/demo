@@ -1,0 +1,103 @@
+'use strict'
+
+import fs from 'node:fs';
+import path from 'node:path';
+import puppeteer from 'puppeteer-core';
+
+// `zig build test-server` in the browser repo
+const serverRoot = 'http://127.0.0.1:9582';
+const browserAddress = process.env.BROWSER_ADDRESS ?? 'ws://127.0.0.1:9222';
+const browserRepo = process.env.BROWSER_REPO ?? path.resolve(import.meta.dirname, '../../browser');
+const timeoutMs = 2000;
+
+const TESTS_DIR = 'src/browser/tests';
+const TEST_MARKER = /<meta\s+name=["']?lp-mode["']?\s+content=["']?test["']?\s*\/?>/i;
+
+function findTests(filter) {
+  const root = path.join(browserRepo, TESTS_DIR);
+  return fs.readdirSync(root, { recursive: true })
+    .filter((rel) => rel.endsWith('.html'))
+    .filter((rel) => !filter || rel.includes(filter))
+    .filter((rel) => TEST_MARKER.test(fs.readFileSync(path.join(root, rel), 'utf8')))
+    .sort();
+}
+
+async function connect() {
+  return puppeteer.connect({ browserWSEndpoint: browserAddress });
+}
+
+async function runTest(browser, rel) {
+  await fetch(`${serverRoot}/reset`);
+
+  // a fresh context per test: no storage, cookies or cache shared between them
+  const context = await browser.createBrowserContext();
+  const page = await context.newPage();
+
+  const logs = [];
+  page.on('console', (msg) => {
+    // Chrome's own /favicon.ico request, which the server 404s
+    if (msg.location()?.url?.endsWith('/favicon.ico')) {
+      return;
+    }
+    if (msg.type() === 'error' || msg.type() === 'warn') {
+      logs.push(`console.${msg.type()}: ${msg.text()}`);
+    }
+  });
+  page.on('pageerror', (err) => logs.push(`pageerror: ${err.message}`));
+
+  try {
+    // testing.js otherwise calls assertOk on load itself, which would run
+    // the testing.onload callbacks a second time.
+    await page.evaluateOnNewDocument(() => { window.__lp_external_runner = true; });
+    await page.goto(`${serverRoot}/${TESTS_DIR}/${rel}`, { waitUntil: 'load', timeout: timeoutMs });
+
+    const deadline = Date.now() + timeoutMs;
+    while (true) {
+      try {
+        // testing is undefined until testing.js is run
+        const ok = await page.evaluate(() => typeof testing === 'undefined' ? false : testing.assertOk());
+        if (ok) {
+          return { ok: true, logs };
+        }
+      } catch (err) {
+        return { ok: false, error: err.message, logs };
+      }
+
+      if (Date.now() >= deadline) {
+        await page.evaluate(() => testing.printTimeoutState()).catch(() => {});
+        return { ok: false, error: 'timed out', logs };
+      }
+      await new Promise((resolve) => setTimeout(resolve, 20));
+    }
+  } catch (err) {
+    return { ok: false, error: err.message, logs };
+  } finally {
+    await context.close();
+  }
+}
+
+const tests = findTests(process.argv[2]);
+if (tests.length === 0) {
+  console.log('no tests found');
+  process.exit(1);
+}
+
+const browser = await connect();
+let failures = 0;
+for (const rel of tests) {
+  const result = await runTest(browser, rel);
+  if (result.ok) {
+    console.log(`ok   ${rel}`);
+    continue;
+  }
+
+  failures += 1;
+  console.log(`FAIL ${rel}: ${result.error}`);
+  for (const line of result.logs) {
+    console.log(`     ${line.replaceAll('\n', '\n     ')}`);
+  }
+}
+await browser.disconnect();
+
+console.log(`\n${tests.length - failures}/${tests.length} passed`);
+process.exit(failures === 0 ? 0 : 1);
