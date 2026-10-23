@@ -31,6 +31,7 @@ func (c LightpandaCmd) Command(ctx context.Context) (*exec.Cmd, error) {
 		"--load-resources", "image",
 		"--load-resources", "worker",
 		"--load-resources", "stylesheet",
+		"--load-resources", "beacon",
 		"--http-cache-dir", cache,
 		"--experimental-features", "cors",
 		"--experimental-features", "serviceworker",
