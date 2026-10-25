@@ -53,29 +53,26 @@ const context = await browser.createBrowserContext();
 const page = await context.newPage();
 const client = await page._client();
 
-// Browser.* are browser-scoped events: like Chrome, Lightpanda emits them with
-// no sessionId, so puppeteer surfaces them on the root CDP connection, not on
-// the page session (client). Its Connection routes a message bearing a
-// sessionId to that session and a sessionless one to the connection itself, so
-// the listeners below must sit on client.connection() — listening on `client`
-// would never fire.
-const connection = client.connection();
-
 try {
   // Register the listeners before navigating so we never miss an event.
   // The opt-in is Browser.setDownloadBehavior, so Lightpanda emits Browser.*
   // events (not the deprecated Page.downloadWillBegin / Page.downloadProgress).
+  // Like Chrome, it emits them on the session that sent the opt-in, so the
+  // listeners sit on the page session (client), not the root connection.
   let onWillBegin, onCompleted;
   const willBegin = new Promise(res => { onWillBegin = res; });
   const completed = new Promise(res => { onCompleted = res; });
 
-  connection.on('Browser.downloadWillBegin', e => onWillBegin(e));
-  connection.on('Browser.downloadProgress', e => {
+  client.on('Browser.downloadWillBegin', e => onWillBegin(e));
+  client.on('Browser.downloadProgress', e => {
     if (e.state === 'completed') onCompleted(e);
   });
 
+  // Without browserContextId, Chrome applies the behavior to the default
+  // browser context, and the download in our new context gets canceled.
   await client.send('Browser.setDownloadBehavior', {
     behavior: 'allow',
+    browserContextId: context.id,
     downloadPath,
     eventsEnabled: true,
   });
