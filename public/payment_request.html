@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <style>
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Checkout</h1>
+  <p>Total: $10.00</p>
+  <button id="express" class="hidden">Pay with browser</button>
+  <button id="pay">Pay now</button>
+  <form id="card-form" class="hidden">
+    <label>Card number <input name="card"></label>
+    <button type="submit">Pay by card</button>
+  </form>
+  <script>
+    window.log = [];
+    const methods = [{ supportedMethods: 'https://example.com/pay' }];
+    const details = { total: { label: 'Total', amount: { currency: 'USD', value: '10.00' } } };
+
+    function showCardForm() {
+      document.getElementById('card-form').classList.remove('hidden');
+      window.log.push('card-form');
+    }
+
+    window.checkoutReady = (async () => {
+      if (!('PaymentRequest' in window)) {
+        window.log.push('no-payment-request');
+        return;
+      }
+      window.log.push('payment-request');
+      const canPay = await new PaymentRequest(methods, details).canMakePayment();
+      window.log.push(`canMakePayment:${canPay}`);
+      if (canPay) {
+        document.getElementById('express').classList.remove('hidden');
+      }
+    })();
+
+    document.getElementById('pay').addEventListener('click', async () => {
+      if (!('PaymentRequest' in window)) {
+        showCardForm();
+        return;
+      }
+      try {
+        await new PaymentRequest(methods, details).show();
+        window.log.push('paid');
+      } catch (e) {
+        window.log.push(`show:${e.name}`);
+        showCardForm();
+      }
+    });
+  </script>
+</body>
+</html>
