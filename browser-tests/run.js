@@ -13,13 +13,17 @@ const timeoutMs = 2000;
 const TESTS_DIR = 'src/browser/tests';
 const TEST_MARKER = /<meta\s+name=["']?lp-mode["']?\s+content=["']?test["']?\s*\/?>/i;
 
+// Without a filter, only files tagged with the lp-mode meta run. With one,
+// every matching file runs, tagged or not, so a file can be tried before
+// it's tagged.
 function findTests(filter) {
   const root = path.join(browserRepo, TESTS_DIR);
   return fs.readdirSync(root, { recursive: true })
     .filter((rel) => rel.endsWith('.html'))
     .filter((rel) => !filter || rel.includes(filter))
-    .filter((rel) => TEST_MARKER.test(fs.readFileSync(path.join(root, rel), 'utf8')))
-    .sort();
+    .map((rel) => ({ rel, tagged: TEST_MARKER.test(fs.readFileSync(path.join(root, rel), 'utf8')) }))
+    .filter((t) => filter || t.tagged)
+    .sort((a, b) => a.rel.localeCompare(b.rel));
 }
 
 async function connect() {
@@ -84,15 +88,16 @@ if (tests.length === 0) {
 
 const browser = await connect();
 let failures = 0;
-for (const rel of tests) {
+for (const { rel, tagged } of tests) {
+  const name = tagged ? rel : `${rel} (untagged)`;
   const result = await runTest(browser, rel);
   if (result.ok) {
-    console.log(`ok   ${rel}`);
+    console.log(`ok   ${name}`);
     continue;
   }
 
   failures += 1;
-  console.log(`FAIL ${rel}: ${result.error}`);
+  console.log(`FAIL ${name}: ${result.error}`);
   for (const line of result.logs) {
     console.log(`     ${line.replaceAll('\n', '\n     ')}`);
   }
