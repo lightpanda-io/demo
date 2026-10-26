@@ -1,0 +1,6 @@
+/goto http://127.0.0.1:1234/form/get.html
+/fill the enabled text input named h3 value=lightpanda42
+/click the submit button
+/waitForSelector '#method'
+/extract the echoed method and query string, as keys method and query
+/save {script} Return the extracted object unchanged.

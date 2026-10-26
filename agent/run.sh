@@ -17,6 +17,10 @@
 #                        it token-free — the only e2e check that the Recorder
 #                        emits interaction calls (fill/click), not just
 #                        goto/extract.
+#                      * prompt save+replay: submit the same form through REPL
+#                        prompt commands (`/fill the … input value=…`), /save,
+#                        and replay token-free — checks that the model's
+#                        resolved calls and the pinned `value=` are recorded.
 #                      * HN save+replay: ask the agent to scrape live Hacker
 #                        News and /save a reproducible script, then replay it
 #                        token-free and validate the output against a shape
@@ -189,7 +193,9 @@ throttled() {
 }
 
 # Save + replay flow shared by the live cases: run the agent with the task
-# from cases/<name>.task and --save, require every space-separated regex in
+# from cases/<name>.task and --save — or, when cases/<name>.repl exists, feed
+# its lines to the REPL, with {script} standing for the path its /save line
+# writes — require every space-separated regex in
 # <required-calls> to match the saved script, then replay it token-free and
 # validate the output with cases/<name>.jq. Extra args go to both the save
 # and the replay (e.g. --http-proxy). When <throttle-url> is set, a failed
@@ -199,9 +205,13 @@ run_live_save_replay() {
   local name="$1" save_timeout="$2" replay_timeout="$3" required="$4" throttle_url="$5"
   shift 5
   local script="$TMP/$name.js" task
-  task="$(cat "$HERE/cases/$name.task")"
-
-  timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
+  if [ -f "$HERE/cases/$name.repl" ]; then
+    sed "s|{script}|$script|" "$HERE/cases/$name.repl" |
+      timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" >/dev/null 2>"$TMP/err"
+  else
+    task="$(cat "$HERE/cases/$name.task")"
+    timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
+  fi
   check_usage "$TMP/err" "$name save"
 
   if [ ! -s "$script" ]; then
@@ -267,6 +277,11 @@ run_live_form_save() {
   run_live_save_replay form-live 300 120 'fill\( click\(|press\(' ""
 }
 
+run_live_prompt_save() {
+  info "== live layer: prompt commands save + replay (model=$LP_MODEL) =="
+  run_live_save_replay prompt-live 300 120 'fill\( lightpanda42 click\( extract\(' ""
+}
+
 # --- dispatch ----------------------------------------------------------------
 start_server
 
@@ -274,11 +289,11 @@ case "$LAYER" in
   deterministic) run_deterministic ;;
   live)
     [ -n "${GOOGLE_API_KEY:-}${GEMINI_API_KEY:-}" ] || { red "GOOGLE_API_KEY/GEMINI_API_KEY unset — cannot run live layer"; exit 2; }
-    run_live_qa; run_live_form_save; run_live_hn ;;
+    run_live_qa; run_live_form_save; run_live_prompt_save; run_live_hn ;;
   all)
     run_deterministic
     if [ -n "${GOOGLE_API_KEY:-}${GEMINI_API_KEY:-}" ]; then
-      run_live_qa; run_live_form_save; run_live_hn
+      run_live_qa; run_live_form_save; run_live_prompt_save; run_live_hn
     else
       info "GOOGLE_API_KEY/GEMINI_API_KEY unset — skipping live layer"
     fi ;;
