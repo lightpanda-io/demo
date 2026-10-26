@@ -41,7 +41,8 @@ function parseSignatureHeader(header) {
 }
 
 async function fetchJwks(agentUrl) {
-  const url = agentUrl.trim().replace(/^"|"$/g, '').replace(/\/$/, '');
+  const origin = agentUrl.trim().replace(/^"|"$/g, '').replace(/\/$/, '');
+  const url = `${origin}/.well-known/http-message-signatures-directory`;
 
   return new Promise((resolve, reject) => {
     const req = https.get(url, {
