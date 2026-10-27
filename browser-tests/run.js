@@ -30,15 +30,13 @@ async function connect() {
   return puppeteer.connect({ browserWSEndpoint: browserAddress });
 }
 
-async function runTest(browser, rel) {
+// One tab for the whole run: a fresh context per test costs Chrome ~100ms
+// each. Storage, cookies and cache carry over from one test to the next.
+async function runTest(page, rel) {
   await fetch(`${serverRoot}/reset`);
 
-  // a fresh context per test: no storage, cookies or cache shared between them
-  const context = await browser.createBrowserContext();
-  const page = await context.newPage();
-
   const logs = [];
-  page.on('console', (msg) => {
+  const onConsole = (msg) => {
     // Chrome's own /favicon.ico request, which the server 404s
     if (msg.location()?.url?.endsWith('/favicon.ico')) {
       return;
@@ -46,13 +44,12 @@ async function runTest(browser, rel) {
     if (msg.type() === 'error' || msg.type() === 'warn') {
       logs.push(`console.${msg.type()}: ${msg.text()}`);
     }
-  });
-  page.on('pageerror', (err) => logs.push(`pageerror: ${err.message}`));
+  };
+  const onPageError = (err) => logs.push(`pageerror: ${err.message}`);
+  page.on('console', onConsole);
+  page.on('pageerror', onPageError);
 
   try {
-    // testing.js otherwise calls assertOk on load itself, which would run
-    // the testing.onload callbacks a second time.
-    await page.evaluateOnNewDocument(() => { window.__lp_external_runner = true; });
     await page.goto(`${serverRoot}/${TESTS_DIR}/${rel}`, { waitUntil: 'load', timeout: timeoutMs });
 
     const deadline = Date.now() + timeoutMs;
@@ -76,7 +73,8 @@ async function runTest(browser, rel) {
   } catch (err) {
     return { ok: false, error: err.message, logs };
   } finally {
-    await context.close();
+    page.off('console', onConsole);
+    page.off('pageerror', onPageError);
   }
 }
 
@@ -87,10 +85,16 @@ if (tests.length === 0) {
 }
 
 const browser = await connect();
+const context = await browser.createBrowserContext();
+const page = await context.newPage();
+// testing.js otherwise calls assertOk on load itself, which would run
+// the testing.onload callbacks a second time.
+await page.evaluateOnNewDocument(() => { window.__lp_external_runner = true; });
+
 let failures = 0;
 for (const { rel, tagged } of tests) {
   const name = tagged ? rel : `${rel} (untagged)`;
-  const result = await runTest(browser, rel);
+  const result = await runTest(page, rel);
   if (result.ok) {
     console.log(`ok   ${name}`);
     continue;
@@ -102,6 +106,7 @@ for (const { rel, tagged } of tests) {
     console.log(`     ${line.replaceAll('\n', '\n     ')}`);
   }
 }
+await context.close();
 await browser.disconnect();
 
 console.log(`\n${tests.length - failures}/${tests.length} passed`);
