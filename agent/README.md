@@ -24,6 +24,8 @@ agent/
   cases/static-qa.tsv    <task>\t<expected-substring> per line
   cases/form-live.task   task prompt for the local form save+replay case
   cases/form-live.jq     invariant verifying that contract (pinned values)
+  cases/prompt-live.repl REPL lines for the prompt-command save+replay case
+  cases/prompt-live.jq   invariant for its replay (same form, same values)
   cases/hn-live.task     task prompt for the live HN case (pins the contract)
   cases/hn-live.jq       shape invariant verifying that contract
 ```
@@ -82,6 +84,13 @@ Drives the real Gemini-backed agent:
   checked for recorded interaction calls (`fill` + `click`/`press`) — the only
   e2e coverage that the Recorder captures interactions. Runs whenever a key is
   present; no proxy or external network needed.
+- **Prompt commands save + replay** — feed `cases/prompt-live.repl` to the
+  REPL: the same form, submitted through prompt commands
+  (`/fill the enabled text input named h3 value=lightpanda42`,
+  `/click the submit button`, `/extract the echoed method and query …`), then
+  `/save` and replay token-free against `cases/prompt-live.jq`. The model
+  resolves each selector or schema once; the saved script must contain the
+  resolved calls and the `value=` exactly as typed.
 - **HN save + replay** — ask the agent (task in `cases/hn-live.task`) to
   scrape live Hacker News and `/save` a reproducible script, then replay that
   script **token-free** and validate the output against `cases/hn-live.jq`
