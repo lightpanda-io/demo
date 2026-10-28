@@ -96,7 +96,7 @@ for (const { rel, tagged } of tests) {
   const name = tagged ? rel : `${rel} (untagged)`;
   const result = await runTest(page, rel);
   if (result.ok) {
-    console.log(`ok   ${name}`);
+    process.stdout.write('.');
     continue;
   }
 
