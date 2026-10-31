@@ -6,7 +6,9 @@ import puppeteer from 'puppeteer-core';
 
 // `zig build test-server` in the browser repo
 const serverRoot = 'http://127.0.0.1:9582';
-const browserAddress = process.env.BROWSER_ADDRESS ?? 'ws://127.0.0.1:9222';
+// Unset: launch the installed Chrome stable (or CHROME_PATH) with a fixed
+// environment, so results only change with the Chrome version.
+const browserAddress = process.env.BROWSER_ADDRESS;
 const browserRepo = process.env.BROWSER_REPO ?? path.resolve(import.meta.dirname, '../../browser');
 const timeoutMs = 2000;
 
@@ -27,7 +29,39 @@ function findTests(filter) {
 }
 
 async function connect() {
-  return puppeteer.connect({ browserWSEndpoint: browserAddress });
+  if (browserAddress) {
+    return puppeteer.connect({ browserWSEndpoint: browserAddress });
+  }
+
+  const browser = await puppeteer.launch({
+    ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : { channel: 'chrome' }),
+    // puppeteer's defaults change behavior (cookie_store.html times out)
+    ignoreDefaultArgs: true,
+    args: [
+      '--headless',
+      '--disable-gpu',
+      '--disable-popup-blocking',
+      '--autoplay-policy=no-user-gesture-required',
+      // Finch field trials can change web-facing behavior between two
+      // profiles of the same version.
+      '--enable-benchmarking',
+      '--lang=en-US',
+    ],
+    env: {
+      ...process.env,
+      // UI strings (validationMessage, ...) follow LANG on Linux, --lang elsewhere
+      LANG: 'en_US.UTF-8',
+      LC_ALL: 'en_US.UTF-8',
+      LANGUAGE: 'en_US',
+      TZ: 'UTC',
+      // No audio device, as on CI: the default AudioContext rate otherwise
+      // follows the hardware (Linux only)
+      PULSE_SERVER: 'unix:/nonexistent',
+      ALSA_CONFIG_PATH: '/dev/null',
+    },
+  });
+  console.log(await browser.version());
+  return browser;
 }
 
 // One tab for the whole run: a fresh context per test costs Chrome ~100ms
@@ -107,7 +141,7 @@ for (const { rel, tagged } of tests) {
   }
 }
 await context.close();
-await browser.disconnect();
+await (browserAddress ? browser.disconnect() : browser.close());
 
 console.log(`\n${tests.length - failures}/${tests.length} passed`);
 process.exit(failures === 0 ? 0 : 1);
