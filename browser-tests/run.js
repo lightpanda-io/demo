@@ -14,6 +14,9 @@ const timeoutMs = 2000;
 
 const TESTS_DIR = 'src/browser/tests';
 const TEST_MARKER = /<meta\s+name=["']?lp-mode["']?\s+content=["']?test["']?\s*\/?>/i;
+// <meta name=lp-mode content="skipped: reason">: a file Chrome can't pass for
+// a known reason. Never run, even when a filter matches it.
+const SKIP_MARKER = /<meta\s+name=["']?lp-mode["']?\s+content=(["'])skipped:\s*(.*?)\1\s*\/?>/i;
 
 // Without a filter, only files tagged with the lp-mode meta run. With one,
 // every matching file runs, tagged or not, so a file can be tried before
@@ -23,7 +26,10 @@ function findTests(filter) {
   return fs.readdirSync(root, { recursive: true })
     .filter((rel) => rel.endsWith('.html'))
     .filter((rel) => !filter || rel.includes(filter))
-    .map((rel) => ({ rel, tagged: TEST_MARKER.test(fs.readFileSync(path.join(root, rel), 'utf8')) }))
+    .map((rel) => {
+      const html = fs.readFileSync(path.join(root, rel), 'utf8');
+      return { rel, tagged: TEST_MARKER.test(html), skipped: html.match(SKIP_MARKER)?.[2] };
+    })
     .filter((t) => filter || t.tagged)
     .sort((a, b) => a.rel.localeCompare(b.rel));
 }
@@ -126,7 +132,12 @@ const page = await context.newPage();
 await page.evaluateOnNewDocument(() => { window.__lp_external_runner = true; });
 
 let failures = 0;
-for (const { rel, tagged } of tests) {
+const skipped = [];
+for (const { rel, tagged, skipped: reason } of tests) {
+  if (reason !== undefined) {
+    skipped.push(`SKIP ${rel}: ${reason}`);
+    continue;
+  }
   const name = tagged ? rel : `${rel} (untagged)`;
   const result = await runTest(page, rel);
   if (result.ok) {
@@ -143,5 +154,9 @@ for (const { rel, tagged } of tests) {
 await context.close();
 await (browserAddress ? browser.disconnect() : browser.close());
 
-console.log(`\n${tests.length - failures}/${tests.length} passed`);
+if (skipped.length !== 0) {
+  console.log(`\n${skipped.join('\n')}`);
+}
+const ran = tests.length - skipped.length;
+console.log(`\n${ran - failures}/${ran} passed${skipped.length === 0 ? '' : `, ${skipped.length} skipped`}`);
 process.exit(failures === 0 ? 0 : 1);
