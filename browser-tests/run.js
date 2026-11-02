@@ -28,7 +28,12 @@ function findTests(filter) {
     .filter((rel) => !filter || rel.includes(filter))
     .map((rel) => {
       const html = fs.readFileSync(path.join(root, rel), 'utf8');
-      return { rel, tagged: TEST_MARKER.test(html), skipped: html.match(SKIP_MARKER)?.[2] };
+      return {
+        rel,
+        tagged: TEST_MARKER.test(html),
+        skipped: html.match(SKIP_MARKER)?.[2],
+        uses_onload: html.includes('testing.onload'),
+      };
     })
     .filter((t) => filter || t.tagged)
     .sort((a, b) => a.rel.localeCompare(b.rel));
@@ -72,7 +77,7 @@ async function connect() {
 
 // One tab for the whole run: a fresh context per test costs Chrome ~100ms
 // each. Storage, cookies and cache carry over from one test to the next.
-async function runTest(page, rel) {
+async function runTest(page, rel, uses_onload) {
   await fetch(`${serverRoot}/reset`);
 
   const logs = [];
@@ -91,6 +96,14 @@ async function runTest(page, rel) {
 
   try {
     await page.goto(`${serverRoot}/${TESTS_DIR}/${rel}`, { waitUntil: 'load', timeout: timeoutMs });
+
+    // Chrome fires some events with the next animation frame (a dialog's
+    // close, input.select()'s select), which can come after load, so wait a
+    // frame or a testing.onload check sees 0 events. Only for files that
+    // use it: a frame per test costs ~10ms.
+    if (uses_onload) {
+      await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(resolve)));
+    }
 
     const deadline = Date.now() + timeoutMs;
     while (true) {
@@ -133,13 +146,13 @@ await page.evaluateOnNewDocument(() => { window.__lp_external_runner = true; });
 
 let failures = 0;
 const skipped = [];
-for (const { rel, tagged, skipped: reason } of tests) {
+for (const { rel, tagged, skipped: reason, uses_onload } of tests) {
   if (reason !== undefined) {
     skipped.push(`SKIP ${rel}: ${reason}`);
     continue;
   }
   const name = tagged ? rel : `${rel} (untagged)`;
-  const result = await runTest(page, rel);
+  const result = await runTest(page, rel, uses_onload);
   if (result.ok) {
     process.stdout.write('.');
     continue;
