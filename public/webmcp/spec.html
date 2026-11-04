@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebMCP spec API</title>
+</head>
+<body>
+  <h1>Unit converter</h1>
+  <p id="last">No conversion yet.</p>
+  <script>
+    // Registers through the current spec location, document.modelContext, and
+    // awaits registerTool's promise like pages built on the draft do.
+    window.log = [];
+    window.ready = (async () => {
+      if (!('modelContext' in document)) {
+        window.log.push('no-document-model-context');
+        return;
+      }
+      const mc = document.modelContext;
+      mc.addEventListener('toolchange', () => window.log.push('toolchange'));
+      mc.addEventListener('toolactivated', (e) => window.log.push('activated:' + e.toolName));
+      mc.addEventListener('toolcancel', (e) => window.log.push('cancel:' + e.toolName));
+
+      await mc.registerTool({
+        name: 'km_to_miles',
+        title: 'Kilometres to miles',
+        description: 'Converts a distance in kilometres to miles.',
+        inputSchema: { type: 'object', properties: { km: { type: 'number' } }, required: ['km'] },
+        annotations: { readOnlyHint: true },
+        execute: async ({ km }) => {
+          const miles = Math.round(km * 0.621371 * 100) / 100;
+          document.getElementById('last').textContent = `${km} km = ${miles} mi`;
+          return { miles };
+        },
+      });
+      window.log.push('registered:km_to_miles');
+
+      await mc.registerTool({
+        name: 'wait_forever',
+        description: 'Never finishes until cancelled.',
+        execute: (input, { signal }) => new Promise((resolve, reject) => {
+          signal.addEventListener('abort', () => {
+            window.log.push('aborted:' + signal.reason.name);
+            reject(signal.reason);
+          });
+        }),
+      });
+      window.log.push('registered:wait_forever');
+    })();
+  </script>
+</body>
+</html>
