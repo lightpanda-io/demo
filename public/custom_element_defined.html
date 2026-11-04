@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Widgets</title>
+  <style>
+    x-price:not(:defined), button:not(:defined) { display: none; }
+  </style>
+</head>
+<body>
+  <h1>Widgets</h1>
+  <button id="load">Load widgets</button>
+  <x-price id="price">$10.00</x-price>
+  <button id="buy" is="buy-button">Buy</button>
+  <div id="cart"></div>
+  <script>
+    window.log = [];
+
+    // built before its definition and kept off the page until the widgets load
+    const badge = document.createElement('x-price');
+    badge.id = 'badge';
+    badge.textContent = '$5.00';
+
+    document.getElementById('load').addEventListener('click', () => {
+      customElements.define('x-price', class extends HTMLElement {});
+      customElements.define('buy-button', class extends HTMLButtonElement {
+        constructor() {
+          super();
+          this.dataset.upgraded = 'yes';
+        }
+        connectedCallback() {
+          window.log.push(`connected:${this.id}`);
+        }
+      }, { extends: 'button' });
+      window.log.push(`badge:${badge.matches(':defined')}`);
+      document.getElementById('cart').append(badge);
+      window.log.push(`badge:${badge.matches(':defined')}`);
+    });
+  </script>
+</body>
+</html>
