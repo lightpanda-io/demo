@@ -102,7 +102,7 @@ async function runTest(page, rel, uses_onload) {
     // frame or a testing.onload check sees 0 events. Only for files that
     // use it: a frame per test costs ~10ms.
     if (uses_onload) {
-      await page.evaluate(() => new Promise((resolve) => requestAnimationFrame(resolve)));
+      await withTimeout(page.evaluate(() => new Promise((resolve) => requestAnimationFrame(resolve))), 'animation frame');
     }
 
     const deadline = Date.now() + timeoutMs;
@@ -131,6 +131,28 @@ async function runTest(page, rel, uses_onload) {
   }
 }
 
+// page.evaluate has no timeout of its own: a promise that never settles (e.g.
+// requestAnimationFrame in a background tab) would hang the whole run.
+function withTimeout(promise, what) {
+  let timer;
+  const timeout = new Promise((_, reject) => {
+    timer = setTimeout(() => reject(new Error(`${what} timed out`)), timeoutMs);
+  });
+  return Promise.race([promise, timeout]).finally(() => clearTimeout(timer));
+}
+
+// A test that opens windows (target=_blank, window.open) leaves them behind and
+// pushes our tab to the background, where Chrome stops running animation
+// frames: close them and bring the tab back.
+async function closeOtherPages(context, page) {
+  for (const p of await context.pages()) {
+    if (p !== page) {
+      await p.close().catch(() => {});
+    }
+  }
+  await page.bringToFront();
+}
+
 const tests = findTests(process.argv[2]);
 if (tests.length === 0) {
   console.log('no tests found');
@@ -153,6 +175,7 @@ for (const { rel, tagged, skipped: reason, uses_onload } of tests) {
   }
   const name = tagged ? rel : `${rel} (untagged)`;
   const result = await runTest(page, rel, uses_onload);
+  await closeOtherPages(context, page);
   if (result.ok) {
     process.stdout.write('.');
     continue;
