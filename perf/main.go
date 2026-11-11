@@ -131,7 +131,8 @@ func run() error {
 		if err != nil {
 			return err
 		}
-		if failed := report(os.Stdout, present(selected, all), bins, all, *maxIns, *maxWall); failed {
+		selected = present(selected, all)
+		if failed := report(os.Stdout, selected, bins, summarizeAll(selected, bins, all), *maxIns, *maxWall); failed {
 			os.Exit(1)
 		}
 		return nil
@@ -189,8 +190,9 @@ func run() error {
 	}
 	fmt.Fprintln(os.Stderr)
 
+	sums := summarizeAll(selected, bins, all)
 	if *out != "" {
-		data, err := json.MarshalIndent(all, "", "  ")
+		data, err := json.MarshalIndent(output{Env: environment(), Runs: all, Summary: sums}, "", "  ")
 		if err != nil {
 			return err
 		}
@@ -199,7 +201,7 @@ func run() error {
 		}
 	}
 
-	if failed := report(os.Stdout, selected, bins, all, *maxIns, *maxWall); failed {
+	if failed := report(os.Stdout, selected, bins, sums, *maxIns, *maxWall); failed {
 		os.Exit(1)
 	}
 	return nil
@@ -461,10 +463,17 @@ func load(paths []string) ([]bin, []result, error) {
 		if err != nil {
 			return nil, nil, err
 		}
-		var rs []result
-		if err := json.Unmarshal(data, &rs); err != nil {
+		var o output
+		if len(data) > 0 && data[0] == '[' {
+			// Files from before the summary: just the runs.
+			err = json.Unmarshal(data, &o.Runs)
+		} else {
+			err = json.Unmarshal(data, &o)
+		}
+		if err != nil {
 			return nil, nil, fmt.Errorf("%s: %w", p, err)
 		}
+		rs := o.Runs
 		name := strings.TrimSuffix(filepath.Base(p), ".json")
 		for i := range rs {
 			rs[i].Bin = name
@@ -568,12 +577,43 @@ func median(v []float64) float64 {
 	return (s[len(s)/2-1] + s[len(s)/2]) / 2
 }
 
-type summary struct {
-	work, task, wall, rss float64
-	requests              []int64
+// output is what -out writes: every run, plus the medians per binary and
+// scenario that the report and perf-fmt use.
+type output struct {
+	Env     map[string]string             `json:"env"`
+	Runs    []result                      `json:"runs"`
+	Summary map[string]map[string]summary `json:"summary"` // bin -> scenario
 }
 
-func summarize(all []result, sc, b string, idleIns float64) summary {
+type summary struct {
+	// Median instructions minus the idle scenario's median.
+	WorkInstructions int64   `json:"work_instructions"`
+	Instructions     int64   `json:"instructions"`
+	TaskClockMs      float64 `json:"task_clock_ms"`
+	WallMs           float64 `json:"wall_ms"`
+	PeakRSSKB        int64   `json:"peak_rss_kb"`
+	Requests         int64   `json:"requests"`
+
+	requests []int64 // per round, compared exactly
+}
+
+func summarizeAll(selected []scenario, bins []bin, all []result) map[string]map[string]summary {
+	out := map[string]map[string]summary{}
+	for _, b := range bins {
+		idle := summarize(all, "idle", b.name, 0)
+		out[b.name] = map[string]summary{}
+		for _, sc := range selected {
+			s := idle
+			if sc.name != "idle" {
+				s = summarize(all, sc.name, b.name, idle.Instructions)
+			}
+			out[b.name][sc.name] = s
+		}
+	}
+	return out
+}
+
+func summarize(all []result, sc, b string, idleIns int64) summary {
 	var ins, task, wall, rss []float64
 	var s summary
 	for _, r := range all {
@@ -586,11 +626,47 @@ func summarize(all []result, sc, b string, idleIns float64) summary {
 		rss = append(rss, float64(r.PeakRSSKB))
 		s.requests = append(s.requests, r.Requests)
 	}
-	s.work = median(ins) - idleIns
-	s.task = median(task)
-	s.wall = median(wall)
-	s.rss = median(rss)
+	s.Instructions = int64(median(ins))
+	s.WorkInstructions = s.Instructions - idleIns
+	s.TaskClockMs = median(task)
+	s.WallMs = median(wall)
+	s.PeakRSSKB = int64(median(rss))
+	if len(s.requests) > 0 {
+		s.Requests = s.requests[0]
+	}
 	return s
+}
+
+// environment records what else the numbers depend on, so a jump in the
+// history can be told apart from a code change.
+func environment() map[string]string {
+	env := map[string]string{}
+	if out, err := exec.Command("git", "-C", "..", "rev-parse", "HEAD").Output(); err == nil {
+		env["demo_commit"] = strings.TrimSpace(string(out))
+	}
+	if out, err := exec.Command("node", "--version").Output(); err == nil {
+		env["node"] = strings.TrimSpace(string(out))
+	}
+	if data, err := os.ReadFile("../node_modules/puppeteer-core/package.json"); err == nil {
+		var pkg struct {
+			Version string `json:"version"`
+		}
+		if json.Unmarshal(data, &pkg) == nil {
+			env["puppeteer"] = pkg.Version
+		}
+	}
+	if data, err := os.ReadFile("/proc/sys/kernel/osrelease"); err == nil {
+		env["kernel"] = strings.TrimSpace(string(data))
+	}
+	if data, err := os.ReadFile("/proc/cpuinfo"); err == nil {
+		for _, line := range strings.Split(string(data), "\n") {
+			if v, ok := strings.CutPrefix(line, "model name"); ok {
+				env["cpu"] = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(v), ":"))
+				break
+			}
+		}
+	}
+	return env
 }
 
 func pct(base, v float64) float64 {
@@ -602,32 +678,16 @@ func pct(base, v float64) float64 {
 
 // report prints one line per scenario and binary, with the delta to the
 // first binary, and returns whether a gate failed.
-func report(w io.Writer, selected []scenario, bins []bin, all []result, maxIns, maxWall float64) bool {
-	idle := map[string]float64{}
-	for _, b := range bins {
-		var v []float64
-		for _, r := range all {
-			if r.Scenario == "idle" && r.Bin == b.name {
-				v = append(v, float64(r.Instructions))
-			}
-		}
-		idle[b.name] = median(v)
-	}
-
+func report(w io.Writer, selected []scenario, bins []bin, sums map[string]map[string]summary, maxIns, maxWall float64) bool {
 	failed := false
 	fmt.Fprintf(w, "%-11s %-10s %12s %8s %9s %8s %9s %8s %7s %5s\n",
 		"scenario", "bin", "work Mins", "Δ%", "task ms", "wall ms", "Δ%", "rss MB", "Δ%", "reqs")
 	for _, sc := range selected {
-		var base summary
+		base := sums[bins[0].name][sc.name]
 		for i, b := range bins {
-			s := summarize(all, sc.name, b.name, idle[b.name])
-			if sc.name == "idle" {
-				s.work = idle[b.name]
-			}
-			if i == 0 {
-				base = s
-			}
-			dIns, dWall, dRSS := pct(base.work, s.work), pct(base.wall, s.wall), pct(base.rss, s.rss)
+			s := sums[b.name][sc.name]
+			work, baseWork := float64(s.WorkInstructions), float64(base.WorkInstructions)
+			dIns, dWall, dRSS := pct(baseWork, work), pct(base.WallMs, s.WallMs), pct(float64(base.PeakRSSKB), float64(s.PeakRSSKB))
 
 			mark := ""
 			if i > 0 {
@@ -644,12 +704,8 @@ func report(w io.Writer, selected []scenario, bins []bin, all []result, maxIns, 
 			if mark != "" {
 				failed = true
 			}
-			reqs := "-"
-			if len(s.requests) > 0 {
-				reqs = strconv.FormatInt(s.requests[0], 10)
-			}
-			fmt.Fprintf(w, "%-11s %-10s %12.1f %+7.2f%% %9.0f %8.0f %+8.1f%% %8.1f %+6.1f%% %5s%s\n",
-				sc.name, b.name, s.work/1e6, dIns, s.task, s.wall, dWall, s.rss/1024, dRSS, reqs, mark)
+			fmt.Fprintf(w, "%-11s %-10s %12.1f %+7.2f%% %9.0f %8.0f %+8.1f%% %8.1f %+6.1f%% %5d%s\n",
+				sc.name, b.name, work/1e6, dIns, s.TaskClockMs, s.WallMs, dWall, float64(s.PeakRSSKB)/1024, dRSS, s.Requests, mark)
 		}
 	}
 	return failed
