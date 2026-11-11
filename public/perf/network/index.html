@@ -1,0 +1,54 @@
+<!doctype html>
+<html><head>
+<title>perf: network</title>
+<script>
+// Every subresource is delayed 40ms by the perf server. A browser that
+// fetches in parallel finishes in a few round trips, a serial one in ~20.
+window.__perf = new Promise(r => window.__resolve = r);
+</script>
+<link rel="stylesheet" href="a.css?delay=40">
+<link rel="stylesheet" href="b.css?delay=40">
+<link rel="stylesheet" href="c.css?delay=40">
+<script src="s1.js?delay=40"></script>
+<link rel="stylesheet" href="d.css?delay=40">
+<link rel="stylesheet" href="e.css?delay=40">
+<script src="s2.js?delay=40"></script>
+<script src="s3.js?delay=40"></script>
+<script defer src="d1.js?delay=40"></script>
+<script defer src="d2.js?delay=40"></script>
+<script async src="a1.js?delay=40"></script>
+<script async src="a2.js?delay=40"></script>
+<script type="module" src="m1.js?delay=40"></script>
+</head><body>
+<h1 class="sheet-a">network</h1>
+<p>Body content parsed after the head resources.</p>
+<img src="../../campfire-commerce/images/bottle_000.jpg?delay=40" alt="bottle">
+<img src="../../campfire-commerce/images/cart.png?delay=40" alt="cart">
+<img src="../../campfire-commerce/images/loading.gif?delay=40" alt="loading">
+<link rel="stylesheet" href="f.css?delay=40">
+<script src="s4.js?delay=40"></script>
+<script>
+// Script-inserted scripts, the way tag managers load things.
+for (const n of ['x1', 'x2']) {
+  const s = document.createElement('script');
+  s.src = n + '.js?delay=40';
+  document.head.appendChild(s);
+}
+window.addEventListener('load', async () => {
+  const xhr = () => new Promise((resolve, reject) => {
+    const x = new XMLHttpRequest();
+    x.open('GET', 'data.json?delay=40');
+    x.onload = () => resolve(JSON.parse(x.responseText));
+    x.onerror = reject;
+    x.send();
+  });
+  const res = await Promise.all([fetch('data.json?delay=40').then(r => r.json()), xhr(), xhr()]);
+  window.__resolve({
+    scripts: window.__ran.length,
+    sheets: document.styleSheets.length,
+    fetched: res.length,
+    images: Array.from(document.images).filter(i => i.naturalWidth > 0).length,
+  });
+});
+</script>
+</body></html>

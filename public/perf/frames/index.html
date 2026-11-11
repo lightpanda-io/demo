@@ -1,0 +1,64 @@
+<!doctype html>
+<html><head>
+<title>perf: frames</title>
+<link rel="stylesheet" href="frame.css">
+<script>
+// iframes (src, nested, srcdoc, blank + document.write like ad slots), a
+// dedicated worker, and postMessage round trips between all of them.
+// Needs --load-resources iframe --load-resources worker.
+window.__perf = new Promise(r => window.__resolve = r);
+const state = { ready: 0, pongs: 0, worker: 0 };
+const EXPECTED_READY = 6; // 3 src + 1 nested + 2 srcdoc
+const PINGS = 20;
+let workerDone = false;
+const frames = [];
+
+function maybeDone() {
+  if (state.ready === EXPECTED_READY && state.pongs === frames.length * PINGS && workerDone) {
+    window.__resolve(state);
+  }
+}
+
+window.addEventListener('message', (e) => {
+  const d = e.data;
+  if (d.ready !== undefined) {
+    state.ready++;
+    // srcdoc frames don't ping back to keep the count simple: they only report ready.
+    if (d.ping) frames.push(e.source);
+    if (state.ready === EXPECTED_READY) {
+      for (const f of frames) for (let i = 0; i < PINGS; i++) f.postMessage({ ping: i }, '*');
+    }
+  } else if (d.pong !== undefined) {
+    state.pongs++;
+  }
+  maybeDone();
+});
+
+const worker = new Worker('worker.js');
+worker.onmessage = (e) => {
+  state.worker++;
+  if (e.data.n < 49) worker.postMessage({ n: e.data.n + 1 });
+  else { workerDone = true; maybeDone(); }
+};
+worker.postMessage({ n: 0 });
+</script>
+</head><body>
+<h1>frames</h1>
+<iframe src="child.html?i=0&nest=1"></iframe>
+<iframe src="child.html?i=1"></iframe>
+<iframe src="child.html?i=2"></iframe>
+<iframe srcdoc="<p>srcdoc a</p><script>parent.postMessage({ready: 'srcdoc-a'}, '*')</script>"></iframe>
+<iframe srcdoc="<ul><li>one<li>two</ul><script>parent.postMessage({ready: 'srcdoc-b'}, '*')</script>"></iframe>
+<iframe id="ad1"></iframe>
+<iframe id="ad2"></iframe>
+<iframe></iframe>
+<script>
+// Ad-slot pattern: write markup and a script into blank iframes.
+for (const id of ['ad1', 'ad2']) {
+  const doc = document.getElementById(id).contentDocument;
+  doc.open();
+  doc.write('<div class="ad"><a href="#">ad ' + id + '</a></div><script>window.x = document.querySelectorAll("div").length<\/script>');
+  doc.close();
+}
+</script>
+</body></html>

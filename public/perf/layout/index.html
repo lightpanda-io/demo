@@ -1,0 +1,71 @@
+<!doctype html>
+<html><head><title>perf: layout</title>
+<script src="../common.js"></script>
+</head><body>
+<script>
+// Geometry reads mixed with mutations (the layout-bench scenarios), then an
+// IntersectionObserver over many targets while scrolling.
+(async () => {
+  addStylesheet(300);
+  const { main, sections } = buildDocument(3000);
+  const all = document.querySelectorAll('*');
+  const firstList = sections[0].querySelector('ul');
+  const lastList = sections[sections.length - 1].querySelector('ul');
+  const cards = Array.from(document.querySelectorAll('li.item'));
+  let sink = 0;
+
+  // Append, read the new element's top.
+  for (let i = 0; i < 100; i++) {
+    const d = document.createElement('div');
+    lastList.appendChild(d);
+    sink += d.getBoundingClientRect().top;
+  }
+  // Infinite scroll: append, read the document height.
+  for (let i = 0; i < 100; i++) {
+    lastList.appendChild(document.createElement('li'));
+    sink += document.documentElement.scrollHeight;
+  }
+  // Change near the top, read something at the bottom.
+  const last = all[all.length - 1];
+  for (let i = 0; i < 100; i++) {
+    firstList.classList.toggle('x1');
+    sink += last.getBoundingClientRect().top + main.offsetHeight;
+  }
+  // Every element's rect once.
+  for (const el of all) sink += el.getBoundingClientRect().height;
+  // matchHeight by row: write, read per card.
+  const rows = new Map();
+  for (const card of cards) {
+    card.style.height = 'auto';
+    const top = Math.round(card.getBoundingClientRect().top);
+    rows.set(top, Math.max(rows.get(top) || 0, card.offsetHeight));
+  }
+  for (const card of cards) card.style.height = rows.get(Math.round(card.getBoundingClientRect().top)) + 'px';
+  // Width writes, width reads.
+  cards.forEach((card, i) => {
+    card.style.width = (100 + (i % 50)) + 'px';
+    sink += card.offsetWidth + card.clientWidth;
+  });
+  // A 300-deep chain.
+  let leaf = main;
+  for (let i = 0; i < 300; i++) leaf = leaf.appendChild(document.createElement('div'));
+  for (let i = 0; i < 50; i++) {
+    leaf.appendChild(document.createElement('span'));
+    sink += leaf.getBoundingClientRect().top;
+  }
+
+  // Lazy-loading / impression tracking: observe many targets, scroll.
+  let records = 0;
+  const io = new IntersectionObserver((entries) => { records += entries.length; });
+  for (let i = 0; i < cards.length; i += 3) io.observe(cards[i]);
+  await nextFrame();
+  const height = document.documentElement.scrollHeight;
+  for (let i = 1; i <= 20; i++) {
+    window.scrollTo(0, (height * i) / 20);
+    await nextFrame();
+  }
+  io.disconnect();
+  window.__resolve({ n: all.length, records, sink: Math.round(sink) });
+})();
+</script>
+</body></html>
