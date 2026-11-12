@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><title>perf: dom</title>
+<script src="../common.js"></script>
+</head><body>
+<script>
+// DOM churn as frameworks do it: innerHTML, clone, remove, selectors,
+// MutationObserver, tree walks, serialization.
+(async () => {
+  addStylesheet(100);
+  const { main } = buildDocument(4000);
+  let sink = 0;
+
+  let tpl = '';
+  for (let i = 0; i < 400; i++) {
+    tpl += `<div class="row r${i % 10}" data-id="${i}"><span class="name">item ${i}</span><a href="/x/${i}">open</a><input value="${i}"></div>`;
+  }
+  const host = document.createElement('div');
+  document.body.appendChild(host);
+  for (let i = 0; i < 20; i++) {
+    host.innerHTML = tpl;
+    sink += host.childElementCount;
+  }
+
+  for (let i = 0; i < 10; i++) {
+    const copy = main.cloneNode(true);
+    document.body.appendChild(copy);
+    sink += copy.querySelectorAll('li').length;
+    copy.remove();
+  }
+
+  const selectors = ['li.item > a', '.sec:nth-child(odd) span', 'main ul.row li:last-child',
+    '[data-id]', 'section h2 + ul', 'a[href^="/x/1"]', '.item:not(:first-child)', 'ul > li ~ li span'];
+  for (let i = 0; i < 20; i++) {
+    for (const s of selectors) sink += document.querySelectorAll(s).length;
+    sink += document.getElementsByClassName('item').length;
+    if (document.querySelector('.r9 .name')) sink++;
+  }
+
+  let records = 0;
+  const mo = new MutationObserver((list) => { records += list.length; });
+  mo.observe(document.body, { subtree: true, childList: true, attributes: true, characterData: true });
+  const rows = host.children;
+  await eachTask(20, (t) => {
+    for (let i = 0; i < 100; i++) {
+      const row = rows[(t * 100 + i) % rows.length];
+      row.setAttribute('data-state', String(t));
+      row.firstChild.textContent = 'item ' + t;
+      row.appendChild(document.createElement('b'));
+    }
+  });
+  mo.disconnect();
+
+  for (let i = 0; i < 10; i++) {
+    const w = document.createTreeWalker(document.body, NodeFilter.SHOW_ELEMENT);
+    while (w.nextNode()) sink++;
+    sink += main.textContent.length + main.outerHTML.length;
+  }
+
+  for (let i = 0; i < 5; i++) {
+    const frag = document.createDocumentFragment();
+    for (let k = 0; k < 500; k++) {
+      const li = document.createElement('li');
+      li.className = 'item extra';
+      li.textContent = 'extra ' + k;
+      frag.appendChild(li);
+    }
+    main.appendChild(frag);
+    for (const li of main.querySelectorAll('li.extra')) li.remove();
+  }
+  window.__resolve({ records, sink });
+})();
+</script>
+</body></html>

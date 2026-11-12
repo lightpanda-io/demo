@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><title>perf: cdp</title>
+<script src="../common.js"></script>
+</head><body>
+<script>
+// A content page for agent-style CDP calls: article text, nav, a table,
+// forms and lists. The driver does the CDP work; this only builds the page.
+(() => {
+  addStylesheet(50);
+  let html = '<header><nav><ul>';
+  for (let i = 0; i < 30; i++) html += `<li><a href="/nav/${i}">Nav ${i}</a></li>`;
+  html += '</ul></nav></header><main><article><h1>Article title</h1>';
+  for (let s = 0; s < 40; s++) {
+    html += `<section><h2>Section ${s}</h2>`;
+    for (let p = 0; p < 5; p++) {
+      html += `<p>Paragraph ${p} of section ${s} with <a href="/s/${s}/${p}">a link</a>, <strong>bold</strong> and <em>emphasis</em> text that goes on for a while to look like prose.</p>`;
+    }
+    html += `<ul>${'<li>bullet item</li>'.repeat(5)}</ul>`;
+    if (s % 5 === 0) {
+      html += '<table><thead><tr><th>Name</th><th>Value</th><th>Note</th></tr></thead><tbody>';
+      for (let r = 0; r < 10; r++) html += `<tr><td>row ${r}</td><td>${r * s}</td><td>note</td></tr>`;
+      html += '</tbody></table>';
+    }
+    if (s % 8 === 0) {
+      html += `<form><label>Name <input name="n${s}"></label><label>Email <input type="email" name="e${s}"></label>
+        <select name="s${s}"><option>a</option><option>b</option></select>
+        <textarea name="t${s}"></textarea><button type="submit">Send</button></form>`;
+    }
+    html += '</section>';
+  }
+  html += '</article><aside role="complementary"><h2>Related</h2>';
+  for (let i = 0; i < 20; i++) html += `<div class="card"><img alt="thumb ${i}" src="data:,"><a href="/r/${i}">Related ${i}</a></div>`;
+  html += '</aside></main><footer><p>footer</p></footer>';
+  document.body.insertAdjacentHTML('beforeend', html);
+  window.__resolve({ n: document.querySelectorAll('*').length });
+})();
+</script>
+</body></html>

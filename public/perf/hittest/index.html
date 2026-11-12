@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head><title>perf: hittest</title>
+<script src="../common.js"></script>
+<style>
+header { position: fixed; top: 0; left: 0; right: 0; height: 40px; }
+.grid { display: flex; flex-wrap: wrap; }
+.grid button { width: 90px; height: 30px; margin: 2px; }
+.overlay { position: absolute; top: 300px; left: 100px; width: 200px; height: 100px; pointer-events: none; }
+.card { position: relative; padding: 4px; }
+.card .badge { position: absolute; top: 0; right: 0; }
+</style>
+</head><body>
+<header><a href="#">home</a> <button>menu</button></header>
+<div class="overlay"></div>
+<script>
+// elementFromPoint / elementsFromPoint over a mixed page (fixed header,
+// absolute overlay, flex grid, nested cards), before and after mutations.
+// The driver then clicks and hovers 60 buttons through CDP Input events,
+// at the center of the box lightpanda reports (DOM.getBoxModel).
+(async () => {
+  addStylesheet(200);
+  window.__clicks = 0;
+  const grid = document.createElement('div');
+  grid.className = 'grid';
+  for (let i = 0; i < 400; i++) {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `<button id="b${i}"><span>btn</span> ${i}</button><i class="badge">${i % 9}</i>`;
+    grid.appendChild(card);
+  }
+  document.body.appendChild(grid);
+  grid.addEventListener('click', (e) => { if (e.target.closest('button')) window.__clicks++; });
+  buildDocument(2000);
+
+  let hits = 0, stack = 0;
+  for (let i = 0; i < 2000; i++) {
+    if (document.elementFromPoint(rand() * 1900, rand() * 1500)) hits++;
+  }
+  for (let i = 0; i < 100; i++) stack += document.elementsFromPoint(rand() * 1900, rand() * 1500).length;
+  // A click after a DOM change: mutate, then hit test.
+  for (let i = 0; i < 200; i++) {
+    grid.children[i].classList.toggle('wide');
+    if (document.elementFromPoint(rand() * 1900, rand() * 1500)) hits++;
+  }
+  window.__resolve({ hits, stack });
+})();
+</script>
+</body></html>

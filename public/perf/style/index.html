@@ -1,0 +1,73 @@
+<!doctype html>
+<html><head><title>perf: style</title>
+<script src="../common.js"></script>
+</head><body>
+<script>
+// Style invalidation and cascade: class toggles, inline style writes,
+// CSS-in-JS rule insertion, <style> churn and custom properties, each
+// followed by a read, spread over tasks. Animation rules are present so
+// --experimental-features animation has work to do (style-anim scenario).
+(async () => {
+  let anim = '@keyframes spin{to{opacity:0}}\n.spinner{animation:spin 1s infinite linear}\n';
+  for (let i = 0; i < 50; i++) {
+    anim += `@keyframes a${i}{to{opacity:0}}\n.anim-${i}{animation-name:a${i};animation-duration:.5s}\n`;
+  }
+  addStylesheet(200, anim);
+  const { main } = buildDocument(5000);
+  const cards = Array.from(document.querySelectorAll('li.item'));
+  const sheet = new CSSStyleSheet();
+  document.adoptedStyleSheets = [sheet];
+  const styled = document.createElement('style');
+  document.head.appendChild(styled);
+  let sink = 0;
+
+  // ?only=<step> runs one step, to find which one moved.
+  const only = new URLSearchParams(location.search).get('only');
+  const steps = {
+    // Sticky header / scroll lock: a class on body, then a visibility read.
+    body: (i) => {
+      document.body.classList.toggle('scrolled');
+      if (cards[(i * 7) % cards.length].checkVisibility()) sink++;
+    },
+    // Carousel: inline transforms, then a computed read.
+    inline: (i) => {
+      for (let k = 0; k < 20; k++) cards[(i * 20 + k) % cards.length].style.transform = `translateX(${i}px)`;
+      sink += getComputedStyle(cards[i]).display.length;
+    },
+    // Class changes on cards, some starting animations.
+    classes: (i) => {
+      cards[(i * 13) % cards.length].classList.toggle('anim-' + (i % 50));
+      cards[(i * 17) % cards.length].classList.toggle('hidden');
+    },
+    // styled-components: insertRule into one <style>, class on an element.
+    insert: (i) => {
+      styled.sheet.insertRule(`.sc-${i}{color:rgb(${i},0,0);padding:${i % 5}px}`, styled.sheet.cssRules.length);
+      cards[i].classList.add('sc-' + i);
+      sink += getComputedStyle(cards[i]).color.length;
+    },
+    // Constructable sheet edits.
+    replace: (i) => sheet.replaceSync(`.item:nth-child(${(i % 25) + 1}){outline:1px solid}`),
+    // emotion-like: a new <style> element every 10 tasks.
+    element: (i) => {
+      if (i % 10 !== 0) return;
+      const s = document.createElement('style');
+      s.textContent = `.gen${i} span{color:blue}`;
+      document.head.appendChild(s);
+    },
+    // Theming through custom properties.
+    custom: (i) => {
+      document.documentElement.style.setProperty('--accent', i % 2 ? 'red' : 'blue');
+      sink += getComputedStyle(cards[i]).getPropertyValue('--accent').length;
+    },
+  };
+  await eachTask(40, (i) => {
+    for (const [name, step] of Object.entries(steps)) {
+      if (only === null || only === name) step(i);
+    }
+  });
+  // Let animation events, if any, run.
+  await nextFrame();
+  window.__resolve({ n: document.querySelectorAll('*').length, sink });
+})();
+</script>
+</body></html>

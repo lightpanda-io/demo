@@ -1,0 +1,398 @@
+[
+  {
+    "scenario": "idle",
+    "bin": "local",
+    "round": 0,
+    "instructions": 50109608,
+    "task_clock_ms": 10.71,
+    "wall_ms": 11.967386,
+    "peak_rss_kb": 28008,
+    "requests": 0
+  },
+  {
+    "scenario": "idle",
+    "bin": "local",
+    "round": 1,
+    "instructions": 50048932,
+    "task_clock_ms": 13.09,
+    "wall_ms": 21.67672,
+    "peak_rss_kb": 29168,
+    "requests": 0
+  },
+  {
+    "scenario": "idle",
+    "bin": "local",
+    "round": 2,
+    "instructions": 50042168,
+    "task_clock_ms": 12.42,
+    "wall_ms": 14.338995,
+    "peak_rss_kb": 29292,
+    "requests": 0
+  },
+  {
+    "scenario": "campfire",
+    "bin": "local",
+    "round": 0,
+    "instructions": 903533652,
+    "task_clock_ms": 168.09,
+    "wall_ms": 192.19967800000003,
+    "peak_rss_kb": 37772,
+    "requests": 80,
+    "counters": {
+      "price": "$244.99",
+      "related": 3,
+      "reviews": 3
+    }
+  },
+  {
+    "scenario": "campfire",
+    "bin": "local",
+    "round": 1,
+    "instructions": 903517053,
+    "task_clock_ms": 159.5,
+    "wall_ms": 177.818061,
+    "peak_rss_kb": 38032,
+    "requests": 80,
+    "counters": {
+      "price": "$244.99",
+      "related": 3,
+      "reviews": 3
+    }
+  },
+  {
+    "scenario": "campfire",
+    "bin": "local",
+    "round": 2,
+    "instructions": 903710906,
+    "task_clock_ms": 164.19,
+    "wall_ms": 176.283345,
+    "peak_rss_kb": 38228,
+    "requests": 80,
+    "counters": {
+      "price": "$244.99",
+      "related": 3,
+      "reviews": 3
+    }
+  },
+  {
+    "scenario": "network",
+    "bin": "local",
+    "round": 0,
+    "instructions": 220900186,
+    "task_clock_ms": 81.91,
+    "wall_ms": 1916.559635,
+    "peak_rss_kb": 38732,
+    "requests": 130,
+    "counters": {
+      "fetched": 3,
+      "images": 3,
+      "scripts": 13,
+      "sheets": 6
+    }
+  },
+  {
+    "scenario": "network",
+    "bin": "local",
+    "round": 1,
+    "instructions": 220544589,
+    "task_clock_ms": 79.46,
+    "wall_ms": 1907.11709,
+    "peak_rss_kb": 38688,
+    "requests": 130,
+    "counters": {
+      "fetched": 3,
+      "images": 3,
+      "scripts": 13,
+      "sheets": 6
+    }
+  },
+  {
+    "scenario": "network",
+    "bin": "local",
+    "round": 2,
+    "instructions": 220641126,
+    "task_clock_ms": 78.42,
+    "wall_ms": 1910.446326,
+    "peak_rss_kb": 38892,
+    "requests": 130,
+    "counters": {
+      "fetched": 3,
+      "images": 3,
+      "scripts": 13,
+      "sheets": 6
+    }
+  },
+  {
+    "scenario": "frames",
+    "bin": "local",
+    "round": 0,
+    "instructions": 3973350172,
+    "task_clock_ms": 561.73,
+    "wall_ms": 373.8997739999999,
+    "peak_rss_kb": 56324,
+    "requests": 150,
+    "counters": {
+      "pongs": 60,
+      "ready": 6,
+      "worker": 50
+    }
+  },
+  {
+    "scenario": "frames",
+    "bin": "local",
+    "round": 1,
+    "instructions": 3978708985,
+    "task_clock_ms": 482.26,
+    "wall_ms": 312.075394,
+    "peak_rss_kb": 56328,
+    "requests": 150,
+    "counters": {
+      "pongs": 60,
+      "ready": 6,
+      "worker": 50
+    }
+  },
+  {
+    "scenario": "frames",
+    "bin": "local",
+    "round": 2,
+    "instructions": 3972873028,
+    "task_clock_ms": 438.11,
+    "wall_ms": 281.83074600000003,
+    "peak_rss_kb": 56812,
+    "requests": 150,
+    "counters": {
+      "pongs": 60,
+      "ready": 6,
+      "worker": 50
+    }
+  },
+  {
+    "scenario": "style",
+    "bin": "local",
+    "round": 0,
+    "instructions": 337355715,
+    "task_clock_ms": 66.4,
+    "wall_ms": 364.757166,
+    "peak_rss_kb": 50072,
+    "requests": 4,
+    "counters": {
+      "n": 5083,
+      "sink": 856
+    }
+  },
+  {
+    "scenario": "style",
+    "bin": "local",
+    "round": 1,
+    "instructions": 337382625,
+    "task_clock_ms": 66.9,
+    "wall_ms": 370.92198399999995,
+    "peak_rss_kb": 49352,
+    "requests": 4,
+    "counters": {
+      "n": 5083,
+      "sink": 856
+    }
+  },
+  {
+    "scenario": "style",
+    "bin": "local",
+    "round": 2,
+    "instructions": 337396669,
+    "task_clock_ms": 78.31,
+    "wall_ms": 384.030066,
+    "peak_rss_kb": 49292,
+    "requests": 4,
+    "counters": {
+      "n": 5083,
+      "sink": 856
+    }
+  },
+  {
+    "scenario": "layout",
+    "bin": "local",
+    "round": 0,
+    "instructions": 3062111727,
+    "task_clock_ms": 237.44,
+    "wall_ms": 441.128131,
+    "peak_rss_kb": 53044,
+    "requests": 4,
+    "counters": {
+      "n": 3050,
+      "records": 325,
+      "sink": 9387739
+    }
+  },
+  {
+    "scenario": "layout",
+    "bin": "local",
+    "round": 1,
+    "instructions": 3061993466,
+    "task_clock_ms": 181.83,
+    "wall_ms": 383.97965999999997,
+    "peak_rss_kb": 53264,
+    "requests": 4,
+    "counters": {
+      "n": 3050,
+      "records": 325,
+      "sink": 9387739
+    }
+  },
+  {
+    "scenario": "layout",
+    "bin": "local",
+    "round": 2,
+    "instructions": 3062285262,
+    "task_clock_ms": 177.15,
+    "wall_ms": 389.276528,
+    "peak_rss_kb": 53272,
+    "requests": 4,
+    "counters": {
+      "n": 3050,
+      "records": 325,
+      "sink": 9387739
+    }
+  },
+  {
+    "scenario": "hittest",
+    "bin": "local",
+    "round": 0,
+    "instructions": 2170635217,
+    "task_clock_ms": 150.83,
+    "wall_ms": 187.841021,
+    "peak_rss_kb": 50448,
+    "requests": 4,
+    "counters": {
+      "clicks": 40,
+      "hits": 335,
+      "stack": 49
+    }
+  },
+  {
+    "scenario": "hittest",
+    "bin": "local",
+    "round": 1,
+    "instructions": 2170373410,
+    "task_clock_ms": 135.12,
+    "wall_ms": 168.951703,
+    "peak_rss_kb": 50384,
+    "requests": 4,
+    "counters": {
+      "clicks": 40,
+      "hits": 335,
+      "stack": 49
+    }
+  },
+  {
+    "scenario": "hittest",
+    "bin": "local",
+    "round": 2,
+    "instructions": 2170481713,
+    "task_clock_ms": 136.71,
+    "wall_ms": 172.409522,
+    "peak_rss_kb": 50372,
+    "requests": 4,
+    "counters": {
+      "clicks": 40,
+      "hits": 335,
+      "stack": 49
+    }
+  },
+  {
+    "scenario": "dom",
+    "bin": "local",
+    "round": 0,
+    "instructions": 1785908398,
+    "task_clock_ms": 147.94,
+    "wall_ms": 267.625292,
+    "peak_rss_kb": 72368,
+    "requests": 4,
+    "counters": {
+      "records": 6001,
+      "sink": 1202700
+    }
+  },
+  {
+    "scenario": "dom",
+    "bin": "local",
+    "round": 1,
+    "instructions": 1785326089,
+    "task_clock_ms": 146.31,
+    "wall_ms": 256.738546,
+    "peak_rss_kb": 73264,
+    "requests": 4,
+    "counters": {
+      "records": 6001,
+      "sink": 1202700
+    }
+  },
+  {
+    "scenario": "dom",
+    "bin": "local",
+    "round": 2,
+    "instructions": 1785300464,
+    "task_clock_ms": 137.8,
+    "wall_ms": 255.24136299999998,
+    "peak_rss_kb": 73296,
+    "requests": 4,
+    "counters": {
+      "records": 6001,
+      "sink": 1202700
+    }
+  },
+  {
+    "scenario": "cdp",
+    "bin": "local",
+    "round": 0,
+    "instructions": 801653347,
+    "task_clock_ms": 80.78,
+    "wall_ms": 125.67718400000001,
+    "peak_rss_kb": 53772,
+    "requests": 10,
+    "counters": {
+      "ax": 3891,
+      "html": 69981,
+      "inter": 36579,
+      "md": 37988,
+      "n": 1683,
+      "tree": 454124
+    }
+  },
+  {
+    "scenario": "cdp",
+    "bin": "local",
+    "round": 1,
+    "instructions": 802332965,
+    "task_clock_ms": 89.38,
+    "wall_ms": 143.181789,
+    "peak_rss_kb": 53280,
+    "requests": 10,
+    "counters": {
+      "ax": 3891,
+      "html": 69981,
+      "inter": 36579,
+      "md": 37988,
+      "n": 1683,
+      "tree": 454124
+    }
+  },
+  {
+    "scenario": "cdp",
+    "bin": "local",
+    "round": 2,
+    "instructions": 801941303,
+    "task_clock_ms": 76.33,
+    "wall_ms": 131.694113,
+    "peak_rss_kb": 53384,
+    "requests": 10,
+    "counters": {
+      "ax": 3891,
+      "html": 69981,
+      "inter": 36579,
+      "md": 37988,
+      "n": 1683,
+      "tree": 454124
+    }
+  }
+]

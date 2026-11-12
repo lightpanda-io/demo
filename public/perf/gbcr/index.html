@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><title>perf: gbcr</title>
+<script src="../common.js"></script>
+</head><body>
+<div id="root"></div>
+<script>
+// Measuring every element of a wide page, as Shopify's Web Pixels Manager does
+// at DOMContentLoaded and for each added subtree (lightpanda#4576). One
+// parent with thousands of children, so a per-call cost that grows with
+// the preceding nodes or siblings turns a pass quadratic.
+(async () => {
+  const root = document.getElementById('root');
+  const card = (i) => {
+    const d = document.createElement('div');
+    d.innerHTML = '<span>item ' + i + '</span>';
+    return d;
+  };
+  for (let i = 0; i < 4000; i++) root.appendChild(card(i));
+  const all = Array.from(document.getElementsByTagName('*'));
+  let sink = 0;
+
+  // Cold pass in document order, then the same pass again.
+  for (const el of all) sink += el.getBoundingClientRect().top;
+  for (const el of all) sink += el.getBoundingClientRect().top;
+
+  // Append a card, measure its subtree.
+  for (let i = 0; i < 200; i++) {
+    const c = root.appendChild(card(4000 + i));
+    sink += c.getBoundingClientRect().top + c.firstChild.getBoundingClientRect().left;
+  }
+
+  // Many inline siblings in one line box.
+  const line = document.createElement('div');
+  for (let i = 0; i < 2000; i++) {
+    const s = document.createElement('span');
+    s.textContent = 'w' + i + ' ';
+    line.appendChild(s);
+  }
+  document.body.appendChild(line);
+  for (const s of line.children) sink += s.getBoundingClientRect().left;
+
+  // Observe every card.
+  const targets = Array.from(root.children);
+  let records = 0;
+  await new Promise((resolve) => {
+    const io = new IntersectionObserver((entries) => {
+      records += entries.length;
+      if (records >= targets.length) {
+        io.disconnect();
+        resolve();
+      }
+    });
+    for (const t of targets) io.observe(t);
+  });
+
+  window.__resolve({ n: all.length, records, sink: Math.round(sink) });
+})();
+</script>
+</body></html>
