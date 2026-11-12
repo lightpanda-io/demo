@@ -72,6 +72,7 @@ var scenarios = []scenario{
 	{name: "style-anim", flags: []string{"--experimental-features", "animation"}, iters: 2, gate: gateInstructions},
 	{name: "layout", iters: 2, gate: gateInstructions},
 	{name: "hittest", iters: 2, gate: gateInstructions},
+	{name: "gbcr", iters: 2, gate: gateInstructions},
 	{name: "dom", iters: 2, gate: gateInstructions},
 	{name: "cdp", iters: 5, gate: gateInstructions},
 }

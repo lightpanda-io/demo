@@ -66,6 +66,7 @@ with a single Runtime.evaluate and no polling.
 | style | class toggles, inline styles, insertRule, replaceSync, `<style>` churn, custom properties, each followed by a read; `?only=<step>` runs one step | instructions |
 | style-anim | same page with `--experimental-features animation` | instructions |
 | layout | geometry reads mixed with mutations, IntersectionObserver while scrolling | instructions |
+| gbcr | getBoundingClientRect over every element of one wide parent (4000 cards): cold pass, warm pass, append + measure, 2000 inline siblings, IntersectionObserver on every card (#4576) | instructions |
 | hittest | elementFromPoint / elementsFromPoint, then 40 clicks and 20 hovers through CDP Input events | instructions |
 | dom | innerHTML, cloneNode, selectors, MutationObserver, TreeWalker, serialization | instructions |
 | cdp | DOM.getDocument, AX tree, LP.getMarkdown / getSemanticTree / getInteractiveElements, page.content() | instructions |

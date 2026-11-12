@@ -74,6 +74,11 @@ const scenarios = {
   style: async (page) => perfPage(page, '/perf/style/'),
   'style-anim': async (page) => perfPage(page, '/perf/style/'),
   layout: async (page) => perfPage(page, '/perf/layout/'),
+  gbcr: async (page) => {
+    const res = await perfPage(page, '/perf/gbcr/');
+    check(res.n === 8007 && res.records === 4200, 'unexpected gbcr result', res);
+    return res;
+  },
   dom: async (page) => perfPage(page, '/perf/dom/'),
 
   // In-page elementFromPoint loops, then real clicks: puppeteer resolves the
