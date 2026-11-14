@@ -67,7 +67,7 @@ with a single Runtime.evaluate and no polling.
 | style-anim | same page with `--experimental-features animation` | instructions |
 | layout | geometry reads mixed with mutations, IntersectionObserver while scrolling | instructions |
 | gbcr | getBoundingClientRect over every element of one wide parent (4000 cards): cold pass, warm pass, append + measure, 2000 inline siblings, IntersectionObserver on every card (#4576) | instructions |
-| hittest | elementFromPoint / elementsFromPoint, then 40 clicks and 20 hovers through CDP Input events | instructions |
+| hittest | elementFromPoint / elementsFromPoint, then 40 clicks and 20 hovers through CDP Input events, on a page whose rules read `:focus` and `:focus-within` | instructions |
 | dom | innerHTML, cloneNode, selectors, MutationObserver, TreeWalker, serialization | instructions |
 | render | framework commits: components built off-DOM (detached attribute writes, innerHTML), batched inserts/removals/moves/text/class updates into live lists, form controls, keyed `:has`, then one measure phase | instructions |
 | cdp | DOM.getDocument, AX tree, LP.getMarkdown / getSemanticTree / getInteractiveElements, page.content() | instructions |
