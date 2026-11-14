@@ -80,6 +80,11 @@ const scenarios = {
     return res;
   },
   dom: async (page) => perfPage(page, '/perf/dom/'),
+  render: async (page) => {
+    const res = await perfPage(page, '/perf/render/');
+    check(res.rows > 0, 'unexpected render result', res);
+    return res;
+  },
 
   // In-page elementFromPoint loops, then real clicks: puppeteer resolves the
   // box, lightpanda hit-tests the dispatched mouse events.

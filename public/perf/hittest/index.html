@@ -8,6 +8,8 @@ header { position: fixed; top: 0; left: 0; right: 0; height: 40px; }
 .overlay { position: absolute; top: 300px; left: 100px; width: 200px; height: 100px; pointer-events: none; }
 .card { position: relative; padding: 4px; }
 .card .badge { position: absolute; top: 0; right: 0; }
+.card:focus-within .badge { height: 12px }
+button:focus + .badge { width: 20px }
 </style>
 </head><body>
 <header><a href="#">home</a> <button>menu</button></header>
@@ -17,6 +19,7 @@ header { position: fixed; top: 0; left: 0; right: 0; height: 40px; }
 // absolute overlay, flex grid, nested cards), before and after mutations.
 // The driver then clicks and hovers 60 buttons through CDP Input events,
 // at the center of the box lightpanda reports (DOM.getBoxModel).
+// Each click moves the focus, which the :focus and :focus-within rules read.
 (async () => {
   addStylesheet(200);
   window.__clicks = 0;

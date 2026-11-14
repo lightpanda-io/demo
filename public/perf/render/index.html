@@ -1,0 +1,120 @@
+<!doctype html>
+<html><head><title>perf: render</title>
+<script src="../common.js"></script>
+</head><body>
+<script>
+// Framework-style render commits, modeled on what the change audit saw on
+// real sites (airbnb, booking, amazon): components built off-DOM (attribute
+// writes and innerHTML on detached nodes), then a batched commit into live
+// lists (inserts, removals, moves, text and class updates, some form
+// controls), then one measure phase of geometry reads. One commit per task.
+(async () => {
+  addStylesheet(150, `
+    .form-control:disabled, .form-control[readonly] { opacity: .6 }
+    .btn-check:checked + .btn { color: red }
+    .was-validated .form-control:invalid ~ .invalid-feedback { display: block }
+    .invalid-feedback { display: none }
+    .card:has(> img) { padding: 4px }
+    .list > .row:first-child { margin-top: 0 }
+    .list > .row + .row { border-top: 1px solid }
+    .row.active { font-weight: bold }
+    .row.hidden { display: none }
+    .badge:empty { display: none }
+  `);
+  const { main } = buildDocument(2000);
+
+  const lists = [];
+  for (let l = 0; l < 8; l++) {
+    const list = document.createElement('div');
+    list.className = 'list';
+    main.appendChild(list);
+    lists.push(list);
+  }
+
+  let next = 0;
+  // A component built off-DOM: attribute writes on detached elements, a
+  // detached innerHTML, every few rows a form control.
+  function component() {
+    const id = next++;
+    const row = document.createElement('div');
+    row.className = 'row r' + (id % 20);
+    row.id = 'row-' + id;
+    row.setAttribute('data-id', String(id));
+    row.setAttribute('role', 'listitem');
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = '<span class="title">item ' + id + '</span><span class="badge"></span><a href="/x/' + id + '">open</a>';
+    if (id % 4 === 0) {
+      const img = document.createElement('img');
+      img.setAttribute('width', '40');
+      img.setAttribute('height', '40');
+      card.insertBefore(img, card.firstChild);
+    }
+    row.appendChild(card);
+    if (id % 5 === 0) {
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.className = 'form-control';
+      input.required = true;
+      row.appendChild(input);
+      const feedback = document.createElement('div');
+      feedback.className = 'invalid-feedback';
+      feedback.textContent = 'required';
+      row.appendChild(feedback);
+    }
+    return row;
+  }
+
+  for (const list of lists) {
+    for (let i = 0; i < 40; i++) list.appendChild(component());
+  }
+
+  let sink = 0;
+  await eachTask(60, (t) => {
+    // Commit: a few lists change per task, as a framework batches its updates.
+    for (let k = 0; k < 3; k++) {
+      const list = lists[Math.floor(rand() * lists.length)];
+      const rows = list.children;
+      for (let i = 0; i < 4; i++) {
+        const ref = rows[Math.floor(rand() * rows.length)] || null;
+        list.insertBefore(component(), ref);
+      }
+      for (let i = 0; i < 3; i++) {
+        const row = rows[Math.floor(rand() * rows.length)];
+        if (row) row.remove();
+      }
+      // reorder: move a row to the front
+      const moved = rows[Math.floor(rand() * rows.length)];
+      if (moved) list.insertBefore(moved, list.firstChild);
+      for (let i = 0; i < 8; i++) {
+        const row = rows[Math.floor(rand() * rows.length)];
+        if (!row) continue;
+        const title = row.querySelector('.title');
+        if (title) title.textContent = 'item ' + t + '.' + i;
+        const badge = row.querySelector('.badge');
+        if (badge) badge.textContent = i % 2 ? String(t) : '';
+      }
+      for (let i = 0; i < 4; i++) {
+        const row = rows[Math.floor(rand() * rows.length)];
+        if (row) row.classList.toggle(i % 2 ? 'active' : 'hidden');
+      }
+      const styled = rows[Math.floor(rand() * rows.length)];
+      if (styled) styled.style.transform = 'translateX(' + t + 'px)';
+    }
+    if (t % 10 === 0) main.classList.toggle('was-validated');
+
+    // Measure: what virtualized lists, sticky headers and tooltips read
+    // after a commit.
+    for (let i = 0; i < 5; i++) {
+      const list = lists[(t + i) % lists.length];
+      const last = list.lastElementChild;
+      if (last) sink += last.getBoundingClientRect().top;
+      sink += list.offsetHeight;
+    }
+    sink += document.documentElement.scrollHeight;
+  });
+
+  window.__resolve({ rows: main.querySelectorAll('.row').length, sink: Math.round(sink) });
+})();
+</script>
+</body></html>
