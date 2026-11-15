@@ -36,6 +36,14 @@ cd perf
 go run . -bin main=/path/to/main/lightpanda,pr=/path/to/pr/lightpanda [-rounds 3] [-scenarios style,layout] [-out results.json] [-v]
 ```
 
+`-args name=ARGS` adds `serve` arguments to the `-bin` with that name
+(repeatable; quotes group a value with spaces). The same binary under two
+names compares flags:
+
+```
+go run . -bin on=./lightpanda,off=./lightpanda -args 'off=--v8-initial-heap-mb 0'
+```
+
 The first binary is the baseline. Rounds run the binaries interleaved. For
 each run, the harness starts `perf stat -e instructions:u,task-clock --
 lightpanda serve`, drives one scenario with `driver.js` (puppeteer), reads

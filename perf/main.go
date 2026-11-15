@@ -83,8 +83,65 @@ var scenarios = []scenario{
 type bin struct {
 	name string
 	path string
+	args []string // extra `serve` arguments, from -args
 	addr string
 	pid  int
+}
+
+// binArgs collects repeatable `-args name=ARGS` values.
+type binArgs map[string][]string
+
+func (a binArgs) String() string { return fmt.Sprint(map[string][]string(a)) }
+
+func (a binArgs) Set(v string) error {
+	name, rest, ok := strings.Cut(v, "=")
+	if !ok || name == "" {
+		return errors.New("want name=ARGS")
+	}
+	args, err := splitArgs(rest)
+	if err != nil {
+		return err
+	}
+	a[name] = append(a[name], args...)
+	return nil
+}
+
+// splitArgs splits on whitespace; single or double quotes group a value with
+// spaces in it, e.g. --v8-flags-unsafe "--trace-gc --trace-gc-nvp".
+func splitArgs(s string) ([]string, error) {
+	var args []string
+	var cur strings.Builder
+	var quote rune
+	inArg := false
+	for _, r := range s {
+		switch {
+		case quote != 0:
+			if r == quote {
+				quote = 0
+			} else {
+				cur.WriteRune(r)
+			}
+		case r == '\'' || r == '"':
+			quote = r
+			inArg = true
+		case r == ' ' || r == '\t' || r == '\n':
+			if inArg {
+				args = append(args, cur.String())
+				cur.Reset()
+				inArg = false
+			}
+		default:
+			cur.WriteRune(r)
+			inArg = true
+		}
+	}
+	if quote != 0 {
+		return nil, errors.New("unterminated quote")
+	}
+	if inArg {
+		args = append(args, cur.String())
+	}
+	return args, nil
 }
 
 type result struct {
@@ -121,6 +178,8 @@ func run() error {
 		verbose   = flag.Bool("v", false, "print every run")
 		publicDir = flag.String("public", "../public", "directory served over http")
 	)
+	extraArgs := binArgs{}
+	flag.Var(extraArgs, "args", "extra serve arguments for one -bin, as name=ARGS; repeatable, quotes group, e.g. -args 'nogc=--v8-initial-heap-mb 0'")
 	flag.Parse()
 
 	selected, err := selectScenarios(*only)
@@ -149,6 +208,9 @@ func run() error {
 		if err != nil {
 			return err
 		}
+		if len(extraArgs) > 0 {
+			return errors.New("-args needs -bin: with -connect, pass them to the running browser")
+		}
 		bins = []bin{{name: *name, addr: *connect, pid: pid}}
 		selected = slices.DeleteFunc(selected, func(sc scenario) bool {
 			if len(sc.flags) > 0 {
@@ -157,7 +219,7 @@ func run() error {
 			}
 			return false
 		})
-	} else if bins, err = parseBins(*binsFlag); err != nil {
+	} else if bins, err = parseBins(*binsFlag, extraArgs); err != nil {
 		return err
 	}
 	if _, err := exec.LookPath("perf"); err != nil {
@@ -194,7 +256,13 @@ func run() error {
 
 	sums := summarizeAll(selected, bins, all)
 	if *out != "" {
-		data, err := json.MarshalIndent(output{Env: environment(), Runs: all, Summary: sums}, "", "  ")
+		env := environment()
+		for _, b := range bins {
+			if len(b.args) > 0 {
+				env["args_"+b.name] = strings.Join(b.args, " ")
+			}
+		}
+		data, err := json.MarshalIndent(output{Env: env, Runs: all, Summary: sums}, "", "  ")
 		if err != nil {
 			return err
 		}
@@ -209,7 +277,7 @@ func run() error {
 	return nil
 }
 
-func parseBins(s string) ([]bin, error) {
+func parseBins(s string, extraArgs binArgs) ([]bin, error) {
 	if s == "" {
 		return nil, errors.New("-bin or -connect is required")
 	}
@@ -227,7 +295,15 @@ func parseBins(s string) ([]bin, error) {
 		if _, err := os.Stat(abs); err != nil {
 			return nil, err
 		}
-		bins = append(bins, bin{name: name, path: abs})
+		if slices.ContainsFunc(bins, func(b bin) bool { return b.name == name }) {
+			return nil, fmt.Errorf("-bin: duplicate name %q", name)
+		}
+		bins = append(bins, bin{name: name, path: abs, args: extraArgs[name]})
+	}
+	for name := range extraArgs {
+		if !slices.ContainsFunc(bins, func(b bin) bool { return b.name == name }) {
+			return nil, fmt.Errorf("-args %s: no -bin named %q", name, name)
+		}
 	}
 	return bins, nil
 }
@@ -302,6 +378,7 @@ func runOne(sc scenario, b bin, round int, baseURL string, srv *server) (result,
 	args := []string{"stat", "-x,", "-o", tmp.Name(), "-e", "instructions:u,task-clock", "--",
 		b.path, "serve", "--log-level", "fatal", "--host", "127.0.0.1", "--port", strconv.Itoa(port)}
 	args = append(args, sc.flags...)
+	args = append(args, b.args...)
 	cmd := exec.Command("perf", args...)
 	// Own process group, so cleanup also reaches lightpanda under perf.
 	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
