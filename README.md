@@ -20,6 +20,8 @@ You can find script examples to use the browser with different librairies.
   driven by Puppeteer over the `/session` endpoint rather than CDP.
 * `chromedp/` contains [chromedp](https://github.com/chromedp/chromedp) examples in Go.
 * `rod/` contains [go-rod](https://github.com/go-rod/rod) examples in Go.
+* `e2e/` contains an [e2e](https://e2e.com) test suite in TypeScript, run with the
+  `@e2e-dev/lightpanda` provider.
 
 ## Tests
 
