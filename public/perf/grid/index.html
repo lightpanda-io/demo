@@ -1,0 +1,79 @@
+<!doctype html>
+<html><head><title>perf: grid</title>
+<script src="../common.js"></script>
+<style>
+  #list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .card { display: grid; gap: 8px; }
+  .card .img { height: 120px; }
+  #page { display: grid; grid-template-columns: repeat(12, 1fr); }
+  .full { grid-column: 1 / -1; }
+  .half { grid-column: span 6; }
+  .third { grid-column: span 4; }
+  .quarter { grid-column: span 3; }
+  #tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+</style>
+</head><body>
+<div id="list"></div>
+<div id="page"></div>
+<div id="tiles"></div>
+<script>
+// Grids as product listings and news pages build them: a wrapping grid of
+// cards that are themselves single-column grids, a 12-column page grid whose
+// items span columns, and an auto-fill grid of tiles. Measured in document
+// order (each item's top depends on the rows before it, so a per-call walk
+// from the first item turns a pass quadratic), after height changes in early
+// rows, and while appending.
+(async () => {
+  const list = document.getElementById('list');
+  const card = (i) => {
+    const c = document.createElement('div');
+    c.className = 'card';
+    c.innerHTML = '<div class="img"></div><h3>Product ' + i + '</h3><span>$' + (i % 100) + '.99</span>';
+    return c;
+  };
+  for (let i = 0; i < 3000; i++) list.appendChild(card(i));
+
+  const page = document.getElementById('page');
+  const spans = ['full', 'half', 'half', 'third', 'third', 'third', 'quarter', 'quarter', 'quarter', 'quarter'];
+  for (let i = 0; i < 400; i++) {
+    const d = document.createElement('div');
+    d.className = spans[i % spans.length];
+    d.innerHTML = '<p>Story ' + i + '</p>';
+    page.appendChild(d);
+  }
+
+  const tiles = document.getElementById('tiles');
+  for (let i = 0; i < 1000; i++) {
+    const t = document.createElement('div');
+    t.textContent = 'tile ' + i;
+    tiles.appendChild(t);
+  }
+
+  const all = Array.from(document.getElementsByTagName('*'));
+  let sink = 0;
+
+  // Cold pass in document order, then the same pass again.
+  for (const el of all) sink += el.getBoundingClientRect().top;
+  for (const el of all) sink += el.getBoundingClientRect().top;
+
+  // An early row grows: the rows below it move. Read the last card each time.
+  const cards = list.children;
+  for (let i = 0; i < 50; i++) {
+    cards[i * 40].firstChild.style.height = (130 + i) + 'px';
+    sink += cards[cards.length - 1].getBoundingClientRect().top;
+  }
+
+  // Append a card, measure its subtree.
+  for (let i = 0; i < 200; i++) {
+    const c = list.appendChild(card(3000 + i));
+    for (const el of c.children) sink += el.getBoundingClientRect().top;
+  }
+
+  // Every page-grid item, last first.
+  const stories = Array.from(page.children).reverse();
+  for (const el of stories) sink += el.getBoundingClientRect().top;
+
+  window.__resolve({ n: all.length, cards: cards.length, sink: Math.round(sink) });
+})();
+</script>
+</body></html>

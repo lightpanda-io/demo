@@ -73,6 +73,7 @@ var scenarios = []scenario{
 	{name: "layout", iters: 2, gate: gateInstructions},
 	{name: "hittest", iters: 2, gate: gateInstructions},
 	{name: "gbcr", iters: 2, gate: gateInstructions},
+	{name: "grid", iters: 2, gate: gateInstructions},
 	{name: "dom", iters: 2, gate: gateInstructions},
 	{name: "render", iters: 2, gate: gateInstructions},
 	{name: "cdp", iters: 5, gate: gateInstructions},
