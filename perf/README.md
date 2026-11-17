@@ -36,6 +36,14 @@ cd perf
 go run . -bin main=/path/to/main/lightpanda,pr=/path/to/pr/lightpanda [-rounds 3] [-scenarios style,layout] [-out results.json] [-v]
 ```
 
+`-args name=ARGS` adds `serve` arguments to the `-bin` with that name
+(repeatable; quotes group a value with spaces). The same binary under two
+names compares flags:
+
+```
+go run . -bin on=./lightpanda,off=./lightpanda -args 'off=--v8-initial-heap-mb 0'
+```
+
 The first binary is the baseline. Rounds run the binaries interleaved. For
 each run, the harness starts `perf stat -e instructions:u,task-clock --
 lightpanda serve`, drives one scenario with `driver.js` (puppeteer), reads
@@ -67,6 +75,7 @@ with a single Runtime.evaluate and no polling.
 | style-anim | same page with `--experimental-features animation` | instructions |
 | layout | geometry reads mixed with mutations, IntersectionObserver while scrolling | instructions |
 | gbcr | getBoundingClientRect over every element of one wide parent (4000 cards): cold pass, warm pass, append + measure, 2000 inline siblings, IntersectionObserver on every card (#4576) | instructions |
+| grid | getBoundingClientRect over grids that wrap: 3000 cards (each a single-column grid) in a 4-column grid, a 12-column grid of spanning items, an auto-fill grid; cold and warm passes, early rows growing, append + measure, reverse pass | instructions |
 | hittest | elementFromPoint / elementsFromPoint, then 40 clicks and 20 hovers through CDP Input events, on a page whose rules read `:focus` and `:focus-within` | instructions |
 | dom | innerHTML, cloneNode, selectors, MutationObserver, TreeWalker, serialization | instructions |
 | render | framework commits: components built off-DOM (detached attribute writes, innerHTML), batched inserts/removals/moves/text/class updates into live lists, form controls, keyed `:has`, then one measure phase | instructions |
