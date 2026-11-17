@@ -1,0 +1,16 @@
+{
+  "name": "e2e-lightpanda",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test:e2e": "e2e run"
+  },
+  "devDependencies": {
+    "@e2e-dev/lightpanda": "^0.0.2",
+    "@e2e-dev/web": "^0.16.0",
+    "ai": "^7.0.0",
+    "e2e": "^0.23.1",
+    "zod": "^4.1.8"
+  }
+}
