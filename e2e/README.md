@@ -6,8 +6,6 @@ page that loads its product with `XMLHttpRequest` and its reviews with
 open-source headless browser, on your machine, and on Lightpanda Cloud when
 you have a token.
 
-![Campfire Commerce product page for the Outdoor Odyssey Nomad Backpack](https://raw.githubusercontent.com/lightpanda-io/demo/main/e2e/screenshot.png)
-
 ## Run
 
 Use Node 22.22.3+ or 24.8+, and install Lightpanda:
