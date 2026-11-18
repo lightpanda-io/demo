@@ -56,6 +56,10 @@ async function connect() {
       // Finch field trials can change web-facing behavior between two
       // profiles of the same version.
       '--enable-benchmarking',
+      // Unbranded builds (Chrome for Testing, Chromium) otherwise apply the
+      // built-in fieldtrial_testing_config, enabling features branded Chrome
+      // ships off (navigator.globalPrivacyControl in 158).
+      '--disable-field-trial-config',
       '--lang=en-US',
     ],
     env: {
