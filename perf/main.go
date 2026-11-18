@@ -383,7 +383,8 @@ func runOne(sc scenario, b bin, round int, baseURL string, srv *server) (result,
 	cmd := exec.Command("perf", args...)
 	// Own process group, so cleanup also reaches lightpanda under perf.
 	cmd.SysProcAttr = &syscall.SysProcAttr{Setpgid: true}
-	cmd.Env = append(os.Environ(), "LIGHTPANDA_DISABLE_TELEMETRY=true")
+	// LC_ALL=C: a decimal comma in perf's output would clash with -x,.
+	cmd.Env = append(os.Environ(), "LIGHTPANDA_DISABLE_TELEMETRY=true", "LC_ALL=C")
 	if err := cmd.Start(); err != nil {
 		return res, err
 	}
@@ -435,6 +436,8 @@ func attachOne(sc scenario, b bin, round int, baseURL string, srv *server) (resu
 
 	cmd := exec.Command("perf", "stat", "-x,", "-o", tmp.Name(), "-e", "instructions:u,task-clock",
 		"-p", strconv.Itoa(b.pid))
+	// LC_ALL=C: a decimal comma in perf's output would clash with -x,.
+	cmd.Env = append(os.Environ(), "LC_ALL=C")
 	if err := cmd.Start(); err != nil {
 		return res, err
 	}
@@ -630,11 +633,18 @@ func parsePerf(path string) (ins int64, taskMs float64, err error) {
 			continue
 		}
 		switch {
-		case strings.HasPrefix(f[2], "instructions"):
-			ins, err = strconv.ParseInt(f[0], 10, 64)
+		// Hybrid CPUs give one line per core type
+		// (cpu_core/instructions:u/, cpu_atom/instructions:u/): add them up.
+		// A core type the process never ran on shows "<not counted>".
+		case strings.Contains(f[2], "instructions"):
+			if strings.HasPrefix(f[0], "<") {
+				continue
+			}
+			v, err := strconv.ParseInt(f[0], 10, 64)
 			if err != nil {
 				return 0, 0, fmt.Errorf("instructions %q (perf_event_paranoid?): %w", f[0], err)
 			}
+			ins += v
 		case strings.HasPrefix(f[2], "task-clock"):
 			taskMs, _ = strconv.ParseFloat(f[0], 64)
 		}
