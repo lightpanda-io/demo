@@ -12,7 +12,7 @@ page.waitForScript(
   "!['ask me anything', '...'].includes(document.getElementById('answer').textContent)"
 );
 
-const known = page.evaluate(`[
+const known = await page.evaluate(`[
   'It is certain.', 'Without a doubt.', 'Most likely.', 'Outlook good.',
   'Yes, definitely.', 'Signs point to yes.', 'Reply hazy, try again.',
   'Ask again later.', 'Cannot predict now.', "Don't count on it.",
@@ -20,7 +20,7 @@ const known = page.evaluate(`[
   'Concentrate and ask again.', 'Absolutely not.', 'The stars say yes.'
 ].includes(document.getElementById('answer').textContent)`);
 
-const oracle = page.evaluate(
+const oracle = await page.evaluate(
   "document.querySelector('#child').contentDocument.getElementById('state').textContent.startsWith('the spirits whisper: ')"
 );
 
