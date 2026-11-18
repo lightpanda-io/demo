@@ -45,6 +45,13 @@ button:focus + .badge { width: 20px }
     grid.children[i].classList.toggle('wide');
     if (document.elementFromPoint(rand() * 1900, rand() * 1500)) hits++;
   }
+  // A carousel or a modal stack: a z-index write per transition, then a
+  // hit test. Reset at the end, as a card left below the flow takes no click.
+  for (let i = 0; i < 400; i++) {
+    grid.children[i % 20].style.zIndex = i % 3 === 0 ? '-1' : String(i % 7);
+    if (document.elementFromPoint(rand() * 1900, rand() * 1500)) hits++;
+  }
+  for (let i = 0; i < 20; i++) grid.children[i].style.zIndex = '';
   window.__resolve({ hits, stack });
 })();
 </script>
