@@ -7,6 +7,6 @@ const product = page.extract({ product: "#product" }).product;
 
 await page.goto("http://127.0.0.1:1234/frames/index.html");
 page.waitForScript("typeof window.frame1_content === 'string'");
-const frame = page.evaluate("window.frame1_content");
+const frame = await page.evaluate("window.frame1_content");
 
 return { product, frame };

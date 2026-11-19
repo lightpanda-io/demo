@@ -9,5 +9,5 @@ page.waitForScript(
 
 return {
   page: page.extract({ page: "#page" }).page,
-  path: page.evaluate("location.pathname")
+  path: await page.evaluate("location.pathname")
 };
