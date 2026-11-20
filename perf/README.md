@@ -80,6 +80,7 @@ with a single Runtime.evaluate and no polling.
 | dom | innerHTML, cloneNode, selectors, MutationObserver, TreeWalker, serialization | instructions |
 | render | framework commits: components built off-DOM (detached attribute writes, innerHTML), batched inserts/removals/moves/text/class updates into live lists, form controls, keyed `:has`, then one measure phase | instructions |
 | cdp | DOM.getDocument, AX tree, LP.getMarkdown / getSemanticTree / getInteractiveElements, page.content() | instructions |
+| converge | loops sites run until a layout condition holds, to completion: a ticker doubling until it overflows, an aspect-ratio placeholder waited on until it has a size, lazy loading while scrolling two screens, text shrunk until it fits, infinite scroll until three screens tall; the result holds each loop's iterations and whether it converged | none (advisory: a more realistic layout should lower it) |
 
 ## Noise
 

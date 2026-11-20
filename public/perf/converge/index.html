@@ -1,0 +1,133 @@
+<!doctype html>
+<html><head><title>perf: converge</title>
+<script src="../common.js"></script>
+<style>
+  .track { width: 400px; height: 120px; overflow: hidden; }
+  .tick { height: 12px; padding: 4px 0; }
+  .ratio { width: 400px; }
+  .ratio > div { height: 0; padding-bottom: 56.25%; }
+  .lazy { width: 400px; }
+  .lazy > div { height: 0; padding-bottom: 56.25%; }
+  .fit { width: 300px; padding: 0 20px; white-space: nowrap; }
+  .feed > div { padding: 8px; }
+  .feed > div > p { height: 20px; margin: 0; }
+</style>
+</head><body>
+<script>
+// Loops sites run until a layout condition holds: each one's work is
+// iterations x the cost of a step, and the iterations depend on how close
+// the layout is. A step that hits its guard never converged. Total
+// instructions should drop as the layout gets more realistic, even if each
+// read costs more.
+(async () => {
+  const res = {};
+
+  // A ticker filling its track: double the items until they overflow it
+  // twice (each item's height includes its padding).
+  {
+    const track = document.createElement('div');
+    track.className = 'track';
+    const items = document.createElement('div');
+    items.innerHTML = '<div class="tick">a</div><div class="tick">b</div>';
+    track.appendChild(items);
+    document.body.appendChild(track);
+    let n = 0;
+    while (items.scrollHeight < 2 * track.clientHeight && n < 12) {
+      items.innerHTML += items.innerHTML;
+      n++;
+    }
+    res.ticker = { n, done: items.scrollHeight >= 2 * track.clientHeight };
+    track.remove();
+  }
+
+  // An aspect-ratio placeholder (height 0, padding-bottom 56.25%): wait for
+  // it to have a size before laying out what goes in it.
+  {
+    const box = document.createElement('div');
+    box.className = 'ratio';
+    box.innerHTML = '<div></div>';
+    document.body.appendChild(box);
+    const inner = box.firstChild;
+    let n = 0;
+    while (inner.offsetHeight === 0 && n < 30) {
+      await nextFrame();
+      n++;
+    }
+    res.placeholder = { n, done: inner.offsetHeight > 0, height: inner.offsetHeight };
+    box.remove();
+  }
+
+  // Lazy loading: placeholders observed, content built for those that show
+  // up while the user scrolls through the first two screens. Placeholders
+  // with no size all show up at once, so everything gets built.
+  {
+    const list = document.createElement('div');
+    list.className = 'lazy';
+    for (let i = 0; i < 30; i++) list.appendChild(document.createElement('div'));
+    document.body.appendChild(list);
+    window.scrollTo(0, 0);
+    let loaded = 0;
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting || e.target.dataset.loaded) continue;
+        e.target.dataset.loaded = '1';
+        let html = '';
+        for (let j = 0; j < 50; j++) html += '<span>item ' + j + '</span>';
+        e.target.innerHTML = html;
+        loaded++;
+      }
+    });
+    for (const el of list.children) io.observe(el);
+    await nextFrame();
+    const screen = window.innerHeight;
+    const top = list.getBoundingClientRect().top + window.scrollY;
+    for (let i = 1; i <= 4; i++) {
+      window.scrollTo(0, top + (screen * i) / 2);
+      await nextFrame();
+    }
+    io.disconnect();
+    res.lazy = { loaded };
+    list.remove();
+    window.scrollTo(0, 0);
+  }
+
+  // Text fit: shrink a headline until it fits its box's content width.
+  {
+    const el = document.createElement('div');
+    el.className = 'fit';
+    el.textContent = 'A fairly long headline that has to fit on one line';
+    document.body.appendChild(el);
+    let size = 48;
+    el.style.fontSize = size + 'px';
+    let n = 0;
+    while (el.scrollWidth > el.clientWidth && size > 8) {
+      size -= 1;
+      el.style.fontSize = size + 'px';
+      n++;
+    }
+    res.fit = { n, size, done: el.scrollWidth <= el.clientWidth };
+    el.remove();
+  }
+
+  // Infinite scroll: append a page of rows until the feed is three screens
+  // tall (each row's height includes its padding).
+  {
+    const feed = document.createElement('div');
+    feed.className = 'feed';
+    document.body.appendChild(feed);
+    const target = 3 * window.innerHeight;
+    let n = 0;
+    while (feed.offsetHeight < target && n < 50) {
+      let html = '';
+      for (let j = 0; j < 20; j++) html += '<div><p>row</p></div>';
+      feed.insertAdjacentHTML('beforeend', html);
+      n++;
+    }
+    res.scroll = { n, rows: feed.children.length, done: feed.offsetHeight >= target };
+    feed.remove();
+  }
+
+  window.__resolve(res);
+})();
+</script>
+</body></html>

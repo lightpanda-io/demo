@@ -85,6 +85,13 @@ const scenarios = {
     return res;
   },
   dom: async (page) => perfPage(page, '/perf/dom/'),
+  // Layout-driven loops run to completion: iteration counts (in the result)
+  // vary with how realistic the layout is, so only check they ran.
+  converge: async (page) => {
+    const res = await perfPage(page, '/perf/converge/');
+    check(res.ticker && res.placeholder && res.lazy && res.fit && res.scroll, 'unexpected converge result', res);
+    return res;
+  },
   render: async (page) => {
     const res = await perfPage(page, '/perf/render/');
     check(res.rows > 0, 'unexpected render result', res);
