@@ -78,6 +78,29 @@ const expected = {
 const actual = Object.fromEntries(Object.keys(expected).map(name => [name, states[name]]));
 assert.deepStrictEqual(actual, expected);
 
+// An automation client reads the live option and its accessible label after
+// changing the select. The selected attribute still marks the initial option.
+function assertSelection(nodes, label) {
+  const select = nodes.find(n => n.role?.value === 'combobox' && n.name?.value === 'Native select');
+  assert.ok(select);
+  assert.strictEqual(select.value?.value, label);
+  const selected = nodes.filter(n => !n.ignored && n.role?.value === 'option' && prop(n, 'selected') === true);
+  assert.deepStrictEqual(selected.map(n => n.name.value), label === undefined ? [] : [label]);
+}
+
+assertSelection(nodes, 'Native option');
+await page.select('select', 'second');
+assertSelection((await client.send('Accessibility.getFullAXTree')).nodes, 'Second choice');
+// Native option labels also override the text displayed by a menu.
+await page.$eval('option[value="second"]', option => {
+  option.removeAttribute('aria-label');
+  option.label = 'Sort by name';
+});
+const updated = await client.send('Accessibility.getFullAXTree');
+assert.strictEqual(updated.nodes.find(n => n.role?.value === 'combobox').value?.value, 'Sort by name');
+await page.$eval('select', el => { el.selectedIndex = -1; });
+assertSelection((await client.send('Accessibility.getFullAXTree')).nodes, undefined);
+
 await page.close();
 await context.close();
 await browser.disconnect();
