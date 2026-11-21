@@ -77,6 +77,8 @@ var scenarios = []scenario{
 	{name: "dom", iters: 2, gate: gateInstructions},
 	{name: "render", iters: 2, gate: gateInstructions},
 	{name: "cdp", iters: 5, gate: gateInstructions},
+	// Advisory: a more realistic layout should lower it, not a regression gate
+	{name: "converge", iters: 2, gate: gateNone},
 }
 
 // bin is either a binary we start per run (path) or a browser that's
