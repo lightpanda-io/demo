@@ -1,0 +1,79 @@
+<!doctype html>
+<html><head><title>perf: positioned</title>
+<script src="../common.js"></script>
+<style>
+.pcard { position: relative; padding: 4px; }
+.pcard .cover { position: absolute; inset: 0; }
+.pcard .pin { position: absolute; top: 2px; right: 2px; }
+.modal { position: fixed; inset: 0; z-index: 1000; }
+.modal .panel { position: absolute; top: 10%; bottom: 10%; left: 20%; right: 20%; }
+.modal.hidden { display: none; }
+</style>
+</head><body>
+<script>
+// Boxes sized by their insets (top and bottom with height:auto): Bootstrap's
+// stretched-link cover over every card, a fixed modal with inset:0 and a panel
+// pinned inside it (#4263). Reads while the containing blocks grow, then hit
+// tests with the modal open, scrolled and toggled.
+(async () => {
+  addStylesheet(100);
+  const list = document.createElement('div');
+  const cards = [], covers = [];
+  for (let i = 0; i < 1500; i++) {
+    const card = document.createElement('div');
+    card.className = 'pcard';
+    card.innerHTML = `<a href="#">card ${i}</a><span>text</span><i class="pin">${i % 9}</i><a class="cover" href="#"></a>`;
+    list.appendChild(card);
+    cards.push(card);
+    covers.push(card.lastChild);
+  }
+  document.body.appendChild(list);
+  buildDocument(1500);
+  let sink = 0;
+
+  // Cold pass and warm pass over the covers.
+  for (const c of covers) sink += c.getBoundingClientRect().height;
+  for (const c of covers) sink += c.offsetHeight;
+
+  // A card grows, its cover is read: the containing block changed under it.
+  for (let i = 0; i < 300; i++) {
+    const card = cards[(i * 7) % cards.length];
+    card.appendChild(document.createElement('p')).textContent = 'more ' + i;
+    sink += card.lastElementChild.previousElementSibling.offsetHeight + covers[(i * 7) % cards.length].getBoundingClientRect().height;
+  }
+
+  // Hit tests over the cards, then with a modal open over them.
+  let covered = 0;
+  for (let i = 0; i < 500; i++) {
+    if (document.elementFromPoint(rand() * innerWidth, rand() * innerHeight)) sink++;
+  }
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = '<div class="panel"><input><button>ok</button></div>';
+  document.body.appendChild(modal);
+  sink += modal.querySelector('.panel').getBoundingClientRect().height;
+  for (let i = 0; i < 500; i++) {
+    const hit = document.elementFromPoint(rand() * innerWidth, rand() * innerHeight);
+    if (hit && modal.contains(hit)) covered++;
+  }
+
+  // Scrolled, the modal stays on the viewport.
+  for (let i = 1; i <= 10; i++) {
+    window.scrollTo(0, i * 500);
+    const hit = document.elementFromPoint(rand() * innerWidth, rand() * innerHeight);
+    if (hit && modal.contains(hit)) covered++;
+    sink += modal.getBoundingClientRect().top;
+  }
+  window.scrollTo(0, 0);
+
+  // Open and close, a hit test and a read each time.
+  for (let i = 0; i < 200; i++) {
+    modal.classList.toggle('hidden');
+    const hit = document.elementFromPoint(rand() * innerWidth, rand() * innerHeight);
+    if (hit && modal.contains(hit)) covered++;
+    sink += modal.offsetHeight;
+  }
+  window.__resolve({ n: document.getElementsByTagName('*').length, covered, sink: Math.round(sink) });
+})();
+</script>
+</body></html>

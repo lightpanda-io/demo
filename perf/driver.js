@@ -84,6 +84,13 @@ const scenarios = {
     check(res.n === 13810 && res.cards === 3200, 'unexpected grid result', res);
     return res;
   },
+  // covered (hits landing in the fixed inset:0 modal) follows how real the
+  // layout is, so it's reported, not checked.
+  positioned: async (page) => {
+    const res = await perfPage(page, '/perf/positioned/');
+    check(res.n === 9374, 'unexpected positioned result', res);
+    return res;
+  },
   dom: async (page) => perfPage(page, '/perf/dom/'),
   // Layout-driven loops run to completion: iteration counts (in the result)
   // vary with how realistic the layout is, so only check they ran.
