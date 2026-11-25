@@ -76,6 +76,7 @@ with a single Runtime.evaluate and no polling.
 | layout | geometry reads mixed with mutations, IntersectionObserver while scrolling | instructions |
 | gbcr | getBoundingClientRect over every element of one wide parent (4000 cards): cold pass, warm pass, append + measure, 2000 inline siblings, IntersectionObserver on every card (#4576) | instructions |
 | grid | getBoundingClientRect over grids that wrap: 3000 cards (each a single-column grid) in a 4-column grid, a 12-column grid of spanning items, an auto-fill grid; cold and warm passes, early rows growing, append + measure, reverse pass | instructions |
+| positioned | boxes sized by their insets (top + bottom, height auto): a stretched-link cover in each of 1500 `position:relative` cards read cold, warm and while the cards grow; a fixed `inset:0` modal with a pinned panel, hit tested open, scrolled and toggled (#4263); `covered` = hits that land in the modal | instructions |
 | hittest | elementFromPoint / elementsFromPoint, then 40 clicks and 20 hovers through CDP Input events, on a page whose rules read `:focus` and `:focus-within` | instructions |
 | dom | innerHTML, cloneNode, selectors, MutationObserver, TreeWalker, serialization | instructions |
 | render | framework commits: components built off-DOM (detached attribute writes, innerHTML), batched inserts/removals/moves/text/class updates into live lists, form controls, keyed `:has`, then one measure phase | instructions |
