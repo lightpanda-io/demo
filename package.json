@@ -9,7 +9,8 @@
     "bench-playwright-cdp": "node playwright/cdp.js",
     "bench-puppeteer-cdp": "node puppeteer/cdp.js",
     "bench-selenium-bidi-cdp": "node selenium/bidi/cdp.js",
-    "bench-selenium-http-cdp": "node selenium/http/cdp.js"
+    "bench-selenium-http-cdp": "node selenium/http/cdp.js",
+    "bench-http-cache": "node http-cache/bench.js"
   },
   "repository": {
     "type": "git",
