@@ -1,0 +1,160 @@
+<!doctype html>
+<html><head><title>perf: vars</title>
+<script src="../common.js"></script>
+<style>
+:root, :host { --spacing: .25rem; --radius: 6px; --hero-h: 240px; --gutter: 16px; }
+.card { --card-pad: calc(var(--spacing) * 4); padding: var(--card-pad); margin-bottom: var(--card-gap, 8px); }
+.hero { height: var(--hero-h); }
+.gutter { padding-inline: var(--gutter); }
+.cell { width: var(--cell-w, 120px); }
+.title { color: var(--color-fg); border-radius: var(--radius); }
+.dense { --spacing: .2rem; }
+.flex { display: flex; }
+.grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.w-full { width: 100%; }
+</style>
+</head><body>
+<script>
+// Layout through custom properties, the way Tailwind v4 ships it: one
+// --spacing on :root and every spacing utility a calc(var(--spacing) * N),
+// next to a theme of colour variables no layout property reads. Plus a
+// variable defined from another (.card), fallbacks, a variable set per section
+// by a style attribute, and one redefined by a class. Reads after writes that
+// must drop nothing (a colour variable, the same value again) and writes that
+// must (the root's --spacing, a section's --gutter, the class).
+(async () => {
+  addStylesheet(50);
+
+  const scale = [0, 0.5, 1, 1.5, 2, 2.5, 3, 4, 5, 6, 8, 10, 12, 16];
+  const utilities = { p: 'padding', px: 'padding-inline', py: 'padding-block', pt: 'padding-top', m: 'margin', mx: 'margin-inline', mt: 'margin-top', mb: 'margin-bottom', gap: 'gap', h: 'height', w: 'width', inset: 'inset', top: 'top', left: 'left' };
+  let css = '';
+  for (const [name, property] of Object.entries(utilities)) {
+    for (const n of scale) {
+      css += `.${name}-${String(n).replace('.', '\\.')}{${property}:calc(var(--spacing)*${n})}\n`;
+    }
+  }
+  const shades = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
+  const hues = ['red', 'orange', 'amber', 'yellow', 'lime', 'green', 'teal', 'cyan', 'sky', 'blue', 'indigo', 'violet', 'purple', 'pink', 'rose', 'slate', 'gray', 'zinc', 'stone', 'brand'];
+  let theme = ':root,:host{--color-fg:#111;';
+  for (const hue of hues) {
+    for (const shade of shades) {
+      theme += `--color-${hue}-${shade}:#${(hue.length * shade * 7919 % 0xffffff).toString(16).padStart(6, '0')};`;
+      css += `.text-${hue}-${shade}{color:var(--color-${hue}-${shade})}\n.bg-${hue}-${shade}{background-color:var(--color-${hue}-${shade})}\n`;
+    }
+  }
+  const style = document.createElement('style');
+  style.textContent = theme + '}\n' + css;
+  document.head.appendChild(style);
+
+  const SECTIONS = 60, CARDS = 20;
+  const root = document.documentElement;
+  // What a script would keep in sync (a header's height, 1vh): on the root
+  // from the start, so the `same` step only writes values it already has.
+  root.style.setProperty('--spacing', '.25rem');
+  const sections = [], cards = [], covers = [], cells = [];
+  let html = '';
+  for (let s = 0; s < SECTIONS; s++) {
+    const gutter = s % 4 === 0 ? ` style="--gutter: ${8 + s % 5 * 4}px"` : '';
+    html += `<section class="vsec gutter py-8"${gutter}>`;
+    html += `<div class="hero relative mb-4"><div class="cover absolute inset-0"></div><h2 class="title text-brand-700 mt-4 px-${scale[s % scale.length]}">Section ${s}</h2></div>`;
+    html += '<div class="grid gap-4">';
+    for (let c = 0; c < CARDS; c++) {
+      const hue = hues[(s + c) % hues.length];
+      const n = scale[(s * 3 + c) % scale.length];
+      html += `<div class="card bg-${hue}-100"><div class="cell h-12 mb-${n}"></div><p class="title text-${hue}-700 mt-2 px-3">card ${c}</p><a class="btn px-4 py-2 mt-${n}" href="#">open</a></div>`;
+    }
+    html += '</div></section>';
+  }
+  const list = document.createElement('div');
+  list.innerHTML = html;
+  document.body.appendChild(list);
+  for (const sec of list.children) {
+    sections.push(sec);
+    covers.push(sec.querySelector('.cover'));
+    for (const card of sec.querySelectorAll('.card')) {
+      cards.push(card);
+      cells.push(card.firstChild);
+    }
+  }
+  let sink = 0;
+  const read = (el) => {
+    const r = el.getBoundingClientRect();
+    sink += r.top + r.height + el.offsetWidth;
+  };
+  const sample = (i, n) => {
+    for (let k = 0; k < n; k++) read(cards[(i * 131 + k * 197) % cards.length]);
+  };
+
+  // Cold pass over everything, then warm.
+  for (const el of list.getElementsByTagName('*')) read(el);
+  for (const card of cards) read(card);
+  for (const cover of covers) read(cover);
+
+  // What the variables resolve to: reported, to compare with Chrome.
+  const probe = {
+    hero: sections[1].firstChild.offsetHeight,
+    card: cards[0].offsetHeight,
+    cell: cells[0].offsetWidth,
+    cover: covers[1].offsetHeight,
+    gutter: sections[4].firstChild.getBoundingClientRect().left,
+  };
+
+  // ?only=<step> runs one step (after the passes above), to find which one moved.
+  const only = new URLSearchParams(location.search).get('only');
+  const steps = {
+    // No layout property reads a colour variable: nothing to drop.
+    colour: [300, (i) => {
+      root.style.setProperty(`--color-brand-${shades[i % shades.length]}`, i % 2 ? '#123456' : '#654321');
+      sample(i, 20);
+    }],
+    // The value it already has.
+    same: [300, (i) => {
+      root.style.setProperty('--spacing', '.25rem');
+      const sec = sections[i % 15 * 4];
+      sec.style.setProperty('--gutter', sec.style.getPropertyValue('--gutter'));
+      sample(i, 20);
+    }],
+    // A theme rule appended by a script (CSS-in-JS): colours only.
+    theme: [100, (i) => {
+      style.sheet.insertRule(`.theme-${i}{--color-fg:#${(i * 2731).toString(16).padStart(6, '0')};--color-brand-500:#0000${(i + 16).toString(16)}}`, style.sheet.cssRules.length);
+      sample(i, 20);
+    }],
+    // The root's --spacing: every utility moves.
+    root: [30, (i) => {
+      root.style.setProperty('--spacing', i % 2 ? '.25rem' : '.3rem');
+      sample(i, 40);
+    }],
+    // One section's gutter, and its hero.
+    section: [300, (i) => {
+      const sec = sections[(i * 7) % SECTIONS];
+      sec.style.setProperty('--gutter', (10 + i % 9) + 'px');
+      sec.style.setProperty('--hero-h', (200 + i % 50) + 'px');
+      read(sec.firstChild);
+      read(sec.lastChild.children[i % CARDS]);
+      read(covers[(i * 7) % SECTIONS]);
+    }],
+    // A class that redefines --spacing for a section.
+    dense: [300, (i) => {
+      const sec = sections[(i * 11) % SECTIONS];
+      sec.classList.toggle('dense');
+      read(sec.lastChild.children[i % CARDS]);
+      read(sec);
+    }],
+    // A cell's width, set where it's used.
+    cell: [600, (i) => {
+      const cell = cells[(i * 13) % cells.length];
+      cell.style.setProperty('--cell-w', (80 + i % 60) + 'px');
+      read(cell);
+    }],
+  };
+  for (const [name, [count, step]] of Object.entries(steps)) {
+    if (only && only !== name) continue;
+    for (let i = 0; i < count; i++) step(i);
+  }
+
+  window.__resolve({ n: document.getElementsByTagName('*').length, probe, sink: Math.round(sink) });
+})();
+</script>
+</body></html>

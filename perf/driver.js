@@ -91,6 +91,13 @@ const scenarios = {
     check(res.n === 9374, 'unexpected positioned result', res);
     return res;
   },
+  // probe (what the variables resolve to) follows how real the layout is, so
+  // it's reported, not checked.
+  vars: async (page) => {
+    const res = await perfPage(page, '/perf/vars/');
+    check(res.n === 5110, 'unexpected vars result', res);
+    return res;
+  },
   dom: async (page) => perfPage(page, '/perf/dom/'),
   // Layout-driven loops run to completion: iteration counts (in the result)
   // vary with how realistic the layout is, so only check they ran.
