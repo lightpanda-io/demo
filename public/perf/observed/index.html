@@ -1,0 +1,61 @@
+<!doctype html>
+<html><head><title>perf: observed</title>
+<script src="../common.js"></script>
+<style>
+  .slides { position: absolute; top: 0; left: 0; width: 400px; height: 200px; overflow: hidden; }
+  .slide { position: absolute; top: 0; width: 400px; height: 200px; }
+</style>
+</head><body>
+<script>
+// A page that keeps changing after it settles, with many observed targets:
+// lazy images and impression tracking on every card, and an autoplaying
+// slideshow plus a clock that never stop. Every DOM change is a reason to
+// re-check intersections, so this is the steady-state cost of observing.
+(async () => {
+  addStylesheet(100);
+  const { main } = buildDocument(3000);
+  const cards = Array.from(document.querySelectorAll('li.item'));
+
+  let records = 0;
+  const lazy = new IntersectionObserver((entries) => { records += entries.length; }, { rootMargin: '200px' });
+  const seen = new IntersectionObserver((entries) => { records += entries.length; }, { threshold: [0, 0.5, 1] });
+  for (let i = 0; i < cards.length; i += 2) lazy.observe(cards[i]);
+  for (let i = 1; i < cards.length; i += 2) seen.observe(cards[i]);
+  await nextFrame();
+  await nextFrame();
+
+  // Autoplaying slideshow: one slide's position every animation frame.
+  const slides = document.createElement('div');
+  slides.className = 'slides';
+  slides.innerHTML = '<div class="slide">a</div><div class="slide">b</div>';
+  document.body.insertBefore(slides, main);
+  const slide = slides.firstChild;
+  await new Promise((resolve) => {
+    let frame = 0;
+    const step = () => {
+      slide.style.left = -(frame * 2 % 400) + 'px';
+      if (++frame === 200) return resolve();
+      requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  });
+
+  // A clock: text every 10ms.
+  const clock = document.body.appendChild(document.createElement('span'));
+  await new Promise((resolve) => {
+    let ticks = 0;
+    const id = setInterval(() => {
+      clock.textContent = 'tick ' + ticks;
+      if (++ticks === 100) {
+        clearInterval(id);
+        resolve();
+      }
+    }, 10);
+  });
+
+  lazy.disconnect();
+  seen.disconnect();
+  window.__resolve({ n: document.getElementsByTagName('*').length, targets: cards.length, records });
+})();
+</script>
+</body></html>
