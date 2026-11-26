@@ -79,6 +79,11 @@ const scenarios = {
     check(res.n === 8007 && res.records === 4200, 'unexpected gbcr result', res);
     return res;
   },
+  observed: async (page) => {
+    const res = await perfPage(page, '/perf/observed/');
+    check(res.targets === 975, 'unexpected observed result', res);
+    return res;
+  },
   grid: async (page) => {
     const res = await perfPage(page, '/perf/grid/');
     check(res.n === 13810 && res.cards === 3200, 'unexpected grid result', res);
