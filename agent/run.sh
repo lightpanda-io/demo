@@ -145,6 +145,14 @@ show_err() {
   sed -n '/^\$usage /!p' "$1" | tail -3 | sed 's/^/    /'
 }
 
+# The save session's stdout holds the model's reply to each prompt and the
+# result it saw live, which tells a step the model left out of the saved
+# script apart from a step that failed in the session.
+show_transcript() {
+  info "  save transcript:"
+  sed 's/\x1b\[[0-9;?<>]*[a-zA-Z]//g; /^[[:space:]]*$/d' "$1" | tail -40 | sed 's/^/    /'
+}
+
 # The $usage stderr line is a stable key=value contract for wrappers; the
 # ceiling is a backstop against runaway agent loops.
 check_usage() {
@@ -207,10 +215,10 @@ run_live_save_replay() {
   local script="$TMP/$name.js" task
   if [ -f "$HERE/cases/$name.repl" ]; then
     sed "s|{script}|$script|" "$HERE/cases/$name.repl" |
-      timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" >/dev/null 2>"$TMP/err"
+      timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" >"$TMP/save-out" 2>"$TMP/err"
   else
     task="$(cat "$HERE/cases/$name.task")"
-    timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >/dev/null 2>"$TMP/err"
+    timeout "$save_timeout" "$LPD" agent "${LPD_ARGS[@]}" --provider gemini --model "$LP_MODEL" "$@" --task "$task" --save "$script" >"$TMP/save-out" 2>"$TMP/err"
   fi
   check_usage "$TMP/err" "$name save"
 
@@ -228,6 +236,7 @@ run_live_save_replay() {
   else
     fail "$name saved script missing$missing — see below"
     sed 's/^/    /' "$script"
+    show_transcript "$TMP/save-out"
   fi
 
   # Replay without --task runs no LLM — no key or tokens needed.
@@ -262,6 +271,7 @@ run_live_save_replay() {
   show_err "$TMP/replay-err"
   info "  saved script:"
   sed 's/^/    /' "$script"
+  if [ -z "$missing" ]; then show_transcript "$TMP/save-out"; fi
 }
 
 run_live_hn() {
