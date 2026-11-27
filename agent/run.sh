@@ -61,7 +61,7 @@ LPD="${LPD_PATH:-$DEMO/../browser/zig-out/bin/lightpanda}"
 # shellcheck disable=SC2206  # word-splitting is the point
 LPD_ARGS=(${LPD_ARGS:-})
 # Pin an explicit model id — never a *-latest / *-preview alias, which drift.
-LP_MODEL="${LP_MODEL:-gemini-3.6-flash}"
+LP_MODEL="${LP_MODEL:-gemini-4-hydrogen}"
 MAX_TOKENS="${MAX_TOKENS:-1500000}"
 
 export LIGHTPANDA_DISABLE_TELEMETRY=true
