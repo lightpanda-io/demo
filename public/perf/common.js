@@ -35,7 +35,9 @@ function buildDocument(target) {
   return { main, sections };
 }
 
-// `wild` = number of 4-rule groups of expensive selectors.
+// `wild` = number of 4-rule groups of expensive selectors. Their [class*=]
+// values repeat, as on real sites: few distinct ones, used many times
+// (GitHub 44, CNN 10, Tailwind Typography's not-prose over a thousand times).
 function addStylesheet(wild, extra = '') {
   let css = '.row{display:flex}.card{width:300px}.hidden{display:none}.wide{width:100%}\n';
   for (let i = 0; i < 200; i++) {
@@ -43,7 +45,7 @@ function addStylesheet(wild, extra = '') {
   }
   for (let i = 0; i < wild; i++) {
     css += `main section ul li a[href*="${i}"]{padding:1px}\n`;
-    css += `[class*="c${i}"] li:nth-child(${(i % 25) + 1}) > span{height:${i % 7}px}\n`;
+    css += `[class*="c${i % 40}"] li:nth-child(${(i % 25) + 1}) > span{height:${i % 7}px}\n`;
     css += `.sec ~ .sec .item + .item *:not(.x${i}){margin-top:0}\n`;
     css += `div div div .c${i} *{border:0}\n`;
   }
